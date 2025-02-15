@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Update on OpenMicroLab</title><link>https://openmicrolab.com/tags/update/</link><description>Recent content in Update on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 05 Feb 2016 07:47:54 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/update/index.xml" rel="self" type="application/rss+xml"/><item><title>아두이노 스케치를 네트워크로 업로드하기 – Arduino update remotely</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0-arduino-remote-firmware-update/</link><pubDate>Fri, 05 Feb 2016 07:47:54 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0-arduino-remote-firmware-update/</guid><description>
+&lt;p>아두이노 보드의 펌웨어는 USB 케이블을 PC와 연결후 PC상에서 잡히는 것은 COM 포트를 통해 아두이노 IDE를 통해 업데이트가 된다. 좀 더 구체적으로는 &lt;a href="http://www.nongnu.org/avrdude/" target="_blank">avrdude&lt;/a>라는 프로그램을 써서 &lt;a href="http://www.atmel.com/images/doc2591.pdf" target="_blank">stk500프로토콜&lt;/a>을 사용해서 프로그램이 된다.&lt;/p>
+&lt;h3 id="아두이노-스케치를-네트워크로-업로드하기">아두이노 스케치를 네트워크로 업로드하기&lt;/h3>
+&lt;p>&lt;strong>필요한 것들&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.wiznet.co.kr/product-item/wiz550s2e/" target="_blank">Wiznet의 WIZ550S2E&lt;/a> –  1개&lt;/li>
+&lt;li>Arduino pro mini – 테스트에 사용한 아두이노 보드&lt;/li>
+&lt;li>와이어링 케이블 – WIZ550S2E와 Arduino pro mini를 연결&lt;/li>
+&lt;li>TFTP server program – Windows의 경우 &lt;a href="http://tftpd32.jounin.net/tftpd32_download.html" target="_blank">tftpd&lt;/a>, 맥의 경우 &lt;a href="http://ww2.unime.it/flr/tftpserver/" target="_blank">Tftp Server&lt;/a>&lt;/li>
+&lt;li>아두이노 IDE 프로그램&lt;/li>
+&lt;/ul>
+&lt;h4 id="케이블-연결-및-설정">케이블 연결 및 설정&lt;/h4>
+&lt;p>WIZ550S2E는 Serial to Ethernet 게이트웨이 모듈로 시리얼로 들어온 데이터는 네트워크로 보내고, 네트워크에서 들어온 데이터는 시리얼로 보낸다. &lt;a href="http://wizwiki.net/wiki/doku.php?id=products:wiz550s2e:wiz550s2eds_kr" target="_blank">WIZ550S2E의 회로도&lt;/a>를 보면 J1에 있는 입력핀들은 풀업이 되어 있어서, 아두이노와 연결에 필요한 핀은  3V3D, GND, TXD, RXD, STATUS2 핀이다.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HTTP on OpenMicroLab</title><link>https://openmicrolab.com/tags/http/</link><description>Recent content in HTTP on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 15 Apr 2016 03:32:38 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/http/index.xml" rel="self" type="application/rss+xml"/><item><title>IoT Developer Survey</title><link>https://openmicrolab.com/iot-developer-survey/</link><pubDate>Fri, 15 Apr 2016 03:32:38 +0000</pubDate><guid>https://openmicrolab.com/iot-developer-survey/</guid><description>
+&lt;p>Top 5 IoT Industries&lt;/p>
+&lt;ul>
+&lt;li>Iot Platform&lt;/li>
+&lt;li>Home Automation&lt;/li>
+&lt;li>Industrial Automation&lt;/li>
+&lt;li>Energy Management&lt;/li>
+&lt;li>Connected Cities&lt;/li>
+&lt;/ul>
+&lt;p>3가지 이슈 – 보안, 상호호환성, 연결방식&lt;br>
+주로 사용되는 메시징 프로토콜은 MQTT, HTTP&lt;br>
+클라우드 서비스는 아마존 클라우드&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="IoT Developer Survey 2016" href="//www.slideshare.net/IanSkerrett/iot-developer-survey-2016" target="_blank">IoT Developer Survey 2016&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="//www.slideshare.net/IanSkerrett" target="_blank">Ian Skerrett&lt;/a>&lt;/strong>
+&lt;/div>
+&lt;p>관련자료 – &lt;a href="https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/" target="_blank">&lt;a href="https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/">https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>여기 나온 PT자료도 같이 보면 좋을 듯: &lt;a href="http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/" target="_blank">&lt;a href="http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/">http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

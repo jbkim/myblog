@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D 프린팅 on OpenMicroLab</title><link>https://openmicrolab.com/tags/3d-%ED%94%84%EB%A6%B0%ED%8C%85/</link><description>Recent content in 3D 프린팅 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 20 May 2018 10:31:44 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/3d-%ED%94%84%EB%A6%B0%ED%8C%85/index.xml" rel="self" type="application/rss+xml"/><item><title>3D 프린팅 및 공기 오염</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EB%B0%8F-%EA%B3%B5%EA%B8%B0-%EC%98%A4%EC%97%BC/</link><pubDate>Sun, 20 May 2018 10:31:44 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EB%B0%8F-%EA%B3%B5%EA%B8%B0-%EC%98%A4%EC%97%BC/</guid><description>
+&lt;p>3D 프린팅을 할 때 발생하는 미세 공기 오염물질에 대한 실험 내용. 필라멘트의 재질에 따라 다르며, ABS가 가장 않좋다. 그리고 이에 대한 대책으로 필터를 적용한 프로젝트에 대한 내용들.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4304" src="https://res.cloudinary.com/openmicrolab/image/upload/v1526812239/AirQ_01_hrwend.png" width="1495" height="504" />
+&lt;p>&lt;strong>관련기사&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="http://diy3dtech.com/3d-printing-and-air-quality-risks/">http://diy3dtech.com/3d-printing-and-air-quality-risks/&lt;/a>&lt;/p></description></item><item><title>필라멘트 들뜸을 방지하려면</title><link>https://openmicrolab.com/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EB%93%A4%EB%9C%B8%EC%9D%84-%EB%B0%A9%EC%A7%80%ED%95%98%EB%A0%A4%EB%A9%B4/</link><pubDate>Fri, 11 Nov 2016 02:01:32 +0000</pubDate><guid>https://openmicrolab.com/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EB%93%A4%EB%9C%B8%EC%9D%84-%EB%B0%A9%EC%A7%80%ED%95%98%EB%A0%A4%EB%A9%B4/</guid><description>
+&lt;p>3D 프린팅을 하면서 일반적으로 모델의 사이즈가 큰 경우 모델의 바닥부터 필라멘트가 수축을 하면서 들뜨게 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3796" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478829214/warping_gny6ra.jpg" width="512" height="384" />
+&lt;p>이런 현상을 방지하기 위해서는&lt;/p>
+&lt;ul>
+&lt;li>히트베드 사용&lt;/li>
+&lt;li>Raft / Brim 사용&lt;/li>
+&lt;li>레벨링을 잘 맞추기&lt;/li>
+&lt;li>캡톤필름/Buildtak sheet 등을 사용&lt;/li>
+&lt;li>출력속도 낮추기&lt;/li>
+&lt;li>Infill을 줄이기&lt;/li>
+&lt;/ul>
+&lt;p>그리고 &lt;a href="https://www.matterhackers.com/news/-how-to-stop-filament-warping-in-3d-printed-parts" target="_blank">이 글(HOW TO STOP FILAMENT WARPING IN 3D PRINTED PARTS)&lt;/a>에서는 Brim을 넣을 때 lily pads를 넣는 것을 설명하고 있는데 좋은 아이디어 인듯.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3797" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478829543/lilypad_dby3nx.jpg" width="512" height="384" />
+&lt;p>ABS의 경우 &lt;a href="https://www.matterhackers.com/articles/printing-tips-&amp;-tricks:-abs-bed-adhesion" target="_blank">참고자료&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Heat bed에 Kapton필름, 딱풀, ABS Juice등을 사용&lt;/li>
+&lt;li>첫번째 레이어에서 팬 컨트롤&lt;/li>
+&lt;/ul>
+&lt;p> &lt;/p></description></item><item><title>Slic3r 빌드 하기</title><link>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 24 Oct 2016 08:29:34 +0000</pubDate><guid>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>3D 프린팅을 위한 슬라이서 프로그램인 &lt;a href="http://slic3r.org/" target="_blank">Slic3r&lt;/a>는 오픈소스로 &lt;a href="https://github.com/alexrj/Slic3r" target="_blank">github&lt;/a>에 코드가 공개되어 있다. 물론 각 OS에 맞는 실행파일을 다운로드해서 사용이 가능하지만 github에 공개된 코드를 빌드해서 사용이 가능하다. Windows, Mac, Linux 등 3가지 OS에서 빌드가 가능하며, Mac OS X에서 빌드하는 방법은&lt;a href="https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X" target="_blank"> https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X&lt;/a>에 정리되어 있다.&lt;/p>
+&lt;p>Slic3r는 C++ 과 Perl로 작성이 되어 있다.&lt;/p>
+&lt;blockquote>
+&lt;p>The core geometric algorithms and data structures are written in C++, and Perl is used for high-level flow abstraction, GUI and testing.&lt;/p>&lt;/blockquote>
+&lt;p>그리고 다음과 같은 기능이 있다.&lt;/p></description></item><item><title>3D 프린팅 시장 관련 자료</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5-%EA%B4%80%EB%A0%A8-%EC%9E%90%EB%A3%8C/</link><pubDate>Tue, 27 Oct 2015 09:17:56 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5-%EA%B4%80%EB%A0%A8-%EC%9E%90%EB%A3%8C/</guid><description>
+&lt;h3 class="article-headline.ng-binding.ng-scope" id="img-loadinglazy-classaligncenter-wp-image-3455--srcimages201510ri04_0066_pdf-1024x601jpg-altri04_0066_pdf-width591-height347-srcsetimages201510ri04_0066_pdf-1024x601jpg-1024w-images201510ri04_0066_pdf-300x176jpg-300w-images201510ri04_0066_pdfjpg-1078w-sizesmax-width-591px-100vw-591px-1">&lt;a href="https://openmicrolab.com/images/2015/10/RI04_0066_pdf.jpg">&lt;img loading="lazy" class="aligncenter wp-image-3455 " src="https://openmicrolab.com/images/2015/10/RI04_0066_pdf-1024x601.jpg" alt="RI04_0066_pdf" width="591" height="347" srcset="https://openmicrolab.com/images/2015/10/RI04_0066_pdf-1024x601.jpg 1024w, https://openmicrolab.com/images/2015/10/RI04_0066_pdf-300x176.jpg 300w, https://openmicrolab.com/images/2015/10/RI04_0066_pdf.jpg 1078w" sizes="(max-width: 591px) 100vw, 591px" />&lt;/a>&lt;/h3>
+&lt;li class="article-headline ng-binding ng-scope">
+&lt;a href="http://www.forbes.com/sites/louiscolumbus/2015/03/31/2015-roundup-of-3d-printing-market-forecasts-and-estimates/" target="_blank">2015 Roundup Of 3D Printing Market Forecasts And Estimates&lt;/a>
+&lt;/li>
+&lt;li class="article-headline ng-binding ng-scope">
+한국 무역협회 자료: &lt;a href="https://openmicrolab.com/images/2015/10/RI04_0066.pdf">RI04_0066&lt;/a>
+&lt;/li></description></item><item><title>Arduino Scuola와 3D 프린팅</title><link>https://openmicrolab.com/arduino-scuola%EC%99%80-3d-%ED%94%84%EB%A6%B0%ED%8C%85/</link><pubDate>Mon, 19 Jan 2015 04:10:44 +0000</pubDate><guid>https://openmicrolab.com/arduino-scuola%EC%99%80-3d-%ED%94%84%EB%A6%B0%ED%8C%85/</guid><description>
+&lt;p>최근에 발견한 Arduino Scuola 사이트: &lt;a href="http://scuola.arduino.cc/" target="_blank">&lt;a href="http://scuola.arduino.cc/">http://scuola.arduino.cc/&lt;/a>&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Arduino_Scuola.png" alt="Arduino Scuola" width="680" height="609" />
+&lt;p>이 사이트는 &lt;a href="https://learn.adafruit.com/guides/latest" target="_blank">Adafruit&lt;/a>와 &lt;a href="https://learn.sparkfun.com/?_ga=1.96420316.1388457354.1418889582" target="_blank">Sparkfun의 learn사이트&lt;/a>와 같은 컨셉의 사이트인데, 아직 자료가 많지 않아서 인지 메인 사이트에서 링크도 없다. 하지만 아두이노의 블로그의 글에서 언급한 내용에 이 사이트의 내용이 링크로 연결되는 것으로 보아 곧 활성화가 될 것같다. 오픈소스 하드웨어 비즈니스에서 이러한 접근은 몇 년 전부터 내가 예측하고 있던 방향이다. 즉 초보자 들이 쉽게 따라할 수 있는 컨텐츠를 제공하고, 관련된 부품이나 키트를 온라인 샵에서 같이 판매를 하는 것이다.&lt;/p>
+&lt;p>또 한가지 추세는 &lt;strong>3D프린팅과 디지털기기의 결합&lt;/strong>이다. 아주 &lt;a href="http://scuola.arduino.cc/courses/lessons/cover/gQ7noDN" target="_blank">간단한 예&lt;/a>가 소개가 되고 있는데, 이런 추세는 더 활발해 질 것 같다. 즉 디지털 기기에 3D 프린터를 사용하여 개인화된 내용이 부가되는 형태이다. 이런 식의 접근을 하고 있는 업체중 하나는 &lt;a href="http://www.3dracers.com/" target="_blank">3D Racers&lt;/a>인데 온라인에서 장난감 자동차의 외관을 사용자가 디자인 할 수 있다.&lt;/p></description></item><item><title>3D 프린팅 앱</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%95%B1/</link><pubDate>Sat, 27 Dec 2014 09:11:54 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%95%B1/</guid><description>
+&lt;p>일반 프린터를 쓰기위해서는 타이핑만 하면 되지만 3D 프린팅을 위해서는 3D모델링을 해야한다.  하지만 이것은 설계 또는 디자인의 영역이고 3D 디자인 툴을 사용해야 하는데 이 S/W는 워드수준이 아니므로 다음과 같은 2가지 접근이 나올 것으로 예상된다.&lt;/p>
+&lt;ul>
+&lt;li>이미 잘 디자인된 모델들을 &lt;a title="thingiverse" href="http://www.thingiverse.com/" target="_blank">Thingiverse&lt;/a>같은 사이트에서 다운로드 해서 사용하기&lt;/li>
+&lt;li>특정 응용에 따른 S/W가 나와서 쉽게 모델링이 가능하게 하는 것&lt;/li>
+&lt;/ul>
+&lt;p>첫번째 경우 Thingiverse가 계속 확장이 되어서, 일반 회사들도 자신들의 계정으로 페이지를 만들어서 디자인을 오픈하기도 한다.  &lt;a href="http://www.thingiverse.com/GE/about" target="_blank">GE&lt;/a>, &lt;a href="http://www.thingiverse.com/adafruit/about" target="_blank">Adafruit&lt;/a> …&lt;/p>
+&lt;p>두번째의 경우 Makerbot에서는 자신들의 프린터와 호환이 되는 App을 만들 것을 권장하며, &lt;a href="http://www.makerbot.com/developers" target="_blank">MakerBot Developer Program&lt;/a>을 운영해서 ECO System을 구축하고 있다. 하기는 &lt;a href="http://www.makerbot.com/readyapps" target="_blank">Makerbot Ready App&lt;/a>으로 소개된 프로그램들이다.&lt;/p></description></item><item><title>3D 프린팅 팁 – 첫번째 레이어의 인쇄</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%ED%8C%81-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EB%A0%88%EC%9D%B4%EC%96%B4%EC%9D%98-%EC%9D%B8%EC%87%84/</link><pubDate>Mon, 06 Oct 2014 06:40:26 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%ED%8C%81-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EB%A0%88%EC%9D%B4%EC%96%B4%EC%9D%98-%EC%9D%B8%EC%87%84/</guid><description>
+&lt;p>3D 프린터에서 프린팅을 할때 가장 중요한 것은 출력하려는 모델이 베드에 잘 붙어있는 것이다. 이렇게 하기위해서는 몇가지 조치사항이 필요하다.&lt;/p>
+&lt;h3 id="베드-레벨링">베드 레벨링&lt;/h3>
+&lt;p>노즐과 베드와의 사이에 A4용지 하나가 들어갈 정도로 맞춘다. 만약 간격이 이 보다 더 가까우면 원료가 잘 나오지 못해서 끊어지듯이 그려지며, 간격이 넓으면 필라멘트가 베드에 잘 붙지 않는다.&lt;/p>
+&lt;h3 id="베드의-소재">베드의 소재&lt;/h3>
+&lt;p>베드에 잘붙이기 위해서 덕성 테이프, 캡톤(Kapton)테이프, PET등이 사용이 되며, Ultimkaer의 경우 딱풀을 주기도 한다. &lt;a href="http://openmicrolab.com/pei-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%B2%A0%EB%93%9C/" target="_blank">PEI 재질의 베드&lt;/a>를 사용하는 경우도 있다.&lt;/p>
+&lt;h3 id="프린터-설정">프린터 설정&lt;/h3>
+&lt;ul>
+&lt;li>온도는 5도 정도 높이고 – 따라서 쿨링팬은 off&lt;/li>
+&lt;li>속도는 약 30-50%로 줄이고&lt;/li>
+&lt;li>&lt;strong>&lt;span style="text-decoration: underline;">적층 두께는 노즐의 직경 정도 만큼&lt;/span>&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>&lt;span style="text-decoration: underline;">압출량은 일반적으로 200%인데 이 값은 레이어 두께 대비 값이므로 잘 설정을 해야 한다&lt;/span>&lt;/strong>.&lt;/li>
+&lt;/ul></description></item><item><title>3D 프린팅 참고 도서 – 과학과 교육 및 지속가능한 발전을 위한 저비용 3D프린팅</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%B0%B8%EA%B3%A0-%EB%8F%84%EC%84%9C-%EA%B3%BC%ED%95%99%EA%B3%BC-%EA%B5%90%EC%9C%A1-%EB%B0%8F-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%9C%EC%A0%84/</link><pubDate>Fri, 19 Sep 2014 06:12:59 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%B0%B8%EA%B3%A0-%EB%8F%84%EC%84%9C-%EA%B3%BC%ED%95%99%EA%B3%BC-%EA%B5%90%EC%9C%A1-%EB%B0%8F-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%9C%EC%A0%84/</guid><description>
+&lt;p>&lt;a href="http://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EA%B4%80%EB%A0%A8-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC/" target="_blank">지난번 포스팅&lt;/a>에서 언급한 3D 프린팅관련 책자인 &lt;span style="color: #222222;">“&lt;/span>&lt;strong>과학과 교육 및 지속가능한 발전을 위한 저비용 3D프린팅&lt;/strong>&lt;span style="color: #222222;">“은 이태리의 &lt;span style="color: #000000;">ICTP (International Centre for Theoretical Physics) 가 주최한 “Low-cost 3D Printing for Science, Education and Sustainable Development” 라는 워크샵의 발표집이다. 이 자료를 &lt;a href="http://knowledgebasin.com/index.php?" target="_blank">지식함지&lt;/a>라는 곳에서 한글번역을 했으며, Creative Commons Attribution-Noncommercial-NoDerivative Works 3.0 Unported License 를 따른다.&lt;/span>&lt;/span>&lt;/p>
+&lt;p>즉 &lt;a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.ko" target="_blank">CCL에 따르면 &lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>내용을 변경하거나 덧붙이는 등의 작업을 통해서 파생버전을 만들 수 없고, 상업적으로 이용할 수 없으며, 작가나 저작권자가 정한 방식대로 저작권이 누구에게 있는지를 알려주어야 한다.&lt;/p></description></item><item><title>3D 프린팅용 오픈소스 소프트웨어</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</link><pubDate>Fri, 19 Sep 2014 03:32:33 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</guid><description>
+&lt;p>3D 프린팅을 위해서는 4가지 소프트웨어가 필요하다.&lt;/p>
+&lt;ol>
+&lt;li>프린팅할 물체를 모델링 하는 소프트웨어&lt;/li>
+&lt;li>이 3D 모델을 각 레이어 별로 잘라주는 슬라이스 소프트웨어 – STL파일을 G코드로 변환&lt;/li>
+&lt;li>G 코드를 프린터로 전송해 주는 프로그램 – 보통 3D printing host software라고 부른다.&lt;/li>
+&lt;li>3D 프린터에 내장되어 있는 펌웨어&lt;/li>
+&lt;/ol>
+&lt;p>일단 1번은 디자인을 위한 것이고 4번은 기기에서 돌아가는 소프트웨어 이니 논외로 하고 슬라이서 프로그램과 호스트 프로그램을 살펴보자. 일반적으로 이 두 프로그램이 합쳐져 있다. 즉 호스트 프로그램에서 슬라이서 프로그램을 가져다 쓰는 형태이다.&lt;/p></description></item></channel></rss>

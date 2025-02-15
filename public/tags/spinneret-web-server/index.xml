@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spinneret Web Server on OpenMicroLab</title><link>https://openmicrolab.com/tags/spinneret-web-server/</link><description>Recent content in Spinneret Web Server on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 19 Apr 2011 11:25:11 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/spinneret-web-server/index.xml" rel="self" type="application/rss+xml"/><item><title>Spinneret Web Server 보드 사용기</title><link>https://openmicrolab.com/spinneret-web-server-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</link><pubDate>Tue, 19 Apr 2011 11:25:11 +0000</pubDate><guid>https://openmicrolab.com/spinneret-web-server-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</guid><description>
+&lt;p>Spinneret의 뜻은 (동물) (거미·누에 등의) 방적 돌기 ((실이 나오는 구멍))… 보드에 뒷면에 거미와 거미줄 그림이 있다….&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile21.uf.155924474DAD7100060ABA.jpg" class="aligncenter" width="426" height="158" alt="" filename="2011-04-19 20.22.00.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>이 보드는 Parallax(&lt;a href="http://www.parallax.com/">www.parallax.com&lt;/a>)사의 Propeller칩과 Wiznet(&lt;a href="http://www.wiznet.co.kr/">www.wiznet.co.kr&lt;/a>)의 W5100이 내장된 웹서버 보드이다.&lt;br>
+웹서버 어플리케이션을 위해 mSD카드도 장착이 되어 있다.&lt;br>
+Open Source Hardware 플랫폼을 지향하기 때문에 모든 자료들은 웹상에 오픈이 되어 있다.&lt;br>
+하지만 Propellar칩은 코아가 8개가 들어간 병렬칩으로 좀 생소하기 때문에 익숙해 지기까지는 좀 시간이 걸릴 것 같다.&lt;br>
+각 코아는 Cog라고 불린다. 아래 그림 참고..&lt;/p></description></item></channel></rss>

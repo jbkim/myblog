@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>사설 IP on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%82%AC%EC%84%A4-ip/</link><description>Recent content in 사설 IP on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 28 Jan 2014 07:19:53 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%82%AC%EC%84%A4-ip/index.xml" rel="self" type="application/rss+xml"/><item><title>사설 IP 대역</title><link>https://openmicrolab.com/%EC%82%AC%EC%84%A4-ip-%EB%8C%80%EC%97%AD/</link><pubDate>Tue, 28 Jan 2014 07:19:53 +0000</pubDate><guid>https://openmicrolab.com/%EC%82%AC%EC%84%A4-ip-%EB%8C%80%EC%97%AD/</guid><description>
+&lt;p>이런 것도 찾아볼 때가 있으니, 정리~&lt;/p>
+&lt;ul>
+&lt;li>A 클래스 : 10.0.0.0 ~ 10.255.255.255&lt;/li>
+&lt;li>B 클래스 : 172.16.0.0 ~ 172.31.255.255&lt;/li>
+&lt;li>C 클래스 : 192.168.0.0 ~ 192.168.255.255&lt;/li>
+&lt;/ul></description></item></channel></rss>

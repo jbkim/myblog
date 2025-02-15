@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Repetier Server on OpenMicroLab</title><link>https://openmicrolab.com/tags/repetier-server/</link><description>Recent content in Repetier Server on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 19 Mar 2018 05:36:47 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/repetier-server/index.xml" rel="self" type="application/rss+xml"/><item><title>Repetier Server</title><link>https://openmicrolab.com/repetier-server/</link><pubDate>Mon, 19 Mar 2018 05:36:47 +0000</pubDate><guid>https://openmicrolab.com/repetier-server/</guid><description>
+&lt;p>&lt;a href="https://www.repetier-server.com/" target="_blank" rel="noopener noreferrer">Repetier Server&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>원격에서 3D프린터를 컨트롤, 모니터링, 프린팅이 가능한 솔루션.&lt;/li>
+&lt;li>윈도우즈, 리눅스, 맥 또는 Raspberri Pi에서 사용가능 – &lt;a href="https://www.repetier-server.com/download-repetier-server/" target="_blank" rel="noopener noreferrer">다운로드&lt;/a>&lt;/li>
+&lt;li>Free, OEM, Pro 3가지 버전&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4252" src="https://res.cloudinary.com/openmicrolab/image/upload/v1521437370/free_pro_fn24o7.png" width="480" height="797" />
+&lt;img loading="lazy" class="alignnone wp-image-4253" src="https://res.cloudinary.com/openmicrolab/image/upload/v1521437370/oem_pro_qkpg2e.png" width="487" height="825" /></description></item><item><title>무선으로 3D Printer 사용하기</title><link>https://openmicrolab.com/%EB%AC%B4%EC%84%A0%EC%9C%BC%EB%A1%9C-3d-printer-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 21 Nov 2017 02:48:05 +0000</pubDate><guid>https://openmicrolab.com/%EB%AC%B4%EC%84%A0%EC%9C%BC%EB%A1%9C-3d-printer-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>3D프린팅을 위해서 SD 메모리를 사용하거나,  USB 케이블을 연결해서 프린팅을 한다. 하지만 USB 케이블을 사용하면, 장시간 프린팅시 1대의 PC가 프린팅만을 위해 사용될 수 밖에 없다. 무선으로 프린팅시 다음과 같은 장점이 있다.&lt;/p>
+&lt;ul>
+&lt;li>The noisy printer can be placed in a sperate location allowing for different ventilation options, and convenient noise reduction.&lt;/li>
+&lt;li>Less mess.  Cords can be ugly and can be trip hazards.&lt;/li>
+&lt;li>Multiple computers are becoming a household norm.  Sick of giving up your computer for your significant other, child, or visiting a friend to play with your 3D printer?  Go wireless.&lt;/li>
+&lt;li>3D printing is a long process.  Wouldn’t it be nice to be able to start a print job from a remote location to be completed by the time you get home?&lt;/li>
+&lt;/ul>
+&lt;p>그리고 이 USB케이블을 사용하지 않고 무선으로 프린팅을 하기위해 OctoPrint, AstroPrint, Repetier Server등의 Host 프로그램이 필요하다.&lt;/p></description></item></channel></rss>

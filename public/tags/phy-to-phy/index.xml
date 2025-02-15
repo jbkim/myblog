@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Phy to Phy on OpenMicroLab</title><link>https://openmicrolab.com/tags/phy-to-phy/</link><description>Recent content in Phy to Phy on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 01 May 2014 00:19:05 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/phy-to-phy/index.xml" rel="self" type="application/rss+xml"/><item><title>이더넷 PHY to PHY 연결</title><link>https://openmicrolab.com/%EC%9D%B4%EB%8D%94%EB%84%B7-phy-to-phy-%EC%97%B0%EA%B2%B0/</link><pubDate>Thu, 01 May 2014 00:19:05 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B4%EB%8D%94%EB%84%B7-phy-to-phy-%EC%97%B0%EA%B2%B0/</guid><description>
+&lt;div title="Page 1">
+&lt;p>
+이전 포스트 &lt;a href="http://openmicrolab.com/transformer%EC%97%86%EC%9D%B4-%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/" target="_blank">트랜스포머 없이 이더넷 구현하기 &lt;/a>의 추가적인 자료  &amp;#8211; MICREL에서 나온 자료&amp;#8230; 설명이 잘되어 있다. 이것은 PHY to PHY로 연결을 할 때 필요한 내용이다. 즉 상대측이 internal DC bias가 있을 경우와 없을 경우 2가지로 나뉜다.
+&lt;/p>
+&lt;p>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/internal_bias.png" width="532" height="267" />
+&lt;/p>
+&lt;p>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/without_internal_bias.png" width="527" height="258" />
+&lt;/p>
+&lt;p>
+&lt;strong>관련자료는&lt;/strong> : &lt;a href="http://www.micrel.com/_PDF/Ethernet/app-notes/an-120.pdf" target="_blank">Capacitive Coupling Ethernet Transceivers without Using Transformers &lt;/a>
+&lt;/p>
+&lt;/div></description></item></channel></rss>

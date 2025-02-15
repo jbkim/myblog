@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UDP 포트 넘버 on OpenMicroLab</title><link>https://openmicrolab.com/tags/udp-%ED%8F%AC%ED%8A%B8-%EB%84%98%EB%B2%84/</link><description>Recent content in UDP 포트 넘버 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 11 Feb 2014 09:06:07 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/udp-%ED%8F%AC%ED%8A%B8-%EB%84%98%EB%B2%84/index.xml" rel="self" type="application/rss+xml"/><item><title>TCP, UDP 포트 넘버</title><link>https://openmicrolab.com/tcp-udp-%ED%8F%AC%ED%8A%B8-%EB%84%98%EB%B2%84/</link><pubDate>Tue, 11 Feb 2014 09:06:07 +0000</pubDate><guid>https://openmicrolab.com/tcp-udp-%ED%8F%AC%ED%8A%B8-%EB%84%98%EB%B2%84/</guid><description>
+&lt;p>TCP, UDP의 포트 넘버 0~1023번까지는 Well-Known Port로 불리우며 &lt;a href="http://www.iana.org/" target="_blank">IANA&lt;/a>에서 TCP 및 UDP 포트넘버의 일부이다. 일반적으로 포트 번호는 다음과 같이 세 가지로 나눌 수 있다.&lt;/p>
+&lt;ul>
+&lt;li>0번 ~ 1023번: 잘 알려진 포트 (well-known port)&lt;/li>
+&lt;li>1024번 ~ 49151번: 등록된 포트 (registered port)&lt;/li>
+&lt;li>49152번 ~ 65535번: 동적 포트 (dynamic port)&lt;/li>
+&lt;/ul>
+&lt;p>더 자세한 정보:  &lt;a href="http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#cite_note-IANA-1" target="_blank">&lt;a href="http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#cite_note-IANA-1">http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#cite_note-IANA-1&lt;/a>&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>따라서 응용프로그램에서 다른 포트와 충돌을 일으키지않고 사용을 하려면 49152 ~ 65535사이의 포트를 사용을 한다. 만약 Registered Port에 등록을 하려면 아래 주소에서 신청을 하면 되는데, IANA에서 심사후 등록여부를 결정한다고 한다. &lt;a href="http://www.iana.org/cgi-bin/usr-port-number.pl" target="_blank">&lt;a href="http://www.iana.org/cgi-bin/usr-port-number.pl">http://www.iana.org/cgi-bin/usr-port-number.pl&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

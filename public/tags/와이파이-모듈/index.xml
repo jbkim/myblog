@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>와이파이 모듈 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EB%AA%A8%EB%93%88/</link><description>Recent content in 와이파이 모듈 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 23 Jan 2015 06:36:43 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EB%AA%A8%EB%93%88/index.xml" rel="self" type="application/rss+xml"/><item><title>SparkCore 와이파이 모듈 deep update</title><link>https://openmicrolab.com/sparkcore-%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EB%AA%A8%EB%93%88-deep-update/</link><pubDate>Fri, 23 Jan 2015 06:36:43 +0000</pubDate><guid>https://openmicrolab.com/sparkcore-%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EB%AA%A8%EB%93%88-deep-update/</guid><description>
+&lt;p>CLI를 통해 &lt;a href="https://www.spark.io/" target="_blank">SparkCore&lt;/a>의 내부 펌웨어 업데이트 순서&lt;/p>
+&lt;h4 id="1-spark-cli-설치">1. Spark CLI 설치&lt;/h4>
+&lt;p>&lt;a href="http://nodejs.org/">node.js&lt;/a> 설치&lt;/p>
+&lt;blockquote>
+&lt;p>$ sudo npm install -g spark-cli&lt;/p>
+&lt;p>$ spark cloud login&lt;/p>&lt;/blockquote>
+&lt;h4 id="2-a-hrefhttpopenmicrolabcomdfu-util-device-firmware-upgrade-utilities-target_blankdfu-util-설치a">2. &lt;a href="http://openmicrolab.com/dfu-util-device-firmware-upgrade-utilities/" target="_blank">dfu-util  설치&lt;/a>&lt;/h4>
+&lt;blockquote>
+&lt;p>brew install dfu-util&lt;/p>&lt;/blockquote>
+&lt;h4 id="3-디바이스를-dfu-mode로-진입">3. 디바이스를 dfu mode로 진입&lt;/h4>
+&lt;p>USB 케이블을 연결 후 Mode 버튼과 Reset 버튼을 동시에 누른후 Reset  버튼을 뗀다.&lt;/p>
+&lt;p>다음 커멘드를 실행한다.&lt;/p>
+&lt;blockquote>
+&lt;p>spark flash –usb deep_update_2014_06&lt;/p>&lt;/blockquote>
+&lt;p>참고: &lt;a href="https://github.com/spark/spark-cli#performing-a-deep-update" target="_blank">&lt;a href="https://github.com/spark/spark-cli#performing-a-deep-update">https://github.com/spark/spark-cli#performing-a-deep-update&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

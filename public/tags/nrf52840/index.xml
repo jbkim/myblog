@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nrf52840 on OpenMicroLab</title><link>https://openmicrolab.com/tags/nrf52840/</link><description>Recent content in Nrf52840 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 03 Sep 2021 05:58:01 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/nrf52840/index.xml" rel="self" type="application/rss+xml"/><item><title>nRF52 Segger Embedded Studio 설정 – CMSIS Configuration Wizard</title><link>https://openmicrolab.com/nrf52-segger-embedded-studio-%EC%84%A4%EC%A0%95-cmsis-configuration-wizard/</link><pubDate>Fri, 03 Sep 2021 05:58:01 +0000</pubDate><guid>https://openmicrolab.com/nrf52-segger-embedded-studio-%EC%84%A4%EC%A0%95-cmsis-configuration-wizard/</guid><description>
+&lt;p>노르딕에서 제공하는 예제코드의 경우 SDK 설정이 sdk_config.h에서 이루어 진다. 문제는 이 파일의 사이즈가 크고 #ifdef 등으로 설정이 되어 있어서 파일 자체를 보기가 불편하다. 그래서 이 설정을 쉽게 하는 툴이 제공이 되는데, 기본 SES 설정에는 없어서 따로 설정을 해야 한다.&lt;/p>
+&lt;ol type="1">
+&lt;li>
+Go to &lt;b>File -> Open Studio Folder&amp;#8230; -> External Tools Configuration&lt;/b>.
+&lt;/li>
+&lt;li>
+The tools.xml file will be opened in the editor. &lt;div class="fragment">
+&lt;/div>
+&lt;/li>
+&lt;/ol>
+&lt;p>다음의 코드를 삽입한다&lt;/p>
+&lt;div class="line">
+&lt;item name=&lt;span class="stringliteral">&amp;#8220;Tool.CMSIS_Config_Wizard&amp;#8221;&lt;/span> wait=&lt;span class="stringliteral">&amp;#8220;no&amp;#8221;&lt;/span>>
+&lt;/div>
+&lt;div class="line">
+     &lt;menu>&amp;CMSIS Configuration Wizard&lt;/menu>
+&lt;/div>
+&lt;div class="line">
+     &lt;text>CMSIS Configuration Wizard&lt;/text>
+&lt;/div>
+&lt;div class="line">
+     &lt;tip>Open a configuration file in CMSIS Configuration Wizard&lt;/tip>
+&lt;/div>
+&lt;div class="line">
+     &lt;key>Ctrl+Y&lt;/key>
+&lt;/div>
+&lt;div class="line">
+     &lt;match>*config*.h&lt;/match>
+&lt;/div>
+&lt;div class="line">
+     &lt;message>CMSIS Config&lt;/message>
+&lt;/div>
+&lt;div class="line">
+     &lt;commands>
+&lt;/div>
+&lt;div class="line">
+         java -jar &amp;quot;$(CMSIS_CONFIG_TOOL)&amp;quot; &amp;quot;$(InputPath)&amp;quot;
+&lt;/div>
+&lt;div class="line">
+     &lt;/commands>
+&lt;/div>
+&lt;div>
+&lt;/item>
+&lt;/div>
+&lt;p>참고 – &lt;a href="https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk5.v15.0.0%2Fsdk_config.html" target="_blank" rel="noopener">&lt;a href="https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk5.v15.0.0%2Fsdk_config.html">https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk5.v15.0.0%2Fsdk_config.html&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

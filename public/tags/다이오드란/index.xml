@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>다이오드란 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%8B%A4%EC%9D%B4%EC%98%A4%EB%93%9C%EB%9E%80/</link><description>Recent content in 다이오드란 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 24 Jan 2017 03:22:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%8B%A4%EC%9D%B4%EC%98%A4%EB%93%9C%EB%9E%80/index.xml" rel="self" type="application/rss+xml"/><item><title>전자부품에 대한 기본 지식</title><link>https://openmicrolab.com/%EC%A0%84%EC%9E%90%EB%B6%80%ED%92%88%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B8%B0%EB%B3%B8-%EC%A7%80%EC%8B%9D/</link><pubDate>Tue, 24 Jan 2017 03:22:21 +0000</pubDate><guid>https://openmicrolab.com/%EC%A0%84%EC%9E%90%EB%B6%80%ED%92%88%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B8%B0%EB%B3%B8-%EC%A7%80%EC%8B%9D/</guid><description>
+&lt;p>ROHM 반도체 사이트에 나와 있는 &lt;a href="http://www.rohm.co.kr/web/korea/en_index" target="_blank">전자부품에 대한 기본 지식&lt;/a> 정보. 전자공학을 전공하면 배우는 내용이지만 다시 한번 리뷰를 할 수 있어서 좋다.&lt;/p>
+&lt;ul id="aui_3_2_0_1652">
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#transistor" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#transistor_1">트랜지스터란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#diode" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#diode_1">다이오드란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#sic" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#sic_1">SiC 파워 디바이스란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#led" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#led_1">LED란？&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#pi" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#pi_1">포토 인터럽터란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#resistor" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#resistor_1">저항기란？&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#tc" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#tc_1">탄탈 콘덴서란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#da" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#da_1">D/A 컨버터란？&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#ad" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#ad_1">A/D 컨버터란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#op" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#op_1">OP Amp란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#memory" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#memory_1">반도체 메모리란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#dcdc" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#dcdc_1">DC/DC 컨버터란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#motor" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#motor_1">모터란?&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;p>그리고 첨단기술에서 발행하는 주로 일본잡지를 번역한 &lt;a href="http://magazine.hellot.net/magz/article/articleAll.do" target="_blank">전자기술&lt;/a>의 내용도 실용적인 내용이 있어서 괜찮다. 가령 이런자료 – &lt;a href="http://magazine.hellot.net/magz/article/articleDetail.do?flag=all&amp;showType=showType1&amp;articleId=ARTI_000000000038164&amp;articleAllListSortType=sort_1&amp;page=1&amp;selectYearMonth=200606&amp;subCtgId=" target="_blank">반드시 주의해야할 모터/릴레이 파워 설계&lt;/a>&lt;/p></description></item></channel></rss>

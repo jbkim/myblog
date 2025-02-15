@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker for IoT on OpenMicroLab</title><link>https://openmicrolab.com/tags/docker-for-iot/</link><description>Recent content in Docker for IoT on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 21 Aug 2018 01:43:59 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/docker-for-iot/index.xml" rel="self" type="application/rss+xml"/><item><title>Resin.io 사용법</title><link>https://openmicrolab.com/resin-io-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Tue, 21 Aug 2018 01:43:59 +0000</pubDate><guid>https://openmicrolab.com/resin-io-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>&lt;a href="https://resin.io/" target="_blank" rel="noopener noreferrer">Resin.io&lt;/a>의 홈페이지에는 다음과 같이 자신들의 서비스를 설명을 한다.&lt;/p>
+&lt;blockquote>
+&lt;p class="header__subtitle">
+Resin.io brings the benefits of Linux containers to the IoT. Develop iteratively, deploy safely, and manage at scale.
+&lt;/p>&lt;/blockquote>
+&lt;p class="header__subtitle">
+&lt;span style="color: #0000ff;">&lt;strong>Linux containers to the IoT&amp;#8230; 리눅스 기반의 IoT 디바이스를 위한 도커같은 서비스 일 것 같다.&lt;/strong>&lt;/span>
+&lt;/p>
+&lt;h2 class="header__subtitle" id="resinio-사용법">Resin.io 사용법&lt;/h2>
+&lt;h3 id="account-setup">Account setup&lt;/h3>
+&lt;p>resin.io 에 계정을 생성후 SSH 키 설정하여 resin에 저장을 하는데,  깃헙계정으로 로그인 할 경우 깃헙계정에 저장된 SSH 키 중 하나를 선택한다.&lt;/p>
+&lt;h3 id="ssh-키-확인">SSH 키 확인&lt;/h3>
+&lt;blockquote>
+&lt;p>ls -al ~/.ssh&lt;/p></description></item></channel></rss>

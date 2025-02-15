@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech Symposia 2018 on OpenMicroLab</title><link>https://openmicrolab.com/tags/tech-symposia-2018/</link><description>Recent content in Tech Symposia 2018 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 16 Nov 2018 05:03:08 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/tech-symposia-2018/index.xml" rel="self" type="application/rss+xml"/><item><title>arm Tech Symposia 2018</title><link>https://openmicrolab.com/arm-tech-symposia-2018/</link><pubDate>Fri, 16 Nov 2018 05:03:08 +0000</pubDate><guid>https://openmicrolab.com/arm-tech-symposia-2018/</guid><description>
+&lt;p>&lt;a href="http://myseminar.co.kr/arm/ARM_01.asp" target="_blank" rel="noopener noreferrer">arm의 Tech Symposia 2018&lt;/a>&lt;/p>
+&lt;h3 id="arm의iot-서비스">arm의IoT 서비스&lt;/h3>
+&lt;p>역시 보안이 중요하다. PSA는 Platform Security Architecture의 약자&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4467" src="https://res.cloudinary.com/openmicrolab/image/upload/v1542343612/arm_service_gzngq6.jpg" width="664" height="277" />
+&lt;h3 id="1-trillion">1 Trillion&lt;/h3>
+&lt;p>1 Trillion – 1조,  Billion – 10억. 2017년까지 1천억개가 26년 걸렸는데, 4년(2017~2021년)만에 이 숫자가 달성된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4468" src="https://res.cloudinary.com/openmicrolab/image/upload/v1542343615/Connected_device_kjkjwg.jpg" width="649" height="407" />
+&lt;h3 id="embedded-linux-관련-수치들">Embedded Linux 관련 수치들&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4469" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_2961/v1542343612/embedded_linux_acydxl.jpg" width="676" height="400" />
+&lt;h3 id="fifth-wave">Fifth wave&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4471" src="https://res.cloudinary.com/openmicrolab/image/upload/v1542343612/arm_5th_wave_kqizd1.jpg" width="655" height="356" />
+&lt;p>1 – Mainframe, 2 – PC, 3 – Internet, 4 -Mobile, Cloud에 이어서5th Wave는 Data driven computing 시대가 될 것이며, 이것은&lt;/p>
+&lt;ul>
+&lt;li>Generating Data : IoT&lt;/li>
+&lt;li>Transporting Data : 5G&lt;/li>
+&lt;li>Processing Data: AI&lt;/li>
+&lt;/ul>
+&lt;h3 id="processing-at-the-edge">Processing at the Edge&lt;/h3>
+&lt;p>Bandwidth, latency, power, security, cost 때문&lt;/p></description></item></channel></rss>

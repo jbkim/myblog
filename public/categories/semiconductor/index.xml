@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Semiconductor on OpenMicroLab</title><link>https://openmicrolab.com/categories/semiconductor/</link><description>Recent content in Semiconductor on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 05 Apr 2020 07:25:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/semiconductor/index.xml" rel="self" type="application/rss+xml"/><item><title>Poly Switch 사용법 – 스펙 결정</title><link>https://openmicrolab.com/poly-switch-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%8A%A4%ED%8E%99-%EA%B2%B0%EC%A0%95/</link><pubDate>Sun, 05 Apr 2020 07:25:09 +0000</pubDate><guid>https://openmicrolab.com/poly-switch-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%8A%A4%ED%8E%99-%EA%B2%B0%EC%A0%95/</guid><description>
+&lt;h3 id="polyswitch">PolySwitch&lt;/h3>
+&lt;p>회로에 과전류가 유입되면 열에 의하여 폴리스위치의 저항값이 커진다. 이에 따라 과전류를 제한하여 기기의 내부회로를 보호하게 된다. 반대로 소자의 온도가 낮아지게되면 저항값은 다시 초기상태로 돌아와 회로가 정상동작 하게 된다.&lt;/p>
+&lt;h3 id="용어">용어&lt;/h3>
+&lt;ul>
+&lt;li>Ih ( Hold Current ) : 최대 사용가능 전류&lt;br>
+주위온도 20℃에서 이 전류값까지는 절대 동작(전류차단)하지 않으며, 정상적으로 동작하는 전류의 최대값을 말함.&lt;/li>
+&lt;li>It ( Trip Current ) : 최소 동작가능 전류&lt;br>
+주위온도 20℃에서 이 전류값부터는 절대적으로 동작(전류차단)하며, 과전류로 판단할 수 있는 최소전류값을 말함&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>즉 Ih 부터 It사이에서 동작을 하는데, 얼마나 빠르게 퓨즈가 동작하는지 여부는 Time-to-Trip Graph를 참조해야 한다.&lt;/p></description></item><item><title>1불짜리 MCU</title><link>https://openmicrolab.com/1%EB%B6%88%EC%A7%9C%EB%A6%AC-mcu/</link><pubDate>Wed, 28 Aug 2019 14:33:15 +0000</pubDate><guid>https://openmicrolab.com/1%EB%B6%88%EC%A7%9C%EB%A6%AC-mcu/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-4619" src="https://res.cloudinary.com/openmicrolab/image/upload/v1567002552/1MCU_ribcwa.png" width="2304" height="632" />
+&lt;p>&lt;a href="https://jaycarlson.net/microcontrollers/" target="_blank" rel="noopener">잘 정리된 1불짜리 MCU 리스트&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4621" src="https://res.cloudinary.com/openmicrolab/image/upload/v1567002548/MCUs_xqorml.png" width="1836" height="564" />
+&lt;p>위 칩 들의  스펙을 비교할 수 있다.&lt;/p></description></item><item><title>LED 회로 주의점</title><link>https://openmicrolab.com/led-%ED%9A%8C%EB%A1%9C-%EC%A3%BC%EC%9D%98%EC%A0%90/</link><pubDate>Tue, 27 Aug 2019 01:33:18 +0000</pubDate><guid>https://openmicrolab.com/led-%ED%9A%8C%EB%A1%9C-%EC%A3%BC%EC%9D%98%EC%A0%90/</guid><description>
+&lt;blockquote>
+&lt;p>각  LED의 최대 전류를 넘으면 안됨. 하지만 각 LED 소자의 Forward Voltage가 조금씩 다를 수 있기 때문에 각각의 LED에 저항을 달으라는 이야기.&lt;/p>&lt;/blockquote>
+&lt;img loading="lazy" class="alignnone wp-image-4615" src="https://res.cloudinary.com/openmicrolab/image/upload/v1566869294/LED_Circuit_l8aoww.png" width="654" height="486" /></description></item><item><title>칩저항 허용 전류</title><link>https://openmicrolab.com/%EC%B9%A9%EC%A0%80%ED%95%AD-%ED%97%88%EC%9A%A9-%EC%A0%84%EB%A5%98/</link><pubDate>Tue, 03 Apr 2018 02:20:21 +0000</pubDate><guid>https://openmicrolab.com/%EC%B9%A9%EC%A0%80%ED%95%AD-%ED%97%88%EC%9A%A9-%EC%A0%84%EB%A5%98/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-4269" src="https://res.cloudinary.com/openmicrolab/image/upload/v1522721939/ChipRes_fobkrf.jpg" width="550" height="541" /></description></item><item><title>Digital Temperature Sensor – AS6200C</title><link>https://openmicrolab.com/digital-temperature-sensor-as6200c/</link><pubDate>Sat, 10 Mar 2018 02:40:24 +0000</pubDate><guid>https://openmicrolab.com/digital-temperature-sensor-as6200c/</guid><description>
+&lt;h3 id="as6200c">AS6200C&lt;/h3>
+&lt;ul>
+&lt;li>-40~125°C 지원되는 I2C방식의 온도센서&lt;/li>
+&lt;li>1.5 × 1 mm &lt;a href="https://www.allaboutcircuits.com/technical-articles/comparing-voltages-in-very-tight-spaces-a-new-comparator-from-maxim/" target="_blank" rel="noopener noreferrer">WLCSP&lt;/a> package&lt;/li>
+&lt;li>&lt;a href="http://ams.com/eng/content/download/1114551/2538659/556498" target="_blank" rel="noopener noreferrer">datasheet&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4236" src="https://res.cloudinary.com/openmicrolab/image/upload/v1520649475/AS6200C_m2rfcj.png" width="1306" height="434" />
+&lt;p> &lt;/p></description></item><item><title>전자부품에 대한 기본 지식</title><link>https://openmicrolab.com/%EC%A0%84%EC%9E%90%EB%B6%80%ED%92%88%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B8%B0%EB%B3%B8-%EC%A7%80%EC%8B%9D/</link><pubDate>Tue, 24 Jan 2017 03:22:21 +0000</pubDate><guid>https://openmicrolab.com/%EC%A0%84%EC%9E%90%EB%B6%80%ED%92%88%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B8%B0%EB%B3%B8-%EC%A7%80%EC%8B%9D/</guid><description>
+&lt;p>ROHM 반도체 사이트에 나와 있는 &lt;a href="http://www.rohm.co.kr/web/korea/en_index" target="_blank">전자부품에 대한 기본 지식&lt;/a> 정보. 전자공학을 전공하면 배우는 내용이지만 다시 한번 리뷰를 할 수 있어서 좋다.&lt;/p>
+&lt;ul id="aui_3_2_0_1652">
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#transistor" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#transistor_1">트랜지스터란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#diode" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#diode_1">다이오드란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#sic" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#sic_1">SiC 파워 디바이스란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#led" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#led_1">LED란？&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#pi" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#pi_1">포토 인터럽터란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#resistor" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#resistor_1">저항기란？&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#tc" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#tc_1">탄탈 콘덴서란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#da" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#da_1">D/A 컨버터란？&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#ad" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#ad_1">A/D 컨버터란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#op" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#op_1">OP Amp란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#memory" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#memory_1">반도체 메모리란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#dcdc" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#dcdc_1">DC/DC 컨버터란?&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://www.rohm.co.kr/web/korea/en_index#motor" data-s-object-id="http://www.rohm.co.kr/web/korea/en_index#motor_1">모터란?&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;p>그리고 첨단기술에서 발행하는 주로 일본잡지를 번역한 &lt;a href="http://magazine.hellot.net/magz/article/articleAll.do" target="_blank">전자기술&lt;/a>의 내용도 실용적인 내용이 있어서 괜찮다. 가령 이런자료 – &lt;a href="http://magazine.hellot.net/magz/article/articleDetail.do?flag=all&amp;showType=showType1&amp;articleId=ARTI_000000000038164&amp;articleAllListSortType=sort_1&amp;page=1&amp;selectYearMonth=200606&amp;subCtgId=" target="_blank">반드시 주의해야할 모터/릴레이 파워 설계&lt;/a>&lt;/p></description></item><item><title>Fabless: The Transformation of the Semiconductor Industry</title><link>https://openmicrolab.com/fabless-the-transformation-of-the-semiconductor-industry/</link><pubDate>Sat, 05 Sep 2015 13:16:55 +0000</pubDate><guid>https://openmicrolab.com/fabless-the-transformation-of-the-semiconductor-industry/</guid><description>
+&lt;div class="vw-text restore floatcontainer">
+무료로 다운로드 받은 책 : &lt;a href="https://www.dropbox.com/s/o7isyzlwiupxeq5/Fabless%20Book%20for%20SemiWiki%20Subscribers.pdf?dl=0" target="_blank">다운로드&lt;/a>
+&lt;/div>
+&lt;div class="vw-text restore floatcontainer">
+&lt;a href="https://openmicrolab.com/images/2015/09/Book-Cover-Final.jpg">&lt;img loading="lazy" class="alignnone size-medium wp-image-3402" src="https://openmicrolab.com/images/2015/09/Book-Cover-Final-200x300.jpg" alt="Book Cover Final" width="200" height="300" srcset="https://openmicrolab.com/images/2015/09/Book-Cover-Final-200x300.jpg 200w, https://openmicrolab.com/images/2015/09/Book-Cover-Final.jpg 510w" sizes="(max-width: 200px) 100vw, 200px" />&lt;/a>
+&lt;/div>
+&lt;div id="post_message_23864" class="vw-text restore floatcontainer">
+&lt;span style="font-size: medium;">&lt;b>Table of Contents&lt;/b>&lt;br /> &lt;i>Chapter 1: The Semiconductor Century&lt;/i>&lt;br /> &lt;i>Chapter 2: The ASIC Business&lt;/i>&lt;br /> &lt;i>In Their Own Words: VLSI Technology&lt;/i>&lt;br /> &lt;i>In Their Own Words: eSilicon Corporation&lt;/i>&lt;br /> &lt;i>Chapter 3: The FPGA&lt;/i>&lt;br /> &lt;i>In Their Own Words: Xilinx &lt;/i>&lt;br /> &lt;i>Chapter 4: Moving To The Fabless Model&lt;/i>&lt;br /> &lt;i>In Their Own Words: Chips And Technologies&lt;/i>&lt;br /> &lt;i>Chapter 5: The Rise Of The Foundry&lt;/i>&lt;br /> &lt;i>In Their Own Words: TSMC And Open Innovation Platform&lt;/i>&lt;br /> &lt;i>In Their Own Words: GLOBALFOUNDRIES&lt;/i>&lt;br /> &lt;i>Chapter 6: Electronic Design Automation&lt;/i>&lt;br /> &lt;i>In Their Own Words: Mentor Graphics&lt;/i>&lt;br /> &lt;i>In Their Own Words: Cadence Design Systems&lt;/i>&lt;br /> &lt;i>In Their Own Words: Synopsys&lt;/i>&lt;br /> &lt;i>Chapter 7: Intellectual Property&lt;/i>&lt;br /> &lt;i>In Their Own Words: ARM&lt;/i>&lt;br /> &lt;i>In Their Own Words: Imagination&lt;/i>&lt;br /> &lt;i>Chapter 8: What’s Next For The Semiconductor Industry&lt;/i>&lt;/span>
+&lt;/div>
+&lt;div class="vw-text restore floatcontainer">
+&lt;/div></description></item><item><title>칩 용어: BSC</title><link>https://openmicrolab.com/%EC%B9%A9-%EC%9A%A9%EC%96%B4-bsc/</link><pubDate>Tue, 22 May 2012 11:35:38 +0000</pubDate><guid>https://openmicrolab.com/%EC%B9%A9-%EC%9A%A9%EC%96%B4-bsc/</guid><description>
+&lt;/p>
+&lt;p>칩의 패키지 dimension 정보에 나오는 &lt;strong>BSC&lt;/strong>란?&lt;/p>
+&lt;div class="txc-textbox" style="border: 1px dashed rgb(243, 197, 52); background-color: rgb(254, 254, 184); padding: 10px; ">
+&lt;p>
+&lt;b>BSC &lt;/b>(&lt;b>Basic Spacing between Centers&lt;/b>) is a term that appears on IC package drawings in reference to dimensions between pins.
+&lt;/p>
+&lt;p>
+&amp;#8220;Basic&amp;#8221; spacing is nominal and can change with conditions. For example, the distance between the rows of pins on a DIP (dual inline package) is BSC because it changes when the auto insertion machine grabs the part, and again when the part is inserted. The BSC dimension, in this case, is the dimension of the hole spacing that the part will fit into, rather than the dimensions of the part itself.
+&lt;/p></description></item><item><title>STM32 – STM8 Embedded software solutions</title><link>https://openmicrolab.com/stm32-stm8-embedded-software-solutions/</link><pubDate>Mon, 12 Mar 2012 10:50:26 +0000</pubDate><guid>https://openmicrolab.com/stm32-stm8-embedded-software-solutions/</guid><description>
+&lt;p>잘 정리된 STM32, STM8의 s/w solution 가이드&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;p>
+&lt;a href="https://openmicrolab.com/images/2012/03/stm32-stm8.png">&lt;img loading="lazy" class="aligncenter wp-image-4722 size-full" src="https://openmicrolab.com/images/2012/03/stm32-stm8.png" alt="" width="848" height="553" srcset="https://openmicrolab.com/images/2012/03/stm32-stm8.png 848w, https://openmicrolab.com/images/2012/03/stm32-stm8-300x196.png 300w, https://openmicrolab.com/images/2012/03/stm32-stm8-768x501.png 768w" sizes="(max-width: 848px) 100vw, 848px" />&lt;/a>
+&lt;/p>
+&lt;p>
+위 그림에 있는 모든 내용들의 솔루션이 정리되어 있다.
+&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;a class="aligncenter" href="https://openmicrolab.com/images/1/cfile2.uf.113A493B4F5DD4BC33C7AD.pdf">cfile2.uf.113A493B4F5DD4BC33C7AD.pdf&lt;/a>
+&lt;/p></description></item><item><title>STmicro의 Cortex M0 칩</title><link>https://openmicrolab.com/stmicro%EC%9D%98-cortex-m0-%EC%B9%A9/</link><pubDate>Mon, 12 Mar 2012 10:42:38 +0000</pubDate><guid>https://openmicrolab.com/stmicro%EC%9D%98-cortex-m0-%EC%B9%A9/</guid><description>
+&lt;p>최근의 MCU vendor들은 너나 할 것 없이 ARM사의 Cortex 코아를 내장한 칩을 출시하고 있다.&lt;br>
+Cortex M3를 필두로 M4, M0까지…&lt;br>
+기존의 &lt;A title="[http://liketheocean.tistory.com/78]로 이동합니다." href="http://liketheocean.tistory.com/78" target=_blank>NXP&lt;/A>, &lt;A title="[http://liketheocean.tistory.com/77]로 이동합니다." href="http://liketheocean.tistory.com/77" target=_blank>Nuvoton&lt;/A>등 많은 MCU 벤더들이 이미 M0기반의 칩을 출시했듯이, 이번에 ST도 M3, M4에 이어 M0기반의 칩을 출시했다.&lt;br>
+ST의 Press release 기사: &lt;a href="http://www.st.com/internet/com/press_release/p3275.jsp">http://www.st.com/internet/com/press_release/p3275.jsp&lt;/a>&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile27.uf.1505A8344F5DD2D81A9FFA.PNG" class="aligncenter" width="683" height="746" alt="" filename="STM_CortexM0.PNG" filemime="image/jpeg" />
+&lt;/P>좀 SRAM사이즈가 작은 듯하지만&amp;#8230;
+&lt;p>CortexM0와 M3, ARM7 과의 비교자료는 이전 포스트 “&lt;A title="[http://liketheocean.tistory.com/75]로 이동합니다." href="http://liketheocean.tistory.com/75" target=_blank>Cortex M0 비교 자료&lt;/A>“참고..&lt;/p></description></item><item><title>ARM7과 ARM9 비교</title><link>https://openmicrolab.com/arm7%EA%B3%BC-arm9-%EB%B9%84%EA%B5%90/</link><pubDate>Wed, 09 Feb 2011 02:43:46 +0000</pubDate><guid>https://openmicrolab.com/arm7%EA%B3%BC-arm9-%EB%B9%84%EA%B5%90/</guid><description>
+&lt;p> ARM7 과 ARM9을 비교한 테이블입니다.&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile4.uf.181B573F4D51F9C733F322.jpg" class="aligncenter" width="555" height="187" alt="" filename="arm7_arm9.jpg" filemime="image/jpeg" /> *CPI는 Cycle Per Instruction 입니다.&lt;/p>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile3.uf.162615424D51FA1E242987.jpg" class="aligncenter" width="559" height="237" alt="" filename="arm7_arm9_2.jpg" filemime="image/jpeg" /></description></item><item><title>Cortex M4와 Cortex M3의 비교</title><link>https://openmicrolab.com/cortex-m4%EC%99%80-cortex-m3%EC%9D%98-%EB%B9%84%EA%B5%90/</link><pubDate>Tue, 01 Feb 2011 07:28:03 +0000</pubDate><guid>https://openmicrolab.com/cortex-m4%EC%99%80-cortex-m3%EC%9D%98-%EB%B9%84%EA%B5%90/</guid><description>
+&lt;p>Cortex M4는 Cortex M3에 DSP가 추가된 칩입니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.1708463E4D47B3FA01A7CE.jpg" class="aligncenter" width="680" height="764" alt="" filename="Cortex M4_ Cortex M3.jpg" filemime="image/jpeg" />&lt;br>
+위 표는 Cortex M3에는 DSP 가 없으니 당연한 결과네요.&lt;br>
+현재 Cortex M4 칩은 &lt;A title="[http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS]로 이동합니다." href="http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS" target=_blank>FreeScale&lt;/A>에서 Kinetis 시리즈로 판매되고 있습니다.&lt;/p>
+&lt;p>가장 낮은 시리즈인 K10 부터 K60까지 있습니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.1802013E4D47B50B15755B.jpg" class="aligncenter" width="653" height="392" alt="" filename="kinetis.jpg" filemime="image/jpeg" />&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;STRONG>&lt;SPAN style="FONT-SIZE: 10pt">&lt;br /> K10 Sub-Family Reference Manual&lt;/SPAN>&lt;br /> &lt;/STRONG>
+&lt;/DIV>
+&lt;DIV>
+&lt;a href="https://openmicrolab.com/images/1/cfile7.uf.18701C444D47B5AC2B01FE.zip" class="aligncenter" filename="K10P104M100SF2RM.zip" filemime="application/zip" />cfile7.uf.18701C444D47B5AC2B01FE.zip&lt;/a>
+&lt;/DIV></description></item><item><title>Energy Micro사의 Cortex M3 칩</title><link>https://openmicrolab.com/energy-micro%EC%82%AC%EC%9D%98-cortex-m3-%EC%B9%A9/</link><pubDate>Tue, 01 Feb 2011 07:16:44 +0000</pubDate><guid>https://openmicrolab.com/energy-micro%EC%82%AC%EC%9D%98-cortex-m3-%EC%B9%A9/</guid><description>
+&lt;p>Energy Micro는 노르웨이에 기반을 두고 있는 저전력에 특화된 Cortex M3 칩을 판매하는 회사입니다.&lt;br>
+그래서 이 회사의 모토는 the world`s most energy friendly Microcontrollers를 제공하는 것이고 칩 이름인 EFM은 Energy Friendly Microcontroller를 나타냅니다. 마스코트가 gekco (도마뱀)인 이유도 이 동물이 가장 에너지 효율적인 동물이라네요.&lt;br>
+뉴스레터를 보니 Alfonz 라는 도마뱀을 들여왔다는 얘기도 있네요.&lt;/p>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.181A1F574D47AE87346511.jpg" class="alignleft" width="200" height="133" alt="" filename="alfonz_efm32_gecko_team_member.jpg" filemime="image/jpeg" />
+&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: left; LINE-HEIGHT: 22px; BORDER-COLLAPSE: collapse; FONT-FAMILY: Arial; COLOR: rgb(68,105,125); FONT-SIZE: 14px" class=Apple-style-span>Energy Micro recently adopted &amp;#8220;Alfonz&amp;#8221;, the Madagascar giant day gecko. Alfonz was born March 26. 2008 and lives in Budapest Zoo. Because the geckos only use 10% of the energy consumption of a mammal of similar size, they inspired the energy friendly EFM32 microcontroller&amp;#8217;s name.&lt;/SPAN>&lt;/SPAN>
+&lt;p>이 회사의 최대 강점인 low power는 다음과 같이 10가지로 설명을 하고 있습니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.1704BC544D47AF01408005.jpg" class="aligncenter" width="680" height="358" alt="" filename="Efm_tech.jpg" filemime="image/jpeg" />&lt;br>
+근데 정리하면 &lt;/p></description></item><item><title>세상에서 가장 작은 32bit ARM Microcontroller</title><link>https://openmicrolab.com/%EC%84%B8%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%9E%91%EC%9D%80-32bit-arm-microcontroller/</link><pubDate>Mon, 31 Jan 2011 05:02:49 +0000</pubDate><guid>https://openmicrolab.com/%EC%84%B8%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%9E%91%EC%9D%80-32bit-arm-microcontroller/</guid><description>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">NXP에서 출시한 2×2 mm 풋프린트를 가지는 초소형 Cortex M0 칩셋입니다. &lt;/SPAN>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.12211A4D4D4640BE0214A3.jpg" class="aligncenter" width="324" height="330" alt="" filename="NXP_M0.jpg" filemime="image/jpeg" />&lt;/SPAN>&lt;/p>
+&lt;p>&lt;A title="[http://www.nxp.com/news/content/file\_1701.html]로 이동합니다." href="http://www.nxp.com/news/content/file\_1701.html" target=_blank>&lt;SPAN style="FONT-SIZE: 10pt">관련기사 링크&lt;/SPAN>&lt;/A>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">LPC1102 데이터시트&lt;/SPAN>&lt;br>
+&lt;a href="https://openmicrolab.com/images/1/cfile28.uf.12211C4D4D46422A093487.pdf" class="aligncenter" filename="LPC1102.pdf" filemime="application/pdf" /> cfile28.uf.12211C4D4D46422A093487.pdf&lt;/a>&lt;/p>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">개발툴은 &lt;/SPAN>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 11px Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: left; LINE-HEIGHT: 17px; BORDER-COLLAPSE: collapse; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: rgb(102,102,102)" class=Apple-style-span>&lt;/p>
+&lt;H2 style="PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; WHITE-SPACE: nowrap; FONT-SIZE: 18px; FONT-WEIGHT: bold; PADDING-TOP: 4px">
+&lt;SPAN style="FONT-SIZE: 10pt">LPCXpresso&lt;/SPAN>
+&lt;/H2>&lt;/SPAN>&lt;/SPAN>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">라고 부르는데 관련 자료는 아래 링크에서…&lt;/SPAN>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;a href="http://ics.nxp.com/lpcxpresso/">http://ics.nxp.com/lpcxpresso/&lt;/a>&lt;/SPAN>&lt;/A>&lt;/p></description></item><item><title>Nuvoton의 Cortex M0 칩</title><link>https://openmicrolab.com/nuvoton%EC%9D%98-cortex-m0-%EC%B9%A9/</link><pubDate>Mon, 31 Jan 2011 04:48:49 +0000</pubDate><guid>https://openmicrolab.com/nuvoton%EC%9D%98-cortex-m0-%EC%B9%A9/</guid><description>
+&lt;p>&lt;FONT color=#474747>제가 알기로는 현시점(2011년 1월)에서 Cortex M0 코어 칩은 &lt;/FONT>&lt;A title="[http://www.nxp.com/]로 이동합니다." href="http://www.nxp.com/" target=_blank>&lt;FONT color=#3058d2>NXP&lt;/FONT>&lt;/A>&lt;FONT color=#474747>의 &lt;/FONT>&lt;A title="[http://www.nxp.com/#/homepage/cb=[t=p,p=/50809/71391]|pp=[t=pfp,i=71391]]로 이동합니다." href="http://www.nxp.com/#/homepage/cb=[t=p,p=/50809/71391]|pp=[t=pfp,i=71391]" target=_blank>&lt;FONT color=#3058d2>LPC11xxx 시리즈&lt;/FONT>&lt;/A>&lt;FONT color=#474747>와 &lt;/FONT>&lt;A title="[http://www.nuvoton.com/]로 이동합니다." href="http://www.nuvoton.com/" target=_blank>&lt;A title="[http://www.nuvoton.com/]로 이동합니다." href="http://www.nuvoton.com/" target=_blank>&lt;FONT color=#3058d2>Nuvoton&lt;/FONT>&lt;/A>&lt;/A>&lt;FONT color=#474747>의 &lt;/FONT>&lt;A title="[http://www.nuvoton.com/NuvotonMOSS/Community/ProductInfo.aspx?tp\_GUID=5dbf7d7a-b6df-4fe1-91c9-063449500ce7]로 이동합니다." href="http://www.nuvoton.com/NuvotonMOSS/Community/ProductInfo.aspx?tp\_GUID=5dbf7d7a-b6df-4fe1-91c9-063449500ce7" target=_blank>&lt;FONT color=#3058d2>NuMicro M051™ 시리즈&lt;/FONT>&lt;/A>&lt;FONT color=#474747>가 유일 합니다.&lt;br>
+Nuvoton은 대만에 본사가 있는데 Winbond로 부터 분사한 회사 같군요.&lt;br>
+칩들은 메모리와 페리페럴별로 다양한 라인업이 준비가 되어 있으며, 온라인상에서 제품을 선택을 할수 있는 &lt;/FONT>&lt;A title="[http://www.nuvoton.com/hq/enu/ProductAndSales/ProductLines/IndustrialIC/ARMMicrocontroller/ARMCortexTMM0/Pages/SelectGuide.aspx]로 이동합니다." href="http://www.nuvoton.com/hq/enu/ProductAndSales/ProductLines/IndustrialIC/ARMMicrocontroller/ARMCortexTMM0/Pages/SelectGuide.aspx" target=_blank>&lt;FONT color=#3058d2>On-line Products Slection Guide&lt;/FONT>&lt;/A>&lt;FONT color=#474747>도 잘 준비가 되어 있네요. &lt;/FONT>&lt;/p></description></item><item><title>[IO 포트] push-pull, open drain</title><link>https://openmicrolab.com/io-%ED%8F%AC%ED%8A%B8-push-pull-open-drain/</link><pubDate>Mon, 31 Jan 2011 01:44:52 +0000</pubDate><guid>https://openmicrolab.com/io-%ED%8F%AC%ED%8A%B8-push-pull-open-drain/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: justify; LINE-HEIGHT: 21px; FONT-FAMILY: Tahoma; COLOR: rgb(85,85,85); FONT-SIZE: 12px" class=Apple-style-span>&lt;SPAN style="FONT-SIZE: 10pt">아래 자료는 &lt;/SPAN>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: left; LINE-HEIGHT: 18px; FONT-FAMILY: Tahoma; COLOR: rgb(85,85,85); FONT-SIZE: 12px" class=Apple-style-span>&lt;A style="FONT: bold 20px Tahoma, 굴림, sans-serif; COLOR: rgb(0,0,0); TEXT-DECORATION: none" href="http://irmus.tistory.com/">&lt;A title="[http://irmus.tistory.com/]로 이동합니다." href="http://irmus.tistory.com/" target=_blank>&lt;SPAN style="FONT-SIZE: 10pt">irmus&lt;/SPAN>&lt;/A>&lt;/A>&lt;SPAN style="FONT-SIZE: 10pt"> 님의 자료입니다. ^^;&lt;/SPAN>&lt;br>
+&lt;/SPAN>&lt;/SPAN>&lt;br>
+MCU나 74 시리즈 로직 칩들을 보다 보면 출력 타입이 여러가지가 있는 것을 볼 수 있다. 가장 기본적이면서 또 그만큼 많이 사용되는 두가지 출력 타입에 대해 이야기 해보려 한다. push-pull 타입과 open drain(혹은 open collector) 타입이 그것이다.&lt;/p></description></item><item><title>Cortex M0 비교 자료</title><link>https://openmicrolab.com/cortex-m0-%EB%B9%84%EA%B5%90-%EC%9E%90%EB%A3%8C/</link><pubDate>Fri, 28 Jan 2011 07:11:29 +0000</pubDate><guid>https://openmicrolab.com/cortex-m0-%EB%B9%84%EA%B5%90-%EC%9E%90%EB%A3%8C/</guid><description>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.1566D2484D426B512C7170.jpg" class="aligncenter" width="312" height="266" alt="" filename="CortexM0.jpg" filemime="image/jpeg" />
+&lt;p>&lt;strong>1. 8051과 비교 자료&lt;/strong>&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.1268AE484D4269BE21C602.jpg" class="aligncenter" width="619" height="102" alt="" filename="CortexM0_8051.jpg" filemime="image/jpeg" /> 즉 같은 성능을 내려면 8051의 경우 80Mhz가 필요함&lt;/p>
+&lt;p>**2. Cortex M3와 비교 자료&lt;br>
+**&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.12582A494D426A5A049496.jpg" class="aligncenter" width="562" height="298" alt="" filename="CortexM0_CortexM3.jpg" filemime="image/jpeg" />&lt;br>
+&lt;strong>3. ARM7 &amp;amp; Cortex M0 &amp;amp; Cortex M3&lt;/strong>&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.1325344D4D426AC21358F6.jpg" class="aligncenter" width="317" height="294" alt="" filename="CortexM0_ARM7_CortexM3.jpg" filemime="image/jpeg" />&lt;br>
+**정리하면&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-SIZE: 11pt">The smallest, lowest power ARM processor ever&lt;/SPAN>&lt;/SPAN>&lt;br>
+**   : Extending the ARM roadmap to low-cost MCU and mixed-signal&lt;br>
+**&lt;SPAN style="FONT-SIZE: 11pt">Transcending classifications&lt;/SPAN>&lt;br>
+**   : Easy to use 32-bit processor in an 8/16-bit footprint&lt;br>
+**&lt;SPAN style="FONT-SIZE: 11pt">Streamlined entry-point to the ARM architecture&lt;/SPAN>&lt;br>
+**   : Binary and tools upwards compatible with ARM Cortex&lt;/p></description></item><item><title>CortexM3 소개 자료</title><link>https://openmicrolab.com/cortexm3-%EC%86%8C%EA%B0%9C-%EC%9E%90%EB%A3%8C/</link><pubDate>Fri, 28 Jan 2011 05:22:29 +0000</pubDate><guid>https://openmicrolab.com/cortexm3-%EC%86%8C%EA%B0%9C-%EC%9E%90%EB%A3%8C/</guid><description>
+&lt;FONT color=#000000>
+&lt;/FONT>&lt;a href="https://openmicrolab.com/images/1/cfile1.uf.191F45544D4251C80B75A0.pdf" class="aligncenter" filename="An Introduction to the ARM Cortex-M3 Processor.pdf" filemime="application/pdf" />cfile1.uf.191F45544D4251C80B75A0.pdf&lt;/a>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.162626584D425241122DA7.jpg" class="aligncenter" width="342" height="601" alt="" filename="CortexM3_block.jpg" filemime="image/jpeg" />
+&lt;p>&lt;FONT color=#000000>&lt;SPAN style="FONT-SIZE: 10pt">내용중 CortexM3와 ARM7 비교표를 보시면 좀 더 이해가 빠를 듯..&lt;br /> &lt;/SPAN>&lt;br>
+&lt;/FONT>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile3.uf.1218385A4D4251E6174B8A.jpg" class="aligncenter" width="680" height="242" alt="" filename="CortexM3_ARM7.jpg" filemime="image/jpeg" />&lt;/p></description></item><item><title>CMSIS-Cortex Microcontroller Software Interface Standard</title><link>https://openmicrolab.com/cmsis-cortex-microcontroller-software-interface-standard/</link><pubDate>Fri, 28 Jan 2011 03:45:06 +0000</pubDate><guid>https://openmicrolab.com/cmsis-cortex-microcontroller-software-interface-standard/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: arial, verdana, tahoma, sans-serif; FONT-SIZE: 14px" class=Apple-style-span>&lt;/p>
+&lt;H1 style="PADDING-BOTTOM: 0px; MARGIN: 0.8em 0px 0.2em; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 21px; PADDING-TOP: 0px">
+CMSIS &amp;#8211; Cortex Microcontroller Software Interface Standard
+&lt;/H1>
+&lt;DIV style="TEXT-ALIGN: left; WIDTH: 0px; DISPLAY: inline" class=cputext>&lt;SPAN style="TEXT-ALIGN: center; PADDING-LEFT: 5px; WIDTH: 203px; DISPLAY: inline; FLOAT: right" class=cpuimage>&lt;IMG style="BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" alt="CMSIS - Cortex Microcontroller Software Interface Standard Image" src="http://www.arm.com/images/CMSIS_Logo.jpg" />&lt;/SPAN>
+&lt;DIV>
+&lt;br /> 최근 많은 칩 벤더들이 CortexM 시리즈의 칩들을 내놓고 있습니다. 코아는 같지만 다양한 메모리 옵션과 페리페럴들로 특화된 칩들이 나오고 있죠. 다양한 칩들이 나오다보니 ARM에서 CMSIS라는&amp;nbsp;CortexM 시리즈칩들의 하드웨어를 억세스하기위한 S/W 인터페이스를 만들었네요.&amp;nbsp;이것은 벤더에 무관하게 하드웨어를 추상화 시킨 레이어 입니다. 칩 벤더들이 좀 더 쉽게 자신들의 페리페럴 인터페이스 코드를 만들 수 있겠군요. CMSIS는 약 1K정도의 코드 메모리와 10바이트 미만의 램을 필요로 하답니다.10 Bytes RAM).&lt;/p></description></item><item><title>반도체 용어 정리 – 공정</title><link>https://openmicrolab.com/%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EA%B3%B5%EC%A0%95/</link><pubDate>Wed, 26 Jan 2011 08:19:29 +0000</pubDate><guid>https://openmicrolab.com/%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EA%B3%B5%EC%A0%95/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="LINE-HEIGHT: 19px; FONT-FAMILY: 돋움; COLOR: rgb(68,68,68); FONT-SIZE: 12px" class=Apple-style-span>&lt;/p>
+&lt;PRE>&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Gulim">&lt;STRONG>Assembly&lt;/STRONG>&lt;br />
+소자의 가공이 끝난 Chip(Die or Pellet)을 Wafer 상태에서 하나씩 잘라내어 외부&lt;br />
+에 노출되지 않게 하고 Set에 적용하기 쉽도록 일정한 형태로 Package를 씌우는 과&lt;br />
+정. &lt;/p></description></item><item><title>반도체 용어 정리-일반</title><link>https://openmicrolab.com/%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EC%9D%BC%EB%B0%98/</link><pubDate>Wed, 26 Jan 2011 08:15:46 +0000</pubDate><guid>https://openmicrolab.com/%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EC%9D%BC%EB%B0%98/</guid><description>
+&lt;DIV style="TEXT-ALIGN: left">
+&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="LINE-HEIGHT: 19px; FONT-FAMILY: 돋움; COLOR: rgb(68,68,68); FONT-SIZE: 12px" class=Apple-style-span>
+&lt;PRE>&lt;STRONG>&lt;SPAN style="FONT-FAMILY: Gulim">&lt;SPAN style="FONT-SIZE: 10pt">Acceptor&lt;br />
+&lt;/SPAN>&lt;/SPAN>&lt;/STRONG>&lt;SPAN style="FONT-FAMILY: Gulim">&lt;SPAN style="FONT-SIZE: 10pt"> 반도체 소자의 특성을 p-Type으로 형성하기위한 불순물 원자로 원소주기율표상의&lt;br />
+3족 원자(Boron, Gallium and Indium)를 말하며, Germaium(Ge)이나 Silicon(Si)과&lt;br />
+같은 다이아몬드 결정구조로 공유결합을 하고 있는 반도체 결정속에 불순물&lt;br />
+(Dopant)로서 미량 혼합하면 3가의 원자는 반도체 원자로 부터 전자 1개를 취하여&lt;br />
+완전한 결정구조의 공유결합을 이루려는 성질의 반도체 물질로 된다. &lt;/p></description></item></channel></rss>

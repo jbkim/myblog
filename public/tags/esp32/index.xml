@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESP32 on OpenMicroLab</title><link>https://openmicrolab.com/tags/esp32/</link><description>Recent content in ESP32 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 28 Aug 2021 09:09:11 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/esp32/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP 빌드시 문제 해결</title><link>https://openmicrolab.com/4779-2/</link><pubDate>Sat, 28 Aug 2021 09:09:11 +0000</pubDate><guid>https://openmicrolab.com/4779-2/</guid><description>
+&lt;p>ESP32 가 빌드는 되는데 flashing이 다음과 같은 에러메시지로 안되는 경우&lt;/p>
+&lt;blockquote>
+&lt;p>Traceback (most recent call last):&lt;br>
+File “esptool.py”, line 57, in &lt;module>&lt;br>
+File “/Library/Python/2.7/site-packages/PyInstaller/loader/pyimod03_importers.py”, line 389, in load_module&lt;br>
+File “serial/tools/list_ports.py”, line 29, in &lt;module>&lt;br>
+File “/Library/Python/2.7/site-packages/PyInstaller/loader/pyimod03_importers.py”, line 389, in load_module&lt;br>
+File “serial/tools/list_ports_posix.py”, line 31, in &lt;module>&lt;br>
+File “/Library/Python/2.7/site-packages/PyInstaller/loader/pyimod03_importers.py”, line 389, in load_module&lt;br>
+File “serial/tools/list_ports_osx.py”, line 32, in &lt;module>&lt;br>
+ValueError: dlsym(RTLD_DEFAULT, kIOMasterPortDefault): symbol not found&lt;br>
+Failed to execute script esptool&lt;/p>&lt;/blockquote>
+&lt;p>기존 esptool을 esptool.py로 다음과 같이 변경을 하면 해결이 된다.&lt;/p></description></item><item><title>Thinger.io 서비스 사용하기</title><link>https://openmicrolab.com/thinger-io-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 13 Mar 2019 08:48:49 +0000</pubDate><guid>https://openmicrolab.com/thinger-io-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>IoT 서비스 중 하나인 &lt;a href="http://Thinger.io">Thinger.io&lt;/a>를 사용해 봤다.&lt;/p>
+&lt;p>아두이노 라이브러리를 제공을 해서 쉽게 ESP32에서 사용이 가능하다.&lt;/p>
+&lt;ul>
+&lt;li>먼저 아두이노 라이브러리 매니저에서 thinger로 검색을 해서 라이브러리를 설치를 하고 ESP32 예제를 연다.&lt;/li>
+&lt;li>물론 먼저 이 서비스에 가입을 하고, USERNAME, DEVICE_ID, DEVICE_CREDENTIAL을 define 문에 정의한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>#define USERNAME “*&lt;strong>*&lt;/strong>***”&lt;/p>
+&lt;p>#define DEVICE_ID “*&lt;strong>*&lt;/strong>***”&lt;/p>
+&lt;p>#define DEVICE_CREDENTIAL “*&lt;strong>*&lt;/strong>***”&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>접속하고자 하는 SSID와 SSID_PASSWORD를 입력한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>#define SSID “*&lt;strong>*&lt;/strong>***”  //your wifi SSID&lt;/p>
+&lt;p>#define SSID_PASSWORD “*&lt;strong>*&lt;/strong>***” // your wifi password&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>아래 코드처럼 seup() 함수에 입출력을 정의하면, 서비스에서 이 값을 읽어서 대쉬보드에서 읽어서 데이터를 시각화 해준다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>// digital pin control example (i.e. turning on/off a light, a relay, configuring a parameter, etc)&lt;/p></description></item><item><title>ESP32에 Nabto 사용하기</title><link>https://openmicrolab.com/esp32%EC%97%90-nabto-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 20 Dec 2018 09:07:17 +0000</pubDate><guid>https://openmicrolab.com/esp32%EC%97%90-nabto-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;a href="http://openmicrolab.com/nabto-%EC%82%AC%EC%9A%A9%EB%B2%95/">이전 포스트&lt;/a>에서 Nabto 사용법을 다뤘는데, 이번 포스팅에서는 ESP32에 Nabto를 포팅하여 테스트를 하려고 한다.&lt;/p>
+&lt;p>이미 Nabto의 &lt;a href="https://github.com/nabto/unabto-esp32">github&lt;/a>에 ESP32에 포팅된 코드가 있고 &lt;a href="https://www.nabto.com/secure-p2p-remote-control-of-esp32-wifi-freertos-based-module-with-appmyproduct/">관련 블로그&lt;/a>가 있다. 이 블로그의 내용을 참고해서 다음과 같이 진행을 한다.&lt;/p>
+&lt;ul>
+&lt;li>먼저 깃헙에서 코드를 클론한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote class="wp-block-quote">
+&lt;p>
+$ git clone &amp;#8211;recursive &lt;a href="https://github.com/nabto/unabto-esp32.git">https://github.com/nabto/unabto-esp32.git&lt;/a>
+&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>unabto-esp32로 이동을 해서 menuconfig를 하여 보드의 시리얼 설정을 한다.&lt;img loading="lazy" width="981" height="1024" class="wp-image-4498" src="https://openmicrolab.com/images/2018/12/Menuconfig_uart-981x1024.png" alt="" data-id="4498" data-link="http://openmicrolab.com/?attachment_id=4498" srcset="https://openmicrolab.com/images/2018/12/Menuconfig_uart-981x1024.png 981w, https://openmicrolab.com/images/2018/12/Menuconfig_uart-287x300.png 287w, https://openmicrolab.com/images/2018/12/Menuconfig_uart-768x802.png 768w, https://openmicrolab.com/images/2018/12/Menuconfig_uart.png 1684w" sizes="(max-width: 981px) 100vw, 981px" />&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>보드가 접속할 AP의 wifi 정보와, Nabto ID, Nabto Key값을 설정한다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>여기서 사용할 Nabto ID 및 Key는 &lt;a href="https://portal.appmyproduct.com/index.html" target="_blank" rel="noreferrer noopener" aria-label="https://portal.appmyproduct.com/index.html (opens in a new tab)">&lt;a href="https://portal.appmyproduct.com/index.html">https://portal.appmyproduct.com/index.html&lt;/a>&lt;/a> 에서 회원가입을 한 이후에 디바이스를 추가하면 다음과 같이 ID, Key를 얻을 수 있다.&lt;img loading="lazy" width="1024" height="152" class="wp-image-4501" src="https://openmicrolab.com/images/2018/12/Nabto_id_key-1-1024x152.png" alt="" data-id="4501" data-link="http://openmicrolab.com/?attachment_id=4501" srcset="https://openmicrolab.com/images/2018/12/Nabto_id_key-1-1024x152.png 1024w, https://openmicrolab.com/images/2018/12/Nabto_id_key-1-300x44.png 300w, https://openmicrolab.com/images/2018/12/Nabto_id_key-1-768x114.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />&lt;/p></description></item><item><title>무게센서와 HX711 사용하기</title><link>https://openmicrolab.com/%EB%AC%B4%EA%B2%8C%EC%84%BC%EC%84%9C%EC%99%80-hx711-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 28 Sep 2018 08:36:37 +0000</pubDate><guid>https://openmicrolab.com/%EB%AC%B4%EA%B2%8C%EC%84%BC%EC%84%9C%EC%99%80-hx711-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="무게센서">무게센서&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4441" src="https://res.cloudinary.com/openmicrolab/image/upload/v1538122944/load_cell_hn0zqk.png" width="660" height="235" />
+&lt;p>일반적으로 무게센서는 스트레인게이지(Strain Gauge) 기반의 로드셀(Lode Cell)를 사용한다. 스트레인 게이지는 저항으로 이루어진 센서로서 피 측정물에 부착되어 피 측정물의 물리적인 변형률(Strain)을 &lt;a href="https://en.wikipedia.org/wiki/Wheatstone_bridge" target="_blank" rel="noopener noreferrer">휘스톤 브릿지&lt;/a> 방식으로 전기적인 신호로 바꾸어 측정물의 변형량을 측정하는 저항 센서이다.&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="461"
+height="286"
+src="https://openmicrolab.com/Wheatstone-Bridge-02_2682268210215289130.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Excitation+ (E+) or VCC is red&lt;/li>
+&lt;li>Excitation- (E-) or ground is black.&lt;/li>
+&lt;li>Output+ (O+), Signal+ (S+)+ or Amplifier+ (A+) is white&lt;/li>
+&lt;li>O-, S-, or A- is green or blue&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4443" src="https://res.cloudinary.com/openmicrolab/image/upload/v1538123734/hx711_cabling_e2qlud.jpg" width="611" height="405" />
+&lt;h3 id="hx711">HX711&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/bogde/HX711" target="_blank" rel="noopener noreferrer">HX711 github library&lt;/a> 라이브러리를 Arduino에 설치&lt;/li>
+&lt;li>&lt;a href="https://github.com/sparkfun/HX711-Load-Cell-Amplifier" target="_blank" rel="noopener noreferrer">Sparkfun HX711 example code&lt;/a> 중 캘리브레이션 코드로 캘리브레이션을 한다.&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide?_ga=2.6286835.196014269.1538042880-991341443.1528683253" target="_blank" rel="noopener noreferrer">Sparkfun 가이드 문서&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackster.io/daveVertu/make-a-screen-less-google-fit-connected-smart-scale-9a5934" target="_blank" rel="noopener noreferrer">Google fit 연결 응용&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackster.io/luciansabo/healthzuilla-scale-c359f9" target="_blank" rel="noopener noreferrer">HTTP API 사용 응용&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.instructables.com/id/Wi-Fi-Smart-Scale-with-ESP8266-Arduino-IDE-Adafrui/" target="_blank" rel="noopener noreferrer">ESP8266 사용 Adafruit ID 연결 응용&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>SmartConfig – WiFi provisioning</title><link>https://openmicrolab.com/smartconfig-wifi-provisioning/</link><pubDate>Fri, 07 Sep 2018 09:34:48 +0000</pubDate><guid>https://openmicrolab.com/smartconfig-wifi-provisioning/</guid><description>
+&lt;p>유선 네트워크인 이더넷은 랜선을 연결하면 DHCP로 자동으로 IP가 부여된다. 하지만 WiFi에서는 AP의 이름 및 패스워드를 알고 AP에 접속을 해야지 IP를 얻을 수 있다. 이 과정이 WiFi provisoning인데, 스마트폰이나 PC와 달리 IoT 디바이스는 UI가 없는 경우가 많아서 AP의 이름이나 패스워드를 다른 방법으로 입력을 해야한다. 이때 주로 스마트폰을 사용을 하는데, 쉽게 말하면 스마트 폰을 이용해서 이 정보를 전달을 한다. 보통 디바이스를 softAP 모드로 놓고 이 디바이스에 스마트폰이 연결를 한후 UDP, TCP로 이 정보를 전달을 하는데, 이 방법외에 다음과 같은 방법이 있다.&lt;/p></description></item><item><title>ESP32에 OLED 연결하기</title><link>https://openmicrolab.com/esp32%EC%97%90-oled-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 01 Aug 2018 08:04:58 +0000</pubDate><guid>https://openmicrolab.com/esp32%EC%97%90-oled-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>SSD1306 OLED display는 다음과 같이 I2C로 연결을 한다. 참고로 ESP32 모듈의 핀맵은 &lt;a href="https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" target="_blank" rel="noopener noreferrer">Datasheet&lt;/a>를 참고해야 한다.&lt;br>
+&lt;img loading="lazy" class="alignnone wp-image-4361" src="https://res.cloudinary.com/openmicrolab/image/upload/v1533110174/esp32-arduino-oled-ssd1306-schematic-i2c_pd9rob.png" width="444" height="258" />&lt;br>
+그리고 ESP32 SSD1306 아두이노 라이브러리를 설치를 하고, 같이 설치되는 예제프로그램에서 하드웨어 핀에 맞게 코드를 수정하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>// Initialize the OLED display using Wire library&lt;br>
+SSD1306 display(0x3c, 21, 22);&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>참고문서&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/" target="_blank" rel="noopener noreferrer">&lt;a href="https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/">https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html" target="_blank" rel="noopener noreferrer">&lt;a href="https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html">https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>ESP32 개발 환경 설정 – Mac OS</title><link>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</link><pubDate>Fri, 06 Jul 2018 06:02:04 +0000</pubDate><guid>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</guid><description>
+&lt;p>Mac OS에서 ESP32 개발 환경 설정은 다음의 &lt;a href="http://esp-idf.readthedocs.io/en/latest/get-started/index.html#introduction" target="_blank" rel="noopener noreferrer">링크&lt;/a>를 참고한다.&lt;/p>
+&lt;img loading="lazy" class="" src="http://esp-idf.readthedocs.io/en/latest/_images/what-you-need.png" width="468" height="305" />
+&lt;h3 id="tool-chain-설정">Tool chain 설정&lt;/h3>
+&lt;p>pip와 pyserial을 설치- 이 과정중에 dependency가 있는 라이브러리 설치는 sudo easy_install xxx  형태로 설치한다.&lt;/p>
+&lt;pre>&lt;span class="n">sudo&lt;/span> &lt;span class="n">easy_install&lt;/span> &lt;span class="n">pip
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell1">&lt;span class="n">brew&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">cmake&lt;/span> &lt;span class="n">ninja&lt;/span> &lt;span class="n">dfu&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">util&lt;/span>&lt;/pre>
+&lt;p>&lt;span class="n">다음은 툴체인을 다운로드하고, 설치를 하는 과정임&lt;/span>&lt;/p>
+&lt;pre>&lt;span class="n">mkdir&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">cd&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">git clone --recursive https://github.com/espressif/esp-idf.git
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell3">&lt;span class="nb">cd&lt;/span> ~/esp/esp-idf
+./install.sh&lt;/pre>
+&lt;p>환경설정&lt;/p>
+&lt;blockquote>
+&lt;p>. $HOME/esp/esp-idf/export.sh&lt;/p>&lt;/blockquote>
+&lt;p>다음의 내용을  .bash_profile에 추가한 다음에 esp 개발시 터미널에서 get_idf를 실행하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>alias get_idf=’. $HOME/esp/esp-idf/export.sh’&lt;/p>&lt;/blockquote>
+&lt;p>추후에 리모트 깃의 내용을 업데이트 하려면 다음과 같이 한다.&lt;/p></description></item></channel></rss>

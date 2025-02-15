@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ethernet PHY on OpenMicroLab</title><link>https://openmicrolab.com/tags/ethernet-phy/</link><description>Recent content in Ethernet PHY on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 13 Dec 2013 09:13:17 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ethernet-phy/index.xml" rel="self" type="application/rss+xml"/><item><title>Ethernet Auto negotiation – Duplex mismatch</title><link>https://openmicrolab.com/ethernet-auto-negotiation-duplex-mismatch/</link><pubDate>Fri, 13 Dec 2013 09:13:17 +0000</pubDate><guid>https://openmicrolab.com/ethernet-auto-negotiation-duplex-mismatch/</guid><description>
+&lt;p>이더넷 네트워크에서 auto negotiation은 PHY에서 담당하는 기능으로 전송선로상에서 상대방(peer)의 속도 및 half/ full duplex여부를 자동으로 결정하는 plug and play  같은 기능이다. 이 기능은 1997년에 Fast Ethernet IEEE802.3u 표준으로 들어갔고, 1999년에 Gigabit Ethenet 802.3ab 표준이 되었다.&lt;/p>
+&lt;p>Fast Ethernet 일 경우 1)양쪽이 auto일 경우 2) auto – 10/100 고정일 경우 3) 10/100고정 – 10/100 고정일 경우가 발생한다. 양쪽이 auto negotiation일 경우는 속도가 높고 duplex쪽으로 잡힌다. 즉 다음과 같은 우선 순위에 의해 속도 및 duplex가 결정이 된다.&lt;/p></description></item><item><title>Transformer없이 이더넷 구현하기</title><link>https://openmicrolab.com/transformer%EC%97%86%EC%9D%B4-%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 20 Nov 2013 11:14:11 +0000</pubDate><guid>https://openmicrolab.com/transformer%EC%97%86%EC%9D%B4-%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>일반적으로 이더넷 응용에서는 PHY의 출력단에 트랜스포머가 필요하다. 하지만 길이가 짧은 경우나 특별한 응용의 경우 트랜스포머를 사용하지 않고 구현이 가능하다. 이 때는 TX+-, RX+- 신호에 DC 커플링 캐패시터 33nF를 연결을 한다.&lt;/p>
+&lt;p>[wpdm_file id=6]&lt;/p>
+&lt;p>사실 이 내용보다는 IEEE802.3에서 요구하는 PHY signal의 형태가 다른 문서에서는 볼 수 없어서 귀중한 자료…&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/11/Phy_Signal.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2703" alt="Phy_Signal" src="https://openmicrolab.com/images/2013/11/Phy_Signal.png" width="631" height="726" srcset="https://openmicrolab.com/images/2013/11/Phy_Signal.png 631w, https://openmicrolab.com/images/2013/11/Phy_Signal-260x300.png 260w" sizes="(max-width: 631px) 100vw, 631px" />&lt;/a>&lt;/p></description></item><item><title>Ethernet 시스템 Layout guide</title><link>https://openmicrolab.com/ethernet-%EC%8B%9C%EC%8A%A4%ED%85%9C-layout-guide/</link><pubDate>Wed, 07 Dec 2011 10:04:53 +0000</pubDate><guid>https://openmicrolab.com/ethernet-%EC%8B%9C%EC%8A%A4%ED%85%9C-layout-guide/</guid><description>
+&lt;p>임베디드 시스템에서 Ethernet은 물리적으로 &lt;strong>Ethernet Controller + Magnetic + RJ45&lt;/strong>로 이루어 진다.&lt;br>
+Ethernet Controller는 다시 &lt;strong>Etherent MAC + PHY&lt;/strong>로 구성이 되는데, Ethernet MAC의 경우 최근 MCU에 들어가 있는 경우가 많고 MAC/PHY칩으로 존재하기도 한다.&lt;br>
+Magnetic의 경우 코일이 감겨진 transformer를 얘기하는데 RJ45잭 안에 이 Magnetic이 들어가 있는 경우 흔히 MagJack이라고 불리운다. 사실 MagJack은 &lt;A title="[http://www.belfuse.com/ProdList-MagJack.asp?pPrLinID=3&amp;pPrLin=MagJack%20Connector%20Modules&amp;pCat=ALL&amp;pRCM=Y&amp;pReset=Y&amp;pOrder=BelPartNumber]로 이동합니다." href="http://www.belfuse.com/ProdList-MagJack.asp?pPrLinID=3&amp;pPrLin=MagJack%20Connector%20Modules&amp;pCat=ALL&amp;pRCM=Y&amp;pReset=Y&amp;pOrder=BelPartNumber" target=_blank>BelFuse&lt;/A>사의 trade mark이다. PoE를 지원하는 MagJack의 경우 이전 &lt;A title="[http://liketheocean.tistory.com/166]로 이동합니다." href="http://liketheocean.tistory.com/166" target=_blank>포스트&lt;/A>를 참고.&lt;br>
+임베디드 시스템에서 Ethernet의 하드웨어를 구현시 PCB 레이아웃을 할때는 PHY의 뒷단 부터는 신호의 무결성을 위해 &lt;br>
+신경을 써야 한다. 대부분 PHY칩 업체의 가이드를 따르면 되며, 모든 벤더들의 가이드 역시 대동소이하다.&lt;/p></description></item><item><title>Virtual Cable Tester</title><link>https://openmicrolab.com/virtual-cable-tester/</link><pubDate>Mon, 06 Sep 2010 08:32:40 +0000</pubDate><guid>https://openmicrolab.com/virtual-cable-tester/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">Ethernet 네트워크에서는 필수적으로 Ethernet PHY 칩을 사용해야한다. PHY칩에 적용되는 기술중 하나인 &lt;b>VCT(Virtual Cable Tester)&lt;/b>는 Marvell에서 개발한 기술로 간단히 얘기하면 &lt;a href="http://liketheocean.tistory.com/entry/%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%BC%80%EC%9D%B4%EB%B8%94-%EC%A2%85%EB%A5%98-UTP-FTP-STP" target="_blank" title="[http://liketheocean.tistory.com/entry/%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%BC%80%EC%9D%B4%EB%B8%94-%EC%A2%85%EB%A5%98-UTP-FTP-STP]로 이동합니다.">UTP 케이블&lt;/a>의 단선 및 단락등을 검출하는 기술이다. &lt;/span>&lt;/p>
+&lt;div>
+&lt;span style="font-size: 11pt; ">즉 구체적으로 다음과 같은 문제점의 검출이 가능하다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: arial, helvetica; line-height: normal; font-size: 17px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; ">&lt;/p>
+&lt;ul class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Open:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Lack of continuity between the pins at each end of the twisted-pair cable.&lt;/span>
+&lt;/li>
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Short:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Two or more conductors short-circuited together.&lt;/span>
+&lt;/li>
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Crossed pair:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Twisted-pair cable incorrectly connected at one end. For example, pair 3 is connected to pins 4 and 5 on one end, and pins 7 and 8 on the other end.&lt;/span>
+&lt;/li>
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Reversed pair:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Two conductors in a twisted-pair cable connected with reverse polarity. For example, one conductor in pair 3 is connected to pin 1 on one side and to pin 2 on the other, while the second conductor is connected between pin 2 and pin 1.&lt;/span>
+&lt;/li>
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Improper termination:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Cable terminations not equal to 100 ohms. Because the characteristic impedance of Category 5 (Cat 5) cable is 100 ohms, the cable terminations at each end must also be 100 ohms to prevent waveform reflections and potential data errors.&lt;/span>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;/span>&lt;/div>
+&lt;pre>&lt;code>&amp;lt;div&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;예를 들면 UTP케이블이 100m 짜리인데 중간에 어느 부근에서 단선, 단락이 되었는지, 선이 제대로 연결이 되었는지 등을 알 수있다.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;이 기술로 원리는 특정 파형의 시그널을 보내고 이것이 반사되어 오는 시간 및 패턴을 보고 문제의 원인을 알아낸다.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; src=&amp;quot;/images/1/cfile9.uf.172DD9334C84A635787D06.jpg&amp;quot; class=&amp;quot;aligncenter&amp;quot; width=&amp;quot;432&amp;quot; height=&amp;quot;341&amp;quot; alt=&amp;quot;&amp;quot; filename=&amp;quot;marvell_vct.jpg&amp;quot; filemime=&amp;quot;image/jpeg&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; src=&amp;quot;/images/1/cfile23.uf.14074A1E4C84A677854F2F.jpg&amp;quot; class=&amp;quot;aligncenter&amp;quot; width=&amp;quot;432&amp;quot; height=&amp;quot;341&amp;quot; alt=&amp;quot;&amp;quot; filename=&amp;quot;marvell_vct2.jpg&amp;quot; filemime=&amp;quot;image/jpeg&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.marvell.com&amp;quot; target=&amp;quot;_blank&amp;quot; title=&amp;quot;[http://www.marvell.com]로 이동합니다.&amp;quot;&amp;gt;Marvell의 홈페이지&amp;lt;/a&amp;gt;에서는 관련한 내용이 잘 찾아지지 않는데, 아래 링크의 내용은 Dell의 제품에 적용된 내용을 기술한 내용이다. &amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;a href=&amp;quot;http://www.dell.com/content/topics/global.aspx/power/en/ps2q03_marvell?c=us&amp;amp;l=en&amp;amp;cs=555&amp;quot; target=&amp;quot;_blank&amp;quot; title=&amp;quot;[http://www.dell.com/content/topics/global.aspx/power/en/ps2q03_marvell?c=us&amp;amp;l=en&amp;amp;cs=555]로 이동합니다.&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;관련 내용 참고&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre></description></item></channel></rss>

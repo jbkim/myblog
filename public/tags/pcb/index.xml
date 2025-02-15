@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pcb on OpenMicroLab</title><link>https://openmicrolab.com/tags/pcb/</link><description>Recent content in Pcb on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 16 Nov 2018 02:39:28 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/pcb/index.xml" rel="self" type="application/rss+xml"/><item><title>HW 디자인 무료 툴</title><link>https://openmicrolab.com/hw-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AC%B4%EB%A3%8C-%ED%88%B4/</link><pubDate>Fri, 16 Nov 2018 02:39:28 +0000</pubDate><guid>https://openmicrolab.com/hw-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AC%B4%EB%A3%8C-%ED%88%B4/</guid><description>
+&lt;h3 id="rf-디자인">RF 디자인&lt;/h3>
+&lt;p>AppCad – 다음과 같은 기능을 제공한다.&lt;/p>
+&lt;ul>
+&lt;li>S-Parameter Analysis and Plotting&lt;/li>
+&lt;li>Active Circuit Bias Design&lt;/li>
+&lt;li>Cascade Noise and IP3 Analysis&lt;/li>
+&lt;li>Transmission Line Analysis&lt;/li>
+&lt;li>Signals and Systems&lt;/li>
+&lt;li>Complex Math Engineering Calculator&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://www.broadcom.com/appcad" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.broadcom.com/appcad">https://www.broadcom.com/appcad&lt;/a>&lt;/a>&lt;/p>
+&lt;h3 id="pcb-선폭-계산-8211trace-width-calculator">PCB 선폭 계산 – Trace Width Calculator&lt;/h3>
+&lt;p>&lt;a href="https://www.4pcb.com/trace-width-calculator.html" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.4pcb.com/trace-width-calculator.html">https://www.4pcb.com/trace-width-calculator.html&lt;/a>&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>양산을 위한 PCB 디자인</title><link>https://openmicrolab.com/%EC%96%91%EC%82%B0%EC%9D%84-%EC%9C%84%ED%95%9C-pcb-%EB%94%94%EC%9E%90%EC%9D%B8/</link><pubDate>Thu, 11 Jan 2018 14:09:51 +0000</pubDate><guid>https://openmicrolab.com/%EC%96%91%EC%82%B0%EC%9D%84-%EC%9C%84%ED%95%9C-pcb-%EB%94%94%EC%9E%90%EC%9D%B8/</guid><description>
+&lt;p>&lt;a href="http://statics3.seeedstudio.com/fusion/ebook/PCB%20DFM%20V1.1.pdf?utm_source=twitter&amp;utm_medium=dfmmobie" target="_blank" rel="noopener noreferrer">PCB Design for Manufacturing&lt;/a>. – Seeedstudio에서 제공한 문서. PCB업체마다 스펙이 조금씩 다르지만 일반적인 룰은 비슷하므로 참고할 만 하다.&lt;/p>
+&lt;p>[wpdm_package id=’4186′]&lt;/p></description></item><item><title>PCB 아트웍 단가 – 참고용</title><link>https://openmicrolab.com/pcb-%EC%95%84%ED%8A%B8%EC%9B%8D-%EB%8B%A8%EA%B0%80-%EC%B0%B8%EA%B3%A0%EC%9A%A9/</link><pubDate>Sat, 07 Oct 2017 05:26:59 +0000</pubDate><guid>https://openmicrolab.com/pcb-%EC%95%84%ED%8A%B8%EC%9B%8D-%EB%8B%A8%EA%B0%80-%EC%B0%B8%EA%B3%A0%EC%9A%A9/</guid><description>
+&lt;img loading="lazy" class="alignnone " src="http://www.kpcb.or.kr/data/file/notice/3732213259_SvK01Bsf_2016B3E2-pcbBCB3B0E8B4DCB0A1C7A5C1D8BEC8-2.jpg" width="454" height="636" />
+&lt;p>출처 – &lt;a href="http://www.kpcb.or.kr/bbs/board.php?bo_table=notice&amp;wr_id=1224" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.kpcb.or.kr/bbs/board.php?bo_table=notice&amp;amp;wr_id=1224">http://www.kpcb.or.kr/bbs/board.php?bo_table=notice&amp;amp;wr_id=1224&lt;/a>&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>LM1117 레귤레이터 PCB 레이아웃</title><link>https://openmicrolab.com/lm1117-%EB%A0%88%EA%B7%A4%EB%A0%88%EC%9D%B4%ED%84%B0-pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</link><pubDate>Mon, 21 Aug 2017 11:48:06 +0000</pubDate><guid>https://openmicrolab.com/lm1117-%EB%A0%88%EA%B7%A4%EB%A0%88%EC%9D%B4%ED%84%B0-pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-4035" src="https://res.cloudinary.com/openmicrolab/image/upload/v1503315948/lm1117_sch_awqhp6.png" width="316" height="221" />
+&lt;img loading="lazy" class="alignnone wp-image-4036" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_914/v1503315951/lm1117_layout_wfvn4u.png" width="555" height="334" />
+&lt;p>&lt;strong>참고&lt;/strong>: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117.pdf" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.ti.com/lit/ds/symlink/lm1117.pdf">http://www.ti.com/lit/ds/symlink/lm1117.pdf&lt;/a>&lt;/a>&lt;/p></description></item><item><title>PCB 레이아웃 가이드</title><link>https://openmicrolab.com/pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B0%80%EC%9D%B4%EB%93%9C/</link><pubDate>Wed, 19 Jul 2017 02:21:44 +0000</pubDate><guid>https://openmicrolab.com/pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B0%80%EC%9D%B4%EB%93%9C/</guid><description>
+&lt;p>PCB 레이아웃 설계시 PCB house에서 지원하는 규격내에서 설계를 하는 것이 바람직하다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3997" src="https://res.cloudinary.com/openmicrolab/image/upload/v1500430679/PCB_Spec_kxt81w.png" width="1029" height="674" />
+&lt;p>추가적인 내용은  &lt;a href="https://www.hsdgt.com/order/info.asp" target="_blank" rel="noopener noreferrer">한샘디지텍&lt;/a> 참고.&lt;/p></description></item><item><title>PCB Panelization &amp; Bridge design</title><link>https://openmicrolab.com/pcb-panelization-bridge-design/</link><pubDate>Thu, 11 May 2017 07:33:13 +0000</pubDate><guid>https://openmicrolab.com/pcb-panelization-bridge-design/</guid><description>
+&lt;p>PCB Panelization &amp;amp; Bridge design 관련 잘 정리된 자료.&lt;/p>
+&lt;p>기존에 미싱홀이라고 부르던 것이 해외에서는 stamp hole이라고 부른다.&lt;br>
+&lt;a href="http://www.seeedstudio.com/blog/2017/05/10/panelization-and-bridge-design/" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.seeedstudio.com/blog/2017/05/10/panelization-and-bridge-design/">http://www.seeedstudio.com/blog/2017/05/10/panelization-and-bridge-design/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>그리고 아래 링크는 PCB DFM 관련 가이드&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3944" src="http://res.cloudinary.com/openmicrolab/image/upload/v1494559696/seeed-dfm_ew4kox.jpg" width="411" height="577" />
+&lt;p>&lt;a href="https://statics3.seeedstudio.com/fusion/ebook/PCB+DFM+V1.0+.pdf" target="_blank" rel="noopener noreferrer">&lt;a href="https://statics3.seeedstudio.com/fusion/ebook/PCB+DFM+V1.0+.pdf">https://statics3.seeedstudio.com/fusion/ebook/PCB+DFM+V1.0+.pdf&lt;/a>&lt;/a>&lt;/p></description></item><item><title>[자료] Analog Engineer’s Pocket Reference Guide</title><link>https://openmicrolab.com/%EC%9E%90%EB%A3%8C-analog-engineers-pocket-reference-guide/</link><pubDate>Fri, 01 Apr 2016 02:11:55 +0000</pubDate><guid>https://openmicrolab.com/%EC%9E%90%EB%A3%8C-analog-engineers-pocket-reference-guide/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://www.ti.com/lsds/sites/ti/amplifiers-linear/images/AnalogPocketReference_cover.png" alt="" width="192" height="250" />
+&lt;p>&lt;a href="https://www.ti.com/seclit/sl/slyw038b/slyw038b.pdf" target="_blank">Analog Engineer’s Pocket Reference Guide 4th Edition (Rev. B)&lt;/a>&lt;/p>
+&lt;p>전자과에서 배우던 내용인데, 실제적인 것이 많아서 유용함.&lt;/p>
+&lt;p>이 &lt;a href="http://www.ti.com/lsds/ti/amplifiers-linear/precision-amplifier-support-community.page#pocketref" target="_blank">링크&lt;/a>에 비디오도 있다.&lt;/p></description></item><item><title>Mixed-Signal PCB 디자인</title><link>https://openmicrolab.com/mixed-signal-pcb-%EB%94%94%EC%9E%90%EC%9D%B8/</link><pubDate>Mon, 04 Jan 2016 02:22:53 +0000</pubDate><guid>https://openmicrolab.com/mixed-signal-pcb-%EB%94%94%EC%9E%90%EC%9D%B8/</guid><description>
+&lt;p>아날로그와 디지털이 같이 있는 회로를 PCB 디자인 할때 필요한 사항&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf1.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-3477" src="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf1.png" alt="www_e2v_com_content_uploads_2014_02_0999A_pdf" width="445" height="211" srcset="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf1.png 445w, https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf1-300x142.png 300w" sizes="(max-width: 445px) 100vw, 445px" />&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-3476" src="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf.png" alt="www_e2v_com_content_uploads_2014_02_0999A_pdf" width="507" height="229" srcset="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf.png 507w, https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf-300x136.png 300w" sizes="(max-width: 507px) 100vw, 507px" />&lt;/a>&lt;/p>
+&lt;p>• Do not split the ground plane, use one solid plane under both analog and digital sections of the board&lt;br>
+• Use large area ground planes for low impedance current return paths&lt;br>
+• Keep over 75% board area for the ground plane&lt;br>
+• Separate analog and digital power planes&lt;br>
+• Use solid ground planes next to power planes&lt;br>
+• Locate all analogue components and lines over the analogue power plane and all digital components&lt;br>
+and lines over the digital power plane&lt;br>
+• Do not route traces over the split in the power planes, unless if traces that must go over the power&lt;br>
+plane split must be on layers adjacent to the solid ground plane&lt;br>
+• Think about where and how the ground return currents are actually flowing&lt;br>
+• Partition your PCB with separate analog and digital sections&lt;br>
+• Place components properly&lt;/p></description></item><item><title>PCB Trace 저항값 계산기</title><link>https://openmicrolab.com/pcb-trace-%EC%A0%80%ED%95%AD%EA%B0%92-%EA%B3%84%EC%82%B0%EA%B8%B0/</link><pubDate>Sun, 03 Aug 2014 14:57:49 +0000</pubDate><guid>https://openmicrolab.com/pcb-trace-%EC%A0%80%ED%95%AD%EA%B0%92-%EA%B3%84%EC%82%B0%EA%B8%B0/</guid><description>
+&lt;p>PCB의 선폭, 동박의 두께, 길이를 입력하면 저항값을 얻을 수 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/pcb_resistance.png" width="365" height="325" />
+&lt;p>&lt;strong>Electrical Equations:&lt;/strong>&lt;br>
+Resistance = Resistivity*Length/Area*(1 + (Temp_Co*(Temp – 25))&lt;br>
+Where, Area = Thickness*Width&lt;br>
+A copper Thickness of 1 oz/ft^2 = 0.0035 cm&lt;br>
+Copper Resistivity = 1.7E-6 ohm-cm&lt;br>
+Copper Temp_Co = 3.9E-3 ohm/ohm/C&lt;/p>
+&lt;p>&lt;strong>Thermal Equations:&lt;/strong>&lt;br>
+Thermal_Resistance = Thermal_Resistivity*Length/Area&lt;br>
+Copper Thermal_Resistivity = 0.249 cm-K/W (at 300K)&lt;/p>
+&lt;p>관련 링크: &lt;a href="http://circuitcalculator.com/wordpress/2006/01/24/trace-resistance-calculator" target="_blank">&lt;a href="http://circuitcalculator.com/wordpress/2006/01/24/trace-resistance-calculator">http://circuitcalculator.com/wordpress/2006/01/24/trace-resistance-calculator&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Eagle CAD로 거버만들때 주의사항</title><link>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EA%B1%B0%EB%B2%84%EB%A7%8C%EB%93%A4%EB%95%8C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/</link><pubDate>Mon, 19 May 2014 01:38:25 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EA%B1%B0%EB%B2%84%EB%A7%8C%EB%93%A4%EB%95%8C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/</guid><description>
+&lt;p>이전에 작성한 포스팅 &lt;a href="http://openmicrolab.com/eagle-cad/" target="_blank" rel="noopener noreferrer">Eagle CAD&lt;/a>에서 거버 만들기는 일반적으로 2층 PCB의 경우 bottom에 부품이 없을 경우를 가정한다. 만약 bottom면에 부품을 실장을 하거나, &lt;a href="http://openmicrolab.com/eagle-cad%EB%A1%9C-%EC%9E%91%EC%97%85%ED%95%9C-pcb%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%84%A3%EA%B8%B0/" target="_blank" rel="noopener noreferrer">PCB에 이미지를 넣을 경우&lt;/a>는 기본으로 설정된 레이어 이외의 레이어를 사용하므로, 거버를 만들때 추가적인 레이어가 선택이 되도록 해야 한다.&lt;/p>
+&lt;p>Bottom면에 부품을 실장할 경우는 Silk screen solder를 추가한다. 즉 거버파일을 만드는 단계에서 *&lt;em>gerb274x.cam를 선택하고 작업을 할때 Silk screen SOL을 만들고 파일 확장자는 &lt;em>.pls로 해서 작업을 하면 된다.&lt;/em>&lt;/em>&lt;/p>
+&lt;img loading="lazy" src="http://openmicrolab.cdn2.cafe24.com/eale_gerber.png" alt="null" width="680" height="405" />
+&lt;p>&lt;strong>이렇게 할 경우 최종 거버파일은 10개가 된다.&lt;/strong>&lt;/p></description></item><item><title>DIP TRACE – PCB 디자인 툴</title><link>https://openmicrolab.com/dip-trace-pcb-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%88%B4/</link><pubDate>Wed, 25 Apr 2012 03:27:37 +0000</pubDate><guid>https://openmicrolab.com/dip-trace-pcb-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%88%B4/</guid><description>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.1451B9344F97660C11B27D.PNG" class="aligncenter" width="683" height="514" filename="diptrace.PNG" filemime="image/jpeg" style="""" />
+&lt;/p>
+&lt;p>Open hardware 분야에서 &lt;a href="http://liketheocean.tistory.com/199" target="_blank" class="tx-link">Eagle CAD&lt;/a>가 가장 많이 사용이 되는 것 같다. &lt;/p>
+&lt;p>이런 툴들이 상용 버젼도 있지만 Hobbist 나 학생 그리고 비상어업적인 용도를 위해서는 훨씬 싼 가격으로 제품을 공급을 한다.&lt;/p>
+&lt;p>물론 약간의 기능의 제한이 있지만 무료버젼도 제공을 한다. 사실 무료버젼이라도 PCB가 복잡하지 않으면 웬만한 PCB 디자인은 가능하다. 그리고 Windows 버젼 뿐 아니라 당연히 MAC 버젼도 제공을 한다.&lt;/p>
+&lt;p>&lt;a href="http://www.diptrace.com/index.php?en=1" target="_blank" class="tx-link">DIP TRACE&lt;/a> 역시 Open hardware 분야서 사용되는 PCB 디자인 툴이다.&lt;/p></description></item><item><title>Footprint를 살짝 변경함으로 생산의 에러를 줄이는 방법</title><link>https://openmicrolab.com/footprint%EB%A5%BC-%EC%82%B4%EC%A7%9D-%EB%B3%80%EA%B2%BD%ED%95%A8%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%82%B0%EC%9D%98-%EC%97%90%EB%9F%AC%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95/</link><pubDate>Wed, 23 Nov 2011 11:03:31 +0000</pubDate><guid>https://openmicrolab.com/footprint%EB%A5%BC-%EC%82%B4%EC%A7%9D-%EB%B3%80%EA%B2%BD%ED%95%A8%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%82%B0%EC%9D%98-%EC%97%90%EB%9F%AC%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95/</guid><description>
+&lt;p>핀헤더를 PCB보드에 직각으로 제대로 솔더링하기 위해서 PCB footprint를 변경하는 아이디어&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.133175404ECCD22E15A1F6.jpg" class="aligncenter" width="500" height="97" alt="" filename="PCB_Footprint_existing.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="TEXT-ALIGN: center; MARGIN: 0px">
+기존의 라이브러리
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.143175404ECCD22E16DED8.jpg" class="aligncenter" width="500" height="173" alt="" filename="PCB_Footprint_Modified.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;DIV style="TEXT-ALIGN: center">
+화살표 방향으로 센터를 옮긴 라이브러리&lt;/p>
+&lt;p>
+&lt;/DIV>&lt;br />
+&lt;pre>&lt;code>&amp;lt;DIV style=&amp;quot;TEXT-ALIGN: left&amp;quot;&amp;gt;
+양방향으로 조금 벌어진 구멍때문에 핀헤더를 지지하게 되어, PCB 보드에 핀헤더가 직각으로 장착이 된다.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;
+관련 자료: &amp;lt;A href=&amp;quot;http://www.sparkfun.com/tutorials/114&amp;quot;&amp;gt;http://www.sparkfun.com/tutorials/114&amp;lt;/A&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/DIV&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;DIV style=&amp;quot;TEXT-ALIGN: left&amp;quot;&amp;gt;
+&amp;lt;br /&amp;gt; SparkFun의 EagleCAD Footprint 라이브러리 : &amp;lt;A href=&amp;quot;http://www.opencircuits.com/SFE_Footprint_Library_Eagle&amp;quot;&amp;gt;http://www.opencircuits.com/SFE_Footprint_Library_Eagle&amp;lt;/A&amp;gt;
+&amp;lt;/DIV&amp;gt;
+&amp;lt;/p&amp;gt;
+&lt;/code>&lt;/pre></description></item><item><title>탄탈 캐패시터 용량 및 사이즈</title><link>https://openmicrolab.com/%ED%83%84%ED%83%88-%EC%BA%90%ED%8C%A8%EC%8B%9C%ED%84%B0-%EC%9A%A9%EB%9F%89-%EB%B0%8F-%EC%82%AC%EC%9D%B4%EC%A6%88/</link><pubDate>Tue, 17 Aug 2010 05:47:45 +0000</pubDate><guid>https://openmicrolab.com/%ED%83%84%ED%83%88-%EC%BA%90%ED%8C%A8%EC%8B%9C%ED%84%B0-%EC%9A%A9%EB%9F%89-%EB%B0%8F-%EC%82%AC%EC%9D%B4%EC%A6%88/</guid><description>
+&lt;p>칩 탄탈 패키지에 대한 정보. 외우기는 힘들고 필요할 때 마다 참조 할 수 밖에..&lt;br>
+아래 자료는 Vishay 자료에서 발췌한 것입니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.1951B6224C6A21864C30A7.jpg" class="aligncenter" width="640" height="328" alt="" filename="Tantal_Size.jpg" filemime="image/jpeg" /> **&lt;span style="font-weight: normal;">즉 다음과 같은 사이즈를 가지는데…&lt;/span>&lt;br>
+P  :  2012&lt;br>
+A  :  3216&lt;br>
+B  :  3528&lt;br>
+C  :  6032&lt;br>
+D  :  7343&lt;/p>&lt;/p>
+&lt;p>&lt;/strong>용량별로 사이즈가 다르므로 다음의 표가 유용함.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.204921204C6A220A5EEA92.jpg" class="aligncenter" width="682" height="482" alt="" filename="Tantal_Size2.jpg" filemime="image/jpeg" />&lt;/p></description></item></channel></rss>

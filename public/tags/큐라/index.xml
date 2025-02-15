@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>큐라 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%81%90%EB%9D%BC/</link><description>Recent content in 큐라 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 21 Apr 2016 06:03:26 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%81%90%EB%9D%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>Cura 2.1 open beta 버전 빌드</title><link>https://openmicrolab.com/cura-2-1-open-beta-%EB%B2%84%EC%A0%84-%EB%B9%8C%EB%93%9C/</link><pubDate>Thu, 21 Apr 2016 06:03:26 +0000</pubDate><guid>https://openmicrolab.com/cura-2-1-open-beta-%EB%B2%84%EC%A0%84-%EB%B9%8C%EB%93%9C/</guid><description>
+&lt;p>Ultimaker에서 기존 Cura와 다른 GUI를 가진 Cura를 개발해서 &lt;a href="https://ultimaker.com/en/community/20538-cura-21-open-beta-has-been-released" target="_blank">베타버전&lt;/a>을 내놓았다. 이유는&lt;/p>
+&lt;blockquote>
+&lt;p>This is the new, shiny frontend for Cura. daid/Cura is the old legacy Cura that everyone knows and loves/hates.&lt;br>
+We re-worked the whole GUI code at Ultimaker, because the old code started to become a unmaintainable&lt;/p>&lt;/blockquote>
+&lt;p>사실 daid의 Cura의 경우 맥에서의 빌드는 본인도 hell이라고 표현을 하는데, 이번 베타버전의 큐라를 빌드해 보니 스무스하게 빌드가 된다. 단 빌드 시간은 엄청나게 오래 걸린다.&lt;/p></description></item><item><title>큐라 한글화 14.09 버전</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-14-09-%EB%B2%84%EC%A0%84/</link><pubDate>Mon, 17 Nov 2014 07:16:35 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-14-09-%EB%B2%84%EC%A0%84/</guid><description>
+&lt;p>지난번에 큐라 한글화 작업에 대해서 &lt;a href="http://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/" target="_blank">포스팅&lt;/a>을 했는데, 몇가지 추가할 사항이 있어서 다시 정리를 한다.&lt;/p>
+&lt;p>일단 당시 한글화 한 버젼은 14.08 RC버젼인데, 이 버젼은 공식 릴리즈가 되지 않았고, 14.07 다음에 바로 14.09버젼이 릴리즈 됐다. 그리고 14.08 한글 번역 버젼이 서포트 설정이 동작을 하지 않는다는 것이다.&lt;/p>
+&lt;p>문제의 원인은 다음과 같다.  큐라의 모든 설정 부분은 current_profile.ini 파일에 저장이 되며, 큐라가 시작할때 이 파일을 로드해서 설정이 되고 종료할때 마지막 값이 저장되는데 한글로 설정된 값이 current_profile.ini에 저장이 안된다. 따라서 이부분은 그냥 영문을 그대로 사용을 하도록 po 파일을 수정해서 다시 빌드를 했다. 14.09버젼에는 프랑스어, 독일어가 추가가 되어 있고 설정이 가능해져서 이 부분도 수정을 해서 한국어 설정도 가능하도록 했다.&lt;/p></description></item><item><title>큐라 실행파일 만들기 – Win32</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0-win32/</link><pubDate>Mon, 22 Sep 2014 09:12:37 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0-win32/</guid><description>
+&lt;p>슬라이드쉐어에 정리…&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="Cura Packaging in Win32" href="https://www.slideshare.net/JinbuhmKim/cura-packaging-win32" target="_blank">Cura Packaging in Win32&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>큐라 한글화 – Cura Korean Translation</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/</link><pubDate>Fri, 19 Sep 2014 07:58:07 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Cura_Hangul_Win.png" alt="" width="767" height="485" />
+&lt;p>네이버 카페에서 누군가 큐라(Cura)를 한글화한 것을 몇 건을 봤는데, po파일을 찾을 수 가 없고 또 어떤 것은 파이썬 소스의 영문을 그대로 건드려서 이건 아니다 싶어서 한글 번역을 했다. 사실 한글 번역은 귀찮은 작업인데 이런 작업을 하면서 더 알아가는 것도 있고 오픈소스에 기여를 하는 한 방편이기도 해서 진행을 했다.&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/LC_MESSAGES.png" alt="" width="709" height="263" />
+&lt;blockquote>
+&lt;p>&lt;del>일단 기존에 사용하는 큐라를 한글로 바꾸려면 Cura설치폴더\Cura\resources\locale 폴더에 위에서 받은 파일중 ko 폴더를 추가하고 큐라가 설치된 폴더아래 Cura 폴더 아래의 &lt;/del>&lt;strong>&lt;del>preferences.ini 파일에서 language 항목에 Korean으로 설정하면 된다.&lt;/del>  14.09버젼 부터는 언어 설정을 하는 옵션이 추가됨&lt;/strong>&lt;/p></description></item><item><title>3D 프린팅용 오픈소스 소프트웨어</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</link><pubDate>Fri, 19 Sep 2014 03:32:33 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</guid><description>
+&lt;p>3D 프린팅을 위해서는 4가지 소프트웨어가 필요하다.&lt;/p>
+&lt;ol>
+&lt;li>프린팅할 물체를 모델링 하는 소프트웨어&lt;/li>
+&lt;li>이 3D 모델을 각 레이어 별로 잘라주는 슬라이스 소프트웨어 – STL파일을 G코드로 변환&lt;/li>
+&lt;li>G 코드를 프린터로 전송해 주는 프로그램 – 보통 3D printing host software라고 부른다.&lt;/li>
+&lt;li>3D 프린터에 내장되어 있는 펌웨어&lt;/li>
+&lt;/ol>
+&lt;p>일단 1번은 디자인을 위한 것이고 4번은 기기에서 돌아가는 소프트웨어 이니 논외로 하고 슬라이서 프로그램과 호스트 프로그램을 살펴보자. 일반적으로 이 두 프로그램이 합쳐져 있다. 즉 호스트 프로그램에서 슬라이서 프로그램을 가져다 쓰는 형태이다.&lt;/p></description></item></channel></rss>

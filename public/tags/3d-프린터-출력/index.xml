@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D 프린터 출력 on OpenMicroLab</title><link>https://openmicrolab.com/tags/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%B6%9C%EB%A0%A5/</link><description>Recent content in 3D 프린터 출력 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 23 Jun 2015 01:55:35 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%B6%9C%EB%A0%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>3D 프린터 트러블 슈팅</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85/</link><pubDate>Tue, 23 Jun 2015 01:55:35 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85/</guid><description>
+&lt;p>&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baaedae4b08d4d93a1c214/file-GN9iWX4Uso.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53bbd820e4b09d13bf3cdd35/file-mjx4MffrQn.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53ba99cfe4b09d13bf3cdb5f/file-NZnhvOw08g.jpg" alt="" width="200" height="200" />&lt;/p>
+&lt;p>&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baa2d5e4b08d4d93a1c203/file-aJTtLfvFX7.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baa75fe4b08d4d93a1c20e/file-sDk3kVHFi4.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53bbe483e4b08d4d93a1c3e3/file-1ZrZKjRNje.jpg" alt="" width="200" height="200" />&lt;/p>
+&lt;p>&lt;strong>&lt;span class="s1">Pillowng&lt;/span>&lt;/strong>&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">Top layer에서 팬의 속도가 최대가 아닐때 이런 문제가 발생할 수 있다.  &lt;/span>&lt;span class="s1">Top Layer는 최소 6 top layer가 되야.. 즉 0.1mm 레이어 두께일때 0.6mm&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>&lt;span class="s1">Warping&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">히트베드, 풀 사용, &lt;/span>&lt;span class="s1">Brim 을 적용&lt;/span>
+&lt;/p>
+&lt;p class="p3">
+&lt;strong>&lt;span class="s1">Elephant’s foot&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">레벨링을 해서 약간 띄움&lt;/span>
+&lt;/p>
+&lt;p class="p3">
+&lt;strong>&lt;span class="s1">Stringing&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">Retracation &amp; 온도를 낮춤&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>&lt;span class="s1">Ringing&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">프린팅 속도를 낮춤, &lt;/span>&lt;span class="s1">acceleration 속도를 낮춤, &lt;/span>&lt;span class="s1">Outer wall을 0.8mm 이상으로&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">과도한 열도 이런 형상을 유발할 수 있다.&lt;/span>
+&lt;/p>
+&lt;p>&lt;strong>참고자료&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/23-a-visual-ultimaker-troubleshooting-guide" target="_blank">Visual Ultimaker troubleshooting guide&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/30-getting-better-prints" target="_blank">Getting better print&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/38-designing-for-3d-printing">Designing for 3D print&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p class="p1"></description></item></channel></rss>

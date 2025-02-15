@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PID Tuning on OpenMicroLab</title><link>https://openmicrolab.com/tags/pid-tuning/</link><description>Recent content in PID Tuning on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 09 Aug 2016 06:38:50 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/pid-tuning/index.xml" rel="self" type="application/rss+xml"/><item><title>PID 튜닝</title><link>https://openmicrolab.com/pid-%ED%8A%9C%EB%8B%9D/</link><pubDate>Tue, 09 Aug 2016 06:38:50 +0000</pubDate><guid>https://openmicrolab.com/pid-%ED%8A%9C%EB%8B%9D/</guid><description>
+&lt;p>Reprap 기반의 코드에 적용되어 있는 PID 를 튜닝하는 방법은 다음과 같이 PID Auto-tune을 사용해서 상수값 Kp, Ki, Kd값을 정하고 Configuration.h에 설정을 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>M303 E0 S210 C8&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;p>위 코드의 의미는 타겟온도 210도로 하고 8번의 사이클을 거쳐서 값을 정하는것. 그러면 다음과 같이 값이 나온다.&lt;/p>
+&lt;blockquote>
+&lt;p>bias: 92 d: 92 min: 196.56 max: 203.75&lt;br>
+Ku: 32.59 Tu: 54.92&lt;br>
+Clasic PID&lt;br>
+Kp: 19.56&lt;br>
+Ki: 0.71&lt;br>
+Kd: 134.26&lt;br>
+PID Autotune finished ! Place the Kp, Ki and Kd constants in the configuration.h&lt;/p></description></item></channel></rss>

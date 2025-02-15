@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CortexM0 on OpenMicroLab</title><link>https://openmicrolab.com/tags/cortexm0/</link><description>Recent content in CortexM0 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 29 Jan 2014 06:12:46 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/cortexm0/index.xml" rel="self" type="application/rss+xml"/><item><title>ARM Cortex M0 – 소개</title><link>https://openmicrolab.com/arm-cortex-m0-%EC%86%8C%EA%B0%9C/</link><pubDate>Wed, 29 Jan 2014 06:12:46 +0000</pubDate><guid>https://openmicrolab.com/arm-cortex-m0-%EC%86%8C%EA%B0%9C/</guid><description>
+&lt;blockquote>
+&lt;p>ARM사는 Acorn Computer Group, Apple 컴퓨터, VLSI Technology의 합작투자회사로 1990년에 Advanced RISC Machine Ltd라는 이름으로 설립&lt;/p>&lt;/blockquote>
+&lt;h3 id="arm-cortex-m0의-특징">ARM Cortex-M0의 특징&lt;/h3>
+&lt;ul>
+&lt;li>적은 게이트수: 12,000&lt;/li>
+&lt;li>저전력 기능 지원 및 높은 에너지 효율성 – 0.9 DMIPS/MHz&lt;/li>
+&lt;li>사용하기 쉬운 인터럽트 우선순위 제어를 가진 내장형 인터럽트 콘트롤러&lt;/li>
+&lt;li>Low interrupt latency, 타이밍이 확정적(deterministic)&lt;/li>
+&lt;li>Thumb 지원- 높은 코드 밀도&lt;/li>
+&lt;/ul>
+&lt;h3 id="arm-프로세서와-아키텍처">ARM 프로세서와 아키텍처&lt;/h3>
+&lt;ul>
+&lt;li>2006년에 Cortex-M3 (ARMv7-M 아키텍쳐) 출시&lt;/li>
+&lt;li>Cortex-M0는 ARMv6-M 아키텍쳐기반&lt;/li>
+&lt;li>ARMv6-M 아키텍쳐는 ARMv7-M의 메모리 맵,  프로그래머 모델과 익셉션 모델, Thumb2 시스템과 ARMv6의 Thumb 명령어 셋 그리고 CoreSight Debug 아키켁쳐를 결합한 형태이며, 여기에 저전력에 특화된 설계로 나온 것이 M0이며, FPRGA 특화된 특성을 넣은 것이 M1이다.&lt;/li>
+&lt;/ul>
+&lt;div id="attachment_2751" style="width: 727px" class="wp-caption aligncenter">
+&lt;a href="https://openmicrolab.com/images/2013/12/arm-processor-architecture.jpg">&lt;img aria-describedby="caption-attachment-2751" loading="lazy" class="wp-image-2751 " title="ARM 프로세서 아키텍처의 진화" alt="arm processor architecture" src="https://openmicrolab.com/images/2013/12/arm-processor-architecture-1024x483.jpg" width="717" height="338" srcset="https://openmicrolab.com/images/2013/12/arm-processor-architecture-1024x483.jpg 1024w, https://openmicrolab.com/images/2013/12/arm-processor-architecture-300x141.jpg 300w" sizes="(max-width: 717px) 100vw, 717px" />&lt;/a>
+&lt;p id="caption-attachment-2751" class="wp-caption-text">
+ARM 프로세서 아키텍처의 진화
+&lt;/p></description></item><item><title>CortexM0 보드와 CooCox</title><link>https://openmicrolab.com/cortexm0-%EB%B3%B4%EB%93%9C%EC%99%80-coocox/</link><pubDate>Tue, 17 Sep 2013 07:30:08 +0000</pubDate><guid>https://openmicrolab.com/cortexm0-%EB%B3%B4%EB%93%9C%EC%99%80-coocox/</guid><description>
+&lt;h3 id="nxp-lpc1114-보드">NXP LPC1114 보드&lt;/h3>
+&lt;p>이전 블로그를 보니 2011년도 초에 NXP와 Nuvoton의 Cortex M0에 대해 쓴 &lt;a href="http://openmicrolab.com/nuvoton%EC%9D%98-cortex-m0-%EC%B9%A9/" target="_blank">블로그 포스팅&lt;/a>이 있었는데 최근 당시에 CooCox로 부터 받은 보드와 최근에 Nuvoton에서 받은 보드를 테스트를 해봤다. 아래 그림에서 위에 있는 것은 NXP칩을 사용한 &lt;a href="http://sg.element14.com/embest/colinkex-lpc11c14-evb/board-eval-lpc1114-w-colinkex/dp/2136555" target="_blank">LPC1114보드&lt;/a>이고, 아래 그림은 Nuvoton의 &lt;a href="http://www.nuvoton.com/hq/enu/ProductAndSales/ProductLines/MicrocontrollerApplicationIC/ARMMicrocontroller/ARMCortexTMM0/Documents/NuTiny-SDK-M051%20user%20manual%20EN%20V1.0.pdf" target="_blank">M0516NBL&lt;/a> 을 사용한 보드이다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/09/CortexM0-%EB%B3%B4%EB%93%9C.jpg">&lt;img loading="lazy" class="alignnone wp-image-2683" alt="CortexM0 보드" src="https://openmicrolab.com/images/2013/09/CortexM0-보드-1024x625.jpg" width="717" height="438" srcset="https://openmicrolab.com/images/2013/09/CortexM0-보드-1024x625.jpg 1024w, https://openmicrolab.com/images/2013/09/CortexM0-보드-300x183.jpg 300w, https://openmicrolab.com/images/2013/09/CortexM0-보드.jpg 1825w" sizes="(max-width: 717px) 100vw, 717px" />&lt;/a>&lt;/p>
+&lt;p>최근 이런 개발 보드들의 특징은 디버거를 포함을 하고 있는데, 보드의 좌측 부분이 디버거 기능을 하며,  &lt;a href="http://openmicrolab.com/cmsis-dap-%EB%9E%80/" target="_blank">CMSIS-DAP&lt;/a> 기능을 한다.&lt;/p></description></item><item><title>LPC810 ARM CortexM0+ Project -1</title><link>https://openmicrolab.com/lpc810-arm-cortexm0-project-1/</link><pubDate>Mon, 09 Sep 2013 07:22:03 +0000</pubDate><guid>https://openmicrolab.com/lpc810-arm-cortexm0-project-1/</guid><description>
+&lt;h3 id="project-description">Project Description&lt;/h3>
+&lt;p>이 프로젝트의 목적은 가장 작은 MCU에 Ethernet connectivity를 구현하는 것이다. 아마 아래 그림과 같은 형태가 될것이다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/09/lpc810_ethernet.jpg">&lt;img loading="lazy" class=" wp-image-2651 alignnone" alt="lpc810_ethernet" src="https://openmicrolab.com/images/2013/09/lpc810_ethernet.jpg" width="717" height="484" srcset="https://openmicrolab.com/images/2013/09/lpc810_ethernet.jpg 1024w, https://openmicrolab.com/images/2013/09/lpc810_ethernet-300x202.jpg 300w" sizes="(max-width: 717px) 100vw, 717px" />&lt;/a>&lt;/p>
+&lt;h3 id="cortexmo">CortexMo+&lt;/h3>
+&lt;p>NXP에서 출시한 LPC800시리즈는 ARM사의 CortexM0+ 시리즈의 칩이다. ARM의 소개 페이지에 있는 것 처럼 CortexM0와 마찬가지로 8, 16비트 시장을 타겟으로 하고 있다. CortexM0와 비교해서는 파워소모를 더 줄였고 성능은 더 높인 버젼이라고 이해하면 될 듯 하다. &lt;a href="http://deltas.blog.com/2013/03/13/arm-cortex-m0-vs-msp430-or-are-m0-based-devices-really-16-bit-mcu-replacements-2/" target="_blank">TI의 MSP430과 비교를 한 사이트&lt;/a>도 있는데, GPIO만 적을뿐 가격, 파워 소모, 성능등 모든 면에서 우월하다.&lt;/p></description></item><item><title>CMSIS-Cortex Microcontroller Software Interface Standard</title><link>https://openmicrolab.com/cmsis-cortex-microcontroller-software-interface-standard/</link><pubDate>Fri, 28 Jan 2011 03:45:06 +0000</pubDate><guid>https://openmicrolab.com/cmsis-cortex-microcontroller-software-interface-standard/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: arial, verdana, tahoma, sans-serif; FONT-SIZE: 14px" class=Apple-style-span>&lt;/p>
+&lt;H1 style="PADDING-BOTTOM: 0px; MARGIN: 0.8em 0px 0.2em; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 21px; PADDING-TOP: 0px">
+CMSIS &amp;#8211; Cortex Microcontroller Software Interface Standard
+&lt;/H1>
+&lt;DIV style="TEXT-ALIGN: left; WIDTH: 0px; DISPLAY: inline" class=cputext>&lt;SPAN style="TEXT-ALIGN: center; PADDING-LEFT: 5px; WIDTH: 203px; DISPLAY: inline; FLOAT: right" class=cpuimage>&lt;IMG style="BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" alt="CMSIS - Cortex Microcontroller Software Interface Standard Image" src="http://www.arm.com/images/CMSIS_Logo.jpg" />&lt;/SPAN>
+&lt;DIV>
+&lt;br /> 최근 많은 칩 벤더들이 CortexM 시리즈의 칩들을 내놓고 있습니다. 코아는 같지만 다양한 메모리 옵션과 페리페럴들로 특화된 칩들이 나오고 있죠. 다양한 칩들이 나오다보니 ARM에서 CMSIS라는&amp;nbsp;CortexM 시리즈칩들의 하드웨어를 억세스하기위한 S/W 인터페이스를 만들었네요.&amp;nbsp;이것은 벤더에 무관하게 하드웨어를 추상화 시킨 레이어 입니다. 칩 벤더들이 좀 더 쉽게 자신들의 페리페럴 인터페이스 코드를 만들 수 있겠군요. CMSIS는 약 1K정도의 코드 메모리와 10바이트 미만의 램을 필요로 하답니다.10 Bytes RAM).&lt;/p></description></item></channel></rss>

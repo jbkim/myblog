@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cosm on OpenMicroLab</title><link>https://openmicrolab.com/tags/cosm/</link><description>Recent content in Cosm on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 19 Feb 2013 00:28:46 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/cosm/index.xml" rel="self" type="application/rss+xml"/><item><title>WizFi210과 IoT서비스 연동</title><link>https://openmicrolab.com/wizfi210%EA%B3%BC-iot%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%B0%EB%8F%99/</link><pubDate>Tue, 19 Feb 2013 00:28:46 +0000</pubDate><guid>https://openmicrolab.com/wizfi210%EA%B3%BC-iot%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%B0%EB%8F%99/</guid><description>
+&lt;p>&lt;a class="tx-link" href="https://cosm.com" target="_blank">Cosm&lt;/a>은 &lt;span style="font-size: 9pt; line-height: 1.5;">&lt;a class="tx-link" href="http://liketheocean.tistory.com/183" target="_blank">IoT 서비스&lt;/a>로 예전에 Pachube라는 이름으로 서비스를 하다가 LogMeIn에 인수가 되면서 Cosm으로 이름이 바뀌었다.먼저 Cosm의 서비스를 사용하기 위해서는 회원 가입을 하고, Device/Feed를 추가해야한다.&lt;/span>&lt;/p>
+&lt;div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;b>&lt;span style="font-size: 10pt;">Cosm 설정&lt;/span>&lt;/b>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 9pt; line-height: 1.5;">&lt;b>1. 회원 가입&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 9pt; line-height: 1.5;">회원&lt;/span>&lt;span style="font-size: 9pt; line-height: 1.5;"> &lt;/span>&lt;span style="font-size: 9pt; line-height: 1.5;">가입을 하면 &lt;/span>&lt;span style="font-size: 9pt; line-height: 1.5;">API키를 발급을 하는데, 이 정보는 기억을 해둬야하고, 나중에 Keys에서 다시 확인을 할 수 있다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;p>
+&lt;a href="https://openmicrolab.com/images/2013/02/cosm_00.png">&lt;img loading="lazy" class="size-full wp-image-2348 aligncenter" alt="cosm_00" src="https://openmicrolab.com/images/2013/02/cosm_00.png" width="253" height="115" />&lt;/a>
+&lt;/p>
+&lt;/div>
+&lt;div>
+&lt;b>2. Device/Feed 추가&lt;/b>
+&lt;/div>
+&lt;div>
+Something Else를 선택한다.
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;a href="https://openmicrolab.com/images/2013/03/cosm_01.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2358" alt="cosm_01" src="https://openmicrolab.com/images/2013/03/cosm_01.png" width="683" height="345" srcset="https://openmicrolab.com/images/2013/03/cosm_01.png 683w, https://openmicrolab.com/images/2013/03/cosm_01-300x151.png 300w" sizes="(max-width: 683px) 100vw, 683px" />&lt;/a>
+&lt;/div>
+&lt;div>
+Step1에서 디폴트로 선택이 되어 있는 &amp;#8220;No, I will push data to Cosm&amp;#8221;를 선택을 한다.
+&lt;/div>
+&lt;div>
+&lt;p style="text-align: center; clear: none; float: none;">
+&lt;a href="https://openmicrolab.com/images/2013/03/cosm_02.png">&lt;img loading="lazy" class=" wp-image-2357 aligncenter" alt="cosm_02" src="https://openmicrolab.com/images/2013/03/cosm_02.png" width="678" height="465" srcset="https://openmicrolab.com/images/2013/03/cosm_02.png 678w, https://openmicrolab.com/images/2013/03/cosm_02-300x205.png 300w" sizes="(max-width: 678px) 100vw, 678px" />&lt;/a>
+&lt;/p></description></item></channel></rss>

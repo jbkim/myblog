@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STM8S on OpenMicroLab</title><link>https://openmicrolab.com/tags/stm8s/</link><description>Recent content in STM8S on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 12 Mar 2012 10:50:26 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/stm8s/index.xml" rel="self" type="application/rss+xml"/><item><title>STM32 – STM8 Embedded software solutions</title><link>https://openmicrolab.com/stm32-stm8-embedded-software-solutions/</link><pubDate>Mon, 12 Mar 2012 10:50:26 +0000</pubDate><guid>https://openmicrolab.com/stm32-stm8-embedded-software-solutions/</guid><description>
+&lt;p>잘 정리된 STM32, STM8의 s/w solution 가이드&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;p>
+&lt;a href="https://openmicrolab.com/images/2012/03/stm32-stm8.png">&lt;img loading="lazy" class="aligncenter wp-image-4722 size-full" src="https://openmicrolab.com/images/2012/03/stm32-stm8.png" alt="" width="848" height="553" srcset="https://openmicrolab.com/images/2012/03/stm32-stm8.png 848w, https://openmicrolab.com/images/2012/03/stm32-stm8-300x196.png 300w, https://openmicrolab.com/images/2012/03/stm32-stm8-768x501.png 768w" sizes="(max-width: 848px) 100vw, 848px" />&lt;/a>
+&lt;/p>
+&lt;p>
+위 그림에 있는 모든 내용들의 솔루션이 정리되어 있다.
+&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;a class="aligncenter" href="https://openmicrolab.com/images/1/cfile2.uf.113A493B4F5DD4BC33C7AD.pdf">cfile2.uf.113A493B4F5DD4BC33C7AD.pdf&lt;/a>
+&lt;/p></description></item><item><title>STM8S-DISCOVERY 보드와 WIZ820io의 연결</title><link>https://openmicrolab.com/stm8s-discovery-%EB%B3%B4%EB%93%9C%EC%99%80-wiz820io%EC%9D%98-%EC%97%B0%EA%B2%B0/</link><pubDate>Fri, 04 Nov 2011 11:18:34 +0000</pubDate><guid>https://openmicrolab.com/stm8s-discovery-%EB%B3%B4%EB%93%9C%EC%99%80-wiz820io%EC%9D%98-%EC%97%B0%EA%B2%B0/</guid><description>
+&lt;p>ST마이크로의 8비트 MCU EVB인 STM8S-Discovery 보드에 Wiznet의 WIZ820io를 SPI로 연결하여 테스트를 해보았다.&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;img loading="lazy" class="aligncenter" src="https://openmicrolab.com/images/1/cfile2.uf.193F25424EB3C8CB2DBE49.jpg" alt="" width="413" height="298" />
+&lt;/p>
+&lt;p>STM8S-DISCOVERY 관련자료 : &lt;a href="http://www.st.com/internet/evalboard/product/247087.jsp">http://www.st.com/internet/evalboard/product/247087.jsp&lt;/a>&lt;br>
+STM8S-DISCOVERY보드의 메뉴얼;&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;a class="aligncenter" href="https://openmicrolab.com/images/1/cfile7.uf.185721394EB3C4731FDE54.pdf">cfile7.uf.185721394EB3C4731FDE54.pdf&lt;/a>WIZ820io 관련 자료 : &lt;a href="http://www.wiznet.co.kr/wiz820io">http://www.wiznet.co.kr/wiz820io&lt;/a>
+&lt;/p>
+&lt;p>&lt;strong>1. 하드웨어 연결&lt;/strong>&lt;br>
+SPI 신호들은 CN1, CN2에 나와 있는 SPI 신호에 연결하고, nSS, nINT, nRESET, PWDN 신호들은 각각 STM8S의 GPIOs(PA4, PA5, PA3 and PA6)에 연결이 된다.&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;img loading="lazy" class="aligncenter" src="https://openmicrolab.com/images/1/cfile25.uf.170ABB3C4EB3C578357278.png" alt="" width="449" height="357" />
+&lt;/p>
+&lt;p>**2. Firmware&lt;br>
+** 컴파일러는 &lt;a title="[http://www.cosmic-software.com/]로 이동합니다." href="http://www.cosmic-software.com/" target="_blank" rel="noopener noreferrer">Cosmic&lt;/a>사의 &lt;a title="[http://www.cosmic-software.com/stm8.php]로 이동합니다." href="http://www.cosmic-software.com/stm8.php" target="_blank" rel="noopener noreferrer">CXSTM8 compiler&lt;/a>와 ST 홈페이지에서 다운로드 받을 수 있는 STVD를 사용한다. CXSTM8 compiler는 등록을 하면 일정기간 사용이 가능하다.&lt;/p></description></item></channel></rss>

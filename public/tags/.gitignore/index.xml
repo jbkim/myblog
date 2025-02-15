@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.Gitignore on OpenMicroLab</title><link>https://openmicrolab.com/tags/.gitignore/</link><description>Recent content in .Gitignore on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 13 Feb 2015 01:06:53 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/.gitignore/index.xml" rel="self" type="application/rss+xml"/><item><title>git 관련 팁 – .gitignore</title><link>https://openmicrolab.com/git-%EA%B4%80%EB%A0%A8-%ED%8C%81-gitignore/</link><pubDate>Fri, 13 Feb 2015 01:06:53 +0000</pubDate><guid>https://openmicrolab.com/git-%EA%B4%80%EB%A0%A8-%ED%8C%81-gitignore/</guid><description>
+&lt;p>.gitignore를 설정 전에 원하지 않는 파일(예를 들면 소스가 아닌 컴파일된 obj 파일 같은..)이 repositary에 add/initilized된 경우는 cache를 지우고 tracking을 다시 설정해야 한다.&lt;br>
+먼저 필요한 파일들을 commit한후 다음의 명령어를 실행한다.&lt;br>
+cache 삭제&lt;/p>
+&lt;blockquote>
+&lt;p>git rm -r –cached .&lt;/p>&lt;/blockquote>
+&lt;p>다시 tracking 하도록 설정&lt;/p>
+&lt;blockquote>
+&lt;p>git add .&lt;/p>&lt;/blockquote>
+&lt;p>그 다음 commit&lt;/p>
+&lt;blockquote>
+&lt;p>git commit -m “.gitignore is now working”&lt;/p>&lt;/blockquote></description></item></channel></rss>

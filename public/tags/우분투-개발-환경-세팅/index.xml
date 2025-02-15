@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>우분투 개발 환경 세팅 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%9A%B0%EB%B6%84%ED%88%AC-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/</link><description>Recent content in 우분투 개발 환경 세팅 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 09 May 2016 05:33:31 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%9A%B0%EB%B6%84%ED%88%AC-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/index.xml" rel="self" type="application/rss+xml"/><item><title>우분투 개발 환경 세팅</title><link>https://openmicrolab.com/%EC%9A%B0%EB%B6%84%ED%88%AC-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/</link><pubDate>Mon, 09 May 2016 05:33:31 +0000</pubDate><guid>https://openmicrolab.com/%EC%9A%B0%EB%B6%84%ED%88%AC-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/</guid><description>
+&lt;p>우분투에서 개발 환경을 세팅할 때 몇가지 필요한 것들&lt;/p>
+&lt;blockquote>
+&lt;p>$ sudo apt-get install uboot-mkimage&lt;/p>
+&lt;p>$ sudo apt-get update&lt;br>
+$ sudo apt-get install git lzop build-essential gcc libncurses5-dev libc6-i386&lt;/p>&lt;/blockquote>
+&lt;p>참고: &lt;a href="http://odroid.com/dokuwiki/doku.php?id=en:c2_building_kernel" target="_blank">&lt;a href="http://odroid.com/dokuwiki/doku.php?id=en:c2_building_kernel">http://odroid.com/dokuwiki/doku.php?id=en:c2_building_kernel&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

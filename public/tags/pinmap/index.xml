@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pinmap on OpenMicroLab</title><link>https://openmicrolab.com/tags/pinmap/</link><description>Recent content in Pinmap on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 21 Apr 2018 10:10:50 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/pinmap/index.xml" rel="self" type="application/rss+xml"/><item><title>Arduino M0 Pinout</title><link>https://openmicrolab.com/arduino-m0-pinout/</link><pubDate>Sat, 21 Apr 2018 10:10:50 +0000</pubDate><guid>https://openmicrolab.com/arduino-m0-pinout/</guid><description>
+&lt;h3 id="a-hrefhttpswwwarduinoccenguidearduinom0-target_blank-relnoopener-noreferrerarduino-m0a-pinout">&lt;a href="https://www.arduino.cc/en/Guide/ArduinoM0" target="_blank" rel="noopener noreferrer">Arduino M0&lt;/a> Pinout&lt;/h3>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="1024"
+height="372"
+src="https://openmicrolab.com/Arduino-M0-PRO-pinout_-1024x372_2097504728484769254.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="eagle-file--schematic">Eagle file &amp;amp; Schematic&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.arduino.cc/en/uploads/Main/arduino-M0-reference-design.zip">EAGLE FILES IN .ZIP&lt;/a>{.resource.eagle}&lt;/li>
+&lt;li>&lt;a href="https://www.arduino.cc/en/uploads/Main/arduino-M0-schematic.pdf">SCHEMATICS IN .PDF&lt;/a>{.resource.schematics}&lt;/li>
+&lt;/ul>
+&lt;h3 id="pin-map-관련-소스">Pin map 관련 소스&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/arduino/ArduinoCore-samd/blob/master/variants/arduino_zero/variant.h" target="_blank" rel="noopener noreferrer">variant.h&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/arduino/ArduinoCore-samd/blob/master/variants/arduino_zero/variant.cpp" target="_blank" rel="noopener noreferrer">variant.cpp&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="a-hrefhttpslearnadafruitcomusing-atsamd21-sercom-to-add-more-spi-i2c-serial-portscreating-a-new-serial-target_blank-relnoopener-noreferrer추가적인-참고-자료a">&lt;a href="https://learn.adafruit.com/using-atsamd21-sercom-to-add-more-spi-i2c-serial-ports/creating-a-new-serial" target="_blank" rel="noopener noreferrer">추가적인 참고 자료&lt;/a>&lt;/h3></description></item></channel></rss>

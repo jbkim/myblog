@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>바코드 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%B0%94%EC%BD%94%EB%93%9C/</link><description>Recent content in 바코드 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 14 Nov 2012 10:42:32 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%B0%94%EC%BD%94%EB%93%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>바코드</title><link>https://openmicrolab.com/%EB%B0%94%EC%BD%94%EB%93%9C/</link><pubDate>Wed, 14 Nov 2012 10:42:32 +0000</pubDate><guid>https://openmicrolab.com/%EB%B0%94%EC%BD%94%EB%93%9C/</guid><description>
+&lt;p style="text-align: center; clear: none; float: none;">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.195D834650A375382B4072.png" class="aligncenter" width="256" height="256" filename="Barcode.png" filemime="image/jpeg" style="""" />
+&lt;/p>
+&lt;ul style="list-style-type: disc;">
+&lt;li>
+바코드 관련 정보: from 위키&amp;nbsp;&lt;a href="http://en.wikipedia.org/wiki/Barcode" target="_blank" class="tx-link">http://en.wikipedia.org/wiki/Barcode&lt;/a>
+&lt;/li>
+&lt;li>
+바코드 종류: from &lt;a href="http://www.csfl.co.kr/?doc=bbs/gnuboard.php&amp;bo_table=m42&amp;wr_id=7&amp;PHPSESSID=de6a939b4b74dddabee9713683c9da02" target="_blank" class="tx-link">국내업체&lt;/a>&amp;nbsp;
+&lt;/li>
+&lt;li>
+정보를 인코딩하는 여러 방법이 있는데, 이중하나는 코드 39이고, 바코드에 Checkdigit를 맨 끝에 붙인다.
+&lt;/li>
+&lt;li>
+코드 39:&amp;nbsp;&lt;a href="http://en.wikipedia.org/wiki/Code_39" target="_blank" class="tx-link">http://en.wikipedia.org/wiki/Code_39&lt;/a>
+&lt;/li>
+&lt;li>
+체크디지트(Check digit)를 자동으로 계산해 주는 사이트: &lt;a href="http://www.koreannet.or.kr/gs1home/kor/s7_31.jsp" target="_blank" class="tx-link">국내&lt;/a>, &lt;a href="http://www.gs1.org/barcodes/support/check_digit_calculator" target="_blank" class="tx-link">해외&lt;/a>
+&lt;/li>
+&lt;li>
+체크디지트를 계산하는 법:&amp;nbsp;&lt;a href="http://www.polylabel.com/barcodes/check/aboutcd.php" target="_blank" class="tx-link">http://www.polylabel.com/barcodes/check/aboutcd.php&lt;/a>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

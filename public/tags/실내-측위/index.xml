@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>실내 측위 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%8B%A4%EB%82%B4-%EC%B8%A1%EC%9C%84/</link><description>Recent content in 실내 측위 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 21 Apr 2018 10:27:27 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%8B%A4%EB%82%B4-%EC%B8%A1%EC%9C%84/index.xml" rel="self" type="application/rss+xml"/><item><title>실내 측위 – BLE Tag, AoA, AoD</title><link>https://openmicrolab.com/%EC%8B%A4%EB%82%B4-%EC%B8%A1%EC%9C%84-ble-tag-aoa-aod/</link><pubDate>Sat, 21 Apr 2018 10:27:27 +0000</pubDate><guid>https://openmicrolab.com/%EC%8B%A4%EB%82%B4-%EC%B8%A1%EC%9C%84-ble-tag-aoa-aod/</guid><description>
+&lt;h3 id="기존-비콘의-한계">기존 비콘의 한계&lt;/h3>
+&lt;ul>
+&lt;li>Beacons only work with smartphones, not tags, which limits how they can be used&lt;/li>
+&lt;li>They are able to locate objects in best case within 3-4 meters, which is fine for determining a general location, but is not refined enough to meet the requirements for many of today’s applications&lt;/li>
+&lt;li>Beacons are battery-operated, which impacts their ability to deliver real-time location; frequent transmissions drain the device’s battery, meaning frequent replacements are necessary&lt;/li>
+&lt;/ul>
+&lt;h3 id="aoa-aod의-사용">AoA, AoD의 사용&lt;/h3>
+&lt;p>&lt;strong>AoA(신호의 수신 각도)&lt;/strong>: 기기가 수신기 안테나 배열로 부터 오는 정확한 방향을 기반으로 한다. AoA를 사용하면 신호를 측정하기 위해 동일한 장치 내에서 여러 개의 안테나가 사용된다. 이렇게하면 안테나가 미터가 아닌 10-20 센티미터의 정확도로 태그 또는 스마트 폰을 찾을 수 있다.&lt;/p></description></item></channel></rss>

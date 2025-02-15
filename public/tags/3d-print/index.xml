@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3d Print on OpenMicroLab</title><link>https://openmicrolab.com/tags/3d-print/</link><description>Recent content in 3d Print on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 23 Nov 2017 07:19:28 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/3d-print/index.xml" rel="self" type="application/rss+xml"/><item><title>Simplify3D 기능</title><link>https://openmicrolab.com/simplify3d-%EA%B8%B0%EB%8A%A5/</link><pubDate>Thu, 23 Nov 2017 07:19:28 +0000</pubDate><guid>https://openmicrolab.com/simplify3d-%EA%B8%B0%EB%8A%A5/</guid><description>
+&lt;h3 id="process-system-improvement">Process System Improvement&lt;/h3>
+&lt;ul>
+&lt;li>Visual Print Setting: Z 축방향으로 구역을 지정해서 다른 설정으로 프린팅 가능&lt;/li>
+&lt;li>Preview Your Process: 위 기능으로 설정이 다른 것을 미리보기 가능한 것&lt;/li>
+&lt;li>Seamless Process Transitions: 영역별로 다른 설정시 자동으로 심리스하게 연결해 주는 기능&lt;/li>
+&lt;li>Drag-and-Drop Recording: 여러개의 모델을 출력시 순서를 쉽게 변경할 수 있는 기능&lt;/li>
+&lt;li>Improved Sequential Printing: 여러개 모델 출력시 한개의 모델을 출력후 다음 모델을 출력하는 기능. 이렇게 하면 모델을 여러개 동시에 출려시 보다 헤드의 이동이 적어짐.&lt;/li>
+&lt;li>Dual Extrusion Customizations: Prime pillar와 ooze 쉴드의 높이의 설정 가능함.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4126" src="https://res.cloudinary.com/openmicrolab/image/upload/v1511419738/Simplify3D_features_vhzrf6.png" width="708" height="650" />
+&lt;h3 id="new-options-for-thin-walls-and-gaps">New Options for Thin Walls and Gaps&lt;/h3>
+&lt;ul>
+&lt;li>Variable Extrusion Sizing – 압출량을 자동 조절. 작거나 얇은 출력물에 유용&lt;/li>
+&lt;li>Dynamic Gap Fill – 모델의 벽의 두께가 달라져도 자동으로 채움&lt;/li>
+&lt;/ul>
+&lt;p>###&lt;img loading="lazy" class="alignnone wp-image-4128" src="https://res.cloudinary.com/openmicrolab/image/upload/v1511420910/Simplify3D_features2_xtmhee.png" width="640" height="288" />&lt;/p></description></item><item><title>큐라 한글화 14.09 버전</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-14-09-%EB%B2%84%EC%A0%84/</link><pubDate>Mon, 17 Nov 2014 07:16:35 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-14-09-%EB%B2%84%EC%A0%84/</guid><description>
+&lt;p>지난번에 큐라 한글화 작업에 대해서 &lt;a href="http://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/" target="_blank">포스팅&lt;/a>을 했는데, 몇가지 추가할 사항이 있어서 다시 정리를 한다.&lt;/p>
+&lt;p>일단 당시 한글화 한 버젼은 14.08 RC버젼인데, 이 버젼은 공식 릴리즈가 되지 않았고, 14.07 다음에 바로 14.09버젼이 릴리즈 됐다. 그리고 14.08 한글 번역 버젼이 서포트 설정이 동작을 하지 않는다는 것이다.&lt;/p>
+&lt;p>문제의 원인은 다음과 같다.  큐라의 모든 설정 부분은 current_profile.ini 파일에 저장이 되며, 큐라가 시작할때 이 파일을 로드해서 설정이 되고 종료할때 마지막 값이 저장되는데 한글로 설정된 값이 current_profile.ini에 저장이 안된다. 따라서 이부분은 그냥 영문을 그대로 사용을 하도록 po 파일을 수정해서 다시 빌드를 했다. 14.09버젼에는 프랑스어, 독일어가 추가가 되어 있고 설정이 가능해져서 이 부분도 수정을 해서 한국어 설정도 가능하도록 했다.&lt;/p></description></item><item><title>큐라 한글화 – Cura Korean Translation</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/</link><pubDate>Fri, 19 Sep 2014 07:58:07 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Cura_Hangul_Win.png" alt="" width="767" height="485" />
+&lt;p>네이버 카페에서 누군가 큐라(Cura)를 한글화한 것을 몇 건을 봤는데, po파일을 찾을 수 가 없고 또 어떤 것은 파이썬 소스의 영문을 그대로 건드려서 이건 아니다 싶어서 한글 번역을 했다. 사실 한글 번역은 귀찮은 작업인데 이런 작업을 하면서 더 알아가는 것도 있고 오픈소스에 기여를 하는 한 방편이기도 해서 진행을 했다.&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/LC_MESSAGES.png" alt="" width="709" height="263" />
+&lt;blockquote>
+&lt;p>&lt;del>일단 기존에 사용하는 큐라를 한글로 바꾸려면 Cura설치폴더\Cura\resources\locale 폴더에 위에서 받은 파일중 ko 폴더를 추가하고 큐라가 설치된 폴더아래 Cura 폴더 아래의 &lt;/del>&lt;strong>&lt;del>preferences.ini 파일에서 language 항목에 Korean으로 설정하면 된다.&lt;/del>  14.09버젼 부터는 언어 설정을 하는 옵션이 추가됨&lt;/strong>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mbed on OpenMicroLab</title><link>https://openmicrolab.com/tags/mbed/</link><description>Recent content in Mbed on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 26 Jul 2017 07:09:23 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/mbed/index.xml" rel="self" type="application/rss+xml"/><item><title>CREATOR Pro 보드 사용 및 분석</title><link>https://openmicrolab.com/creator-pro-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9-%EB%B0%8F-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 26 Jul 2017 07:09:23 +0000</pubDate><guid>https://openmicrolab.com/creator-pro-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9-%EB%B0%8F-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;p>&lt;a href="http://www.rakwireless.com/en/" target="_blank" rel="noopener noreferrer">Rak Wireless&lt;/a>사의 CREATOR Pro 보드는 Arduino Uno의 폼펙터를 가지며, RAK473 WiFi 모듈을 사용하고 NXP사의 LPC11U35를 사용해서 mbed에서도 프로그래밍이 가능하고, Arduino에서도 프로그래밍이 가능하다. &lt;a href="http://wiki.rakwireless.com/doku.php?id=wisnode_series:creator_pro" target="_blank" rel="noopener noreferrer">WiKi&lt;/a>에 나온 이 제품의 정보는 다음과 같은데, Realtek사의 &lt;a href="https://www.amebaiot.com/en/" target="_blank" rel="noopener noreferrer">Ameba RTL8710보드&lt;/a>와 거의 동일하다.&lt;/p>
+&lt;blockquote>
+&lt;p>CREATOR is a programmable platform for developing all kind of IoT applications. CREATOR is equiped with various peripheral interfaces, including Wifi, GPIO, I2C, UART, PWM, ADC. Through these interfaces, CREATOR can connect with electronic components such as LED, switches, manometer, hygrometer, PM2.5 dust sensors etc.&lt;br>
+The collected data can be uploaded via WiFi, and be utilized by applications on smart devices to realize IoT implementation.&lt;br>
+CREATOR and Arduino Uno have similar size, and the pins on CREATOR are compatible with Arduino Uno. CREATOR uses Micro USB to supply power, which is common in many smart devices.&lt;br>
+Currently, CREATOR currently supports Windows XP/7/8 32 and 64 bits and MAC OS operating systems. In this example, please use Arduino IDE with version 1.6.7 or later.&lt;/p></description></item><item><title>BBC Microbit 오프라인에서 사용하기</title><link>https://openmicrolab.com/bbc-microbit-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 16 Sep 2016 09:43:18 +0000</pubDate><guid>https://openmicrolab.com/bbc-microbit-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>BBC microbit를 오프라인에서 사용하려면 &lt;a href="http://yottadocs.mbed.com/#installing" target="_blank">링크&lt;/a>를 참고 하고 Manuall Installation 항목을 따라서 환경을 셋업한다.&lt;/p>
+&lt;p>&lt;strong>1. yotta설치&lt;/strong>&lt;/p>
+&lt;p>Mac OS의 경우&lt;/p>
+&lt;blockquote>
+&lt;p>brew tap ARMmbed/homebrew-formulae&lt;br>
+brew install python cmake ninja arm-none-eabi-gcc&lt;br>
+pip install yotta&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>Trouble shooting&lt;/strong>&lt;br>
+brew 관련 아래과 같은 문제가 있을 경우&lt;/p>
+&lt;blockquote>
+&lt;p>sudo chown -R $(whoami):admin /usr/local&lt;br>
+cd $(brew –prefix) &amp;amp;&amp;amp; git fetch origin &amp;amp;&amp;amp; git reset –hard origin/master&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>터미널에서 다음과 같은 에러메시지가 나올때&lt;/strong>&lt;br>
+error: connection error: (“bad handshake: Error([(‘SSL routines’, ‘ssl3_get_server_certificate’, ‘certificate verify failed’)],)”,)&lt;/p></description></item><item><title>BBC micro:bit 분석</title><link>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</link><pubDate>Sun, 11 Sep 2016 14:45:36 +0000</pubDate><guid>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</guid><description>
+&lt;p class="p1">
+&lt;span class="s1">BBC &lt;a href="http://microbit.co.uk/">&lt;span class="s2">micro:bit&lt;/span>&lt;/a>&lt;/span>는 영국에서 컴퓨터 교육용으로 디자인된 마이크로컨트롤러 보드이다&lt;span class="s1">.&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;img loading="lazy" class="alignnone wp-image-3744" src="http://res.cloudinary.com/openmicrolab/image/upload/v1473602467/MicroBit_board_xcvrdp.jpg" width="472" height="364" />
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>개발에 참여한 파트너사들&lt;/strong>
+&lt;/p>
+&lt;ul class="ul1">
+&lt;li class="li3">
+&lt;span class="s2">Microsoft&lt;/span> – Block Editor, Touch Develop 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://lancaster-university.github.io/microbit-docs/" target="_blank">&lt;span class="s2">Lancaster University&lt;/span> – Device runtime개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Farnell element14&lt;/span> – 디바이스 생산
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank">&lt;span class="s2">Nordic Semiconductor&lt;/span> – MCU 제공&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">NXP Semiconductors&lt;/span> – USB인터테이스 칩 및 센서 칩제공
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">ARM Holdings&lt;/span> – &lt;a href="https://developer.mbed.org/" target="_blank">mbed&lt;/a> 하드웨어, 컴파일러 서비스
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.techwillsaveus.com/" target="_blank">&lt;span class="s2">Technology Will Save Us&lt;/span> – 하드웨어 디바이스 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="http://www.samsung.com/uk/microbit/" target="_blank">&lt;span class="s2">Samsung&lt;/span> – 안드로이드 앱 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://sciencescope.uk/" target="_blank">ScienceScope&lt;/a> –iOS앱 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Python Software Foundation&lt;/span> – &lt;a href="https://en.wikipedia.org/wiki/MicroPython">&lt;span class="s2">MicroPython&lt;/span>&lt;/a> 제공, 웹기반 파이썬 에디터 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.bluetooth.com/" target="_blank">Bluetooth SIG&lt;/a> &amp;#8211; Developed the custom Bluetooth LE profile.
+&lt;/li>
+&lt;/ul>
+&lt;p class="p1">
+&lt;strong>하드웨어&lt;/strong>
+&lt;/p></description></item><item><title>WIZnet mbed 라이브러리</title><link>https://openmicrolab.com/wiznet-mbed-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/</link><pubDate>Wed, 14 May 2014 02:15:19 +0000</pubDate><guid>https://openmicrolab.com/wiznet-mbed-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/</guid><description>
+&lt;p>W5500 Ethernet 라이브러리를 mbed에 포팅후 W5100,W5200, W5500까지 지원을 하는 라이브러리를 만들어 &lt;a href="http://mbed.org/teams/WIZnet/code/WIZnet_Library/" target="_blank">mbed.org&lt;/a>에 업로드했다. 사용법은 간단하다. 라이브러리를 import하고 사용하는 Wiznet칩 또는 모듈에 따라서 wiznet.h에 있는 #define문에서 사용할 칩만 나두고 나머지는 주석 처리하면 된다.&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="Wiznet Ethernet library for ARM mbed" href="https://www.slideshare.net/JinbuhmKim/wiznet-ethernet-library-for-arm-mbed" target="_blank">Wiznet Ethernet library for ARM mbed&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>IoT 디바이스 개발을 위한 ARM의 플랫폼적 접근</title><link>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</link><pubDate>Fri, 18 Apr 2014 10:09:20 +0000</pubDate><guid>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</guid><description>
+&lt;p>ARM의 IoT 플랫폼 디렉터인 Simon Ford의 발표 @Embedded World.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/04/mbed_Simon.png">&lt;img loading="lazy" class="alignnone wp-image-3008" alt="mbed_Simon" src="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png" width="819" height="609" srcset="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png 1024w, https://openmicrolab.com/images/2014/04/mbed_Simon-300x223.png 300w, https://openmicrolab.com/images/2014/04/mbed_Simon.png 1054w" sizes="(max-width: 819px) 100vw, 819px" />&lt;/a>&lt;/p>
+&lt;p>관련 링크: &lt;a href="http://player.vimeo.com/video/88152800" target="_blank">link&lt;/a>&lt;/p>
+&lt;p>&lt;span style="line-height: 1.5em;">지난번 ARM Techcon의 발표와 거의 같다.&lt;/span>&lt;/p></description></item><item><title>오픈소스하드웨어 활동</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%99%9C%EB%8F%99/</link><pubDate>Thu, 03 Apr 2014 00:34:15 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%99%9C%EB%8F%99/</guid><description>
+&lt;p>지난 몇년간 오픈소스하드웨어 활동을 정리했다.&lt;/p>
+&lt;p>Open Source Hardware Activities for recent years.&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="OSHW Activities" href="https://www.slideshare.net/JinbuhmKim/oshw-activities" target="_blank">OSHW Activities&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>mbed – SeeedArch 프로그래밍하기</title><link>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 06 Mar 2014 06:42:53 +0000</pubDate><guid>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="seeedarch">SeeedArch&lt;/h3>
+&lt;p>&lt;a href="http://mbed.org/" target="_blank">mbed&lt;/a>의 플랫폼 중의 하나인 Seeedstudio에서 만든 보드, &lt;a href="http://mbed.org/platforms/Seeeduino-Arch/" target="_blank">SeeedArch&lt;/a>를 테스트중이다. 이 보드의 스펙은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>mbed enabled
+&lt;ul>
+&lt;li>online development tools&lt;/li>
+&lt;li>easy to use C/C++ SDK&lt;/li>
+&lt;li>lots of published libraries, projects&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Standard Arduino Appearance, two Grove connectors
+&lt;ul>
+&lt;li>available with 3.3V compatible shields&lt;/li>
+&lt;li>a large number of grove modules&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Drag-n-drop programming&lt;/li>
+&lt;li>NXP LPC11U24 MCU
+&lt;ul>
+&lt;li>Low power ARM Cortex-M0 Core&lt;/li>
+&lt;li>48MHz, 32KB Flash, 8KB RAM, 4KB EEPROM&lt;/li>
+&lt;li>USB Device, 2xSPI, UART, I2C&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>이 보드의 가장 큰 특징은 보드의 형태가 아두이노 보드와 같아서 아두이노 쉴드를 연결할 수 있다.&lt;/p></description></item><item><title>ARM Techcon 2013, ARM Technology Symposia 2013</title><link>https://openmicrolab.com/arm-techcon-2013-arm-technology-symposia-2013/</link><pubDate>Thu, 21 Nov 2013 00:44:45 +0000</pubDate><guid>https://openmicrolab.com/arm-techcon-2013-arm-technology-symposia-2013/</guid><description>
+&lt;p>지난 10월 29일부터 3일간 미국 캘리포니아 산타클라라 컨벤션 센터에서 열린 “&lt;a href="http://www.armtechcon.com">ARM Techcon 2013&lt;/a>” 행사에 참석해서 관련 글을 블로터넷에 기고를 했다. 보낸 원고에서 몇가지 영어 표현들이 한글로 바뀌고 제목들이 추가로 달렸는데, 에디터의 손을 거치니 좀 나아지는 것 같다. 한국에서는 IoT(Internet of Things)가 사물인터넷으로 번역되는 것이 좀 이상하지만…&lt;/p>
+&lt;p>&lt;span style="text-decoration: underline;">&lt;strong>기고문: &lt;a title="‘사물인터넷’ 눈독 들이는 ARM" href="http://www.bloter.net/archives/169566" target="_blank"> “사물인터넷” 눈독 들이는 ARM&lt;/a>&lt;/strong>&lt;/span>&lt;/p>
+&lt;p>최근  ARM CEO인 Simon Segars의 키노트가 유투브에 올라와 있다.&lt;/p>
+&lt;p>당시 3일 일정의 모든 세션을 들을 수 있는 티켓을 구매(약 1500불)해서 들었는데, ARM에서는 한국에서도  비슷한 행사를 개최했다.&lt;/p></description></item><item><title>mbed 분석</title><link>https://openmicrolab.com/mbed-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 11 Sep 2013 11:04:48 +0000</pubDate><guid>https://openmicrolab.com/mbed-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;h3 id="mbed">mbed&lt;/h3>
+&lt;p>mbed는 웹 기반의 컴파일러를 사용하는 보드로 2005년 ARM 사의 2엔지니어인 &lt;a href="http://mbed.org/users/simon/" target="_blank">Simon&lt;/a>(ARM R&amp;amp;D)과 &lt;a href="http://mbed.org/users/chris/" target="_blank">Chris&lt;/a>(ARM Support)가 “Rapid Prototyping for Microcontrollers”라는 비젼으로 시작을 했다. 이제는 오프라인 툴들로의 변환도 지원을 하고 활발한 커뮤니티를 가지고 있는데, 2007년 정도에 지금의 모습을 갖추었다고 한다&lt;a href="http://mbed.org/handbook/Founders-interview" target="_blank">&lt;a href="https://openmicrolab.com/images/2013/09/mbed_pinout.png">1&lt;/a>&lt;/a>. 현재 NXP의 ARM CortexM3 칩인 LPC1768을 사용한 모듈과 M0기반인 LPC11U24을 사용한 버젼 그리고 올 2013년에 Freescale의 MKL25Z128VLK4을 사용한  &lt;a href="http://mbed.org/blog/entry/mbed-enabled-Freescale-FRDM-KL25Z-board/" target="_blank">Freedom FRDM-KL25Z&lt;/a> 보드등 다양한 플랫폼(&lt;a href="http://mbed.org/platforms/" target="_blank">&lt;a href="http://mbed.org/platforms/">http://mbed.org/platforms/&lt;/a>&lt;/a>) 들이 있다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/09/mbed_pinout.png">&lt;img loading="lazy" class="size-full wp-image-2664 alignnone" alt="mbed_pinout" src="https://openmicrolab.com/images/2013/09/mbed_pinout.png" width="610" height="383" srcset="https://openmicrolab.com/images/2013/09/mbed_pinout.png 610w, https://openmicrolab.com/images/2013/09/mbed_pinout-300x188.png 300w" sizes="(max-width: 610px) 100vw, 610px" />&lt;/a>&lt;/p></description></item><item><title>Fritzing 라이브러리 만들기</title><link>https://openmicrolab.com/fritzing-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Fri, 04 Nov 2011 11:53:09 +0000</pubDate><guid>https://openmicrolab.com/fritzing-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>
+&lt;p>Frtizing이라는 툴을 지난번에 소개한 적이 있다.  &lt;a title="[http://liketheocean.tistory.com/159]로 이동합니다." href="http://liketheocean.tistory.com/159" target="_blank" rel="noopener">독일의 오픈 소스툴&lt;/a>&lt;br>
+이 툴을 직접 사용을 해봤는데, 실제 피지컬한 보드를 가지고 설계를 하는 듯한 느낌이 있고 이것을 다시 회로로 변환을 해주는 것이 흥미롭다. 전자공학을 하는 초보자들에게는 좋은 툴인 동시에 이미 많이 개발된 파트 라이브러리 덕에 문서 작업에 유용하게 쓰일 수 있다.&lt;br>
+이미 아두이노, 아두이노 이더넷 쉴드, Xbee, mbed…등등의 파트들이 제작이 되어 있다.&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;p style="margin: 0px;">
+&lt;img loading="lazy" class="aligncenter" src="https://openmicrolab.com/images/1/cfile22.uf.1357A9424EB3D30434EFCF.PNG" alt="" width="683" height="575" />
+&lt;/p>
+&lt;p>
+자신만의 라이브러리를 만들여면 이미지 작업을 해야하는데, 이미 만들어 놓은 라이브러리를 수정해서 사용하면 좀 편하다. 이미지 파일은 벡터기반의 SVG포맷으로 만들어야 한다. 따라서 오픈 소스 툴인 &lt;a title="[http://inkscape.org/]로 이동합니다." href="http://inkscape.org/" target="_blank" rel="noopener">InkScape&lt;/a>를 사용하던지 상용툴인 어도비사의 일러스트레이터를 사용해야 한다. 구체적인 정보: &lt;a href="http://fritzing.org/learning/tutorials/creating-custom-parts/">http://fritzing.org/learning/tutorials/creating-custom-parts/&lt;/a>
+&lt;/p></description></item><item><title>임베디드 보드에서 트위터하기</title><link>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 15 Sep 2011 12:32:02 +0000</pubDate><guid>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>이 블로그 포스트는 Twitter API Proxy 서비스인 supertweet.net를 이용해서 PC나 스마트폰이 아닌 임베디드 보드에서 트위터 메시지를 보내는 방법을 설명한다.&lt;br>
+참조 사이트:mbed의 &lt;A title="[http://mbed.org/cookbook/SuperTweet]로 이동합니다." href="http://mbed.org/cookbook/SuperTweet" target=_blank>post to Twitter via SuperTweet &lt;/A>&lt;/p>
+&lt;p>먼저 트위터 아이디가 필요한데, 테스트를 위해 twitter.com 에서 ID를 하나 만들었다. EspressoDopio2. 참고로 내 트위터 아이디는 EspressoDopio&lt;/p>
+&lt;p>&lt;A title="[http://www.supertweet.net/]로 이동합니다." href="http://www.supertweet.net/" target=_blank>Supertweet.net&lt;/A> 에 접속해서 docoment link에 가면 3가지 step으로 설명을 해 놓고 있다.&lt;/p>
+&lt;ol>
+&lt;li>Sign UP/ Sign in now를 클릭해서 MyAuthAPIProxy가 계정 사용을 승인하도록 한다.&lt;/li>
+&lt;li>Basic Auth를 위한 패스워드를 설정한다. 이 password는 패스워드와 다르게 설정함.&lt;br>
+이 설정이 되면 다음과 같이 Username이 나타다고 Secret 밑에 Show 를 클릭하면 내가 정한 password가 나타난다.&lt;/li>
+&lt;/ol>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.167B64414E71EC861C6440.PNG" class="aligncenter" width="683" height="93" alt="" filename="twitter2.PNG" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>3. 이젠 임베디드 보드에서 트위터 메시지를 보내면 되는데, Twitter.com 대신에  &lt;a href="http://api.supertweet.net/">http://api.supertweet.net&lt;/a> 로 보내면 된다.&lt;br>
+구체적인 방법은 &lt;a href="http://www.supertweet.net/about/api">http://www.supertweet.net/about/api&lt;/a> 링크를 확인하면 되는데, 간단히 메시지 post하는 것을 설명하면…&lt;/p></description></item><item><title>mbed 개발자 구인 스펙</title><link>https://openmicrolab.com/mbed-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EA%B5%AC%EC%9D%B8-%EC%8A%A4%ED%8E%99/</link><pubDate>Fri, 28 Jan 2011 01:38:29 +0000</pubDate><guid>https://openmicrolab.com/mbed-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EA%B5%AC%EC%9D%B8-%EC%8A%A4%ED%8E%99/</guid><description>
+&lt;DIV style="LINE-HEIGHT: 1.2">
+&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="BORDER-COLLAPSE: collapse; FONT-FAMILY: Arial, Verdana, Tahoma, sans-serif; FONT-SIZE: 14px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: justify" class=pc-rtg-body>&lt;FONT size=2>&lt;B>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;br />
+&lt;H2 style="FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700">
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-SIZE: 9pt">&lt;SPAN style="FONT-FAMILY: Dotum">&lt;SPAN style="FONT-FAMILY: Gulim">﻿mbed 개발자 스펙인데, 세계적인 회사에서 어떤 스펙을 요구하는지 이해하고 국내 개발자들도 실력을 갖추면 좋지 않을 까 생각이 드네요.&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;br /> &lt;FONT size=3>&lt;SPAN style="FONT-SIZE: 9pt">&lt;SPAN style="FONT-FAMILY: Dotum">&lt;SPAN style="FONT-FAMILY: Gulim">구체적인 내용은 링크 참고 ==> &lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/FONT>&lt;A href="http://mbed.org/handbook/Jobs">&lt;A title="[http://mbed.org/handbook/Jobs]로 이동합니다." href="http://mbed.org/handbook/Jobs" target=_blank>&lt;SPAN style="FONT-SIZE: 12pt">&lt;SPAN style="FONT-SIZE: 9pt">&lt;SPAN style="FONT-FAMILY: Dotum">&lt;SPAN style="FONT-FAMILY: Gulim">http://mbed.org/handbook/Jobs&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/A>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/B>&lt;/FONT>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="BORDER-COLLAPSE: collapse; FONT-FAMILY: Arial, Verdana, Tahoma, sans-serif; FONT-SIZE: 14px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: justify" class=pc-rtg-body>&lt;FONT size=2>&lt;B>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;br /> &amp;nbsp;&lt;/H2>&lt;/DIV>&lt;br />
+&lt;pre>&lt;code>&amp;lt;DIV&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;H2 style=&amp;quot;FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700&amp;quot;&amp;gt;
+Ninja Microcontroller Embedded Software Engineer
+&amp;lt;/H2&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;SPAN style=&amp;quot;WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px&amp;quot; class=Apple-style-span&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px&amp;quot; class=Apple-style-span&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;H3 style=&amp;quot;FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700&amp;quot;&amp;gt;
+Job Requirements
+&amp;lt;/H3&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P&amp;gt;
+Essential Skills &amp;amp; Experience
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Excellent embedded programming skills in C/C++
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience using MCUs
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience porting and working with stacks (OS/RTOS, TCP/IP, USB, &amp;amp;#8230;)
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience with compilers, build tools and toolchains, Linux
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience with version control (svn, git, github)
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Good university degree in a relevant subject
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+A desire to be involved in mbed and help deliver its goals
+&amp;lt;/LI&amp;gt;
+&amp;lt;/UL&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P&amp;gt;
+Desirable Skills &amp;amp; Experience
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience developing substantial embedded applications
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Good understanding of electronics, circuit design and fault finding
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience with Assembly, Python, Other languages
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience working with open source projects
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Interesting portfolio of projects
+&amp;lt;/LI&amp;gt;
+&amp;lt;/UL&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;
+&amp;lt;br /&amp;gt; &amp;lt;SPAN style=&amp;quot;WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px&amp;quot; class=Apple-style-span&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px&amp;quot; class=Apple-style-span&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;H2 style=&amp;quot;FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700&amp;quot;&amp;gt;
+Embedded Software and Electronics Industrial Placements
+&amp;lt;/H2&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;SPAN style=&amp;quot;WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px&amp;quot; class=Apple-style-span&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px&amp;quot; class=Apple-style-span&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;H3 style=&amp;quot;FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700&amp;quot;&amp;gt;
+Job Requirements
+&amp;lt;/H3&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P&amp;gt;
+You should have completed at least two years at a university studying a course with a significant electronics or software engineering element to it.
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P&amp;gt;
+Desirable Skills &amp;amp; Experience
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Embedded programming skills in C/C++
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience developing embedded applications for microcontrollers
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Hardware and PCB design, circuit level fault finding and debug
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+An understanding of electronic circuit design
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+A keen general interest in software engineering, computer science and embedded electronics
+&amp;lt;/LI&amp;gt;
+&amp;lt;/UL&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;
+&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12pt&amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/SPAN&amp;gt;&amp;lt;/A&amp;gt;
+&amp;lt;/DIV&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code>&lt;/pre></description></item></channel></rss>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kinetis on OpenMicroLab</title><link>https://openmicrolab.com/tags/kinetis/</link><description>Recent content in Kinetis on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 01 Feb 2011 07:28:03 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/kinetis/index.xml" rel="self" type="application/rss+xml"/><item><title>Cortex M4와 Cortex M3의 비교</title><link>https://openmicrolab.com/cortex-m4%EC%99%80-cortex-m3%EC%9D%98-%EB%B9%84%EA%B5%90/</link><pubDate>Tue, 01 Feb 2011 07:28:03 +0000</pubDate><guid>https://openmicrolab.com/cortex-m4%EC%99%80-cortex-m3%EC%9D%98-%EB%B9%84%EA%B5%90/</guid><description>
+&lt;p>Cortex M4는 Cortex M3에 DSP가 추가된 칩입니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.1708463E4D47B3FA01A7CE.jpg" class="aligncenter" width="680" height="764" alt="" filename="Cortex M4_ Cortex M3.jpg" filemime="image/jpeg" />&lt;br>
+위 표는 Cortex M3에는 DSP 가 없으니 당연한 결과네요.&lt;br>
+현재 Cortex M4 칩은 &lt;A title="[http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS]로 이동합니다." href="http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS" target=_blank>FreeScale&lt;/A>에서 Kinetis 시리즈로 판매되고 있습니다.&lt;/p>
+&lt;p>가장 낮은 시리즈인 K10 부터 K60까지 있습니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.1802013E4D47B50B15755B.jpg" class="aligncenter" width="653" height="392" alt="" filename="kinetis.jpg" filemime="image/jpeg" />&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;STRONG>&lt;SPAN style="FONT-SIZE: 10pt">&lt;br /> K10 Sub-Family Reference Manual&lt;/SPAN>&lt;br /> &lt;/STRONG>
+&lt;/DIV>
+&lt;DIV>
+&lt;a href="https://openmicrolab.com/images/1/cfile7.uf.18701C444D47B5AC2B01FE.zip" class="aligncenter" filename="K10P104M100SF2RM.zip" filemime="application/zip" />cfile7.uf.18701C444D47B5AC2B01FE.zip&lt;/a>
+&lt;/DIV></description></item></channel></rss>

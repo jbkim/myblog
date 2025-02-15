@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>숨김파일 보기 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%88%A8%EA%B9%80%ED%8C%8C%EC%9D%BC-%EB%B3%B4%EA%B8%B0/</link><description>Recent content in 숨김파일 보기 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 22 Feb 2014 06:31:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%88%A8%EA%B9%80%ED%8C%8C%EC%9D%BC-%EB%B3%B4%EA%B8%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>맥 OS X에서 숨김파일 보기 설정</title><link>https://openmicrolab.com/%EB%A7%A5-os-x%EC%97%90%EC%84%9C-%EC%88%A8%EA%B9%80%ED%8C%8C%EC%9D%BC-%EB%B3%B4%EA%B8%B0-%EC%84%A4%EC%A0%95/</link><pubDate>Sat, 22 Feb 2014 06:31:21 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5-os-x%EC%97%90%EC%84%9C-%EC%88%A8%EA%B9%80%ED%8C%8C%EC%9D%BC-%EB%B3%B4%EA%B8%B0-%EC%84%A4%EC%A0%95/</guid><description>
+&lt;p>맥 OS X에서 숨김파일 보기 설정은 기본적으로 off이다. 숨김파일을 보려면  터미널에서 다음을 입력하고  Finder를 강제로 재시작하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>defaults write com.apple.Finder AppleShowAllFiles YES&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;p>만약 원래 상태로 돌리려면&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>defaults write com.apple.Finder AppleShowAllFiles NO&lt;/strong>&lt;/p>&lt;/blockquote></description></item></channel></rss>

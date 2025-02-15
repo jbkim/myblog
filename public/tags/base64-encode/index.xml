@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Base64 Encode on OpenMicroLab</title><link>https://openmicrolab.com/tags/base64-encode/</link><description>Recent content in Base64 Encode on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 15 Sep 2011 11:55:01 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/base64-encode/index.xml" rel="self" type="application/rss+xml"/><item><title>base64 encode &amp; decode</title><link>https://openmicrolab.com/base64-encode-decode/</link><pubDate>Thu, 15 Sep 2011 11:55:01 +0000</pubDate><guid>https://openmicrolab.com/base64-encode-decode/</guid><description>
+&lt;p>base64란 64진수라는 뜻.&lt;br>
+즉 2진수 데이터를 64진수 데이터로 변경하는 것.&lt;br>
+예를 들면 a, b, c의 경우 ASCII값은 0x61, 0x62, 0x63이고, 2진수로 01100001, 01100010, 01100011이다&lt;br>
+이것을 6bit씩 끊으면…. 011000  010110  001001 100011 가 되고, 각각 값은 0x18(24), 0x16(22), 0x09(9), 0x23(35)가 된다.&lt;/p>
+&lt;p>base64의 문자셋은 다음과 같으므로,&lt;br>
+A~Z : 0 &lt;del>25&lt;br>
+a&lt;/del>z : 26 &lt;del>51&lt;br>
+0&lt;/del>9 : 52 ~ 61&lt;br>
++      : 62&lt;br>
+/      : 63&lt;br>
+위 abc는 YWJj가 된다.&lt;/p>
+&lt;p>만약 딱 떨어지지 않는 경우 남는 비트의 경우 6 bit 문자를 0으로 padding하고 그래도 남는 6 bit 문자는 = 으로 치환한다.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mbed on OpenMicroLab</title><link>https://openmicrolab.com/categories/mbed/</link><description>Recent content in Mbed on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 18 Dec 2017 08:01:33 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/mbed/index.xml" rel="self" type="application/rss+xml"/><item><title>Mass Storage bootloader</title><link>https://openmicrolab.com/mass-storage-bootloader/</link><pubDate>Mon, 18 Dec 2017 08:01:33 +0000</pubDate><guid>https://openmicrolab.com/mass-storage-bootloader/</guid><description>
+&lt;p>USB device를 가진 MCU를 PC에 연결시 Mass Storage Device로 동작시키고, Hex파일을 copy하면 MCU의 application code가 업데이트 되는 형태.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://os.mbed.com/handbook/cmsis-dap-interface-firmware" target="_blank" rel="noopener noreferrer">mbed의 CMSIS DAP 인터페이스&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.nxp.com/docs/en/application-note/AN4379.pdf">NXP사의 자료&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://blog.myelectronics.com.ua/stm32-usb-mass-storage-bootloader/" target="_blank" rel="noopener noreferrer">Russia blogger의 자료&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Microsoft/uf2">MS의 MakeCode에 적용된 UF2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Microsoft/uf2-samd21">MSC bootloader (based on UF2) for SAMD21&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>CREATOR Pro 보드 사용 및 분석</title><link>https://openmicrolab.com/creator-pro-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9-%EB%B0%8F-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 26 Jul 2017 07:09:23 +0000</pubDate><guid>https://openmicrolab.com/creator-pro-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9-%EB%B0%8F-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;p>&lt;a href="http://www.rakwireless.com/en/" target="_blank" rel="noopener noreferrer">Rak Wireless&lt;/a>사의 CREATOR Pro 보드는 Arduino Uno의 폼펙터를 가지며, RAK473 WiFi 모듈을 사용하고 NXP사의 LPC11U35를 사용해서 mbed에서도 프로그래밍이 가능하고, Arduino에서도 프로그래밍이 가능하다. &lt;a href="http://wiki.rakwireless.com/doku.php?id=wisnode_series:creator_pro" target="_blank" rel="noopener noreferrer">WiKi&lt;/a>에 나온 이 제품의 정보는 다음과 같은데, Realtek사의 &lt;a href="https://www.amebaiot.com/en/" target="_blank" rel="noopener noreferrer">Ameba RTL8710보드&lt;/a>와 거의 동일하다.&lt;/p>
+&lt;blockquote>
+&lt;p>CREATOR is a programmable platform for developing all kind of IoT applications. CREATOR is equiped with various peripheral interfaces, including Wifi, GPIO, I2C, UART, PWM, ADC. Through these interfaces, CREATOR can connect with electronic components such as LED, switches, manometer, hygrometer, PM2.5 dust sensors etc.&lt;br>
+The collected data can be uploaded via WiFi, and be utilized by applications on smart devices to realize IoT implementation.&lt;br>
+CREATOR and Arduino Uno have similar size, and the pins on CREATOR are compatible with Arduino Uno. CREATOR uses Micro USB to supply power, which is common in many smart devices.&lt;br>
+Currently, CREATOR currently supports Windows XP/7/8 32 and 64 bits and MAC OS operating systems. In this example, please use Arduino IDE with version 1.6.7 or later.&lt;/p></description></item><item><title>BBC Microbit 오프라인에서 사용하기</title><link>https://openmicrolab.com/bbc-microbit-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 16 Sep 2016 09:43:18 +0000</pubDate><guid>https://openmicrolab.com/bbc-microbit-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>BBC microbit를 오프라인에서 사용하려면 &lt;a href="http://yottadocs.mbed.com/#installing" target="_blank">링크&lt;/a>를 참고 하고 Manuall Installation 항목을 따라서 환경을 셋업한다.&lt;/p>
+&lt;p>&lt;strong>1. yotta설치&lt;/strong>&lt;/p>
+&lt;p>Mac OS의 경우&lt;/p>
+&lt;blockquote>
+&lt;p>brew tap ARMmbed/homebrew-formulae&lt;br>
+brew install python cmake ninja arm-none-eabi-gcc&lt;br>
+pip install yotta&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>Trouble shooting&lt;/strong>&lt;br>
+brew 관련 아래과 같은 문제가 있을 경우&lt;/p>
+&lt;blockquote>
+&lt;p>sudo chown -R $(whoami):admin /usr/local&lt;br>
+cd $(brew –prefix) &amp;amp;&amp;amp; git fetch origin &amp;amp;&amp;amp; git reset –hard origin/master&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>터미널에서 다음과 같은 에러메시지가 나올때&lt;/strong>&lt;br>
+error: connection error: (“bad handshake: Error([(‘SSL routines’, ‘ssl3_get_server_certificate’, ‘certificate verify failed’)],)”,)&lt;/p></description></item><item><title>BBC micro:bit 분석</title><link>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</link><pubDate>Sun, 11 Sep 2016 14:45:36 +0000</pubDate><guid>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</guid><description>
+&lt;p class="p1">
+&lt;span class="s1">BBC &lt;a href="http://microbit.co.uk/">&lt;span class="s2">micro:bit&lt;/span>&lt;/a>&lt;/span>는 영국에서 컴퓨터 교육용으로 디자인된 마이크로컨트롤러 보드이다&lt;span class="s1">.&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;img loading="lazy" class="alignnone wp-image-3744" src="http://res.cloudinary.com/openmicrolab/image/upload/v1473602467/MicroBit_board_xcvrdp.jpg" width="472" height="364" />
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>개발에 참여한 파트너사들&lt;/strong>
+&lt;/p>
+&lt;ul class="ul1">
+&lt;li class="li3">
+&lt;span class="s2">Microsoft&lt;/span> – Block Editor, Touch Develop 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://lancaster-university.github.io/microbit-docs/" target="_blank">&lt;span class="s2">Lancaster University&lt;/span> – Device runtime개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Farnell element14&lt;/span> – 디바이스 생산
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank">&lt;span class="s2">Nordic Semiconductor&lt;/span> – MCU 제공&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">NXP Semiconductors&lt;/span> – USB인터테이스 칩 및 센서 칩제공
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">ARM Holdings&lt;/span> – &lt;a href="https://developer.mbed.org/" target="_blank">mbed&lt;/a> 하드웨어, 컴파일러 서비스
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.techwillsaveus.com/" target="_blank">&lt;span class="s2">Technology Will Save Us&lt;/span> – 하드웨어 디바이스 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="http://www.samsung.com/uk/microbit/" target="_blank">&lt;span class="s2">Samsung&lt;/span> – 안드로이드 앱 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://sciencescope.uk/" target="_blank">ScienceScope&lt;/a> –iOS앱 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Python Software Foundation&lt;/span> – &lt;a href="https://en.wikipedia.org/wiki/MicroPython">&lt;span class="s2">MicroPython&lt;/span>&lt;/a> 제공, 웹기반 파이썬 에디터 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.bluetooth.com/" target="_blank">Bluetooth SIG&lt;/a> &amp;#8211; Developed the custom Bluetooth LE profile.
+&lt;/li>
+&lt;/ul>
+&lt;p class="p1">
+&lt;strong>하드웨어&lt;/strong>
+&lt;/p></description></item><item><title>ARM mbed – 데모 (big mouth billy bass)</title><link>https://openmicrolab.com/arm-mbed-%EB%8D%B0%EB%AA%A8-big-mouth-billy-bass/</link><pubDate>Sat, 28 Feb 2015 06:09:33 +0000</pubDate><guid>https://openmicrolab.com/arm-mbed-%EB%8D%B0%EB%AA%A8-big-mouth-billy-bass/</guid><description>
+&lt;p>ARM mbed는 2008년 ARM사의 직원이었던 Simon과 Chris가 Rapid Prototyping을 위한 개발 보드를 기획하면서 프로젝트가 시작이 되었다. 이때 ARM 코어를 사용하는 NXP사의 LPC1768칩을 사용하여 모듈을 구성하였으며, 2009년에 보스턴에서 열린 ESC(Embedded System Conference)에서 NXP사의 부스에서 모듈이 릴리즈가 되었고 물고기가 트위터 메시지를 네트워크로 수신해서 음성으로 출력하는 데모를 진행하였다.&lt;br>
+2009년도 관련 동영상&lt;/p></description></item><item><title>ARM mbed connect</title><link>https://openmicrolab.com/arm-mbed-connect/</link><pubDate>Wed, 09 Jul 2014 14:07:26 +0000</pubDate><guid>https://openmicrolab.com/arm-mbed-connect/</guid><description>
+&lt;p>2011년 참석한 ARM mebd connect 1회 행사에 대해 정리한 파일&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="ARM mbed connect" href="https://www.slideshare.net/JinbuhmKim/arm-mbed-connect" target="_blank">ARM mbed connect&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>WIZnet mbed 라이브러리</title><link>https://openmicrolab.com/wiznet-mbed-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/</link><pubDate>Wed, 14 May 2014 02:15:19 +0000</pubDate><guid>https://openmicrolab.com/wiznet-mbed-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/</guid><description>
+&lt;p>W5500 Ethernet 라이브러리를 mbed에 포팅후 W5100,W5200, W5500까지 지원을 하는 라이브러리를 만들어 &lt;a href="http://mbed.org/teams/WIZnet/code/WIZnet_Library/" target="_blank">mbed.org&lt;/a>에 업로드했다. 사용법은 간단하다. 라이브러리를 import하고 사용하는 Wiznet칩 또는 모듈에 따라서 wiznet.h에 있는 #define문에서 사용할 칩만 나두고 나머지는 주석 처리하면 된다.&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="Wiznet Ethernet library for ARM mbed" href="https://www.slideshare.net/JinbuhmKim/wiznet-ethernet-library-for-arm-mbed" target="_blank">Wiznet Ethernet library for ARM mbed&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>IoT 디바이스 개발을 위한 ARM의 플랫폼적 접근</title><link>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</link><pubDate>Fri, 18 Apr 2014 10:09:20 +0000</pubDate><guid>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</guid><description>
+&lt;p>ARM의 IoT 플랫폼 디렉터인 Simon Ford의 발표 @Embedded World.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/04/mbed_Simon.png">&lt;img loading="lazy" class="alignnone wp-image-3008" alt="mbed_Simon" src="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png" width="819" height="609" srcset="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png 1024w, https://openmicrolab.com/images/2014/04/mbed_Simon-300x223.png 300w, https://openmicrolab.com/images/2014/04/mbed_Simon.png 1054w" sizes="(max-width: 819px) 100vw, 819px" />&lt;/a>&lt;/p>
+&lt;p>관련 링크: &lt;a href="http://player.vimeo.com/video/88152800" target="_blank">link&lt;/a>&lt;/p>
+&lt;p>&lt;span style="line-height: 1.5em;">지난번 ARM Techcon의 발표와 거의 같다.&lt;/span>&lt;/p></description></item><item><title>mbed – SeeedArch 프로그래밍하기</title><link>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 06 Mar 2014 06:42:53 +0000</pubDate><guid>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="seeedarch">SeeedArch&lt;/h3>
+&lt;p>&lt;a href="http://mbed.org/" target="_blank">mbed&lt;/a>의 플랫폼 중의 하나인 Seeedstudio에서 만든 보드, &lt;a href="http://mbed.org/platforms/Seeeduino-Arch/" target="_blank">SeeedArch&lt;/a>를 테스트중이다. 이 보드의 스펙은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>mbed enabled
+&lt;ul>
+&lt;li>online development tools&lt;/li>
+&lt;li>easy to use C/C++ SDK&lt;/li>
+&lt;li>lots of published libraries, projects&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Standard Arduino Appearance, two Grove connectors
+&lt;ul>
+&lt;li>available with 3.3V compatible shields&lt;/li>
+&lt;li>a large number of grove modules&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Drag-n-drop programming&lt;/li>
+&lt;li>NXP LPC11U24 MCU
+&lt;ul>
+&lt;li>Low power ARM Cortex-M0 Core&lt;/li>
+&lt;li>48MHz, 32KB Flash, 8KB RAM, 4KB EEPROM&lt;/li>
+&lt;li>USB Device, 2xSPI, UART, I2C&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>이 보드의 가장 큰 특징은 보드의 형태가 아두이노 보드와 같아서 아두이노 쉴드를 연결할 수 있다.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>단축키 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%8B%A8%EC%B6%95%ED%82%A4/</link><description>Recent content in 단축키 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 11 Jul 2017 05:35:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%8B%A8%EC%B6%95%ED%82%A4/index.xml" rel="self" type="application/rss+xml"/><item><title>맥에서 키보드 단축키 추가하기</title><link>https://openmicrolab.com/%EB%A7%A5%EC%97%90%EC%84%9C-%ED%82%A4%EB%B3%B4%EB%93%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 11 Jul 2017 05:35:21 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5%EC%97%90%EC%84%9C-%ED%82%A4%EB%B3%B4%EB%93%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h4 id="automator-설정">Automator 설정&lt;/h4>
+&lt;ul>
+&lt;li>Automator를 실행후 “서비스”를 선택한다.&lt;img loading="lazy" class="wp-image-3971 aligncenter" src="https://res.cloudinary.com/openmicrolab/image/upload/v1499751111/automator_f0uft2.png" width="492" height="440" />&lt;/li>
+&lt;li>다음 그림과 같이 실행으로 필터링을 해서 “응용 프로그램 실행”을 선택 후 우측 창에 드래깅한다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_836/v1499751111/automator2_giqqj8.png">&lt;img loading="lazy" class="aligncenter wp-image-3972" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_836/h_812,w_1024/v1499751111/automator2_giqqj8.png" alt="" width="599" height="475" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>서비스가 받는 항목에는 “입력없음”으로 설정후 실행할 프로그램을 선택후 저장한다.&lt;/li>
+&lt;/ul>
+&lt;h4 id="키보드-단축키-설정">키보드 단축키 설정&lt;/h4>
+&lt;p>시스템 환경설정 &amp;gt; 키보드 &amp;gt; 단축키 &amp;gt; 서비스를 선택후 “일반” 항목에 좀전에 추가한 서비스를 선택후 단축키 설정을 한다.&lt;/p>
+&lt;img loading="lazy" class="wp-image-3973 aligncenter" src="https://res.cloudinary.com/openmicrolab/image/upload/v1499751110/keyboard_iagn7i.png" width="640" height="569" /></description></item><item><title>Sublime Text 단축키 -열선택</title><link>https://openmicrolab.com/sublime-text-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%97%B4%EC%84%A0%ED%83%9D/</link><pubDate>Thu, 12 Feb 2015 02:45:46 +0000</pubDate><guid>https://openmicrolab.com/sublime-text-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%97%B4%EC%84%A0%ED%83%9D/</guid><description>
+&lt;p>에디터에서 열선택 기능이 있으면 유용하다. Sublime Text의 맥버전에서는&lt;/p>
+&lt;blockquote>
+&lt;p>Option + 마우스키&lt;/p>&lt;/blockquote>
+&lt;p>기타 많이 사용하는 단축키는&lt;/p>
+&lt;h2 id="editing">Editing&lt;/h2>
+&lt;div class="wy-table-responsive">
+&lt;table class="docutils" border="1">
+&lt;colgroup> &lt;col width="22%" /> &lt;col width="78%" />&lt;/colgroup> &lt;tr class="row-odd">
+&lt;th class="head">
+Keypress
+&lt;/th>
+&lt;pre>&lt;code> &amp;lt;th class=&amp;quot;head&amp;quot;&amp;gt;
+Command
+&amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + X
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Cut line
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + D
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+ Select word &amp;amp;#8211; Repeat to select next occurrence
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌃ + M
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Jump to closing parentheses Repeat to jump to opening parentheses
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ]
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Indent current line(s)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + [
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Un-indent current line(s)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + /
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Comment/un-comment current line
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ⌥ + /
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Block comment current selection
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/table>
+&lt;/div>
+&lt;div id="navigation-goto-anywhere" class="section">
+&lt;h2>
+Navigation/Goto Anywhere
+&lt;/h2>
+&lt;div class="wy-table-responsive">
+&lt;table class="docutils" border="1">
+&lt;colgroup> &lt;col width="22%" /> &lt;col width="78%" />&lt;/colgroup> &lt;tr class="row-odd">
+&lt;th class="head">
+Keypress
+&lt;/th>
+&lt;pre>&lt;code> &amp;lt;th class=&amp;quot;head&amp;quot;&amp;gt;
+Command
+&amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + P or ⌘ + T
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Quick-open files by name
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + R
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Goto symbol
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Goto word in current file
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌃ + G
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Goto line in current file
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div>
+&lt;div id="general" class="section">
+&lt;h2>
+General
+&lt;/h2>
+&lt;div class="wy-table-responsive">
+&lt;table class="docutils" border="1">
+&lt;colgroup> &lt;col width="22%" /> &lt;col width="78%" />&lt;/colgroup> &lt;tr class="row-odd">
+&lt;th class="head">
+Keypress
+&lt;/th>
+&lt;pre>&lt;code> &amp;lt;th class=&amp;quot;head&amp;quot;&amp;gt;
+Command
+&amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ⇧ + P
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Command Palette
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="findreplace">Find/Replace&lt;/h2>
+&lt;div class="wy-table-responsive">
+&lt;table class="docutils" border="1">
+&lt;colgroup> &lt;col width="22%" /> &lt;col width="78%" />&lt;/colgroup> &lt;tr class="row-odd">
+&lt;th class="head">
+Keypress
+&lt;/th>
+&lt;pre>&lt;code> &amp;lt;th class=&amp;quot;head&amp;quot;&amp;gt;
+Command
+&amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + F
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Find
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ⌥ + F
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Replace
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ⇧ + F
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Find in files
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/table>
+&lt;/div>
+&lt;p>참고: &lt;a href="http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html" target="_blank">&lt;a href="http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html">http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html&lt;/a>&lt;/a>&lt;/p></description></item><item><title>vi vim 단축키 모음</title><link>https://openmicrolab.com/vi-vim-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%A8%EC%9D%8C/</link><pubDate>Wed, 20 Aug 2014 03:33:29 +0000</pubDate><guid>https://openmicrolab.com/vi-vim-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%A8%EC%9D%8C/</guid><description>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/vi-vim-cheat-sheet-ko.png" width="1021" height="721" />
+출처: &lt;a href="https://kldp.org/node/102947" target="_blank">https://kldp.org/node/102947&lt;/a></description></item></channel></rss>

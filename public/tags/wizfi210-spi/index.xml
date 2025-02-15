@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WizFI210 SPI on OpenMicroLab</title><link>https://openmicrolab.com/tags/wizfi210-spi/</link><description>Recent content in WizFI210 SPI on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 17 Dec 2012 06:51:48 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/wizfi210-spi/index.xml" rel="self" type="application/rss+xml"/><item><title>WizFi210의 F/W를 SPI버젼으로 바꾸기</title><link>https://openmicrolab.com/wizfi210%EC%9D%98-fw%EB%A5%BC-spi%EB%B2%84%EC%A0%BC%EC%9C%BC%EB%A1%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/</link><pubDate>Mon, 17 Dec 2012 06:51:48 +0000</pubDate><guid>https://openmicrolab.com/wizfi210%EC%9D%98-fw%EB%A5%BC-spi%EB%B2%84%EC%A0%BC%EC%9C%BC%EB%A1%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/</guid><description>
+&lt;ul style="list-style-type: square;">
+&lt;li>
+&lt;b>&lt;span style="font-size: 10pt;">H/W 설정&lt;/span>&lt;/b>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;span style="font-size: 10pt;">WizFi210의 F/W를 업데이트하기 위해서는 모듈을 RUN mode에서 PROGRAM mode로 설정을하고, UART를 이용해서 업데이트를 해야한다. &lt;/span>&lt;span style="font-size: 10pt;">아래 회로도를 보면 모듈의 37번핀을 Low로 하면 RUN mode이고, High로 하면 PROGRAM mode이다. &lt;/span>&lt;span style="font-size: 10pt;">이 핀을 High로하고, UART핀 TX(40번), RX(42번)핀을 RS232 트랜시버를 거쳐서 PC의 시리얼 포트에 연결을 한다.&lt;/span>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2012/12/wizfi210_program.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-2364" alt="wizfi210_program" src="https://openmicrolab.com/images/2012/12/wizfi210_program.png" width="683" height="351" srcset="https://openmicrolab.com/images/2012/12/wizfi210_program.png 683w, https://openmicrolab.com/images/2012/12/wizfi210_program-300x154.png 300w" sizes="(max-width: 683px) 100vw, 683px" />&lt;/a>&lt;/p>
+&lt;ul style="list-style-type: disc;">
+&lt;li>
+&lt;b>&lt;span style="font-size: 10pt;">PC프로그램 설정&lt;/span>&lt;/b>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;span style="font-size: 10pt;">WIZSamrtScript 프로그램을 다운로드 받는다. &lt;/span>&lt;span style="font-size: 10pt;">&lt;a class="tx-link" href="http://www.wiznet.co.kr/UpLoad_Files/ReferenceFiles/WIZSmartScript(1.1.0.5(W)).zip" target="_blank">링크&lt;/a>&lt;/span>&lt;/p>
+&lt;p>&lt;span style="font-size: 10pt;">SPI 용 F/W를 다운로르 받는다. &lt;/span>&lt;a class="tx-link" href="http://www.wiznet.co.kr/sub_modules/en/product/product_detail.asp?Refid=496&amp;page=1&amp;cate1=5&amp;cate2=43&amp;cate3=0&amp;pid=1132&amp;cType=2" target="_blank">&lt;span style="font-size: 10pt;">링크&lt;/span>&lt;/a>&lt;/p></description></item></channel></rss>

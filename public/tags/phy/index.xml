@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PHY on OpenMicroLab</title><link>https://openmicrolab.com/tags/phy/</link><description>Recent content in PHY on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 17 Sep 2010 12:36:44 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/phy/index.xml" rel="self" type="application/rss+xml"/><item><title>Auto-MDIX의 동작 원리</title><link>https://openmicrolab.com/auto-mdix%EC%9D%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC/</link><pubDate>Fri, 17 Sep 2010 12:36:44 +0000</pubDate><guid>https://openmicrolab.com/auto-mdix%EC%9D%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC/</guid><description>
+&lt;p class="MsoNormal">
+&lt;span lang="EN-US" style="font-size: 12pt;">&lt;b>&lt;span style="font-size: 11pt;">Auto-MDIX &lt;/span>&lt;/b>&lt;/span>&lt;span style="font-size: 12pt;">&lt;span style="font-size: 11pt;">란&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> &lt;/span>&lt;b>&lt;span style="font-size: 11pt;">Automatic Medium Dependent Interface Crossove&lt;/span>&lt;/b>&lt;span style="font-size: 11pt;">r &lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">를 의미하며&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> HP&lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">에 의해 개발된&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> Network &lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">기술입니다. &lt;/span>&lt;a title="[http://www.hp.com/hpinfo/abouthp/iplicensing/automdix.html]로 이동합니다." href="http://www.hp.com/hpinfo/abouthp/iplicensing/automdix.html" target="_blank">&lt;b>&lt;span style="color: #3058d2;">&lt;span style="font-size: 11pt;">HP사의 Auto-MDIX기술 소개 페이지&lt;/span>&lt;/span>&lt;/b>&lt;/a>&lt;/span>
+&lt;/p>
+&lt;p class="MsoNormal">
+&lt;span style="font-size: 12pt;">&lt;span class="Apple-style-span" style="font-size: 15px;">&lt;span lang="EN-US" style="font-size: 12pt;">&lt;span style="font-size: 11pt;">이더넷 케이블의 &lt;/span>&lt;/span>&lt;span style="font-size: 12pt;">&lt;span style="font-size: 11pt;">형태는&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> TX/RX &lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">를 기준으로 볼 때&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;">TX/RX&lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">가 서로 바뀌어져 있는&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> &lt;b>Crossover Cable(TX-RX, RX-TX)&lt;/b>&lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">과&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> &lt;b>Straight Cable (TX-TX, RX-RX)&lt;/b>&lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">로 나뉘어집니다. &lt;/span>&lt;/span>&lt;/span>&lt;/span>
+&lt;/p>
+&lt;p class="MsoNormal">
+&lt;span style="font-size: 12pt;">&lt;span class="Apple-style-span" style="font-size: 15px;">&lt;span style="font-size: 12pt;">&lt;span style="font-size: 11pt;">각각의 네트워크 디바이스들의 통신은 &lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="font-size: 16px;">&lt;span lang="EN-US">&lt;span style="font-size: 11pt;">TX(&lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">노드&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> A)-RX(&lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">노드&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> B) / RX(&lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">노드&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> A)-TX(&lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">노드&lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;"> B)&lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">의 연결을 통해서 가능하기 때문에 &lt;/span>&lt;span lang="EN-US">&lt;span style="font-size: 11pt;">Straight Cable 로 연결을 하면 &lt;/span>&lt;/span>&lt;span style="font-size: 11pt;">통신이 불가능합니다. &lt;/span>&lt;/span>
+&lt;/p></description></item><item><title>Virtual Cable Tester</title><link>https://openmicrolab.com/virtual-cable-tester/</link><pubDate>Mon, 06 Sep 2010 08:32:40 +0000</pubDate><guid>https://openmicrolab.com/virtual-cable-tester/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">Ethernet 네트워크에서는 필수적으로 Ethernet PHY 칩을 사용해야한다. PHY칩에 적용되는 기술중 하나인 &lt;b>VCT(Virtual Cable Tester)&lt;/b>는 Marvell에서 개발한 기술로 간단히 얘기하면 &lt;a href="http://liketheocean.tistory.com/entry/%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%BC%80%EC%9D%B4%EB%B8%94-%EC%A2%85%EB%A5%98-UTP-FTP-STP" target="_blank" title="[http://liketheocean.tistory.com/entry/%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%BC%80%EC%9D%B4%EB%B8%94-%EC%A2%85%EB%A5%98-UTP-FTP-STP]로 이동합니다.">UTP 케이블&lt;/a>의 단선 및 단락등을 검출하는 기술이다. &lt;/span>&lt;/p>
+&lt;div>
+&lt;span style="font-size: 11pt; ">즉 구체적으로 다음과 같은 문제점의 검출이 가능하다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: arial, helvetica; line-height: normal; font-size: 17px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; ">&lt;/p>
+&lt;ul class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Open:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Lack of continuity between the pins at each end of the twisted-pair cable.&lt;/span>
+&lt;/li>
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Short:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Two or more conductors short-circuited together.&lt;/span>
+&lt;/li>
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Crossed pair:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Twisted-pair cable incorrectly connected at one end. For example, pair 3 is connected to pins 4 and 5 on one end, and pins 7 and 8 on the other end.&lt;/span>
+&lt;/li>
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Reversed pair:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Two conductors in a twisted-pair cable connected with reverse polarity. For example, one conductor in pair 3 is connected to pin 1 on one side and to pin 2 on the other, while the second conductor is connected between pin 2 and pin 1.&lt;/span>
+&lt;/li>
+&lt;li class="point_normal" style="font-family: arial, helvetica; font-size: 9pt; ">
+&lt;span class="title_emph" style="font-family: arial, helvetica; font-size: 9pt; font-weight: bold; ">&lt;span style="font-size: 11pt; ">Improper termination:&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&amp;nbsp; Cable terminations not equal to 100 ohms. Because the characteristic impedance of Category 5 (Cat 5) cable is 100 ohms, the cable terminations at each end must also be 100 ohms to prevent waveform reflections and potential data errors.&lt;/span>
+&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;/span>&lt;/div>
+&lt;pre>&lt;code>&amp;lt;div&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;예를 들면 UTP케이블이 100m 짜리인데 중간에 어느 부근에서 단선, 단락이 되었는지, 선이 제대로 연결이 되었는지 등을 알 수있다.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;이 기술로 원리는 특정 파형의 시그널을 보내고 이것이 반사되어 오는 시간 및 패턴을 보고 문제의 원인을 알아낸다.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; src=&amp;quot;/images/1/cfile9.uf.172DD9334C84A635787D06.jpg&amp;quot; class=&amp;quot;aligncenter&amp;quot; width=&amp;quot;432&amp;quot; height=&amp;quot;341&amp;quot; alt=&amp;quot;&amp;quot; filename=&amp;quot;marvell_vct.jpg&amp;quot; filemime=&amp;quot;image/jpeg&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; src=&amp;quot;/images/1/cfile23.uf.14074A1E4C84A677854F2F.jpg&amp;quot; class=&amp;quot;aligncenter&amp;quot; width=&amp;quot;432&amp;quot; height=&amp;quot;341&amp;quot; alt=&amp;quot;&amp;quot; filename=&amp;quot;marvell_vct2.jpg&amp;quot; filemime=&amp;quot;image/jpeg&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.marvell.com&amp;quot; target=&amp;quot;_blank&amp;quot; title=&amp;quot;[http://www.marvell.com]로 이동합니다.&amp;quot;&amp;gt;Marvell의 홈페이지&amp;lt;/a&amp;gt;에서는 관련한 내용이 잘 찾아지지 않는데, 아래 링크의 내용은 Dell의 제품에 적용된 내용을 기술한 내용이다. &amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;a href=&amp;quot;http://www.dell.com/content/topics/global.aspx/power/en/ps2q03_marvell?c=us&amp;amp;l=en&amp;amp;cs=555&amp;quot; target=&amp;quot;_blank&amp;quot; title=&amp;quot;[http://www.dell.com/content/topics/global.aspx/power/en/ps2q03_marvell?c=us&amp;amp;l=en&amp;amp;cs=555]로 이동합니다.&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;관련 내용 참고&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre></description></item></channel></rss>

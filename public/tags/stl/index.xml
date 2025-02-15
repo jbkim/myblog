@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STL on OpenMicroLab</title><link>https://openmicrolab.com/tags/stl/</link><description>Recent content in STL on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 27 Oct 2016 11:53:50 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/stl/index.xml" rel="self" type="application/rss+xml"/><item><title>STL 파일오류를 수정하는 툴</title><link>https://openmicrolab.com/stl-%ED%8C%8C%EC%9D%BC%EC%98%A4%EB%A5%98%EB%A5%BC-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%ED%88%B4/</link><pubDate>Thu, 27 Oct 2016 11:53:50 +0000</pubDate><guid>https://openmicrolab.com/stl-%ED%8C%8C%EC%9D%BC%EC%98%A4%EB%A5%98%EB%A5%BC-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%ED%88%B4/</guid><description>
+&lt;p>3D 프린팅을 위해 필요한  STL파일의 오류를 수정하는 툴 리스트.&lt;/p>
+&lt;p>온라인/오프라인 툴들이 있는데, 이중에서 오픈소스로 코드가 공개되어 있는 것중 쓸만한 것은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/FreeCAD/FreeCAD" target="_blank">FreeCAD&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/starseeker/meshlab" target="_blank">meshlab&lt;/a> : 원래 sourceforge에 있는 것을 github으로 옮겨옴&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://all3dp.com/best-stl-file-repair-mesh/">https://all3dp.com/best-stl-file-repair-mesh/&lt;/a>&lt;/p></description></item></channel></rss>

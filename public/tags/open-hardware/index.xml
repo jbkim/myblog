@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Hardware on OpenMicroLab</title><link>https://openmicrolab.com/tags/open-hardware/</link><description>Recent content in Open Hardware on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 25 Apr 2012 03:27:37 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/open-hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>DIP TRACE – PCB 디자인 툴</title><link>https://openmicrolab.com/dip-trace-pcb-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%88%B4/</link><pubDate>Wed, 25 Apr 2012 03:27:37 +0000</pubDate><guid>https://openmicrolab.com/dip-trace-pcb-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%88%B4/</guid><description>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.1451B9344F97660C11B27D.PNG" class="aligncenter" width="683" height="514" filename="diptrace.PNG" filemime="image/jpeg" style="""" />
+&lt;/p>
+&lt;p>Open hardware 분야에서 &lt;a href="http://liketheocean.tistory.com/199" target="_blank" class="tx-link">Eagle CAD&lt;/a>가 가장 많이 사용이 되는 것 같다. &lt;/p>
+&lt;p>이런 툴들이 상용 버젼도 있지만 Hobbist 나 학생 그리고 비상어업적인 용도를 위해서는 훨씬 싼 가격으로 제품을 공급을 한다.&lt;/p>
+&lt;p>물론 약간의 기능의 제한이 있지만 무료버젼도 제공을 한다. 사실 무료버젼이라도 PCB가 복잡하지 않으면 웬만한 PCB 디자인은 가능하다. 그리고 Windows 버젼 뿐 아니라 당연히 MAC 버젼도 제공을 한다.&lt;/p>
+&lt;p>&lt;a href="http://www.diptrace.com/index.php?en=1" target="_blank" class="tx-link">DIP TRACE&lt;/a> 역시 Open hardware 분야서 사용되는 PCB 디자인 툴이다.&lt;/p></description></item><item><title>Eagle CAD</title><link>https://openmicrolab.com/eagle-cad/</link><pubDate>Thu, 22 Mar 2012 08:33:31 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad/</guid><description>
+&lt;p>Open Hardware를 위해 &lt;a title="[http://www.cadsoftusa.com/]로 이동합니다." href="http://www.cadsoftusa.com/" target="_blank">Eagel CAD&lt;/a>를 많이 사용을 하지만 정작 사용법에 대한 한글 안내는 많지 않다.&lt;br>
+유일한 것이 &lt;a href="http://nohau.com.ne.kr/eagle.htm">http://nohau.com.ne.kr/eagle.htm&lt;/a> 의 링크에 있는 내용이다.&lt;br>
+이 링크는 일본 자료를 번역한 것 같은데, 실제 툴이라는 것이 각각의 기능에 대한 알기보다는 실제로 자기가 사용을 해가면서 왜 기능이 필요한 가를 터득하는 것이 중요하다. 툴의 모든 기능이 다 필요로 하지는 않으니까…&lt;br>
+이 링크가 별로 마음에 안드는 것은 웹사이트의 모든 키를 막아놔서 copy가 안되는데, Evernote같은 툴로 페이지를 스크랩하는 것은 가능하다. ^^*&lt;/p></description></item><item><title>[책] 오프라인 비즈니스 혁명</title><link>https://openmicrolab.com/%EC%B1%85-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%ED%98%81%EB%AA%85/</link><pubDate>Sat, 10 Dec 2011 13:26:06 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%ED%98%81%EB%AA%85/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;STRONG>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.137E67464EE5C0D01F21A1.jpg" class="alignleft" width="148" height="218" alt="" filename="l9788950929695.jpg" filemime="image/jpeg" />&lt;/STRONG>
+&lt;/P>
+&lt;p>저자 정지훈은 미래 칼럼니스트로 활약중이며 ‘하이컨셉’이라는 닉네임으로 잘 알려진 파워블로거이기도 하다. 그는 다가올 미래에 대해 ‘그동안의 10년이 IT가 만든 디지털 혁명이었다면, 앞으로의 10년은 전통산업과 IT가 만나 비용 절감과 시공간 단축이 실현되는 제2의 산업혁명이 될 것’이라고 말했다. **  &lt;/p>&lt;/p>
+&lt;p>무엇이 제조와 유통의 혁신을 일으키는가&lt;br>
+가내수공업의 시대가 부활한다&lt;br>
+새롭게 탄생하는 유통산업과 광고, 마케팅의 미래&lt;br>
+미래의 웹 환경과 미래기업 경영의 원칙&lt;br>
+&lt;/STRONG>등의 4가지 큰제목을 가지고 다가올 미래에 대해 이야기하고 있다.&lt;/p>
+&lt;p>제조부문에서 기업이 아닌 개인의 등장(프로슈밍, DIY)하여 자신의 창작물을 온라인에서 쉽게 공유하는 시대.온라인에서는 개인의 경험과 실시간성, 판매가 아닌라 관계의 중요성이 부각.&lt;br>
+이를 촉진시키는 것이 3D 프린터 및 3D 모델링툴 및 Open Hardware.&lt;br>
+하지만 결국 중요한 것은 어떻게 제조 단가를 낮추고, 이를 생산하는 기계가격이 얼마나 떨어질 수 있느냐에 달려있다.&lt;br>
+혁신의 원동력은 쉽고(easy), 싼(cheap) !!&lt;/p></description></item><item><title>LeafLabs의 Maple mini, Maple Ret 5 보드 사용기</title><link>https://openmicrolab.com/leaflabs%EC%9D%98-maple-mini-maple-ret-5-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</link><pubDate>Fri, 25 Nov 2011 11:31:38 +0000</pubDate><guid>https://openmicrolab.com/leaflabs%EC%9D%98-maple-mini-maple-ret-5-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</guid><description>
+&lt;p>&lt;A title="[http://arduino.cc]로 이동합니다." href="http://arduino.cc/" target=_blank>Arduino&lt;/A>가 AVR을 기반으로 하여 오픈하드웨어 플랫폼을 주도하고 있는데, &lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>은 STM32시리즈를 기반으로 하는 오픈하드웨어 플랫폼을 만들고 있다. &lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>의 보드들의 이름은 Maple이다.&lt;br>
+&lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>사의 홈페이지에서 주문을 하니 한 일주일만에 배송이 되었다. &lt;A title="[http://arduino.cc]로 이동합니다." href="http://arduino.cc/" target=_blank>Arduino&lt;/A>가 요즘에는 브랜딩 작업을 하고 있고, 포장 및 디자인까지 신경을 쓰는 반면 역시 후발 주자답게 포장이 좀 허접하다. 대신 사탕을 같이 넣어서 주네..ㅋㅋ&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.180B40494ECF78311B6A81.jpg" class="aligncenter" width="490" height="322" alt="" filename="Maple with Candy.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile6.uf.180B55484ECF78B6227356.jpg" class="aligncenter" width="551" height="331" alt="" filename="Maple.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>아두이노와 같은 모습의 IDE를 사용하는데, 일단 처음 부터 막힌다. &lt;A title="[http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip]로 이동합니다." href="http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip" target=_blank>IDE 다운로드&lt;/A>&lt;/p></description></item><item><title>Nanode – An Open Hardware Success Story</title><link>https://openmicrolab.com/nanode-an-open-hardware-success-story/</link><pubDate>Fri, 09 Sep 2011 01:40:06 +0000</pubDate><guid>https://openmicrolab.com/nanode-an-open-hardware-success-story/</guid><description>
+&lt;p>&lt;A title="[http://sustburbia.blogspot.com/2011/08/nanode-open-hardware-success-story.html]로 이동합니다." href="http://sustburbia.blogspot.com/2011/08/nanode-open-hardware-success-story.html" target=_blank>From Ken Boak’s blog&lt;/A>&lt;/p>
+&lt;embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#AYLPnkAC" style="display:none">
+&lt;/embed></description></item></channel></rss>

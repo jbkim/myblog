@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D Printing on OpenMicroLab</title><link>https://openmicrolab.com/tags/3d-printing/</link><description>Recent content in 3D Printing on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 11 Nov 2016 02:01:32 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml"/><item><title>필라멘트 들뜸을 방지하려면</title><link>https://openmicrolab.com/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EB%93%A4%EB%9C%B8%EC%9D%84-%EB%B0%A9%EC%A7%80%ED%95%98%EB%A0%A4%EB%A9%B4/</link><pubDate>Fri, 11 Nov 2016 02:01:32 +0000</pubDate><guid>https://openmicrolab.com/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EB%93%A4%EB%9C%B8%EC%9D%84-%EB%B0%A9%EC%A7%80%ED%95%98%EB%A0%A4%EB%A9%B4/</guid><description>
+&lt;p>3D 프린팅을 하면서 일반적으로 모델의 사이즈가 큰 경우 모델의 바닥부터 필라멘트가 수축을 하면서 들뜨게 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3796" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478829214/warping_gny6ra.jpg" width="512" height="384" />
+&lt;p>이런 현상을 방지하기 위해서는&lt;/p>
+&lt;ul>
+&lt;li>히트베드 사용&lt;/li>
+&lt;li>Raft / Brim 사용&lt;/li>
+&lt;li>레벨링을 잘 맞추기&lt;/li>
+&lt;li>캡톤필름/Buildtak sheet 등을 사용&lt;/li>
+&lt;li>출력속도 낮추기&lt;/li>
+&lt;li>Infill을 줄이기&lt;/li>
+&lt;/ul>
+&lt;p>그리고 &lt;a href="https://www.matterhackers.com/news/-how-to-stop-filament-warping-in-3d-printed-parts" target="_blank">이 글(HOW TO STOP FILAMENT WARPING IN 3D PRINTED PARTS)&lt;/a>에서는 Brim을 넣을 때 lily pads를 넣는 것을 설명하고 있는데 좋은 아이디어 인듯.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3797" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478829543/lilypad_dby3nx.jpg" width="512" height="384" />
+&lt;p>ABS의 경우 &lt;a href="https://www.matterhackers.com/articles/printing-tips-&amp;-tricks:-abs-bed-adhesion" target="_blank">참고자료&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Heat bed에 Kapton필름, 딱풀, ABS Juice등을 사용&lt;/li>
+&lt;li>첫번째 레이어에서 팬 컨트롤&lt;/li>
+&lt;/ul>
+&lt;p> &lt;/p></description></item><item><title>Meshlab 빌드</title><link>https://openmicrolab.com/meshlab-%EB%B9%8C%EB%93%9C/</link><pubDate>Wed, 02 Nov 2016 06:46:53 +0000</pubDate><guid>https://openmicrolab.com/meshlab-%EB%B9%8C%EB%93%9C/</guid><description>
+&lt;p>&lt;a href="http://meshlab.sourceforge.net/" target="_blank">Meshlab&lt;/a>은 3D프린팅에 필요한 파일의 메쉬를 수정할 수 있는 툴로 오픈소스이며, 3가지 OS를 지원한다. 그리고 &lt;a href="http://www.meshlabjs.net/" target="_blank">웹에서 구현&lt;/a>한 버전도 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3790" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478068545/eye_cropped_x9neij.png" width="155" height="155" />
+&lt;p>이 소스를 빌드하려면 다음과 같은 3가지 소스가 필요하다.&lt;br>
+*** 필요한 소스들 3가지**&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/" target="_blank">MeshLab 소스 코드&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://vcg.isti.cnr.it/vcglib/" target="_blank">VCG 라이브러리&lt;/a>&lt;br>
+위 2개의 코드를 &lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/" target="_blank">&lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/">https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/&lt;/a>&lt;/a>&lt;br>
+에서 받을 수 있다.&lt;/li>
+&lt;li>&lt;a href="https://www.qt.io/" target="_blank">Qt&lt;/a> : &lt;a href="http://download.qt.io/archive/qt/" target="_blank">Qt의 아카이브&lt;/a>에서 호스트에 따른 버전을 다운로드한다.&lt;/li>
+&lt;/ul>
+&lt;p>*** VS(Visual Studio)로 컴파일하기**&lt;br>
+&lt;strong>1. QT 컴파일&lt;/strong>&lt;br>
+(1) QT소스의 압축을 풀고, VS(Visual Studio) Command prompt를 실행하여 해서 다음과 같이 설정을 한다.&lt;br>
+(2) 만약 VS가 여러 버전이 설치되어 있다면,&lt;/p></description></item><item><title>STL 파일오류를 수정하는 툴</title><link>https://openmicrolab.com/stl-%ED%8C%8C%EC%9D%BC%EC%98%A4%EB%A5%98%EB%A5%BC-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%ED%88%B4/</link><pubDate>Thu, 27 Oct 2016 11:53:50 +0000</pubDate><guid>https://openmicrolab.com/stl-%ED%8C%8C%EC%9D%BC%EC%98%A4%EB%A5%98%EB%A5%BC-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%ED%88%B4/</guid><description>
+&lt;p>3D 프린팅을 위해 필요한  STL파일의 오류를 수정하는 툴 리스트.&lt;/p>
+&lt;p>온라인/오프라인 툴들이 있는데, 이중에서 오픈소스로 코드가 공개되어 있는 것중 쓸만한 것은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/FreeCAD/FreeCAD" target="_blank">FreeCAD&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/starseeker/meshlab" target="_blank">meshlab&lt;/a> : 원래 sourceforge에 있는 것을 github으로 옮겨옴&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://all3dp.com/best-stl-file-repair-mesh/">https://all3dp.com/best-stl-file-repair-mesh/&lt;/a>&lt;/p></description></item><item><title>Slic3r 빌드 하기</title><link>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 24 Oct 2016 08:29:34 +0000</pubDate><guid>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>3D 프린팅을 위한 슬라이서 프로그램인 &lt;a href="http://slic3r.org/" target="_blank">Slic3r&lt;/a>는 오픈소스로 &lt;a href="https://github.com/alexrj/Slic3r" target="_blank">github&lt;/a>에 코드가 공개되어 있다. 물론 각 OS에 맞는 실행파일을 다운로드해서 사용이 가능하지만 github에 공개된 코드를 빌드해서 사용이 가능하다. Windows, Mac, Linux 등 3가지 OS에서 빌드가 가능하며, Mac OS X에서 빌드하는 방법은&lt;a href="https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X" target="_blank"> https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X&lt;/a>에 정리되어 있다.&lt;/p>
+&lt;p>Slic3r는 C++ 과 Perl로 작성이 되어 있다.&lt;/p>
+&lt;blockquote>
+&lt;p>The core geometric algorithms and data structures are written in C++, and Perl is used for high-level flow abstraction, GUI and testing.&lt;/p>&lt;/blockquote>
+&lt;p>그리고 다음과 같은 기능이 있다.&lt;/p></description></item><item><title>AstroPrint 분석</title><link>https://openmicrolab.com/astroprint-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 19 Oct 2016 09:17:40 +0000</pubDate><guid>https://openmicrolab.com/astroprint-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;p>원격 3D프린팅을 지원하는 기기인 &lt;a href="https://www.astroprint.com/" target="_blank">AstroPrint&lt;/a> 분석&lt;/p>
+&lt;p>&lt;strong>1. 가격&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>AstroPrint에서 파는 기기 – $149&lt;/li>
+&lt;li>Raspberry Pi 세트: $65&lt;/li>
+&lt;li>지원하는 카메라: $30 ~ $68 (라즈베리용 카메라는 지원하지 않음)&lt;/li>
+&lt;li>따라서 카메라 포함 가격은 $95 ~ $217 정도&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>2. 카메라&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>카메라는 리눅스를 지원하는 USB카메라(Video for Linux v2)이어야 하며 웹에서 카메라 스트리밍을 보는 형태라서(WebRTC) FireFox, Chrome and Opera에서만 영상을 볼 수 있음&lt;/li>
+&lt;li>pcDuino 기반의 AstroPrint는 스트리밍 지원 안됨. &lt;span style="text-decoration: underline;">즉 Raspberry Pi기반만 웹 스트리밍 지원&lt;/span>.&lt;/li>
+&lt;li>&lt;a href="http://iswebrtcreadyyet.com/" target="_blank">WebRTC의 한계&lt;/a>: 브라우저 지원&lt;/li>
+&lt;/ul>
+&lt;p>**참고 자료: **&lt;a href="https://blog.astroprint.com/live-video-streaming-is-now-available-on-astroprint/" target="_blank">&lt;a href="https://blog.astroprint.com/live-video-streaming-is-now-available-on-astroprint/">https://blog.astroprint.com/live-video-streaming-is-now-available-on-astroprint/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>3D 프린팅이 세상을 바꾸는 33가지 방법</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9D%B4-%EC%84%B8%EC%83%81%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8A%94-33%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</link><pubDate>Thu, 05 Nov 2015 03:08:20 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9D%B4-%EC%84%B8%EC%83%81%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8A%94-33%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</guid><description>
+&lt;p>RS Components에서 만든 자료 – 3D 프린팅이 세상을 바꾸는 33가지 방법&lt;/p>
+&lt;p>&lt;span style="font-size: 13px; color: #000000;">33 Ways 3D Printing Is Transforming The World – &lt;a style="color: #000000; font-size: 13px;" href="http://uk.rs-online.com/web/generalDisplay.html?id=i/3d-printing">RS Components UK&lt;/a>.&lt;/span>&lt;/p></description></item><item><title>3D 프린팅 참고 도서 – 과학과 교육 및 지속가능한 발전을 위한 저비용 3D프린팅</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%B0%B8%EA%B3%A0-%EB%8F%84%EC%84%9C-%EA%B3%BC%ED%95%99%EA%B3%BC-%EA%B5%90%EC%9C%A1-%EB%B0%8F-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%9C%EC%A0%84/</link><pubDate>Fri, 19 Sep 2014 06:12:59 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%B0%B8%EA%B3%A0-%EB%8F%84%EC%84%9C-%EA%B3%BC%ED%95%99%EA%B3%BC-%EA%B5%90%EC%9C%A1-%EB%B0%8F-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%9C%EC%A0%84/</guid><description>
+&lt;p>&lt;a href="http://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EA%B4%80%EB%A0%A8-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC/" target="_blank">지난번 포스팅&lt;/a>에서 언급한 3D 프린팅관련 책자인 &lt;span style="color: #222222;">“&lt;/span>&lt;strong>과학과 교육 및 지속가능한 발전을 위한 저비용 3D프린팅&lt;/strong>&lt;span style="color: #222222;">“은 이태리의 &lt;span style="color: #000000;">ICTP (International Centre for Theoretical Physics) 가 주최한 “Low-cost 3D Printing for Science, Education and Sustainable Development” 라는 워크샵의 발표집이다. 이 자료를 &lt;a href="http://knowledgebasin.com/index.php?" target="_blank">지식함지&lt;/a>라는 곳에서 한글번역을 했으며, Creative Commons Attribution-Noncommercial-NoDerivative Works 3.0 Unported License 를 따른다.&lt;/span>&lt;/span>&lt;/p>
+&lt;p>즉 &lt;a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.ko" target="_blank">CCL에 따르면 &lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>내용을 변경하거나 덧붙이는 등의 작업을 통해서 파생버전을 만들 수 없고, 상업적으로 이용할 수 없으며, 작가나 저작권자가 정한 방식대로 저작권이 누구에게 있는지를 알려주어야 한다.&lt;/p></description></item></channel></rss>

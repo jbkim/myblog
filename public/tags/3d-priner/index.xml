@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D Priner on OpenMicroLab</title><link>https://openmicrolab.com/tags/3d-priner/</link><description>Recent content in 3D Priner on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 21 Nov 2017 02:48:05 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/3d-priner/index.xml" rel="self" type="application/rss+xml"/><item><title>무선으로 3D Printer 사용하기</title><link>https://openmicrolab.com/%EB%AC%B4%EC%84%A0%EC%9C%BC%EB%A1%9C-3d-printer-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 21 Nov 2017 02:48:05 +0000</pubDate><guid>https://openmicrolab.com/%EB%AC%B4%EC%84%A0%EC%9C%BC%EB%A1%9C-3d-printer-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>3D프린팅을 위해서 SD 메모리를 사용하거나,  USB 케이블을 연결해서 프린팅을 한다. 하지만 USB 케이블을 사용하면, 장시간 프린팅시 1대의 PC가 프린팅만을 위해 사용될 수 밖에 없다. 무선으로 프린팅시 다음과 같은 장점이 있다.&lt;/p>
+&lt;ul>
+&lt;li>The noisy printer can be placed in a sperate location allowing for different ventilation options, and convenient noise reduction.&lt;/li>
+&lt;li>Less mess.  Cords can be ugly and can be trip hazards.&lt;/li>
+&lt;li>Multiple computers are becoming a household norm.  Sick of giving up your computer for your significant other, child, or visiting a friend to play with your 3D printer?  Go wireless.&lt;/li>
+&lt;li>3D printing is a long process.  Wouldn’t it be nice to be able to start a print job from a remote location to be completed by the time you get home?&lt;/li>
+&lt;/ul>
+&lt;p>그리고 이 USB케이블을 사용하지 않고 무선으로 프린팅을 하기위해 OctoPrint, AstroPrint, Repetier Server등의 Host 프로그램이 필요하다.&lt;/p></description></item></channel></rss>

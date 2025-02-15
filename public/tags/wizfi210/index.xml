@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WIZFi210 on OpenMicroLab</title><link>https://openmicrolab.com/tags/wizfi210/</link><description>Recent content in WIZFi210 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 19 Feb 2013 00:28:46 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/wizfi210/index.xml" rel="self" type="application/rss+xml"/><item><title>WizFi210과 IoT서비스 연동</title><link>https://openmicrolab.com/wizfi210%EA%B3%BC-iot%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%B0%EB%8F%99/</link><pubDate>Tue, 19 Feb 2013 00:28:46 +0000</pubDate><guid>https://openmicrolab.com/wizfi210%EA%B3%BC-iot%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%B0%EB%8F%99/</guid><description>
+&lt;p>&lt;a class="tx-link" href="https://cosm.com" target="_blank">Cosm&lt;/a>은 &lt;span style="font-size: 9pt; line-height: 1.5;">&lt;a class="tx-link" href="http://liketheocean.tistory.com/183" target="_blank">IoT 서비스&lt;/a>로 예전에 Pachube라는 이름으로 서비스를 하다가 LogMeIn에 인수가 되면서 Cosm으로 이름이 바뀌었다.먼저 Cosm의 서비스를 사용하기 위해서는 회원 가입을 하고, Device/Feed를 추가해야한다.&lt;/span>&lt;/p>
+&lt;div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;b>&lt;span style="font-size: 10pt;">Cosm 설정&lt;/span>&lt;/b>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 9pt; line-height: 1.5;">&lt;b>1. 회원 가입&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 9pt; line-height: 1.5;">회원&lt;/span>&lt;span style="font-size: 9pt; line-height: 1.5;"> &lt;/span>&lt;span style="font-size: 9pt; line-height: 1.5;">가입을 하면 &lt;/span>&lt;span style="font-size: 9pt; line-height: 1.5;">API키를 발급을 하는데, 이 정보는 기억을 해둬야하고, 나중에 Keys에서 다시 확인을 할 수 있다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;p>
+&lt;a href="https://openmicrolab.com/images/2013/02/cosm_00.png">&lt;img loading="lazy" class="size-full wp-image-2348 aligncenter" alt="cosm_00" src="https://openmicrolab.com/images/2013/02/cosm_00.png" width="253" height="115" />&lt;/a>
+&lt;/p>
+&lt;/div>
+&lt;div>
+&lt;b>2. Device/Feed 추가&lt;/b>
+&lt;/div>
+&lt;div>
+Something Else를 선택한다.
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;a href="https://openmicrolab.com/images/2013/03/cosm_01.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2358" alt="cosm_01" src="https://openmicrolab.com/images/2013/03/cosm_01.png" width="683" height="345" srcset="https://openmicrolab.com/images/2013/03/cosm_01.png 683w, https://openmicrolab.com/images/2013/03/cosm_01-300x151.png 300w" sizes="(max-width: 683px) 100vw, 683px" />&lt;/a>
+&lt;/div>
+&lt;div>
+Step1에서 디폴트로 선택이 되어 있는 &amp;#8220;No, I will push data to Cosm&amp;#8221;를 선택을 한다.
+&lt;/div>
+&lt;div>
+&lt;p style="text-align: center; clear: none; float: none;">
+&lt;a href="https://openmicrolab.com/images/2013/03/cosm_02.png">&lt;img loading="lazy" class=" wp-image-2357 aligncenter" alt="cosm_02" src="https://openmicrolab.com/images/2013/03/cosm_02.png" width="678" height="465" srcset="https://openmicrolab.com/images/2013/03/cosm_02.png 678w, https://openmicrolab.com/images/2013/03/cosm_02-300x205.png 300w" sizes="(max-width: 678px) 100vw, 678px" />&lt;/a>
+&lt;/p></description></item><item><title>WizFi210의 F/W를 SPI버젼으로 바꾸기</title><link>https://openmicrolab.com/wizfi210%EC%9D%98-fw%EB%A5%BC-spi%EB%B2%84%EC%A0%BC%EC%9C%BC%EB%A1%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/</link><pubDate>Mon, 17 Dec 2012 06:51:48 +0000</pubDate><guid>https://openmicrolab.com/wizfi210%EC%9D%98-fw%EB%A5%BC-spi%EB%B2%84%EC%A0%BC%EC%9C%BC%EB%A1%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/</guid><description>
+&lt;ul style="list-style-type: square;">
+&lt;li>
+&lt;b>&lt;span style="font-size: 10pt;">H/W 설정&lt;/span>&lt;/b>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;span style="font-size: 10pt;">WizFi210의 F/W를 업데이트하기 위해서는 모듈을 RUN mode에서 PROGRAM mode로 설정을하고, UART를 이용해서 업데이트를 해야한다. &lt;/span>&lt;span style="font-size: 10pt;">아래 회로도를 보면 모듈의 37번핀을 Low로 하면 RUN mode이고, High로 하면 PROGRAM mode이다. &lt;/span>&lt;span style="font-size: 10pt;">이 핀을 High로하고, UART핀 TX(40번), RX(42번)핀을 RS232 트랜시버를 거쳐서 PC의 시리얼 포트에 연결을 한다.&lt;/span>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2012/12/wizfi210_program.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-2364" alt="wizfi210_program" src="https://openmicrolab.com/images/2012/12/wizfi210_program.png" width="683" height="351" srcset="https://openmicrolab.com/images/2012/12/wizfi210_program.png 683w, https://openmicrolab.com/images/2012/12/wizfi210_program-300x154.png 300w" sizes="(max-width: 683px) 100vw, 683px" />&lt;/a>&lt;/p>
+&lt;ul style="list-style-type: disc;">
+&lt;li>
+&lt;b>&lt;span style="font-size: 10pt;">PC프로그램 설정&lt;/span>&lt;/b>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;span style="font-size: 10pt;">WIZSamrtScript 프로그램을 다운로드 받는다. &lt;/span>&lt;span style="font-size: 10pt;">&lt;a class="tx-link" href="http://www.wiznet.co.kr/UpLoad_Files/ReferenceFiles/WIZSmartScript(1.1.0.5(W)).zip" target="_blank">링크&lt;/a>&lt;/span>&lt;/p>
+&lt;p>&lt;span style="font-size: 10pt;">SPI 용 F/W를 다운로르 받는다. &lt;/span>&lt;a class="tx-link" href="http://www.wiznet.co.kr/sub_modules/en/product/product_detail.asp?Refid=496&amp;page=1&amp;cate1=5&amp;cate2=43&amp;cate3=0&amp;pid=1132&amp;cType=2" target="_blank">&lt;span style="font-size: 10pt;">링크&lt;/span>&lt;/a>&lt;/p></description></item><item><title>TI의 SimpleLink Wi-Fi CC3000</title><link>https://openmicrolab.com/ti%EC%9D%98-simplelink-wi-fi-cc3000/</link><pubDate>Wed, 25 Jan 2012 05:25:53 +0000</pubDate><guid>https://openmicrolab.com/ti%EC%9D%98-simplelink-wi-fi-cc3000/</guid><description>
+&lt;p>TI가 기존의 &lt;A title="[http://liketheocean.tistory.com/109]로 이동합니다." href="http://liketheocean.tistory.com/109" target=_blank>오픈 소스 무선랜 솔루션&lt;/A>이 외에 새로이 SimpleLink 라는 Wi-Fi 솔루션을 릴리즈 했다. &lt;A title="[http://cdn.eetimes.com/electronics-news/4234866/TI-s-SimpleLink-connects-everyday-objects-with-Wi-Fi-]로 이동합니다." href="http://cdn.eetimes.com/electronics-news/4234866/TI-s-SimpleLink-connects-everyday-objects-with-Wi-Fi-" target=_blank>EETimes 기사&lt;/A>&lt;br>
+이 기사에 따르면 잔디깍기, 그릇 세척기, 알람시스템, 홈시큐리티, 혈압 모니터 등의 가전, 홈네트워크 및 헬스케어 디바이스에 쉽게 Wi-Fi를 추가할 수 있다고 한다. 심지어 우산에 장착해서 기상시스템에 연결해서 비가 올것으로 예상이 되면 LED를 켜는 내용의 소개도 있다.&lt;/p>
+&lt;p>마케팅 매니저인 Kurtz에 의하면&lt;/p>
+&lt;DIV style="BORDER-BOTTOM: #dbe8fb 1px solid; BORDER-LEFT: #dbe8fb 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #dbe8fb; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #dbe8fb 1px solid; BORDER-RIGHT: #dbe8fb 1px solid; PADDING-TOP: 10px" class=txc-textbox>“We realized that it was unreasonable to expect them to start running Linux and change to a high performance applications processor, so knowing the potential of the Internet of Things market, we rolled up our sleeves and rearchitected our existing Wi-Fi solution to make it suitable for any product – regardless of the architecture,” he said, adding that SimpleLink offered customers a “blueprint to connect even the simplest devices to the Internet.”&lt;/DIV>
+&lt;p>기존의 임베디스 Wi-Fi 솔루션을 가지고 있던 업체들과 동일한 얘기이다. 즉 &lt;A title="[http://www.gainspan.com/]로 이동합니다." href="http://www.gainspan.com/" target=_blank>Gainspan&lt;/A>이나 &lt;A title="[http://www.redpinesignals.com/]로 이동합니다." href="http://www.redpinesignals.com/" target=_blank>Redpine Signals&lt;/A>의 솔루션과 바로 경쟁이 될듯하다.&lt;br>
+아래 동영상을 보면 상당히 쉬운 솔루션으로 소개를 하고 있으며, &lt;A title="[http://liketheocean.tistory.com/183]로 이동합니다." href="http://liketheocean.tistory.com/183" target=_blank>IoT(Internet of Things)&lt;/A>의 시대가 바로 얼마남지 않은듯 하다.&lt;/p></description></item><item><title>WIZFi210을 SPI로 제어하자</title><link>https://openmicrolab.com/wizfi210%EC%9D%84-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EC%9E%90/</link><pubDate>Wed, 23 Nov 2011 10:27:13 +0000</pubDate><guid>https://openmicrolab.com/wizfi210%EC%9D%84-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EC%9E%90/</guid><description>
+&lt;p>&lt;strong>H/W 연결&lt;/strong>&lt;br>
+&lt;A title="[http://www.wiznet.co.kr/Sub\_Modules/kr/product/Product\_Detail.asp?cate1=&amp;cate2=&amp;cate3=&amp;pid=1132]로 이동합니다." href="http://www.wiznet.co.kr/Sub\_Modules/kr/product/Product\_Detail.asp?cate1=&amp;cate2=&amp;cate3=&amp;pid=1132" target=_blank>WIZFi210&lt;/A>은 SPI slave로 동작을 하고 MCU의 SPI는 master로 동작을 한다.&lt;br>
+다음 그림과 같이 H/W 연결을 하는데, 테스트에 사용된 MCU는 &lt;A title="[http://www.wiznet.co.kr/Sub\_Modules/kr/product/Product\_Detail.asp?cate1=5&amp;cate2=7&amp;cate3=56&amp;pid=1152]로 이동합니다." href="http://www.wiznet.co.kr/Sub\_Modules/kr/product/Product\_Detail.asp?cate1=5&amp;cate2=7&amp;cate3=56&amp;pid=1152" target=_blank>W5200E01-M3&lt;/A>에 있는 &lt;A title="[http://www.st.com/internet/mcu/product/164476.jsp]로 이동합니다." href="http://www.st.com/internet/mcu/product/164476.jsp" target=_blank>STM32F103C8&lt;/A>을 사용하였다.&lt;br>
+SPI signal외에 WIZFi210의 GPIO19핀(Host wake up signal: High Active)의 연결이 필요하며, WIZFi210의 H/W reset을 위해 전원을 control하기 위해 GPIO가 하나 더 필요하다.&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile30.uf.13467A344ECCC712298C14.jpg" class="aligncenter" width="594" height="434" alt="" filename="WizFi210_SPI.jpg" filemime="image/jpeg" />&lt;/p>
+&lt;p>이외에 GPIO29번은 &amp;lt;데이터/커맨드 모드간의 변경&amp;gt;에 사용되며 GPIO21번은 &amp;lt;공장초기화&amp;gt; &amp;lt;Limited AP 모드&amp;gt; 등의 개발 및 운용을 위한 다양한 용도를 위해 사용된다. 따라서, 예외적인 경우를 제외하고는 반드시 고려되는 것이 좋다. 또한 펌웨어를 업그레이드 하기 위해서는, 37번 핀을 pull up/pull down 하기 하여, Program/Run Mode를 전환하여 시리얼을 통해 펌웨어 파일을 전송할 수 있는 하드웨어적인 구성이 꼭 필요하다. &lt;/p></description></item></channel></rss>

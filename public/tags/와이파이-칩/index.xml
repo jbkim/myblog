@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>와이파이 칩 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EC%B9%A9/</link><description>Recent content in 와이파이 칩 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 30 Jun 2011 09:04:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EC%B9%A9/index.xml" rel="self" type="application/rss+xml"/><item><title>퀄컴 아데로스 AR4100</title><link>https://openmicrolab.com/%ED%80%84%EC%BB%B4-%EC%95%84%EB%8D%B0%EB%A1%9C%EC%8A%A4-ar4100/</link><pubDate>Thu, 30 Jun 2011 09:04:09 +0000</pubDate><guid>https://openmicrolab.com/%ED%80%84%EC%BB%B4-%EC%95%84%EB%8D%B0%EB%A1%9C%EC%8A%A4-ar4100/</guid><description>
+&lt;p>퀄컴이 아데로스를 인수했죠.&lt;br>
+들리는 얘기로는 아데로스의 분위기는 더 좋아졌고, 퀄컴의 connectivity 부분이 아데로스와 합쳐져서 더 켜졌다고 합니다.&lt;/p>
+&lt;p>암튼 AR4100은 11n을 지원하지만 1T1R (SISO)로 low power, low cost, low end를 타겟으로 하고 있습니다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.1658E73C4E0C3B6C044FD7.jpg" class="aligncenter" width="650" height="432" alt="" filename="product_114_file0.jpg" filemime="image/jpeg" />
+&lt;/P>인터페이스도 SPI를 제공해서 low end MCU에서도 사용이 가능하게 되어 있는데, 현재 지원되는 개발 환경은 주로 Freescale솔루션에 적용이 가능합니다.
+&lt;p>**&lt;SPAN style="FONT-SIZE: 10pt">Currently Supported Development Environment&lt;/SPAN>&lt;br>
+** • Freescale Tower Development Platform&lt;br>
+• ColdFire MCF52259 or Kinetis MCU with greater then 128K NVM&lt;br>
+• Freescale MQX™ version 3.6.2&lt;br>
+• Freescale CodeWarrior® tool suite v7.2 for the ColdFire 52259 processor&lt;br>
+• IAR Embedded Workbench® v6.10 for the Kinetis MCUs&lt;/p></description></item></channel></rss>

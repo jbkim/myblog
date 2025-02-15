@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>랜선 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%9E%9C%EC%84%A0/</link><description>Recent content in 랜선 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 09 Aug 2010 02:41:06 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%9E%9C%EC%84%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>이더넷 케이블 종류 – UTP, FTP, STP</title><link>https://openmicrolab.com/%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%BC%80%EC%9D%B4%EB%B8%94-%EC%A2%85%EB%A5%98-utp-ftp-stp/</link><pubDate>Mon, 09 Aug 2010 02:41:06 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%BC%80%EC%9D%B4%EB%B8%94-%EC%A2%85%EB%A5%98-utp-ftp-stp/</guid><description>
+&lt;p>UTP, FTP, STP케이블이 의미하는 바는 다음과 같다.&lt;/p>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.160407154C5F6A577B50AF.gif" class="aligncenter" width="600" height="309" alt="" filename="Cable.gif" filemime="image/jpeg" />
+&lt;p>&lt;span style="font-weight: bold;">&lt;span style="font-size: 10pt;">UTP (Unshielded Twisted Pair)&lt;/span>&lt;/span>&lt;br>
+쉴드가 없고 2선씩 쌍으로 꼬아져 있는 케이블&lt;br>
+2선씩 쌍으로 꼬아져 있는 이유는 이더넷 신호가 differential signal이기 때문에, 두 선간의 전자기 유도를 줄이기 위하여 서로 꼬여져있다. 제품 전선과 피복만으로 구성되어 있고, 일반적인 랜케이블에 해당됨.&lt;/p>
+&lt;p>&lt;span style="font-weight: bold;">&lt;span style="font-size: 10pt;">FTP(Foiled Twisted Pair)&lt;/span>&lt;/span>&lt;br>
+쉴드 처리는 되어있지 않고, 알루미늄 은박이 4가닥의 선을 감싸고 있는 케이블.&lt;br>
+즉 UTP 케이블에 바깥쪽에 은박(foil)으로 감싸있는 케이블, Screended UTP (S/UTP) 라고도 함&lt;br>
+UTP에 비해 절연 기능이 탁월하므로 공장 배선용으로 많이 사용.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cypress on OpenMicroLab</title><link>https://openmicrolab.com/tags/cypress/</link><description>Recent content in Cypress on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 21 Mar 2018 05:06:20 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/cypress/index.xml" rel="self" type="application/rss+xml"/><item><title>Dual-band Wi-Fi SoC</title><link>https://openmicrolab.com/dual-band-wi-fi-soc/</link><pubDate>Wed, 21 Mar 2018 05:06:20 +0000</pubDate><guid>https://openmicrolab.com/dual-band-wi-fi-soc/</guid><description>
+&lt;p>Cypress사의 Single-chip 802.11n dual-band (2.4 GHz and 5 GHz) Wi-Fi SoC를 사용한 Ki t(&lt;a href="http://www.cypress.com/documentation/development-kitsboards/cyw943907aeval1f-evaluation-kit" target="_blank" rel="noopener noreferrer">CYW943907AEVAL1F&lt;/a>).CYW43907 칩셋을 사용하고 Ethernet MAC 이 내장이 되어 있다. 가격은 $89&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="444"
+height="303"
+src="https://openmicrolab.com/R1446503-01_867920580104389390.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.mouser.com/ds/2/100/002-18703_00_V-1128704.pdf" target="_blank" rel="noopener noreferrer">데이터시트&lt;/a>&lt;/li>
+&lt;li>이클립스 기반의 &lt;a href="http://www.cypress.com/products/wiced-software" target="_blank" rel="noopener noreferrer">WICED Studio&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

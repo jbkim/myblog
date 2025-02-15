@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EMI on OpenMicroLab</title><link>https://openmicrolab.com/tags/emi/</link><description>Recent content in EMI on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 21 Feb 2017 03:18:18 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/emi/index.xml" rel="self" type="application/rss+xml"/><item><title>USB 하드웨어 디자인 가이드</title><link>https://openmicrolab.com/usb-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%80%EC%9D%B4%EB%93%9C/</link><pubDate>Tue, 21 Feb 2017 03:18:18 +0000</pubDate><guid>https://openmicrolab.com/usb-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%80%EC%9D%B4%EB%93%9C/</guid><description>
+&lt;h3 id="usb-하드웨어-디자인-가이드">USB 하드웨어 디자인 가이드&lt;/h3>
+&lt;ul>
+&lt;li>GND, 샤시에 FB&lt;/li>
+&lt;li>15 Ohm Termination resistor&lt;/li>
+&lt;li>ESD 인증에 문제가 있을 경우 protection device – NXP IP4220CE6&lt;/li>
+&lt;li>Common mode choke – Murata plw3216s900sq2t1
+*&lt;img loading="lazy" class="alignnone wp-image-3909" src="http://res.cloudinary.com/openmicrolab/image/upload/v1487646399/usb_design_guide_1_ldrfss.png" width="700" height="176" />&lt;/li>
+&lt;li>2개의 USB 신호쌍은  parallel 하게하며, 간극은 최대 150 mil을 넘지 않도록&lt;/li>
+&lt;li>신호선의 최대 길이는 18인치를 넘지 않도록
+*&lt;img loading="lazy" class="alignnone wp-image-3910" src="http://res.cloudinary.com/openmicrolab/image/upload/v1487646689/usb_design_guide_2_u8or7u.png" width="541" height="339" />&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="wp-image-3911 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1487646845/usb_design_guide3_uwrxtc.png" width="686" height="426" />
+&lt;h4 id="참고자료">참고자료&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1487645772/emitest_yanugw.pdf" target="_blank">EMI Design Guidelines for USB Components&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1487645777/hs_usb_pdg_r1_0_zjnjtx.pdf" target="_blank">High Speed USB Platform Design Guidelines&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1487645780/AN0046_mcwsw4.pdf" target="_blank">USB Hardware Design Guide&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

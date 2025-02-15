@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sublime Text 2 on OpenMicroLab</title><link>https://openmicrolab.com/tags/sublime-text-2/</link><description>Recent content in Sublime Text 2 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 21 Mar 2014 10:06:44 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/sublime-text-2/index.xml" rel="self" type="application/rss+xml"/><item><title>Sublime Text 2 프린팅하기</title><link>https://openmicrolab.com/sublime-text-2-%ED%94%84%EB%A6%B0%ED%8C%85%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 21 Mar 2014 10:06:44 +0000</pubDate><guid>https://openmicrolab.com/sublime-text-2-%ED%94%84%EB%A6%B0%ED%8C%85%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>Sublime Text 2에는 프린팅 기능이 없다. 플러그인을 설치를 해야하는데…&lt;/p>
+&lt;p>“Simple Print Function”를 인스톨한다.&lt;/p>
+&lt;blockquote>
+&lt;p>Tool &amp;gt; Command Palette &amp;gt; Install Package에서 “Simple Print Function”를 찾아서 인스톨한다.&lt;/p>&lt;/blockquote>
+&lt;p>이게 제대로 동작을 하려면 “enscript”가 필요하므로 brew를 사용하여 인스톨한다.&lt;/p>
+&lt;blockquote>
+&lt;p>brew install enscript&lt;/p>&lt;/blockquote>
+&lt;p>원래 소스 코드가 아닌 txt 파일을 인쇄하려고 했었는데, 프린트를 하면 한글은 깨짐. -_-;;;&lt;/p>
+&lt;p>참고로 Homebrew설치는 터미널에서 다음을 실행한다.&lt;/p>
+&lt;p>&lt;code id="selectable">/usr/bin/ruby -e &amp;ldquo;$(curl -fsSL &lt;a href="https://raw.githubusercontent.com/Homebrew/install/master/install)%22">https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;&lt;/a>&lt;/code>&lt;/p></description></item></channel></rss>

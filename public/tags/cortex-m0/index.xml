@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cortex M0 on OpenMicroLab</title><link>https://openmicrolab.com/tags/cortex-m0/</link><description>Recent content in Cortex M0 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 06 Aug 2018 03:26:27 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/cortex-m0/index.xml" rel="self" type="application/rss+xml"/><item><title>가장 작은 MCU</title><link>https://openmicrolab.com/%EA%B0%80%EC%9E%A5-%EC%9E%91%EC%9D%80-mcu/</link><pubDate>Mon, 06 Aug 2018 03:26:27 +0000</pubDate><guid>https://openmicrolab.com/%EA%B0%80%EC%9E%A5-%EC%9E%91%EC%9D%80-mcu/</guid><description>
+&lt;p>응용에 따라서 작은 MCU가 필요할 때가 있다. 검색을 해보니 &lt;a href="http://www.theorycircuit.com/top-5-smallest-microcontrollers/">Top 5 Smallest Microcontrollers&lt;/a> 기사가 있다.&lt;/p>
+&lt;ul>
+&lt;li>ATtiny20 – 3 x 3&lt;/li>
+&lt;li>PSoC 4000 – 1.45 x 1.56&lt;/li>
+&lt;li>KL02 – 2 x 1.61&lt;/li>
+&lt;li>PIC12LF1552 – 2 x 3&lt;/li>
+&lt;li>C8051T606 – 3 x 3&lt;/li>
+&lt;/ul>
+&lt;p>이중에서 4번째, 5번째는 각각 PIC, 8051 코어라서 패스, ATtiny는 그냥 평범한 작은 AVR. 따라서 가장 작은 PSoC4000과 KL02이 선택의 대상이 된다. 가격은 &lt;a href="https://kr.mouser.com/ProductDetail/Cypress-Semiconductor/CY8C4014FNI-421AT?qs=%2fha2pyFaduiULo716echaHwd2fNkGBjKD%2fYxQUhizpEBf7qLGyFUnw%3d%3d" target="_blank" rel="noopener noreferrer">PSoC4000&lt;/a>이 1K에 1,451원 &lt;a href="https://kr.mouser.com/ProductDetail/NXP-Freescale/MKL02Z32CAF4R?qs=%2fha2pyFaduhaefiqIIPU8GYPUXaKyRgYCLhD5ycniyA%3d" target="_blank" rel="noopener noreferrer">KL02&lt;/a>가 1,741원 정도이고 &lt;a href="https://kr.mouser.com/ProductDetail/Cypress-Semiconductor/CY8C4014FNI-421AT?qs=%2fha2pyFaduiULo716echaHwd2fNkGBjKD%2fYxQUhizpEBf7qLGyFUnw%3d%3d" target="_blank" rel="noopener noreferrer">PSoC4000&lt;/a>이 리드 타임도 더 좋다. 하지만 칩의 스펙은 KL02가 Clock 48Mhz(16Mhz *괄호안은 PSoC4000), Flash 32KB(16KB), SRAM 4KB(2KB), ADC, SPI, UART, Timer2개로 훨씬 더 좋다. 단 PSoC4000은 동작 전압이 1.71 V to 5.5 V로 KL02(3.3V)대비 더 넓고,  Capacitive Sensing 기능이 있다.&lt;/p></description></item><item><title>ARM Cortex M0 – 기술적 개요</title><link>https://openmicrolab.com/arm-cortex-m0-%EA%B8%B0%EC%88%A0%EC%A0%81-%EA%B0%9C%EC%9A%94/</link><pubDate>Thu, 06 Feb 2014 10:40:05 +0000</pubDate><guid>https://openmicrolab.com/arm-cortex-m0-%EA%B8%B0%EC%88%A0%EC%A0%81-%EA%B0%9C%EC%9A%94/</guid><description>
+&lt;h3 id="일반적인-정보">일반적인 정보&lt;/h3>
+&lt;ul>
+&lt;li>폰노이만 아키텍처(단일버스 인터페이스)를 가지는 32비트 RISC 프로세서&lt;/li>
+&lt;li>ARMv6 아키텍쳐 : M0, M1(FPGA에 최적화)이 ARMv6 아키텍쳐이며, M3는 ARMv7 아키텍처임. 상위호환이 가능해 M0코드가 M3로 쉽게 이식이 가능.&lt;/li>
+&lt;li>56개의 명령어: Thumb 명령어 지원, Thumb-2 명령어의 일부 지원&lt;/li>
+&lt;/ul>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram.png">&lt;img loading="lazy" class="size-full wp-image-2759 aligncenter" alt="Cortex-M0 block diagram" src="https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram.png" width="340" height="307" srcset="https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram.png 340w, https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram-300x270.png 300w" sizes="(max-width: 340px) 100vw, 340px" />&lt;/a>
+&lt;/p>
+&lt;h3 id="arm-cortex-m0의-특징">ARM Cortex-M0의 특징&lt;/h3>
+&lt;ul>
+&lt;li>0.9DMIPS/MHz&lt;/li>
+&lt;li>프로세스 코어는 3단계 파이프라인&lt;/li>
+&lt;li>NVIC: 프로그램 가능한  4개의 서로 다른 우선 순위 레벨을 가질 수 있으며, 32개까지의 interrrupt request를 받을 수 있다.&lt;/li>
+&lt;li>WIC (Wakeup Interrupt Controller)는 옵션&lt;/li>
+&lt;li>OS지원을 위한 System Tick지원&lt;/li>
+&lt;/ul>
+&lt;h3 id="arm-cortex-m0의-장점">ARM Cortex-M0의 장점&lt;/h3>
+&lt;ul>
+&lt;li>에너지 효율성 – 슬립모드와 연계되어 있다. 즉 평소에는 슬립모드에 있다가 인터럽트가 발생을 하면 빨리 처리하고 다시 슬립모드로 들어감.&lt;/li>
+&lt;li>8, 16비트의 제약을 극복 – 32비트 linear address 사용(더 큰 메모리의 사용 가능), 더 큰 스텍사용(참고로 8051은 256바이트), 향상된 명령어 셋으로 더 작은 크기의 코드 가능( 참고로 8051은 항상 ACC를 사용해야 함)&lt;/li>
+&lt;/ul>
+&lt;h3 id="저전력을-가능하게-하는-요소들">저전력을 가능하게 하는 요소들&lt;/h3>
+&lt;ul>
+&lt;li>적은 게이트수 : 최소 설정으로는 12K, 일반적으로 17~25K&lt;/li>
+&lt;li>높은 효율성 : 0.9 DMIPS/MHz (80486DX가 0.81 DMIPS/MHz 였다는…)&lt;/li>
+&lt;li>슬립모드 : WIC(Wakeup Interrupt Controller), 2 개의 슬립모드: WFI(Wait for Interrupt ), WFE(Wait for Event)&lt;/li>
+&lt;li>로직셀 향상 : Ultra Low Leakage 로직 셀 라이브러리 도입&lt;/li>
+&lt;/ul>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/01/average-current.png">&lt;img loading="lazy" class=" wp-image-2762 aligncenter" alt="average current" src="https://openmicrolab.com/images/2014/01/average-current.png" width="671" height="241" srcset="https://openmicrolab.com/images/2014/01/average-current.png 959w, https://openmicrolab.com/images/2014/01/average-current-300x107.png 300w" sizes="(max-width: 671px) 100vw, 671px" />&lt;/a>
+&lt;/p></description></item><item><title>ARM Cortex M0 – 아키텍처</title><link>https://openmicrolab.com/arm-cortex-m0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link><pubDate>Thu, 06 Feb 2014 09:40:43 +0000</pubDate><guid>https://openmicrolab.com/arm-cortex-m0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid><description>
+&lt;h3 id="programmer8217s-model">Programmer’s Model&lt;/h3>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode.png">&lt;img loading="lazy" class="wp-image-2828 aligncenter" alt="CortexM0 Processor mode" src="https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode-1024x476.png" width="614" height="286" srcset="https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode-1024x476.png 1024w, https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode-300x139.png 300w, https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode.png 1227w" sizes="(max-width: 614px) 100vw, 614px" />&lt;/a>
+&lt;/p>
+&lt;blockquote>
+&lt;p>ARMv6-M 아키텍처에서는 쓰레드 모드와 핸들러 모드가 거의 같다. 유일한 차이는 쓰레드 모드에서는 CONTROL이라는 특별 레지스터의 설정으로 shadow된 스텍포인터를 사용한다는 것이다.&lt;/p>&lt;/blockquote>
+&lt;h3 id="레지스터">레지스터&lt;/h3>
+&lt;p style="font-size: 14px;">
+&lt;img loading="lazy" style="font-size: 13px;" alt="201402061550.jpg" src="https://openmicrolab.com/images/2014/02/201402061550.jpg" width="561" height="368" />
+&lt;/p>
+&lt;blockquote>
+&lt;p>로드 스토어 아키텍쳐: 메모리에 있는 데이터를 처리하기 위해 이 데이터는 메모리로 부터 레지스터 뱅크의 레지스터에 옮겨져서 내부 프로세서에 의해 처리되고, 이것이 다시 메모리에 쓰여진다.&lt;br>
+Cortex-M0는 13개의 32비트 범용 레지스터와 몇개의 특별(special)레지스터를 가진다.&lt;/p></description></item><item><title>STmicro의 Cortex M0 칩</title><link>https://openmicrolab.com/stmicro%EC%9D%98-cortex-m0-%EC%B9%A9/</link><pubDate>Mon, 12 Mar 2012 10:42:38 +0000</pubDate><guid>https://openmicrolab.com/stmicro%EC%9D%98-cortex-m0-%EC%B9%A9/</guid><description>
+&lt;p>최근의 MCU vendor들은 너나 할 것 없이 ARM사의 Cortex 코아를 내장한 칩을 출시하고 있다.&lt;br>
+Cortex M3를 필두로 M4, M0까지…&lt;br>
+기존의 &lt;A title="[http://liketheocean.tistory.com/78]로 이동합니다." href="http://liketheocean.tistory.com/78" target=_blank>NXP&lt;/A>, &lt;A title="[http://liketheocean.tistory.com/77]로 이동합니다." href="http://liketheocean.tistory.com/77" target=_blank>Nuvoton&lt;/A>등 많은 MCU 벤더들이 이미 M0기반의 칩을 출시했듯이, 이번에 ST도 M3, M4에 이어 M0기반의 칩을 출시했다.&lt;br>
+ST의 Press release 기사: &lt;a href="http://www.st.com/internet/com/press_release/p3275.jsp">http://www.st.com/internet/com/press_release/p3275.jsp&lt;/a>&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile27.uf.1505A8344F5DD2D81A9FFA.PNG" class="aligncenter" width="683" height="746" alt="" filename="STM_CortexM0.PNG" filemime="image/jpeg" />
+&lt;/P>좀 SRAM사이즈가 작은 듯하지만&amp;#8230;
+&lt;p>CortexM0와 M3, ARM7 과의 비교자료는 이전 포스트 “&lt;A title="[http://liketheocean.tistory.com/75]로 이동합니다." href="http://liketheocean.tistory.com/75" target=_blank>Cortex M0 비교 자료&lt;/A>“참고..&lt;/p></description></item><item><title>CooCox</title><link>https://openmicrolab.com/coocox/</link><pubDate>Fri, 18 Feb 2011 07:24:07 +0000</pubDate><guid>https://openmicrolab.com/coocox/</guid><description>
+&lt;p>&lt;A title="[http://liketheocean.tistory.com/77]로 이동합니다." href="http://liketheocean.tistory.com/77" target=_blank>Nuvoton의 Cortex M0 칩&lt;/A>관련 포스팅 중에 잠시 CooCox를 언급한 적이 있습니다.&lt;/p>
+&lt;p>CooCox는 무료 ARM Cortex M3 and Cortex M0 Development Tools 이며, ARM  gcc를 사용을 합니다. 홈페이지를 확인해 보니 중국 대학에서 만들었네요. &lt;br>
+ARM Connected Community Member,  NXP Partner,  Nuvoton Tools Partner, Energy Micro 3rd Party 이기도 합니다.&lt;/p>
+&lt;p>실제로 IDE를 받아서 설치를 하고 간단한 코드를 만들어 동작을 시켜보니 잘 돌아가네요.&lt;br>
+처음 프로젝트를 만들때 디바이스를 선택하고 Repository에서 필요한 라이브러리를 선택을 할 수 있도록 되어 있어서 사용하기가 쉽네요.&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.127780344D5E16A72EB3E6.jpg" class="aligncenter" width="680" height="541" alt="" filename="cfile9.uf.127780344D5E16A72EB3E6.jpg" filemime="" />다운로드를 개별적으로도 받을 수 도 있고 CooCox CoCenter라는 프로그램을 받아서 다운로드 및 설치가 가능합니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.17191F344D5E1C3807519E.jpg" class="aligncenter" width="651" height="296" alt="" filename="cfile25.uf.17191F344D5E1C3807519E.jpg" filemime="" />&lt;/p></description></item><item><title>세상에서 가장 작은 32bit ARM Microcontroller</title><link>https://openmicrolab.com/%EC%84%B8%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%9E%91%EC%9D%80-32bit-arm-microcontroller/</link><pubDate>Mon, 31 Jan 2011 05:02:49 +0000</pubDate><guid>https://openmicrolab.com/%EC%84%B8%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%9E%91%EC%9D%80-32bit-arm-microcontroller/</guid><description>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">NXP에서 출시한 2×2 mm 풋프린트를 가지는 초소형 Cortex M0 칩셋입니다. &lt;/SPAN>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.12211A4D4D4640BE0214A3.jpg" class="aligncenter" width="324" height="330" alt="" filename="NXP_M0.jpg" filemime="image/jpeg" />&lt;/SPAN>&lt;/p>
+&lt;p>&lt;A title="[http://www.nxp.com/news/content/file\_1701.html]로 이동합니다." href="http://www.nxp.com/news/content/file\_1701.html" target=_blank>&lt;SPAN style="FONT-SIZE: 10pt">관련기사 링크&lt;/SPAN>&lt;/A>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">LPC1102 데이터시트&lt;/SPAN>&lt;br>
+&lt;a href="https://openmicrolab.com/images/1/cfile28.uf.12211C4D4D46422A093487.pdf" class="aligncenter" filename="LPC1102.pdf" filemime="application/pdf" /> cfile28.uf.12211C4D4D46422A093487.pdf&lt;/a>&lt;/p>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">개발툴은 &lt;/SPAN>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 11px Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: left; LINE-HEIGHT: 17px; BORDER-COLLAPSE: collapse; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: rgb(102,102,102)" class=Apple-style-span>&lt;/p>
+&lt;H2 style="PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; WHITE-SPACE: nowrap; FONT-SIZE: 18px; FONT-WEIGHT: bold; PADDING-TOP: 4px">
+&lt;SPAN style="FONT-SIZE: 10pt">LPCXpresso&lt;/SPAN>
+&lt;/H2>&lt;/SPAN>&lt;/SPAN>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">라고 부르는데 관련 자료는 아래 링크에서…&lt;/SPAN>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;a href="http://ics.nxp.com/lpcxpresso/">http://ics.nxp.com/lpcxpresso/&lt;/a>&lt;/SPAN>&lt;/A>&lt;/p></description></item><item><title>Nuvoton의 Cortex M0 칩</title><link>https://openmicrolab.com/nuvoton%EC%9D%98-cortex-m0-%EC%B9%A9/</link><pubDate>Mon, 31 Jan 2011 04:48:49 +0000</pubDate><guid>https://openmicrolab.com/nuvoton%EC%9D%98-cortex-m0-%EC%B9%A9/</guid><description>
+&lt;p>&lt;FONT color=#474747>제가 알기로는 현시점(2011년 1월)에서 Cortex M0 코어 칩은 &lt;/FONT>&lt;A title="[http://www.nxp.com/]로 이동합니다." href="http://www.nxp.com/" target=_blank>&lt;FONT color=#3058d2>NXP&lt;/FONT>&lt;/A>&lt;FONT color=#474747>의 &lt;/FONT>&lt;A title="[http://www.nxp.com/#/homepage/cb=[t=p,p=/50809/71391]|pp=[t=pfp,i=71391]]로 이동합니다." href="http://www.nxp.com/#/homepage/cb=[t=p,p=/50809/71391]|pp=[t=pfp,i=71391]" target=_blank>&lt;FONT color=#3058d2>LPC11xxx 시리즈&lt;/FONT>&lt;/A>&lt;FONT color=#474747>와 &lt;/FONT>&lt;A title="[http://www.nuvoton.com/]로 이동합니다." href="http://www.nuvoton.com/" target=_blank>&lt;A title="[http://www.nuvoton.com/]로 이동합니다." href="http://www.nuvoton.com/" target=_blank>&lt;FONT color=#3058d2>Nuvoton&lt;/FONT>&lt;/A>&lt;/A>&lt;FONT color=#474747>의 &lt;/FONT>&lt;A title="[http://www.nuvoton.com/NuvotonMOSS/Community/ProductInfo.aspx?tp\_GUID=5dbf7d7a-b6df-4fe1-91c9-063449500ce7]로 이동합니다." href="http://www.nuvoton.com/NuvotonMOSS/Community/ProductInfo.aspx?tp\_GUID=5dbf7d7a-b6df-4fe1-91c9-063449500ce7" target=_blank>&lt;FONT color=#3058d2>NuMicro M051™ 시리즈&lt;/FONT>&lt;/A>&lt;FONT color=#474747>가 유일 합니다.&lt;br>
+Nuvoton은 대만에 본사가 있는데 Winbond로 부터 분사한 회사 같군요.&lt;br>
+칩들은 메모리와 페리페럴별로 다양한 라인업이 준비가 되어 있으며, 온라인상에서 제품을 선택을 할수 있는 &lt;/FONT>&lt;A title="[http://www.nuvoton.com/hq/enu/ProductAndSales/ProductLines/IndustrialIC/ARMMicrocontroller/ARMCortexTMM0/Pages/SelectGuide.aspx]로 이동합니다." href="http://www.nuvoton.com/hq/enu/ProductAndSales/ProductLines/IndustrialIC/ARMMicrocontroller/ARMCortexTMM0/Pages/SelectGuide.aspx" target=_blank>&lt;FONT color=#3058d2>On-line Products Slection Guide&lt;/FONT>&lt;/A>&lt;FONT color=#474747>도 잘 준비가 되어 있네요. &lt;/FONT>&lt;/p></description></item></channel></rss>

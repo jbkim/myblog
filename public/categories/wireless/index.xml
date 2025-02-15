@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wireless on OpenMicroLab</title><link>https://openmicrolab.com/categories/wireless/</link><description>Recent content in Wireless on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 06 Sep 2021 04:43:17 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/wireless/index.xml" rel="self" type="application/rss+xml"/><item><title>RF에서 RX Sensitivity 란?</title><link>https://openmicrolab.com/rf%EC%97%90%EC%84%9C-rx-sensitivity-%EB%9E%80/</link><pubDate>Mon, 06 Sep 2021 04:43:17 +0000</pubDate><guid>https://openmicrolab.com/rf%EC%97%90%EC%84%9C-rx-sensitivity-%EB%9E%80/</guid><description>
+&lt;p>&lt;strong>RX Sensitivity&lt;/strong>&lt;br>
+– 수신기가 감지할 수 있는 최소 신호 강도를 측정한 것. 즉 식별이 가능하고, 처리할 수 있는 가장 약한 신호를 알려준다.&lt;br>
+– RX Sensitivity는 dBm으로 표시&lt;br>
+– 신호의 미약한 정도를 나타내므로 신호의 전력 레벨이 낮을수록 좋다.&lt;br>
+– 예를 들어 -90dBm의 수신기 감도는 -80dBm보다 낫다. 즉, -90dBm 수신기가 더 민감하고 더 낮은 전력 신호를 해석할 수 있음을 의미한다.&lt;/p>
+&lt;p>&lt;strong>Receiver Sensitivity Requirements for modules:&lt;/strong>&lt;br>
+– LoRa: up to -130 dBm&lt;br>
+– Cellular: up to -120 dBm&lt;br>
+– Bluetooth: -70 dBm to -100 dBm&lt;br>
+– ZigBee: -85 to -92 dBm&lt;br>
+– Wi-Fi: -40 dBm to -80 dBm&lt;/p></description></item><item><title>Simplicity Studio 5 – 맥에서 이슈 해결</title><link>https://openmicrolab.com/simplicity-studio-5-%EB%A7%A5%EC%97%90%EC%84%9C-%EC%9D%B4%EC%8A%88-%ED%95%B4%EA%B2%B0/</link><pubDate>Thu, 20 May 2021 02:52:19 +0000</pubDate><guid>https://openmicrolab.com/simplicity-studio-5-%EB%A7%A5%EC%97%90%EC%84%9C-%EC%9D%B4%EC%8A%88-%ED%95%B4%EA%B2%B0/</guid><description>
+&lt;p>Silab 사의 개발 환경인 Simplicity Studio 5 를 맥(Big Sur)에서 사용시 프로젝트를 구성을 할 때 Bluetooth Configurator 가 제대로 안되고 에러가 난다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>An internal error occurred during: “Generating apack_btConfig for &lt;strong>project_name&lt;/strong>“.&lt;/em>&lt;/p>
+&lt;p>&lt;em>Failed to generate setup apack_btConfig exited with 134:&lt;/em>&lt;/p>
+&lt;p>&lt;em>dyld: Library not loaded: /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation&lt;/em>&lt;/p>
+&lt;p>_  Referenced from: /Applications/Simplicity Studio.app/Contents/Eclipse/developer/adapter_packs/python/bin/python3_&lt;/p>
+&lt;p>_  Reason: image not found_&lt;/p>&lt;/blockquote>
+&lt;p>문제를 해결하기 위해서는 &lt;em>/Applications/Simplicity Studio.app/Contents/Eclipse/developer/adapter_packs/python/bin/&lt;/em> 이 위치에 설치된 파이썬을 사용하지 않고 Python 3.6버전을 사용하고 이 버전에 심볼릭 링크를 거는 것이다.&lt;/p></description></item><item><title>코인셀 배터리 사용시 시스템 설계</title><link>https://openmicrolab.com/%EC%BD%94%EC%9D%B8%EC%85%80-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84/</link><pubDate>Tue, 05 Nov 2019 08:46:30 +0000</pubDate><guid>https://openmicrolab.com/%EC%BD%94%EC%9D%B8%EC%85%80-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84/</guid><description>
+&lt;p>코인셀 배터리의 경우 용량도 중요하지만 한번에 땡겨서 쓸 수 있는 전류도 중요하다. 하지만 이 값은 일반적으로 충분히 크지 않다.&lt;/p>
+&lt;p>따라서 코인셀 배터리의 용량만큼 잘 쓰려면&lt;/p>
+&lt;ul>
+&lt;li>코인셀에 병렬로 cap을 달아라. 47~100uF, 슈퍼캡?&lt;/li>
+&lt;li>전류소모가 낮은 부품으로 구성 (당연한 얘기)&lt;/li>
+&lt;li>FEP(Functional End Point) 마진 확보 : 즉 구동 전압이 낮은 칩 사용&lt;/li>
+&lt;li>테스트 결과를 보면 전류를 갑자기 땡기는 구간이 짧아야하고, 휴지기간이 길어야 한다.&lt;/li>
+&lt;li>시스템을 설계할때 동시에 구동되는 부품을 줄이도록 설계: 즉 RF칩이 TX를 할때 모터를 구동하지 않는 다거나… (LCD, 모터, RF칩, LED) &amp;lt;= 이게 중요할 듯&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>참고문헌&lt;/strong>&lt;/p></description></item><item><title>Thinger.io 서비스 사용하기</title><link>https://openmicrolab.com/thinger-io-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 13 Mar 2019 08:48:49 +0000</pubDate><guid>https://openmicrolab.com/thinger-io-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>IoT 서비스 중 하나인 &lt;a href="http://Thinger.io">Thinger.io&lt;/a>를 사용해 봤다.&lt;/p>
+&lt;p>아두이노 라이브러리를 제공을 해서 쉽게 ESP32에서 사용이 가능하다.&lt;/p>
+&lt;ul>
+&lt;li>먼저 아두이노 라이브러리 매니저에서 thinger로 검색을 해서 라이브러리를 설치를 하고 ESP32 예제를 연다.&lt;/li>
+&lt;li>물론 먼저 이 서비스에 가입을 하고, USERNAME, DEVICE_ID, DEVICE_CREDENTIAL을 define 문에 정의한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>#define USERNAME “*&lt;strong>*&lt;/strong>***”&lt;/p>
+&lt;p>#define DEVICE_ID “*&lt;strong>*&lt;/strong>***”&lt;/p>
+&lt;p>#define DEVICE_CREDENTIAL “*&lt;strong>*&lt;/strong>***”&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>접속하고자 하는 SSID와 SSID_PASSWORD를 입력한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>#define SSID “*&lt;strong>*&lt;/strong>***”  //your wifi SSID&lt;/p>
+&lt;p>#define SSID_PASSWORD “*&lt;strong>*&lt;/strong>***” // your wifi password&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>아래 코드처럼 seup() 함수에 입출력을 정의하면, 서비스에서 이 값을 읽어서 대쉬보드에서 읽어서 데이터를 시각화 해준다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>// digital pin control example (i.e. turning on/off a light, a relay, configuring a parameter, etc)&lt;/p></description></item><item><title>ESP32에 Nabto 사용하기</title><link>https://openmicrolab.com/esp32%EC%97%90-nabto-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 20 Dec 2018 09:07:17 +0000</pubDate><guid>https://openmicrolab.com/esp32%EC%97%90-nabto-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;a href="http://openmicrolab.com/nabto-%EC%82%AC%EC%9A%A9%EB%B2%95/">이전 포스트&lt;/a>에서 Nabto 사용법을 다뤘는데, 이번 포스팅에서는 ESP32에 Nabto를 포팅하여 테스트를 하려고 한다.&lt;/p>
+&lt;p>이미 Nabto의 &lt;a href="https://github.com/nabto/unabto-esp32">github&lt;/a>에 ESP32에 포팅된 코드가 있고 &lt;a href="https://www.nabto.com/secure-p2p-remote-control-of-esp32-wifi-freertos-based-module-with-appmyproduct/">관련 블로그&lt;/a>가 있다. 이 블로그의 내용을 참고해서 다음과 같이 진행을 한다.&lt;/p>
+&lt;ul>
+&lt;li>먼저 깃헙에서 코드를 클론한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote class="wp-block-quote">
+&lt;p>
+$ git clone &amp;#8211;recursive &lt;a href="https://github.com/nabto/unabto-esp32.git">https://github.com/nabto/unabto-esp32.git&lt;/a>
+&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>unabto-esp32로 이동을 해서 menuconfig를 하여 보드의 시리얼 설정을 한다.&lt;img loading="lazy" width="981" height="1024" class="wp-image-4498" src="https://openmicrolab.com/images/2018/12/Menuconfig_uart-981x1024.png" alt="" data-id="4498" data-link="http://openmicrolab.com/?attachment_id=4498" srcset="https://openmicrolab.com/images/2018/12/Menuconfig_uart-981x1024.png 981w, https://openmicrolab.com/images/2018/12/Menuconfig_uart-287x300.png 287w, https://openmicrolab.com/images/2018/12/Menuconfig_uart-768x802.png 768w, https://openmicrolab.com/images/2018/12/Menuconfig_uart.png 1684w" sizes="(max-width: 981px) 100vw, 981px" />&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>보드가 접속할 AP의 wifi 정보와, Nabto ID, Nabto Key값을 설정한다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>여기서 사용할 Nabto ID 및 Key는 &lt;a href="https://portal.appmyproduct.com/index.html" target="_blank" rel="noreferrer noopener" aria-label="https://portal.appmyproduct.com/index.html (opens in a new tab)">&lt;a href="https://portal.appmyproduct.com/index.html">https://portal.appmyproduct.com/index.html&lt;/a>&lt;/a> 에서 회원가입을 한 이후에 디바이스를 추가하면 다음과 같이 ID, Key를 얻을 수 있다.&lt;img loading="lazy" width="1024" height="152" class="wp-image-4501" src="https://openmicrolab.com/images/2018/12/Nabto_id_key-1-1024x152.png" alt="" data-id="4501" data-link="http://openmicrolab.com/?attachment_id=4501" srcset="https://openmicrolab.com/images/2018/12/Nabto_id_key-1-1024x152.png 1024w, https://openmicrolab.com/images/2018/12/Nabto_id_key-1-300x44.png 300w, https://openmicrolab.com/images/2018/12/Nabto_id_key-1-768x114.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />&lt;/p></description></item><item><title>M5Stack with AskSensors</title><link>https://openmicrolab.com/m5stack-with-asksensors/</link><pubDate>Tue, 27 Nov 2018 02:33:04 +0000</pubDate><guid>https://openmicrolab.com/m5stack-with-asksensors/</guid><description>
+&lt;p>&lt;a href="http://www.m5stack.com" target="_blank" rel="noopener noreferrer">M5Stack&lt;/a>은 ESP32기반의 디바이스이며, &lt;a style="outline-width: 0px !important; user-select: auto !important;" href="https://asksensors.com" target="_blank" rel="noopener noreferrer">AskSensors&lt;/a>는 IoT 디바이스로 부터 데이터를 받아서 그래프 형태로 보여주는 IoT 플랫폼이다.&lt;/p>
+&lt;h3 id="m5stack">M5Stack&lt;/h3>
+&lt;p>ESP32 기반의 개발툴로 가로 세로  5cm라서 M5Stack이라고 이름이 붙여졌다고 한다.&lt;/p>
+&lt;h3 id="asksensors">AskSensors&lt;/h3>
+&lt;blockquote>
+&lt;p>AskSensors is an IoT platform designed to be the easiest application on the market, allowing users to connect, visualize and analyze their sensors data over the cloud. In this tutorial, we’ll be learning the basics you need to get started with askSensors, starting from creating account to visualizing data in graphs.&lt;/p></description></item><item><title>WioLink 사용하기</title><link>https://openmicrolab.com/wiolink-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 25 Oct 2018 09:53:01 +0000</pubDate><guid>https://openmicrolab.com/wiolink-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="wiolink">WioLink&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4458" src="https://res.cloudinary.com/openmicrolab/image/upload/v1540461119/wio_ks_icxaos.jpg" width="616" height="347" />
+&lt;p>2016년에 &lt;a href="https://www.kickstarter.com/projects/seeed/wio-link-3-steps-5-minutes-build-your-iot-applicat" target="_blank" rel="noopener noreferrer">킥스타터&lt;/a>를 통해서 구매한 WioLink. 당시에 동작을 확인하고 사용을 하지 않고 있다가, 최근에 다시 사용을 하려고 보니 잘 동작을 하지 않는다. WiFi 설정은 되고, 서버에도 접속이 되는데 앱에서 디바이스를 구성을 하고 View API 버튼을 누르면 앱이 멈춰버린다.&lt;/p>
+&lt;h3 id="펌웨어-업데이트">펌웨어 업데이트&lt;/h3>
+&lt;p>그래서 일단 펌웨어를 다시 업데이트를 해본다.&lt;br>
+&lt;strong>펌웨어 다운로드&lt;/strong>&lt;br>
+Firmware: user1.bin user2.bin&lt;br>
+Bootloader binary and other binaries: Esp8266sdk1.4.1.zip&lt;br>
+Esp8266sdk1.4.1.zip을 압축을 풀고, boot***.bin 파일은 bootloader.bin으로 이름을 바꾼다.&lt;/p>
+&lt;p>&lt;strong>esptool 설치&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>$ pip install esptool&lt;/p></description></item><item><title>Azure IoThub에서 수신된 데이터 확인하기</title><link>https://openmicrolab.com/azure-iothub%EC%97%90%EC%84%9C-%EC%88%98%EC%8B%A0%EB%90%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 24 Oct 2018 09:41:51 +0000</pubDate><guid>https://openmicrolab.com/azure-iothub%EC%97%90%EC%84%9C-%EC%88%98%EC%8B%A0%EB%90%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>Azure IoThub에 디바이스를 연결하고 MQTT 프로토콜을 이용해서 데이터를 보내면 이 내용을 Monitoring &amp;gt; Metric 에서 설정하는 대로 그래프로 표시된다. 하지만 메시지 포멧과 데이터의 값을 보려면 콘솔을 열고 다음과 같은 명령을 입력해야 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>az iot hub monitor-events –hub-name {IotHub Name} –output table&lt;/p>&lt;/blockquote>
+&lt;p>여기서 IotHub Name는 생성한 IoTHub의 이름이다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4447" src="https://res.cloudinary.com/openmicrolab/image/upload/v1540374019/azure_Iothub_pwlwda.png" width="839" height="479" />
+&lt;p>위 내용은 작년(2018)에 테스트를 하던 건데 오늘(2019.5.2) 다시 테스트를 하려고 보니 안된다. 구글링 해보니 CLI 명령어가 바뀜. 이 &lt;a href="https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events">링크&lt;/a> 를 확인.&lt;/p></description></item><item><title>SmartConfig – WiFi provisioning</title><link>https://openmicrolab.com/smartconfig-wifi-provisioning/</link><pubDate>Fri, 07 Sep 2018 09:34:48 +0000</pubDate><guid>https://openmicrolab.com/smartconfig-wifi-provisioning/</guid><description>
+&lt;p>유선 네트워크인 이더넷은 랜선을 연결하면 DHCP로 자동으로 IP가 부여된다. 하지만 WiFi에서는 AP의 이름 및 패스워드를 알고 AP에 접속을 해야지 IP를 얻을 수 있다. 이 과정이 WiFi provisoning인데, 스마트폰이나 PC와 달리 IoT 디바이스는 UI가 없는 경우가 많아서 AP의 이름이나 패스워드를 다른 방법으로 입력을 해야한다. 이때 주로 스마트폰을 사용을 하는데, 쉽게 말하면 스마트 폰을 이용해서 이 정보를 전달을 한다. 보통 디바이스를 softAP 모드로 놓고 이 디바이스에 스마트폰이 연결를 한후 UDP, TCP로 이 정보를 전달을 하는데, 이 방법외에 다음과 같은 방법이 있다.&lt;/p></description></item><item><title>ESP32에 OLED 연결하기</title><link>https://openmicrolab.com/esp32%EC%97%90-oled-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 01 Aug 2018 08:04:58 +0000</pubDate><guid>https://openmicrolab.com/esp32%EC%97%90-oled-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>SSD1306 OLED display는 다음과 같이 I2C로 연결을 한다. 참고로 ESP32 모듈의 핀맵은 &lt;a href="https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" target="_blank" rel="noopener noreferrer">Datasheet&lt;/a>를 참고해야 한다.&lt;br>
+&lt;img loading="lazy" class="alignnone wp-image-4361" src="https://res.cloudinary.com/openmicrolab/image/upload/v1533110174/esp32-arduino-oled-ssd1306-schematic-i2c_pd9rob.png" width="444" height="258" />&lt;br>
+그리고 ESP32 SSD1306 아두이노 라이브러리를 설치를 하고, 같이 설치되는 예제프로그램에서 하드웨어 핀에 맞게 코드를 수정하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>// Initialize the OLED display using Wire library&lt;br>
+SSD1306 display(0x3c, 21, 22);&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>참고문서&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/" target="_blank" rel="noopener noreferrer">&lt;a href="https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/">https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html" target="_blank" rel="noopener noreferrer">&lt;a href="https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html">https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>ESP32 개발 환경 설정 – Mac OS</title><link>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</link><pubDate>Fri, 06 Jul 2018 06:02:04 +0000</pubDate><guid>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</guid><description>
+&lt;p>Mac OS에서 ESP32 개발 환경 설정은 다음의 &lt;a href="http://esp-idf.readthedocs.io/en/latest/get-started/index.html#introduction" target="_blank" rel="noopener noreferrer">링크&lt;/a>를 참고한다.&lt;/p>
+&lt;img loading="lazy" class="" src="http://esp-idf.readthedocs.io/en/latest/_images/what-you-need.png" width="468" height="305" />
+&lt;h3 id="tool-chain-설정">Tool chain 설정&lt;/h3>
+&lt;p>pip와 pyserial을 설치- 이 과정중에 dependency가 있는 라이브러리 설치는 sudo easy_install xxx  형태로 설치한다.&lt;/p>
+&lt;pre>&lt;span class="n">sudo&lt;/span> &lt;span class="n">easy_install&lt;/span> &lt;span class="n">pip
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell1">&lt;span class="n">brew&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">cmake&lt;/span> &lt;span class="n">ninja&lt;/span> &lt;span class="n">dfu&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">util&lt;/span>&lt;/pre>
+&lt;p>&lt;span class="n">다음은 툴체인을 다운로드하고, 설치를 하는 과정임&lt;/span>&lt;/p>
+&lt;pre>&lt;span class="n">mkdir&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">cd&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">git clone --recursive https://github.com/espressif/esp-idf.git
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell3">&lt;span class="nb">cd&lt;/span> ~/esp/esp-idf
+./install.sh&lt;/pre>
+&lt;p>환경설정&lt;/p>
+&lt;blockquote>
+&lt;p>. $HOME/esp/esp-idf/export.sh&lt;/p>&lt;/blockquote>
+&lt;p>다음의 내용을  .bash_profile에 추가한 다음에 esp 개발시 터미널에서 get_idf를 실행하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>alias get_idf=’. $HOME/esp/esp-idf/export.sh’&lt;/p>&lt;/blockquote>
+&lt;p>추후에 리모트 깃의 내용을 업데이트 하려면 다음과 같이 한다.&lt;/p></description></item><item><title>실내 측위 – BLE Tag, AoA, AoD</title><link>https://openmicrolab.com/%EC%8B%A4%EB%82%B4-%EC%B8%A1%EC%9C%84-ble-tag-aoa-aod/</link><pubDate>Sat, 21 Apr 2018 10:27:27 +0000</pubDate><guid>https://openmicrolab.com/%EC%8B%A4%EB%82%B4-%EC%B8%A1%EC%9C%84-ble-tag-aoa-aod/</guid><description>
+&lt;h3 id="기존-비콘의-한계">기존 비콘의 한계&lt;/h3>
+&lt;ul>
+&lt;li>Beacons only work with smartphones, not tags, which limits how they can be used&lt;/li>
+&lt;li>They are able to locate objects in best case within 3-4 meters, which is fine for determining a general location, but is not refined enough to meet the requirements for many of today’s applications&lt;/li>
+&lt;li>Beacons are battery-operated, which impacts their ability to deliver real-time location; frequent transmissions drain the device’s battery, meaning frequent replacements are necessary&lt;/li>
+&lt;/ul>
+&lt;h3 id="aoa-aod의-사용">AoA, AoD의 사용&lt;/h3>
+&lt;p>&lt;strong>AoA(신호의 수신 각도)&lt;/strong>: 기기가 수신기 안테나 배열로 부터 오는 정확한 방향을 기반으로 한다. AoA를 사용하면 신호를 측정하기 위해 동일한 장치 내에서 여러 개의 안테나가 사용된다. 이렇게하면 안테나가 미터가 아닌 10-20 센티미터의 정확도로 태그 또는 스마트 폰을 찾을 수 있다.&lt;/p></description></item><item><title>Dual-band Wi-Fi SoC</title><link>https://openmicrolab.com/dual-band-wi-fi-soc/</link><pubDate>Wed, 21 Mar 2018 05:06:20 +0000</pubDate><guid>https://openmicrolab.com/dual-band-wi-fi-soc/</guid><description>
+&lt;p>Cypress사의 Single-chip 802.11n dual-band (2.4 GHz and 5 GHz) Wi-Fi SoC를 사용한 Ki t(&lt;a href="http://www.cypress.com/documentation/development-kitsboards/cyw943907aeval1f-evaluation-kit" target="_blank" rel="noopener noreferrer">CYW943907AEVAL1F&lt;/a>).CYW43907 칩셋을 사용하고 Ethernet MAC 이 내장이 되어 있다. 가격은 $89&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="444"
+height="303"
+src="https://openmicrolab.com/R1446503-01_867920580104389390.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.mouser.com/ds/2/100/002-18703_00_V-1128704.pdf" target="_blank" rel="noopener noreferrer">데이터시트&lt;/a>&lt;/li>
+&lt;li>이클립스 기반의 &lt;a href="http://www.cypress.com/products/wiced-software" target="_blank" rel="noopener noreferrer">WICED Studio&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>무선으로 3D Printer 사용하기</title><link>https://openmicrolab.com/%EB%AC%B4%EC%84%A0%EC%9C%BC%EB%A1%9C-3d-printer-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 21 Nov 2017 02:48:05 +0000</pubDate><guid>https://openmicrolab.com/%EB%AC%B4%EC%84%A0%EC%9C%BC%EB%A1%9C-3d-printer-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>3D프린팅을 위해서 SD 메모리를 사용하거나,  USB 케이블을 연결해서 프린팅을 한다. 하지만 USB 케이블을 사용하면, 장시간 프린팅시 1대의 PC가 프린팅만을 위해 사용될 수 밖에 없다. 무선으로 프린팅시 다음과 같은 장점이 있다.&lt;/p>
+&lt;ul>
+&lt;li>The noisy printer can be placed in a sperate location allowing for different ventilation options, and convenient noise reduction.&lt;/li>
+&lt;li>Less mess.  Cords can be ugly and can be trip hazards.&lt;/li>
+&lt;li>Multiple computers are becoming a household norm.  Sick of giving up your computer for your significant other, child, or visiting a friend to play with your 3D printer?  Go wireless.&lt;/li>
+&lt;li>3D printing is a long process.  Wouldn’t it be nice to be able to start a print job from a remote location to be completed by the time you get home?&lt;/li>
+&lt;/ul>
+&lt;p>그리고 이 USB케이블을 사용하지 않고 무선으로 프린팅을 하기위해 OctoPrint, AstroPrint, Repetier Server등의 Host 프로그램이 필요하다.&lt;/p></description></item><item><title>삼성 Artik Edge-to-cloud Security</title><link>https://openmicrolab.com/%EC%82%BC%EC%84%B1-artik-edge-cloud-security/</link><pubDate>Tue, 14 Nov 2017 09:22:28 +0000</pubDate><guid>https://openmicrolab.com/%EC%82%BC%EC%84%B1-artik-edge-cloud-security/</guid><description>
+&lt;p>삼성 아틱의 보안은 Edge-to-cloud Security라고 설명을 한다. 즉 칩레벨에서 부터 클라우드까지 보안요소가 있다는 얘기.&lt;/p>
+&lt;h3 id="device-protection-and-trusted-code-execution">Device Protection and Trusted Code Execution&lt;/h3>
+&lt;p>Hardware의 경우 Device protection과 trusted code execution이 가장 중심이 되는 요소임.&lt;/p>
+&lt;img loading="lazy" class="" src="https://www.artik.io/wp-content/uploads/2017/10/device-protection-2-1024x469.png" width="703" height="322" />
+&lt;ul>
+&lt;li>&lt;strong>Secure Boot&lt;/strong>&lt;br>
+타겟 디바이스에서 동작하는 코드의 신뢰성을 보장이 필요&lt;br>
+소프트웨어는 타겟장치에서 코드 실행을 허용하기 위해 소프트웨어 공급자가 서명해야함.&lt;/li>
+&lt;li>&lt;strong>KMS infrastructure for code signing&lt;/strong>&lt;br>
+코드 서명을 쉽게하기위한 Key Management Service (KMS), ARTIK CodeSigner service, FIPS-certified hardware security modules (HSM)를 제공&lt;/li>
+&lt;li>&lt;strong>Secure Element&lt;/strong>&lt;br>
+각 디바이스에 SmartThings cloud에 등록된 private/public key쌍이 저장이 되어서 출시됨.&lt;/li>
+&lt;li>&lt;strong>Secure JTAG access&lt;/strong>&lt;br>
+JTAG을 사용시 패스워드 필요&lt;/li>
+&lt;/ul>
+&lt;h3 id="protected-communications">Protected Communications&lt;/h3>
+&lt;p>디바이스와 클라우드 사이의 통신 보안&lt;/p></description></item><item><title>Mac OS에서 ESP8266 개발 환경</title><link>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</link><pubDate>Wed, 13 Sep 2017 04:06:37 +0000</pubDate><guid>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</guid><description>
+&lt;h3 id="아두이노">아두이노&lt;/h3>
+&lt;ol>
+&lt;li>Arduino &amp;gt; Preferences… 의 메뉴에서 추가적인 보드매니저 URLs에 다음의 링크를 입력한다.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="http://arduino.esp8266.com/stable/package">http://arduino.esp8266.com/stable/package&lt;/a>_esp8266com_index.json&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4040" src="https://res.cloudinary.com/openmicrolab/image/upload/v1505273144/ESP_Arduino_qgvl3z.png" width="459" height="164" />
+&lt;ol start="2">
+&lt;li>툴 &amp;gt; 보드 &amp;gt; 보드 매니저… 의 메뉴의 필터에 ESP를 입력 후 esp8266을 선택후 설치한다.&lt;/li>
+&lt;/ol>
+&lt;img loading="lazy" class="alignnone wp-image-4041" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_451/v1505273144/ESP8266_Arduino_uewfwx.png" width="635" height="357" />
+&lt;h3 id="a-hrefhttpsgithubcomsminghubsming-target_blank-relnoopener-noreferrersminga">&lt;a href="https://github.com/SmingHub/Sming" target="_blank" rel="noopener noreferrer">Sming&lt;/a>&lt;/h3>
+&lt;p>맥에서는&lt;a href="https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart" target="_blank" rel="noopener noreferrer"> https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart&lt;/a> 이 링크의 내용대로 따라하면 별 무리가 없다. 즉 이클립스, 툴체인, ESP SDK를 설치하고 Sming core를 빌드한다.&lt;/p>
+&lt;p>이클립스의 환경설정에서 SMING_HOME, ESP_HOME 설정을 한다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4045" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_569/v1505275296/ESP_Eclipse_xkwyit.png" width="569" height="371" />
+&lt;p> &lt;/p>
+&lt;p>SmingFramework의 Makefile-project.mk파일에서 ESPTOOL2의 경로를 다음과 같이 수정한다.&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;span class="s1">ESPTOOL2 ?&lt;/span>= /opt/esp-open-sdk/utils/esptool2
+&lt;/p></description></item><item><title>CREATOR Pro 보드 사용 및 분석</title><link>https://openmicrolab.com/creator-pro-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9-%EB%B0%8F-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 26 Jul 2017 07:09:23 +0000</pubDate><guid>https://openmicrolab.com/creator-pro-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9-%EB%B0%8F-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;p>&lt;a href="http://www.rakwireless.com/en/" target="_blank" rel="noopener noreferrer">Rak Wireless&lt;/a>사의 CREATOR Pro 보드는 Arduino Uno의 폼펙터를 가지며, RAK473 WiFi 모듈을 사용하고 NXP사의 LPC11U35를 사용해서 mbed에서도 프로그래밍이 가능하고, Arduino에서도 프로그래밍이 가능하다. &lt;a href="http://wiki.rakwireless.com/doku.php?id=wisnode_series:creator_pro" target="_blank" rel="noopener noreferrer">WiKi&lt;/a>에 나온 이 제품의 정보는 다음과 같은데, Realtek사의 &lt;a href="https://www.amebaiot.com/en/" target="_blank" rel="noopener noreferrer">Ameba RTL8710보드&lt;/a>와 거의 동일하다.&lt;/p>
+&lt;blockquote>
+&lt;p>CREATOR is a programmable platform for developing all kind of IoT applications. CREATOR is equiped with various peripheral interfaces, including Wifi, GPIO, I2C, UART, PWM, ADC. Through these interfaces, CREATOR can connect with electronic components such as LED, switches, manometer, hygrometer, PM2.5 dust sensors etc.&lt;br>
+The collected data can be uploaded via WiFi, and be utilized by applications on smart devices to realize IoT implementation.&lt;br>
+CREATOR and Arduino Uno have similar size, and the pins on CREATOR are compatible with Arduino Uno. CREATOR uses Micro USB to supply power, which is common in many smart devices.&lt;br>
+Currently, CREATOR currently supports Windows XP/7/8 32 and 64 bits and MAC OS operating systems. In this example, please use Arduino IDE with version 1.6.7 or later.&lt;/p></description></item><item><title>피지컬 웹 (Physical Web)</title><link>https://openmicrolab.com/%ED%94%BC%EC%A7%80%EC%BB%AC-%EC%9B%B9-physical-web/</link><pubDate>Sun, 29 Jan 2017 09:36:51 +0000</pubDate><guid>https://openmicrolab.com/%ED%94%BC%EC%A7%80%EC%BB%AC-%EC%9B%B9-physical-web/</guid><description>
+&lt;p>IoT 디바이스에 접급을 위해서 앱이 필요한 경우가 있는데, 이럴 경우 디바이스마다 앱이 존재하게 된다. 구글에서는 이걸 웹에서 해결하겠다는 접근이 피지컬 웹(Physical Web)이다. 이렇게 할 때의 장점은 디바이스에는 적은 기능만 넣고, 나머지는 웹쪽에서 구현을 하겠다는 의미이다. 이때 IoT 디바이스(비콘)가 자신의 URL을 주기적으로 Broadcasting하기만 하면 된다.&lt;br>
+관련 정보&lt;br>
+&lt;a href="https://github.com/google/physical-web" target="_blank">&lt;a href="https://github.com/google/physical-web">https://github.com/google/physical-web&lt;/a>&lt;/a>&lt;/p></description></item><item><title>아두이노에서 ESP8266 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-esp8266-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 06 Apr 2016 09:29:24 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-esp8266-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="아두이노에서-esp8266-사용하기">아두이노에서 ESP8266 사용하기&lt;/h3>
+&lt;ul>
+&lt;li>아두이노 IDE는 1.6.4 이상의 버전을 설치&lt;/li>
+&lt;li>아두이노의 환경설정에서 추가적인 보드매니저 URLs에 다음과 같이 입력&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;a href="http://arduino.esp8266.com/stable/package">http://arduino.esp8266.com/stable/package&lt;/a>_esp8266com_index.json&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>툴 &amp;gt; 보드매니저에서 ESP8266을 검색후 ESP8266 보드를 설치한다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/04/arduino_board_maneger.png">&lt;img loading="lazy" class="aligncenter wp-image-3604" src="https://openmicrolab.com/images/2016/04/arduino_board_maneger.png" alt="arduino_board_maneger" width="491" height="276" srcset="https://openmicrolab.com/images/2016/04/arduino_board_maneger.png 801w, https://openmicrolab.com/images/2016/04/arduino_board_maneger-300x169.png 300w" sizes="(max-width: 491px) 100vw, 491px" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>설치후 툴 &amp;gt; 보드 메뉴에서 가지고 있는 ESP8266보드를 선택한다.&lt;/li>
+&lt;/ul>
+&lt;p>####&lt;img loading="lazy" class="alignnone" src="http://www.seeedstudio.com/depot/bmz_cache/1/15779b54e3a81b48686fc7fd13e8782d.image.200x150.jpg" alt="" width="247" height="185" />&lt;/p>
+&lt;ul>
+&lt;li>이 보드의 관련 정보: &lt;a href="https://github.com/nodemcu" target="_blank">&lt;a href="https://github.com/nodemcu">https://github.com/nodemcu&lt;/a>&lt;/a>&lt;/li>
+&lt;li>ESP8266 보드들의 비교: &lt;a href="http://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/" target="_blank">&lt;a href="http://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/">http://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="핀레이아웃">핀레이아웃&lt;/h4>
+&lt;img loading="lazy" class="alignnone" src="http://cdn.frightanic.com/blog/wp-content/uploads/2015/09/esp8266-nodemcu-dev-kit-v2-pins.png" alt="" width="436" height="336" />
+&lt;h4 id="간단한-blink-test">간단한 Blink Test&lt;/h4></description></item><item><title>무선 통신 기술의 비교</title><link>https://openmicrolab.com/3560-2/</link><pubDate>Fri, 04 Mar 2016 01:41:30 +0000</pubDate><guid>https://openmicrolab.com/3560-2/</guid><description>
+&lt;p>잘 정리된 무선 통신 기술의 비교표&lt;br>
+&lt;a href="https://openmicrolab.com/images/2016/03/matrix.png">&lt;img loading="lazy" class="aligncenter size-large wp-image-3561" src="https://openmicrolab.com/images/2016/03/matrix-1024x510.png" alt="matrix" width="1024" height="510" srcset="https://openmicrolab.com/images/2016/03/matrix-1024x510.png 1024w, https://openmicrolab.com/images/2016/03/matrix-300x149.png 300w, https://openmicrolab.com/images/2016/03/matrix.png 1371w" sizes="(max-width: 1024px) 100vw, 1024px" />&lt;/a>&lt;/p>
+&lt;p>출처: &lt;a href="https://www.opensensors.io/connectivity" target="_blank">&lt;a href="https://www.opensensors.io/connectivity">https://www.opensensors.io/connectivity&lt;/a>&lt;/a>&lt;/p></description></item><item><title>웹 디버깅 툴</title><link>https://openmicrolab.com/%EC%9B%B9-%EB%94%94%EB%B2%84%EA%B9%85-%ED%88%B4/</link><pubDate>Thu, 11 Feb 2016 02:41:07 +0000</pubDate><guid>https://openmicrolab.com/%EC%9B%B9-%EB%94%94%EB%B2%84%EA%B9%85-%ED%88%B4/</guid><description>
+&lt;p>웹(HTTP) 디버깅용 툴&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.charlesproxy.com/" target="_blank">Charles&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.telerik.com/fiddler" target="_blank">Fiddler&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.tuffcode.com/" target="_blank">Tuffcode&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://dutzi.github.io/tamper/" target="_blank">Tamper&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>물론 네트워크 패킷을 캡처하는 툴로 &lt;a href="https://www.wireshark.org/" target="_blank">wireshark&lt;/a>도 좋다. 😉&lt;/p></description></item><item><title>Wi-Fi, Bluetooth가 스마트홈의 주요 프로토롤로 사용될 전망</title><link>https://openmicrolab.com/wi-fi-bluetooth%EA%B0%80-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%99%88%EC%9D%98-%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%ED%86%A0%EB%A1%A4%EB%A1%9C-%EC%82%AC%EC%9A%A9%EB%90%A0-%EC%A0%84%EB%A7%9D/</link><pubDate>Wed, 13 Jan 2016 07:29:55 +0000</pubDate><guid>https://openmicrolab.com/wi-fi-bluetooth%EA%B0%80-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%99%88%EC%9D%98-%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%ED%86%A0%EB%A1%A4%EB%A1%9C-%EC%82%AC%EC%9A%A9%EB%90%A0-%EC%A0%84%EB%A7%9D/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="https://cdn0.vox-cdn.com/thumbor/cHmoiy6OLOrrqQxfTKb6ODJQOLk=/0x0:2050x1367/1280x854/cdn0.vox-cdn.com/uploads/chorus_image/image/48526393/v-DSC00808.0.0.jpg" alt="" width="1280" height="854" />
+&lt;p>10년전만 해도 홈네트워크를 구축하려면 Zigbee, Z-Wave를 사용했지만 앞으로는 WI-Fi나 Bluetooth가 Zigbee를 대체할 수 있을 것으로 기대된다. 그 이유는 Wi-Fi의 경우 상대적으로 전력 소모가 많아서 단말에 쓰이기 어려웠는데, &lt;a href="http://www.wi-fi.org/discover-wi-fi/wi-fi-halow" target="_blank">Wi-Fi HaLow(IEEE802.11ah)&lt;/a> 덕분에 low power, long range를 지원하게 됐다. 그리고 Bluetooth도 1:1 연결에서 벗어나 &lt;a href="http://www.theverge.com/2015/11/12/9720768/bluetooth-upgrade-roadmap-2016-sig" target="_blank">mesh network를 지원&lt;/a>한다니 기존 스마트 홈시장의 판도가 바뀔 예정이다.&lt;/p>
+&lt;p>관련기사:&lt;a href="http://www.theverge.com/2016/1/8/10737900/wifi-bluetooth-coming-for-zigbee-zwave-smart-home-iot-ces-2016" target="_blank">The Verge &lt;/a>이미지 출처:&lt;a href="http://www.theverge.com/2016/1/8/10737900/wifi-bluetooth-coming-for-zigbee-zwave-smart-home-iot-ces-2016" target="_blank">The Verge&lt;/a>&lt;/p>
+&lt;p>&lt;strong>[My Insight]&lt;/strong> 스마트 홈에서의 주도권을 하나의 기기나 인터페이스가 장악할 것으로 기대되지 않기때문에 이 시장을 바라보는 회사들은 모두 기기간의 호환성 및 에코시스템을 구축해야만 한다. 이러한 에코시스템을 구축할때 이미 스마트폰에 탑재된 프로토콜을 사용하면 추가적인 기기가 필요하지 않고 사용자도 쉽게 접근이 가능하다. 하지만 ZigBee의 경우 IP기반이 아니기 때문에 필립스 Hue의 경우처럼 Zigbee 프로토콜을 IP로 변환해주는 게이트웨이(&lt;a href="http://www.anandtech.com/show/6805/philips-hue-automated-home-lighting-gets-colorful/4" target="_blank">Hue Bridge&lt;/a>)가 필요하다. 따라서 이미 스마트폰에 탑재되어 있는 Bluetooth나 Wi-Fi가 Zigbee를 대체하면 Zigbee는 그 영역이 줄어들 수 밖에 없을 것이다.&lt;/p></description></item><item><title>Arduino Yún 뒷 이야기</title><link>https://openmicrolab.com/arduino-yun-%EB%92%B7-%EC%9D%B4%EC%95%BC%EA%B8%B0/</link><pubDate>Thu, 26 Feb 2015 02:19:36 +0000</pubDate><guid>https://openmicrolab.com/arduino-yun-%EB%92%B7-%EC%9D%B4%EC%95%BC%EA%B8%B0/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://arduino.cc/en/uploads/Main/ArduinoYunFront_2.jpg" alt="Arduino Yun" width="1600" height="1067" />
+&lt;p>&lt;a href="http://arduino.cc/en/Main/ArduinoBoardYun" target="_blank">Arduino YUN&lt;/a>은 Artheros의 AR9331칩셋을 사용하는 모듈을 이용해서 만든 무선랜 보드이다. 물론 이 모듈에는 리눅스가 돌아간다. 전통적으로 무선랜 칩셋업체들은 무선랜 장비를 개발할 만한 업체에게 선별적으로 자신들의 무선랜 레퍼런스 보드의 회로도나 관련 자료들을 NDA를 맺고 공개한다. 이것은 자료를 완전히 오픈했을때 기술지원이 감당이 되지 않아서 이기도 하다. Arduino Yun은 &lt;a href="http://www.doghunter.org/?portfolio=arduino-yun" target="_blank">dog hunter&lt;/a>라는 업체로 부터 공급을 받아서 제품화한 것인데 모듈 내부의 회로도는 공개가 되지 않고 인터페이스만 공개가 되어 있다.   &lt;a href="http://arduino.cc/en/uploads/Main/arduino-Yun-schematic.pdf" target="_blank">&lt;a href="http://arduino.cc/en/uploads/Main/arduino-Yun-schematic.pdf">http://arduino.cc/en/uploads/Main/arduino-Yun-schematic.pdf&lt;/a>&lt;/a>&lt;/p>
+&lt;p>Arduino 또는 dog hunter에서 Artheros랑 NDA를 맺고 모든 자료를 받았을 것인데, 오픈할 수 없는 상황이다. 하지만 &lt;a href="http://forum.arduino.cc/index.php?topic=187766.0" target="_blank">Arduino포럼에는 회로도를 오픈하라는 것&lt;/a>…재미있는 것은 처음 이슈를 제기한 사람 [&lt;a href="https://github.com/Squonk42/TL-WR703N" target="_blank">squonk42&lt;/a>]이 TL-WR703N을 리버스 엔지니어링 한 사람이라는… 물론 OSHW의 원칙에 따르면 일부만 오픈해도 상관이 없다. 하지만 그동안의 Arduino의 명성에 좋지않은 이슈라는 것.&lt;/p></description></item><item><title>SparkCore 와이파이 모듈 deep update</title><link>https://openmicrolab.com/sparkcore-%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EB%AA%A8%EB%93%88-deep-update/</link><pubDate>Fri, 23 Jan 2015 06:36:43 +0000</pubDate><guid>https://openmicrolab.com/sparkcore-%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EB%AA%A8%EB%93%88-deep-update/</guid><description>
+&lt;p>CLI를 통해 &lt;a href="https://www.spark.io/" target="_blank">SparkCore&lt;/a>의 내부 펌웨어 업데이트 순서&lt;/p>
+&lt;h4 id="1-spark-cli-설치">1. Spark CLI 설치&lt;/h4>
+&lt;p>&lt;a href="http://nodejs.org/">node.js&lt;/a> 설치&lt;/p>
+&lt;blockquote>
+&lt;p>$ sudo npm install -g spark-cli&lt;/p>
+&lt;p>$ spark cloud login&lt;/p>&lt;/blockquote>
+&lt;h4 id="2-a-hrefhttpopenmicrolabcomdfu-util-device-firmware-upgrade-utilities-target_blankdfu-util-설치a">2. &lt;a href="http://openmicrolab.com/dfu-util-device-firmware-upgrade-utilities/" target="_blank">dfu-util  설치&lt;/a>&lt;/h4>
+&lt;blockquote>
+&lt;p>brew install dfu-util&lt;/p>&lt;/blockquote>
+&lt;h4 id="3-디바이스를-dfu-mode로-진입">3. 디바이스를 dfu mode로 진입&lt;/h4>
+&lt;p>USB 케이블을 연결 후 Mode 버튼과 Reset 버튼을 동시에 누른후 Reset  버튼을 뗀다.&lt;/p>
+&lt;p>다음 커멘드를 실행한다.&lt;/p>
+&lt;blockquote>
+&lt;p>spark flash –usb deep_update_2014_06&lt;/p>&lt;/blockquote>
+&lt;p>참고: &lt;a href="https://github.com/spark/spark-cli#performing-a-deep-update" target="_blank">&lt;a href="https://github.com/spark/spark-cli#performing-a-deep-update">https://github.com/spark/spark-cli#performing-a-deep-update&lt;/a>&lt;/a>&lt;/p></description></item><item><title>OpenWRT 기반 보드들</title><link>https://openmicrolab.com/openwrt-%EA%B8%B0%EB%B0%98-%EB%B3%B4%EB%93%9C%EB%93%A4/</link><pubDate>Sun, 03 Aug 2014 15:32:17 +0000</pubDate><guid>https://openmicrolab.com/openwrt-%EA%B8%B0%EB%B0%98-%EB%B3%B4%EB%93%9C%EB%93%A4/</guid><description>
+&lt;p>&lt;a href="https://openwrt.org/" target="_blank">OpenWRT&lt;/a>가 최근 IPv6까지 지원을 한다. OpenWRT기반 보드들…&lt;/p>
+&lt;ul>
+&lt;li> &lt;a href="http://arduino.cc/en/Main/ArduinoBoardYun?from=Products.ArduinoYUN" target="_blank">Arduino Yun&lt;/a> – Atheros AR9331&lt;/li>
+&lt;li>&lt;a href="https://www.dptechnics.com/" target="_blank">DPT&lt;/a> – Atheros AR9331&lt;/li>
+&lt;li>&lt;a href="http://www.we-io.net/" target="_blank">WeIO&lt;/a> – Atheros AR9331&lt;/li>
+&lt;li>&lt;a href="https://www.indiegogo.com/projects/vocore-a-coin-sized-linux-computer-with-wifi" target="_blank">VoCore&lt;/a> – Ralink RT5350&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/OpenWRT_adds_IPv6__preps_for_IoT_future%C2%A0%C2%B7%C2%A0_LinuxGizmos_com.png" width="770" height="192" /></description></item><item><title>Wi-Fi Direct, ad hoc, Bluetooth 4.0 비교</title><link>https://openmicrolab.com/wi-fi-direct-ad-hoc-bluetooth-4-0-%EB%B9%84%EA%B5%90/</link><pubDate>Mon, 10 Feb 2014 05:45:33 +0000</pubDate><guid>https://openmicrolab.com/wi-fi-direct-ad-hoc-bluetooth-4-0-%EB%B9%84%EA%B5%90/</guid><description>
+&lt;h3 id="wi-fi-direct">Wi-Fi Direct&lt;/h3>
+&lt;p>Wi-Fi Direct가 무엇인지를 알기쉽게 나타내는 동영상&lt;/p>
+&lt;p>그럼 Wi-Fi Direct와 기존 ad-hoc은 어떻게 다른가?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Wi-Fi Direct is not the same as ad-hoc networking&lt;/strong>: The most significant difference between traditional ad-hoc wireless networking (traditional peer-to-peer networking) and Wi-Fi Direct is security. In Windows ad-hoc networks, the highest level of security supported is WEP in mixed client environments (Windows 7 will support WPA2 provided all adapters support it, as well). Wi-Fi Direct, as mentioned, supports WPA2. Another difference, Wi-Fi Direct devices can also simultaneously connect to existing wireless networks. More granular control and better discovery of devices also differentiate Wi-Fi Direct from ad-hoc networking&lt;/p></description></item></channel></rss>

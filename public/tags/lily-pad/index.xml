@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lily Pad on OpenMicroLab</title><link>https://openmicrolab.com/tags/lily-pad/</link><description>Recent content in Lily Pad on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 11 Nov 2016 02:01:32 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/lily-pad/index.xml" rel="self" type="application/rss+xml"/><item><title>필라멘트 들뜸을 방지하려면</title><link>https://openmicrolab.com/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EB%93%A4%EB%9C%B8%EC%9D%84-%EB%B0%A9%EC%A7%80%ED%95%98%EB%A0%A4%EB%A9%B4/</link><pubDate>Fri, 11 Nov 2016 02:01:32 +0000</pubDate><guid>https://openmicrolab.com/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EB%93%A4%EB%9C%B8%EC%9D%84-%EB%B0%A9%EC%A7%80%ED%95%98%EB%A0%A4%EB%A9%B4/</guid><description>
+&lt;p>3D 프린팅을 하면서 일반적으로 모델의 사이즈가 큰 경우 모델의 바닥부터 필라멘트가 수축을 하면서 들뜨게 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3796" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478829214/warping_gny6ra.jpg" width="512" height="384" />
+&lt;p>이런 현상을 방지하기 위해서는&lt;/p>
+&lt;ul>
+&lt;li>히트베드 사용&lt;/li>
+&lt;li>Raft / Brim 사용&lt;/li>
+&lt;li>레벨링을 잘 맞추기&lt;/li>
+&lt;li>캡톤필름/Buildtak sheet 등을 사용&lt;/li>
+&lt;li>출력속도 낮추기&lt;/li>
+&lt;li>Infill을 줄이기&lt;/li>
+&lt;/ul>
+&lt;p>그리고 &lt;a href="https://www.matterhackers.com/news/-how-to-stop-filament-warping-in-3d-printed-parts" target="_blank">이 글(HOW TO STOP FILAMENT WARPING IN 3D PRINTED PARTS)&lt;/a>에서는 Brim을 넣을 때 lily pads를 넣는 것을 설명하고 있는데 좋은 아이디어 인듯.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3797" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478829543/lilypad_dby3nx.jpg" width="512" height="384" />
+&lt;p>ABS의 경우 &lt;a href="https://www.matterhackers.com/articles/printing-tips-&amp;-tricks:-abs-bed-adhesion" target="_blank">참고자료&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Heat bed에 Kapton필름, 딱풀, ABS Juice등을 사용&lt;/li>
+&lt;li>첫번째 레이어에서 팬 컨트롤&lt;/li>
+&lt;/ul>
+&lt;p> &lt;/p></description></item></channel></rss>

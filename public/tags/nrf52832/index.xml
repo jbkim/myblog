@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NRF52832 on OpenMicroLab</title><link>https://openmicrolab.com/tags/nrf52832/</link><description>Recent content in NRF52832 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 29 Jan 2017 13:09:41 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/nrf52832/index.xml" rel="self" type="application/rss+xml"/><item><title>Puck.JS 사용법</title><link>https://openmicrolab.com/puck-js-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Sun, 29 Jan 2017 13:09:41 +0000</pubDate><guid>https://openmicrolab.com/puck-js-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>##&lt;img loading="lazy" class="alignnone wp-image-3867" src="http://res.cloudinary.com/openmicrolab/image/upload/v1485692576/puck_js_nmdhjx.jpg" width="301" height="307" />&lt;/p>
+&lt;h2 id="features">FEATURES&lt;/h2>
+&lt;ul>
+&lt;li>Bluetooth Low Energy&lt;/li>
+&lt;li>Espruino JavaScript interpreter pre-installed&lt;/li>
+&lt;li>nRF52832 SoC – 64MHz Cortex M4, 64kB RAM, 512kB Flash&lt;/li>
+&lt;li>8 x 0.1″ GPIO (capable of PWM, SPI, I2C, UART, Analog Input)&lt;/li>
+&lt;li>9 x SMD GPIO (capable of PWM, SPI, I2C, UART)&lt;/li>
+&lt;li>ABS plastic rear case with lanyard mount&lt;/li>
+&lt;li>Silicone cover with tactile button&lt;/li>
+&lt;li>MAG3110 Magnetometer&lt;/li>
+&lt;li>IR Transmitter&lt;/li>
+&lt;li>Built in thermometer, light and battery level sensors&lt;/li>
+&lt;li>Red, Green and Blue LEDs&lt;/li>
+&lt;li>NFC tag programmable from JavaScript&lt;/li>
+&lt;li>Pin capable of capacitive sensing&lt;/li>
+&lt;li>Weight: 14g in plastic case, 20g in packaging&lt;/li>
+&lt;li>Dimensions of cardboard box: 64mm x 62mm x 16mm&lt;/li>
+&lt;li>Dimensions of plastic case: 36mm dia, 12.5mm thick&lt;/li>
+&lt;li>Dimensions of bare PCB: 29mm dia, 9mm thick&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://github.com/espruino/EspruinoBoard/tree/master/Puck.js" target="_blank">&lt;strong>회로도 및 PCB Layout Eagle File&lt;/strong>&lt;/a>&lt;/p></description></item></channel></rss>

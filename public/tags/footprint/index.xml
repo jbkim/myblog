@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Footprint on OpenMicroLab</title><link>https://openmicrolab.com/tags/footprint/</link><description>Recent content in Footprint on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 23 Nov 2011 11:03:31 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/footprint/index.xml" rel="self" type="application/rss+xml"/><item><title>Footprint를 살짝 변경함으로 생산의 에러를 줄이는 방법</title><link>https://openmicrolab.com/footprint%EB%A5%BC-%EC%82%B4%EC%A7%9D-%EB%B3%80%EA%B2%BD%ED%95%A8%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%82%B0%EC%9D%98-%EC%97%90%EB%9F%AC%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95/</link><pubDate>Wed, 23 Nov 2011 11:03:31 +0000</pubDate><guid>https://openmicrolab.com/footprint%EB%A5%BC-%EC%82%B4%EC%A7%9D-%EB%B3%80%EA%B2%BD%ED%95%A8%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%82%B0%EC%9D%98-%EC%97%90%EB%9F%AC%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95/</guid><description>
+&lt;p>핀헤더를 PCB보드에 직각으로 제대로 솔더링하기 위해서 PCB footprint를 변경하는 아이디어&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.133175404ECCD22E15A1F6.jpg" class="aligncenter" width="500" height="97" alt="" filename="PCB_Footprint_existing.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="TEXT-ALIGN: center; MARGIN: 0px">
+기존의 라이브러리
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.143175404ECCD22E16DED8.jpg" class="aligncenter" width="500" height="173" alt="" filename="PCB_Footprint_Modified.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;DIV style="TEXT-ALIGN: center">
+화살표 방향으로 센터를 옮긴 라이브러리&lt;/p>
+&lt;p>
+&lt;/DIV>&lt;br />
+&lt;pre>&lt;code>&amp;lt;DIV style=&amp;quot;TEXT-ALIGN: left&amp;quot;&amp;gt;
+양방향으로 조금 벌어진 구멍때문에 핀헤더를 지지하게 되어, PCB 보드에 핀헤더가 직각으로 장착이 된다.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;
+관련 자료: &amp;lt;A href=&amp;quot;http://www.sparkfun.com/tutorials/114&amp;quot;&amp;gt;http://www.sparkfun.com/tutorials/114&amp;lt;/A&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/DIV&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;DIV style=&amp;quot;TEXT-ALIGN: left&amp;quot;&amp;gt;
+&amp;lt;br /&amp;gt; SparkFun의 EagleCAD Footprint 라이브러리 : &amp;lt;A href=&amp;quot;http://www.opencircuits.com/SFE_Footprint_Library_Eagle&amp;quot;&amp;gt;http://www.opencircuits.com/SFE_Footprint_Library_Eagle&amp;lt;/A&amp;gt;
+&amp;lt;/DIV&amp;gt;
+&amp;lt;/p&amp;gt;
+&lt;/code>&lt;/pre></description></item></channel></rss>

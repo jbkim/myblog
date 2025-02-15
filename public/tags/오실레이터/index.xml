@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>오실레이터 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%98%A4%EC%8B%A4%EB%A0%88%EC%9D%B4%ED%84%B0/</link><description>Recent content in 오실레이터 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 17 Sep 2010 05:14:59 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%98%A4%EC%8B%A4%EB%A0%88%EC%9D%B4%ED%84%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>오실레이터, 크리스탈 가이드</title><link>https://openmicrolab.com/%EC%98%A4%EC%8B%A4%EB%A0%88%EC%9D%B4%ED%84%B0-%EA%B0%80%EC%9D%B4%EB%93%9C/</link><pubDate>Fri, 17 Sep 2010 05:14:59 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%EC%8B%A4%EB%A0%88%EC%9D%B4%ED%84%B0-%EA%B0%80%EC%9D%B4%EB%93%9C/</guid><description>
+&lt;div>
+&lt;span style="font-size: 11pt; ">임베디스시스템에서 사용을 하는 모든 MCU에는 클럭 입력이 있습니다.&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">이 클럭은 사람으로 치면 심장과도 같은 존재입니다.&amp;nbsp;&lt;/span>&lt;span style="font-size: 11pt; ">이게 없으면 MCU가 동작을 할 수 없겠죠.&amp;nbsp;&lt;/span>&lt;span style="font-size: 11pt; ">일반적으로 클럭 입력으로 오실레이터나 크리스탈을 사용을 합니다.&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">이 둘의 차이는 크리스탈은 MCU의 발진 회로에 의해 동작을 하고, 오실레이터는 자체 전원입력을 받아서 독립적으로 동작을 하며, 일반적으로 크리스탈의 단가가 낮기 때문에 가능하면 크리스탈을 사용을 합니다.&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">대부분의 개발자들이 MCU의 datasheet에서 가이드하는 내용대로 디자인을 하는데, ST micro에서 좋은 가이드 문서가 있어서 한번 확인해 봤습니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile4.uf.1859281E4C92F7354875B3.jpg" class="aligncenter" width="494" height="363" alt="" filename="osc.jpg" filemime="image/jpeg" />&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;/p></description></item></channel></rss>

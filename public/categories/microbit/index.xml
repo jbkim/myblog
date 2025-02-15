@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Microbit on OpenMicroLab</title><link>https://openmicrolab.com/categories/microbit/</link><description>Recent content in Microbit on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 27 Sep 2018 07:14:47 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/microbit/index.xml" rel="self" type="application/rss+xml"/><item><title>아두이노에서 WebUSB 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-webusb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 27 Sep 2018 07:14:47 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-webusb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>구글 크롬 65버전 이상일 경우 &lt;a href="https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web" target="_blank" rel="noopener noreferrer">WebUSB&lt;/a>를 지원한다.&lt;/p>
+&lt;h3 id="microbit">&lt;strong>Micro:Bit&lt;/strong>&lt;/h3>
+&lt;p>Micro:bit의 경우 웹에서 MakeCode같은 프로그램으로 코딩을 하고 hex 파일을 다운로드 후 외장 디스크로 연결된 디바이스에 drag &amp;amp; drop를 해서 프로그래밍을 했는데, 이제는 웹브라우저에서 바로 USB를 통해 프로그래밍이 가능하다.&lt;/p>
+&lt;h3 id="arduino">&lt;strong>Arduino&lt;/strong>&lt;/h3>
+&lt;p>아두이노의 경우 다음과 같이 작업을 한다.&lt;/p>
+&lt;ul>
+&lt;li>아두이노는 1.6.11 이상 버전 사용&lt;/li>
+&lt;li>Contents/Java/hardware/arduino/avr/cores/arduino/USBCore.h 파일의 #define USB_VERSION 0x200를 0x210 로 수정&lt;/li>
+&lt;li>&lt;a href="https://github.com/webusb/arduino" target="_blank" rel="noopener noreferrer">&lt;a href="https://github.com/webusb/arduino">https://github.com/webusb/arduino&lt;/a>&lt;/a> 이 repo의 WebUSB폴더를 아두이노 라이브러리에 copy&lt;/li>
+&lt;li>예제 프로그램으로 동작 확인&lt;/li>
+&lt;li>현재 지원되는 보드
+&lt;ul>
+&lt;li>Arduino Leonardo&lt;/li>
+&lt;li>Arduino/Genuino Micro&lt;/li>
+&lt;li>Arduino/Genuino Zero&lt;/li>
+&lt;li>Arduino MKR1000&lt;/li>
+&lt;li>Arduino MKRZero&lt;/li>
+&lt;li>Arduino MKRFox1200&lt;/li>
+&lt;li>Adafruit Feather 32u4&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;p>&lt;a href="https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a">https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Mass Storage bootloader</title><link>https://openmicrolab.com/mass-storage-bootloader/</link><pubDate>Mon, 18 Dec 2017 08:01:33 +0000</pubDate><guid>https://openmicrolab.com/mass-storage-bootloader/</guid><description>
+&lt;p>USB device를 가진 MCU를 PC에 연결시 Mass Storage Device로 동작시키고, Hex파일을 copy하면 MCU의 application code가 업데이트 되는 형태.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://os.mbed.com/handbook/cmsis-dap-interface-firmware" target="_blank" rel="noopener noreferrer">mbed의 CMSIS DAP 인터페이스&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.nxp.com/docs/en/application-note/AN4379.pdf">NXP사의 자료&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://blog.myelectronics.com.ua/stm32-usb-mass-storage-bootloader/" target="_blank" rel="noopener noreferrer">Russia blogger의 자료&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Microsoft/uf2">MS의 MakeCode에 적용된 UF2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Microsoft/uf2-samd21">MSC bootloader (based on UF2) for SAMD21&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>BBC Microbit 오프라인에서 사용하기</title><link>https://openmicrolab.com/bbc-microbit-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 16 Sep 2016 09:43:18 +0000</pubDate><guid>https://openmicrolab.com/bbc-microbit-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>BBC microbit를 오프라인에서 사용하려면 &lt;a href="http://yottadocs.mbed.com/#installing" target="_blank">링크&lt;/a>를 참고 하고 Manuall Installation 항목을 따라서 환경을 셋업한다.&lt;/p>
+&lt;p>&lt;strong>1. yotta설치&lt;/strong>&lt;/p>
+&lt;p>Mac OS의 경우&lt;/p>
+&lt;blockquote>
+&lt;p>brew tap ARMmbed/homebrew-formulae&lt;br>
+brew install python cmake ninja arm-none-eabi-gcc&lt;br>
+pip install yotta&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>Trouble shooting&lt;/strong>&lt;br>
+brew 관련 아래과 같은 문제가 있을 경우&lt;/p>
+&lt;blockquote>
+&lt;p>sudo chown -R $(whoami):admin /usr/local&lt;br>
+cd $(brew –prefix) &amp;amp;&amp;amp; git fetch origin &amp;amp;&amp;amp; git reset –hard origin/master&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>터미널에서 다음과 같은 에러메시지가 나올때&lt;/strong>&lt;br>
+error: connection error: (“bad handshake: Error([(‘SSL routines’, ‘ssl3_get_server_certificate’, ‘certificate verify failed’)],)”,)&lt;/p></description></item><item><title>BBC micro:bit 분석</title><link>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</link><pubDate>Sun, 11 Sep 2016 14:45:36 +0000</pubDate><guid>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</guid><description>
+&lt;p class="p1">
+&lt;span class="s1">BBC &lt;a href="http://microbit.co.uk/">&lt;span class="s2">micro:bit&lt;/span>&lt;/a>&lt;/span>는 영국에서 컴퓨터 교육용으로 디자인된 마이크로컨트롤러 보드이다&lt;span class="s1">.&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;img loading="lazy" class="alignnone wp-image-3744" src="http://res.cloudinary.com/openmicrolab/image/upload/v1473602467/MicroBit_board_xcvrdp.jpg" width="472" height="364" />
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>개발에 참여한 파트너사들&lt;/strong>
+&lt;/p>
+&lt;ul class="ul1">
+&lt;li class="li3">
+&lt;span class="s2">Microsoft&lt;/span> – Block Editor, Touch Develop 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://lancaster-university.github.io/microbit-docs/" target="_blank">&lt;span class="s2">Lancaster University&lt;/span> – Device runtime개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Farnell element14&lt;/span> – 디바이스 생산
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank">&lt;span class="s2">Nordic Semiconductor&lt;/span> – MCU 제공&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">NXP Semiconductors&lt;/span> – USB인터테이스 칩 및 센서 칩제공
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">ARM Holdings&lt;/span> – &lt;a href="https://developer.mbed.org/" target="_blank">mbed&lt;/a> 하드웨어, 컴파일러 서비스
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.techwillsaveus.com/" target="_blank">&lt;span class="s2">Technology Will Save Us&lt;/span> – 하드웨어 디바이스 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="http://www.samsung.com/uk/microbit/" target="_blank">&lt;span class="s2">Samsung&lt;/span> – 안드로이드 앱 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://sciencescope.uk/" target="_blank">ScienceScope&lt;/a> –iOS앱 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Python Software Foundation&lt;/span> – &lt;a href="https://en.wikipedia.org/wiki/MicroPython">&lt;span class="s2">MicroPython&lt;/span>&lt;/a> 제공, 웹기반 파이썬 에디터 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.bluetooth.com/" target="_blank">Bluetooth SIG&lt;/a> &amp;#8211; Developed the custom Bluetooth LE profile.
+&lt;/li>
+&lt;/ul>
+&lt;p class="p1">
+&lt;strong>하드웨어&lt;/strong>
+&lt;/p></description></item></channel></rss>

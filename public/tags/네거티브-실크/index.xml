@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>네거티브 실크 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%84%A4%EA%B1%B0%ED%8B%B0%EB%B8%8C-%EC%8B%A4%ED%81%AC/</link><description>Recent content in 네거티브 실크 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 14 Jul 2016 08:02:23 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%84%A4%EA%B1%B0%ED%8B%B0%EB%B8%8C-%EC%8B%A4%ED%81%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>Eagle CAD에 네거티브 실크 넣기</title><link>https://openmicrolab.com/eagle-cad%EC%97%90-negative-silk-%EB%84%A3%EA%B8%B0/</link><pubDate>Thu, 14 Jul 2016 08:02:23 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EC%97%90-negative-silk-%EB%84%A3%EA%B8%B0/</guid><description>
+&lt;p>아두이노 보드의 모델명 같은 것은 일반 실크가 아닌 네거티브 실크로 되어 있다. Eagle Cad에서 이 작업을 하려면 negasilk.ulp를 사용하면 되는데 방법은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>실크를 TXT로 적은 후 41 tRestrict 레이어에 만들고 넣을 위치를 잡는다.&lt;/li>
+&lt;li>41레이어를 끄고 나머지 레이어만 켜서 블럭으로 잡아서 다른 위치로 이동한다.&lt;/li>
+&lt;li>41레이어를 켜서 Top에서 폴리곤으로 글자를 둘러싸고 Copper pour를 한다. 다른 위치로 이동한 회로에는 Copper pour가 되지 않도록 폴리곤 작업을 하지 않는 것이 좋다.&lt;/li>
+&lt;li>negasilk.ulp를 실행하면 작업 폴더에 스크립트(확장자 scr)가 생긴다.&lt;/li>
+&lt;li>이 스크립트를 열어서 3번째 라인에 LAYER 21;을 입력한다. 즉 21번째 레이어에 네거티브 실크를 생성할 것이다.&lt;/li>
+&lt;li>네거티브 실크가 생성된 위치의 Top에 깔린 Copper 및 글씨를 지운다.&lt;/li>
+&lt;li>이동한 회로들을 다시 원점으로 이동한후 폴리곤 작업을 하고 Copper pour를 한다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=lVpzqZfN2A4">https://www.youtube.com/watch?v=lVpzqZfN2A4&lt;/a>&lt;/p></description></item></channel></rss>

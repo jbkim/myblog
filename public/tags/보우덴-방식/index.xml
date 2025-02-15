@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>보우덴 방식 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%B3%B4%EC%9A%B0%EB%8D%B4-%EB%B0%A9%EC%8B%9D/</link><description>Recent content in 보우덴 방식 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 14 Apr 2016 02:10:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%B3%B4%EC%9A%B0%EB%8D%B4-%EB%B0%A9%EC%8B%9D/index.xml" rel="self" type="application/rss+xml"/><item><title>3D 프린터 – 다이렉트 &amp; 보우덴 방식</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8-%EB%B3%B4%EC%9A%B0%EB%8D%B4-%EB%B0%A9%EC%8B%9D/</link><pubDate>Thu, 14 Apr 2016 02:10:09 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8-%EB%B3%B4%EC%9A%B0%EB%8D%B4-%EB%B0%A9%EC%8B%9D/</guid><description>
+&lt;p>3D 프린터 – 다이렉트 &amp;amp; 보우덴 방식의 비교&lt;/p>
+&lt;p>&lt;strong>다이렉트 방식&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>피더의 구동부와 노즐사이의 간격이 짧아서 응답성이 좋다. 따라서 stringing, oozing이 덜 생기고 피더 모터의 토크가 좀 작아도 된다. 플랙시블 필라멘트사용이 쉽다.&lt;/li>
+&lt;li>하지만 헤드가 무거워져서 “backlash, overshoot, and frame wobble” 등이 생기기 쉽다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>보우덴 방식&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>헤드가 가벼워져서 모든 조건이 같을때 빨리움직일 수 있다.&lt;/li>
+&lt;li>필라멘트 리트렉션, strining, oozing, 필라멘트 마찰등의 단점&lt;/li>
+&lt;/ul>
+&lt;p>참고로 응답성은 시스템의 hysteresis, lag와 관련이 있다._ _&lt;/p>
+&lt;p>관련 문서: &lt;a href="http://www.matterhackers.com/articles/extruders-101:-a-crash-course-on-an-essential-component-of-your-3d-printer" target="_blank">&lt;a href="http://www.matterhackers.com/articles/extruders-101:-a-crash-course-on-an-essential-component-of-your-3d-printer">http://www.matterhackers.com/articles/extruders-101:-a-crash-course-on-an-essential-component-of-your-3d-printer&lt;/a>&lt;/a>&lt;/p>
+&lt;div class="articleElement">
+&lt;/div>
+&lt;div class="articleElement">
+&lt;/div></description></item></channel></rss>

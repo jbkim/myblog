@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MQTT on OpenMicroLab</title><link>https://openmicrolab.com/tags/mqtt/</link><description>Recent content in MQTT on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 11 Nov 2017 14:59:36 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/mqtt/index.xml" rel="self" type="application/rss+xml"/><item><title>MQTT 란?</title><link>https://openmicrolab.com/mqtt-%EB%9E%80/</link><pubDate>Sat, 11 Nov 2017 14:59:36 +0000</pubDate><guid>https://openmicrolab.com/mqtt-%EB%9E%80/</guid><description>
+&lt;h3 class="p1" id="mqttspan-classs1란span">MQTT&lt;span class="s1">란&lt;/span>?&lt;/h3>
+&lt;p class="p1">
+MQ Telemetry Transport&lt;span class="s1">의&lt;/span> &lt;span class="s1">약자&lt;/span>
+&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+It is a publish/subscribe, extremely simple and lightweight messaging protocol, designed for constrained devices and low-bandwidth, high-latency or unreliable networks.
+&lt;/p>&lt;/blockquote>
+&lt;h3 class="p1" id="span-classs1왜span-mqttspan-classs1를span-span-classs1사용하는가span">&lt;span class="s1">왜&lt;/span> MQTT&lt;span class="s1">를&lt;/span> &lt;span class="s1">사용하는가&lt;/span>?&lt;/h3>
+&lt;p class="p3">
+&lt;span class="s2">IoT(Internet of Thing): Thing&lt;/span>을&lt;span class="s2"> Internet&lt;/span>에 연결을 하려면&lt;span class="s2"> Ethernet, WiFi, Cellular &lt;/span>등이 필요하다&lt;span class="s2">. &lt;/span>이런&lt;span class="s2"> connectivity&lt;/span>가 대부분 무선으로 가고 있는데&lt;span class="s2">, &lt;/span>무선이라 함은 이동성이 보장되야 하므로 밧데리가 필요하고 파워소모는 중요한 요소이다&lt;span class="s2">. &lt;/span>파워를 적게 사용하기 위해서는 빨리 연결을 하고&lt;span class="s2">, &lt;/span>데이터를 보내고 빨리 연결을 끊어야 한다&lt;span class="s2">. &lt;/span>특히 데이터에 오버헤드가 없어야 한다&lt;span class="s2">. &lt;/span>셀룰라에서 데이터는 돈이니&lt;span class="s2">…&lt;/span>
+&lt;/p></description></item><item><title>IoT Developer Survey</title><link>https://openmicrolab.com/iot-developer-survey/</link><pubDate>Fri, 15 Apr 2016 03:32:38 +0000</pubDate><guid>https://openmicrolab.com/iot-developer-survey/</guid><description>
+&lt;p>Top 5 IoT Industries&lt;/p>
+&lt;ul>
+&lt;li>Iot Platform&lt;/li>
+&lt;li>Home Automation&lt;/li>
+&lt;li>Industrial Automation&lt;/li>
+&lt;li>Energy Management&lt;/li>
+&lt;li>Connected Cities&lt;/li>
+&lt;/ul>
+&lt;p>3가지 이슈 – 보안, 상호호환성, 연결방식&lt;br>
+주로 사용되는 메시징 프로토콜은 MQTT, HTTP&lt;br>
+클라우드 서비스는 아마존 클라우드&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="IoT Developer Survey 2016" href="//www.slideshare.net/IanSkerrett/iot-developer-survey-2016" target="_blank">IoT Developer Survey 2016&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="//www.slideshare.net/IanSkerrett" target="_blank">Ian Skerrett&lt;/a>&lt;/strong>
+&lt;/div>
+&lt;p>관련자료 – &lt;a href="https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/" target="_blank">&lt;a href="https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/">https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>여기 나온 PT자료도 같이 보면 좋을 듯: &lt;a href="http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/" target="_blank">&lt;a href="http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/">http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Beyond connectivity, toward value – IoT(IoE), 비즈니스 미래 지형을 바꾸다</title><link>https://openmicrolab.com/beyond-connectivity-toward-value-iotioe-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%AF%B8%EB%9E%98-%EC%A7%80%ED%98%95%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8B%A4/</link><pubDate>Sat, 08 Mar 2014 14:22:54 +0000</pubDate><guid>https://openmicrolab.com/beyond-connectivity-toward-value-iotioe-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%AF%B8%EB%9E%98-%EC%A7%80%ED%98%95%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8B%A4/</guid><description>
+&lt;p>지난 3월 5일 참석한 컨퍼런스&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/03/iot_semina.jpeg">&lt;img loading="lazy" class="alignnone size-full wp-image-2912" alt="iot_semina" src="https://openmicrolab.com/images/2014/03/iot_semina.jpeg" width="677" height="645" srcset="https://openmicrolab.com/images/2014/03/iot_semina.jpeg 677w, https://openmicrolab.com/images/2014/03/iot_semina-300x285.jpeg 300w" sizes="(max-width: 677px) 100vw, 677px" />&lt;/a>&lt;/p>
+&lt;p> &lt;/p>
+&lt;h3 id="발표의-내용을-요약하면">발표의 내용을 요약하면&lt;/h3>
+&lt;ul>
+&lt;li>IoT(Internet of Things), IoE(Internet of Everything)등으로 각 업체마다 추정치는 다르나 향후 널리 확산될 것으로 예상&lt;/li>
+&lt;li>수량은 PC, 태블릿, 스마트폰의 수치를 합한 것의 2배로 추정, 여기에 Smart TV, Wearable의 수치도 IoT와 비등한 수준&lt;/li>
+&lt;li>가트너에서 발표한 &lt;a href="http://www.gartner.com/newsroom/id/2575515" target="_blank">Hype Cycle 곡선&lt;/a>&lt;/li>
+&lt;li>IoT에서의 보안의 이슈: &lt;a href="http://www.telegraph.co.uk/technology/internet-security/10579677/More-than-750000-spam-emails-sent-from-fridges-and-TVs.html" target="_blank">냉장고가 스팸메일 보낸 뉴스&lt;/a>, &lt;a href="http://arstechnica.com/security/2014/02/password-leak-in-wemo-devices-makes-home-appliances-susceptible-to-hijacks/" target="_blank">밸킨의 Wemo 해킹 뉴스&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">국내 통신사들: KT, LG-Uplus, SK 텔레콤등이 실제적인 서비스( Biz Case)를 발표&lt;/span>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">매직에코: LimiSmart라는 램프에 IoT기능을 넣은 제품으로 인디고고에서 프로젝트 진행중 – S/W 저작 도구&lt;/span>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">daliworks : IoT cloud platform 서비스 제공(SensorJS), IoT 센서 게이트 웨이(비글본, 라즈베리 파이)&lt;/span>&lt;/li>
+&lt;/ul>
+&lt;h3 id="span-stylefont-size-117em글로벌-벤더들의-iot주도권을-위한-경쟁span">&lt;span style="font-size: 1.17em;">글로벌 벤더들의 IoT주도권을 위한 경쟁&lt;/span>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;span style="line-height: 1.5em;">오라클: &lt;/span>&lt;a style="line-height: 1.5em;" href="http://www.oracle.com/technetwork/java/javame/index.html" target="_blank">JavaME Embedded for IoE Platform&lt;/a>&lt;span style="line-height: 1.5em;"> 퀄컴의 Orion Board에서 채택, Gateway solution(&lt;/span>&lt;a style="line-height: 1.5em;" href="https://community.freescale.com/community/the-embedded-beat/blog/2013/09/23/what-is-the-new-freescale-oracle-partnership-around-one-box-platform-all-about-part-1" target="_blank">One Box&lt;/a>&lt;span style="line-height: 1.5em;">)&lt;/span>&lt;/li>
+&lt;li>퀄컴: AllJoyn –  P2P기반, 지금은 오픈 소스화 되어 Linux foundation 에서 유지.&lt;/li>
+&lt;li>&lt;a style="line-height: 1.5em;" href="https://openmicrolab.com/images/2014/03/alljoyn.jpeg">&lt;img loading="lazy" class="alignnone wp-image-2913" alt="alljoyn" src="https://openmicrolab.com/images/2014/03/alljoyn.jpeg" width="578" height="311" srcset="https://openmicrolab.com/images/2014/03/alljoyn.jpeg 964w, https://openmicrolab.com/images/2014/03/alljoyn-300x161.jpeg 300w" sizes="(max-width: 578px) 100vw, 578px" />&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">IBM: &lt;/span>&lt;a style="line-height: 1.5em;" href="http://mqtt.org/" target="_blank">MQTT&lt;/a> &lt;span style="line-height: 1.5em;">– IoT  메시징 프로토콜, &lt;/span>&lt;a style="line-height: 1.5em;" href="http://www.eclipse.org/paho/" target="_blank">paho&lt;/a>&lt;/li>
+&lt;li>MS의 IoT에 대한 정의&lt;/li>
+&lt;li>&lt;a style="line-height: 1.5em;" href="https://openmicrolab.com/images/2014/03/ms_iot.jpeg">&lt;img loading="lazy" class="alignnone size-full wp-image-2914" alt="ms_iot" src="https://openmicrolab.com/images/2014/03/ms_iot.jpeg" width="484" height="242" srcset="https://openmicrolab.com/images/2014/03/ms_iot.jpeg 484w, https://openmicrolab.com/images/2014/03/ms_iot-300x150.jpeg 300w" sizes="(max-width: 484px) 100vw, 484px" />&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="my-insight"> My Insight&lt;/h3>
+&lt;ul>
+&lt;li>IoT 단말은 무선&lt;/li>
+&lt;li>IoT 게이트웨이는 상위 서비스와 연계하기 위해 보안 및 OS가 필요하며, 현재는 무겁고 비싸지만 가격은 점차내려갈 것고 모든 무선인터페이스(Zigbee, BT, WiFi)를 포함하는 형태가 될 것이다. 특히 가정내 IoT 게이트 웨이의 경우는 더더욱…&lt;/li>
+&lt;li>서비스에 연계되지 않은 단말은 중국과의 가격경쟁으로 살아남기 힘들다.&lt;/li>
+&lt;/ul>
+&lt;p>위 세미나와 관련된 내용: &lt;a href="http://www.businessinsider.com/the-internet-of-everything-2014-slide-deck-sai-2014-2#-1" target="_blank">BI에서 발표한 자료&lt;/a>&lt;/p></description></item><item><title>MQTT</title><link>https://openmicrolab.com/mqtt/</link><pubDate>Wed, 14 Nov 2012 10:55:15 +0000</pubDate><guid>https://openmicrolab.com/mqtt/</guid><description>
+&lt;ul style="list-style-type: square;">
+&lt;li>
+MQTT: MQ Telemetry Transport protocol의 약자. M2M에서 사용.&amp;nbsp;
+&lt;/li>
+&lt;li>
+IBM에서 개발했다. &lt;a href="http://www.ibm.com/developerworks/webservices/library/ws-mqtt/index.html" target="_blank" class="tx-link">프로토톨 스펙&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://mqtt.org/faq" target="_blank" class="tx-link">http://mqtt.org/faq&lt;/a> 에서는 다음과 같이 정의
+&lt;/li>
+&lt;/ul>
+&lt;div>
+&lt;/div>
+&lt;div class="txc-textbox" style="border: 1px solid rgb(238, 238, 238); background-color: rgb(238, 238, 238); padding: 10px;">
+&lt;p>
+&lt;!--[if gte mso 9]>&lt;xml>
+&lt;o:OfficeDocumentSettings>
+&lt;o:AllowPNG/>
+&lt;/o:OfficeDocumentSettings>
+&lt;/xml>&lt;![endif]-->
+&lt;/p>
+&lt;p>
+&lt;!--[if gte mso 9]>&lt;xml>
+&lt;w:WordDocument>
+&lt;w:View>Normal&lt;/w:View>
+&lt;w:Zoom>0&lt;/w:Zoom>
+&lt;w:TrackMoves/>
+&lt;w:TrackFormatting/>
+&lt;w:PunctuationKerning/>
+&lt;w:ValidateAgainstSchemas/>
+&lt;w:SaveIfXMLInvalid>false&lt;/w:SaveIfXMLInvalid>
+&lt;w:IgnoreMixedContent>false&lt;/w:IgnoreMixedContent>
+&lt;w:AlwaysShowPlaceholderText>false&lt;/w:AlwaysShowPlaceholderText>
+&lt;w:DoNotPromoteQF/>
+&lt;w:LidThemeOther>EN-US&lt;/w:LidThemeOther>
+&lt;w:LidThemeAsian>JA&lt;/w:LidThemeAsian>
+&lt;w:LidThemeComplexScript>X-NONE&lt;/w:LidThemeComplexScript>
+&lt;w:Compatibility>
+&lt;w:BreakWrappedTables/>
+&lt;w:SnapToGridInCell/>
+&lt;w:WrapTextWithPunct/>
+&lt;w:UseAsianBreakRules/>
+&lt;w:DontGrowAutofit/>
+&lt;w:SplitPgBreakAndParaMark/>
+&lt;w:EnableOpenTypeKerning/>
+&lt;w:DontFlipMirrorIndents/>
+&lt;w:OverrideTableStyleHps/>
+&lt;w:UseFELayout/>
+&lt;/w:Compatibility>
+&lt;m:mathPr>
+&lt;m:mathFont m:val="Cambria Math"/>
+&lt;m:brkBin m:val="before"/>
+&lt;m:brkBinSub m:val="&amp;#45;-"/>
+&lt;m:smallFrac m:val="off"/>
+&lt;m:dispDef/>
+&lt;m:lMargin m:val="0"/>
+&lt;m:rMargin m:val="0"/>
+&lt;m:defJc m:val="centerGroup"/>
+&lt;m:wrapIndent m:val="1440"/>
+&lt;m:intLim m:val="subSup"/>
+&lt;m:naryLim m:val="undOvr"/>
+&lt;/m:mathPr>&lt;/w:WordDocument>
+&lt;/xml>&lt;![endif]-->
+&lt;pre>&lt;code>&amp;lt;!--[if gte mso 9]&amp;gt;&amp;lt;xml&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>&amp;lt;w:LatentStyles DefLockedState=&amp;ldquo;false&amp;rdquo; DefUnhideWhenUsed=&amp;ldquo;true&amp;rdquo;
+DefSemiHidden=&amp;ldquo;true&amp;rdquo; DefQFormat=&amp;ldquo;false&amp;rdquo; DefPriority=&amp;ldquo;99&amp;rdquo;
+LatentStyleCount=&amp;ldquo;276&amp;rdquo;&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;0&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Normal&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 7&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 8&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 9&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 7&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 8&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 9&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;35&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;caption&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;10&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Title&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;1&amp;rdquo; Name=&amp;ldquo;Default Paragraph Font&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;11&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Subtitle&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;22&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Strong&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;20&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Emphasis&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;59&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Table Grid&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Placeholder Text&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;1&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;No Spacing&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Revision&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;34&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;List Paragraph&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;29&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Quote&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;30&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Intense Quote&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;19&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Subtle Emphasis&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;21&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Intense Emphasis&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;31&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Subtle Reference&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;32&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Intense Reference&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;33&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Book Title&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;37&amp;rdquo; Name=&amp;ldquo;Bibliography&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;TOC Heading&amp;rdquo;/&amp;gt;
+&amp;lt;/w:LatentStyles&amp;gt;
+&lt;/xml>&amp;lt;![endif]&amp;ndash;&amp;gt;&lt;/p></description></item></channel></rss>

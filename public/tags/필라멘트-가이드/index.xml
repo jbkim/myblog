@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>필라멘트 가이드 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EA%B0%80%EC%9D%B4%EB%93%9C/</link><description>Recent content in 필라멘트 가이드 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 09 Mar 2016 02:55:02 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EA%B0%80%EC%9D%B4%EB%93%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>ANATOMY OF A 3D PRINTER</title><link>https://openmicrolab.com/anatomy-of-a-3d-printer/</link><pubDate>Wed, 09 Mar 2016 02:55:02 +0000</pubDate><guid>https://openmicrolab.com/anatomy-of-a-3d-printer/</guid><description>
+&lt;p>&lt;a href="http://www.matterhackers.com/articles/anatomy-of-a-3d-printer" target="_blank">ANATOMY OF A 3D PRINTER&lt;/a>&lt;/p>
+&lt;p>MatterHackers의 블로그 기사로 초보자들이 3D 프린터를 이해하는데 도움이 될 듯.&lt;/p>
+&lt;blockquote>
+&lt;p>Hotend – All Metal vs PEEK/PTFE&lt;br>
+By not using any plastic insulators in their construction, all metal hot ends are able to reach much higher temperatures and print a wider range of materials. However, they require &lt;strong>active cooling&lt;/strong>.&lt;/p>
+&lt;p>Hotend – Heat Sink / Hot End Fan&lt;br>
+This ensures that heat does not travel up the plastic and melt it prematurely before it reaches the nozzle. This phenomenon is called &lt;strong>heat creep&lt;/strong> and it causes jams, especially with PLA. This fan should be running whenever the hot end is warm.&lt;/p></description></item></channel></rss>

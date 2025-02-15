@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>W5200 on OpenMicroLab</title><link>https://openmicrolab.com/tags/w5200/</link><description>Recent content in W5200 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 01 Mar 2014 09:26:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/w5200/index.xml" rel="self" type="application/rss+xml"/><item><title>Arduino Ethernet 라이브러리 업데이트</title><link>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link><pubDate>Sat, 01 Mar 2014 09:26:21 +0000</pubDate><guid>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid><description>
+&lt;p>WZnet 칩 W5100, W5200과 W5500을 지원하는 통합 아두이노 라이브러리인 &lt;a href="https://github.com/Wiznet/WIZ_Ethernet_Library" target="_blank">Arduino Ethernet 라이브러리&lt;/a>를 업데이트 했다. 기존 코드에서 달라진 점은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>Arduino IDE 1.5.x 지원 : Arduino Due를 지원하기 위함.&lt;/li>
+&lt;li>Due용  SPI 드라이버 추가&lt;/li>
+&lt;li>W5200및 W5500의 경우 SPI드라이버 속도를 높였다. 무려 42Mhz까지 지원&lt;/li>
+&lt;li>w5100::read_data함수의 파라미터의 형 변경&lt;/li>
+&lt;li>flush() 함수 추가&lt;/li>
+&lt;/ul>
+&lt;p>Arduino IDE 1.5.xx를 지원하기 위해서는&lt;/p>
+&lt;ul>
+&lt;li>32비트 SAM용 SPI 드라이버가 추가 되야한다.&lt;/li>
+&lt;li>IDE 1.5.x의 폴더 구조가 바뀌어서 헤더파일 include가 변경된다.아래 그림 참고…  예를 들면 #include “w5100.h”가 #include “utility/ w5100.h” 이런 식으로…&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/03/Arduino_Folder.png">&lt;img loading="lazy" class="alignnone wp-image-2890" alt="Arduino_Folder" src="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png" width="578" height="717" srcset="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png 826w, https://openmicrolab.com/images/2014/03/Arduino_Folder-242x300.png 242w, https://openmicrolab.com/images/2014/03/Arduino_Folder.png 831w" sizes="(max-width: 578px) 100vw, 578px" />&lt;/a>&lt;/p></description></item><item><title>Wake on LAN</title><link>https://openmicrolab.com/wake-on-lan/</link><pubDate>Wed, 08 Aug 2012 23:10:50 +0000</pubDate><guid>https://openmicrolab.com/wake-on-lan/</guid><description>
+&lt;p>Wake on LAN은 네트워크 패킷(매직 패킷)으로 컴퓨터를 켜거나, 깨우는 기능을 하는 AMD와 HP에서 만든 표준이다.&lt;/p>
+&lt;p>요즘 PC들은 전원을 꺼도 이더넷 잭에 연결된 LED가 깜박이는 것을 볼 수 있는데, 즉 LAN은 패킷을 받을 수 있는 모드에 있다. &lt;/p>
+&lt;/p>
+&lt;p style="text-align: center; ">
+AMD의 White paper
+&lt;/p>&lt;/p>
+&lt;p style="text-align: center; ">
+&lt;a href="https://openmicrolab.com/images/1/cfile26.uf.1225CD3F5022E8BF13F2F0.pdf" class="aligncenter" filename="20213.pdf" filemime="application/pdf" />cfile26.uf.1225CD3F5022E8BF13F2F0.pdf&lt;/a>
+&lt;/p>
+&lt;p style="text-align: center; ">
+&lt;/p>
+&lt;p>&lt;strong>매직 패킷의 구성&lt;/strong>&lt;/p>
+&lt;p>매직 패킷은 2가 있는데, &lt;strong>ether-wake&lt;/strong>와 &lt;strong>UDP&lt;/strong>상에서 구현하는 패킷이 있다. 대부분의 PC 프로그램이 보내는 패킷은 후자이다.&lt;/p>
+&lt;p>아래 내용은 ether-wake패킷의 구성이다. 출처) &lt;a href="http://wiki.wireshark.org/WakeOnLAN" target="_blank" class="tx-link">&lt;a href="http://wiki.wireshark.org/WakeOnLAN">http://wiki.wireshark.org/WakeOnLAN&lt;/a>&lt;/a>&lt;/p>
+&lt;p>이 사이트에서 관련 패킷 샘플도 다운로드 가능하다.&lt;/p></description></item><item><title>아두이노 보드에서 W5200 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-w5200-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 12 Dec 2011 09:59:33 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-w5200-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>아두이노의 공식 Ethernet 쉴드에는 &lt;A title="[http://wiznet.co.kr]로 이동합니다." href="http://wiznet.co.kr/" target=_blank>Wiznet&lt;/A>의 &lt;A title="[http://www.wiznet.co.kr/w5100]로 이동합니다." href="http://www.wiznet.co.kr/w5100" target=_blank>W5100&lt;/A>이 사용된다. 따라서 모든 Ethernet 라이브러리는 &lt;A title="[http://www.wiznet.co.kr/w5100]로 이동합니다." href="" target=_blank>W5100&lt;/A>을 이용하는 것으로 되어있는데 &lt;A title="[http://wiznet.co.kr]로 이동합니다." href="" target=_blank>Wiznet&lt;/A>의 신규칩인 &lt;A title="[http://www.wiznet.co.kr/w5200]로 이동합니다." href="http://www.wiznet.co.kr/w5200" target=_blank>W5200&lt;/A>을 아두이노 보드에서 사용하기 위해서는 라이브러리를 일부 수정을 해야 한다. &lt;A title="[http://www.wiznet.co.kr/w5100]로 이동합니다." href="" target=_blank>W5100&lt;/A>과 비교해서 &lt;A title="[http://www.wiznet.co.kr/w5200]로 이동합니다." href="" target=_blank>W5200&lt;/A>의 장점은 대략 작은 패키지, 8 socket 지원(W5100의 경우 4 socket 지원), Power down mode, Wake on LAN 기능 지원 등이다. &lt;br>
+**    W5100 to W5200 migration guide&lt;/P>&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;br />
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile3.uf.1221F0404EE59A7B11507B.pdf" class="aligncenter" filename="w5100_w5200_migration guide.pdf" filemime="application/pdf" />cfile3.uf.1221F0404EE59A7B11507B.pdf&lt;/a>
+&lt;/P>&lt;/STRONG>
+&lt;/DIV>
+&lt;p>&lt;strong>Hardware 연결&lt;/strong>&lt;br>
+간단한 테스트를 위해 &lt;A title="[http://www.wiznet.co.kr/wiz820io]로 이동합니다." href="http://www.wiznet.co.kr/wiz820io" target=_blank>Wiz820io&lt;/A>를 사용을 해서 아래 그림처럼 테스트를 했다. 아래 그림은 Fritzing 이라는 툴로 &lt;A title="[http://www.wiznet.co.kr/wiz820io]로 이동합니다." href="" target=_blank>Wiz820io &lt;/A>라이브러리를 만든 후 작성한 연결도이다. Fritzing관련해서는 이전 포스트 참고(&lt;A title="[http://liketheocean.tistory.com/159]로 이동합니다." href="http://liketheocean.tistory.com/159" target=_blank>Fritzing&lt;/A>, &lt;A title="[http://liketheocean.tistory.com/169]로 이동합니다." href="http://liketheocean.tistory.com/169" target=_blank>Fritzing 라이브러리 만들기&lt;/A>)&lt;br>
+&lt;strong>    Wiz820io의 Fritzing 라이브러리&lt;/strong>&lt;/p></description></item></channel></rss>

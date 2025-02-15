@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>오픈소스 하드웨어 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4/</link><description>Recent content in 오픈소스 하드웨어 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 29 Jan 2014 02:47:14 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4/index.xml" rel="self" type="application/rss+xml"/><item><title>오픈소스 하드웨어 정의 – OSHW definition 1.0</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%A0%95%EC%9D%98-oshw-definition-1-0/</link><pubDate>Wed, 29 Jan 2014 02:47:14 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%A0%95%EC%9D%98-oshw-definition-1-0/</guid><description>
+&lt;p>예전에 오픈소스 하드웨어 정의(OSHW definition 1.0)를 &lt;a title="freedomdefined.org" href="http://freedomdefined.org/OSHW" target="_blank">위키&lt;/a>에서 한글 번역을 했다. 이때도 권한이 없어서 변경 저장을 위해 관리자에게 메일을 보내서 수정을 한 기억이 있다. 수정을 끝내고 &lt;a href="http://www.oshwa.org/" target="_blank">오픈소스 하드웨어 협회의 홈페이지&lt;/a>에 게재를 요청하고 승락을 받았는데, 최근에 보니 업데이트가 되어있다.&lt;/p>
+&lt;blockquote>
+&lt;p> Translations: &lt;a href="http://www.oshwa.org/definition/chinese/" title="Chinese">中文&lt;/a>, &lt;a href="http://www.oshwa.org/definition/french/" title="French">Français&lt;/a>, &lt;a href="http://www.oshwa.org/definition/greek/" title="Greek">Ελληνικά&lt;/a>,  &lt;a href="http://www.oshwa.org/definition/Italian/" title="Italian">Italiano&lt;/a>,  &lt;a href="http://www.oshwa.org/definition/japanese/" title="Japanese">日本語&lt;/a>, &lt;a href="http://www.oshwa.org/definition/korean/" title="Korean">한글&lt;/a>,  &lt;a href="http://www.oshwa.org/definition/latin/" title="Latin">Latina&lt;/a>,&lt;a href="http://www.oshwa.org/definition/portuguese/" title="Portuguese">Português&lt;/a>, &lt;a href="http://www.oshwa.org/definition/spanish/" title="Spanish">Español&lt;/a>, &lt;a href="http://www.oshwa.org/definition/swedish/" title="Swedish">Svenska&lt;/a>,   &amp;lt;= 번역된 순서대로인가? ^^&lt;/p>&lt;/blockquote>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/01/oshw.png">&lt;img loading="lazy" class="wp-image-2780 aligncenter" alt="oshw" src="https://openmicrolab.com/images/2014/01/oshw.png" width="599" height="372" srcset="https://openmicrolab.com/images/2014/01/oshw.png 998w, https://openmicrolab.com/images/2014/01/oshw-300x186.png 300w" sizes="(max-width: 599px) 100vw, 599px" />&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>Rascal 오픈 하드웨어 플랫폼</title><link>https://openmicrolab.com/rascal-%EC%98%A4%ED%94%88-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%94%8C%EB%9E%AB%ED%8F%BC/</link><pubDate>Thu, 05 Jan 2012 11:29:06 +0000</pubDate><guid>https://openmicrolab.com/rascal-%EC%98%A4%ED%94%88-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%94%8C%EB%9E%AB%ED%8F%BC/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.15648E464F05855D0BE66D.jpg" class="aligncenter" width="492" height="299" alt="" filename="rascal-0.6-beta-2011-02-26.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>위 사진에 보이는 보드가 Rascal이다. Rascal은 아두이노와 같은 오픈하드웨어 플랫폼이다.&lt;br>
+특징은 아두이노보다 파워풀한 하드웨어 스펙이라서 아두이노 보다 높은 성능을 요구하는 응용에 알맞다. &lt;/p>
+&lt;p>**하드웨어&lt;br>
+**&lt;/p>
+&lt;UL style="LIST-STYLE-TYPE: square">
+&lt;br />
+&lt;LI>
+Atmel사의 AT91SAM9G20
+&lt;/LI>
+&lt;br />
+&lt;LI>
+MicroSD
+&lt;/LI>
+&lt;br />
+&lt;LI>
+4M Serial Flash&lt;br /> 등의 하드웨어의 리눅스 기반의 보드이다.&lt;br /> 관련 하드웨어 정보: &lt;A href="http://rascalmicro.com/docs/sources.html">http://rascalmicro.com/docs/sources.html&lt;/A>
+&lt;/LI>
+&lt;/UL>
+&lt;p>그리고 아두이노의 쉴드들을 활용할 수 있게 보드사이즈를 맞추었다.&lt;/p>
+&lt;p>**가장 특징적인 것은 기본적으로 네트워크가 지원이 되고 Phyton을 이용해서 프로그래밍을 한다.&lt;br>
+즉 보드에 자체 웹서버가 있고 웹 에디터가 내장이 되어 있어서 PC에서 보드에 접속을 해서 웹 환경에서 Phyton으로 프로그래밍을 하는 형태이다.&lt;br>
+**&lt;br>
+&lt;strong>Rascal의 특징&lt;/strong>&lt;/p></description></item><item><title>LeafLabs의 Maple mini, Maple Ret 5 보드 사용기</title><link>https://openmicrolab.com/leaflabs%EC%9D%98-maple-mini-maple-ret-5-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</link><pubDate>Fri, 25 Nov 2011 11:31:38 +0000</pubDate><guid>https://openmicrolab.com/leaflabs%EC%9D%98-maple-mini-maple-ret-5-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</guid><description>
+&lt;p>&lt;A title="[http://arduino.cc]로 이동합니다." href="http://arduino.cc/" target=_blank>Arduino&lt;/A>가 AVR을 기반으로 하여 오픈하드웨어 플랫폼을 주도하고 있는데, &lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>은 STM32시리즈를 기반으로 하는 오픈하드웨어 플랫폼을 만들고 있다. &lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>의 보드들의 이름은 Maple이다.&lt;br>
+&lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>사의 홈페이지에서 주문을 하니 한 일주일만에 배송이 되었다. &lt;A title="[http://arduino.cc]로 이동합니다." href="http://arduino.cc/" target=_blank>Arduino&lt;/A>가 요즘에는 브랜딩 작업을 하고 있고, 포장 및 디자인까지 신경을 쓰는 반면 역시 후발 주자답게 포장이 좀 허접하다. 대신 사탕을 같이 넣어서 주네..ㅋㅋ&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.180B40494ECF78311B6A81.jpg" class="aligncenter" width="490" height="322" alt="" filename="Maple with Candy.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile6.uf.180B55484ECF78B6227356.jpg" class="aligncenter" width="551" height="331" alt="" filename="Maple.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>아두이노와 같은 모습의 IDE를 사용하는데, 일단 처음 부터 막힌다. &lt;A title="[http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip]로 이동합니다." href="http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip" target=_blank>IDE 다운로드&lt;/A>&lt;/p></description></item><item><title>마이크로칩 chipKIT for the Arduino™ Community</title><link>https://openmicrolab.com/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%B9%A9-chipkit-for-the-arduino-community/</link><pubDate>Tue, 24 May 2011 04:56:22 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%B9%A9-chipkit-for-the-arduino-community/</guid><description>
+&lt;p>지난 글(&lt;A title="[http://liketheocean.tistory.com/111]로 이동합니다." href="http://liketheocean.tistory.com/111" target=_blank>이젠 오픈소스 하드웨어가 대세&lt;/A>)에서 마이크로칩에서 Arduino 호환 보드인 chipKIT를 릴리즈 했다고 했는데, 유트브에 동영상이 올라왔네요.&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;br />
+&lt;/DIV>
+&lt;DIV>
+아래 링크는 공식 릴리즈 주소&lt;br /> &lt;A href="http://www.microchip.com/pagehandler/en-us/chipKIT-Development-Platform.html">http://www.microchip.com/pagehandler/en-us/chipKIT-Development-Platform.html&lt;/A>&lt;/p>
+&lt;p>
+&lt;/DIV>
+&lt;/p></description></item></channel></rss>

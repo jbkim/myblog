@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Embedded Software Soution on OpenMicroLab</title><link>https://openmicrolab.com/tags/embedded-software-soution/</link><description>Recent content in Embedded Software Soution on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 12 Mar 2012 10:50:26 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/embedded-software-soution/index.xml" rel="self" type="application/rss+xml"/><item><title>STM32 – STM8 Embedded software solutions</title><link>https://openmicrolab.com/stm32-stm8-embedded-software-solutions/</link><pubDate>Mon, 12 Mar 2012 10:50:26 +0000</pubDate><guid>https://openmicrolab.com/stm32-stm8-embedded-software-solutions/</guid><description>
+&lt;p>잘 정리된 STM32, STM8의 s/w solution 가이드&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;p>
+&lt;a href="https://openmicrolab.com/images/2012/03/stm32-stm8.png">&lt;img loading="lazy" class="aligncenter wp-image-4722 size-full" src="https://openmicrolab.com/images/2012/03/stm32-stm8.png" alt="" width="848" height="553" srcset="https://openmicrolab.com/images/2012/03/stm32-stm8.png 848w, https://openmicrolab.com/images/2012/03/stm32-stm8-300x196.png 300w, https://openmicrolab.com/images/2012/03/stm32-stm8-768x501.png 768w" sizes="(max-width: 848px) 100vw, 848px" />&lt;/a>
+&lt;/p>
+&lt;p>
+위 그림에 있는 모든 내용들의 솔루션이 정리되어 있다.
+&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;a class="aligncenter" href="https://openmicrolab.com/images/1/cfile2.uf.113A493B4F5DD4BC33C7AD.pdf">cfile2.uf.113A493B4F5DD4BC33C7AD.pdf&lt;/a>
+&lt;/p></description></item></channel></rss>

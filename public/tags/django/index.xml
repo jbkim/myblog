@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Django on OpenMicroLab</title><link>https://openmicrolab.com/tags/django/</link><description>Recent content in Django on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 05 Aug 2017 09:20:15 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/django/index.xml" rel="self" type="application/rss+xml"/><item><title>Django 개발환경 설치</title><link>https://openmicrolab.com/django-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%84%A4%EC%B9%98/</link><pubDate>Sat, 05 Aug 2017 09:20:15 +0000</pubDate><guid>https://openmicrolab.com/django-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;p>$아래와 같은 것들이 필요한데, PIP 및 Virtualenv등의 설치는 &lt;a href="http://openmicrolab.com/xcode-pip-virtualenv-virtualenvwrapper-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" target="_blank" rel="noopener noreferrer">이전 포스팅&lt;/a> 참고&lt;/p>
+&lt;ul>
+&lt;li>Python&lt;/li>
+&lt;li>Git&lt;/li>
+&lt;li>Homebrew&lt;/li>
+&lt;li>Xcode Command Line Tools&lt;/li>
+&lt;li>pip (Package install for python)&lt;/li>
+&lt;li>pil (python imaging library)&lt;/li>
+&lt;li>virtualenv : 파이썬의 버추얼 환경을 위한 프로그램&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>파이썬 설치&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>$ brew install python –universal –framework&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>장고 설치&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>$ pip install django&lt;/p>&lt;/blockquote>
+&lt;p>sqlite &lt;strong>설치&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>$ brew install readline sqlite gdbm&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>파이썬 이미지 라이브러리&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>pip install PIL&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>버추얼 환경 만들기&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>$ virtualenv [버추얼환경 이름] –no-site-packages&lt;/p></description></item></channel></rss>

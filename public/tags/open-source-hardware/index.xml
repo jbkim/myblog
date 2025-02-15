@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Source Hardware on OpenMicroLab</title><link>https://openmicrolab.com/tags/open-source-hardware/</link><description>Recent content in Open Source Hardware on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 24 Jun 2017 14:23:51 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/open-source-hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>Adafruit 관련 정보</title><link>https://openmicrolab.com/adafruit-%EA%B4%80%EB%A0%A8-%EC%A0%95%EB%B3%B4/</link><pubDate>Sat, 24 Jun 2017 14:23:51 +0000</pubDate><guid>https://openmicrolab.com/adafruit-%EA%B4%80%EB%A0%A8-%EC%A0%95%EB%B3%B4/</guid><description>
+&lt;p>2005년에 설립된 Adafruit 이야기&lt;/p>
+&lt;blockquote>
+&lt;p>Adafruit is now a highly successful community-driven electronics company, educational resource, and maker community thriving in SoHo, Manhattan.&lt;/p>&lt;/blockquote>
+&lt;h3 id="description">Description&lt;/h3>
+&lt;p class="p1">
+&lt;span class="s1">Online learning resource, marketplace, and maker community for do-it-yourself electronics&lt;/span>
+&lt;/p>
+&lt;h3 id="technical-data">Technical Data&lt;/h3>
+&lt;ul>
+&lt;li>Adafruit employs 105 people in their 50,000-sq.-ft. factory in Manhattan&lt;/li>
+&lt;li>100% woman owned, no loans, no venture capital&lt;/li>
+&lt;li>Recorded $45 million in revenue in 2016&lt;/li>
+&lt;li>Received its millionth order in January 2016&lt;/li>
+&lt;li>14 million website page views and over 2 million uniques a month&lt;/li>
+&lt;li>34 million YouTube views and over 207,000 subscribers&lt;/li>
+&lt;li>Social media reach: 119,000+ Twitter followers, 2.1 million followers on G+ (4 million for Ladyada), 77,000 Facebook subscribers, 51,000 Instagram followers&lt;/li>
+&lt;li>Limor Fried was featured on the cover of &lt;em>Wired&lt;/em> (April, 2011) and was named Entrepreneur of the Year by &lt;em>Entrepreneur&lt;/em> magazine in 2012&lt;/li>
+&lt;li>Limor is a founding member of the NYC Industrial Business Advisory Council&lt;/li>
+&lt;li>Adafruit is ranked No. 11 among the top 20 U.S. manufacturing companies, No.1 in New York City by &lt;em>Inc.&lt;/em> magazine, and is listed among &lt;em>Inc.&lt;/em>’s 5000 “fastest growing private companies”&lt;/li>
+&lt;li>In 2016, Limor was named one of the White House’s “Champions of Change”&lt;/li>
+&lt;/ul>
+&lt;h3 id="features">Features&lt;/h3>
+&lt;p>Adafruit’s 10 Most Popular Products&lt;/p></description></item><item><title>Open Source Hardware 관련 기사들</title><link>https://openmicrolab.com/open-source-hardware-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%82%AC%EB%93%A4/</link><pubDate>Sun, 20 Apr 2014 15:49:13 +0000</pubDate><guid>https://openmicrolab.com/open-source-hardware-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%82%AC%EB%93%A4/</guid><description>
+&lt;p>좀 오래된 기사도 있지만 나름 읽어볼 만 하다.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;h3 id="a-hrefhttpwwwcnbccomid101133560-target_blankhardware-is-now-open-sourced-for-businessa">&lt;a href="http://www.cnbc.com/id/101133560" target="_blank">Hardware is now open (sourced) for business&lt;/a>&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;em>Adafruit’s revenue has tripled year over year, and the company projects full-year revenue for 2013 will reach $20 million. Customers are not just limited to hobbyists and isolated makers, said Limor Fried, founder of Adafruit.&lt;/em>&lt;/p>
+&lt;p>“What we’re building is really twofold,” said co-founder David Lang. “The individual tool and specific device is great. The other half is this community of people who have assembled.” – OpenRoV&lt;/p></description></item><item><title>Maker Faire Shenzhen</title><link>https://openmicrolab.com/maker-faire-shenzhen/</link><pubDate>Tue, 15 Apr 2014 04:02:32 +0000</pubDate><guid>https://openmicrolab.com/maker-faire-shenzhen/</guid><description>
+&lt;p>&lt;span style="line-height: 1.5em;">지난 4월 6-7일 중국 심천에서 메이커페어가 열렸다. 이번이 3번째인데, 이전까지는 미니 메이커 페어였는데 이번에는 정식 메이커페어의 이름을 달고 규모도 크고 글로벌하게 진행이 됐다. 장소는 심천의 Shekou 지역인데 이곳은 외국인도 많이 사는 것 같고 거리는 중국같지 않게(?) 깔금하고 공방, 갤러리, 카페가 많은 지역이다. 외국인이 꽤 있는 이유는 아마도 이 지역에서 하드웨어 스타트업들이 많이 생기고, 생산을 중국에서 하는 외국 업체들이 많아서이지 않을가 추측을 해본다.&lt;/span>&lt;/p>
+&lt;div id="attachment_2974" style="width: 624px" class="wp-caption alignnone">
+&lt;a href="https://openmicrolab.com/images/2014/04/2014-04-06-09.29.08.jpg">&lt;img aria-describedby="caption-attachment-2974" loading="lazy" class="wp-image-2974 " alt="2014-04-06 09.29.08" src="https://openmicrolab.com/images/2014/04/2014-04-06-09.29.08-1024x768.jpg" width="614" height="461" srcset="https://openmicrolab.com/images/2014/04/2014-04-06-09.29.08-1024x768.jpg 1024w, https://openmicrolab.com/images/2014/04/2014-04-06-09.29.08-300x225.jpg 300w" sizes="(max-width: 614px) 100vw, 614px" />&lt;/a>
+&lt;p id="caption-attachment-2974" class="wp-caption-text">
+전시 장소로 가는 길
+&lt;/p></description></item><item><title>오픈소스하드웨어 활동</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%99%9C%EB%8F%99/</link><pubDate>Thu, 03 Apr 2014 00:34:15 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%99%9C%EB%8F%99/</guid><description>
+&lt;p>지난 몇년간 오픈소스하드웨어 활동을 정리했다.&lt;/p>
+&lt;p>Open Source Hardware Activities for recent years.&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="OSHW Activities" href="https://www.slideshare.net/JinbuhmKim/oshw-activities" target="_blank">OSHW Activities&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>오픈 소스 하드웨어를 위해 정부가 할 일?</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%A5%BC-%EC%9C%84%ED%95%B4-%EC%A0%95%EB%B6%80%EA%B0%80-%ED%95%A0-%EC%9D%BC/</link><pubDate>Wed, 29 Jan 2014 06:09:32 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%A5%BC-%EC%9C%84%ED%95%B4-%EC%A0%95%EB%B6%80%EA%B0%80-%ED%95%A0-%EC%9D%BC/</guid><description>
+&lt;h3 id="오픈-소스-하드웨어">오픈 소스 하드웨어&lt;/h3>
+&lt;p>업무때문에 2010년도에 아두이노팀을 만나고 오픈소스 하드웨어에 관심을 갖게되어서 뉴욕에서 열린 오픈하드웨어 서밋에도 참석을 하고, 메이커페어도 참석을 했다. 이후에 아두이노 IDE가 다국어 버젼을 지원을 할때, 한국어 번역도 하고(덕분에 지금도 버젼이 바뀌면 메일이 온다…) &lt;a href="http://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%A0%95%EC%9D%98-oshw-definition-1-0/" target="_blank">OSHW definition 도 번역&lt;/a>을 했다.  최근 아두이노의 영향때문에 크라우드 펀딩 사이트인 &lt;a href="https://www.kickstarter.com/" target="_blank">Kickstarter.com&lt;/a>에도 아두이노로 검색을 하면 161여개의 프로젝트가 뜬다.&lt;/p>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/01/Kickstarter_Arduino.png">&lt;img loading="lazy" class=" wp-image-2786 aligncenter" alt="Kickstarter_Arduino" src="https://openmicrolab.com/images/2014/01/Kickstarter_Arduino.png" width="595" height="583" srcset="https://openmicrolab.com/images/2014/01/Kickstarter_Arduino.png 744w, https://openmicrolab.com/images/2014/01/Kickstarter_Arduino-300x293.png 300w" sizes="(max-width: 595px) 100vw, 595px" />&lt;/a>
+&lt;/p>
+&lt;h3 id="ict-diy">ICT D.I.Y&lt;/h3>
+&lt;p>국내에도 오픈소스 하드웨어에 대한 관심아 졌는데 특히 정부에서도 이 분야에 관심을 가지고 있는듯 하다. &lt;a href="http://www.msip.go.kr/www/brd/m_211/view.do?seq=878&amp;srchFr=&amp;srchTo=&amp;srchWord=%EC%B0%BD%EC%A1%B0%EA%B2%BD%EC%A0%9C&amp;srchTp=1&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=14" target="_blank">미래창조과학부의 보도 자료&lt;/a>에 의하면 2017년까지 ICT R&amp;amp;D예산 총 8.5조를 투자하는데 이중 15대 미래서비스 중 하나로 들어가 있는 것이 ICT D.I.Y서비스 이다. 물론 IoT플랫폼도 오픈 소스 하드웨어와 관련이 있다. 그런데 몇가지 궁금한 점이 있다.&lt;/p></description></item><item><title>오픈소스 하드웨어 정의 – OSHW definition 1.0</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%A0%95%EC%9D%98-oshw-definition-1-0/</link><pubDate>Wed, 29 Jan 2014 02:47:14 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%A0%95%EC%9D%98-oshw-definition-1-0/</guid><description>
+&lt;p>예전에 오픈소스 하드웨어 정의(OSHW definition 1.0)를 &lt;a title="freedomdefined.org" href="http://freedomdefined.org/OSHW" target="_blank">위키&lt;/a>에서 한글 번역을 했다. 이때도 권한이 없어서 변경 저장을 위해 관리자에게 메일을 보내서 수정을 한 기억이 있다. 수정을 끝내고 &lt;a href="http://www.oshwa.org/" target="_blank">오픈소스 하드웨어 협회의 홈페이지&lt;/a>에 게재를 요청하고 승락을 받았는데, 최근에 보니 업데이트가 되어있다.&lt;/p>
+&lt;blockquote>
+&lt;p> Translations: &lt;a href="http://www.oshwa.org/definition/chinese/" title="Chinese">中文&lt;/a>, &lt;a href="http://www.oshwa.org/definition/french/" title="French">Français&lt;/a>, &lt;a href="http://www.oshwa.org/definition/greek/" title="Greek">Ελληνικά&lt;/a>,  &lt;a href="http://www.oshwa.org/definition/Italian/" title="Italian">Italiano&lt;/a>,  &lt;a href="http://www.oshwa.org/definition/japanese/" title="Japanese">日本語&lt;/a>, &lt;a href="http://www.oshwa.org/definition/korean/" title="Korean">한글&lt;/a>,  &lt;a href="http://www.oshwa.org/definition/latin/" title="Latin">Latina&lt;/a>,&lt;a href="http://www.oshwa.org/definition/portuguese/" title="Portuguese">Português&lt;/a>, &lt;a href="http://www.oshwa.org/definition/spanish/" title="Spanish">Español&lt;/a>, &lt;a href="http://www.oshwa.org/definition/swedish/" title="Swedish">Svenska&lt;/a>,   &amp;lt;= 번역된 순서대로인가? ^^&lt;/p>&lt;/blockquote>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/01/oshw.png">&lt;img loading="lazy" class="wp-image-2780 aligncenter" alt="oshw" src="https://openmicrolab.com/images/2014/01/oshw.png" width="599" height="372" srcset="https://openmicrolab.com/images/2014/01/oshw.png 998w, https://openmicrolab.com/images/2014/01/oshw-300x186.png 300w" sizes="(max-width: 599px) 100vw, 599px" />&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>Intel Galileo board와 Arduino Tre</title><link>https://openmicrolab.com/intel-galileo-board%EC%99%80-arduino-tre/</link><pubDate>Mon, 07 Oct 2013 08:08:37 +0000</pubDate><guid>https://openmicrolab.com/intel-galileo-board%EC%99%80-arduino-tre/</guid><description>
+&lt;h3 id="intel-galileo-board">Intel Galileo Board&lt;/h3>
+&lt;p>최근 &lt;a href="http://arduino.cc/" target="_blank">아두이노&lt;/a>는 매년 메이커페어에서 신제품의 출시에 대한 내용을 발표하는 것 같다. 올해는 지난 주말에 이태리 로마에서 있었던 &lt;a href="http://www.makerfairerome.eu/en/" target="_blank">메이커페어 유럽에디션&lt;/a>에서 인텔과의 협력으로 나온 보드인 &lt;a href="http://arduino.cc/en/ArduinoCertified/IntelGalileo" target="_blank">Intel Galileo Board&lt;/a>를 발표를 했다. PC 기반의 칩셋업체인 인텔이 임베디드분야에 그것도 오픈하드웨어에 발을 담그기 시작한 것이니 최근 오픈 소스 하드웨어의 열풍이 세상을 변화시키고 있는 것은 확실한 것 같다.&lt;/p>
+&lt;blockquote>
+&lt;p>그런데 한가지 재미있는 것은 이 제품이 아두이노의 “Arduino Certified” 제품군에 들어간 것이다. 우리가 익히 알고 있듯이 인텔은 자신들의 칩셋을 PC 업체에 공급을 하면서 Intel Inside라는 로고를 붙이게 했다. 하지만 오픈소스하드웨어 시장에서는 도리어 아두이노가 거대 기업 인텔에게 “Arduino Certified”라는 로고를 주다니…&lt;/p></description></item><item><title>오픈소스하드웨어에 관하여</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC/</link><pubDate>Thu, 05 Sep 2013 02:59:24 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC/</guid><description>
+&lt;p>최근 국내에서도 오픈소스하드웨어가 점차 인기를 끌고 있다.&lt;/p>
+&lt;p>인기를 어떻게 알 수 있을까? 오픈소스하드웨어중 하나인 아두이노 관련 책을 인터넷 서점에서 검색해보면 2010년도에 한 권이던 책이, 2012년도를 기점으로 2013년에는 15권이나 된다. 대학에서도 아두이노를 가르치고 심지어는 고등학교 동아리에서도 아두이노를 가지고 프로젝트를 하는 것을 보았다.&lt;/p>
+&lt;p>&lt;a href="http://www.seouldigitalforum.org/kr/years/cur_introduction.jsp" target="_blank">2013년도 서울디지털포럼&lt;/a>의 주제가 초협력이었고, 여기서 마친 자쿠보우스키(&lt;a href="http://opensourceecology.org/" target="_blank">오픈소스 에콜로지&lt;/a> 창립자), 카타리나 모타(&lt;a href="http://openmaterials.org/" target="_blank">오픈 머티리얼&lt;/a> &amp;amp; &lt;a href="http://everywheretech.org/" target="_blank">에브리웨어테크&lt;/a> 공동 창립자), 강윤서(&lt;a href="https://opentechforever.com/" target="_blank">오픈테크포에버&lt;/a> 창립자) 등 오픈소스 하드웨어 운동가들이 SDF에 참석해 오픈소스 정신의 중요성을 알렸다.  – &lt;a href="http://www.bloter.net/archives/151659" target="_blank">참고기사&lt;/a>. 크라우드펀딩 사이트인 &lt;a href="http://www.kickstarter.com" target="_blank">Kickstarter.com&lt;/a> 에서 오픈소스하드웨어 플랫폼인 아두이노로 검색을 하면 &lt;a href="http://www.kickstarter.com/projects/search?utf8=%E2%9C%93&amp;term=arduino" target="_blank">122개의 프로젝트&lt;/a>가 나온다. 우리나라는 몇 년 늦은 감이 있지만 이미 전세계적으로 오픈소스하드웨어의 열풍은 대단하다. 리눅스같은 오픈소스소프트웨어는 알겠는데, 그럼 오픈소스하드웨어란무엇인가?&lt;/p></description></item><item><title>Visual diffs</title><link>https://openmicrolab.com/visual-diffs/</link><pubDate>Wed, 05 Oct 2011 10:38:11 +0000</pubDate><guid>https://openmicrolab.com/visual-diffs/</guid><description>
+&lt;p>오픈 소스 소프트웨어의 버젼관리는 SourceForge, GitHub, Google Code등을 이용가능하다.&lt;br>
+하지만 오픈 소스 하드웨어의 경우는 아직 이런 툴들이 없다.&lt;br>
+물론 버전관리는 하지만 회로도나 거버파일같은 CAD 자료의 경우 text로 적어 놓은 버젼을 관리하는게 이제까지의 방법이다.&lt;br>
+만약 이런 CAD자료들이 plain text로 저장이 가능하다면 diff를 써서 바뀐 정보를 알수가 있는데,&lt;br>
+다른 방법은 &lt;A title="[http://www.imagemagick.org/script/index.php]로 이동합니다." href="http://www.imagemagick.org/script/index.php" target=_blank>imageMagic utility&lt;/A>를 사용을해서 바뀐 정보를 확인하는 것이다.&lt;br>
+또 다른 방법은 자료를 PDF로 만든후 &lt;A title="[http://www.qtrac.eu/diffpdf.html]로 이동합니다." href="http://www.qtrac.eu/diffpdf.html" target=_blank>DiffPDF&lt;/A>를 사용하는 방법&lt;br>
+구체적인 방법은 &lt;SPAN style="TEXT-ALIGN: left; WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; LETTER-SPACING: normal; FONT: 13px 'Trebuchet MS', 'Gill Sans', Helvetica, Arial, sans-serif; WHITE-SPACE: normal; ORPHANS: 2; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;/p></description></item><item><title>OSHW Logo 선정</title><link>https://openmicrolab.com/oshw-logo-%EC%84%A0%EC%A0%95/</link><pubDate>Wed, 20 Apr 2011 05:12:35 +0000</pubDate><guid>https://openmicrolab.com/oshw-logo-%EC%84%A0%EC%A0%95/</guid><description>
+&lt;p>대략 9000명이 투표를 해서 OSHW Logo가 선정이 되었네요.&lt;br>
+투표중 몇개의 IP가 자동으로 많은 투표를 했고 이걸 무효 처리했다는 에피소드도 있었답니다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.11691B454DAE67DE30935D.png" class="aligncenter" width="300" height="300" alt="" filename="OpenHardwareLogo.png" filemime="image/jpeg" />
+&lt;/P>PCB에 디자인을 위해 Eagle PCB 및 EDA툴용 자료도 있습니다.
+&lt;p>&lt;a href="http://www.openhardwaresummit.org/2011/04/08/eagle-files-for-the-open-hardware-logo/">http://www.openhardwaresummit.org/2011/04/08/eagle-files-for-the-open-hardware-logo/&lt;/a>&lt;/p>
+&lt;p>Jason Kruse라는 분이 스티커로도 제작을 해서 배송비만 내면 무료로 보내준다고도 합니다.&lt;br>
+&lt;a href="http://www.openhardwaresummit.org/2011/04/13/open-hardware-decals/">http://www.openhardwaresummit.org/2011/04/13/open-hardware-decals/&lt;/a>&lt;br>
+미국은 $1, 해외는 $2 이네요. Paypal로 구매했는데 살짝 기대되네요. ^^&lt;/p></description></item><item><title>Open Source Hardware Logo</title><link>https://openmicrolab.com/open-source-hardware-logo/</link><pubDate>Mon, 21 Mar 2011 11:48:47 +0000</pubDate><guid>https://openmicrolab.com/open-source-hardware-logo/</guid><description>
+&lt;p>Open Source Software에서는 다음과 같은 로고를 사용을 합니다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.1844AA504D873A401B5B45.png" class="aligncenter" width="168" height="140" alt="" filename="opensource-logo.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>&lt;strong>OSHW&lt;/strong>에서도 공식 로고를 만들기 위해 공모를 했습니다.&lt;br>
+총 129개가 접수가 됐네요.&lt;br>
+로고로 선정되기 위한 3가지 기준은&lt;br>
+  -. PCB에 인쇄가 쉽고 보기 쉬워야 하고,&lt;br>
+  -. 회로도에 인쇄가 쉽고 보기 쉬워야 하고,&lt;br>
+  -. 개방성을 잘 나타내야하네요.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile3.uf.153BC74D4D8739FE389333.png" class="aligncenter" width="100" height="102" alt="" filename="oh-1-100.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>이건 Open Hardware Summit에서 제출한 로고이고…&lt;br>
+나머지는 아래 링크에서 확인 가능 합니다.&lt;br>
+&lt;a href="http://www.openhardwaresummit.org/oshw-logo-v1-0/">http://www.openhardwaresummit.org/oshw-logo-v1-0/&lt;/a>&lt;/p>
+&lt;p>129개의 응모작중에서 10개의 작품이 투표가 진행이 되고 있습니다.&lt;br>
+어떤 로고가 좋은신 가요? &lt;a href="http://www.openhardwaresummit.org/oshw-logo-selection/">http://www.openhardwaresummit.org/oshw-logo-selection/&lt;/a>&lt;/p></description></item><item><title>어떻게 하면 오픈 소스 하드웨어 (Open Source Hardware)가 성공을 할까?</title><link>https://openmicrolab.com/%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EB%A9%B4-%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-open-source-hardware%EA%B0%80-%EC%84%B1%EA%B3%B5%EC%9D%84-%ED%95%A0%EA%B9%8C/</link><pubDate>Mon, 06 Sep 2010 12:28:51 +0000</pubDate><guid>https://openmicrolab.com/%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EB%A9%B4-%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-open-source-hardware%EA%B0%80-%EC%84%B1%EA%B3%B5%EC%9D%84-%ED%95%A0%EA%B9%8C/</guid><description>
+&lt;p>&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;/p>&lt;/p>
+&lt;p class="MsoNormal" align="left" style="text-align:left;mso-pagination:widow-orphan;
+text-autospace:ideograph-numeric ideograph-other;word-break:keep-all">
+&lt;font class="Apple-style-span" color="#000000">이미 소프트웨어쪽에서는&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000"> Linux&lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">를 필두로 많은&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000"> Open Source Software&lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">들이&lt;br /> 있었고 지금도 활성화되고 있다&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">. &lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">이러한 움직임은 하드웨어에도 영향을 미치게 되었다&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">. &lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">잘 정리된 페이지는&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">&amp;nbsp;&lt;/font>&lt;a href="http://makezine.com/" target="_blank" title="[http://makezine.com/]로 이동합니다.">&lt;font class="Apple-style-span" color="#5C7FB0">MakeZine&lt;/font>&lt;/a>&lt;/span>&lt;font class="Apple-style-span" color="#000000">의&lt;br /> 블로그를 참고하자&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">.&amp;nbsp;&lt;/font>&lt;/span>&lt;b>&lt;span lang="EN-US" style="font-size: 11pt; ">&lt;a href="http://blog.makezine.com/archive/2009/12/open_source_hardware_2009_-_the_def.html" target="_blank" title="[http://blog.makezine.com/archive/2009/12/open_source_hardware_2009_-_the_def.html]로 이동합니다.">&lt;font class="Apple-style-span" color="#5C7FB0">Open source hardware 2009 &amp;#8211; The definitive guide to open&lt;br /> source hardware projects in 2009&lt;/font>&lt;/a>&lt;/span>&lt;/b>
+&lt;/p>
+&lt;p>
+&lt;/span>&lt;/font>&lt;font class="Apple-style-span" size="4" style="line-height: 1; ">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;/p>
+&lt;p class="MsoNormal" align="left" style="text-align:left;mso-pagination:widow-orphan;
+text-autospace:ideograph-numeric ideograph-other;word-break:keep-all">
+&lt;font class="Apple-style-span" color="#000000">내용을 살펴보면&lt;br /> 매우 다양한 분야에서 오픈 소스 하드웨어의 이슈가 있다&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">.&amp;nbsp;&lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">그럼 어떻게&lt;br /> 하면 이 오픈 소스 하드웨어가 활성화 될 수 있을까&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">?&lt;/font>&lt;/span>
+&lt;/p></description></item></channel></rss>

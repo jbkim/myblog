@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on OpenMicroLab</title><link>https://openmicrolab.com/tags/ubuntu/</link><description>Recent content in Ubuntu on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 07 May 2016 07:42:22 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>우분투에 WMware Tools 설치</title><link>https://openmicrolab.com/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%97%90-wmware-tools-%EC%84%A4%EC%B9%98/</link><pubDate>Sat, 07 May 2016 07:42:22 +0000</pubDate><guid>https://openmicrolab.com/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%97%90-wmware-tools-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;p>만약 다음과 같은 메시지가 뜬다면 &lt;a href="https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1017687" target="_blank">이 링크&lt;/a>의 내용을 참고 – 플로피 제거 및 CD/DVD를 삭제 및 다시 추가 후 진행&lt;/p>
+&lt;blockquote>
+&lt;p>VMware Tools installation cannot be started manually while Easy Install is in progress.&lt;/p>&lt;/blockquote>
+&lt;h3 id="우분투에-wmware-tools-설치">우분투에 WMware Tools 설치&lt;/h3>
+&lt;p>Install WMware Tools 를 클릭하면 CD/DVD가 마운트 되됨는데, 여기에 있는 압축 파일을 copy후 풀어서 설치를 해야 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>sudo mkdir /mnt/cdrom&lt;br>
+sudo mount /dev/cdrom /mnt/cdrom/&lt;/p>
+&lt;p>cd /mnt/cdrom/&lt;br>
+cp VMwareTools-9.6.1-1378637.tar.gz ~&lt;/p>
+&lt;p>cd ~&lt;br>
+tar xvzf VMwareTools-9.6.1-1378637.tar.gz&lt;br>
+cd vmware-tools-distrib/&lt;br>
+sudo ./vmware-install.pl&lt;/p></description></item></channel></rss>

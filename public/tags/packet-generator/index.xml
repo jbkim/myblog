@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Packet Generator on OpenMicroLab</title><link>https://openmicrolab.com/tags/packet-generator/</link><description>Recent content in Packet Generator on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 04 Oct 2010 05:54:33 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/packet-generator/index.xml" rel="self" type="application/rss+xml"/><item><title>네트워크 패킷 생성기 (NPG: Network Packet Generator)</title><link>https://openmicrolab.com/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%8C%A8%ED%82%B7-%EC%83%9D%EC%84%B1%EA%B8%B0-npg-network-packet-generator/</link><pubDate>Mon, 04 Oct 2010 05:54:33 +0000</pubDate><guid>https://openmicrolab.com/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%8C%A8%ED%82%B7-%EC%83%9D%EC%84%B1%EA%B8%B0-npg-network-packet-generator/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 11pt; ">요즘은 제가 필요한 것을 인터넷에서 찾으면 다 있네요. &lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">누군가는 같은 고민을하고 고맙게도 만들었다는 사실… ^^&lt;/span>&lt;/span>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">NPG는&amp;nbsp;&lt;/span>&lt;/span>&lt;/font>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">Winpcap을 사용하여 패킷을 보낼수 있는 &lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">윈도우즈 기반의 네트워크 패킷 생성기입니다. 즉 따로 프로그래밍을 하지 않고 원하는 패킷을 만들어서 보낼 수 있는 툴입니다. 사용법도 간단하고 옵션도 많지 않기 때문에 바로 사용이 가능합니다. GPL 라이센스이므로 자유롭게 사용이 가능하네요.&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;a href="http://www.wikistc.org/wiki/Network_packet_generator">&lt;span style="font-size: 11pt; ">http://www.wikistc.org/wiki/Network_packet_generator&lt;/span>&lt;/a>&lt;span style="font-size: 11pt; ">&amp;nbsp;에 자세한 설명이 나와있고, 설치 파일은 이 페이지의 제일 아래보시면 다운받으실 수 있습니다.&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;b>사용법&lt;/b>&lt;/span>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: sans-serif; line-height: 19px; font-size: 13px; ">&lt;/p></description></item></channel></rss>

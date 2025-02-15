@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>T Wi-Fi Zone on OpenMicroLab</title><link>https://openmicrolab.com/tags/t-wi-fi-zone/</link><description>Recent content in T Wi-Fi Zone on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 24 Sep 2010 05:00:10 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/t-wi-fi-zone/index.xml" rel="self" type="application/rss+xml"/><item><title>갤럭시S 무선랜 MAC 주소 찾기</title><link>https://openmicrolab.com/%EA%B0%A4%EB%9F%AD%EC%8B%9Cs-%EB%AC%B4%EC%84%A0%EB%9E%9C-mac-%EC%A3%BC%EC%86%8C-%EC%B0%BE%EA%B8%B0/</link><pubDate>Fri, 24 Sep 2010 05:00:10 +0000</pubDate><guid>https://openmicrolab.com/%EA%B0%A4%EB%9F%AD%EC%8B%9Cs-%EB%AC%B4%EC%84%A0%EB%9E%9C-mac-%EC%A3%BC%EC%86%8C-%EC%B0%BE%EA%B8%B0/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">&lt;b>환경설정 &amp;gt; 무선 및 네트워크 &amp;gt;Wi-Fi 설정 &amp;gt;메뉴키&lt;/b>를 누르면 &lt;b>고급설정&lt;/b>이 나옵니다. 그럼 2 번째 항목에 자신의 무선랜 MAC 주소가 나옵니다. &lt;/span>&lt;/p>
+&lt;div>
+&lt;span style="font-size: 11pt; ">갤럭시S의 경우 무선랜 MAC은 &amp;#8220;D4-88-90&amp;#8221; 로 시작합니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile5.uf.132D540F4C9C2FC23FB3A3.jpg" class="aligncenter" width="680" height="507" alt="" filename="MAC_1.jpg" filemime="image/jpeg" />&lt;/span>&lt;/p>
+&lt;div id="__KO_DIC_LAYER__" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: fixed; z-index: 1e+009; overflow-x: hidden; overflow-y: hidden; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 51, 119); border-right-color: rgb(51, 51, 119); border-bottom-color: rgb(51, 51, 119); border-left-color: rgb(51, 51, 119); display: none; ">
+&lt;/div>
+&lt;div>
+&lt;a href="http://standards.ieee.org/regauth/oui/index.shtml" target="_blank" title="[http://standards.ieee.org/regauth/oui/index.shtml]로 이동합니다.">&lt;span style="font-size: 11pt; ">&lt;b>IEEE standard association&lt;/b>&lt;/span>&lt;/a>&lt;span style="font-size: 11pt; ">&amp;nbsp;&lt;/span>&lt;span style="font-size: 11pt; ">에서 확인을 해보면 다음과 같이 삼성전자로 나옵니다. ^^&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.17017E0C4C9C2FDF76A903.jpg" class="aligncenter" width="680" height="234" alt="" filename="MAC_0.jpg" filemime="image/jpeg" />&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

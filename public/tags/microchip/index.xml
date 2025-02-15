@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MicroChip on OpenMicroLab</title><link>https://openmicrolab.com/tags/microchip/</link><description>Recent content in MicroChip on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 14 Aug 2011 14:31:02 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/microchip/index.xml" rel="self" type="application/rss+xml"/><item><title>[스크랩] PIC® MCU를 위한 DLMS 사용자 연합 인증 스택</title><link>https://openmicrolab.com/%EC%8A%A4%ED%81%AC%EB%9E%A9-pic-mcu%EB%A5%BC-%EC%9C%84%ED%95%9C-dlms-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%97%B0%ED%95%A9-%EC%9D%B8%EC%A6%9D-%EC%8A%A4%ED%83%9D/</link><pubDate>Sun, 14 Aug 2011 14:31:02 +0000</pubDate><guid>https://openmicrolab.com/%EC%8A%A4%ED%81%AC%EB%9E%A9-pic-mcu%EB%A5%BC-%EC%9C%84%ED%95%9C-dlms-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%97%B0%ED%95%A9-%EC%9D%B8%EC%A6%9D-%EC%8A%A4%ED%83%9D/</guid><description>
+&lt;p>MCU에 맞춤형으로 구성된 DLMS 스택을 통해 광범위한 에너지 유형 및 통신 프로토콜의 상호 운용성을 업계 최초로 구현&lt;/p>
+&lt;P style="MARGIN: 0px">
+세계적인 마이크로컨트롤러, 아날로그 및 플래시 IP 솔루션 전문기업인 마이크로칩 테크놀로지(한국 지사장: 한병돈)는 오늘 칼키 커뮤니케이션 테크놀로지스(Kalki Communication Technologies)와 공동으로 16비트 PIC® 마이크로컨트롤러(MCU)에 최적화된 DLMS(Device Language Message Specification) 프로토콜 스택을 제공한다고 발표했다. DLMS 프로토콜은 전기, 가스, 난방, 상/하수도 같은 대부분의 에너지 유형과 여러 애플리케이션(주거, 송신, 분배) 및 통신 미디어(RS232, RS485, PSTN, GSM, GPRS, IPv4, PPP, PLC) 같은 미터링 시스템 간의 상호 운용성은 물론, AES 128 암호화를 통한 보안 데이터 액세스를 위해 스마트 미터 디자이너들이 선호하는 세계적인 표준으로 자리 잡아가고 있다.
+&lt;/P>
+&lt;p>이 소프트웨어 스택은 DLMS 사용자 연합의 테스트와 검증을 마쳤을 뿐 아니라 마이크로칩의 모든 16비트 PIC 마이크로컨트롤러 및 dsPIC® 디지털 신호 컨트롤러(DSC)에서 동작하도록 맞춤형으로 구성되어 있어 DLMS 인증 절차를 보다 쉽고 빠르게 마칠 수 있게 해준다. 또한 이 스택은 TCP/IP, 지그비(ZigBee®), PLC 같은 통신 프로토콜 스택과 긴밀하게 통합되도록 개발되어 광범위한 스마트 에너지 애플리케이션에 적용할 수 있다는 게 특징이다. 뿐만 아니라 작은 메모리 풋프린트에 맞게 최적화되어 있어 업계에서 가장 작고 경제적인 MCU를 사용할 수가 있다. 유럽 지역 애플리케이션의 경우, 이 스택은 애플리케이션을 구현하는 데 필요한 IEC             62056-21       모드 E를 지원한다.&lt;/p></description></item><item><title>마이크로칩 chipKIT for the Arduino™ Community</title><link>https://openmicrolab.com/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%B9%A9-chipkit-for-the-arduino-community/</link><pubDate>Tue, 24 May 2011 04:56:22 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%B9%A9-chipkit-for-the-arduino-community/</guid><description>
+&lt;p>지난 글(&lt;A title="[http://liketheocean.tistory.com/111]로 이동합니다." href="http://liketheocean.tistory.com/111" target=_blank>이젠 오픈소스 하드웨어가 대세&lt;/A>)에서 마이크로칩에서 Arduino 호환 보드인 chipKIT를 릴리즈 했다고 했는데, 유트브에 동영상이 올라왔네요.&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;br />
+&lt;/DIV>
+&lt;DIV>
+아래 링크는 공식 릴리즈 주소&lt;br /> &lt;A href="http://www.microchip.com/pagehandler/en-us/chipKIT-Development-Platform.html">http://www.microchip.com/pagehandler/en-us/chipKIT-Development-Platform.html&lt;/A>&lt;/p>
+&lt;p>
+&lt;/DIV>
+&lt;/p></description></item></channel></rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gateway Solution(One Box) on OpenMicroLab</title><link>https://openmicrolab.com/tags/gateway-solutionone-box/</link><description>Recent content in Gateway Solution(One Box) on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 08 Mar 2014 14:22:54 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/gateway-solutionone-box/index.xml" rel="self" type="application/rss+xml"/><item><title>Beyond connectivity, toward value – IoT(IoE), 비즈니스 미래 지형을 바꾸다</title><link>https://openmicrolab.com/beyond-connectivity-toward-value-iotioe-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%AF%B8%EB%9E%98-%EC%A7%80%ED%98%95%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8B%A4/</link><pubDate>Sat, 08 Mar 2014 14:22:54 +0000</pubDate><guid>https://openmicrolab.com/beyond-connectivity-toward-value-iotioe-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%AF%B8%EB%9E%98-%EC%A7%80%ED%98%95%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8B%A4/</guid><description>
+&lt;p>지난 3월 5일 참석한 컨퍼런스&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/03/iot_semina.jpeg">&lt;img loading="lazy" class="alignnone size-full wp-image-2912" alt="iot_semina" src="https://openmicrolab.com/images/2014/03/iot_semina.jpeg" width="677" height="645" srcset="https://openmicrolab.com/images/2014/03/iot_semina.jpeg 677w, https://openmicrolab.com/images/2014/03/iot_semina-300x285.jpeg 300w" sizes="(max-width: 677px) 100vw, 677px" />&lt;/a>&lt;/p>
+&lt;p> &lt;/p>
+&lt;h3 id="발표의-내용을-요약하면">발표의 내용을 요약하면&lt;/h3>
+&lt;ul>
+&lt;li>IoT(Internet of Things), IoE(Internet of Everything)등으로 각 업체마다 추정치는 다르나 향후 널리 확산될 것으로 예상&lt;/li>
+&lt;li>수량은 PC, 태블릿, 스마트폰의 수치를 합한 것의 2배로 추정, 여기에 Smart TV, Wearable의 수치도 IoT와 비등한 수준&lt;/li>
+&lt;li>가트너에서 발표한 &lt;a href="http://www.gartner.com/newsroom/id/2575515" target="_blank">Hype Cycle 곡선&lt;/a>&lt;/li>
+&lt;li>IoT에서의 보안의 이슈: &lt;a href="http://www.telegraph.co.uk/technology/internet-security/10579677/More-than-750000-spam-emails-sent-from-fridges-and-TVs.html" target="_blank">냉장고가 스팸메일 보낸 뉴스&lt;/a>, &lt;a href="http://arstechnica.com/security/2014/02/password-leak-in-wemo-devices-makes-home-appliances-susceptible-to-hijacks/" target="_blank">밸킨의 Wemo 해킹 뉴스&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">국내 통신사들: KT, LG-Uplus, SK 텔레콤등이 실제적인 서비스( Biz Case)를 발표&lt;/span>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">매직에코: LimiSmart라는 램프에 IoT기능을 넣은 제품으로 인디고고에서 프로젝트 진행중 – S/W 저작 도구&lt;/span>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">daliworks : IoT cloud platform 서비스 제공(SensorJS), IoT 센서 게이트 웨이(비글본, 라즈베리 파이)&lt;/span>&lt;/li>
+&lt;/ul>
+&lt;h3 id="span-stylefont-size-117em글로벌-벤더들의-iot주도권을-위한-경쟁span">&lt;span style="font-size: 1.17em;">글로벌 벤더들의 IoT주도권을 위한 경쟁&lt;/span>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;span style="line-height: 1.5em;">오라클: &lt;/span>&lt;a style="line-height: 1.5em;" href="http://www.oracle.com/technetwork/java/javame/index.html" target="_blank">JavaME Embedded for IoE Platform&lt;/a>&lt;span style="line-height: 1.5em;"> 퀄컴의 Orion Board에서 채택, Gateway solution(&lt;/span>&lt;a style="line-height: 1.5em;" href="https://community.freescale.com/community/the-embedded-beat/blog/2013/09/23/what-is-the-new-freescale-oracle-partnership-around-one-box-platform-all-about-part-1" target="_blank">One Box&lt;/a>&lt;span style="line-height: 1.5em;">)&lt;/span>&lt;/li>
+&lt;li>퀄컴: AllJoyn –  P2P기반, 지금은 오픈 소스화 되어 Linux foundation 에서 유지.&lt;/li>
+&lt;li>&lt;a style="line-height: 1.5em;" href="https://openmicrolab.com/images/2014/03/alljoyn.jpeg">&lt;img loading="lazy" class="alignnone wp-image-2913" alt="alljoyn" src="https://openmicrolab.com/images/2014/03/alljoyn.jpeg" width="578" height="311" srcset="https://openmicrolab.com/images/2014/03/alljoyn.jpeg 964w, https://openmicrolab.com/images/2014/03/alljoyn-300x161.jpeg 300w" sizes="(max-width: 578px) 100vw, 578px" />&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">IBM: &lt;/span>&lt;a style="line-height: 1.5em;" href="http://mqtt.org/" target="_blank">MQTT&lt;/a> &lt;span style="line-height: 1.5em;">– IoT  메시징 프로토콜, &lt;/span>&lt;a style="line-height: 1.5em;" href="http://www.eclipse.org/paho/" target="_blank">paho&lt;/a>&lt;/li>
+&lt;li>MS의 IoT에 대한 정의&lt;/li>
+&lt;li>&lt;a style="line-height: 1.5em;" href="https://openmicrolab.com/images/2014/03/ms_iot.jpeg">&lt;img loading="lazy" class="alignnone size-full wp-image-2914" alt="ms_iot" src="https://openmicrolab.com/images/2014/03/ms_iot.jpeg" width="484" height="242" srcset="https://openmicrolab.com/images/2014/03/ms_iot.jpeg 484w, https://openmicrolab.com/images/2014/03/ms_iot-300x150.jpeg 300w" sizes="(max-width: 484px) 100vw, 484px" />&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="my-insight"> My Insight&lt;/h3>
+&lt;ul>
+&lt;li>IoT 단말은 무선&lt;/li>
+&lt;li>IoT 게이트웨이는 상위 서비스와 연계하기 위해 보안 및 OS가 필요하며, 현재는 무겁고 비싸지만 가격은 점차내려갈 것고 모든 무선인터페이스(Zigbee, BT, WiFi)를 포함하는 형태가 될 것이다. 특히 가정내 IoT 게이트 웨이의 경우는 더더욱…&lt;/li>
+&lt;li>서비스에 연계되지 않은 단말은 중국과의 가격경쟁으로 살아남기 힘들다.&lt;/li>
+&lt;/ul>
+&lt;p>위 세미나와 관련된 내용: &lt;a href="http://www.businessinsider.com/the-internet-of-everything-2014-slide-deck-sai-2014-2#-1" target="_blank">BI에서 발표한 자료&lt;/a>&lt;/p></description></item></channel></rss>

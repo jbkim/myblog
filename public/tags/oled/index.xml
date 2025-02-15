@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OLED on OpenMicroLab</title><link>https://openmicrolab.com/tags/oled/</link><description>Recent content in OLED on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 01 Aug 2018 08:04:58 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/oled/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP32에 OLED 연결하기</title><link>https://openmicrolab.com/esp32%EC%97%90-oled-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 01 Aug 2018 08:04:58 +0000</pubDate><guid>https://openmicrolab.com/esp32%EC%97%90-oled-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>SSD1306 OLED display는 다음과 같이 I2C로 연결을 한다. 참고로 ESP32 모듈의 핀맵은 &lt;a href="https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" target="_blank" rel="noopener noreferrer">Datasheet&lt;/a>를 참고해야 한다.&lt;br>
+&lt;img loading="lazy" class="alignnone wp-image-4361" src="https://res.cloudinary.com/openmicrolab/image/upload/v1533110174/esp32-arduino-oled-ssd1306-schematic-i2c_pd9rob.png" width="444" height="258" />&lt;br>
+그리고 ESP32 SSD1306 아두이노 라이브러리를 설치를 하고, 같이 설치되는 예제프로그램에서 하드웨어 핀에 맞게 코드를 수정하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>// Initialize the OLED display using Wire library&lt;br>
+SSD1306 display(0x3c, 21, 22);&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>참고문서&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/" target="_blank" rel="noopener noreferrer">&lt;a href="https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/">https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html" target="_blank" rel="noopener noreferrer">&lt;a href="https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html">https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

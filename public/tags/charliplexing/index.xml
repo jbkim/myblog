@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Charliplexing on OpenMicroLab</title><link>https://openmicrolab.com/tags/charliplexing/</link><description>Recent content in Charliplexing on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 13 Aug 2016 05:21:20 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/charliplexing/index.xml" rel="self" type="application/rss+xml"/><item><title>챨리플랙싱 – Charliplexing</title><link>https://openmicrolab.com/%EC%B1%A8%EB%A6%AC%ED%94%8C%EB%9E%99%EC%8B%B1-charliplexing/</link><pubDate>Sat, 13 Aug 2016 05:21:20 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%A8%EB%A6%AC%ED%94%8C%EB%9E%99%EC%8B%B1-charliplexing/</guid><description>
+&lt;p>&lt;strong>챨리플랙싱 – Charliplexing&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>챨리플랙싱(Charliplexing)은 다수의 LED를 적은 수의 핀으로 제어하기 위한 기법.&lt;/li>
+&lt;li>&lt;a href="https://www.maximintegrated.com/en.html" target="_blank">Maxim&lt;/a>사의 Charles Allen가 개발.&lt;/li>
+&lt;li>N개의 핀으로는 N*(N-1)개의 LED를 제어할 수 있다.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-3726" src="http://res.cloudinary.com/openmicrolab/image/upload/v1471065535/Charlieplexing_LED_rtwotx.png" width="609" height="519" />
+&lt;p>참고&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.instructables.com/id/Charlieplexing-LEDs--The-theory/?ALLSTEPS" target="_blank">&lt;a href="http://www.instructables.com/id/Charlieplexing-LEDs&amp;amp;#8211;The-theory/?ALLSTEPS">http://www.instructables.com/id/Charlieplexing-LEDs&amp;amp;#8211;The-theory/?ALLSTEPS&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://en.wikipedia.org/wiki/Charlieplexing" target="_blank">&lt;a href="http://en.wikipedia.org/wiki/Charlieplexing">http://en.wikipedia.org/wiki/Charlieplexing&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

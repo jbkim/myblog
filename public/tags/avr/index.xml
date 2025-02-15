@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Avr on OpenMicroLab</title><link>https://openmicrolab.com/tags/avr/</link><description>Recent content in Avr on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 30 Jul 2018 02:58:35 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/avr/index.xml" rel="self" type="application/rss+xml"/><item><title>V-USB</title><link>https://openmicrolab.com/v-usb/</link><pubDate>Mon, 30 Jul 2018 02:58:35 +0000</pubDate><guid>https://openmicrolab.com/v-usb/</guid><description>
+&lt;img loading="lazy" class="" src="https://www.obdev.at/Images/vusb/vusb-teaser@2x.png" width="357" height="230" />
+&lt;blockquote>
+&lt;p>V-USB is a software-only implementation of a low-speed USB device for &lt;a href="http://www.atmel.com/" target="_blank" rel="noopener noreferrer">Atmel’s&lt;/a> AVR® microcontrollers, making it possible to build USB hardware with almost any AVR® microcontroller, not requiring any additional chip.&lt;/p>&lt;/blockquote>
+&lt;p>위 설명처럼USB하드웨어가 없는 AVR에서 USB를 소프트웨어로 구현하는 코드. V는 Virtual 인듯&lt;/p>
+&lt;p>&lt;a href="https://cortexprog.com/" target="_blank" rel="noopener noreferrer">&lt;a href="https://cortexprog.com/">https://cortexprog.com/&lt;/a>&lt;/a> 이런 프로젝트도 있다.&lt;/p></description></item><item><title>맥에서 avrdude 설치하기</title><link>https://openmicrolab.com/%EB%A7%A5%EC%97%90%EC%84%9C-avrdude-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 25 May 2018 01:34:41 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5%EC%97%90%EC%84%9C-avrdude-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>맥에서 AVR 개발 환경을 셋업하는 방법은 &lt;a href="http://www.ladyada.net/learn/avr/setup-mac.html" target="_blank" rel="noopener noreferrer">&lt;span class="topheadertext">AVR Setup&lt;/span>&lt;span class="topsubheadertext">Step-by-step how to install AVR dev tools&lt;/span>&lt;/a>에 잘 정리가 되어있다. 기본적으로 Arduino IDE를 설치하면 컴파일러나 make까지 설치가 되는데, &lt;a href="http://marlinfw.org/" target="_blank" rel="noopener noreferrer">Marlin&lt;/a> 코드를 컴파일해서 다운로드 할 경우 make파일에 avrdude의 경로 설정이 없어서 이 경로를 &lt;span class="style4">.bash_profile에 설정을 하거나 avrdude를 홈 디렉토리에 설정을 하면된다. &lt;/span>&lt;/p>
+&lt;h3 id="avrdude-설치하기">avrdude 설치하기&lt;/h3>
+&lt;ul>
+&lt;li>&lt;span class="P">다운로드 &lt;a href="http://download.savannah.gnu.org/releases/avrdude/" target="_blank" rel="noopener noreferrer">&lt;a href="http://download.savannah.gnu.org/releases/avrdude/">http://download.savannah.gnu.org/releases/avrdude/&lt;/a>&lt;/a>&lt;/span>&lt;/li>
+&lt;li>홈 디렉토리에 압축을 푼다.&lt;/li>
+&lt;li>터미널에서 다음과 같이 설정, 컴파일, 인스톨.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p align="left">
+&lt;span class="P">&lt;strong>cd avrdude-6.3&lt;/strong>&lt;br /> &lt;strong>./configure&lt;/strong>&lt;br /> &lt;strong>make&lt;/strong>&lt;br /> &lt;strong>sudo make install&lt;/strong>&lt;/span>
+&lt;/p>&lt;/blockquote></description></item><item><title>맥 OS에서 AVR 툴 체인 설치</title><link>https://openmicrolab.com/%EB%A7%A5-os%EC%97%90%EC%84%9C-avr-%ED%88%B4-%EC%B2%B4%EC%9D%B8-%EC%84%A4%EC%B9%98/</link><pubDate>Tue, 13 Sep 2016 06:56:05 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5-os%EC%97%90%EC%84%9C-avr-%ED%88%B4-%EC%B2%B4%EC%9D%B8-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;p>ruby -e “$(curl -fsSL &lt;a href="https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;amp;#8221;">https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;amp;#8221;&lt;/a>&lt;br>
+brew tap osx-cross/avr&lt;br>
+brew install avr-gcc&lt;br>
+brew install avrdude –with-usb&lt;/p>
+&lt;p>참고&lt;/p>
+&lt;p>– &lt;a href="https://github.com/osx-cross/homebrew-avr">https://github.com/osx-cross/homebrew-avr &lt;/a>&lt;/p>
+&lt;p>– &lt;a href="http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/" target="_blank" rel="noopener">&lt;a href="http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/">http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>AVR studio 4.19 &amp; AVR Toolchain</title><link>https://openmicrolab.com/avr-studio-4-19-avr-toolchain/</link><pubDate>Wed, 30 Sep 2015 07:56:55 +0000</pubDate><guid>https://openmicrolab.com/avr-studio-4-19-avr-toolchain/</guid><description>
+&lt;p>윈도우즈 날렸을때 툴들을 다시 설치할 필요가 있다. AVR Studio6는 너무 무거워서 프로그래밍을 위해서는 4.19가 더 좋다. 가끔 사용하는 것들이지만…&lt;/p>
+&lt;p>AVR studio 4.19&lt;br>
+&lt;a href="http://www.atmel.com/dyn/resources/prod_documents/AvrStudio4Setup.exe?doc_id=13463&amp;family_id=607" target="_blank" rel="noopener noreferrer">AVR Studio 4.19 (build 730)&lt;/a>&lt;/p>
+&lt;p>AVR Toolchain 3.3.0 Installer&lt;br>
+&lt;a href="http://www.atmel.com/dyn/resources/prod_documents/avr-toolchain-installer-3.3.0.710-win32.win32.x86.exe?doc_id=13464&amp;family_id=607" target="_blank" rel="noopener noreferrer">AVR Toolchain 3.3.0 Installer &lt;/a>&lt;/p></description></item></channel></rss>

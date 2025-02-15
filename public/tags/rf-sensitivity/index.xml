@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rf Sensitivity on OpenMicroLab</title><link>https://openmicrolab.com/tags/rf-sensitivity/</link><description>Recent content in Rf Sensitivity on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 06 Sep 2021 04:43:17 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/rf-sensitivity/index.xml" rel="self" type="application/rss+xml"/><item><title>RF에서 RX Sensitivity 란?</title><link>https://openmicrolab.com/rf%EC%97%90%EC%84%9C-rx-sensitivity-%EB%9E%80/</link><pubDate>Mon, 06 Sep 2021 04:43:17 +0000</pubDate><guid>https://openmicrolab.com/rf%EC%97%90%EC%84%9C-rx-sensitivity-%EB%9E%80/</guid><description>
+&lt;p>&lt;strong>RX Sensitivity&lt;/strong>&lt;br>
+– 수신기가 감지할 수 있는 최소 신호 강도를 측정한 것. 즉 식별이 가능하고, 처리할 수 있는 가장 약한 신호를 알려준다.&lt;br>
+– RX Sensitivity는 dBm으로 표시&lt;br>
+– 신호의 미약한 정도를 나타내므로 신호의 전력 레벨이 낮을수록 좋다.&lt;br>
+– 예를 들어 -90dBm의 수신기 감도는 -80dBm보다 낫다. 즉, -90dBm 수신기가 더 민감하고 더 낮은 전력 신호를 해석할 수 있음을 의미한다.&lt;/p>
+&lt;p>&lt;strong>Receiver Sensitivity Requirements for modules:&lt;/strong>&lt;br>
+– LoRa: up to -130 dBm&lt;br>
+– Cellular: up to -120 dBm&lt;br>
+– Bluetooth: -70 dBm to -100 dBm&lt;br>
+– ZigBee: -85 to -92 dBm&lt;br>
+– Wi-Fi: -40 dBm to -80 dBm&lt;/p></description></item></channel></rss>

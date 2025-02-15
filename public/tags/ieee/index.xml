@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IEEE on OpenMicroLab</title><link>https://openmicrolab.com/tags/ieee/</link><description>Recent content in IEEE on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 26 Apr 2011 07:00:36 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ieee/index.xml" rel="self" type="application/rss+xml"/><item><title>MAC address 할당 받기</title><link>https://openmicrolab.com/mac-address-%ED%95%A0%EB%8B%B9-%EB%B0%9B%EA%B8%B0/</link><pubDate>Tue, 26 Apr 2011 07:00:36 +0000</pubDate><guid>https://openmicrolab.com/mac-address-%ED%95%A0%EB%8B%B9-%EB%B0%9B%EA%B8%B0/</guid><description>
+&lt;p>근거리통신망에서 MAC 주소는 데이터 링크 계층의 MAC 계층에 의해 사용되는 주소로서 네트웍 카드의 48 비트 하드웨어 주소를 말하며, 이더넷 주소, 또는 토큰링 주소와 동일하다.&lt;/p>
+&lt;p>네트웍 카드 제조사에 의해 부여된 하드웨어 주소는 UAA (universally administered address)로서 모든 네트웍 카드가 유일한 값을 가진다. 그러나 UAA는 관리 목적상 변경이 가능한 데, 이러한 MAC 주소를 LAA (locally administered address)라 한다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile24.uf.1631A3564DB66D84247E3D.jpg" class="aligncenter" width="439" height="356" alt="" filename="MAC_address.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>모든 네트워크 장비가 고유의 값을 가져야 하며 일반적으로 제품 생산시에 제조 업체에서 할당된다.&lt;br>
+MAC 주소를 할당을 받기 위해서는 IEEE에 신청을 해서 할당을 받는데, 관련 URL은 다음과 같다. &lt;a href="https://standards.ieee.org/regauth-bin/application?rt=OUI">https://standards.ieee.org/regauth-bin/application?rt=OUI&lt;/a>&lt;br>
+FAQ는 다음을 참고. &lt;a href="http://standards.ieee.org/regauth/faqs.html#q1">http://standards.ieee.org/regauth/faqs.html#q1&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RS232 to RS485 변환 회로 on OpenMicroLab</title><link>https://openmicrolab.com/tags/rs232-to-rs485-%EB%B3%80%ED%99%98-%ED%9A%8C%EB%A1%9C/</link><description>Recent content in RS232 to RS485 변환 회로 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 22 Mar 2011 07:05:55 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/rs232-to-rs485-%EB%B3%80%ED%99%98-%ED%9A%8C%EB%A1%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>RS232 to RS485 변환 회로</title><link>https://openmicrolab.com/rs232-to-rs485-%EB%B3%80%ED%99%98-%ED%9A%8C%EB%A1%9C/</link><pubDate>Tue, 22 Mar 2011 07:05:55 +0000</pubDate><guid>https://openmicrolab.com/rs232-to-rs485-%EB%B3%80%ED%99%98-%ED%9A%8C%EB%A1%9C/</guid><description>
+&lt;p>간단한 회로 : RTS를 control하여 RS485의 입출력을 결정한다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.1473C13F4D8849FB340681.jpg" class="aligncenter" width="297" height="185" alt="" filename="RS232 tto RS485.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>Isolator등의 보호 회로가 들어가는 경우&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.1573DC424D884A353C8072.gif" class="aligncenter" width="683" height="408" alt="" filename="rs232-rs485_cable.gif" filemime="image/jpeg" />
+&lt;/P></description></item></channel></rss>

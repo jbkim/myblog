@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Terminal on OpenMicroLab</title><link>https://openmicrolab.com/tags/terminal/</link><description>Recent content in Terminal on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 26 May 2010 04:14:19 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/terminal/index.xml" rel="self" type="application/rss+xml"/><item><title>유용한 툴 – Terminal</title><link>https://openmicrolab.com/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%88%B4-terminal/</link><pubDate>Wed, 26 May 2010 04:14:19 +0000</pubDate><guid>https://openmicrolab.com/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%88%B4-terminal/</guid><description>
+&lt;p>대부분의 임베디드 시스템에서 시리얼 인터페이스는 필수적으로 가지고 있다. 이 시리얼 인터페이스를 통해 디버깅도 하는데 이때 필요한 것이 터미널 프로그램이다. 일반적으로 윈도우즈의 Hyper Terminal을 써도 되지만 Hyper Terminal은 불편하기도 하고, null 문자를 제대로 수신 및 전송을 하지 못하는 버그도 있다.&lt;/p>
+&lt;p>&lt;img src="https://openmicrolab.com/images/1/cfile3.uf.1320FF1F4BFC9EF5057204.jpg" class="aligncenter" width="539"
+height="569" alt=""
+filename="Terminal.jpg" filemime="image/jpeg" />&lt;br>
+그리고 데이터를 Hex로 수신하거나 전송할때도 이 프로그램은 유용하며, 매크로 기능이 있어서 지정한 시간동안 반복적으로 데이터를 보낼때 유용하다.&lt;br>
+Hex로 데이터를 보내려면 $를 붙여야 한다. 즉 0x0D를 보내려면 $0d 로 입력하면 된다.&lt;br>
+물론 freeware..&lt;br>
+&lt;a href="https://openmicrolab.com/images/1/cfile8.uf.176F5A214BFC9F82566D23.zip" class="aligncenter" filename="Terminal.zip" filemime="application/zip" /> cfile8.uf.176F5A214BFC9F82566D23.zip&lt;/a>&lt;/p></description></item></channel></rss>

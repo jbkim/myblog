@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Usb Pid on OpenMicroLab</title><link>https://openmicrolab.com/tags/usb-pid/</link><description>Recent content in Usb Pid on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 08 May 2017 01:58:33 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/usb-pid/index.xml" rel="self" type="application/rss+xml"/><item><title>lsusb 명령어를 Mac OS에서 사용하기</title><link>https://openmicrolab.com/lsusb-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%A5%BC-mac-os%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 08 May 2017 01:58:33 +0000</pubDate><guid>https://openmicrolab.com/lsusb-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%A5%BC-mac-os%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>리눅스에 있는 lsusb를 사용할 수 있는 프로그램: &lt;a href="https://github.com/jlhonora/lsusb">https://github.com/jlhonora/lsusb&lt;/a>&lt;/p>
+&lt;p>다음과 같이 brew로 인스톨한다.&lt;/p>
+&lt;blockquote>
+&lt;p>brew update &amp;amp;&amp;amp; brew tap jlhonora/lsusb &amp;amp;&amp;amp; brew install lsusb&lt;/p>&lt;/blockquote>
+&lt;p>다음과 같은 옵션으로 사용 가능.&lt;/p>
+&lt;pre>&lt;code>List USB devices
+-v Increase verbosity (show output of &amp;quot;system_profiler SPUSBDataType&amp;quot;)
+-s [[bus]:][devnum]
+Show only devices with specified device and/or
+bus numbers (in decimal)
+-d [vendor]:[product]
+Show only devices with the specified vendor and
+product ID numbers (in hexadecimal)
+-p Display manufacturer names in parentheses
+-t Dump the physical USB device hierarchy as a tree
+-V Show version of program
+-h Show usage and help
+&lt;/code>&lt;/pre></description></item></channel></rss>

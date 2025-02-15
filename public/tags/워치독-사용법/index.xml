@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>워치독 사용법 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%9B%8C%EC%B9%98%EB%8F%85-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><description>Recent content in 워치독 사용법 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 22 Apr 2011 06:26:58 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%9B%8C%EC%B9%98%EB%8F%85-%EC%82%AC%EC%9A%A9%EB%B2%95/index.xml" rel="self" type="application/rss+xml"/><item><title>MCU 오동작 방지 : 위치독 사용법</title><link>https://openmicrolab.com/mcu-%EC%98%A4%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%A7%80-%EC%9C%84%EC%B9%98%EB%8F%85-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Fri, 22 Apr 2011 06:26:58 +0000</pubDate><guid>https://openmicrolab.com/mcu-%EC%98%A4%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%A7%80-%EC%9C%84%EC%B9%98%EB%8F%85-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>외부의 노이즈나 어떤 원인에 의해 MCU의 오동작을 방지하기 위한 기법에 대한 Application Note입니다.&lt;br>
+가장 기본적으로 WatchDog Timer(WDT)를 사용하는 방법이 있는데, 중요한 것은 이것을 잘 써야 합니다.&lt;/p>
+&lt;p>**-. WDT는 프로그램이 시작하면서 바로 Enable해야 하며,&lt;br>
+-. Refresh 시켜주는 루틴이 인터럽트 서비스 루틴에 들어 있으면 안됩니다.&lt;/p>&lt;/p>
+&lt;/STRONG>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.204CDF494DB11F3C057B6A.jpg" class="aligncenter" width="523" height="322" alt="" filename="WDT.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>보다 신뢰성있는 동작을 위한 다른 S/W적인 기법들이 많이 있는데 한번 확인해 보시기 바랍니다.&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;STRONG>SOFTWARE TECHNIQUES FOR IMPROVING MICROCONTROLLER EMC PERFORMANCE&lt;/p>
+&lt;p>
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile26.uf.133B8D4D4DB11F6F078FE2.pdf" class="aligncenter" filename="CD00004037.pdf" filemime="application/pdf" />cfile26.uf.133B8D4D4DB11F6F078FE2.pdf&lt;/a>
+&lt;/P>
+&lt;pre>&lt;code>&amp;lt;br /&amp;gt; &amp;lt;/STRONG&amp;gt;&amp;lt;/DIV&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/p></description></item></channel></rss>

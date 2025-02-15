@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FRDM-K82F on OpenMicroLab</title><link>https://openmicrolab.com/tags/frdm-k82f/</link><description>Recent content in FRDM-K82F on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 19 Apr 2016 08:03:31 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/frdm-k82f/index.xml" rel="self" type="application/rss+xml"/><item><title>Freescale FRDM-K82F 보드</title><link>https://openmicrolab.com/freescale-frdm-k82f-%EB%B3%B4%EB%93%9C/</link><pubDate>Tue, 19 Apr 2016 08:03:31 +0000</pubDate><guid>https://openmicrolab.com/freescale-frdm-k82f-%EB%B3%B4%EB%93%9C/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-3639" src="http://res.cloudinary.com/openmicrolab/image/upload/a_0/v1461052393/Freescale_FRDM-K82F_aaxwqd.jpg" alt="" width="314" height="314" />
+&lt;h3 id="freescale-frdm-k82f-보드의-개발-환경설정">Freescale FRDM-K82F 보드의 개발 환경설정&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://nxp.flexnetoperations.com/control/frse/download?agree=Accept&amp;element=6912747" target="_blank">Kinetis SDK 다운로드 및 설치&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.nxp.com/webapp/swlicensing/sso/downloadSoftware.sp?catid=KINETIS-KDS-IDE" target="_blank">Kinetis Design Studio (KDS) 다운로드 및 설치&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://developer.mbed.org/media/downloads/drivers/mbedWinSerial_16466.exe" target="_blank">윈도우즈의 경우 virtual COM port 드라이버 설치&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="1-이클립스-업데이트-파일-설치">1. 이클립스 업데이트 파일 설치&lt;/h3>
+&lt;p>“Help”-&amp;gt;Check for Updates를 누르고, Processor Expert for Kinetis만 선택하고 업데이트 한다.&lt;/p>
+&lt;p>“Help” -&amp;gt; “Install New Software”를 선택하고 Add 버튼 &amp;gt; Archive 버튼을 눌러서 SDK 설치 폴더 아래 /tools/eclipse_update 폴더에서 KSDK_&lt;version>_Eclipse_Update_zip file. 를 선택한다&lt;/p>
+&lt;h3 id="2-플랫폼-라이브러리-빌드하기">2. 플랫폼 라이브러리 빌드하기&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-3640" src="http://res.cloudinary.com/openmicrolab/image/upload/v1461052909/lib_kykbku.png" alt="" width="272" height="399" />
+&lt;p>“File-&amp;gt;Import”를 선택후 “General”을 눌러서 “Existing Projects into Workspace”를 선택한다.&lt;br>
+루트 디렉토리는 &amp;lt;install_dir&amp;gt;/lib/ksdk_platform_lib/kds/K82F25615 를 선택하고 finish를 클릭한다.&lt;br>
+메뉴에 헤머 아이콘을 눌러 빌드한다.&lt;/p></description></item></channel></rss>

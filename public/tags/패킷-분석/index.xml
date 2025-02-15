@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>패킷 분석 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%8C%A8%ED%82%B7-%EB%B6%84%EC%84%9D/</link><description>Recent content in 패킷 분석 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 04 Oct 2010 06:00:11 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%8C%A8%ED%82%B7-%EB%B6%84%EC%84%9D/index.xml" rel="self" type="application/rss+xml"/><item><title>패킷 생성기 (Colasoft Packet Builder)</title><link>https://openmicrolab.com/%ED%8C%A8%ED%82%B7-%EC%83%9D%EC%84%B1%EA%B8%B0-colasoft-packet-builder/</link><pubDate>Mon, 04 Oct 2010 06:00:11 +0000</pubDate><guid>https://openmicrolab.com/%ED%8C%A8%ED%82%B7-%EC%83%9D%EC%84%B1%EA%B8%B0-colasoft-packet-builder/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">윈도우즈 기반의 패킷 생성기입니다. GUI 기반으로 되어 있어서 직관적이네요. &lt;/span>&lt;/p>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.144640284CA96D28246964.jpg" class="aligncenter" width="680" height="418" alt="" filename="packet generator.jpg" filemime="image/jpeg" />&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;a href="https://openmicrolab.com/images/1/cfile25.uf.11086F244CA96DB91A0AB1.exe" class="aligncenter" filename="pktbuilder10_build166.exe" filemime="application/x-dosexec" />cfile25.uf.11086F244CA96DB91A0AB1.exe&lt;/a>&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">출처 :&amp;nbsp;&lt;/span>&lt;a href="http://www.colasoft.com/download/products/download_packet_builder.php">&lt;span style="font-size: 11pt; ">http://www.colasoft.com/download/products/download_packet_builder.php&lt;/span>&lt;/a>
+&lt;/div>
+&lt;div>
+&lt;a href="http://www.colasoft.com/download/products/download_packet_builder.php">&lt;/a>&lt;/p>
+&lt;div id="__KO_DIC_LAYER__" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: fixed; z-index: 1e+009; overflow-x: hidden; overflow-y: hidden; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 51, 119); border-right-color: rgb(51, 51, 119); border-bottom-color: rgb(51, 51, 119); border-left-color: rgb(51, 51, 119); display: none; ">
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">참고로 원하는 패킷을 만들고 오른쪽 창에서 패킷을 선택해야 SEND 버튼이 활성화 됩니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;/div></description></item><item><title>Wireshark Header Checksum Error</title><link>https://openmicrolab.com/wireshark-header-checksum-error/</link><pubDate>Mon, 04 Oct 2010 04:07:46 +0000</pubDate><guid>https://openmicrolab.com/wireshark-header-checksum-error/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 11pt; ">﻿&lt;/span>와이어샤크를 사용해서 패킷을 잡다보면 패킷에 “&lt;b>Header Checksum Error&lt;/b>“라고 표시가 되어 있는 것을 볼 수 있다. 그리고 친절하게도 어떤값이 되어야 한다고 알려주기까지 한다.&lt;/span>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.2072920F4CA951186C030E.jpg" class="aligncenter" width="460" height="83" alt="" filename="ChecksumError.jpg" filemime="image/jpeg" />&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">체크섬이라는 것은 일반적으로 통신중에 데이터가 깨질수 도있기 때문에&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">삽입을 해서 데이터가 깨졌는지 여부를 확인을 한다.&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;pre>&lt;code>&amp;lt;div&amp;gt;
+&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;font-size: 10pt; &amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;IP 헤더의 경우를 보면 2 바이트로&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;구성되어 있고, 네트워크를 이동하는 각 홉에서(예를 들면, 라우터 통과시) 체크섬을 검증한다.&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;그리고&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;체크섬이 올바르지 않으면 네트워크 장비는 해당 패킷을 버리며,&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;체크섬은 재 계산되고 업데이트를 하게된다.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">그럼 어떻게 헤더체크섬이 틀린 패킷을 보내고 받을 수 있지??&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">원인은 여러가지가 있을 수 있는데 &lt;b>UDP의 경우는&amp;nbsp;&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>체크섬 값이 제로로 채워져 있는 경우는 보내는 측 쪽에서 계산되지 않는 경우라 정의하고 있다. (&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>RFC 768)&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&amp;nbsp;&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>그리고&amp;nbsp;&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>네트워크 장비나 기타 원인에 의해 헤더 체크섬 값이 계산되지 않았거나&amp;nbsp;&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>또는 의도적으로 빠지는 경우도 있다.&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;/p></description></item></channel></rss>

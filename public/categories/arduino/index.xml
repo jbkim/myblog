@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino on OpenMicroLab</title><link>https://openmicrolab.com/categories/arduino/</link><description>Recent content in Arduino on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 28 Aug 2021 09:09:11 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/arduino/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP 빌드시 문제 해결</title><link>https://openmicrolab.com/4779-2/</link><pubDate>Sat, 28 Aug 2021 09:09:11 +0000</pubDate><guid>https://openmicrolab.com/4779-2/</guid><description>
+&lt;p>ESP32 가 빌드는 되는데 flashing이 다음과 같은 에러메시지로 안되는 경우&lt;/p>
+&lt;blockquote>
+&lt;p>Traceback (most recent call last):&lt;br>
+File “esptool.py”, line 57, in &lt;module>&lt;br>
+File “/Library/Python/2.7/site-packages/PyInstaller/loader/pyimod03_importers.py”, line 389, in load_module&lt;br>
+File “serial/tools/list_ports.py”, line 29, in &lt;module>&lt;br>
+File “/Library/Python/2.7/site-packages/PyInstaller/loader/pyimod03_importers.py”, line 389, in load_module&lt;br>
+File “serial/tools/list_ports_posix.py”, line 31, in &lt;module>&lt;br>
+File “/Library/Python/2.7/site-packages/PyInstaller/loader/pyimod03_importers.py”, line 389, in load_module&lt;br>
+File “serial/tools/list_ports_osx.py”, line 32, in &lt;module>&lt;br>
+ValueError: dlsym(RTLD_DEFAULT, kIOMasterPortDefault): symbol not found&lt;br>
+Failed to execute script esptool&lt;/p>&lt;/blockquote>
+&lt;p>기존 esptool을 esptool.py로 다음과 같이 변경을 하면 해결이 된다.&lt;/p></description></item><item><title>PlatformIO, Arduino에서의 핀매핑 정보</title><link>https://openmicrolab.com/platformio-arduino%EC%97%90%EC%84%9C%EC%9D%98-%ED%95%80%EB%A7%A4%ED%95%91-%EC%A0%95%EB%B3%B4/</link><pubDate>Thu, 18 Feb 2021 08:23:52 +0000</pubDate><guid>https://openmicrolab.com/platformio-arduino%EC%97%90%EC%84%9C%EC%9D%98-%ED%95%80%EB%A7%A4%ED%95%91-%EC%A0%95%EB%B3%B4/</guid><description>
+&lt;p>펌웨어 개발을 할때 MCU의 I/O핀을 맵핑해서 사용을 하게 된다. 아두이노의 경우에는 실제 HW 핀 매핑을 MCU 벤더에서 제공하는 것 처럼 low level로 access하지 않고, 보드의 실크에 적혀있는 핀 번호로 access할 수 있도록 추상화를 해 놓았다. 실제로 핀 매핑이 어떻게 되는지 보려면 맥의 경우 $HOME/라이브러리/Arduino15/packages 아래에 각 플랫폼 별로 되어 있는 폴더를 확인해 봐야 한다. 예를 들면 adafruit의 경우 /packages/adafruit/hardware/nrf52/0.21.0/variants/feather_nrf52840_express/variant.h파일과 variant.cpp 파일을 확인해 보면 된다.&lt;/p>
+&lt;p>PlatformIO도 아두이노와 마찬가지로 VSCode에 설치를 하면 맥에서는 $HOME/.platformio/packages 폴더 아래에 각각의 프레임워크에서 사용하는 bootloader, library들이 설치가 되어 있다.&lt;/p></description></item><item><title>전력소모를 줄이는 법 – Low Power System</title><link>https://openmicrolab.com/%EC%A0%84%EB%A0%A5%EC%86%8C%EB%AA%A8%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B2%95-low-power-system/</link><pubDate>Sun, 08 Dec 2019 13:50:02 +0000</pubDate><guid>https://openmicrolab.com/%EC%A0%84%EB%A0%A5%EC%86%8C%EB%AA%A8%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B2%95-low-power-system/</guid><description>
+&lt;p>배터리를 사용하는 제품은 필수적으로 전력소모를 줄여야 한다. 시스템에서 전력소모를 줄이기 위한 방법은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>MCU의 동작 전압을 낮추고, 동작 Clock를 낮출 것&lt;/li>
+&lt;li>리니어 레귤레이터 대신 스위칭 레귤레이터를 사용할 것&lt;/li>
+&lt;li>MCU내의 사용하지 않는 peripheral을 disable할 것: Timer, BOD, Watch Dog Timer, UART, ADC 등 특히 ADC나 UART&lt;/li>
+&lt;li>전류를 센싱하는 저항이 있다면 이 저항의 크기를 높일 것&lt;/li>
+&lt;li>코드에서 최대한 Sleep 모드를 사용할 것&lt;/li>
+&lt;/ul>
+&lt;p>참고로 Attiny45의 경우 어떤 응용에서 동작시 1.6mA정도까지 줄여봤다. 그리고 &lt;a href="https://learn.sparkfun.com/tutorials/reducing-arduino-power-consumption/all" target="_blank" rel="noopener">이런 문서&lt;/a>도 참고하면 좋을 듯.&lt;/p></description></item><item><title>무게센서와 HX711 사용하기</title><link>https://openmicrolab.com/%EB%AC%B4%EA%B2%8C%EC%84%BC%EC%84%9C%EC%99%80-hx711-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 28 Sep 2018 08:36:37 +0000</pubDate><guid>https://openmicrolab.com/%EB%AC%B4%EA%B2%8C%EC%84%BC%EC%84%9C%EC%99%80-hx711-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="무게센서">무게센서&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4441" src="https://res.cloudinary.com/openmicrolab/image/upload/v1538122944/load_cell_hn0zqk.png" width="660" height="235" />
+&lt;p>일반적으로 무게센서는 스트레인게이지(Strain Gauge) 기반의 로드셀(Lode Cell)를 사용한다. 스트레인 게이지는 저항으로 이루어진 센서로서 피 측정물에 부착되어 피 측정물의 물리적인 변형률(Strain)을 &lt;a href="https://en.wikipedia.org/wiki/Wheatstone_bridge" target="_blank" rel="noopener noreferrer">휘스톤 브릿지&lt;/a> 방식으로 전기적인 신호로 바꾸어 측정물의 변형량을 측정하는 저항 센서이다.&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="461"
+height="286"
+src="https://openmicrolab.com/Wheatstone-Bridge-02_2682268210215289130.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Excitation+ (E+) or VCC is red&lt;/li>
+&lt;li>Excitation- (E-) or ground is black.&lt;/li>
+&lt;li>Output+ (O+), Signal+ (S+)+ or Amplifier+ (A+) is white&lt;/li>
+&lt;li>O-, S-, or A- is green or blue&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4443" src="https://res.cloudinary.com/openmicrolab/image/upload/v1538123734/hx711_cabling_e2qlud.jpg" width="611" height="405" />
+&lt;h3 id="hx711">HX711&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/bogde/HX711" target="_blank" rel="noopener noreferrer">HX711 github library&lt;/a> 라이브러리를 Arduino에 설치&lt;/li>
+&lt;li>&lt;a href="https://github.com/sparkfun/HX711-Load-Cell-Amplifier" target="_blank" rel="noopener noreferrer">Sparkfun HX711 example code&lt;/a> 중 캘리브레이션 코드로 캘리브레이션을 한다.&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide?_ga=2.6286835.196014269.1538042880-991341443.1528683253" target="_blank" rel="noopener noreferrer">Sparkfun 가이드 문서&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackster.io/daveVertu/make-a-screen-less-google-fit-connected-smart-scale-9a5934" target="_blank" rel="noopener noreferrer">Google fit 연결 응용&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackster.io/luciansabo/healthzuilla-scale-c359f9" target="_blank" rel="noopener noreferrer">HTTP API 사용 응용&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.instructables.com/id/Wi-Fi-Smart-Scale-with-ESP8266-Arduino-IDE-Adafrui/" target="_blank" rel="noopener noreferrer">ESP8266 사용 Adafruit ID 연결 응용&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>아두이노에서 WebUSB 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-webusb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 27 Sep 2018 07:14:47 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-webusb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>구글 크롬 65버전 이상일 경우 &lt;a href="https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web" target="_blank" rel="noopener noreferrer">WebUSB&lt;/a>를 지원한다.&lt;/p>
+&lt;h3 id="microbit">&lt;strong>Micro:Bit&lt;/strong>&lt;/h3>
+&lt;p>Micro:bit의 경우 웹에서 MakeCode같은 프로그램으로 코딩을 하고 hex 파일을 다운로드 후 외장 디스크로 연결된 디바이스에 drag &amp;amp; drop를 해서 프로그래밍을 했는데, 이제는 웹브라우저에서 바로 USB를 통해 프로그래밍이 가능하다.&lt;/p>
+&lt;h3 id="arduino">&lt;strong>Arduino&lt;/strong>&lt;/h3>
+&lt;p>아두이노의 경우 다음과 같이 작업을 한다.&lt;/p>
+&lt;ul>
+&lt;li>아두이노는 1.6.11 이상 버전 사용&lt;/li>
+&lt;li>Contents/Java/hardware/arduino/avr/cores/arduino/USBCore.h 파일의 #define USB_VERSION 0x200를 0x210 로 수정&lt;/li>
+&lt;li>&lt;a href="https://github.com/webusb/arduino" target="_blank" rel="noopener noreferrer">&lt;a href="https://github.com/webusb/arduino">https://github.com/webusb/arduino&lt;/a>&lt;/a> 이 repo의 WebUSB폴더를 아두이노 라이브러리에 copy&lt;/li>
+&lt;li>예제 프로그램으로 동작 확인&lt;/li>
+&lt;li>현재 지원되는 보드
+&lt;ul>
+&lt;li>Arduino Leonardo&lt;/li>
+&lt;li>Arduino/Genuino Micro&lt;/li>
+&lt;li>Arduino/Genuino Zero&lt;/li>
+&lt;li>Arduino MKR1000&lt;/li>
+&lt;li>Arduino MKRZero&lt;/li>
+&lt;li>Arduino MKRFox1200&lt;/li>
+&lt;li>Adafruit Feather 32u4&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;p>&lt;a href="https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a">https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Arduino M0 Pinout</title><link>https://openmicrolab.com/arduino-m0-pinout/</link><pubDate>Sat, 21 Apr 2018 10:10:50 +0000</pubDate><guid>https://openmicrolab.com/arduino-m0-pinout/</guid><description>
+&lt;h3 id="a-hrefhttpswwwarduinoccenguidearduinom0-target_blank-relnoopener-noreferrerarduino-m0a-pinout">&lt;a href="https://www.arduino.cc/en/Guide/ArduinoM0" target="_blank" rel="noopener noreferrer">Arduino M0&lt;/a> Pinout&lt;/h3>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="1024"
+height="372"
+src="https://openmicrolab.com/Arduino-M0-PRO-pinout_-1024x372_2097504728484769254.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="eagle-file--schematic">Eagle file &amp;amp; Schematic&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.arduino.cc/en/uploads/Main/arduino-M0-reference-design.zip">EAGLE FILES IN .ZIP&lt;/a>{.resource.eagle}&lt;/li>
+&lt;li>&lt;a href="https://www.arduino.cc/en/uploads/Main/arduino-M0-schematic.pdf">SCHEMATICS IN .PDF&lt;/a>{.resource.schematics}&lt;/li>
+&lt;/ul>
+&lt;h3 id="pin-map-관련-소스">Pin map 관련 소스&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/arduino/ArduinoCore-samd/blob/master/variants/arduino_zero/variant.h" target="_blank" rel="noopener noreferrer">variant.h&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/arduino/ArduinoCore-samd/blob/master/variants/arduino_zero/variant.cpp" target="_blank" rel="noopener noreferrer">variant.cpp&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="a-hrefhttpslearnadafruitcomusing-atsamd21-sercom-to-add-more-spi-i2c-serial-portscreating-a-new-serial-target_blank-relnoopener-noreferrer추가적인-참고-자료a">&lt;a href="https://learn.adafruit.com/using-atsamd21-sercom-to-add-more-spi-i2c-serial-ports/creating-a-new-serial" target="_blank" rel="noopener noreferrer">추가적인 참고 자료&lt;/a>&lt;/h3></description></item><item><title>벽돌된 Arduino Pro Micro 살리기</title><link>https://openmicrolab.com/%EB%B2%BD%EB%8F%8C%EB%90%9C-arduino-pro-micro-%EC%82%B4%EB%A6%AC%EA%B8%B0/</link><pubDate>Tue, 13 Feb 2018 11:40:34 +0000</pubDate><guid>https://openmicrolab.com/%EB%B2%BD%EB%8F%8C%EB%90%9C-arduino-pro-micro-%EC%82%B4%EB%A6%AC%EA%B8%B0/</guid><description>
+&lt;p>Sparkfun사의 &lt;a href="https://www.sparkfun.com/products/12640" target="_blank" rel="noopener noreferrer">Arduino Pro Micro&lt;/a>는 ATmega32U4를 사용하고 USB CDC기능이 있다. 문제는 이 보드를 잘못 프로그래밍하면, 즉 아두이노에서 디바이스 선택을 잘못하거나, 5V 디바이스(16Mhz)인데 3.3V 디바이스(8Mhz)로 선택을 해서 프로그래밍을 하면 USB CDC포트가 사라져서 더 이상 프로그래밍을 할 수 없다.&lt;/p>
+&lt;h3 id="해결-방법">해결 방법&lt;/h3>
+&lt;p>Serial 포트를 연결해서 전원을 공급하고 보드의 RST와 GND를 연결했다 떼면, PC에서 시리얼 포트가 잡힌다. 이때 아두이노에서 제대로 된 세팅으로 다시 프로그래밍을 하면 된다.&lt;/p>
+&lt;img loading="lazy" class="aligncenter" src="https://cdn.sparkfun.com/assets/6/d/3/4/a/523c8e23757b7fbe5f8b4584.png" width="423" height="309" /></description></item><item><title>Mac OS에서 ESP8266 개발 환경</title><link>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</link><pubDate>Wed, 13 Sep 2017 04:06:37 +0000</pubDate><guid>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</guid><description>
+&lt;h3 id="아두이노">아두이노&lt;/h3>
+&lt;ol>
+&lt;li>Arduino &amp;gt; Preferences… 의 메뉴에서 추가적인 보드매니저 URLs에 다음의 링크를 입력한다.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="http://arduino.esp8266.com/stable/package">http://arduino.esp8266.com/stable/package&lt;/a>_esp8266com_index.json&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4040" src="https://res.cloudinary.com/openmicrolab/image/upload/v1505273144/ESP_Arduino_qgvl3z.png" width="459" height="164" />
+&lt;ol start="2">
+&lt;li>툴 &amp;gt; 보드 &amp;gt; 보드 매니저… 의 메뉴의 필터에 ESP를 입력 후 esp8266을 선택후 설치한다.&lt;/li>
+&lt;/ol>
+&lt;img loading="lazy" class="alignnone wp-image-4041" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_451/v1505273144/ESP8266_Arduino_uewfwx.png" width="635" height="357" />
+&lt;h3 id="a-hrefhttpsgithubcomsminghubsming-target_blank-relnoopener-noreferrersminga">&lt;a href="https://github.com/SmingHub/Sming" target="_blank" rel="noopener noreferrer">Sming&lt;/a>&lt;/h3>
+&lt;p>맥에서는&lt;a href="https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart" target="_blank" rel="noopener noreferrer"> https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart&lt;/a> 이 링크의 내용대로 따라하면 별 무리가 없다. 즉 이클립스, 툴체인, ESP SDK를 설치하고 Sming core를 빌드한다.&lt;/p>
+&lt;p>이클립스의 환경설정에서 SMING_HOME, ESP_HOME 설정을 한다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4045" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_569/v1505275296/ESP_Eclipse_xkwyit.png" width="569" height="371" />
+&lt;p> &lt;/p>
+&lt;p>SmingFramework의 Makefile-project.mk파일에서 ESPTOOL2의 경로를 다음과 같이 수정한다.&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;span class="s1">ESPTOOL2 ?&lt;/span>= /opt/esp-open-sdk/utils/esptool2
+&lt;/p></description></item><item><title>아두이노에서 ESP8266 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-esp8266-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 06 Apr 2016 09:29:24 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-esp8266-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="아두이노에서-esp8266-사용하기">아두이노에서 ESP8266 사용하기&lt;/h3>
+&lt;ul>
+&lt;li>아두이노 IDE는 1.6.4 이상의 버전을 설치&lt;/li>
+&lt;li>아두이노의 환경설정에서 추가적인 보드매니저 URLs에 다음과 같이 입력&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;a href="http://arduino.esp8266.com/stable/package">http://arduino.esp8266.com/stable/package&lt;/a>_esp8266com_index.json&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>툴 &amp;gt; 보드매니저에서 ESP8266을 검색후 ESP8266 보드를 설치한다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/04/arduino_board_maneger.png">&lt;img loading="lazy" class="aligncenter wp-image-3604" src="https://openmicrolab.com/images/2016/04/arduino_board_maneger.png" alt="arduino_board_maneger" width="491" height="276" srcset="https://openmicrolab.com/images/2016/04/arduino_board_maneger.png 801w, https://openmicrolab.com/images/2016/04/arduino_board_maneger-300x169.png 300w" sizes="(max-width: 491px) 100vw, 491px" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>설치후 툴 &amp;gt; 보드 메뉴에서 가지고 있는 ESP8266보드를 선택한다.&lt;/li>
+&lt;/ul>
+&lt;p>####&lt;img loading="lazy" class="alignnone" src="http://www.seeedstudio.com/depot/bmz_cache/1/15779b54e3a81b48686fc7fd13e8782d.image.200x150.jpg" alt="" width="247" height="185" />&lt;/p>
+&lt;ul>
+&lt;li>이 보드의 관련 정보: &lt;a href="https://github.com/nodemcu" target="_blank">&lt;a href="https://github.com/nodemcu">https://github.com/nodemcu&lt;/a>&lt;/a>&lt;/li>
+&lt;li>ESP8266 보드들의 비교: &lt;a href="http://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/" target="_blank">&lt;a href="http://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/">http://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="핀레이아웃">핀레이아웃&lt;/h4>
+&lt;img loading="lazy" class="alignnone" src="http://cdn.frightanic.com/blog/wp-content/uploads/2015/09/esp8266-nodemcu-dev-kit-v2-pins.png" alt="" width="436" height="336" />
+&lt;h4 id="간단한-blink-test">간단한 Blink Test&lt;/h4></description></item><item><title>아두이노의 숨겨진 히스토리</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%B9%84%ED%99%94/</link><pubDate>Sun, 03 Apr 2016 13:38:24 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%B9%84%ED%99%94/</guid><description>
+&lt;p>이제껏 몰랐던 아두이노의 숨겨진 이야기 &lt;a href="http://arduinohistory.github.io/" target="_blank">&lt;a href="http://arduinohistory.github.io/">http://arduinohistory.github.io/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>이 글의 저자는 Hernando Barragán로 아두이노가 차용한 &lt;a href="https://en.wikipedia.org/wiki/Wiring_(development_platform)" target="_blank">Wiring&lt;/a>을 개발한 사람이다. 이 이야기의 핵심은 자신이 학생으로 있을 때 개발한 wiring을 당시 교수로 있었던 Massimo Banzi가 fork해서 아두이노를 만들었다는 것. 잘못된 정보는 무책임한 미디어에 의해 더 확산이 되고… 암튼 당사자가 주장하는 얘기의 핵심은&lt;/p>
+&lt;blockquote>
+&lt;p>It is unethical and a bad example for academics to do something like this with the work of a student. Educators, more than anybody else, should avoid taking advantage of their student’s work.&lt;/p></description></item><item><title>Make파일을 사용해서 아두이노 스케치 다운로드</title><link>https://openmicrolab.com/make%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</link><pubDate>Wed, 16 Mar 2016 02:31:53 +0000</pubDate><guid>https://openmicrolab.com/make%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</guid><description>
+&lt;p>아두이노 IDE를 사용하여 스케치를 다운로드를 하면 매번 컴파일을 해서 시간이 걸린다. 따라서  Make파일을 써서 스케치를 다운로드하고 있었는데, UART to USB칩이 Atmega16U2, FTDI에서는 이상이 없었는데, Silab CP2102를 사용하면 다운로드가 안된다. 원인을 찾아보니 Make파일에서 다음과 같이 AVRDUDE_PROGRAMMER를 stk500대신 wiring으로 하니 다운로드가 잘된다.&lt;/p>
+&lt;blockquote>
+&lt;p>#AVRDUDE_PROGRAMMER ?= stk500&lt;br>
+AVRDUDE_PROGRAMMER ?= wiring&lt;/p>&lt;/blockquote>
+&lt;p>&lt;a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx" target="_blank">CP2102 드라이버&lt;/a>, &lt;a href="https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf" target="_blank">CP2102데이터시트&lt;/a>&lt;/p></description></item><item><title>Teensy 사용하기</title><link>https://openmicrolab.com/teensy-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 09 Mar 2016 08:01:24 +0000</pubDate><guid>https://openmicrolab.com/teensy-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;a href="https://www.pjrc.com/teensy/index.html" target="_blank">Teensy&lt;/a>는 아두이노 호환 보드로 Cortex M0, M4기반의 보드가 있어서 보다 높은 프로세싱이 필요한 응용에 적합하다. 이 보드를 사용하기 위해서는 &lt;a href="https://www.pjrc.com/teensy/teensyduino.html" target="_blank">Teensyduino&lt;/a>라는 프로그램을 설치해야 하는데, 이것은 기존 아두이노 IDE에 추가적으로 설치되는 코드들과 다운로드를 위한 프로그램이 포함되어 있다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1.png">&lt;img loading="lazy" class="aligncenter wp-image-3570" src="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1.png" alt="Teensy_USB_Development_Board_1" width="592" height="409" srcset="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1.png 799w, https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1-300x207.png 300w" sizes="(max-width: 592px) 100vw, 592px" />&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-3571" src="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board.png" alt="Teensy_USB_Development_Board" width="485" height="298" srcset="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board.png 485w, https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board-300x184.png 300w" sizes="(max-width: 485px) 100vw, 485px" />&lt;/a>&lt;/p>
+&lt;p>먼저 아두이노를 설치하고 &lt;a href="https://www.pjrc.com/teensy/td_download.html" target="_blank">&lt;a href="https://www.pjrc.com/teensy/td_download.html">https://www.pjrc.com/teensy/td_download.html&lt;/a>&lt;/a> 이 사이트에서 파일을 다운로드해서 설치하는데 문제는 아두이노 1.0과 아두이노 1.6.x 이 동시에 설치가 되어 있으면 아두이노 1.0쪽에만 설치가 된다.(아두이노 1.6.x쪽을 지정이 안됨) 따라서 일단 아두이노 1.0을 언인스톨하고 1.6.x에 설치를 한 후 다시 아두이노 1.0을 설치를 해야 한다. Teensy 3.2의 경우 Cortex M4이기 때문에 SPI를 사용하는 응용은 &lt;a href="https://www.pjrc.com/teensy/td_libs.html" target="_blank">Teensy 라이브러리&lt;/a>에서 SPI 드라이버(&lt;a href="https://github.com/xxxajk/spi4teensy3">faster SPI library for Teensy 3.0&lt;/a>)도 같이 설치를 해야한다. 그리고 나머지 필요한 라이브러리는 아두이노 1.6.x의 라이브러리 매니저에서 추가한다.&lt;/p></description></item><item><title>아두이노 스케치를 네트워크로 업로드하기 – Arduino update remotely</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0-arduino-remote-firmware-update/</link><pubDate>Fri, 05 Feb 2016 07:47:54 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0-arduino-remote-firmware-update/</guid><description>
+&lt;p>아두이노 보드의 펌웨어는 USB 케이블을 PC와 연결후 PC상에서 잡히는 것은 COM 포트를 통해 아두이노 IDE를 통해 업데이트가 된다. 좀 더 구체적으로는 &lt;a href="http://www.nongnu.org/avrdude/" target="_blank">avrdude&lt;/a>라는 프로그램을 써서 &lt;a href="http://www.atmel.com/images/doc2591.pdf" target="_blank">stk500프로토콜&lt;/a>을 사용해서 프로그램이 된다.&lt;/p>
+&lt;h3 id="아두이노-스케치를-네트워크로-업로드하기">아두이노 스케치를 네트워크로 업로드하기&lt;/h3>
+&lt;p>&lt;strong>필요한 것들&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.wiznet.co.kr/product-item/wiz550s2e/" target="_blank">Wiznet의 WIZ550S2E&lt;/a> –  1개&lt;/li>
+&lt;li>Arduino pro mini – 테스트에 사용한 아두이노 보드&lt;/li>
+&lt;li>와이어링 케이블 – WIZ550S2E와 Arduino pro mini를 연결&lt;/li>
+&lt;li>TFTP server program – Windows의 경우 &lt;a href="http://tftpd32.jounin.net/tftpd32_download.html" target="_blank">tftpd&lt;/a>, 맥의 경우 &lt;a href="http://ww2.unime.it/flr/tftpserver/" target="_blank">Tftp Server&lt;/a>&lt;/li>
+&lt;li>아두이노 IDE 프로그램&lt;/li>
+&lt;/ul>
+&lt;h4 id="케이블-연결-및-설정">케이블 연결 및 설정&lt;/h4>
+&lt;p>WIZ550S2E는 Serial to Ethernet 게이트웨이 모듈로 시리얼로 들어온 데이터는 네트워크로 보내고, 네트워크에서 들어온 데이터는 시리얼로 보낸다. &lt;a href="http://wizwiki.net/wiki/doku.php?id=products:wiz550s2e:wiz550s2eds_kr" target="_blank">WIZ550S2E의 회로도&lt;/a>를 보면 J1에 있는 입력핀들은 풀업이 되어 있어서, 아두이노와 연결에 필요한 핀은  3V3D, GND, TXD, RXD, STATUS2 핀이다.&lt;/p></description></item><item><title>아두이노는 hex파일을 어디에 저장하는가?</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%8A%94-hex%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%96%B4%EB%94%94%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EB%8A%94%EA%B0%80/</link><pubDate>Mon, 01 Feb 2016 10:32:30 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%8A%94-hex%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%96%B4%EB%94%94%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EB%8A%94%EA%B0%80/</guid><description>
+&lt;p>아두이노는 스케치를 avr-gcc 또는 arm-gcc를 사용해서 컴파일을 한다. 이 컴파일러의 위치는 맥의 경우 Arduino.app/Contents/Java/hardware/arduino/avr/platform.txt에 정의가 되어 있다. 즉 /Arduino.app/Contents/Java/hardware/tools/ 아래에 avr, arm 컴파일러가 컴파일을 한다.&lt;/p>
+&lt;h4 id="그럼-아두이노는-hex-파일을-어디에-저장을-하는가">그럼 아두이노는 hex 파일을 어디에 저장을 하는가?&lt;/h4>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/02/Arduino_Prefernece.png">&lt;img loading="lazy" class="aligncenter wp-image-3525" src="https://openmicrolab.com/images/2016/02/Arduino_Prefernece.png" alt="Arduino_Prefernece" width="628" height="564" srcset="https://openmicrolab.com/images/2016/02/Arduino_Prefernece.png 905w, https://openmicrolab.com/images/2016/02/Arduino_Prefernece-300x270.png 300w" sizes="(max-width: 628px) 100vw, 628px" />&lt;/a>&lt;/p>
+&lt;p>이것을 알아보기위해서는 Arduino &amp;gt; Preference의 설정에서 “다음 동작중 자세한 출력보기”의 컴파일 부분을 체크하면 hex파일이 생성되는 위치를 알 수 있다.  그런데 저장되는 폴더의 위치가…&lt;/p>
+&lt;p>“/var/folders/4v/frv3pzr55x77gnv6_342m3wm0000gn/T/buildd18630de25a90c7712fff203789659dd.tmp/WebServer.ino.hex”&lt;/p>
+&lt;p>이 폴더의 위치를 바꾸기 위해서는 아두이노를 종료하고 &lt;strong>Preference.txt&lt;/strong> 파일에 다음과 같이 “&lt;strong>build.path=&lt;/strong>” 항목을 추가하고 폴더의 위치를 기입후 다시 아두이노를 실행한다.&lt;/p></description></item><item><title>Yaler.net relay service</title><link>https://openmicrolab.com/yaler-net-relay-service/</link><pubDate>Fri, 02 Oct 2015 13:28:48 +0000</pubDate><guid>https://openmicrolab.com/yaler-net-relay-service/</guid><description>
+&lt;p>네트워크 기능이 내장된 임베디드 디바이스의 경우 내부 네트워크에서 외부로 접속은 쉽지만, 반대로 외부에서 이 디바이스로의 접근은 방화벽등이 있으면 쉽지않고, 공유기에서 NAT, 포트포워딩 등의 기능을 사용해야 해서 일반사용자들은 이용이 어렵다.&lt;/p>
+&lt;p>&lt;strong>Yaler.net relay service&lt;/strong>&lt;br>
+&lt;a href="https://yaler.net/" target="_blank">Yaler.net&lt;/a>은 이런 문제점을 해결해 줄 수 있는 서비스인데 아래 그림을 보면 동작이 쉽게 이해가 되며, &lt;a href="https://yaler.net/help" target="_blank">튜토리얼 문서&lt;/a>를 보면 Arduino, Beaglebone, Raspberry Pi… 등의 유명한 보드들의 셋업가이드도 자세하게 나와있다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web.jpg">&lt;img loading="lazy" class="aligncenter wp-image-3429 size-full" src="https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web.jpg" alt="Yaler_net_-_access_devices_from_the_Web" width="531" height="508" srcset="https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web.jpg 531w, https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web-300x287.jpg 300w" sizes="(max-width: 531px) 100vw, 531px" />&lt;/a>&lt;/p>
+&lt;p>&lt;strong>비용&lt;/strong>&lt;br>
+비용은 회원가입을 하면 30일 무료이고, 최저 10CHF (스위스 프랑)이니 약 10불정도이니 비싸지 않다.&lt;/p></description></item><item><title>아두이노 Serial to USB 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-serial-to-usb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 28 Apr 2015 06:50:34 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-serial-to-usb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>원본소스는 Mac에서 \Resource\Java\hardware\arduino\firmware\atmegaxxu2 아래에 있다. arduino-usbdfu 또는 arduino-usbserial 를 사용한다. 이 소스에는 USB 프레임워크인 &lt;a href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank">LUFA&lt;/a>(Lightweight USB Framework for AVRs)가 빠져있으므로 &lt;a title="LUFA" href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank">&lt;a href="http://www.fourwalledcubicle.com/LUFA.php">http://www.fourwalledcubicle.com/LUFA.php&lt;/a>&lt;/a> 에서 다운로드한다. 다운로드한 LUFA 폴더를 arduino-usbserial 폴더와 같은 위치에 복사한다.&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">make 파일에서 다음과 같은 내용을 수정한다.&lt;/span>
+&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;strong>LUFA_PATH&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1"># Path to the LUFA library&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">LUFA_PATH = ../&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>MCU&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+MCU = at90usb162  #atmega16u2와 pin to pin 호환임
+&lt;/p>&lt;/blockquote>
+&lt;p class="p1">
+컴파일된 hex파일은 avr isp등으로 write하면 된다.
+&lt;/p>
+&lt;p class="p1">
+이렇게 작업한 내용은 &lt;a href="https://github.com/jbkim/usbserial" target="_blank">https://github.com/jbkim/usbserial&lt;/a>
+&lt;/p>
+&lt;p class="p1"></description></item><item><title>Arduino Scuola와 3D 프린팅</title><link>https://openmicrolab.com/arduino-scuola%EC%99%80-3d-%ED%94%84%EB%A6%B0%ED%8C%85/</link><pubDate>Mon, 19 Jan 2015 04:10:44 +0000</pubDate><guid>https://openmicrolab.com/arduino-scuola%EC%99%80-3d-%ED%94%84%EB%A6%B0%ED%8C%85/</guid><description>
+&lt;p>최근에 발견한 Arduino Scuola 사이트: &lt;a href="http://scuola.arduino.cc/" target="_blank">&lt;a href="http://scuola.arduino.cc/">http://scuola.arduino.cc/&lt;/a>&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Arduino_Scuola.png" alt="Arduino Scuola" width="680" height="609" />
+&lt;p>이 사이트는 &lt;a href="https://learn.adafruit.com/guides/latest" target="_blank">Adafruit&lt;/a>와 &lt;a href="https://learn.sparkfun.com/?_ga=1.96420316.1388457354.1418889582" target="_blank">Sparkfun의 learn사이트&lt;/a>와 같은 컨셉의 사이트인데, 아직 자료가 많지 않아서 인지 메인 사이트에서 링크도 없다. 하지만 아두이노의 블로그의 글에서 언급한 내용에 이 사이트의 내용이 링크로 연결되는 것으로 보아 곧 활성화가 될 것같다. 오픈소스 하드웨어 비즈니스에서 이러한 접근은 몇 년 전부터 내가 예측하고 있던 방향이다. 즉 초보자 들이 쉽게 따라할 수 있는 컨텐츠를 제공하고, 관련된 부품이나 키트를 온라인 샵에서 같이 판매를 하는 것이다.&lt;/p>
+&lt;p>또 한가지 추세는 &lt;strong>3D프린팅과 디지털기기의 결합&lt;/strong>이다. 아주 &lt;a href="http://scuola.arduino.cc/courses/lessons/cover/gQ7noDN" target="_blank">간단한 예&lt;/a>가 소개가 되고 있는데, 이런 추세는 더 활발해 질 것 같다. 즉 디지털 기기에 3D 프린터를 사용하여 개인화된 내용이 부가되는 형태이다. 이런 식의 접근을 하고 있는 업체중 하나는 &lt;a href="http://www.3dracers.com/" target="_blank">3D Racers&lt;/a>인데 온라인에서 장난감 자동차의 외관을 사용자가 디자인 할 수 있다.&lt;/p></description></item><item><title>아두이노에서 정의되지 않은 핀 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-%EC%A0%95%EC%9D%98%EB%90%98%EC%A7%80-%EC%95%8A%EC%9D%80-%ED%95%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 08 Sep 2014 14:14:16 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-%EC%A0%95%EC%9D%98%EB%90%98%EC%A7%80-%EC%95%8A%EC%9D%80-%ED%95%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>아두이노 보드는 각종 라이브러리들을 잘 만들어 놓아 쉽게 프로그래밍이 가능하다. 일례로 가장 간단한 예제인 blink 예제를 보면 &lt;a href="http://arduino.cc/en/Reference/pinMode" target="_blank">pinMode()&lt;/a> 함수를 사용해서 온오프할 핀을 출력으로 정하고 &lt;a href="http://arduino.cc/en/Reference/digitalWrite" target="_blank">digitalWrite()&lt;/a>함수를 사용해서 LED를 온오프한다.&lt;/p>
+&lt;p>_ * 참고로 pinMode() 함수를 사용할때 주의할 점은 인자로 받아들이는 pin의 숫자가 아두이노 보드에 명기된 숫자이지 AVR칩의 pin number가 아니라는 점이다._&lt;br>
+&lt;a href="http://arduino.cc/en/Reference/pinMode" target="_blank">&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Arduino_-_PinMapping2560.png" alt="" width="662" height="686" />&lt;/a>&lt;/p>
+&lt;p>Arduino Uno보드의 경우는 Atmega328칩의 모든  핀들이 보드에 나와있어서 문제가 없으나 위 그림과 같이 Arduino Mega보드의 경우 일부 핀들이 보드에 나와있지 않다. 보드에 핀이 나와있지 않으니 라이브러리에도 핀들이 정의되어 있지 않다. 따라서 만약에 이 핀들을 사용을 하려려면 라이브러리를 수정을 해야 하며, &lt;a href="http://arduino.cc/en/Reference/pinMode" target="_blank">pinMode()&lt;/a> 라는 함수가 어떻게 동작하는 지 알아야 한다.&lt;/p></description></item><item><title>이클립스(Eclipse)에서 아두이노(Arduino)사용하기</title><link>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4eclipse%EC%97%90%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8arduino%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 12 Aug 2014 03:08:15 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4eclipse%EC%97%90%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8arduino%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="이클립스-개발환경에서-아두이노사용하기">이클립스 개발환경에서 아두이노사용하기&lt;/h3>
+&lt;ol>
+&lt;li>이클립스(Eclipse) 설치 &lt;a href="http://www.eclipse.org/downloads/" target="_blank">&lt;a href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/&lt;/a>&lt;/a> &lt;strong>Eclipse IDE for C/C++ Developers&lt;/strong> 를 설치&lt;/li>
+&lt;li>아두이노 이클립스 플러그인:  &lt;a href="http://www.baeyens.it/eclipse/" target="_blank">저작자의 홈페이지&lt;/a> – &lt;a href="http://www.baeyens.it/eclipse/installAdvice.shtml" target="_blank">Installation advice&lt;/a>, 가 있으니 참고. 플러그인 설치는 이클립스를 실행후 **Help &amp;raquo; Install New Software…**를 실행후 “&lt;strong>&lt;a href="http://www.baeyens.it/eclipse/update">http://www.baeyens.it/eclipse/update&lt;/a>&lt;/strong>” 주소를 입력하고 Add 버튼을 누른다. 그러면 &lt;strong>Arduino Eclipse extensions&lt;/strong> 이 나타나는데 이것을 선택하면 설치가 된다.&lt;/li>
+&lt;li>&lt;strong>Preferences &amp;gt; General &amp;gt; Workspace&lt;/strong>를 선택하고 **“Save automatically before build”**를 선택 &lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/eclipse_arduino1.png" width="780" height="612" />&lt;/li>
+&lt;li>&lt;strong>Arduino&lt;/strong>항목에서 &lt;strong>Arduino가 설치된 path와 library path&lt;/strong> 를 입력하고, &lt;strong>Use Arduino ODE tools in eclipse&lt;/strong>를 선택한다. 그리고 test serial dll를 클릭해서 serial drive가 동작하는 지 확인한다.&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/eclipse_arduino2.png" width="909" height="608" />&lt;/li>
+&lt;li>아두이노 프로젝트 만들기: &lt;strong>New &amp;raquo; Project &amp;raquo; Arduino &amp;raquo; New Arduino sketch&lt;/strong>를 선택, 프로젝트 이름를 설정, 보드와 COM port를 설정하면 setup()과 loop()함수가 만들어진 빈 프로젝트가 생긴다.&lt;/li>
+&lt;li>간단한 blink 예제를 만들고 &lt;strong>Project &amp;raquo; Build All&lt;/strong>하면 컴파일이되고, &lt;strong>AVR &amp;raquo; Upload Project to Target Devic&lt;/strong>e를 선택하면 아두이노 보드에 프로그래밍이된다.&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/Arduino_Eclipse_Test.png" width="684" height="472" />&lt;/li>
+&lt;/ol></description></item><item><title>SPI of Arduino</title><link>https://openmicrolab.com/spi-of-arduino/</link><pubDate>Mon, 17 Mar 2014 09:50:04 +0000</pubDate><guid>https://openmicrolab.com/spi-of-arduino/</guid><description>
+&lt;h3 id="spi-of-arduino">SPI of Arduino&lt;/h3>
+&lt;p>[table id=2 /]&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;span style="line-height: 1.5em;">SPI 신호들은 ICSP핀이나 보드의 우측 상단(AREF 있는 쪽)에 같이 연결된 경우도 있으나, 그렇지 않은 경우도 있다. 그러므로 SPI를 사용하는 쉴드를 디자인 할 경우 라우팅을 쉽게하기 위해 한쪽만 SPI를 사용하려면 ICSP핀 쪽에만 연결을 하면 된다.&lt;/span>&lt;/p>&lt;/blockquote></description></item></channel></rss>

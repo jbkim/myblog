@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PCB제조 on OpenMicroLab</title><link>https://openmicrolab.com/tags/pcb%EC%A0%9C%EC%A1%B0/</link><description>Recent content in PCB제조 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 21 Jun 2015 14:00:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/pcb%EC%A0%9C%EC%A1%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>PCB 제조 관련</title><link>https://openmicrolab.com/pcb-%EC%A0%9C%EC%A1%B0-%EA%B4%80%EB%A0%A8/</link><pubDate>Sun, 21 Jun 2015 14:00:21 +0000</pubDate><guid>https://openmicrolab.com/pcb-%EC%A0%9C%EC%A1%B0-%EA%B4%80%EB%A0%A8/</guid><description>
+&lt;ul>
+&lt;li>&lt;strong>Plating Finish&lt;/strong> : leaded or lead-free HASL (Hot Air Solder Leveling) vs ENIG (Electroless nickel immersion gold) plating. HASL pad는ENIG보다 평탄하지 않다.&lt;/li>
+&lt;li>&lt;strong>Copper trace&lt;/strong>: 6 mil&lt;/li>
+&lt;li>&lt;strong>Hole size&lt;/strong>: 0.2 – 0.3mm via 사이즈가 일반적&lt;/li>
+&lt;li>&lt;strong>Silk&lt;/strong>: LPI printing (Liquid photo imaging)이 높은 해상도를 가짐&lt;/li>
+&lt;li>&lt;strong>Castellated Holes&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>FreeDFM: &lt;a href="https://www.my4pcb.com/net35/FreeDFMNet/FreeDFMHome.aspx" target="_blank">&lt;a href="https://www.my4pcb.com/net35/FreeDFMNet/FreeDFMHome.aspx">https://www.my4pcb.com/net35/FreeDFMNet/FreeDFMHome.aspx&lt;/a>&lt;/a>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/06/freedfm.png">&lt;img loading="lazy" class="alignnone size-full wp-image-3389" src="https://openmicrolab.com/images/2015/06/freedfm.png" alt="freedfm" width="1000" height="655" srcset="https://openmicrolab.com/images/2015/06/freedfm.png 1000w, https://openmicrolab.com/images/2015/06/freedfm-300x197.png 300w" sizes="(max-width: 1000px) 100vw, 1000px" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>중국 PCB업체&lt;/strong>: &lt;a href="http://www.hqpcb.com/online.html" target="_blank">&lt;a href="http://www.hqpcb.com/online.html">http://www.hqpcb.com/online.html&lt;/a> &lt;/a>  / &lt;a href="http://www.kikipcb.com/index.html" target="_blank">&lt;a href="http://www.kikipcb.com/index.html">http://www.kikipcb.com/index.html&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;strong>BOM관련&lt;/strong>:  &lt;a href="https://octopart.com/" target="_blank">&lt;a href="https://octopart.com/">https://octopart.com/&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

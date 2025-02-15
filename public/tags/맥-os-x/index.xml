@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>맥 OS X on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%A7%A5-os-x/</link><description>Recent content in 맥 OS X on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 09 Aug 2017 05:14:02 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%A7%A5-os-x/index.xml" rel="self" type="application/rss+xml"/><item><title>맥 OS X에서 Mail 초기화</title><link>https://openmicrolab.com/%EB%A7%A5-os-x%EC%97%90%EC%84%9C-mail-%EC%B4%88%EA%B8%B0%ED%99%94/</link><pubDate>Wed, 09 Aug 2017 05:14:02 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5-os-x%EC%97%90%EC%84%9C-mail-%EC%B4%88%EA%B8%B0%ED%99%94/</guid><description>
+&lt;p>**맥 OS X에서 Mail 초기화 – **Mail 이 시작하자마자 다운되는 경우 필요하다.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>시스템환경설정 &amp;gt; 인터넷 계정에서 사용하는 이메일을 잠시 비활성화&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>(CMD + SHIFT + G) ~/Library/Mail 폴더를 삭제&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>~/Library/Preferences/com.apple.mail-shared.plist 삭제&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>~/Library/Containers/com.apple.mail 폴더 삭제&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>터미널에서 프로퍼티리스트 캐시를 초기화&lt;/p>
+&lt;blockquote>
+&lt;p>killall -SIGTERM cfprefsd&lt;/p>&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>Mail을 재시동 후 계정 활성화&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>맥 OS X에서 숨김파일 보기 설정</title><link>https://openmicrolab.com/%EB%A7%A5-os-x%EC%97%90%EC%84%9C-%EC%88%A8%EA%B9%80%ED%8C%8C%EC%9D%BC-%EB%B3%B4%EA%B8%B0-%EC%84%A4%EC%A0%95/</link><pubDate>Sat, 22 Feb 2014 06:31:21 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5-os-x%EC%97%90%EC%84%9C-%EC%88%A8%EA%B9%80%ED%8C%8C%EC%9D%BC-%EB%B3%B4%EA%B8%B0-%EC%84%A4%EC%A0%95/</guid><description>
+&lt;p>맥 OS X에서 숨김파일 보기 설정은 기본적으로 off이다. 숨김파일을 보려면  터미널에서 다음을 입력하고  Finder를 강제로 재시작하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>defaults write com.apple.Finder AppleShowAllFiles YES&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;p>만약 원래 상태로 돌리려면&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>defaults write com.apple.Finder AppleShowAllFiles NO&lt;/strong>&lt;/p>&lt;/blockquote></description></item></channel></rss>

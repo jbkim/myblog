@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VirtualenvWrapper on OpenMicroLab</title><link>https://openmicrolab.com/tags/virtualenvwrapper/</link><description>Recent content in VirtualenvWrapper on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 20 Aug 2014 02:39:34 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/virtualenvwrapper/index.xml" rel="self" type="application/rss+xml"/><item><title>Xcode, Pip, Virtualenv, VirtualenvWrapper 설치하기</title><link>https://openmicrolab.com/xcode-pip-virtualenv-virtualenvwrapper-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 20 Aug 2014 02:39:34 +0000</pubDate><guid>https://openmicrolab.com/xcode-pip-virtualenv-virtualenvwrapper-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="xcode">Xcode&lt;/h3>
+&lt;p>Xcode와 Xcode command line tool은 Mac에서 개발을 하려면 필요한 툴.  App Store에서 다운로드해서 설치한다. Xcode의 설치여부를 확인하는 방법&lt;/p>
+&lt;pre>$ xcode-select -p&lt;/pre>
+&lt;p>설치가 되어있으면  다음과 같이 표시가 된다.&lt;/p>
+&lt;pre>/Applications/Xcode.app/Contents/Developer&lt;/pre>
+&lt;p>Command line tool은 다음과 같이 해서 설치를 하는데,  /Library/Developer/CommandLineTool/ 위치에 설치가 된다.&lt;/p>
+&lt;pre>xcode-select —install
+&lt;/pre>
+&lt;p>gcc의 버젼 확인&lt;/p>
+&lt;pre>$ gcc --version
+Python deployment를 위한 툴인 pip, virtualenv, virtualwrapper의 설치&lt;/pre>
+&lt;h3 id="a-hrefhttpspypipythonorgpypipip-target_blankpipa">&lt;a href="https://pypi.python.org/pypi/pip" target="_blank">Pip&lt;/a>&lt;/h3>
+&lt;pre>sudo easy_install pip&lt;/pre>
+&lt;h3 id="a-hrefhttpspypipythonorgpypivirtualenv-target_blankvitualenva">&lt;a href="https://pypi.python.org/pypi/virtualenv" target="_blank">Vitualenv&lt;/a>&lt;/h3>
+&lt;pre>sudo pip install virtualenv&lt;/pre>
+&lt;h3 id="a-hrefhttpsbitbucketorgdhellmannvirtualenvwrapper-target_blankvitualenvwrappera">&lt;a href="https://bitbucket.org/dhellmann/virtualenvwrapper" target="_blank">VitualenvWrapper&lt;/a>&lt;/h3>
+&lt;pre>sudo pip install virtualenvwrapper&lt;/pre>
+&lt;p>.virtualenvs 폴더를 만든다.&lt;/p></description></item></channel></rss>

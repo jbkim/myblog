@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gerrit on OpenMicroLab</title><link>https://openmicrolab.com/tags/gerrit/</link><description>Recent content in Gerrit on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 13 Aug 2018 08:38:37 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/gerrit/index.xml" rel="self" type="application/rss+xml"/><item><title>Iotivity에서 gerrit 설정</title><link>https://openmicrolab.com/iotivity%EC%97%90%EC%84%9C-gerrit-%EC%84%A4%EC%A0%95/</link><pubDate>Mon, 13 Aug 2018 08:38:37 +0000</pubDate><guid>https://openmicrolab.com/iotivity%EC%97%90%EC%84%9C-gerrit-%EC%84%A4%EC%A0%95/</guid><description>
+&lt;p>Iotivity에서 gerrit설정 및 git을 이용해 코드를 가져오는 방법&lt;/p>
+&lt;h3 id="step_1create_ssh_keys">Step 1: &lt;a href="http://linuxfoundation.org" target="_blank" rel="noopener noreferrer">linuxfoundation.org&lt;/a> 에서 회원가입&lt;span class="st0">&lt;br /> &lt;/span>&lt;/h3>
+&lt;h3 id="step_1create_ssh_keys">Step 2: Create SSH keys&lt;/h3>
+&lt;div class="level5">
+&lt;pre class="code bash">&lt;span class="co4">$ &lt;/span>&lt;span class="kw2">ssh-keygen&lt;/span> &lt;span class="re5">-t&lt;/span> rsa &lt;span class="re5">-C&lt;/span> &lt;span class="st0">"Your name &amp;lt;your_email_address&amp;gt;"&lt;/span>&lt;/pre>
+&lt;p>
+~/.ssh의 위치에 id_rsa와 id_rsa.pub가 생성이 된다. 참고로 맥에서 숨김 파일을 보려면 SHIFT + CMD + .
+&lt;/p>
+&lt;/div>
+&lt;h3 id="step_2setting_up_ssh">Step 3: Setting up SSH&lt;/h3>
+&lt;div class="level5">
+&lt;p>
+~/.ssh/config 파일을 다음과 같이 생성한다.
+&lt;/p>
+&lt;pre class="code">Host gerrit.iotivity.org
+Hostname "gerrit.iotivity.org"
+IdentityFile ~/.ssh/id_rsa
+User &amp;lt;Linux Foundation ID&amp;gt;
+Port 29418&lt;/pre>
+&lt;/div>
+&lt;h3 id="step_3upload_ssh_public_key_to_gerrit_and_register_personal_info">Step 3: Upload SSH public key to Gerrit and Register personal info&lt;/h3>
+&lt;div class="level5">
+&lt;p>
+&lt;a class="urlextern" title="https://gerrit.iotivity.org/" href="https://gerrit.iotivity.org/" rel="nofollow">IoTivity Gerrit&lt;/a>에 로그인을 한후 Settings 메뉴에서 id_rsa.pub 파일의 내용 copy &amp; paste 한다.
+&lt;/p></description></item></channel></rss>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AS6200C on OpenMicroLab</title><link>https://openmicrolab.com/tags/as6200c/</link><description>Recent content in AS6200C on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 10 Mar 2018 02:40:24 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/as6200c/index.xml" rel="self" type="application/rss+xml"/><item><title>Digital Temperature Sensor – AS6200C</title><link>https://openmicrolab.com/digital-temperature-sensor-as6200c/</link><pubDate>Sat, 10 Mar 2018 02:40:24 +0000</pubDate><guid>https://openmicrolab.com/digital-temperature-sensor-as6200c/</guid><description>
+&lt;h3 id="as6200c">AS6200C&lt;/h3>
+&lt;ul>
+&lt;li>-40~125°C 지원되는 I2C방식의 온도센서&lt;/li>
+&lt;li>1.5 × 1 mm &lt;a href="https://www.allaboutcircuits.com/technical-articles/comparing-voltages-in-very-tight-spaces-a-new-comparator-from-maxim/" target="_blank" rel="noopener noreferrer">WLCSP&lt;/a> package&lt;/li>
+&lt;li>&lt;a href="http://ams.com/eng/content/download/1114551/2538659/556498" target="_blank" rel="noopener noreferrer">datasheet&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4236" src="https://res.cloudinary.com/openmicrolab/image/upload/v1520649475/AS6200C_m2rfcj.png" width="1306" height="434" />
+&lt;p> &lt;/p></description></item></channel></rss>

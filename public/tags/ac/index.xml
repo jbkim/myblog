@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AC on OpenMicroLab</title><link>https://openmicrolab.com/tags/ac/</link><description>Recent content in AC on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 23 Oct 2017 08:21:59 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ac/index.xml" rel="self" type="application/rss+xml"/><item><title>AC 전원</title><link>https://openmicrolab.com/ac-%EC%A0%84%EC%9B%90/</link><pubDate>Mon, 23 Oct 2017 08:21:59 +0000</pubDate><guid>https://openmicrolab.com/ac-%EC%A0%84%EC%9B%90/</guid><description>
+&lt;p>&lt;strong>교류용 전선(3선)의 극성&lt;/strong>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4079" src="https://res.cloudinary.com/openmicrolab/image/upload/v1508746647/AC_Cable_x6w7c7.jpg" width="327" height="245" />
+&lt;p>&lt;strong>&lt;span style="color: #99cc00;">접지선&lt;/span>&lt;span style="color: #339966;">(EARTH)&lt;/span>&lt;/strong>&lt;span style="color: #339966;"> &lt;/span>&lt;/p>
+&lt;p>&lt;span style="color: #0000ff;">&lt;strong>중립선(NEUTRAL) –&lt;/strong>&lt;/span>&lt;/p>
+&lt;p>&lt;span style="color: #808000;">&lt;strong>전력선(LIVE)      &lt;/strong>&lt;strong>  +&lt;/strong>&lt;/span>&lt;/p>
+&lt;p>퓨즈는 전력선(LIVE)에 연결한다.&lt;/p>
+&lt;p>&lt;strong>Hi-link사의 AC/DC 컨버터 모듈&lt;/strong>&lt;/p>
+&lt;img loading="lazy" class="alignnone size-large" src="http://www.hlktech.net/u_file/product/15_03_01/330X232_496726b79e.jpg" width="288" height="232" />
+&lt;p>데이터 시트에 AC연결이 어떻게 되는지 안나와 있는데, 위쪽이 N(Neutral)이고 아래핀이 L(Live)이다.&lt;/p>
+&lt;p>어떤 블로거의 이 모듈과 관련해서 &lt;a href="https://skippy.org.uk/quick-look-at-the-hlk-pm01/" target="_blank" rel="noopener noreferrer">테스트한 자료1&lt;/a> – Conducted emission fail 됨. 그래서 이후에 &lt;a href="https://skippy.org.uk/revisiting-the-hlk-pm01/" target="_blank" rel="noopener noreferrer">테스트한 자료&lt;/a> &amp;lt;= 결론은 싼 중국 파워제품을 무턱대로 사용하면 인증에서 골치아픔. 🙁&lt;/p>
+&lt;p> &lt;/p></description></item></channel></rss>

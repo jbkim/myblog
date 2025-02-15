@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D Printer on OpenMicroLab</title><link>https://openmicrolab.com/categories/3d-printer/</link><description>Recent content in 3D Printer on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 26 Nov 2018 04:23:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/3d-printer/index.xml" rel="self" type="application/rss+xml"/><item><title>Cura에 새로운 프린터 프로파일 추가하기</title><link>https://openmicrolab.com/cura%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 26 Nov 2018 04:23:09 +0000</pubDate><guid>https://openmicrolab.com/cura%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>기기 정의 파일, 익스트루더 정의 파일을 만들어서 적용을 해야한다.&lt;/p>
+&lt;ol>
+&lt;li>기기 정의 파일&lt;br>
+기기의 특성을 정의한 파일로 &lt;a href="https://github.com/Ultimaker/Cura/blob/master/resources/definitions/ultimaker_original.def.json" target="_blank" rel="noopener noreferrer">템플릿&lt;/a>을 참고한다.&lt;br>
+보다 자세한 내용은 &lt;a href="https://github.com/Ultimaker/Cura/wiki/Definition-Files-Explained" target="_blank" rel="noopener noreferrer">여기&lt;/a> 참고&lt;/li>
+&lt;li>익스트루더 정의 파일&lt;/li>
+&lt;/ol>
+&lt;p>Creatable D3를 Cura에 적용한 &lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1543206099/Creatable_D3_Profile_Test_reayqr.pdf" target="_blank" rel="noopener noreferrer">문서 &lt;/a>&lt;/p></description></item><item><title>DC 모터의 돌입전류를 제한하는 방법</title><link>https://openmicrolab.com/dc-%EB%AA%A8%ED%84%B0%EC%9D%98-%EB%8F%8C%EC%9E%85%EC%A0%84%EB%A5%98%EB%A5%BC-%EC%A0%9C%ED%95%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</link><pubDate>Mon, 30 Jul 2018 08:29:41 +0000</pubDate><guid>https://openmicrolab.com/dc-%EB%AA%A8%ED%84%B0%EC%9D%98-%EB%8F%8C%EC%9E%85%EC%A0%84%EB%A5%98%EB%A5%BC-%EC%A0%9C%ED%95%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</guid><description>
+&lt;p>NCT 써미스터를 사용하며, 용량은 다음과 같이 계산한다.&lt;/p>
+&lt;ul>
+&lt;li>Inrush Current – 전류의 3-4배 (ex: 0.25A 일 경우, 1A)&lt;/li>
+&lt;li>NTC써미스터가 흡수해야할 에너지계산(E = V x I x Time) – 24V x 1A x 0.2 sec = 4.8 Jouls&lt;/li>
+&lt;li>Rmin  계산 (입력전압/원하는 최대 전류)  – 24V/0.5A = 48 ohm &amp;lt;= 48ohm 보다 큰 값의 &lt;a href="https://kr.mouser.com/ProductDetail/Ametherm/SL08-12101?qs=sGAEpiMZZMuqZeNK75brDxRgT1KUh2F4l%252bS8njnnfYk%3d" target="_blank" rel="noopener noreferrer">부품&lt;/a>을 찾는다.&lt;/li>
+&lt;/ul>
+&lt;p>이렇게 해서 &lt;a href="https://www.ametherm.com/inrush-current/inrush-current-limiters-full-line" target="_blank" rel="noopener noreferrer">전체 리스트&lt;/a>에서 부품을 찾는다.&lt;/p>
+&lt;p>참고: &lt;a href="https://www.ametherm.com/blog/inrush-current/dc-motor-inrush-current" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.ametherm.com/blog/inrush-current/dc-motor-inrush-current">https://www.ametherm.com/blog/inrush-current/dc-motor-inrush-current&lt;/a>&lt;/a>&lt;/p></description></item><item><title>All About Stepper Motors</title><link>https://openmicrolab.com/all-about-stepper-motors/</link><pubDate>Sun, 17 Jun 2018 14:32:10 +0000</pubDate><guid>https://openmicrolab.com/all-about-stepper-motors/</guid><description>
+&lt;p>Adafruit에서 만든 자료로 Stepper motor에 대해 잘 정리되어 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4316" src="https://res.cloudinary.com/openmicrolab/image/upload/v1529245850/stepper_motor_fx0j33.png" width="719" height="265" />
+&lt;p>&lt;a href="https://cdn-learn.adafruit.com/downloads/pdf/all-about-stepper-motors.pdf" target="_blank" rel="noopener noreferrer">&lt;a href="https://cdn-learn.adafruit.com/downloads/pdf/all-about-stepper-motors.pdf">https://cdn-learn.adafruit.com/downloads/pdf/all-about-stepper-motors.pdf&lt;/a>&lt;/a>&lt;/p></description></item><item><title>3D 프린팅 및 공기 오염</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EB%B0%8F-%EA%B3%B5%EA%B8%B0-%EC%98%A4%EC%97%BC/</link><pubDate>Sun, 20 May 2018 10:31:44 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EB%B0%8F-%EA%B3%B5%EA%B8%B0-%EC%98%A4%EC%97%BC/</guid><description>
+&lt;p>3D 프린팅을 할 때 발생하는 미세 공기 오염물질에 대한 실험 내용. 필라멘트의 재질에 따라 다르며, ABS가 가장 않좋다. 그리고 이에 대한 대책으로 필터를 적용한 프로젝트에 대한 내용들.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4304" src="https://res.cloudinary.com/openmicrolab/image/upload/v1526812239/AirQ_01_hrwend.png" width="1495" height="504" />
+&lt;p>&lt;strong>관련기사&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="http://diy3dtech.com/3d-printing-and-air-quality-risks/">http://diy3dtech.com/3d-printing-and-air-quality-risks/&lt;/a>&lt;/p></description></item><item><title>Raspberry Pi에서 슬라이싱하기</title><link>https://openmicrolab.com/raspberry-pi%EC%97%90%EC%84%9C-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1%ED%95%98%EA%B8%B0/</link><pubDate>Sat, 05 May 2018 03:51:23 +0000</pubDate><guid>https://openmicrolab.com/raspberry-pi%EC%97%90%EC%84%9C-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1%ED%95%98%EA%B8%B0/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-4295" src="https://res.cloudinary.com/openmicrolab/image/upload/v1525492218/RPI_Sclicing_mqdbyg.png" width="662" height="342" />
+&lt;p>Octoprint는 크로스플랫폼을 지원하며, Raspberry Pi를 기본적으로 지원한다.  이 &lt;a href="https://hackaday.com/2018/05/03/3d-printering-which-raspberry-pi-is-best-at-slicing-in-octoprint/" target="_blank" rel="noopener noreferrer">기사&lt;/a>에서는 3가지 종류의 Raspberry Pi에서 슬라이싱 테스트를 했는데, 결론은 다음과 같다.&lt;/p>
+&lt;blockquote>
+&lt;p>There’s simply no competition between a modern desktop or laptop processor and the comparatively dinky ARM chip used in the Raspberry Pi. Which is why you should &lt;em>really&lt;/em> just slice your models on the computer and send the resulting G-Code to OctoPrint over the network. That’s the intended workflow, and it really does make a lot more sense than forcing the Pi to labor over a task it’s clearly not cut out for. If the results of this test have shown anything, it’s that slicing on the Pi is a time consuming process no matter which model you buy.&lt;/p></description></item><item><title>Ultimaker Cura의 구조</title><link>https://openmicrolab.com/ultimaker-cura%EC%9D%98-%EA%B5%AC%EC%A1%B0/</link><pubDate>Wed, 18 Apr 2018 02:40:59 +0000</pubDate><guid>https://openmicrolab.com/ultimaker-cura%EC%9D%98-%EA%B5%AC%EC%A1%B0/</guid><description>
+&lt;p> &lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4276" src="https://res.cloudinary.com/openmicrolab/image/upload/v1524019114/Cura_%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9_d4qxno.png" width="688" height="157" />
+&lt;ul>
+&lt;li>Cura의 대부분은 Python으로 작성되어 있고, 인터페이스는 PyQt를 사용&lt;/li>
+&lt;li>CuraEngine은 슬라이싱을 담당하고, C++로 작성&lt;/li>
+&lt;li>&lt;a href="https://github.com/Ultimaker/Cura" target="_blank" rel="noopener noreferrer">Cura&lt;/a>와 &lt;a href="https://github.com/Ultimaker/CuraEngine" target="_blank" rel="noopener noreferrer">CuraEngine&lt;/a>(슬라이싱 담당)의 통신에는 Arcus library를 사용.&lt;/li>
+&lt;li>즉 Cura에서 모델과 슬라이싱 옵션을 CuraEngine에 보내면 G-code를 리턴함&lt;/li>
+&lt;li>&lt;a href="https://github.com/Ultimaker/Uranium" target="_blank" rel="noopener noreferrer">Uranium&lt;/a>: 3D 관련 세팅, 3D-scenes을 위한 Python Framework&lt;/li>
+&lt;/ul></description></item><item><title>Repetier Server</title><link>https://openmicrolab.com/repetier-server/</link><pubDate>Mon, 19 Mar 2018 05:36:47 +0000</pubDate><guid>https://openmicrolab.com/repetier-server/</guid><description>
+&lt;p>&lt;a href="https://www.repetier-server.com/" target="_blank" rel="noopener noreferrer">Repetier Server&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>원격에서 3D프린터를 컨트롤, 모니터링, 프린팅이 가능한 솔루션.&lt;/li>
+&lt;li>윈도우즈, 리눅스, 맥 또는 Raspberri Pi에서 사용가능 – &lt;a href="https://www.repetier-server.com/download-repetier-server/" target="_blank" rel="noopener noreferrer">다운로드&lt;/a>&lt;/li>
+&lt;li>Free, OEM, Pro 3가지 버전&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4252" src="https://res.cloudinary.com/openmicrolab/image/upload/v1521437370/free_pro_fn24o7.png" width="480" height="797" />
+&lt;img loading="lazy" class="alignnone wp-image-4253" src="https://res.cloudinary.com/openmicrolab/image/upload/v1521437370/oem_pro_qkpg2e.png" width="487" height="825" /></description></item><item><title>OpenSCAD Customizer</title><link>https://openmicrolab.com/openscad-customizer/</link><pubDate>Sat, 10 Mar 2018 04:32:17 +0000</pubDate><guid>https://openmicrolab.com/openscad-customizer/</guid><description>
+&lt;h3 id="openscad에서customizer의-기능-사용법">OpenSCAD에서 Customizer의 기능 사용법&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://files.openscad.org/snapshots/" target="_blank" rel="noopener noreferrer">개발자버전의 스냅샷&lt;/a> 중 최신버전을 다운로드 받는다.&lt;/li>
+&lt;li>&lt;strong>Preferences &amp;gt;Features &amp;gt; Customizer&lt;/strong>를 체크한다.&lt;/li>
+&lt;li>&lt;strong>View &amp;gt; Hide Customizer&lt;/strong>의 체크를 해제한다.&lt;/li>
+&lt;/ul>
+&lt;p>###&lt;img loading="lazy" class="" src="http://www.openscad.org/images/customizer.png" width="567" height="331" />&lt;/p>
+&lt;h3 id="케이스-모델링-자료">케이스 모델링 자료&lt;/h3>
+&lt;p>&lt;a href="https://www.thingiverse.com/thing:1264391" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.thingiverse.com/thing:1264391">https://www.thingiverse.com/thing:1264391&lt;/a>&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="" src="https://cdn.thingiverse.com/renders/bd/3c/4c/77/95/5c2528d7dc69dc743380f6c7ddb887d5_preview_featured.jpg" width="424" height="319" />
+&lt;h3 id="참고">참고:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://hackaday.com/2018/03/02/printed-it-custom-enclosure-generator/" target="_blank" rel="noopener noreferrer">&lt;a href="https://hackaday.com/2018/03/02/printed-it-custom-enclosure-generator/">https://hackaday.com/2018/03/02/printed-it-custom-enclosure-generator/&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.openscad.org/news.html#20160714" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.openscad.org/news.html#20160714">http://www.openscad.org/news.html#20160714&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p> &lt;/p></description></item><item><title>Octoprint를 스마트폰에서 사용하기</title><link>https://openmicrolab.com/octoprint%EB%A5%BC-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Sat, 10 Mar 2018 03:27:39 +0000</pubDate><guid>https://openmicrolab.com/octoprint%EB%A5%BC-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;ul>
+&lt;li>&lt;a href="https://plugins.octoprint.org/plugins/touchui/" target="_blank" rel="noopener noreferrer">TouchUI&lt;/a> :Octoprint는 웹서버이기 때문에 웹인터페이스를 제공한다. 이 플러그인 사용해서, PC가 아닌경우 TouchUI로 바뀌게 한다.&lt;/li>
+&lt;li> &lt;a href="https://play.google.com/store/apps/details?id=fr.yochi76.printoid.phones.pro" target="_blank" rel="noopener noreferrer">Printoid Pro&lt;/a> 안드로이드 앱&lt;/li>
+&lt;li>&lt;a href="https://play.google.com/store/apps/details?id=com.kabacon.octoremote" target="_blank" rel="noopener noreferrer">OctoRemote&lt;/a> 안드로이드 앱&lt;/li>
+&lt;/ul></description></item><item><title>TMC2100 모터드라이버</title><link>https://openmicrolab.com/tmc2100-%EB%AA%A8%ED%84%B0%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84/</link><pubDate>Wed, 20 Dec 2017 03:02:30 +0000</pubDate><guid>https://openmicrolab.com/tmc2100-%EB%AA%A8%ED%84%B0%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84/</guid><description>
+&lt;p>TMC2100 스텝 모터드라이버는 다음과 같은 특징이 있다. 특히 stealthChop이라는 기능으로 모터의 소음을 줄여준다.&lt;/p>
+&lt;p>&lt;strong>FEATURES AND BENEFITS&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>2-phase stepper motors up to 2.0A coil current (2.5A peak) Standalone Driver&lt;/li>
+&lt;li>Step/Dir Interface with microstep interpolation microPlyerTM&lt;/li>
+&lt;li>Voltage Range 4.75… 46V DC&lt;/li>
+&lt;li>Highest Resolution 256 microsteps per full step&lt;/li>
+&lt;li>stealthChopTM for extremely quiet operation and smooth motion&lt;/li>
+&lt;li>spreadCycleTM highly dynamic motor control chopper Integrated Current Sense Option&lt;/li>
+&lt;li>Standstill Current Reduction&lt;/li>
+&lt;li>Full Protection &amp;amp; Diagnostics (two outputs)&lt;/li>
+&lt;li>Small Size 5x6mm2 QFN36 package or TQFP48 package&lt;/li>
+&lt;/ul>
+&lt;h3 id="모터의-전류제한을-위한-설정">&lt;strong>모터의 전류제한을 위한 설정&lt;/strong>&lt;/h3>
+&lt;p>&lt;strong>Formulas for calculating the values:&lt;/strong>&lt;/p></description></item><item><title>MIT의 10배 빠른 FDM 프린터 – FastFFF</title><link>https://openmicrolab.com/mit%EC%9D%98-10%EB%B0%B0-%EB%B9%A0%EB%A5%B8-fdm-%ED%94%84%EB%A6%B0%ED%84%B0-fastfff/</link><pubDate>Fri, 08 Dec 2017 08:21:23 +0000</pubDate><guid>https://openmicrolab.com/mit%EC%9D%98-10%EB%B0%B0-%EB%B9%A0%EB%A5%B8-fdm-%ED%94%84%EB%A6%B0%ED%84%B0-fastfff/</guid><description>
+&lt;h3 id="fdm-프린터에서-속도를-높이기-위해-기존에-사용한-방법">FDM 프린터에서 속도를 높이기 위해 기존에 사용한 방법&lt;/h3>
+&lt;ul id="yui_3_17_2_1_1512714297221_422">
+&lt;li>
+노즐 사이즈를 크게해서 필라멘트를 단위시간당 많이 출력하게 함. 해상도 문제
+&lt;/li>
+&lt;li>
+펠릿 방식으로 기존 필라멘트 보다 더 잘 밀어내게 함
+&lt;/li>
+&lt;li>
+히팅 구간을 더 크게해서 필라멘트에 열이 잘 전달되게 함
+&lt;/li>
+&lt;li>
+높은 성능의 프린터 보드를 사용해서 기구부의 움직임을 빠르게 함
+&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4156" src="https://openmicrolab.com/images/2021/03/mit_fastFFF_chjrxq.jpg" width="343" height="336" />
+&lt;h3 id="mit가-적용한-방식">MIT가 적용한 방식&lt;/h3>
+&lt;ul>
+&lt;li>힘을 더 잘 주기 위해 나사산이 있는 필라멘트 사용. 기존 방식은 pinch wheel방식이며 이것은 nut feed 방식임&lt;/li>
+&lt;li>2 단계 히팅 – 기존 히트 블럭 + 레이저(50W near-infrared laser pre-heats). 단 필라멘트 색에 따라 레이저를 조정해야 함&lt;/li>
+&lt;li>서보 모터를 사용&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4157" src="https://openmicrolab.com/images/2021/03/buildrate_x2jgij.jpg" width="524" height="297" />
+&lt;h3 id="이슈">이슈&lt;/h3>
+&lt;ul>
+&lt;li>나사산이 있는 필라멘트가 필요&lt;/li>
+&lt;li>FastFFF 방식의 특허&lt;/li>
+&lt;li>더 빠른 프린터와 속도 비교를 한 것이 아니고 일반적인 프린터와 속도를 비교함&lt;/li>
+&lt;li>이정도 속도가 빨라지면 실제적인 이득은 무엇인가?&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://www.fabbaloo.com/blog/2017/11/30/mits-laser-powered-3d-printer-is-this-the-speed-weve-been-waiting-for" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.fabbaloo.com/blog/2017/11/30/mits-laser-powered-3d-printer-is-this-the-speed-weve-been-waiting-for">http://www.fabbaloo.com/blog/2017/11/30/mits-laser-powered-3d-printer-is-this-the-speed-weve-been-waiting-for&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.ni.com/white-paper/3656/ko/" target="_blank" rel="noopener noreferrer">스테핑 모터와 서보 모터&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://openmicrolab.com/download/fastfff/" target="_blank" rel="noopener noreferrer">저널에 실린 내용&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Simplify3D 기능</title><link>https://openmicrolab.com/simplify3d-%EA%B8%B0%EB%8A%A5/</link><pubDate>Thu, 23 Nov 2017 07:19:28 +0000</pubDate><guid>https://openmicrolab.com/simplify3d-%EA%B8%B0%EB%8A%A5/</guid><description>
+&lt;h3 id="process-system-improvement">Process System Improvement&lt;/h3>
+&lt;ul>
+&lt;li>Visual Print Setting: Z 축방향으로 구역을 지정해서 다른 설정으로 프린팅 가능&lt;/li>
+&lt;li>Preview Your Process: 위 기능으로 설정이 다른 것을 미리보기 가능한 것&lt;/li>
+&lt;li>Seamless Process Transitions: 영역별로 다른 설정시 자동으로 심리스하게 연결해 주는 기능&lt;/li>
+&lt;li>Drag-and-Drop Recording: 여러개의 모델을 출력시 순서를 쉽게 변경할 수 있는 기능&lt;/li>
+&lt;li>Improved Sequential Printing: 여러개 모델 출력시 한개의 모델을 출력후 다음 모델을 출력하는 기능. 이렇게 하면 모델을 여러개 동시에 출려시 보다 헤드의 이동이 적어짐.&lt;/li>
+&lt;li>Dual Extrusion Customizations: Prime pillar와 ooze 쉴드의 높이의 설정 가능함.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4126" src="https://res.cloudinary.com/openmicrolab/image/upload/v1511419738/Simplify3D_features_vhzrf6.png" width="708" height="650" />
+&lt;h3 id="new-options-for-thin-walls-and-gaps">New Options for Thin Walls and Gaps&lt;/h3>
+&lt;ul>
+&lt;li>Variable Extrusion Sizing – 압출량을 자동 조절. 작거나 얇은 출력물에 유용&lt;/li>
+&lt;li>Dynamic Gap Fill – 모델의 벽의 두께가 달라져도 자동으로 채움&lt;/li>
+&lt;/ul>
+&lt;p>###&lt;img loading="lazy" class="alignnone wp-image-4128" src="https://res.cloudinary.com/openmicrolab/image/upload/v1511420910/Simplify3D_features2_xtmhee.png" width="640" height="288" />&lt;/p></description></item><item><title>무선으로 3D Printer 사용하기</title><link>https://openmicrolab.com/%EB%AC%B4%EC%84%A0%EC%9C%BC%EB%A1%9C-3d-printer-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 21 Nov 2017 02:48:05 +0000</pubDate><guid>https://openmicrolab.com/%EB%AC%B4%EC%84%A0%EC%9C%BC%EB%A1%9C-3d-printer-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>3D프린팅을 위해서 SD 메모리를 사용하거나,  USB 케이블을 연결해서 프린팅을 한다. 하지만 USB 케이블을 사용하면, 장시간 프린팅시 1대의 PC가 프린팅만을 위해 사용될 수 밖에 없다. 무선으로 프린팅시 다음과 같은 장점이 있다.&lt;/p>
+&lt;ul>
+&lt;li>The noisy printer can be placed in a sperate location allowing for different ventilation options, and convenient noise reduction.&lt;/li>
+&lt;li>Less mess.  Cords can be ugly and can be trip hazards.&lt;/li>
+&lt;li>Multiple computers are becoming a household norm.  Sick of giving up your computer for your significant other, child, or visiting a friend to play with your 3D printer?  Go wireless.&lt;/li>
+&lt;li>3D printing is a long process.  Wouldn’t it be nice to be able to start a print job from a remote location to be completed by the time you get home?&lt;/li>
+&lt;/ul>
+&lt;p>그리고 이 USB케이블을 사용하지 않고 무선으로 프린팅을 하기위해 OctoPrint, AstroPrint, Repetier Server등의 Host 프로그램이 필요하다.&lt;/p></description></item><item><title>Lerdge 3D printer board</title><link>https://openmicrolab.com/lerdge-3d-printer-board/</link><pubDate>Tue, 14 Nov 2017 06:41:55 +0000</pubDate><guid>https://openmicrolab.com/lerdge-3d-printer-board/</guid><description>
+&lt;p>Aliexpress에서 본 괜찮은 &lt;a href="https://ko.aliexpress.com/store/product/LERDGE-3D-Printer-Board-ARM-32Bit-Controller-Motherboard-for-3D-Printer-Control-Mainboard-with-3-5/3018114_32818245114.html?spm=a2g12.12010608.0.0.48583a51IL3cw2" target="_blank" rel="noopener noreferrer">중국산 3D 프린터보드인 &lt;/a>Lerdge – STM32,TFT LCD, WiFi, USB memory 지원.. 가격도 $69불&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4113" src="https://openmicrolab.com/images/2021/03/lerdge_jwtxgt.jpg" width="586" height="349" />
+&lt;p>&lt;a href="http://www.lerdge.com/" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.lerdge.com/">http://www.lerdge.com/&lt;/a>&lt;/a>에서 만드는데, 설정을 어떻게 하는지 나와있지만 관련 펌웨어 코드는 없다. 3D프린터 해외 포럼에도 글들이 올라와서 찾아보니 다음과 같다. 공감이 가는 얘기이다.&lt;/p>
+&lt;blockquote>
+&lt;p> I don’t want to depend on some anonymous developer working for some money-driven company who may or may not upgrade the software and/or may or may not fix bugs and/or may stop support at any moment and/or may decide to suck money out of me for any of these things.&lt;/p></description></item><item><title>Cura Connect</title><link>https://openmicrolab.com/cura-connect/</link><pubDate>Mon, 13 Nov 2017 02:19:55 +0000</pubDate><guid>https://openmicrolab.com/cura-connect/</guid><description>
+&lt;p>Cura Coonect라는 것을 통해서 프린팅 큐를 네트워크를 통해 관리하고 카메라를 통해서 현재 진행상태를 확인&lt;/p></description></item><item><title>스텝모터 – Stepper Motor</title><link>https://openmicrolab.com/%EC%8A%A4%ED%85%9D%EB%AA%A8%ED%84%B0-stepper-motor/</link><pubDate>Thu, 09 Nov 2017 05:10:43 +0000</pubDate><guid>https://openmicrolab.com/%EC%8A%A4%ED%85%9D%EB%AA%A8%ED%84%B0-stepper-motor/</guid><description>
+&lt;h4 id="스텝모터">스텝모터&lt;/h4>
+&lt;p>스텝 모터는 일반적으로 스텝 사이즈 규격 (예 : 1.8 ° 또는 200 회전당)을 가진다. 즉 360도, 한바퀴 회전시 2000 스텝이 필요하니, 한 스텝당 1.8 °가 움직인다.&lt;/p>
+&lt;h4 id="마이트로-스텝핑">마이트로 스텝핑&lt;/h4>
+&lt;p>스텝모터 드라이버의 기능중 마이트로 스텝핑기능은 이 스텝을 분주를 해서 더 정밀하게 모터를 회전시킨다. 예를 들면 &lt;a href="https://www.pololu.com/file/download/a4988_DMOS_microstepping_driver_with_translator.pdf?file_id=0J450" target="_blank" rel="noopener noreferrer">A4988 드라이버&lt;/a>의 경우 다음과 같이 1/16까지 가능하니, 한 스텝당 0.1125 °(1.8 °/16)까지 제어가 가능하다. 반면 &lt;a href="https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2130_datasheet.pdf" target="_blank" rel="noopener noreferrer">TMC2130드라이버&lt;/a>의 경우 1/256까지 가능하므로 1스텝당 0.007°(1.8°/256)까지 가능하다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4095" src="https://openmicrolab.com/images/2021/03/TMC21xxx_axvwen-1.png" width="913" height="920" />
+&lt;h4 id="참고">참고&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/watterott/SilentStepStick" target="_blank" rel="noopener noreferrer">github 자료&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://hackaday.com/2016/09/30/3d-printering-trinamic-tmc2130-stepper-motor-drivers-shifting-the-gears/">hackaday 기사&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://reprap.org/wiki/StepStick" target="_blank" rel="noopener noreferrer">Reprap 위키자료&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>2017년 3D 프린터 시장정보</title><link>https://openmicrolab.com/2017%EB%85%84-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8B%9C%EC%9E%A5%EC%A0%95%EB%B3%B4/</link><pubDate>Thu, 20 Jul 2017 11:30:01 +0000</pubDate><guid>https://openmicrolab.com/2017%EB%85%84-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8B%9C%EC%9E%A5%EC%A0%95%EB%B3%B4/</guid><description>
+&lt;p>2017년 Q1에 88,000대가 팔림. 대략 연간 시장은 많이 잡아서 400K 정도임.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4000" src="https://res.cloudinary.com/openmicrolab/image/upload/v1500549990/3D-Printer-Shipments-up-16-in-Q1-2017-as-Mid-Market-Starts-to-Heat-Up-12.07.2017_garfos.jpg" width="787" height="643" /></description></item><item><title>3D 모델링 툴</title><link>https://openmicrolab.com/3d-%EB%AA%A8%EB%8D%B8%EB%A7%81-%ED%88%B4/</link><pubDate>Sat, 24 Jun 2017 01:37:33 +0000</pubDate><guid>https://openmicrolab.com/3d-%EB%AA%A8%EB%8D%B8%EB%A7%81-%ED%88%B4/</guid><description>
+&lt;p>&lt;a href="https://www.myminifactory.com/software/" target="_blank" rel="noopener noreferrer">My Mini Factory에서 정리한 3D 프린터를 위한 3D 모델링 툴, 소프트웨어 &lt;/a>정리&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3962" src="https://res.cloudinary.com/openmicrolab/image/upload/v1498268176/3D_Modeling_SW_obmh4i.png" width="955" height="665" /></description></item><item><title>Waggle, IoT device for 3D Printer</title><link>https://openmicrolab.com/waggle-iot-device-3d-printer/</link><pubDate>Fri, 16 Jun 2017 01:51:49 +0000</pubDate><guid>https://openmicrolab.com/waggle-iot-device-3d-printer/</guid><description>
+&lt;p>회사에서 개발하고 있는 Waggle, IoT device for 3D Printer의 &lt;a href="https://www.kickstarter.com/projects/1483229514/waggle-3d-printing-made-easy" target="_blank" rel="noopener noreferrer">킥스타터&lt;/a> 크라우드 펀딩 종료.&lt;/p>
+&lt;p>&lt;a href="https://www.kicktraq.com/projects/1483229514/waggle-3d-printing-made-easy/" target="_blank" rel="noopener noreferrer">&lt;img title="Waggle : 3D Printing Made Easy -- Kicktraq Mini" src="https://www.kicktraq.com/projects/1483229514/waggle-3d-printing-made-easy/minichart.png" alt="Waggle : 3D Printing Made Easy -- Kicktraq Mini" />&lt;/a>&lt;/p></description></item><item><title>3D Printer – S3G, X3G 파일 포맷</title><link>https://openmicrolab.com/3d-printer-s3g-x3g-%ED%8C%8C%EC%9D%BC-%ED%8F%AC%EB%A9%A7/</link><pubDate>Mon, 29 May 2017 03:59:13 +0000</pubDate><guid>https://openmicrolab.com/3d-printer-s3g-x3g-%ED%8C%8C%EC%9D%BC-%ED%8F%AC%EB%A9%A7/</guid><description>
+&lt;ul>
+&lt;li>S3G는 “Sanguino3 Gcode”의 약자로 3D 프린터를 제어하기 위한 언어&lt;/li>
+&lt;li>자세한 내용은 &lt;a href="https://github.com/makerbot/s3g/blob/master/doc/s3gProtocol.md" target="_blank" rel="noopener noreferrer">이 링크&lt;/a>를 참고&lt;/li>
+&lt;li>Makerbot과 Sailfish 팀에서 기능을 추가해서 S3G와 구별하기 위해 X3G를 만듦&lt;/li>
+&lt;li>Makerbot 프린터는 gcode를 직접받아서 출력하지 않음&lt;/li>
+&lt;li>따라서 ReplicatorG, MakerBot MakerWare, MakerBot Desktop 프로그램의 슬라이서에서 Gcode를 변환하는 기능이 있음&lt;/li>
+&lt;li>OctoPrint의 경우 &lt;a href="https://github.com/markwal/OctoPrint-GPX/blob/master/README.md" target="_blank" rel="noopener noreferrer">다음 링크&lt;/a> 참고&lt;/li>
+&lt;/ul>
+&lt;p>참고: &lt;a href="http://www.sailfishfirmware.com/doc/details-s3g-and-x3g.html#x52-1340009.3" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.sailfishfirmware.com/doc/details-s3g-and-x3g.html#x52-1340009.3">http://www.sailfishfirmware.com/doc/details-s3g-and-x3g.html#x52-1340009.3&lt;/a>&lt;/a>&lt;/p></description></item><item><title>CP2104 레퍼런스 회로도</title><link>https://openmicrolab.com/cp2104-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4-%ED%9A%8C%EB%A1%9C%EB%8F%84/</link><pubDate>Tue, 28 Mar 2017 09:52:29 +0000</pubDate><guid>https://openmicrolab.com/cp2104-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4-%ED%9A%8C%EB%A1%9C%EB%8F%84/</guid><description>
+&lt;p>&lt;a href="https://www.silabs.com/documents/public/data-sheets/cp2104.pdf" target="_blank">CP2014&lt;/a>는 USB to UART bridge 칩이며, 데이터 시트에 보면 다음과 같은 레퍼런스 회로가 있다. REGIN 핀은 레귤레이터 입력핀인데, 이 회로도에서는 여기에 VBUS핀과 같이 연결을 해 놓고 있다. CP2104의 TX, RX가 시스템의 MCU의 RX, TX와 연결이 되어 있는 경우에는  일반적으로는 USB 케이블을 연결하는 순간 VBUS와 REGIN에 전압이 가해지면서CP2104의 TX값이 low로 되면서 시스템 MCU의  RX값이 바뀌게 된다. 따라서 시리얼 입력을  처리하는 루틴이 제대로 동작을 하지 않을 수 있다. &lt;strong>해결책은 REGIN의 입력을 VBUS가 아닌 시스템 전원으로 바꾸면 해결이 된다.&lt;/strong>&lt;br>
+&lt;img loading="lazy" class="aligncenter wp-image-3929" src="http://res.cloudinary.com/openmicrolab/image/upload/v1490685444/cp2104_ref_rd71es.png" width="769" height="542" />&lt;/p></description></item><item><title>하드웨어 스타트업에서 제품 개발시 유의 사항</title><link>https://openmicrolab.com/%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85%EC%97%90%EC%84%9C-%EC%A0%9C%ED%92%88-%EA%B0%9C%EB%B0%9C%EC%8B%9C-%EC%9C%A0%EC%9D%98-%EC%82%AC%ED%95%AD/</link><pubDate>Sat, 04 Mar 2017 08:09:03 +0000</pubDate><guid>https://openmicrolab.com/%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85%EC%97%90%EC%84%9C-%EC%A0%9C%ED%92%88-%EA%B0%9C%EB%B0%9C%EC%8B%9C-%EC%9C%A0%EC%9D%98-%EC%82%AC%ED%95%AD/</guid><description>
+&lt;img loading="lazy" class="wp-image-3921 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1488613741/TIKO_wicrmf.jpg" width="524" height="393" />
+&lt;p>몇년전 킥스타터에서 펀딩에 성공한 프로젝트인 &lt;a href="https://www.kickstarter.com/projects/tiko3d/tiko-the-unibody-3d-printer/posts/1809879" target="_blank">TIKO 3D프린터가 회사를 닫는다고 공지&lt;/a>를 했다. 제품은 겨우 4천대 정도 미주지역에 배송을 했고, 전세계에 배송할 수만대분을 포기한 상태이다. 기술적인 혁신을 통해 비용을 줄여서 매우 값싼 3D 프린터를 개발한다고 되어 있었는데, 내용을 보니 기술적으로 해결하지 못한 부분도 있고, 프로토타입이 검증이 되기 전에 펀딩금액으로 이미 부품들을 주문해 버리기도 했으니, 어쩌면 당연한 결과이다.&lt;/p>
+&lt;h3 id="하드웨어-스타트업에서-제품-개발시-유의-사항">하드웨어 스타트업에서 제품 개발시 유의 사항&lt;/h3>
+&lt;h4 id="고객군을-세분화하라">고객군을 세분화하라.&lt;/h4>
+&lt;blockquote>
+&lt;p>Look for a sub-group of users in your target market and focus on them&lt;/p></description></item><item><title>Makerbot, Prusa 그리고 3D 프린팅 시장</title><link>https://openmicrolab.com/makerbot-prusa-%EA%B7%B8%EB%A6%AC%EA%B3%A0-3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5/</link><pubDate>Tue, 28 Feb 2017 02:04:20 +0000</pubDate><guid>https://openmicrolab.com/makerbot-prusa-%EA%B7%B8%EB%A6%AC%EA%B3%A0-3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5/</guid><description>
+&lt;p>최근 &lt;a href="http://www.fabbaloo.com/blog/2017/2/16/whats-really-going-on-at-makerbot" target="_blank">메이커봇이 인원을 30% 감원한다는 기사&lt;/a>&lt;/p>
+&lt;p>여기서 Makerbot과 Prusa의 현재 상황과 3D 프린팅 시장을 알 수 있다.&lt;/p>
+&lt;blockquote>
+&lt;p>consumers are incapable of 3D design, fixing wonky machines and desire 3D models that aren’t easily found&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>고객들이 아직은 3D 디자인을 할 수 없고&lt;/li>
+&lt;li>기기에 문제가 생길 경우 해결이 안되며&lt;/li>
+&lt;li>원하는 3D 모델을 찾기 여러움&lt;/li>
+&lt;/ul>
+&lt;p>그래서 시장은 아직 일반인 대상이 아니라 DIY community인데, 이쪽을 포커싱하고 있는 &lt;a href="http://www.prusaprinters.org/" target="_blank">Prusa&lt;/a>의 경우 90명 정도의 스텝이 월 3천대 이상을 판매한다고 함.&lt;/p></description></item><item><title>Ultimaker 3 내부 구성</title><link>https://openmicrolab.com/ultimaker-3-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%84%B1/</link><pubDate>Mon, 20 Feb 2017 06:24:56 +0000</pubDate><guid>https://openmicrolab.com/ultimaker-3-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%84%B1/</guid><description>
+&lt;img loading="lazy" class="" title="Meet the new Ultimaker 3" src="https://d2py9w124w2itd.cloudfront.net/photo/topic/1920x1080/5804d6818123d/Ultimaker_3_Release.jpg" alt="Meet the new Ultimaker 3" width="437" height="246" />
+&lt;p>&lt;strong>Ultimaker 3의 특징 – &lt;a href="https://d2py9w124w2itd.cloudfront.net/src/media/data/pdf/products/um3/Ultimaker_3_specification_sheet.pdf" target="_blank">Ultimaker 3 Spec.&lt;/a>&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>듀얼 노즐:서포트를 쉽게 제거하기 위해 물에 녹는 재질의 필라멘트 사용가능&lt;/li>
+&lt;li>쉽게 교체 가능한 노즐&lt;/li>
+&lt;li>향상된 쿨링 시스템&lt;/li>
+&lt;li>상태를 나타내는 LED&lt;/li>
+&lt;li>Wi-Fi &amp;amp; USB stick 지원: Wi-Fi는 Local에서만 지원된다.&lt;/li>
+&lt;li>카메라 지원&lt;/li>
+&lt;li>Active bed leveling&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Ultimaker 3 내부 구성&lt;img loading="lazy" class="alignnone wp-image-3905" src="http://res.cloudinary.com/openmicrolab/image/upload/v1487570738/UM3_Internal_ifnqqi.png" width="700" height="540" />&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>A20 LIME2 Linux보드 &amp;amp; ATmega 보드&lt;/strong>&lt;/p>
+&lt;p>위 블럭다이어그램에서 보듯이기존 UM2의 경우에는 메인보드에 ATmega2560칩이 있었으나, UM3는 Connectivity를 추가하기 위해 &lt;a href="https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXIno-LIME2/" target="_blank">A20 LIME2 Linux보드&lt;/a>가 메인이 되고, 기존의 Atmega보드는 실시간 처리가 필요한 모터제어에만 사용이 되었다. 이 보드에 카메라 및 WiFI, Ethernet, USB Host, NFC 리더가 있는데, NFC리더는 필라멘트에 붙어 있는 NFC 테그를 태깅하기 위해 사용이 된다. WiFi의 경우 USB to WiFI 동글이 사용되는데, 앱을 확인해 보니 Local network에서만 사용이 된다.&lt;/p></description></item><item><title>S3G protocol</title><link>https://openmicrolab.com/s3g-protocol/</link><pubDate>Wed, 04 Jan 2017 06:20:13 +0000</pubDate><guid>https://openmicrolab.com/s3g-protocol/</guid><description>
+&lt;ul>
+&lt;li>S3G는 “Sanguino3 Gcode”의 줄임말로 3D 프린터를 제어하는 언어임.&lt;/li>
+&lt;li>파일의 경우 .s3g를 사용하는데 MakerBot에서 이것을 차용하여 .x3g로 사용함.&lt;/li>
+&lt;li>초기에 8비트 AVR의 성능때문에 사용함.&lt;/li>
+&lt;li>MakerBot의 경우 s3g, x3g파일을 처리할 수 있고, gcode를 이것으로 변환하는 translator를 내장하고 있음.&lt;/li>
+&lt;li>OctoPrint의 경우 &lt;a href="http://plugins.octoprint.org/plugins/gpx/" target="_blank">GPX라는 플러그&lt;/a>인이 있고,  &lt;a href="https://markwal.github.io/GpxUi/" target="_blank">GpxUI&lt;/a>라는 GUI wrapper도 있다.&lt;/li>
+&lt;li>관련 소스는 &lt;a href="https://github.com/markwal/GPX" target="_blank">&lt;a href="https://github.com/markwal/GPX">https://github.com/markwal/GPX&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>S3G protocol&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>관련 문서 &lt;a href="https://github.com/makerbot/s3g/blob/master/doc/s3gProtocol.md" target="_blank">&lt;a href="https://github.com/makerbot/s3g/blob/master/doc/s3gProtocol.md">https://github.com/makerbot/s3g/blob/master/doc/s3gProtocol.md&lt;/a>&lt;/a>&lt;/li>
+&lt;li>S3G 파이선 라이브러리 &lt;a href="https://github.com/makerbot/s3g" target="_blank">&lt;a href="https://github.com/makerbot/s3g">https://github.com/makerbot/s3g&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>구성 및 통신&lt;/strong>&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="500"
+height="358"
+src="https://openmicrolab.com/SystemArchitecture_17727937480818325069.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;p>2가지 네트워크로 구성이 된다.&lt;/p>
+&lt;ul>
+&lt;li>Host network: PC와 보드로 기본적으로 시리얼이다. 115200 or 38400 bps&lt;/li>
+&lt;li>Tool network: 보드와 툴사이로 RS485 사용&lt;/li>
+&lt;/ul>
+&lt;p>에러 방지를 위해 매 패킷의 마지막에 CRC를 사용&lt;/p></description></item><item><title>3D 프린터 슬라이싱 툴</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%ED%88%B4/</link><pubDate>Fri, 09 Dec 2016 03:00:45 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%ED%88%B4/</guid><description>
+&lt;table id="tablepress-75" class="tablepress tablepress-id-75">
+&lt;tr class="row-1 odd">
+&lt;th class="column-1">
+Software
+&lt;/th>
+&lt;pre>&lt;code>&amp;lt;th class=&amp;quot;column-2&amp;quot;&amp;gt;
+User
+&amp;lt;/th&amp;gt;
+&amp;lt;th class=&amp;quot;column-3&amp;quot;&amp;gt;
+Price
+&amp;lt;/th&amp;gt;
+&amp;lt;th class=&amp;quot;column-4&amp;quot;&amp;gt;
+OS
+&amp;lt;/th&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-2 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#3DPrinterOS">3DPrinterOS&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Freemium
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser, Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-3 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Astroprint">Astroprint&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Freemium
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser, Raspberry Pi, pcDuino
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-4 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Craftware">Craftware&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-5 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Cura">Cura&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-6 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#IceSL">IceSL&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-7 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#KISSlicer">KISSlicer&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free/$35
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux, Raspberry Pie
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-8 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#MakerBot%20Print">MakerBot Print&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-9 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#MatterControl">MatterControl&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-10 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Netfabb%20Basic">Netfabb Basic&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-11 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#OctoPrint">OctoPrint&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Raspberry Pi, Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-12 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Repetier">Repetier&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-13 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Simplify3D">Simplify3D&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginers, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+$150
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-14 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Slic3r">Slic3r&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users, Professional Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-15 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#SliceCrafter">SliceCrafter&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-16 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Tinkerine%20Suite">Tinkerine Suite&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-17 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Z-Suite">Z-Suite&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;/table></description></item><item><title>필라멘트 들뜸을 방지하려면</title><link>https://openmicrolab.com/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EB%93%A4%EB%9C%B8%EC%9D%84-%EB%B0%A9%EC%A7%80%ED%95%98%EB%A0%A4%EB%A9%B4/</link><pubDate>Fri, 11 Nov 2016 02:01:32 +0000</pubDate><guid>https://openmicrolab.com/%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-%EB%93%A4%EB%9C%B8%EC%9D%84-%EB%B0%A9%EC%A7%80%ED%95%98%EB%A0%A4%EB%A9%B4/</guid><description>
+&lt;p>3D 프린팅을 하면서 일반적으로 모델의 사이즈가 큰 경우 모델의 바닥부터 필라멘트가 수축을 하면서 들뜨게 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3796" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478829214/warping_gny6ra.jpg" width="512" height="384" />
+&lt;p>이런 현상을 방지하기 위해서는&lt;/p>
+&lt;ul>
+&lt;li>히트베드 사용&lt;/li>
+&lt;li>Raft / Brim 사용&lt;/li>
+&lt;li>레벨링을 잘 맞추기&lt;/li>
+&lt;li>캡톤필름/Buildtak sheet 등을 사용&lt;/li>
+&lt;li>출력속도 낮추기&lt;/li>
+&lt;li>Infill을 줄이기&lt;/li>
+&lt;/ul>
+&lt;p>그리고 &lt;a href="https://www.matterhackers.com/news/-how-to-stop-filament-warping-in-3d-printed-parts" target="_blank">이 글(HOW TO STOP FILAMENT WARPING IN 3D PRINTED PARTS)&lt;/a>에서는 Brim을 넣을 때 lily pads를 넣는 것을 설명하고 있는데 좋은 아이디어 인듯.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3797" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478829543/lilypad_dby3nx.jpg" width="512" height="384" />
+&lt;p>ABS의 경우 &lt;a href="https://www.matterhackers.com/articles/printing-tips-&amp;-tricks:-abs-bed-adhesion" target="_blank">참고자료&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Heat bed에 Kapton필름, 딱풀, ABS Juice등을 사용&lt;/li>
+&lt;li>첫번째 레이어에서 팬 컨트롤&lt;/li>
+&lt;/ul>
+&lt;p> &lt;/p></description></item><item><title>Meshlab 빌드</title><link>https://openmicrolab.com/meshlab-%EB%B9%8C%EB%93%9C/</link><pubDate>Wed, 02 Nov 2016 06:46:53 +0000</pubDate><guid>https://openmicrolab.com/meshlab-%EB%B9%8C%EB%93%9C/</guid><description>
+&lt;p>&lt;a href="http://meshlab.sourceforge.net/" target="_blank">Meshlab&lt;/a>은 3D프린팅에 필요한 파일의 메쉬를 수정할 수 있는 툴로 오픈소스이며, 3가지 OS를 지원한다. 그리고 &lt;a href="http://www.meshlabjs.net/" target="_blank">웹에서 구현&lt;/a>한 버전도 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3790" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478068545/eye_cropped_x9neij.png" width="155" height="155" />
+&lt;p>이 소스를 빌드하려면 다음과 같은 3가지 소스가 필요하다.&lt;br>
+*** 필요한 소스들 3가지**&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/" target="_blank">MeshLab 소스 코드&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://vcg.isti.cnr.it/vcglib/" target="_blank">VCG 라이브러리&lt;/a>&lt;br>
+위 2개의 코드를 &lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/" target="_blank">&lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/">https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/&lt;/a>&lt;/a>&lt;br>
+에서 받을 수 있다.&lt;/li>
+&lt;li>&lt;a href="https://www.qt.io/" target="_blank">Qt&lt;/a> : &lt;a href="http://download.qt.io/archive/qt/" target="_blank">Qt의 아카이브&lt;/a>에서 호스트에 따른 버전을 다운로드한다.&lt;/li>
+&lt;/ul>
+&lt;p>*** VS(Visual Studio)로 컴파일하기**&lt;br>
+&lt;strong>1. QT 컴파일&lt;/strong>&lt;br>
+(1) QT소스의 압축을 풀고, VS(Visual Studio) Command prompt를 실행하여 해서 다음과 같이 설정을 한다.&lt;br>
+(2) 만약 VS가 여러 버전이 설치되어 있다면,&lt;/p></description></item><item><title>STL 파일오류를 수정하는 툴</title><link>https://openmicrolab.com/stl-%ED%8C%8C%EC%9D%BC%EC%98%A4%EB%A5%98%EB%A5%BC-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%ED%88%B4/</link><pubDate>Thu, 27 Oct 2016 11:53:50 +0000</pubDate><guid>https://openmicrolab.com/stl-%ED%8C%8C%EC%9D%BC%EC%98%A4%EB%A5%98%EB%A5%BC-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%ED%88%B4/</guid><description>
+&lt;p>3D 프린팅을 위해 필요한  STL파일의 오류를 수정하는 툴 리스트.&lt;/p>
+&lt;p>온라인/오프라인 툴들이 있는데, 이중에서 오픈소스로 코드가 공개되어 있는 것중 쓸만한 것은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/FreeCAD/FreeCAD" target="_blank">FreeCAD&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/starseeker/meshlab" target="_blank">meshlab&lt;/a> : 원래 sourceforge에 있는 것을 github으로 옮겨옴&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://all3dp.com/best-stl-file-repair-mesh/">https://all3dp.com/best-stl-file-repair-mesh/&lt;/a>&lt;/p></description></item><item><title>Slic3r 빌드 하기</title><link>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 24 Oct 2016 08:29:34 +0000</pubDate><guid>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>3D 프린팅을 위한 슬라이서 프로그램인 &lt;a href="http://slic3r.org/" target="_blank">Slic3r&lt;/a>는 오픈소스로 &lt;a href="https://github.com/alexrj/Slic3r" target="_blank">github&lt;/a>에 코드가 공개되어 있다. 물론 각 OS에 맞는 실행파일을 다운로드해서 사용이 가능하지만 github에 공개된 코드를 빌드해서 사용이 가능하다. Windows, Mac, Linux 등 3가지 OS에서 빌드가 가능하며, Mac OS X에서 빌드하는 방법은&lt;a href="https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X" target="_blank"> https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X&lt;/a>에 정리되어 있다.&lt;/p>
+&lt;p>Slic3r는 C++ 과 Perl로 작성이 되어 있다.&lt;/p>
+&lt;blockquote>
+&lt;p>The core geometric algorithms and data structures are written in C++, and Perl is used for high-level flow abstraction, GUI and testing.&lt;/p>&lt;/blockquote>
+&lt;p>그리고 다음과 같은 기능이 있다.&lt;/p></description></item><item><title>AstroPrint 분석</title><link>https://openmicrolab.com/astroprint-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 19 Oct 2016 09:17:40 +0000</pubDate><guid>https://openmicrolab.com/astroprint-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;p>원격 3D프린팅을 지원하는 기기인 &lt;a href="https://www.astroprint.com/" target="_blank">AstroPrint&lt;/a> 분석&lt;/p>
+&lt;p>&lt;strong>1. 가격&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>AstroPrint에서 파는 기기 – $149&lt;/li>
+&lt;li>Raspberry Pi 세트: $65&lt;/li>
+&lt;li>지원하는 카메라: $30 ~ $68 (라즈베리용 카메라는 지원하지 않음)&lt;/li>
+&lt;li>따라서 카메라 포함 가격은 $95 ~ $217 정도&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>2. 카메라&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>카메라는 리눅스를 지원하는 USB카메라(Video for Linux v2)이어야 하며 웹에서 카메라 스트리밍을 보는 형태라서(WebRTC) FireFox, Chrome and Opera에서만 영상을 볼 수 있음&lt;/li>
+&lt;li>pcDuino 기반의 AstroPrint는 스트리밍 지원 안됨. &lt;span style="text-decoration: underline;">즉 Raspberry Pi기반만 웹 스트리밍 지원&lt;/span>.&lt;/li>
+&lt;li>&lt;a href="http://iswebrtcreadyyet.com/" target="_blank">WebRTC의 한계&lt;/a>: 브라우저 지원&lt;/li>
+&lt;/ul>
+&lt;p>**참고 자료: **&lt;a href="https://blog.astroprint.com/live-video-streaming-is-now-available-on-astroprint/" target="_blank">&lt;a href="https://blog.astroprint.com/live-video-streaming-is-now-available-on-astroprint/">https://blog.astroprint.com/live-video-streaming-is-now-available-on-astroprint/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>PID 튜닝</title><link>https://openmicrolab.com/pid-%ED%8A%9C%EB%8B%9D/</link><pubDate>Tue, 09 Aug 2016 06:38:50 +0000</pubDate><guid>https://openmicrolab.com/pid-%ED%8A%9C%EB%8B%9D/</guid><description>
+&lt;p>Reprap 기반의 코드에 적용되어 있는 PID 를 튜닝하는 방법은 다음과 같이 PID Auto-tune을 사용해서 상수값 Kp, Ki, Kd값을 정하고 Configuration.h에 설정을 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>M303 E0 S210 C8&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;p>위 코드의 의미는 타겟온도 210도로 하고 8번의 사이클을 거쳐서 값을 정하는것. 그러면 다음과 같이 값이 나온다.&lt;/p>
+&lt;blockquote>
+&lt;p>bias: 92 d: 92 min: 196.56 max: 203.75&lt;br>
+Ku: 32.59 Tu: 54.92&lt;br>
+Clasic PID&lt;br>
+Kp: 19.56&lt;br>
+Ki: 0.71&lt;br>
+Kd: 134.26&lt;br>
+PID Autotune finished ! Place the Kp, Ki and Kd constants in the configuration.h&lt;/p></description></item><item><title>Delta 3D Printer – Delta segmentation</title><link>https://openmicrolab.com/delta-3d-printer/</link><pubDate>Tue, 26 Jul 2016 02:35:16 +0000</pubDate><guid>https://openmicrolab.com/delta-3d-printer/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-3713" src="http://res.cloudinary.com/openmicrolab/image/upload/v1469500370/err_zbacua.png" width="642" height="328" />
+&lt;p>Notice the chart shows the worst possible cases on a line in XY plane from a tower base to the opposite side of the build area. The chart looks so funny because the maximum speeds are defined for the carriage movement (not for the platform movement). About 10 cm from the tower base the speed limiting tower is switched.&lt;br>
+The errors happen because firmware uses linear approximation for function &lt;strong>sqrt(R^2-x^2)&lt;/strong>. The tower position errors will result in errors in cartesian X, Y, Z coordinates. The nearer you are to a tower the more the tower error will contribute to the cartesian Z error. The more far away you are from a tower the more the error will contribute to the cartesian X/Y error. You see the worst case is about 10 cm from tower, and this will result to about 0.05 mm Z-error and 0.025 mm X/Y error. Add stepper errors of about 0.006 mm, slack in the system, and dynamic errors because of acceleration &amp;lt;-&amp;gt; flexibility.&lt;/p></description></item><item><title>A4988 Step motor driver</title><link>https://openmicrolab.com/a4988-step-motor-driver/</link><pubDate>Mon, 04 Jul 2016 09:05:28 +0000</pubDate><guid>https://openmicrolab.com/a4988-step-motor-driver/</guid><description>
+&lt;p>3D프린터에 많이 사용되는 스텝모터 드라이버인 Allegro사의 A4988칩. 모터드라이버에서 가장 중요한 것은 전류인데, 이것을 설정하는 방법은 칩의 17번 핀 REF에 걸리는 전압에 의해 결정이 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>Current Limit = VREF × 2.5&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>즉 만약 Vref가 0.3이면 Current limit는 0.75A. 그런데 full step mode일때의 전류는 Current limit의 70%로 제한이 되므로 만약 1A의 전류제한으로 설정을 하려면 1/0.7 = 1.4A로 가정을 하고 계산을 한다. 따라서 Vref = 1.4 / 2.5 = 0.56V 가 되게 설정을 한다.&lt;/strong>&lt;/p></description></item><item><title>Cura 코드 수정 – Silab 디바이스 인식</title><link>https://openmicrolab.com/cura-%EC%BD%94%EB%93%9C-%EC%88%98%EC%A0%95-silab-usb-serial-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EC%9D%B8%EC%8B%9D/</link><pubDate>Mon, 13 Jun 2016 08:15:32 +0000</pubDate><guid>https://openmicrolab.com/cura-%EC%BD%94%EB%93%9C-%EC%88%98%EC%A0%95-silab-usb-serial-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EC%9D%B8%EC%8B%9D/</guid><description>
+&lt;p>기존 코드는 USB ACM디바이스들을 list에 넣어서 인식하도록 했는데, Silab 디바이스도 추가되도록 macineCOM.py 파일의 serialList 함수 수정.&lt;/p></description></item><item><title>Cura 2.1 open beta 버전 빌드</title><link>https://openmicrolab.com/cura-2-1-open-beta-%EB%B2%84%EC%A0%84-%EB%B9%8C%EB%93%9C/</link><pubDate>Thu, 21 Apr 2016 06:03:26 +0000</pubDate><guid>https://openmicrolab.com/cura-2-1-open-beta-%EB%B2%84%EC%A0%84-%EB%B9%8C%EB%93%9C/</guid><description>
+&lt;p>Ultimaker에서 기존 Cura와 다른 GUI를 가진 Cura를 개발해서 &lt;a href="https://ultimaker.com/en/community/20538-cura-21-open-beta-has-been-released" target="_blank">베타버전&lt;/a>을 내놓았다. 이유는&lt;/p>
+&lt;blockquote>
+&lt;p>This is the new, shiny frontend for Cura. daid/Cura is the old legacy Cura that everyone knows and loves/hates.&lt;br>
+We re-worked the whole GUI code at Ultimaker, because the old code started to become a unmaintainable&lt;/p>&lt;/blockquote>
+&lt;p>사실 daid의 Cura의 경우 맥에서의 빌드는 본인도 hell이라고 표현을 하는데, 이번 베타버전의 큐라를 빌드해 보니 스무스하게 빌드가 된다. 단 빌드 시간은 엄청나게 오래 걸린다.&lt;/p></description></item><item><title>3D 프린터 – 다이렉트 &amp; 보우덴 방식</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8-%EB%B3%B4%EC%9A%B0%EB%8D%B4-%EB%B0%A9%EC%8B%9D/</link><pubDate>Thu, 14 Apr 2016 02:10:09 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8-%EB%B3%B4%EC%9A%B0%EB%8D%B4-%EB%B0%A9%EC%8B%9D/</guid><description>
+&lt;p>3D 프린터 – 다이렉트 &amp;amp; 보우덴 방식의 비교&lt;/p>
+&lt;p>&lt;strong>다이렉트 방식&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>피더의 구동부와 노즐사이의 간격이 짧아서 응답성이 좋다. 따라서 stringing, oozing이 덜 생기고 피더 모터의 토크가 좀 작아도 된다. 플랙시블 필라멘트사용이 쉽다.&lt;/li>
+&lt;li>하지만 헤드가 무거워져서 “backlash, overshoot, and frame wobble” 등이 생기기 쉽다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>보우덴 방식&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>헤드가 가벼워져서 모든 조건이 같을때 빨리움직일 수 있다.&lt;/li>
+&lt;li>필라멘트 리트렉션, strining, oozing, 필라멘트 마찰등의 단점&lt;/li>
+&lt;/ul>
+&lt;p>참고로 응답성은 시스템의 hysteresis, lag와 관련이 있다._ _&lt;/p>
+&lt;p>관련 문서: &lt;a href="http://www.matterhackers.com/articles/extruders-101:-a-crash-course-on-an-essential-component-of-your-3d-printer" target="_blank">&lt;a href="http://www.matterhackers.com/articles/extruders-101:-a-crash-course-on-an-essential-component-of-your-3d-printer">http://www.matterhackers.com/articles/extruders-101:-a-crash-course-on-an-essential-component-of-your-3d-printer&lt;/a>&lt;/a>&lt;/p>
+&lt;div class="articleElement">
+&lt;/div>
+&lt;div class="articleElement">
+&lt;/div></description></item><item><title>3D Printer 레이어 두께 계산</title><link>https://openmicrolab.com/3d_printer_layer_width/</link><pubDate>Thu, 07 Apr 2016 10:08:34 +0000</pubDate><guid>https://openmicrolab.com/3d_printer_layer_width/</guid><description>
+&lt;p>&lt;a href="http://prusaprinters.org/calculator/" target="_blank" rel="noopener">&lt;a href="http://prusaprinters.org/calculator/">http://prusaprinters.org/calculator/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>이 외에도 유용한 계산을 할 수 있는 툴이 있다.&lt;/p></description></item><item><title>MOD-t에서 Cura 사용하기</title><link>https://openmicrolab.com/mod-t%EC%97%90%EC%84%9C-cura-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 01 Apr 2016 03:04:21 +0000</pubDate><guid>https://openmicrolab.com/mod-t%EC%97%90%EC%84%9C-cura-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://blog.newmatter.com/wp-content/uploads/2016/02/Spool_view_front.jpg" alt="" width="429" height="286" />
+&lt;p>&lt;a href="https://www.indiegogo.com/projects/new-matter-mod-t-a-3d-printer-for-everyone/x/4705435#/" target="_blank">Indiegogo&lt;/a>에서 얼리버드로 $239에 구매한 MOD-t&lt;/p>
+&lt;p>MOD-t뿐만 아니라 Cura에 기본적으로 설정이 되어 있지 않은  3D 프린터는 이와 같은 방법으로 기기를 추가하고, 프로파일을 추가할 수 있다.&lt;/p>
+&lt;ul>
+&lt;li>메뉴에서 Machine &amp;gt; Add new machine…을 선택&lt;/li>
+&lt;li>Next버튼을 누르고 맨 밑에 있는 Other를 선택후 다시 Next를 선택&lt;/li>
+&lt;li>기기의 이름, 빌드 사이즈, 노즐 사이즈, 베드의 센터를 기입하고 Finish를 한다.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone" src="http://blog.newmatter.com/wp-content/uploads/2016/02/Set-up-machine.png" alt="" width="309" height="413" />
+&lt;ul>
+&lt;li>File &amp;gt; Open profile…을 클릭후 첨부된 profile을 로드한다.&lt;/li>
+&lt;li>프린팅을 할때는 desktop app에서 “Advanced Mode”를 선택하고, 좀 전에 설정한 큐라에서 슬라이싱한 Gcode를 선택한다.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone" src="http://blog.newmatter.com/wp-content/uploads/2016/01/Capture_012816_032938_PM.jpg" alt="" width="482" height="331" /></description></item><item><title>ANATOMY OF A 3D PRINTER</title><link>https://openmicrolab.com/anatomy-of-a-3d-printer/</link><pubDate>Wed, 09 Mar 2016 02:55:02 +0000</pubDate><guid>https://openmicrolab.com/anatomy-of-a-3d-printer/</guid><description>
+&lt;p>&lt;a href="http://www.matterhackers.com/articles/anatomy-of-a-3d-printer" target="_blank">ANATOMY OF A 3D PRINTER&lt;/a>&lt;/p>
+&lt;p>MatterHackers의 블로그 기사로 초보자들이 3D 프린터를 이해하는데 도움이 될 듯.&lt;/p>
+&lt;blockquote>
+&lt;p>Hotend – All Metal vs PEEK/PTFE&lt;br>
+By not using any plastic insulators in their construction, all metal hot ends are able to reach much higher temperatures and print a wider range of materials. However, they require &lt;strong>active cooling&lt;/strong>.&lt;/p>
+&lt;p>Hotend – Heat Sink / Hot End Fan&lt;br>
+This ensures that heat does not travel up the plastic and melt it prematurely before it reaches the nozzle. This phenomenon is called &lt;strong>heat creep&lt;/strong> and it causes jams, especially with PLA. This fan should be running whenever the hot end is warm.&lt;/p></description></item><item><title>3D 프린팅이 세상을 바꾸는 33가지 방법</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9D%B4-%EC%84%B8%EC%83%81%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8A%94-33%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</link><pubDate>Thu, 05 Nov 2015 03:08:20 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9D%B4-%EC%84%B8%EC%83%81%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8A%94-33%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</guid><description>
+&lt;p>RS Components에서 만든 자료 – 3D 프린팅이 세상을 바꾸는 33가지 방법&lt;/p>
+&lt;p>&lt;span style="font-size: 13px; color: #000000;">33 Ways 3D Printing Is Transforming The World – &lt;a style="color: #000000; font-size: 13px;" href="http://uk.rs-online.com/web/generalDisplay.html?id=i/3d-printing">RS Components UK&lt;/a>.&lt;/span>&lt;/p></description></item><item><title>3D 프린팅 시장 관련 자료</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5-%EA%B4%80%EB%A0%A8-%EC%9E%90%EB%A3%8C/</link><pubDate>Tue, 27 Oct 2015 09:17:56 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5-%EA%B4%80%EB%A0%A8-%EC%9E%90%EB%A3%8C/</guid><description>
+&lt;h3 class="article-headline.ng-binding.ng-scope" id="img-loadinglazy-classaligncenter-wp-image-3455--srcimages201510ri04_0066_pdf-1024x601jpg-altri04_0066_pdf-width591-height347-srcsetimages201510ri04_0066_pdf-1024x601jpg-1024w-images201510ri04_0066_pdf-300x176jpg-300w-images201510ri04_0066_pdfjpg-1078w-sizesmax-width-591px-100vw-591px-1">&lt;a href="https://openmicrolab.com/images/2015/10/RI04_0066_pdf.jpg">&lt;img loading="lazy" class="aligncenter wp-image-3455 " src="https://openmicrolab.com/images/2015/10/RI04_0066_pdf-1024x601.jpg" alt="RI04_0066_pdf" width="591" height="347" srcset="https://openmicrolab.com/images/2015/10/RI04_0066_pdf-1024x601.jpg 1024w, https://openmicrolab.com/images/2015/10/RI04_0066_pdf-300x176.jpg 300w, https://openmicrolab.com/images/2015/10/RI04_0066_pdf.jpg 1078w" sizes="(max-width: 591px) 100vw, 591px" />&lt;/a>&lt;/h3>
+&lt;li class="article-headline ng-binding ng-scope">
+&lt;a href="http://www.forbes.com/sites/louiscolumbus/2015/03/31/2015-roundup-of-3d-printing-market-forecasts-and-estimates/" target="_blank">2015 Roundup Of 3D Printing Market Forecasts And Estimates&lt;/a>
+&lt;/li>
+&lt;li class="article-headline ng-binding ng-scope">
+한국 무역협회 자료: &lt;a href="https://openmicrolab.com/images/2015/10/RI04_0066.pdf">RI04_0066&lt;/a>
+&lt;/li></description></item><item><title>인덕티브 센서 lj12a3-4-z/bx</title><link>https://openmicrolab.com/%EC%9D%B8%EB%8D%95%ED%8B%B0%EB%B8%8C-%EC%84%BC%EC%84%9C-lj12a3-4-zbx/</link><pubDate>Mon, 05 Oct 2015 07:02:56 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B8%EB%8D%95%ED%8B%B0%EB%B8%8C-%EC%84%BC%EC%84%9C-lj12a3-4-zbx/</guid><description>
+&lt;p>&lt;strong>인덕티브 센서 lj12a3-4-z/bx&lt;/strong>&lt;/p>
+&lt;p>Inductive type prox switch with NPN Normally Open transistor switch.&lt;br>
+Output upon detection.&lt;br>
+P/N: LJ12A3-4-Z/BX&lt;br>
+Power: 6-36VDC&lt;br>
+Output Current: 300mA (Sink)&lt;br>
+Detection Range: 4mm&lt;br>
+Detected material: Iron/Steel alloys&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/10/lj12a3-4-zbx.jpg">&lt;img loading="lazy" class="aligncenter wp-image-3437 " src="https://openmicrolab.com/images/2015/10/lj12a3-4-zbx.jpg" alt="lj12a3-4-z:bx" width="724" height="287" srcset="https://openmicrolab.com/images/2015/10/lj12a3-4-zbx.jpg 800w, https://openmicrolab.com/images/2015/10/lj12a3-4-zbx-300x119.jpg 300w" sizes="(max-width: 724px) 100vw, 724px" />&lt;/a>&lt;/p></description></item><item><title>3D 프린팅: 전설을 만들다</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%A0%84%EC%84%A4%EC%9D%84-%EB%A7%8C%EB%93%A4%EB%8B%A4/</link><pubDate>Sat, 05 Sep 2015 14:55:48 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%A0%84%EC%84%A4%EC%9D%84-%EB%A7%8C%EB%93%A4%EB%8B%A4/</guid><description>
+&lt;p>타큐멘타리-  &lt;a href="http://www.eidf.co.kr/2015kor/movie/view/150" target="_blank">3D 프린팅: 전설을 만들다&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/09/prt_legend.jpg">&lt;img loading="lazy" class="alignnone size-medium wp-image-3407" src="https://openmicrolab.com/images/2015/09/prt_legend-300x169.jpg" alt="prt_legend" width="300" height="169" srcset="https://openmicrolab.com/images/2015/09/prt_legend-300x169.jpg 300w, https://openmicrolab.com/images/2015/09/prt_legend.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" />&lt;/a>&lt;/p>
+&lt;p>데스크탑 3D 프린팅 업계의 Makerbot과 Formlabs의 파란 만장한 이야기와 총기를 3D 프린팅한 사나이의 이랴기들려준다. 특히Makerbot과 Formlabs 이 두 회사가 커지면서 발생하는 문제들을 보여준다.&lt;/p>
+&lt;p>Formlabs는 MIT 출신 Maxim Lobovsky, Natan Linder, David Cranor가 2011년 회사를 설립하고  Kickstarter에서 SLA프린터인 Form1으로 &lt;a href="https://www.kickstarter.com/projects/formlabs/form-1-an-affordable-professional-3d-printer/description" target="_blank">$3M가까이 펀딩&lt;/a>을 받았으나, 6개월이나 제품출시가 늦어지고 3D system사로 부터 소송까지 휘말린다.&lt;/p>
+&lt;p>Makerbot은 2009년 Bre Pettis, Adam Mayer, Zach “Hoeken” Smith가  오픈소스하드웨어에 기반한 FDM 방식의 3D 프린터를 개발하였다. 재미있는 것은 이 3명의 설립자들이 다 애플의 워즈니악이 되고 싶었다는 것. 하지만 CEO는 Bre Pettis가 맡아서 잡스의 역할을 수행했고, 2013년 스트라타시스에 합병까지 이끌었다($403M). 이 과정에서 넓고 좋은 사무실로 옮기고 회가의 직원들이 늘어났지만 오픈소스하드웨어에서 출발한 제품은 Replicator 2부터는 closed s/w로 바뀌었고 이것으로 공동창업자인 Zach는 회사 철학에 엄청난 변화를 준 것에 대해 “궁극적 배신”이라고 하며 회사를 떠난다.&lt;/p></description></item><item><title>3D 프린터 트러블 슈팅</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85/</link><pubDate>Tue, 23 Jun 2015 01:55:35 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85/</guid><description>
+&lt;p>&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baaedae4b08d4d93a1c214/file-GN9iWX4Uso.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53bbd820e4b09d13bf3cdd35/file-mjx4MffrQn.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53ba99cfe4b09d13bf3cdb5f/file-NZnhvOw08g.jpg" alt="" width="200" height="200" />&lt;/p>
+&lt;p>&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baa2d5e4b08d4d93a1c203/file-aJTtLfvFX7.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baa75fe4b08d4d93a1c20e/file-sDk3kVHFi4.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53bbe483e4b08d4d93a1c3e3/file-1ZrZKjRNje.jpg" alt="" width="200" height="200" />&lt;/p>
+&lt;p>&lt;strong>&lt;span class="s1">Pillowng&lt;/span>&lt;/strong>&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">Top layer에서 팬의 속도가 최대가 아닐때 이런 문제가 발생할 수 있다.  &lt;/span>&lt;span class="s1">Top Layer는 최소 6 top layer가 되야.. 즉 0.1mm 레이어 두께일때 0.6mm&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>&lt;span class="s1">Warping&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">히트베드, 풀 사용, &lt;/span>&lt;span class="s1">Brim 을 적용&lt;/span>
+&lt;/p>
+&lt;p class="p3">
+&lt;strong>&lt;span class="s1">Elephant’s foot&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">레벨링을 해서 약간 띄움&lt;/span>
+&lt;/p>
+&lt;p class="p3">
+&lt;strong>&lt;span class="s1">Stringing&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">Retracation &amp; 온도를 낮춤&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>&lt;span class="s1">Ringing&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">프린팅 속도를 낮춤, &lt;/span>&lt;span class="s1">acceleration 속도를 낮춤, &lt;/span>&lt;span class="s1">Outer wall을 0.8mm 이상으로&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">과도한 열도 이런 형상을 유발할 수 있다.&lt;/span>
+&lt;/p>
+&lt;p>&lt;strong>참고자료&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/23-a-visual-ultimaker-troubleshooting-guide" target="_blank">Visual Ultimaker troubleshooting guide&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/30-getting-better-prints" target="_blank">Getting better print&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/38-designing-for-3d-printing">Designing for 3D print&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p class="p1"></description></item><item><title>AWG 전선 규격 및 허용 전류</title><link>https://openmicrolab.com/awg-%EC%A0%84%EC%84%A0-%EA%B7%9C%EA%B2%A9-%EB%B0%8F-%ED%97%88%EC%9A%A9-%EC%A0%84%EB%A5%98/</link><pubDate>Thu, 11 Jun 2015 03:34:33 +0000</pubDate><guid>https://openmicrolab.com/awg-%EC%A0%84%EC%84%A0-%EA%B7%9C%EA%B2%A9-%EB%B0%8F-%ED%97%88%EC%9A%A9-%EC%A0%84%EB%A5%98/</guid><description>
+&lt;p>AWG(American Wire Guage) 전선 규격 및 허용 전류&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/06/awg.jpg">&lt;img loading="lazy" class="alignnone size-large wp-image-3383" src="https://openmicrolab.com/images/2015/06/awg-557x1024.jpg" alt="AWG" width="557" height="1024" srcset="https://openmicrolab.com/images/2015/06/awg-557x1024.jpg 557w, https://openmicrolab.com/images/2015/06/awg-163x300.jpg 163w, https://openmicrolab.com/images/2015/06/awg.jpg 570w" sizes="(max-width: 557px) 100vw, 557px" />&lt;/a>&lt;/p>
+&lt;p>AWG의 값이 클수록 전선의 굵기가 가늘어지고 따라서 저항값이 커져서 허용 전류가 적어진다.&lt;/p></description></item><item><title>Power cord spec.</title><link>https://openmicrolab.com/power-cord-spec/</link><pubDate>Wed, 06 May 2015 06:37:02 +0000</pubDate><guid>https://openmicrolab.com/power-cord-spec/</guid><description>
+&lt;p>파워코드 규격&lt;/p>
+&lt;h3 id="h03vv-f-8211-har-pvc-light-duty-300-volt">H03VV-F – HAR, PVC, Light-Duty, 300 Volt&lt;/h3>
+&lt;p>H03VV-F is a harmonized, light duty, oil-resistant, flexible, PVC multi-conductor 300-volt European cord. Recommended for use in connecting small electrical appliances under low mechanical stress environments as in offices, kitchens and households. H03VV-F can commonly be found in connections to kitchen utensils, desk lamps, floor lamps, vacuum cleaners, office machines and radios. &lt;span style="text-decoration: underline;">These cables should NOT be used in cooking and heating apparatus&lt;/span>. Available in black, white or gray jacket. Max operating voltage in single or three phase system is Uo/U 330/300 volts. In a direct system, max operating voltage is Uo/U 495/495 volts. Outdoor installation is not permitted.&lt;br>
+Bending Radius: 7.5 x Cable Diameter&lt;br>
+Temperature: -5 Deg C. to +70 Deg C.&lt;br>
+Flame Protection: IEC 60332.1&lt;br>
+Rated Working Voltage: 300/300 Volts&lt;br>
+Stranding: VDE-0295 Class 5, IEC 60228 CL-5 (fine bare copper)&lt;br>
+Color Code: VDE-0293-308&lt;br>
+Approvals: &lt;HAR> HD 21.5 S3, &lt;VDE> 0281 Part-5, IEC 60227-5, CE Low-Voltage Directive &amp;amp; RoHS Compliant&lt;br>
+&lt;a href="http://www.muellergroup.net/har-cord/403%20%20H03VV-F.pdf" target="_blank">&lt;a href="http://www.muellergroup.net/har-cord/403%20%20H03VV-F.pdf">http://www.muellergroup.net/har-cord/403%20%20H03VV-F.pdf&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Delta 3D 프린터 구조</title><link>https://openmicrolab.com/delta-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EA%B5%AC%EC%A1%B0/</link><pubDate>Tue, 24 Mar 2015 11:34:27 +0000</pubDate><guid>https://openmicrolab.com/delta-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EA%B5%AC%EC%A1%B0/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/DeltaBot_Calculator.png" alt="" width="562" height="394" />
+&lt;p>Deltabot에 대한 Simulator&lt;br>
+&lt;a title="Deltabot simulator" href="http://www.thinkyhead.com/_delta/" target="_blank">&lt;a href="http://www.thinkyhead.com/_delta/">http://www.thinkyhead.com/_delta/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>그리고 아래 그림은 Marlin firmware에서 정의되어 있는 Delta 설정에 대한 이름&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/cerberus_delta_geometry.jpg" alt="" width="474" height="368" /></description></item><item><title>토그 단위 변환</title><link>https://openmicrolab.com/%ED%86%A0%EA%B7%B8-%EB%8B%A8%EC%9C%84-%EB%B3%80%ED%99%98/</link><pubDate>Mon, 23 Feb 2015 04:51:33 +0000</pubDate><guid>https://openmicrolab.com/%ED%86%A0%EA%B7%B8-%EB%8B%A8%EC%9C%84-%EB%B3%80%ED%99%98/</guid><description>
+&lt;p>토크는 회전력을 나타내는 물리량이며 기호는 그리스문자 (타우)로 나타낸다. 단위는 뉴턴 미터(N.m)&lt;br>
+따라서 수식은 다음과 같다&lt;/p>
+&lt;blockquote>
+&lt;img class="mwe-math-fallback-image-inline tex" src="http://upload.wikimedia.org/math/0/d/8/0d8b6bc5d74a79266247acf96cf8c0bd.png" alt="\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}" />&lt;/blockquote>
+&lt;p>여기서 F는 가한 힘, r은 회전축에서 힘을 가하는 위치까지의 변위&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://upload.wikimedia.org/wikipedia/commons/8/8b/Fysik_vridmoment.png" alt="" width="189" height="189" />
+&lt;p>그런데 힘 또는 거리의 단위가 여러가지로 사용이 되어서 변환이 필요한데, 다음의 사이트에서 쉽게 변환이 가능하다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a title="토크 변환" href="http://www.numberfactory.com/nf%20torque.htm" target="_blank">&lt;strong>&lt;a href="http://www.numberfactory.com/nf%20torque.htm">http://www.numberfactory.com/nf%20torque.htm&lt;/a>&lt;/strong>&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title>열전도율</title><link>https://openmicrolab.com/%EC%97%B4%EC%A0%84%EB%8F%84%EC%9C%A8/</link><pubDate>Tue, 20 Jan 2015 09:49:19 +0000</pubDate><guid>https://openmicrolab.com/%EC%97%B4%EC%A0%84%EB%8F%84%EC%9C%A8/</guid><description>
+&lt;p>열역학 제2법칙에 따르면, 열은 항상 더 낮은 온도 방향으로 흐른다. 즉 뜨거운 부분의 열이 차가운 부위로 전달되는데, 이 정도의 차이는 열전도율에 따라 달라진다.&lt;/p>
+&lt;blockquote>
+&lt;p>열전도율 기본 공식&lt;br>
+Q=k*A(ΔT/L)&lt;br>
+Q=열류량(W)&lt;/p>
+&lt;p>여기서&lt;br>
+A=시료의 면적(㎡)&lt;br>
+L=시료두께(m)&lt;br>
+ΔT=온도차(K,°C와 동일)&lt;/p>&lt;/blockquote>
+&lt;p>즉 면적이 넓고 두께가 얇을 수록 열이 더 빨리 전달이 됨&lt;/p>
+&lt;p>&lt;a href="http://openmicrolab.cdn2.cafe24.com/heat_transfer.png">&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/heat_transfer.png" alt="" width="486" height="500" />&lt;/a>&lt;/p>
+&lt;p> &lt;/p>
+&lt;p>다이아몬드의 열전도율이 가장 높은 것이 인상적이다. 순동도 괜찮지만 가공성 및 비용을 따지면 알루미늄일듯.&lt;/p>
+&lt;p>참고: &lt;a href="http://ko.wikipedia.org/wiki/%EC%97%B4%EC%A0%84%EB%8F%84%EC%9C%A8" target="_blank">&lt;a href="http://ko.wikipedia.org/wiki/%EC%97%B4%EC%A0%84%EB%8F%84%EC%9C%A8">http://ko.wikipedia.org/wiki/%EC%97%B4%EC%A0%84%EB%8F%84%EC%9C%A8&lt;/a>&lt;/a>&lt;/p></description></item><item><title>3D 프린터 필라멘트 – PLA(Polylactic Acid)</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-plapolylactic-acid/</link><pubDate>Tue, 20 Jan 2015 09:32:47 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-plapolylactic-acid/</guid><description>
+&lt;h3 id="특징">특징&lt;/h3>
+&lt;ul>
+&lt;li>생분해성 폴리머로 원재료의 대부분을 natureworks에서 공급됨&lt;/li>
+&lt;li>공기중의 습기를 빨아들여서 출력할때 이것이 버블로 나타날 수 있음&lt;/li>
+&lt;li>녹는 온도는 180~220°C이며, 80°C 정도면 부드러워 진다. 하지만 3D프린팅 필라멘트는 다른 재료를 섞어서 만드므로 구체적인 온도 조건은 데이터 시트를 참고해야 함. 색깔별로도 온도 특성이 다름에 유의!
+&lt;ul>
+&lt;li>4032D (&lt;a class="external text" href="http://www.natureworksllc.com/~/media/Technical_Resources/Technical_Data_Sheets/TechnicalDataSheet_4032D_films_pdf.pdf" rel="nofollow">datasheet&lt;/a>) is a high-temperature PLA. Requires higher temperatures and may need to be set as high as 230°C&lt;/li>
+&lt;li>4042D (&lt;a class="external text" href="http://forums.reprap.org/file.php?94,file=4512,filename=TechnicalDataSheet_4042D_pdf.pdf" rel="nofollow">datasheet&lt;/a>) should extrude at 190°C&lt;/li>
+&lt;li>4043D (&lt;a class="external text" href="http://www.natureworksllc.com/~/media/Technical_Resources/Technical_Data_Sheets/TechnicalDataSheet_4043D_films_pdf.pdf" rel="nofollow">datasheet&lt;/a>) 160-220°C around 180°C is a good start (see &lt;a class="external free" href="http://ultimachine.com/pla" rel="nofollow">&lt;a href="http://ultimachine.com/pla">http://ultimachine.com/pla&lt;/a>&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Glass transition temperature (유리전이 온도): 비체적의 변화율이 갑자기 바뀌는 온도, 대략 굳는 온도라고 이해. 60-65°C 임&lt;/li>
+&lt;li>ABS보다 강하고, PLA보다 약간 더 나은 표면의 품질을 가지나 더 낮은 온도를 필요로 하고 더 강한 프린트 물을 만들 수 있음&lt;/li>
+&lt;li>ABS보다 마찰 계수가 조금 더 높지만 녹을때 낮은 점도때문에 이것을 상쇄한다. 즉 더 낮은 압력으로 밀어 낼 수 있다.&lt;/li>
+&lt;/ul>
+&lt;h3 id="베드">베드&lt;/h3>
+&lt;ul>
+&lt;li>PLA는 아크릴 베드에 너무 잘 붙으므로 아크릴 베드를 바로 사용하기보다는 테이프를 사용을 추천&lt;/li>
+&lt;li>히트베드 없이 출력이 가능&lt;/li>
+&lt;li>하지만 가열된 Polymide(Kapton)에 잘 붙지만 베드와 프린트물이 식으면 떼어내기 힘들다.&lt;/li>
+&lt;li>블루테이트를 사용할 때는 베드를 가열하지 말것&lt;/li>
+&lt;li>히트베드를 사용시에는 70도를 추천&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고"> 참고&lt;/h3>
+&lt;p>&lt;a href="http://reprap.org/wiki/PLA" target="_blank">&lt;a href="http://reprap.org/wiki/PLA">http://reprap.org/wiki/PLA&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Arduino Scuola와 3D 프린팅</title><link>https://openmicrolab.com/arduino-scuola%EC%99%80-3d-%ED%94%84%EB%A6%B0%ED%8C%85/</link><pubDate>Mon, 19 Jan 2015 04:10:44 +0000</pubDate><guid>https://openmicrolab.com/arduino-scuola%EC%99%80-3d-%ED%94%84%EB%A6%B0%ED%8C%85/</guid><description>
+&lt;p>최근에 발견한 Arduino Scuola 사이트: &lt;a href="http://scuola.arduino.cc/" target="_blank">&lt;a href="http://scuola.arduino.cc/">http://scuola.arduino.cc/&lt;/a>&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Arduino_Scuola.png" alt="Arduino Scuola" width="680" height="609" />
+&lt;p>이 사이트는 &lt;a href="https://learn.adafruit.com/guides/latest" target="_blank">Adafruit&lt;/a>와 &lt;a href="https://learn.sparkfun.com/?_ga=1.96420316.1388457354.1418889582" target="_blank">Sparkfun의 learn사이트&lt;/a>와 같은 컨셉의 사이트인데, 아직 자료가 많지 않아서 인지 메인 사이트에서 링크도 없다. 하지만 아두이노의 블로그의 글에서 언급한 내용에 이 사이트의 내용이 링크로 연결되는 것으로 보아 곧 활성화가 될 것같다. 오픈소스 하드웨어 비즈니스에서 이러한 접근은 몇 년 전부터 내가 예측하고 있던 방향이다. 즉 초보자 들이 쉽게 따라할 수 있는 컨텐츠를 제공하고, 관련된 부품이나 키트를 온라인 샵에서 같이 판매를 하는 것이다.&lt;/p>
+&lt;p>또 한가지 추세는 &lt;strong>3D프린팅과 디지털기기의 결합&lt;/strong>이다. 아주 &lt;a href="http://scuola.arduino.cc/courses/lessons/cover/gQ7noDN" target="_blank">간단한 예&lt;/a>가 소개가 되고 있는데, 이런 추세는 더 활발해 질 것 같다. 즉 디지털 기기에 3D 프린터를 사용하여 개인화된 내용이 부가되는 형태이다. 이런 식의 접근을 하고 있는 업체중 하나는 &lt;a href="http://www.3dracers.com/" target="_blank">3D Racers&lt;/a>인데 온라인에서 장난감 자동차의 외관을 사용자가 디자인 할 수 있다.&lt;/p></description></item><item><title>3D 프린팅 앱</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%95%B1/</link><pubDate>Sat, 27 Dec 2014 09:11:54 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%95%B1/</guid><description>
+&lt;p>일반 프린터를 쓰기위해서는 타이핑만 하면 되지만 3D 프린팅을 위해서는 3D모델링을 해야한다.  하지만 이것은 설계 또는 디자인의 영역이고 3D 디자인 툴을 사용해야 하는데 이 S/W는 워드수준이 아니므로 다음과 같은 2가지 접근이 나올 것으로 예상된다.&lt;/p>
+&lt;ul>
+&lt;li>이미 잘 디자인된 모델들을 &lt;a title="thingiverse" href="http://www.thingiverse.com/" target="_blank">Thingiverse&lt;/a>같은 사이트에서 다운로드 해서 사용하기&lt;/li>
+&lt;li>특정 응용에 따른 S/W가 나와서 쉽게 모델링이 가능하게 하는 것&lt;/li>
+&lt;/ul>
+&lt;p>첫번째 경우 Thingiverse가 계속 확장이 되어서, 일반 회사들도 자신들의 계정으로 페이지를 만들어서 디자인을 오픈하기도 한다.  &lt;a href="http://www.thingiverse.com/GE/about" target="_blank">GE&lt;/a>, &lt;a href="http://www.thingiverse.com/adafruit/about" target="_blank">Adafruit&lt;/a> …&lt;/p>
+&lt;p>두번째의 경우 Makerbot에서는 자신들의 프린터와 호환이 되는 App을 만들 것을 권장하며, &lt;a href="http://www.makerbot.com/developers" target="_blank">MakerBot Developer Program&lt;/a>을 운영해서 ECO System을 구축하고 있다. 하기는 &lt;a href="http://www.makerbot.com/readyapps" target="_blank">Makerbot Ready App&lt;/a>으로 소개된 프로그램들이다.&lt;/p></description></item><item><title>큐라 한글화 14.09 버전</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-14-09-%EB%B2%84%EC%A0%84/</link><pubDate>Mon, 17 Nov 2014 07:16:35 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-14-09-%EB%B2%84%EC%A0%84/</guid><description>
+&lt;p>지난번에 큐라 한글화 작업에 대해서 &lt;a href="http://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/" target="_blank">포스팅&lt;/a>을 했는데, 몇가지 추가할 사항이 있어서 다시 정리를 한다.&lt;/p>
+&lt;p>일단 당시 한글화 한 버젼은 14.08 RC버젼인데, 이 버젼은 공식 릴리즈가 되지 않았고, 14.07 다음에 바로 14.09버젼이 릴리즈 됐다. 그리고 14.08 한글 번역 버젼이 서포트 설정이 동작을 하지 않는다는 것이다.&lt;/p>
+&lt;p>문제의 원인은 다음과 같다.  큐라의 모든 설정 부분은 current_profile.ini 파일에 저장이 되며, 큐라가 시작할때 이 파일을 로드해서 설정이 되고 종료할때 마지막 값이 저장되는데 한글로 설정된 값이 current_profile.ini에 저장이 안된다. 따라서 이부분은 그냥 영문을 그대로 사용을 하도록 po 파일을 수정해서 다시 빌드를 했다. 14.09버젼에는 프랑스어, 독일어가 추가가 되어 있고 설정이 가능해져서 이 부분도 수정을 해서 한국어 설정도 가능하도록 했다.&lt;/p></description></item><item><title>3D 프린팅 팁 – 첫번째 레이어의 인쇄</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%ED%8C%81-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EB%A0%88%EC%9D%B4%EC%96%B4%EC%9D%98-%EC%9D%B8%EC%87%84/</link><pubDate>Mon, 06 Oct 2014 06:40:26 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%ED%8C%81-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EB%A0%88%EC%9D%B4%EC%96%B4%EC%9D%98-%EC%9D%B8%EC%87%84/</guid><description>
+&lt;p>3D 프린터에서 프린팅을 할때 가장 중요한 것은 출력하려는 모델이 베드에 잘 붙어있는 것이다. 이렇게 하기위해서는 몇가지 조치사항이 필요하다.&lt;/p>
+&lt;h3 id="베드-레벨링">베드 레벨링&lt;/h3>
+&lt;p>노즐과 베드와의 사이에 A4용지 하나가 들어갈 정도로 맞춘다. 만약 간격이 이 보다 더 가까우면 원료가 잘 나오지 못해서 끊어지듯이 그려지며, 간격이 넓으면 필라멘트가 베드에 잘 붙지 않는다.&lt;/p>
+&lt;h3 id="베드의-소재">베드의 소재&lt;/h3>
+&lt;p>베드에 잘붙이기 위해서 덕성 테이프, 캡톤(Kapton)테이프, PET등이 사용이 되며, Ultimkaer의 경우 딱풀을 주기도 한다. &lt;a href="http://openmicrolab.com/pei-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%B2%A0%EB%93%9C/" target="_blank">PEI 재질의 베드&lt;/a>를 사용하는 경우도 있다.&lt;/p>
+&lt;h3 id="프린터-설정">프린터 설정&lt;/h3>
+&lt;ul>
+&lt;li>온도는 5도 정도 높이고 – 따라서 쿨링팬은 off&lt;/li>
+&lt;li>속도는 약 30-50%로 줄이고&lt;/li>
+&lt;li>&lt;strong>&lt;span style="text-decoration: underline;">적층 두께는 노즐의 직경 정도 만큼&lt;/span>&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>&lt;span style="text-decoration: underline;">압출량은 일반적으로 200%인데 이 값은 레이어 두께 대비 값이므로 잘 설정을 해야 한다&lt;/span>&lt;/strong>.&lt;/li>
+&lt;/ul></description></item><item><title>큐라 실행파일 만들기 – Win32</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0-win32/</link><pubDate>Mon, 22 Sep 2014 09:12:37 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0-win32/</guid><description>
+&lt;p>슬라이드쉐어에 정리…&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="Cura Packaging in Win32" href="https://www.slideshare.net/JinbuhmKim/cura-packaging-win32" target="_blank">Cura Packaging in Win32&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>큐라 한글화 – Cura Korean Translation</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/</link><pubDate>Fri, 19 Sep 2014 07:58:07 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Cura_Hangul_Win.png" alt="" width="767" height="485" />
+&lt;p>네이버 카페에서 누군가 큐라(Cura)를 한글화한 것을 몇 건을 봤는데, po파일을 찾을 수 가 없고 또 어떤 것은 파이썬 소스의 영문을 그대로 건드려서 이건 아니다 싶어서 한글 번역을 했다. 사실 한글 번역은 귀찮은 작업인데 이런 작업을 하면서 더 알아가는 것도 있고 오픈소스에 기여를 하는 한 방편이기도 해서 진행을 했다.&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/LC_MESSAGES.png" alt="" width="709" height="263" />
+&lt;blockquote>
+&lt;p>&lt;del>일단 기존에 사용하는 큐라를 한글로 바꾸려면 Cura설치폴더\Cura\resources\locale 폴더에 위에서 받은 파일중 ko 폴더를 추가하고 큐라가 설치된 폴더아래 Cura 폴더 아래의 &lt;/del>&lt;strong>&lt;del>preferences.ini 파일에서 language 항목에 Korean으로 설정하면 된다.&lt;/del>  14.09버젼 부터는 언어 설정을 하는 옵션이 추가됨&lt;/strong>&lt;/p></description></item><item><title>3D 프린팅 참고 도서 – 과학과 교육 및 지속가능한 발전을 위한 저비용 3D프린팅</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%B0%B8%EA%B3%A0-%EB%8F%84%EC%84%9C-%EA%B3%BC%ED%95%99%EA%B3%BC-%EA%B5%90%EC%9C%A1-%EB%B0%8F-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%9C%EC%A0%84/</link><pubDate>Fri, 19 Sep 2014 06:12:59 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%B0%B8%EA%B3%A0-%EB%8F%84%EC%84%9C-%EA%B3%BC%ED%95%99%EA%B3%BC-%EA%B5%90%EC%9C%A1-%EB%B0%8F-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%9C%EC%A0%84/</guid><description>
+&lt;p>&lt;a href="http://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EA%B4%80%EB%A0%A8-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC/" target="_blank">지난번 포스팅&lt;/a>에서 언급한 3D 프린팅관련 책자인 &lt;span style="color: #222222;">“&lt;/span>&lt;strong>과학과 교육 및 지속가능한 발전을 위한 저비용 3D프린팅&lt;/strong>&lt;span style="color: #222222;">“은 이태리의 &lt;span style="color: #000000;">ICTP (International Centre for Theoretical Physics) 가 주최한 “Low-cost 3D Printing for Science, Education and Sustainable Development” 라는 워크샵의 발표집이다. 이 자료를 &lt;a href="http://knowledgebasin.com/index.php?" target="_blank">지식함지&lt;/a>라는 곳에서 한글번역을 했으며, Creative Commons Attribution-Noncommercial-NoDerivative Works 3.0 Unported License 를 따른다.&lt;/span>&lt;/span>&lt;/p>
+&lt;p>즉 &lt;a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.ko" target="_blank">CCL에 따르면 &lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>내용을 변경하거나 덧붙이는 등의 작업을 통해서 파생버전을 만들 수 없고, 상업적으로 이용할 수 없으며, 작가나 저작권자가 정한 방식대로 저작권이 누구에게 있는지를 알려주어야 한다.&lt;/p></description></item><item><title>3D 프린터 관련 용어 정리</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EA%B4%80%EB%A0%A8-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC/</link><pubDate>Fri, 19 Sep 2014 04:06:28 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EA%B4%80%EB%A0%A8-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC/</guid><description>
+&lt;p>3D 프린팅에서 사용되는 용어중 “&lt;a href="https://play.google.com/store/books/details?id=PVX_AAAAQBAJ" target="_blank">과학과 교육 및 지속가능한 발전을 위한 저비용 3D프린팅&lt;/a>“과 Cura 프로그램의 help에서 발췌하여 &lt;a href="https://github.com/jbkim/Cura" target="_blank">한글 번역&lt;/a>을 한 것임.&lt;/p>
+&lt;h3 id="infill">Infill&lt;/h3>
+&lt;p>이것은 출력된 부품의 안쪽부분을 말한다. 이것은 매우 다양한 패턴으로 만들어질 수 있어서, 그냥 꽉 채우는 것보다는 필라멘트를 절약할 수 있게 된다.&lt;/p>
+&lt;h3 id="skirt">Skirt&lt;/h3>
+&lt;p>skirt란 처음에 프린팅을 시작할 때, 노즐이 완전히 비어있으므로, 실제로 프린팅을 하기 전에 미리 조금 압출하는 플라스틱의 양을 말한다.&lt;/p>
+&lt;p>Cura – Skirt는 첫 번째 계층에서 오브젝트 주위에 그려진 라인입니다. 이것은 압출기에게 준비를 시키는데 도움을 줍니다. 그리고 오브젝트가 플랫폼에 맞는지 확인합니다.&lt;/p></description></item><item><title>3D 프린팅용 오픈소스 소프트웨어</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</link><pubDate>Fri, 19 Sep 2014 03:32:33 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</guid><description>
+&lt;p>3D 프린팅을 위해서는 4가지 소프트웨어가 필요하다.&lt;/p>
+&lt;ol>
+&lt;li>프린팅할 물체를 모델링 하는 소프트웨어&lt;/li>
+&lt;li>이 3D 모델을 각 레이어 별로 잘라주는 슬라이스 소프트웨어 – STL파일을 G코드로 변환&lt;/li>
+&lt;li>G 코드를 프린터로 전송해 주는 프로그램 – 보통 3D printing host software라고 부른다.&lt;/li>
+&lt;li>3D 프린터에 내장되어 있는 펌웨어&lt;/li>
+&lt;/ol>
+&lt;p>일단 1번은 디자인을 위한 것이고 4번은 기기에서 돌아가는 소프트웨어 이니 논외로 하고 슬라이서 프로그램과 호스트 프로그램을 살펴보자. 일반적으로 이 두 프로그램이 합쳐져 있다. 즉 호스트 프로그램에서 슬라이서 프로그램을 가져다 쓰는 형태이다.&lt;/p></description></item><item><title>PEI 3D 프린터 베드</title><link>https://openmicrolab.com/pei-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%B2%A0%EB%93%9C/</link><pubDate>Thu, 04 Sep 2014 01:55:47 +0000</pubDate><guid>https://openmicrolab.com/pei-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%B2%A0%EB%93%9C/</guid><description>
+&lt;p>3D 프린터의 힛베드(heat bed)에 모델을 잘 붙게하고, 프린팅이 끝난후 힛베드의 온도가 내려가면 모델을 잘 떼어지게 하기위해서 여러가지 방법이 있다. 일반적으로 가장 저렴한 방법은 힛베드에 테이핑을 하거나 딱풀이나 스프레이등을 뿌린다. 참고로 3가지 프린터를 구매해서 확인해 보니 MakerBot은 캡톤 필름시트, Ultimaker는 딱풀, 오픈크리에이터스는 테이프를 넣어서 준다.&lt;/p>
+&lt;h3 id="peia-hrefhttpsenwikipediaorgwikipolyetherimide-target_blankpolyetherimidea--발음이8230--_--베드를-사용하는-시도">PEI(&lt;a href="https://en.wikipedia.org/wiki/Polyetherimide" target="_blank">Polyetherimide&lt;/a> : 발음이… -_-;;)  베드를 사용하는 시도&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://www.spiderbot.eu/en/products/upgrades/pei-bed-detail.html" target="_blank">SpiderBot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kickstarter.com/projects/robox/robox-desktop-3d-printer-and-micro-manufacturing-p" target="_blank">Robox&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>PEI는 &lt;a href="http://www.aetnaplastics.com/products/d/Ultem" target="_blank">Ultem&lt;/a>(울템)이라고 불리는데 가격이 테이프에 비해서 좀 고가인듯 하다. PEI는 얇은 판처럼 사용할 수 있어서 테이프처럼 붙이는 수고가 필요하지 않아서 저렴하게 소싱할 수 있으면 가장 좋은 솔루션이 될 것 같다.&lt;/p></description></item><item><title>3D 프린터 테스트를 위한 모델</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%AA%A8%EB%8D%B8/</link><pubDate>Mon, 04 Aug 2014 06:55:30 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%AA%A8%EB%8D%B8/</guid><description>
+&lt;p>&lt;span style="line-height: 1.5em;">       &lt;/span>&lt;img loading="lazy" class="alignnone" style="line-height: 1.5em;" src="http://openmicrolab.cdn2.cafe24.com/1.png" alt="" width="145" height="108" /> &lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/2.png" alt="" width="145" height="109" /> &lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/3.png" alt="" width="146" height="110" />&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/4.png" alt="" width="146" height="109" />&lt;/p>
+&lt;p>일명 Torture test..&lt;/p>
+&lt;ul>
+&lt;li>Snake: &lt;a href="http://www.thingiverse.com/thing:4743" target="_blank">&lt;a href="http://www.thingiverse.com/thing:4743">http://www.thingiverse.com/thing:4743&lt;/a>&lt;/a>&lt;/li>
+&lt;li>Owl Statue: &lt;a href="http://www.thingiverse.com/thing:18218" target="_blank">&lt;a href="http://www.thingiverse.com/thing:18218">http://www.thingiverse.com/thing:18218&lt;/a>&lt;/a>&lt;/li>
+&lt;li>Nautilus Gears: &lt;a href="http://www.thingiverse.com/thing:27551" target="_blank">&lt;a href="http://www.thingiverse.com/thing:27551">http://www.thingiverse.com/thing:27551&lt;/a>&lt;/a>&lt;/li>
+&lt;li>Dimension Torture Test:&lt;a href="http://www.thingiverse.com/thing:33902" target="_blank"> http://www.thingiverse.com/thing:33902&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

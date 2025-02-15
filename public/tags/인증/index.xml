@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>인증 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%9D%B8%EC%A6%9D/</link><description>Recent content in 인증 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 10 Oct 2016 09:31:29 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%9D%B8%EC%A6%9D/index.xml" rel="self" type="application/rss+xml"/><item><title>오픈소스하드웨어 인증 프로그램 – OSHW Certification Program</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%9D%B8%EC%A6%9D-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-oshw-certification-program/</link><pubDate>Mon, 10 Oct 2016 09:31:29 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%9D%B8%EC%A6%9D-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-oshw-certification-program/</guid><description>
+&lt;p>&lt;a href="http://www.oshwa.org/" target="_blank">오픈소스하드웨어협회&lt;/a>에서 2015년 부터 작업한 오픈소스하드웨어 인증 프로그램을 개시했다. 이 인증은 &lt;a href="http://www.oshwa.org/definition/korean/" target="_blank">오픈소스하드웨어 정의&lt;/a>를 따른 다면 받을 수 있는 인증이고, 인증을 받은 이후에 여기서 벗어난다면 패널티가 있다.&lt;/p>
+&lt;img loading="lazy" class="wp-image-3772 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1476091774/OSHWAcert_byp4td.png" width="448" height="356" />
+&lt;li style="text-align: left;">
+인증 관련 사이트: &lt;a href="http://certificate.oshwa.org/" target="_blank">http://certificate.oshwa.org/&lt;/a>
+&lt;/li>
+&lt;li style="text-align: left;">
+인증 로고: &lt;a href="https://github.com/oshwa/certification-mark" target="_blank">https://github.com/oshwa/certification-mark&lt;/a>
+&lt;/li>
+&lt;p style="text-align: left;">
+관련 자료 &amp;#8211; &lt;a href="http://www.oshwa.org/2016/10/07/announcing-the-oshwa-open-source-hardware-certification-program/" target="_blank">http://www.oshwa.org/2016/10/07/announcing-the-oshwa-open-source-hardware-certification-program/&lt;/a>
+&lt;/p></description></item></channel></rss>

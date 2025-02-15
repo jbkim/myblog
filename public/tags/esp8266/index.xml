@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESP8266 on OpenMicroLab</title><link>https://openmicrolab.com/tags/esp8266/</link><description>Recent content in ESP8266 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 25 Oct 2018 09:53:01 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/esp8266/index.xml" rel="self" type="application/rss+xml"/><item><title>WioLink 사용하기</title><link>https://openmicrolab.com/wiolink-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 25 Oct 2018 09:53:01 +0000</pubDate><guid>https://openmicrolab.com/wiolink-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="wiolink">WioLink&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4458" src="https://res.cloudinary.com/openmicrolab/image/upload/v1540461119/wio_ks_icxaos.jpg" width="616" height="347" />
+&lt;p>2016년에 &lt;a href="https://www.kickstarter.com/projects/seeed/wio-link-3-steps-5-minutes-build-your-iot-applicat" target="_blank" rel="noopener noreferrer">킥스타터&lt;/a>를 통해서 구매한 WioLink. 당시에 동작을 확인하고 사용을 하지 않고 있다가, 최근에 다시 사용을 하려고 보니 잘 동작을 하지 않는다. WiFi 설정은 되고, 서버에도 접속이 되는데 앱에서 디바이스를 구성을 하고 View API 버튼을 누르면 앱이 멈춰버린다.&lt;/p>
+&lt;h3 id="펌웨어-업데이트">펌웨어 업데이트&lt;/h3>
+&lt;p>그래서 일단 펌웨어를 다시 업데이트를 해본다.&lt;br>
+&lt;strong>펌웨어 다운로드&lt;/strong>&lt;br>
+Firmware: user1.bin user2.bin&lt;br>
+Bootloader binary and other binaries: Esp8266sdk1.4.1.zip&lt;br>
+Esp8266sdk1.4.1.zip을 압축을 풀고, boot***.bin 파일은 bootloader.bin으로 이름을 바꾼다.&lt;/p>
+&lt;p>&lt;strong>esptool 설치&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>$ pip install esptool&lt;/p></description></item><item><title>무게센서와 HX711 사용하기</title><link>https://openmicrolab.com/%EB%AC%B4%EA%B2%8C%EC%84%BC%EC%84%9C%EC%99%80-hx711-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 28 Sep 2018 08:36:37 +0000</pubDate><guid>https://openmicrolab.com/%EB%AC%B4%EA%B2%8C%EC%84%BC%EC%84%9C%EC%99%80-hx711-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="무게센서">무게센서&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4441" src="https://res.cloudinary.com/openmicrolab/image/upload/v1538122944/load_cell_hn0zqk.png" width="660" height="235" />
+&lt;p>일반적으로 무게센서는 스트레인게이지(Strain Gauge) 기반의 로드셀(Lode Cell)를 사용한다. 스트레인 게이지는 저항으로 이루어진 센서로서 피 측정물에 부착되어 피 측정물의 물리적인 변형률(Strain)을 &lt;a href="https://en.wikipedia.org/wiki/Wheatstone_bridge" target="_blank" rel="noopener noreferrer">휘스톤 브릿지&lt;/a> 방식으로 전기적인 신호로 바꾸어 측정물의 변형량을 측정하는 저항 센서이다.&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="461"
+height="286"
+src="https://openmicrolab.com/Wheatstone-Bridge-02_2682268210215289130.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Excitation+ (E+) or VCC is red&lt;/li>
+&lt;li>Excitation- (E-) or ground is black.&lt;/li>
+&lt;li>Output+ (O+), Signal+ (S+)+ or Amplifier+ (A+) is white&lt;/li>
+&lt;li>O-, S-, or A- is green or blue&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4443" src="https://res.cloudinary.com/openmicrolab/image/upload/v1538123734/hx711_cabling_e2qlud.jpg" width="611" height="405" />
+&lt;h3 id="hx711">HX711&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/bogde/HX711" target="_blank" rel="noopener noreferrer">HX711 github library&lt;/a> 라이브러리를 Arduino에 설치&lt;/li>
+&lt;li>&lt;a href="https://github.com/sparkfun/HX711-Load-Cell-Amplifier" target="_blank" rel="noopener noreferrer">Sparkfun HX711 example code&lt;/a> 중 캘리브레이션 코드로 캘리브레이션을 한다.&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide?_ga=2.6286835.196014269.1538042880-991341443.1528683253" target="_blank" rel="noopener noreferrer">Sparkfun 가이드 문서&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackster.io/daveVertu/make-a-screen-less-google-fit-connected-smart-scale-9a5934" target="_blank" rel="noopener noreferrer">Google fit 연결 응용&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackster.io/luciansabo/healthzuilla-scale-c359f9" target="_blank" rel="noopener noreferrer">HTTP API 사용 응용&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.instructables.com/id/Wi-Fi-Smart-Scale-with-ESP8266-Arduino-IDE-Adafrui/" target="_blank" rel="noopener noreferrer">ESP8266 사용 Adafruit ID 연결 응용&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>SmartConfig – WiFi provisioning</title><link>https://openmicrolab.com/smartconfig-wifi-provisioning/</link><pubDate>Fri, 07 Sep 2018 09:34:48 +0000</pubDate><guid>https://openmicrolab.com/smartconfig-wifi-provisioning/</guid><description>
+&lt;p>유선 네트워크인 이더넷은 랜선을 연결하면 DHCP로 자동으로 IP가 부여된다. 하지만 WiFi에서는 AP의 이름 및 패스워드를 알고 AP에 접속을 해야지 IP를 얻을 수 있다. 이 과정이 WiFi provisoning인데, 스마트폰이나 PC와 달리 IoT 디바이스는 UI가 없는 경우가 많아서 AP의 이름이나 패스워드를 다른 방법으로 입력을 해야한다. 이때 주로 스마트폰을 사용을 하는데, 쉽게 말하면 스마트 폰을 이용해서 이 정보를 전달을 한다. 보통 디바이스를 softAP 모드로 놓고 이 디바이스에 스마트폰이 연결를 한후 UDP, TCP로 이 정보를 전달을 하는데, 이 방법외에 다음과 같은 방법이 있다.&lt;/p></description></item><item><title>ESP32 개발 환경 설정 – Mac OS</title><link>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</link><pubDate>Fri, 06 Jul 2018 06:02:04 +0000</pubDate><guid>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</guid><description>
+&lt;p>Mac OS에서 ESP32 개발 환경 설정은 다음의 &lt;a href="http://esp-idf.readthedocs.io/en/latest/get-started/index.html#introduction" target="_blank" rel="noopener noreferrer">링크&lt;/a>를 참고한다.&lt;/p>
+&lt;img loading="lazy" class="" src="http://esp-idf.readthedocs.io/en/latest/_images/what-you-need.png" width="468" height="305" />
+&lt;h3 id="tool-chain-설정">Tool chain 설정&lt;/h3>
+&lt;p>pip와 pyserial을 설치- 이 과정중에 dependency가 있는 라이브러리 설치는 sudo easy_install xxx  형태로 설치한다.&lt;/p>
+&lt;pre>&lt;span class="n">sudo&lt;/span> &lt;span class="n">easy_install&lt;/span> &lt;span class="n">pip
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell1">&lt;span class="n">brew&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">cmake&lt;/span> &lt;span class="n">ninja&lt;/span> &lt;span class="n">dfu&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">util&lt;/span>&lt;/pre>
+&lt;p>&lt;span class="n">다음은 툴체인을 다운로드하고, 설치를 하는 과정임&lt;/span>&lt;/p>
+&lt;pre>&lt;span class="n">mkdir&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">cd&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">git clone --recursive https://github.com/espressif/esp-idf.git
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell3">&lt;span class="nb">cd&lt;/span> ~/esp/esp-idf
+./install.sh&lt;/pre>
+&lt;p>환경설정&lt;/p>
+&lt;blockquote>
+&lt;p>. $HOME/esp/esp-idf/export.sh&lt;/p>&lt;/blockquote>
+&lt;p>다음의 내용을  .bash_profile에 추가한 다음에 esp 개발시 터미널에서 get_idf를 실행하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>alias get_idf=’. $HOME/esp/esp-idf/export.sh’&lt;/p>&lt;/blockquote>
+&lt;p>추후에 리모트 깃의 내용을 업데이트 하려면 다음과 같이 한다.&lt;/p></description></item><item><title>Mac OS에서 ESP8266 개발 환경</title><link>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</link><pubDate>Wed, 13 Sep 2017 04:06:37 +0000</pubDate><guid>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</guid><description>
+&lt;h3 id="아두이노">아두이노&lt;/h3>
+&lt;ol>
+&lt;li>Arduino &amp;gt; Preferences… 의 메뉴에서 추가적인 보드매니저 URLs에 다음의 링크를 입력한다.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="http://arduino.esp8266.com/stable/package">http://arduino.esp8266.com/stable/package&lt;/a>_esp8266com_index.json&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4040" src="https://res.cloudinary.com/openmicrolab/image/upload/v1505273144/ESP_Arduino_qgvl3z.png" width="459" height="164" />
+&lt;ol start="2">
+&lt;li>툴 &amp;gt; 보드 &amp;gt; 보드 매니저… 의 메뉴의 필터에 ESP를 입력 후 esp8266을 선택후 설치한다.&lt;/li>
+&lt;/ol>
+&lt;img loading="lazy" class="alignnone wp-image-4041" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_451/v1505273144/ESP8266_Arduino_uewfwx.png" width="635" height="357" />
+&lt;h3 id="a-hrefhttpsgithubcomsminghubsming-target_blank-relnoopener-noreferrersminga">&lt;a href="https://github.com/SmingHub/Sming" target="_blank" rel="noopener noreferrer">Sming&lt;/a>&lt;/h3>
+&lt;p>맥에서는&lt;a href="https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart" target="_blank" rel="noopener noreferrer"> https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart&lt;/a> 이 링크의 내용대로 따라하면 별 무리가 없다. 즉 이클립스, 툴체인, ESP SDK를 설치하고 Sming core를 빌드한다.&lt;/p>
+&lt;p>이클립스의 환경설정에서 SMING_HOME, ESP_HOME 설정을 한다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4045" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_569/v1505275296/ESP_Eclipse_xkwyit.png" width="569" height="371" />
+&lt;p> &lt;/p>
+&lt;p>SmingFramework의 Makefile-project.mk파일에서 ESPTOOL2의 경로를 다음과 같이 수정한다.&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;span class="s1">ESPTOOL2 ?&lt;/span>= /opt/esp-open-sdk/utils/esptool2
+&lt;/p></description></item><item><title>아두이노에서 ESP8266 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-esp8266-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 06 Apr 2016 09:29:24 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-esp8266-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="아두이노에서-esp8266-사용하기">아두이노에서 ESP8266 사용하기&lt;/h3>
+&lt;ul>
+&lt;li>아두이노 IDE는 1.6.4 이상의 버전을 설치&lt;/li>
+&lt;li>아두이노의 환경설정에서 추가적인 보드매니저 URLs에 다음과 같이 입력&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;a href="http://arduino.esp8266.com/stable/package">http://arduino.esp8266.com/stable/package&lt;/a>_esp8266com_index.json&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>툴 &amp;gt; 보드매니저에서 ESP8266을 검색후 ESP8266 보드를 설치한다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/04/arduino_board_maneger.png">&lt;img loading="lazy" class="aligncenter wp-image-3604" src="https://openmicrolab.com/images/2016/04/arduino_board_maneger.png" alt="arduino_board_maneger" width="491" height="276" srcset="https://openmicrolab.com/images/2016/04/arduino_board_maneger.png 801w, https://openmicrolab.com/images/2016/04/arduino_board_maneger-300x169.png 300w" sizes="(max-width: 491px) 100vw, 491px" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>설치후 툴 &amp;gt; 보드 메뉴에서 가지고 있는 ESP8266보드를 선택한다.&lt;/li>
+&lt;/ul>
+&lt;p>####&lt;img loading="lazy" class="alignnone" src="http://www.seeedstudio.com/depot/bmz_cache/1/15779b54e3a81b48686fc7fd13e8782d.image.200x150.jpg" alt="" width="247" height="185" />&lt;/p>
+&lt;ul>
+&lt;li>이 보드의 관련 정보: &lt;a href="https://github.com/nodemcu" target="_blank">&lt;a href="https://github.com/nodemcu">https://github.com/nodemcu&lt;/a>&lt;/a>&lt;/li>
+&lt;li>ESP8266 보드들의 비교: &lt;a href="http://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/" target="_blank">&lt;a href="http://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/">http://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="핀레이아웃">핀레이아웃&lt;/h4>
+&lt;img loading="lazy" class="alignnone" src="http://cdn.frightanic.com/blog/wp-content/uploads/2015/09/esp8266-nodemcu-dev-kit-v2-pins.png" alt="" width="436" height="336" />
+&lt;h4 id="간단한-blink-test">간단한 Blink Test&lt;/h4></description></item></channel></rss>

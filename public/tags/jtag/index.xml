@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JTAG on OpenMicroLab</title><link>https://openmicrolab.com/tags/jtag/</link><description>Recent content in JTAG on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 31 Jan 2017 05:03:07 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/jtag/index.xml" rel="self" type="application/rss+xml"/><item><title>J-link 인터페이스</title><link>https://openmicrolab.com/j-link-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/</link><pubDate>Tue, 31 Jan 2017 05:03:07 +0000</pubDate><guid>https://openmicrolab.com/j-link-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/</guid><description>
+&lt;p>Segger사의 &lt;a href="https://www.segger.com/jlink-debug-probes.html" target="_blank">J-link 디버거&lt;/a>는 JTAG과 SWD인터페이스를 제공한다.&lt;/p>
+&lt;p>&lt;strong>JTAG  pin-out&lt;/strong>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3878" src="http://res.cloudinary.com/openmicrolab/image/upload/v1485838196/JLink_Interface_Pinout_JTAG_ehkrff.png" width="190" height="146" />
+&lt;p>SWD를 사용하기위해서는 위 20핀에서 필요한 4핀만 연결하면 된다. 여기서 &lt;strong>VTref신호는 디버거에서 타겟보드의 전압을 체크하고 전압레퍼런스로 사용하기 때문에 타겟 보드의 전원을 연결하고, 프로그래밍을 할 MCU의 전압과 연결해야 한다. 그렇지 않을 경우 VTref is 0.xxxxV라고 에러메시지가 나면서 연결이 되지 않는다.&lt;/strong>&lt;/p>
+&lt;p>*참고로 J-link와 같은 디버거를 DIY형태로 개발을 해서 OSHW로 판매를 하는 것이 있다.  &lt;a href="http://oshchip.org/products/OSHChip_CMSIS_DAP_V1.0_Product.html">OSHChip_CMSIS_DAP_V1.0&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3881" src="http://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_91/v1485838879/JLink_Interface_Pinout_SWD__org_cgyloy.png" width="181" height="157" />
+&lt;img loading="lazy" class="alignnone wp-image-3882" src="http://res.cloudinary.com/openmicrolab/image/upload/v1485838915/SEGGER_-_The_Embedded_Experts_-_J-Link_Debug_Probes_-_General_Info_-_Interface_description_e6hsuz.png" width="851" height="423" />
+&lt;p>참고: &lt;a href="https://www.segger.com/interface-description.html" target="_blank">&lt;a href="https://www.segger.com/interface-description.html">https://www.segger.com/interface-description.html&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Cortex Debug Connector</title><link>https://openmicrolab.com/cortex-%EB%94%94%EB%B2%84%EA%B7%B8-%EC%BD%98%EB%84%A5%ED%84%B0/</link><pubDate>Thu, 04 Nov 2010 11:15:30 +0000</pubDate><guid>https://openmicrolab.com/cortex-%EB%94%94%EB%B2%84%EA%B7%B8-%EC%BD%98%EB%84%A5%ED%84%B0/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="BORDER-COLLAPSE: collapse; FONT-FAMILY: verdana, sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;/p>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+&lt;B>ARM Standard JTAG 콘넥터는 2.54 피치이며,&lt;/B>
+&lt;/P>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+&lt;B>Cortex debug 콘넥터와 Cortex debug + ETM 콘넥터는 1.27 피치입니다.&lt;/B>
+&lt;/P>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+&lt;B>&lt;/B>&amp;nbsp;
+&lt;/P>
+&lt;UL style="PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: square; MARGIN: 6px 0px 16px 28px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+10-pin (0.05&amp;#8243;) &amp;#8211; Cortex Debug Connector
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+20-pin (0.10&amp;#8243;) &amp;#8211; ARM Standard JTAG Connector
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+20-pin (0.05&amp;#8243;) &amp;#8211; Cortex Debug+ETM Connector
+&lt;/LI>
+&lt;/UL>&lt;MAP name=headerimage>&lt;/MAP>
+&lt;DIV align=center>&lt;IMG style="BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none" class=center alt="Cortex Debug and Trace Connectors" src="http://www.keil.com/coresight/coresightconnectors.jpg" width=400 height=273 useMap=#headerimage>
+&lt;DIV style="FONT-SIZE: 8pt" align=center>_Debug and Trace Connectors for Cortex-M devices._&lt;/DIV>&lt;/DIV>
+&lt;H3 style="PADDING-BOTTOM: 0px; FONT: bold 13pt verdana, sans-serif; MARGIN-BOTTOM: 0px; PADDING-TOP: 15px">
+Cortex Debug Connector (10-pin)&lt;A style="COLOR: rgb(0,102,153)" name=10pin>&lt;/A>
+&lt;/H3>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px" align=center>&lt;IMG style="BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none" alt="Cortex Debug and JTAG Pin Identification" src="http://www.keil.com/coresight/cortex10pin.gif" />
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+A 10-pin header&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.samtec.com/ftppub/pdf/FTSH_MT.PDF" target=_blank>(Samtec FTSH-105-01)&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>is specified with dimensions: 0.25&amp;#8243; x 0.188&amp;#8243; (6.35mm x 4.78mm).
+&lt;/P>
+&lt;H3 style="PADDING-BOTTOM: 0px; FONT: bold 13pt verdana, sans-serif; MARGIN-BOTTOM: 0px; PADDING-TOP: 15px">
+ARM Standard JTAG Connector (20-pin)&lt;A style="COLOR: rgb(0,102,153)" name=20pinjtag>&lt;/A>
+&lt;/H3>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px" align=left>&lt;IMG style="BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none" hspace=135 alt="Cortex Debug and JTAG Pin Identification" src="http://www.keil.com/coresight/jtag20pin.gif">&lt;/P>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+Dimensions of the ARM JTAG Connector are 1.29&amp;#8243; x 0.722&amp;#8243; (33mm x 18.5mm).
+&lt;/P>
+&lt;H3 style="PADDING-BOTTOM: 0px; FONT: bold 13pt verdana, sans-serif; MARGIN-BOTTOM: 0px; PADDING-TOP: 15px">
+Cortex Debug+ETM Connector (20-pin)&lt;A style="COLOR: rgb(0,102,153)" name=20pin>&lt;/A>
+&lt;/H3>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px" align=left>&lt;IMG style="BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none" hspace=130 alt="Cortex Debug and JTAG Pin Identification" src="http://www.keil.com/coresight/cortex20pin.gif">&lt;/P>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+A 20-pin header&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.samtec.com/ftppub/pdf/FTSH_MT.PDF" target=_blank>(Samtec FTSH-110-01)&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>is specified with dimensions: 0.50&amp;#8243; x 0.188&amp;#8243; (12.70mm x 4.78mm).
+&lt;/P>&lt;/SPAN>&lt;/SPAN>
+&lt;p>출처 : &lt;a href="http://www.keil.com/coresight/connectors.asp">http://www.keil.com/coresight/connectors.asp&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ripup on OpenMicroLab</title><link>https://openmicrolab.com/tags/ripup/</link><description>Recent content in Ripup on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 23 Oct 2012 05:03:13 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ripup/index.xml" rel="self" type="application/rss+xml"/><item><title>EagleCAD Tip- Ripup</title><link>https://openmicrolab.com/eaglecad-tip-ripup/</link><pubDate>Tue, 23 Oct 2012 05:03:13 +0000</pubDate><guid>https://openmicrolab.com/eaglecad-tip-ripup/</guid><description>
+&lt;p>EagleCAD를 쓰다보면 기능은 있는데, 메뉴에 나와 있지 않아서 접근이 힘든 경우가 있다.  대부분이  Edit Commands 기능들이다. 이럴땐  Help를 찾아보거나 열심히 구글링하거나……&lt;/p>
+&lt;p>여기에 정리하는 이유는 나중에 찾기 쉽게하기 위해… ^^*&lt;/p>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile3.uf.11300349508625CF1C214F.PNG" class="aligncenter" width="480" height="180" filename="ripup.PNG" filemime="image/jpeg" />
+&lt;/p>&lt;/p>
+&lt;p>&lt;strong>&lt;span style="font-size: 10pt; ">Ripup&lt;/span>&lt;/strong>&lt;/p>
+&lt;p>&lt;font size="2">&lt;span style="line-height: 19px;">&lt;b>작업한 라우팅을 날려버릴때 사용한다.&lt;/b>&lt;/span>&lt;/font>&lt;/p>
+&lt;p>&lt;font size="2">&lt;span style="line-height: 19px;">&lt;b>만약 라우팅 전부를 없애고 싶으면,  “&lt;span style="background-color: rgb(255, 228, 0); ">Ripup;&lt;/span>” 하면 된다.&lt;/b>&lt;/span>&lt;/font>&lt;/p>
+&lt;p>&lt;font size="2">&lt;span style="line-height: 19px;">&lt;b>&lt;br />&lt;/b>&lt;/span>&lt;/font>&lt;/p>
+&lt;p>&lt;font size="2">&lt;span style="line-height: 19px;">&lt;b>&lt;br />&lt;/b>&lt;/span>&lt;/font>&lt;/p>&lt;/p>
+&lt;p style="margin-left: 0px; margin-right: 0px; ">
+&lt;span style=" font-weight:600;">Function&lt;/span>
+&lt;/p>
+&lt;p style="margin-left: 30px; margin-right: 0px; ">
+Changes routed wires and vias into airwires.&lt;br />Changes the display of polygons to &amp;#8220;outlines&amp;#8221;.
+&lt;/p></description></item></channel></rss>

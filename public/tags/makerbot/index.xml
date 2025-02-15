@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Makerbot on OpenMicroLab</title><link>https://openmicrolab.com/tags/makerbot/</link><description>Recent content in Makerbot on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 28 Feb 2017 02:04:20 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/makerbot/index.xml" rel="self" type="application/rss+xml"/><item><title>Makerbot, Prusa 그리고 3D 프린팅 시장</title><link>https://openmicrolab.com/makerbot-prusa-%EA%B7%B8%EB%A6%AC%EA%B3%A0-3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5/</link><pubDate>Tue, 28 Feb 2017 02:04:20 +0000</pubDate><guid>https://openmicrolab.com/makerbot-prusa-%EA%B7%B8%EB%A6%AC%EA%B3%A0-3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5/</guid><description>
+&lt;p>최근 &lt;a href="http://www.fabbaloo.com/blog/2017/2/16/whats-really-going-on-at-makerbot" target="_blank">메이커봇이 인원을 30% 감원한다는 기사&lt;/a>&lt;/p>
+&lt;p>여기서 Makerbot과 Prusa의 현재 상황과 3D 프린팅 시장을 알 수 있다.&lt;/p>
+&lt;blockquote>
+&lt;p>consumers are incapable of 3D design, fixing wonky machines and desire 3D models that aren’t easily found&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>고객들이 아직은 3D 디자인을 할 수 없고&lt;/li>
+&lt;li>기기에 문제가 생길 경우 해결이 안되며&lt;/li>
+&lt;li>원하는 3D 모델을 찾기 여러움&lt;/li>
+&lt;/ul>
+&lt;p>그래서 시장은 아직 일반인 대상이 아니라 DIY community인데, 이쪽을 포커싱하고 있는 &lt;a href="http://www.prusaprinters.org/" target="_blank">Prusa&lt;/a>의 경우 90명 정도의 스텝이 월 3천대 이상을 판매한다고 함.&lt;/p></description></item><item><title>S3G protocol</title><link>https://openmicrolab.com/s3g-protocol/</link><pubDate>Wed, 04 Jan 2017 06:20:13 +0000</pubDate><guid>https://openmicrolab.com/s3g-protocol/</guid><description>
+&lt;ul>
+&lt;li>S3G는 “Sanguino3 Gcode”의 줄임말로 3D 프린터를 제어하는 언어임.&lt;/li>
+&lt;li>파일의 경우 .s3g를 사용하는데 MakerBot에서 이것을 차용하여 .x3g로 사용함.&lt;/li>
+&lt;li>초기에 8비트 AVR의 성능때문에 사용함.&lt;/li>
+&lt;li>MakerBot의 경우 s3g, x3g파일을 처리할 수 있고, gcode를 이것으로 변환하는 translator를 내장하고 있음.&lt;/li>
+&lt;li>OctoPrint의 경우 &lt;a href="http://plugins.octoprint.org/plugins/gpx/" target="_blank">GPX라는 플러그&lt;/a>인이 있고,  &lt;a href="https://markwal.github.io/GpxUi/" target="_blank">GpxUI&lt;/a>라는 GUI wrapper도 있다.&lt;/li>
+&lt;li>관련 소스는 &lt;a href="https://github.com/markwal/GPX" target="_blank">&lt;a href="https://github.com/markwal/GPX">https://github.com/markwal/GPX&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>S3G protocol&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>관련 문서 &lt;a href="https://github.com/makerbot/s3g/blob/master/doc/s3gProtocol.md" target="_blank">&lt;a href="https://github.com/makerbot/s3g/blob/master/doc/s3gProtocol.md">https://github.com/makerbot/s3g/blob/master/doc/s3gProtocol.md&lt;/a>&lt;/a>&lt;/li>
+&lt;li>S3G 파이선 라이브러리 &lt;a href="https://github.com/makerbot/s3g" target="_blank">&lt;a href="https://github.com/makerbot/s3g">https://github.com/makerbot/s3g&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>구성 및 통신&lt;/strong>&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="500"
+height="358"
+src="https://openmicrolab.com/SystemArchitecture_17727937480818325069.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;p>2가지 네트워크로 구성이 된다.&lt;/p>
+&lt;ul>
+&lt;li>Host network: PC와 보드로 기본적으로 시리얼이다. 115200 or 38400 bps&lt;/li>
+&lt;li>Tool network: 보드와 툴사이로 RS485 사용&lt;/li>
+&lt;/ul>
+&lt;p>에러 방지를 위해 매 패킷의 마지막에 CRC를 사용&lt;/p></description></item><item><title>3D 프린팅: 전설을 만들다</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%A0%84%EC%84%A4%EC%9D%84-%EB%A7%8C%EB%93%A4%EB%8B%A4/</link><pubDate>Sat, 05 Sep 2015 14:55:48 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%A0%84%EC%84%A4%EC%9D%84-%EB%A7%8C%EB%93%A4%EB%8B%A4/</guid><description>
+&lt;p>타큐멘타리-  &lt;a href="http://www.eidf.co.kr/2015kor/movie/view/150" target="_blank">3D 프린팅: 전설을 만들다&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/09/prt_legend.jpg">&lt;img loading="lazy" class="alignnone size-medium wp-image-3407" src="https://openmicrolab.com/images/2015/09/prt_legend-300x169.jpg" alt="prt_legend" width="300" height="169" srcset="https://openmicrolab.com/images/2015/09/prt_legend-300x169.jpg 300w, https://openmicrolab.com/images/2015/09/prt_legend.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" />&lt;/a>&lt;/p>
+&lt;p>데스크탑 3D 프린팅 업계의 Makerbot과 Formlabs의 파란 만장한 이야기와 총기를 3D 프린팅한 사나이의 이랴기들려준다. 특히Makerbot과 Formlabs 이 두 회사가 커지면서 발생하는 문제들을 보여준다.&lt;/p>
+&lt;p>Formlabs는 MIT 출신 Maxim Lobovsky, Natan Linder, David Cranor가 2011년 회사를 설립하고  Kickstarter에서 SLA프린터인 Form1으로 &lt;a href="https://www.kickstarter.com/projects/formlabs/form-1-an-affordable-professional-3d-printer/description" target="_blank">$3M가까이 펀딩&lt;/a>을 받았으나, 6개월이나 제품출시가 늦어지고 3D system사로 부터 소송까지 휘말린다.&lt;/p>
+&lt;p>Makerbot은 2009년 Bre Pettis, Adam Mayer, Zach “Hoeken” Smith가  오픈소스하드웨어에 기반한 FDM 방식의 3D 프린터를 개발하였다. 재미있는 것은 이 3명의 설립자들이 다 애플의 워즈니악이 되고 싶었다는 것. 하지만 CEO는 Bre Pettis가 맡아서 잡스의 역할을 수행했고, 2013년 스트라타시스에 합병까지 이끌었다($403M). 이 과정에서 넓고 좋은 사무실로 옮기고 회가의 직원들이 늘어났지만 오픈소스하드웨어에서 출발한 제품은 Replicator 2부터는 closed s/w로 바뀌었고 이것으로 공동창업자인 Zach는 회사 철학에 엄청난 변화를 준 것에 대해 “궁극적 배신”이라고 하며 회사를 떠난다.&lt;/p></description></item></channel></rss>

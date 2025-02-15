@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WebUsb on OpenMicroLab</title><link>https://openmicrolab.com/tags/webusb/</link><description>Recent content in WebUsb on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 27 Sep 2018 07:14:47 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/webusb/index.xml" rel="self" type="application/rss+xml"/><item><title>아두이노에서 WebUSB 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-webusb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 27 Sep 2018 07:14:47 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-webusb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>구글 크롬 65버전 이상일 경우 &lt;a href="https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web" target="_blank" rel="noopener noreferrer">WebUSB&lt;/a>를 지원한다.&lt;/p>
+&lt;h3 id="microbit">&lt;strong>Micro:Bit&lt;/strong>&lt;/h3>
+&lt;p>Micro:bit의 경우 웹에서 MakeCode같은 프로그램으로 코딩을 하고 hex 파일을 다운로드 후 외장 디스크로 연결된 디바이스에 drag &amp;amp; drop를 해서 프로그래밍을 했는데, 이제는 웹브라우저에서 바로 USB를 통해 프로그래밍이 가능하다.&lt;/p>
+&lt;h3 id="arduino">&lt;strong>Arduino&lt;/strong>&lt;/h3>
+&lt;p>아두이노의 경우 다음과 같이 작업을 한다.&lt;/p>
+&lt;ul>
+&lt;li>아두이노는 1.6.11 이상 버전 사용&lt;/li>
+&lt;li>Contents/Java/hardware/arduino/avr/cores/arduino/USBCore.h 파일의 #define USB_VERSION 0x200를 0x210 로 수정&lt;/li>
+&lt;li>&lt;a href="https://github.com/webusb/arduino" target="_blank" rel="noopener noreferrer">&lt;a href="https://github.com/webusb/arduino">https://github.com/webusb/arduino&lt;/a>&lt;/a> 이 repo의 WebUSB폴더를 아두이노 라이브러리에 copy&lt;/li>
+&lt;li>예제 프로그램으로 동작 확인&lt;/li>
+&lt;li>현재 지원되는 보드
+&lt;ul>
+&lt;li>Arduino Leonardo&lt;/li>
+&lt;li>Arduino/Genuino Micro&lt;/li>
+&lt;li>Arduino/Genuino Zero&lt;/li>
+&lt;li>Arduino MKR1000&lt;/li>
+&lt;li>Arduino MKRZero&lt;/li>
+&lt;li>Arduino MKRFox1200&lt;/li>
+&lt;li>Adafruit Feather 32u4&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;p>&lt;a href="https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a">https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

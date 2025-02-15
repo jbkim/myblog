@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eagle on OpenMicroLab</title><link>https://openmicrolab.com/tags/eagle/</link><description>Recent content in Eagle on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 29 May 2018 04:33:33 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/eagle/index.xml" rel="self" type="application/rss+xml"/><item><title>EagleCAD 이전 버전 다운로드</title><link>https://openmicrolab.com/eaglecad-%EC%9D%B4%EC%A0%84-%EB%B2%84%EC%A0%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</link><pubDate>Tue, 29 May 2018 04:33:33 +0000</pubDate><guid>https://openmicrolab.com/eaglecad-%EC%9D%B4%EC%A0%84-%EB%B2%84%EC%A0%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</guid><description>
+&lt;p>한번에 찾기 힘들어서…&lt;/p>
+&lt;p>&lt;a href="http://eagle.autodesk.com/eagle/software-versions" target="_blank" rel="noopener noreferrer">&lt;a href="http://eagle.autodesk.com/eagle/software-versions">http://eagle.autodesk.com/eagle/software-versions&lt;/a>&lt;/a>&lt;/p></description></item><item><title>EagleCAD differential signal 설계</title><link>https://openmicrolab.com/eaglecad-differential-signal-%EC%84%A4%EA%B3%84/</link><pubDate>Sat, 10 Mar 2018 14:50:13 +0000</pubDate><guid>https://openmicrolab.com/eaglecad-differential-signal-%EC%84%A4%EA%B3%84/</guid><description>
+&lt;h4 id="usb와-같이-differntial-signal을-설계시-참고할-수-있는-내용">USB와 같이 differntial signal을 설계시 참고할 수 있는 내용.&lt;/h4>
+&lt;p>The first step is to create and set net classes. In EAGLE go to Edit-&amp;gt;Net classes. There you can create different values for trace width and clearance. Differential pairs should have quite a big clearance to copper pours (2-3 times the track width). Therefore I entered two net classes, one for USB (#1) and one for the top copper pour (#2) as my USB signal is routed on the top layer. As you can see I entered the values from the impedance calculator in net class #1. 10mil for track width. In Clearance Matrix you tell EAGLE how much clearance the different net classes will be used by the Auto Router or differential pair routing. These settings tell EAGLE that USB traces should be separated by 6.25mil and that USB traces should have a clearance of 30 mil to the traces (copper pours) set to net class #2.&lt;/p></description></item><item><title>EAGLE 파일을 Fritzing 파일로 변환하기</title><link>https://openmicrolab.com/eagle-%ED%8C%8C%EC%9D%BC%EC%9D%84-fritzing-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 22 Jan 2018 05:10:29 +0000</pubDate><guid>https://openmicrolab.com/eagle-%ED%8C%8C%EC%9D%BC%EC%9D%84-fritzing-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>####&lt;img loading="lazy" class="alignnone wp-image-4197" src="https://res.cloudinary.com/openmicrolab/image/upload/v1516597806/eagle2fritzing_y1kj1g.png" width="690" height="278" />&lt;/p>
+&lt;h4 id="1-아래-repo를-깃헙에서-클론한다">1. 아래 repo를 깃헙에서 클론한다.&lt;/h4>
+&lt;li style="font-weight: 400;">
+&lt;span style="font-weight: 400;">Fritzing&lt;/span>
+&lt;/li>
+&lt;blockquote>
+&lt;p>&lt;span style="font-weight: 400;">clone &lt;/span>&lt;a href="https://github.com/fritzing/fritzing-app">&lt;span style="font-weight: 400;">https://github.com/fritzing/fritzing-app&lt;/span>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>Fritzing parts&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;a href="https://github.com/fritzing/fritzing-parts" target="_blank" rel="noopener noreferrer">&lt;a href="https://github.com/fritzing/fritzing-parts">https://github.com/fritzing/fritzing-parts&lt;/a>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;li style="font-weight: 400;">
+&lt;span style="font-weight: 400;">eagle2fritzing &lt;/span>
+&lt;/li>
+&lt;blockquote>
+&lt;p>&lt;span style="font-weight: 400;">clone &lt;/span>&lt;a href="https://github.com/adafruit/eagle2fritzing">&lt;span style="font-weight: 400;">https://github.com/adafruit/eagle2fritzing&lt;/span>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>font download &amp;amp; install&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;a href="http://fritzing.org/fritzings-graphic-standards/download-fonts-and-templates">http://fritzing.org/fritzings-graphic-standards/download-fonts-and-templates&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;h4 id="2eagle2fritzing의-brd2svg-빌드">2. eagle2fritzing의 brd2svg 빌드&lt;/h4>
+&lt;ul>
+&lt;li>빌드시 xcode 9.2 가 필요하며, qt를 설치후 PATH 설정해야 한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>brew install qt&lt;br>
+cd eagle2fritzing/brd2svg&lt;br>
+qmake -spec macx-g++ brd2svg.pro&lt;br>
+make&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>make를 하면 brd2svg가 빌드가 되는데,&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;span style="font-weight: 400;">clang: error: linker command failed with exit code 1 (use -v to see invocation)&lt;/span>&lt;/p></description></item><item><title>Eagle CAD로 거버만들때 주의사항</title><link>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EA%B1%B0%EB%B2%84%EB%A7%8C%EB%93%A4%EB%95%8C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/</link><pubDate>Mon, 19 May 2014 01:38:25 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EA%B1%B0%EB%B2%84%EB%A7%8C%EB%93%A4%EB%95%8C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/</guid><description>
+&lt;p>이전에 작성한 포스팅 &lt;a href="http://openmicrolab.com/eagle-cad/" target="_blank" rel="noopener noreferrer">Eagle CAD&lt;/a>에서 거버 만들기는 일반적으로 2층 PCB의 경우 bottom에 부품이 없을 경우를 가정한다. 만약 bottom면에 부품을 실장을 하거나, &lt;a href="http://openmicrolab.com/eagle-cad%EB%A1%9C-%EC%9E%91%EC%97%85%ED%95%9C-pcb%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%84%A3%EA%B8%B0/" target="_blank" rel="noopener noreferrer">PCB에 이미지를 넣을 경우&lt;/a>는 기본으로 설정된 레이어 이외의 레이어를 사용하므로, 거버를 만들때 추가적인 레이어가 선택이 되도록 해야 한다.&lt;/p>
+&lt;p>Bottom면에 부품을 실장할 경우는 Silk screen solder를 추가한다. 즉 거버파일을 만드는 단계에서 *&lt;em>gerb274x.cam를 선택하고 작업을 할때 Silk screen SOL을 만들고 파일 확장자는 &lt;em>.pls로 해서 작업을 하면 된다.&lt;/em>&lt;/em>&lt;/p>
+&lt;img loading="lazy" src="http://openmicrolab.cdn2.cafe24.com/eale_gerber.png" alt="null" width="680" height="405" />
+&lt;p>&lt;strong>이렇게 할 경우 최종 거버파일은 10개가 된다.&lt;/strong>&lt;/p></description></item></channel></rss>

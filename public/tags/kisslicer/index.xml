@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kisslicer on OpenMicroLab</title><link>https://openmicrolab.com/tags/kisslicer/</link><description>Recent content in Kisslicer on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 19 Sep 2014 03:32:33 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/kisslicer/index.xml" rel="self" type="application/rss+xml"/><item><title>3D 프린팅용 오픈소스 소프트웨어</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</link><pubDate>Fri, 19 Sep 2014 03:32:33 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</guid><description>
+&lt;p>3D 프린팅을 위해서는 4가지 소프트웨어가 필요하다.&lt;/p>
+&lt;ol>
+&lt;li>프린팅할 물체를 모델링 하는 소프트웨어&lt;/li>
+&lt;li>이 3D 모델을 각 레이어 별로 잘라주는 슬라이스 소프트웨어 – STL파일을 G코드로 변환&lt;/li>
+&lt;li>G 코드를 프린터로 전송해 주는 프로그램 – 보통 3D printing host software라고 부른다.&lt;/li>
+&lt;li>3D 프린터에 내장되어 있는 펌웨어&lt;/li>
+&lt;/ol>
+&lt;p>일단 1번은 디자인을 위한 것이고 4번은 기기에서 돌아가는 소프트웨어 이니 논외로 하고 슬라이서 프로그램과 호스트 프로그램을 살펴보자. 일반적으로 이 두 프로그램이 합쳐져 있다. 즉 호스트 프로그램에서 슬라이서 프로그램을 가져다 쓰는 형태이다.&lt;/p></description></item></channel></rss>

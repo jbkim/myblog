@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Socket Test Program on OpenMicroLab</title><link>https://openmicrolab.com/tags/socket-test-program/</link><description>Recent content in Socket Test Program on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 06 Sep 2013 03:02:07 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/socket-test-program/index.xml" rel="self" type="application/rss+xml"/><item><title>맥용 Socket Test Program</title><link>https://openmicrolab.com/%EB%A7%A5%EC%9A%A9-socket-test-program/</link><pubDate>Fri, 06 Sep 2013 03:02:07 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5%EC%9A%A9-socket-test-program/</guid><description>
+&lt;p>윈도우즈에서는 Castalia Technologies에서 만든 Socket Tester 프로그램(&lt;a title="유용한 툴 – Socket Tester" href="http://openmicrolab.com/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%88%B4-socket-tester/" target="_blank">유용한 툴 – Socket Tester&lt;/a>)을 사용을 했었는데, 맥에서는 비슷한 프로그램을 못 찾다가 최근에 우연히 발견!&lt;/p>
+&lt;h3 id="sockettest-v300">**SocketTest v3.0.0 **&lt;/h3>
+&lt;div style="width: 586px" class="wp-caption alignnone">
+&lt;img loading="lazy" alt="" src="http://sockettest.sourceforge.net/1.jpg" width="576" height="479" />
+&lt;p class="wp-caption-text">
+Screen Shots of SocketTest v3.0.0
+&lt;/p>
+&lt;/div>
+&lt;p>관련 링크: &lt;a href="http://sockettest.sourceforge.net/" target="_blank">&lt;a href="http://sockettest.sourceforge.net/">http://sockettest.sourceforge.net/&lt;/a>&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>실행은 터미널에서 java -jar SocketTest.jar&lt;/p>&lt;/blockquote>
+&lt;p>[wpdm_file id=2]&lt;/p></description></item></channel></rss>

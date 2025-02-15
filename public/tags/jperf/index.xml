@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jperf on OpenMicroLab</title><link>https://openmicrolab.com/tags/jperf/</link><description>Recent content in Jperf on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 01 Feb 2011 06:36:36 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/jperf/index.xml" rel="self" type="application/rss+xml"/><item><title>Jperf</title><link>https://openmicrolab.com/jperf/</link><pubDate>Tue, 01 Feb 2011 06:36:36 +0000</pubDate><guid>https://openmicrolab.com/jperf/</guid><description>
+&lt;p>자바로 만들어진 IPerf의 그래픽 인터페이스입니다.&lt;br>
+일단 커멘드 라인 보다 사용하기 쉽고, 결과도 그래프로 그려주네요.&lt;br>
+관련자료는 .. &lt;a href="http://code.google.com/p/xjperf/">http://code.google.com/p/xjperf/&lt;/a>&lt;br>
+실행 파일은….jperf-2.0.2.zip&lt;a href="https://openmicrolab.com/images/1/cfile7.uf.15108C594D47A9A12FD58C.zip" class="aligncenter" filename="jperf-2.0.2.zip" filemime="application/zip" /> cfile7.uf.15108C594D47A9A12FD58C.zip&lt;/a>&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile27.uf.135658554D47A96E0F3F66.jpg" class="aligncenter" width="611" height="480" alt="" filename="Jperf.jpg" filemime="image/jpeg" />&lt;/p></description></item></channel></rss>

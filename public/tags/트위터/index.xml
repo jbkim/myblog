@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>트위터 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%8A%B8%EC%9C%84%ED%84%B0/</link><description>Recent content in 트위터 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 16 Sep 2011 06:35:43 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%8A%B8%EC%9C%84%ED%84%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>임베디드보드에서 트위터하기 2 – 아두이노를 이용한 트위터</title><link>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0-2-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C/</link><pubDate>Fri, 16 Sep 2011 06:35:43 +0000</pubDate><guid>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0-2-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C/</guid><description>
+&lt;p>이전에 올린 &lt;A title="[ http://liketheocean.tistory.com/150]로 이동합니다." href="http://liketheocean.tistory.com/150" target=_blank>&lt;A title="[ http://liketheocean.tistory.com/150]로 이동합니다." href="http://liketheocean.tistory.com/150" target=_blank>임베디드보드에서 트위터&lt;/A>&lt;A title="[ http://liketheocean.tistory.com/150]로 이동합니다." href="http://liketheocean.tistory.com/150" target=_blank>하기&lt;/A>의 2번째 버젼으로 아두이노를 이용해서 트위터하는 방법에 대한 분석자료입니다.&lt;br>
+관련 자료: &lt;a href="http://www.arduino.cc/playground/Code/TwitterLibrary">http://www.arduino.cc/playground/Code/TwitterLibrary&lt;/a>&lt;br>
+역시 proxy 사용해서 구현을 하고있는데 이전의 &lt;A title="[http://www.supertweet.net/]로 이동합니다." href="http://www.supertweet.net/" target=_blank>Supertweet.net&lt;/A> 보다는 간단한 것 같지만, 테스트를 해보니 단점은 같은 내용의 메시지를 연속해서 보내면 에러가 난다. 아마도 스팸성 트윗을 걸러내기 위한 조치 같네요.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;A title="[http://arduino-tweet.appspot.com/]로 이동합니다." href="http://arduino-tweet.appspot.com/" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.172B51414E72EB421A9E6C.PNG" class="aligncenter" width="624" height="139" alt="" filename="twitter_arduino.PNG" filemime="image/jpeg" />&lt;/A>
+&lt;/P>먼저
+&lt;p>&lt;a href="http://arduino-tweet.appspot.com/">http://arduino-tweet.appspot.com/&lt;/a> 에 접속을 해서 사용하는 트위터 아이디의 토큰을 받는다.&lt;br>
+이 토큰은 아래 소스에서 사용이 된다.&lt;/p></description></item><item><title>임베디드 보드에서 트위터하기</title><link>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 15 Sep 2011 12:32:02 +0000</pubDate><guid>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>이 블로그 포스트는 Twitter API Proxy 서비스인 supertweet.net를 이용해서 PC나 스마트폰이 아닌 임베디드 보드에서 트위터 메시지를 보내는 방법을 설명한다.&lt;br>
+참조 사이트:mbed의 &lt;A title="[http://mbed.org/cookbook/SuperTweet]로 이동합니다." href="http://mbed.org/cookbook/SuperTweet" target=_blank>post to Twitter via SuperTweet &lt;/A>&lt;/p>
+&lt;p>먼저 트위터 아이디가 필요한데, 테스트를 위해 twitter.com 에서 ID를 하나 만들었다. EspressoDopio2. 참고로 내 트위터 아이디는 EspressoDopio&lt;/p>
+&lt;p>&lt;A title="[http://www.supertweet.net/]로 이동합니다." href="http://www.supertweet.net/" target=_blank>Supertweet.net&lt;/A> 에 접속해서 docoment link에 가면 3가지 step으로 설명을 해 놓고 있다.&lt;/p>
+&lt;ol>
+&lt;li>Sign UP/ Sign in now를 클릭해서 MyAuthAPIProxy가 계정 사용을 승인하도록 한다.&lt;/li>
+&lt;li>Basic Auth를 위한 패스워드를 설정한다. 이 password는 패스워드와 다르게 설정함.&lt;br>
+이 설정이 되면 다음과 같이 Username이 나타다고 Secret 밑에 Show 를 클릭하면 내가 정한 password가 나타난다.&lt;/li>
+&lt;/ol>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.167B64414E71EC861C6440.PNG" class="aligncenter" width="683" height="93" alt="" filename="twitter2.PNG" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>3. 이젠 임베디드 보드에서 트위터 메시지를 보내면 되는데, Twitter.com 대신에  &lt;a href="http://api.supertweet.net/">http://api.supertweet.net&lt;/a> 로 보내면 된다.&lt;br>
+구체적인 방법은 &lt;a href="http://www.supertweet.net/about/api">http://www.supertweet.net/about/api&lt;/a> 링크를 확인하면 되는데, 간단히 메시지 post하는 것을 설명하면…&lt;/p></description></item><item><title>안드로이드용 트위터 어플</title><link>https://openmicrolab.com/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%9A%A9-%ED%8A%B8%EC%9C%84%ED%84%B0-%EC%96%B4%ED%94%8C/</link><pubDate>Thu, 02 Sep 2010 12:04:48 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%9A%A9-%ED%8A%B8%EC%9C%84%ED%84%B0-%EC%96%B4%ED%94%8C/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">스마트폰으로 할 수 있는 일은 많지만 그중에 제가 가장 많이 사용하는 어플중의 하나가 트위터입니다. &lt;/span>&lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">물론 안드로이드용 공식 트위터 어플도 있지만 제가 즐겨쓰는 트위터 어플은 TweetCaster입니다.&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">인터넷상에서 여러가지 안드로이드용 트위터 어플을 비교해 놓은 내용을 발견했습니다.&lt;/span>&lt;/span>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">제가 쓰고 있는&amp;nbsp;&lt;/span>&lt;/span>&lt;/span>&lt;/font>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">TweetCaster는 별로 평이 좋지 않네요. -_-;;&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">하지만 인터페이스는 각자의 취양에 따라 다르니 어떤게 딱히 좋다고 할 수 없습니다.&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">&lt;br /> &lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.144DB60E4C7F91A5D2B784.jpg" class="aligncenter" width="640" height="529.8823529411765" alt="" filename="cfile9.uf.144DB60E4C7F91A5D2B784.jpg" filemime="" />&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div style="text-align: center;">
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">출처 (&lt;/span>&lt;/font>&lt;a href="http://androinica.com/2010/03/25/the-best-android-twitter-app-is-droid-vs-droid/">&lt;/a>&lt;a href="http://androinica.com/2010/03/25/the-best-android-twitter-app-is-droid-vs-droid/" target="_blank" title="[http://androinica.com/2010/03/25/the-best-android-twitter-app-is-droid-vs-droid/]로 이동합니다.">http://androinica.com/2010/03/25/the-best-android-twitter-app-is-droid-vs-droid/&lt;/a>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">)&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;/span>&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">일단 몇가지 어플들을 다운 받아서 테스트를 해봤습니다.&lt;/span>&lt;/span>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">제가 주안점을 둔 것은 속도와 다음의 기능이 있는지 여부입니다.&lt;/span>&lt;/span>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;b>&lt;span style="font-size: 11pt; ">&lt;/p></description></item></channel></rss>

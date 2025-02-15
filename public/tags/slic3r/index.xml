@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slic3r on OpenMicroLab</title><link>https://openmicrolab.com/tags/slic3r/</link><description>Recent content in Slic3r on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 09 Dec 2016 03:00:45 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/slic3r/index.xml" rel="self" type="application/rss+xml"/><item><title>3D 프린터 슬라이싱 툴</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%ED%88%B4/</link><pubDate>Fri, 09 Dec 2016 03:00:45 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%ED%88%B4/</guid><description>
+&lt;table id="tablepress-75" class="tablepress tablepress-id-75">
+&lt;tr class="row-1 odd">
+&lt;th class="column-1">
+Software
+&lt;/th>
+&lt;pre>&lt;code>&amp;lt;th class=&amp;quot;column-2&amp;quot;&amp;gt;
+User
+&amp;lt;/th&amp;gt;
+&amp;lt;th class=&amp;quot;column-3&amp;quot;&amp;gt;
+Price
+&amp;lt;/th&amp;gt;
+&amp;lt;th class=&amp;quot;column-4&amp;quot;&amp;gt;
+OS
+&amp;lt;/th&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-2 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#3DPrinterOS">3DPrinterOS&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Freemium
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser, Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-3 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Astroprint">Astroprint&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Freemium
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser, Raspberry Pi, pcDuino
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-4 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Craftware">Craftware&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-5 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Cura">Cura&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-6 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#IceSL">IceSL&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-7 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#KISSlicer">KISSlicer&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free/$35
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux, Raspberry Pie
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-8 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#MakerBot%20Print">MakerBot Print&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-9 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#MatterControl">MatterControl&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-10 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Netfabb%20Basic">Netfabb Basic&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-11 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#OctoPrint">OctoPrint&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Raspberry Pi, Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-12 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Repetier">Repetier&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-13 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Simplify3D">Simplify3D&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginers, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+$150
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-14 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Slic3r">Slic3r&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users, Professional Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-15 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#SliceCrafter">SliceCrafter&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-16 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Tinkerine%20Suite">Tinkerine Suite&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-17 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Z-Suite">Z-Suite&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;/table></description></item><item><title>Slic3r 빌드 하기</title><link>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 24 Oct 2016 08:29:34 +0000</pubDate><guid>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>3D 프린팅을 위한 슬라이서 프로그램인 &lt;a href="http://slic3r.org/" target="_blank">Slic3r&lt;/a>는 오픈소스로 &lt;a href="https://github.com/alexrj/Slic3r" target="_blank">github&lt;/a>에 코드가 공개되어 있다. 물론 각 OS에 맞는 실행파일을 다운로드해서 사용이 가능하지만 github에 공개된 코드를 빌드해서 사용이 가능하다. Windows, Mac, Linux 등 3가지 OS에서 빌드가 가능하며, Mac OS X에서 빌드하는 방법은&lt;a href="https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X" target="_blank"> https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X&lt;/a>에 정리되어 있다.&lt;/p>
+&lt;p>Slic3r는 C++ 과 Perl로 작성이 되어 있다.&lt;/p>
+&lt;blockquote>
+&lt;p>The core geometric algorithms and data structures are written in C++, and Perl is used for high-level flow abstraction, GUI and testing.&lt;/p>&lt;/blockquote>
+&lt;p>그리고 다음과 같은 기능이 있다.&lt;/p></description></item><item><title>3D 프린팅용 오픈소스 소프트웨어</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</link><pubDate>Fri, 19 Sep 2014 03:32:33 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</guid><description>
+&lt;p>3D 프린팅을 위해서는 4가지 소프트웨어가 필요하다.&lt;/p>
+&lt;ol>
+&lt;li>프린팅할 물체를 모델링 하는 소프트웨어&lt;/li>
+&lt;li>이 3D 모델을 각 레이어 별로 잘라주는 슬라이스 소프트웨어 – STL파일을 G코드로 변환&lt;/li>
+&lt;li>G 코드를 프린터로 전송해 주는 프로그램 – 보통 3D printing host software라고 부른다.&lt;/li>
+&lt;li>3D 프린터에 내장되어 있는 펌웨어&lt;/li>
+&lt;/ol>
+&lt;p>일단 1번은 디자인을 위한 것이고 4번은 기기에서 돌아가는 소프트웨어 이니 논외로 하고 슬라이서 프로그램과 호스트 프로그램을 살펴보자. 일반적으로 이 두 프로그램이 합쳐져 있다. 즉 호스트 프로그램에서 슬라이서 프로그램을 가져다 쓰는 형태이다.&lt;/p></description></item></channel></rss>

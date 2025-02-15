@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>케이스 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%BC%80%EC%9D%B4%EC%8A%A4/</link><description>Recent content in 케이스 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 10 Mar 2018 04:32:17 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%BC%80%EC%9D%B4%EC%8A%A4/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenSCAD Customizer</title><link>https://openmicrolab.com/openscad-customizer/</link><pubDate>Sat, 10 Mar 2018 04:32:17 +0000</pubDate><guid>https://openmicrolab.com/openscad-customizer/</guid><description>
+&lt;h3 id="openscad에서customizer의-기능-사용법">OpenSCAD에서 Customizer의 기능 사용법&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://files.openscad.org/snapshots/" target="_blank" rel="noopener noreferrer">개발자버전의 스냅샷&lt;/a> 중 최신버전을 다운로드 받는다.&lt;/li>
+&lt;li>&lt;strong>Preferences &amp;gt;Features &amp;gt; Customizer&lt;/strong>를 체크한다.&lt;/li>
+&lt;li>&lt;strong>View &amp;gt; Hide Customizer&lt;/strong>의 체크를 해제한다.&lt;/li>
+&lt;/ul>
+&lt;p>###&lt;img loading="lazy" class="" src="http://www.openscad.org/images/customizer.png" width="567" height="331" />&lt;/p>
+&lt;h3 id="케이스-모델링-자료">케이스 모델링 자료&lt;/h3>
+&lt;p>&lt;a href="https://www.thingiverse.com/thing:1264391" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.thingiverse.com/thing:1264391">https://www.thingiverse.com/thing:1264391&lt;/a>&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="" src="https://cdn.thingiverse.com/renders/bd/3c/4c/77/95/5c2528d7dc69dc743380f6c7ddb887d5_preview_featured.jpg" width="424" height="319" />
+&lt;h3 id="참고">참고:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://hackaday.com/2018/03/02/printed-it-custom-enclosure-generator/" target="_blank" rel="noopener noreferrer">&lt;a href="https://hackaday.com/2018/03/02/printed-it-custom-enclosure-generator/">https://hackaday.com/2018/03/02/printed-it-custom-enclosure-generator/&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.openscad.org/news.html#20160714" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.openscad.org/news.html#20160714">http://www.openscad.org/news.html#20160714&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p> &lt;/p></description></item></channel></rss>

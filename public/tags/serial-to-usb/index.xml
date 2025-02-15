@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serial to USB on OpenMicroLab</title><link>https://openmicrolab.com/tags/serial-to-usb/</link><description>Recent content in Serial to USB on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 28 Sep 2017 04:56:38 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/serial-to-usb/index.xml" rel="self" type="application/rss+xml"/><item><title>중국산 FTDI 보드 개조</title><link>https://openmicrolab.com/%EC%A4%91%EA%B5%AD%EC%82%B0-ftdi-%EB%B3%B4%EB%93%9C-%EA%B0%9C%EC%A1%B0/</link><pubDate>Thu, 28 Sep 2017 04:56:38 +0000</pubDate><guid>https://openmicrolab.com/%EC%A4%91%EA%B5%AD%EC%82%B0-ftdi-%EB%B3%B4%EB%93%9C-%EA%B0%9C%EC%A1%B0/</guid><description>
+&lt;p>Silab기반의 Serial to USB보드는 문제가 있어서 FTDI 기반의 보드를 구매하려다 보니, &lt;a href="http://www.devicemart.co.kr/1290792" target="_blank" rel="noopener noreferrer">Sparkfun사의 보드&lt;/a>는 18,000원이나 한다. 그래서 디바이스 마트에서 구매한 4,000원 짜리 &lt;a href="http://www.devicemart.co.kr/1326836" target="_blank" rel="noopener noreferrer">중국산 보드&lt;/a>.   뒷면에 점퍼로 3.3V로 변환이 가능하다고 해서, 당연히 TXD 시그널도 3.3V 라고 생각을 했는데, 5V 레벨이다. ㅠㅠ&lt;/p>
+&lt;p>그냥 USB로부터 5V 입력을 VDDIO(#4)에 같이 연결하고 3V3OUT(#17)를 출력에 연결을 해놨는데, 칩을 떼고 VDDIO에 연결된 5V패턴을 자르고 3V3OUT을 연결하면 시그널 레벨들도 3.3V가 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4061" src="https://res.cloudinary.com/openmicrolab/image/upload/v1506574231/ftdi_ioxxwz.png" width="509" height="312" />
+&lt;p>&lt;img loading="lazy" class="alignnone wp-image-4060" src="https://res.cloudinary.com/openmicrolab/image/upload/v1506574291/ftdi_1_jbpokm.jpg" width="293" height="299" />&lt;img loading="lazy" class="alignnone wp-image-4062" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_998/v1506574288/ftdi_2_bajtwd.jpg" width="218" height="297" />&lt;/p></description></item><item><title>CP2104 레퍼런스 회로도</title><link>https://openmicrolab.com/cp2104-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4-%ED%9A%8C%EB%A1%9C%EB%8F%84/</link><pubDate>Tue, 28 Mar 2017 09:52:29 +0000</pubDate><guid>https://openmicrolab.com/cp2104-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4-%ED%9A%8C%EB%A1%9C%EB%8F%84/</guid><description>
+&lt;p>&lt;a href="https://www.silabs.com/documents/public/data-sheets/cp2104.pdf" target="_blank">CP2014&lt;/a>는 USB to UART bridge 칩이며, 데이터 시트에 보면 다음과 같은 레퍼런스 회로가 있다. REGIN 핀은 레귤레이터 입력핀인데, 이 회로도에서는 여기에 VBUS핀과 같이 연결을 해 놓고 있다. CP2104의 TX, RX가 시스템의 MCU의 RX, TX와 연결이 되어 있는 경우에는  일반적으로는 USB 케이블을 연결하는 순간 VBUS와 REGIN에 전압이 가해지면서CP2104의 TX값이 low로 되면서 시스템 MCU의  RX값이 바뀌게 된다. 따라서 시리얼 입력을  처리하는 루틴이 제대로 동작을 하지 않을 수 있다. &lt;strong>해결책은 REGIN의 입력을 VBUS가 아닌 시스템 전원으로 바꾸면 해결이 된다.&lt;/strong>&lt;br>
+&lt;img loading="lazy" class="aligncenter wp-image-3929" src="http://res.cloudinary.com/openmicrolab/image/upload/v1490685444/cp2104_ref_rd71es.png" width="769" height="542" />&lt;/p></description></item><item><title>아두이노 Serial to USB 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-serial-to-usb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 28 Apr 2015 06:50:34 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-serial-to-usb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>원본소스는 Mac에서 \Resource\Java\hardware\arduino\firmware\atmegaxxu2 아래에 있다. arduino-usbdfu 또는 arduino-usbserial 를 사용한다. 이 소스에는 USB 프레임워크인 &lt;a href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank">LUFA&lt;/a>(Lightweight USB Framework for AVRs)가 빠져있으므로 &lt;a title="LUFA" href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank">&lt;a href="http://www.fourwalledcubicle.com/LUFA.php">http://www.fourwalledcubicle.com/LUFA.php&lt;/a>&lt;/a> 에서 다운로드한다. 다운로드한 LUFA 폴더를 arduino-usbserial 폴더와 같은 위치에 복사한다.&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">make 파일에서 다음과 같은 내용을 수정한다.&lt;/span>
+&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;strong>LUFA_PATH&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1"># Path to the LUFA library&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">LUFA_PATH = ../&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>MCU&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+MCU = at90usb162  #atmega16u2와 pin to pin 호환임
+&lt;/p>&lt;/blockquote>
+&lt;p class="p1">
+컴파일된 hex파일은 avr isp등으로 write하면 된다.
+&lt;/p>
+&lt;p class="p1">
+이렇게 작업한 내용은 &lt;a href="https://github.com/jbkim/usbserial" target="_blank">https://github.com/jbkim/usbserial&lt;/a>
+&lt;/p>
+&lt;p class="p1"></description></item></channel></rss>

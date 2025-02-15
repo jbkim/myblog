@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Automator on OpenMicroLab</title><link>https://openmicrolab.com/tags/automator/</link><description>Recent content in Automator on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 06 Mar 2014 06:42:53 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/automator/index.xml" rel="self" type="application/rss+xml"/><item><title>mbed – SeeedArch 프로그래밍하기</title><link>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 06 Mar 2014 06:42:53 +0000</pubDate><guid>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="seeedarch">SeeedArch&lt;/h3>
+&lt;p>&lt;a href="http://mbed.org/" target="_blank">mbed&lt;/a>의 플랫폼 중의 하나인 Seeedstudio에서 만든 보드, &lt;a href="http://mbed.org/platforms/Seeeduino-Arch/" target="_blank">SeeedArch&lt;/a>를 테스트중이다. 이 보드의 스펙은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>mbed enabled
+&lt;ul>
+&lt;li>online development tools&lt;/li>
+&lt;li>easy to use C/C++ SDK&lt;/li>
+&lt;li>lots of published libraries, projects&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Standard Arduino Appearance, two Grove connectors
+&lt;ul>
+&lt;li>available with 3.3V compatible shields&lt;/li>
+&lt;li>a large number of grove modules&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Drag-n-drop programming&lt;/li>
+&lt;li>NXP LPC11U24 MCU
+&lt;ul>
+&lt;li>Low power ARM Cortex-M0 Core&lt;/li>
+&lt;li>48MHz, 32KB Flash, 8KB RAM, 4KB EEPROM&lt;/li>
+&lt;li>USB Device, 2xSPI, UART, I2C&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>이 보드의 가장 큰 특징은 보드의 형태가 아두이노 보드와 같아서 아두이노 쉴드를 연결할 수 있다.&lt;/p></description></item></channel></rss>

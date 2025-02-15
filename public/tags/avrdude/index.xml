@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Avrdude on OpenMicroLab</title><link>https://openmicrolab.com/tags/avrdude/</link><description>Recent content in Avrdude on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 25 May 2018 01:34:41 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/avrdude/index.xml" rel="self" type="application/rss+xml"/><item><title>맥에서 avrdude 설치하기</title><link>https://openmicrolab.com/%EB%A7%A5%EC%97%90%EC%84%9C-avrdude-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 25 May 2018 01:34:41 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5%EC%97%90%EC%84%9C-avrdude-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>맥에서 AVR 개발 환경을 셋업하는 방법은 &lt;a href="http://www.ladyada.net/learn/avr/setup-mac.html" target="_blank" rel="noopener noreferrer">&lt;span class="topheadertext">AVR Setup&lt;/span>&lt;span class="topsubheadertext">Step-by-step how to install AVR dev tools&lt;/span>&lt;/a>에 잘 정리가 되어있다. 기본적으로 Arduino IDE를 설치하면 컴파일러나 make까지 설치가 되는데, &lt;a href="http://marlinfw.org/" target="_blank" rel="noopener noreferrer">Marlin&lt;/a> 코드를 컴파일해서 다운로드 할 경우 make파일에 avrdude의 경로 설정이 없어서 이 경로를 &lt;span class="style4">.bash_profile에 설정을 하거나 avrdude를 홈 디렉토리에 설정을 하면된다. &lt;/span>&lt;/p>
+&lt;h3 id="avrdude-설치하기">avrdude 설치하기&lt;/h3>
+&lt;ul>
+&lt;li>&lt;span class="P">다운로드 &lt;a href="http://download.savannah.gnu.org/releases/avrdude/" target="_blank" rel="noopener noreferrer">&lt;a href="http://download.savannah.gnu.org/releases/avrdude/">http://download.savannah.gnu.org/releases/avrdude/&lt;/a>&lt;/a>&lt;/span>&lt;/li>
+&lt;li>홈 디렉토리에 압축을 푼다.&lt;/li>
+&lt;li>터미널에서 다음과 같이 설정, 컴파일, 인스톨.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p align="left">
+&lt;span class="P">&lt;strong>cd avrdude-6.3&lt;/strong>&lt;br /> &lt;strong>./configure&lt;/strong>&lt;br /> &lt;strong>make&lt;/strong>&lt;br /> &lt;strong>sudo make install&lt;/strong>&lt;/span>
+&lt;/p>&lt;/blockquote></description></item><item><title>맥 OS에서 AVR 툴 체인 설치</title><link>https://openmicrolab.com/%EB%A7%A5-os%EC%97%90%EC%84%9C-avr-%ED%88%B4-%EC%B2%B4%EC%9D%B8-%EC%84%A4%EC%B9%98/</link><pubDate>Tue, 13 Sep 2016 06:56:05 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5-os%EC%97%90%EC%84%9C-avr-%ED%88%B4-%EC%B2%B4%EC%9D%B8-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;p>ruby -e “$(curl -fsSL &lt;a href="https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;amp;#8221;">https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;amp;#8221;&lt;/a>&lt;br>
+brew tap osx-cross/avr&lt;br>
+brew install avr-gcc&lt;br>
+brew install avrdude –with-usb&lt;/p>
+&lt;p>참고&lt;/p>
+&lt;p>– &lt;a href="https://github.com/osx-cross/homebrew-avr">https://github.com/osx-cross/homebrew-avr &lt;/a>&lt;/p>
+&lt;p>– &lt;a href="http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/" target="_blank" rel="noopener">&lt;a href="http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/">http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Cura 코드 수정 – Silab 디바이스 인식</title><link>https://openmicrolab.com/cura-%EC%BD%94%EB%93%9C-%EC%88%98%EC%A0%95-silab-usb-serial-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EC%9D%B8%EC%8B%9D/</link><pubDate>Mon, 13 Jun 2016 08:15:32 +0000</pubDate><guid>https://openmicrolab.com/cura-%EC%BD%94%EB%93%9C-%EC%88%98%EC%A0%95-silab-usb-serial-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EC%9D%B8%EC%8B%9D/</guid><description>
+&lt;p>기존 코드는 USB ACM디바이스들을 list에 넣어서 인식하도록 했는데, Silab 디바이스도 추가되도록 macineCOM.py 파일의 serialList 함수 수정.&lt;/p></description></item></channel></rss>

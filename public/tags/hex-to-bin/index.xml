@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hex to Bin on OpenMicroLab</title><link>https://openmicrolab.com/tags/hex-to-bin/</link><description>Recent content in Hex to Bin on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 12 May 2014 10:02:42 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/hex-to-bin/index.xml" rel="self" type="application/rss+xml"/><item><title>ARM 개발 환경</title><link>https://openmicrolab.com/arm-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</link><pubDate>Mon, 12 May 2014 10:02:42 +0000</pubDate><guid>https://openmicrolab.com/arm-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</guid><description>
+&lt;h3 id="hex-to-bin--bin-to-hex">hex to bin / bin to hex&lt;/h3>
+&lt;p>MAC에서 개발 환경을 세팅하다보니 윈도우즈 기반의 툴들에서 쉽게 찾던 것들을 구글링하게 된다. ARM 이클립스 개발환경에서 hex, bin을 만들어 주는 툴은 arm-none-eabi-objcopy 인테, 다음과 같이 hex와 binary간의 변환이 가능하다.&lt;/p>
+&lt;blockquote>
+&lt;p>arm-none-eabi-objcopy -I binary -O ihex filename.bin filename.hex&lt;/p>
+&lt;p>arm-none-eabi-objcopy -I ihex -O binary filename.hex filename.bin&lt;/p>&lt;/blockquote>
+&lt;p>물론 이클립스의 프로젝트 설정에서 Cross ARM GNU Create Flash Image설정에서 Raw binary 또는_ _Intel Hex를 설정이 가능함.&lt;/p>
+&lt;h3 id="flash-downloaderdemonstrator">flash downloader demonstrator&lt;/h3>
+&lt;p>STM32 칩들은 내부에 시리얼 부트로더가 있어서 쉽게 flash를 업데이트 가능하다. ST에서도 flash downloader demonstrator라는 프로그램을 제공하는데 윈도우즈만 제공한다. Mac에서 사용할 수 있는 것은 &lt;a href="https://github.com/jsnyder/stm32loader" target="_blank">stm32loader scrypt&lt;/a>와 &lt;a href="https://github.com/jsnyder/stm32ld" target="_blank">stm32ld program&lt;/a>이다.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>래치업 방지 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%9E%98%EC%B9%98%EC%97%85-%EB%B0%A9%EC%A7%80/</link><description>Recent content in 래치업 방지 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 28 Sep 2010 12:12:17 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%9E%98%EC%B9%98%EC%97%85-%EB%B0%A9%EC%A7%80/index.xml" rel="self" type="application/rss+xml"/><item><title>Latch-up (래치업)</title><link>https://openmicrolab.com/latch-up-%EB%9E%98%EC%B9%98%EC%97%85/</link><pubDate>Tue, 28 Sep 2010 12:12:17 +0000</pubDate><guid>https://openmicrolab.com/latch-up-%EB%9E%98%EC%B9%98%EC%97%85/</guid><description>
+&lt;div>
+&lt;span style="font-size: 11pt; ">요즘에 나오는 대부분의 반도체칩의 경우 CMOS 디바이스입니다. CMOS IC의 경우 여러 장점이 있지만 디자인시에 엔지니어들이 간과하기 쉬운 것이 래치업 상태입니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile28.uf.1422D3044CA1D60809B73A.jpg" class="aligncenter" width="480" height="224" alt="" filename="cfile28.uf.1422D3044CA1D60809B73A.jpg" filemime="" />&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;/p>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 18px; font-size: 12px; ">&lt;span style="font-size: 11pt; ">래치업은 CMOS IC 자신이 내장하는 기생의 PNPN 접합부가 도통(low impedance가 되어)하여 IC 에 수백 mA 이상의 많은&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">전류가 순간적으로 흐르고 파괴에 도달하는 현상입니다.&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">이러한 상태는 순&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">간적일지라도 한번 IC가 래치업 상태가 되면 전원을 끌 때까지 계속 유지가 됩니다.&amp;nbsp;&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+래치업 현상을 방지하려면 다음사항에 유의해야 합니다.
+&lt;/div>
+&lt;div>
+&lt;b>-. 미사용 입력은 pull-up 또는 pull-down 시킬것.&lt;/b>
+&lt;/div>
+&lt;div>
+&lt;b>-.&amp;nbsp;I/O 전압레벨을 Vcc보다 높게하거나 Vss보다 낮게하지 말 것.&lt;/b>
+&lt;/div>
+&lt;div>
+&lt;b>-. 노이즈나 서지의 유입이 없도록 할것&lt;/b>
+&lt;/div>
+&lt;div>
+&lt;b>&lt;br /> &lt;/b>
+&lt;/div>
+&lt;div>
+이외에 고려해야할 사항은 다음의&amp;nbsp;Zarlink에서 나온 application note를 참고하시&amp;nbsp;바랍니다.
+&lt;/div>
+&lt;div>
+이 문서에 보면&amp;nbsp;latch-up이 발생하기 쉬운 8가지 경우에 대한 설명을 하고 대책을 설명하고 있습니다.
+&lt;/div>
+&lt;p>
+&lt;/span>&lt;/font>&lt;/div>
+&lt;pre>&lt;code>&amp;lt;div style=&amp;quot;margin-left: 4em; &amp;quot;&amp;gt;
+&amp;lt;font class=&amp;quot;Apple-style-span&amp;quot; size=&amp;quot;4&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;font-size: 15px; line-height: 22px;&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;a href=&amp;quot;/images/1/cfile6.uf.193A1B014CA1D90A5B5F35.pdf&amp;quot; class=&amp;quot;aligncenter&amp;quot; filename=&amp;quot;Understanding and Eliminating LatchUp in CMOS Applications.pdf&amp;quot; filemime=&amp;quot;application/pdf&amp;quot; /&amp;gt;cfile6.uf.193A1B014CA1D90A5B5F35.pdf&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;p&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;font class=&amp;quot;Apple-style-span&amp;quot; size=&amp;quot;4&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;font-size: 15px; line-height: 22px;&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;p&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;font class=&amp;quot;Apple-style-span&amp;quot; size=&amp;quot;4&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;font-size: 15px; line-height: 22px;&amp;quot;&amp;gt;이건 TI에서 나온 자료&amp;amp;#8230;&amp;amp;nbsp;&amp;lt;a href=&amp;quot;/images/1/cfile7.uf.1954E3164CAEB9AD14354B.pdf&amp;quot; class=&amp;quot;aligncenter&amp;quot; filename=&amp;quot;slya014a.pdf&amp;quot; filemime=&amp;quot;application/pdf&amp;quot; /&amp;gt;cfile7.uf.1954E3164CAEB9AD14354B.pdf&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;font class=&amp;quot;Apple-style-span&amp;quot; size=&amp;quot;4&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;font-size: 15px; line-height: 22px;&amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;그리고 칩 레벨에서 레치업 테스트 규격은&amp;amp;nbsp;&amp;lt;b&amp;gt;JESD78A&amp;lt;/b&amp;gt; 입니다.&amp;amp;nbsp;&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/images/1/cfile27.uf.1668E8054CA1DB2846A4C2.pdf&amp;quot; class=&amp;quot;aligncenter&amp;quot; filename=&amp;quot;JESD78A.pdf&amp;quot; filemime=&amp;quot;application/pdf&amp;quot; /&amp;gt;cfile27.uf.1668E8054CA1DB2846A4C2.pdf&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;font class=&amp;quot;Apple-style-span&amp;quot; size=&amp;quot;4&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;font-size: 15px; line-height: 22px;&amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;font class=&amp;quot;Apple-style-span&amp;quot; size=&amp;quot;4&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;font-size: 15px; line-height: 22px;&amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;font class=&amp;quot;Apple-style-span&amp;quot; size=&amp;quot;4&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;font-size: 15px; line-height: 22px;&amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;__KO_DIC_LAYER__&amp;quot; style=&amp;quot;padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: fixed; z-index: 1e+009; overflow-x: hidden; overflow-y: hidden; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 51, 119); border-right-color: rgb(51, 51, 119); border-bottom-color: rgb(51, 51, 119); border-left-color: rgb(51, 51, 119); display: none; &amp;quot;&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre></description></item></channel></rss>

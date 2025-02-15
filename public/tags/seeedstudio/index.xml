@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seeedstudio on OpenMicroLab</title><link>https://openmicrolab.com/tags/seeedstudio/</link><description>Recent content in Seeedstudio on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 25 Oct 2018 09:53:01 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/seeedstudio/index.xml" rel="self" type="application/rss+xml"/><item><title>WioLink 사용하기</title><link>https://openmicrolab.com/wiolink-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 25 Oct 2018 09:53:01 +0000</pubDate><guid>https://openmicrolab.com/wiolink-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="wiolink">WioLink&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4458" src="https://res.cloudinary.com/openmicrolab/image/upload/v1540461119/wio_ks_icxaos.jpg" width="616" height="347" />
+&lt;p>2016년에 &lt;a href="https://www.kickstarter.com/projects/seeed/wio-link-3-steps-5-minutes-build-your-iot-applicat" target="_blank" rel="noopener noreferrer">킥스타터&lt;/a>를 통해서 구매한 WioLink. 당시에 동작을 확인하고 사용을 하지 않고 있다가, 최근에 다시 사용을 하려고 보니 잘 동작을 하지 않는다. WiFi 설정은 되고, 서버에도 접속이 되는데 앱에서 디바이스를 구성을 하고 View API 버튼을 누르면 앱이 멈춰버린다.&lt;/p>
+&lt;h3 id="펌웨어-업데이트">펌웨어 업데이트&lt;/h3>
+&lt;p>그래서 일단 펌웨어를 다시 업데이트를 해본다.&lt;br>
+&lt;strong>펌웨어 다운로드&lt;/strong>&lt;br>
+Firmware: user1.bin user2.bin&lt;br>
+Bootloader binary and other binaries: Esp8266sdk1.4.1.zip&lt;br>
+Esp8266sdk1.4.1.zip을 압축을 풀고, boot***.bin 파일은 bootloader.bin으로 이름을 바꾼다.&lt;/p>
+&lt;p>&lt;strong>esptool 설치&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>$ pip install esptool&lt;/p></description></item><item><title>Maker Faire Shenzhen</title><link>https://openmicrolab.com/maker-faire-shenzhen/</link><pubDate>Tue, 15 Apr 2014 04:02:32 +0000</pubDate><guid>https://openmicrolab.com/maker-faire-shenzhen/</guid><description>
+&lt;p>&lt;span style="line-height: 1.5em;">지난 4월 6-7일 중국 심천에서 메이커페어가 열렸다. 이번이 3번째인데, 이전까지는 미니 메이커 페어였는데 이번에는 정식 메이커페어의 이름을 달고 규모도 크고 글로벌하게 진행이 됐다. 장소는 심천의 Shekou 지역인데 이곳은 외국인도 많이 사는 것 같고 거리는 중국같지 않게(?) 깔금하고 공방, 갤러리, 카페가 많은 지역이다. 외국인이 꽤 있는 이유는 아마도 이 지역에서 하드웨어 스타트업들이 많이 생기고, 생산을 중국에서 하는 외국 업체들이 많아서이지 않을가 추측을 해본다.&lt;/span>&lt;/p>
+&lt;div id="attachment_2974" style="width: 624px" class="wp-caption alignnone">
+&lt;a href="https://openmicrolab.com/images/2014/04/2014-04-06-09.29.08.jpg">&lt;img aria-describedby="caption-attachment-2974" loading="lazy" class="wp-image-2974 " alt="2014-04-06 09.29.08" src="https://openmicrolab.com/images/2014/04/2014-04-06-09.29.08-1024x768.jpg" width="614" height="461" srcset="https://openmicrolab.com/images/2014/04/2014-04-06-09.29.08-1024x768.jpg 1024w, https://openmicrolab.com/images/2014/04/2014-04-06-09.29.08-300x225.jpg 300w" sizes="(max-width: 614px) 100vw, 614px" />&lt;/a>
+&lt;p id="caption-attachment-2974" class="wp-caption-text">
+전시 장소로 가는 길
+&lt;/p></description></item></channel></rss>

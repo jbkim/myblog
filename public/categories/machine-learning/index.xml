@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on OpenMicroLab</title><link>https://openmicrolab.com/categories/machine-learning/</link><description>Recent content in Machine Learning on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 10 Jul 2021 10:43:58 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>TinyML for Ubiquitous Edge AI</title><link>https://openmicrolab.com/tinyml-for-ubiquitous-edge-ai/</link><pubDate>Sat, 10 Jul 2021 10:43:58 +0000</pubDate><guid>https://openmicrolab.com/tinyml-for-ubiquitous-edge-ai/</guid><description>
+&lt;p>TinML 관련된 책도 읽어보고 프로젝트에 적용도 해봤지만, 논문이나 관련된 글을 쓸때 도움이 될 것 같은 문서.&lt;/p>
+&lt;p>&lt;a href="https://arxiv.org/pdf/2102.01255.pdf">https://arxiv.org/pdf/2102.01255.pdf&lt;/a>&lt;/p></description></item><item><title>Anaconda를 사용하여 Tensorflow 설치</title><link>https://openmicrolab.com/anaconda%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-tensorflow-%EC%84%A4%EC%B9%98/</link><pubDate>Sat, 30 Jan 2021 05:05:14 +0000</pubDate><guid>https://openmicrolab.com/anaconda%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-tensorflow-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;p>$ conda upgrade pip&lt;br>
+$ pip install upgrade&lt;/p>
+&lt;p>// 가상환경 만들기 (tensoflow 2.4 버전에서는 python 3.8을 사용함)&lt;br>
+$ conda create -n tf14 python=3.6&lt;/p>
+&lt;p>// 가상환경 활성화&lt;br>
+$ conda activate tf14&lt;br>
+(tf14) pip install tensorflow==1.14.0&lt;/p>
+&lt;p>// Tensorflow 설치&lt;br>
+(tf14) pip install –ignore-installed –upgrade tensorflow-cpu&lt;/p>
+&lt;p>// TF lite 코드 다운로드 (github CLI를 설치했음)&lt;br>
+(tf14) gh repo clone tensorflow/tensorflow&lt;/p>
+&lt;p>// Hello World 예제의 테스트 빌드로 확인&lt;br>
+$ make -f tensorflow/lite/micro/tools/make/Makefile test_hello_world_test&lt;/p></description></item></channel></rss>

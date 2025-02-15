@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>서브네팅 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%84%9C%EB%B8%8C%EB%84%A4%ED%8C%85/</link><description>Recent content in 서브네팅 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 28 Sep 2010 11:13:14 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%84%9C%EB%B8%8C%EB%84%A4%ED%8C%85/index.xml" rel="self" type="application/rss+xml"/><item><title>브로드캐스트 주소</title><link>https://openmicrolab.com/%EB%B8%8C%EB%A1%9C%EB%93%9C%EC%BA%90%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EC%86%8C/</link><pubDate>Tue, 28 Sep 2010 11:13:14 +0000</pubDate><guid>https://openmicrolab.com/%EB%B8%8C%EB%A1%9C%EB%93%9C%EC%BA%90%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EC%86%8C/</guid><description>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">브로드캐스트&amp;nbsp;하나의 로컬 네트워크 전체에 있는 클라이언트 모두에게 데이터를 보내는 방식이며 ARP, DHCP, RIP등의 프로토콜에 사용이 됩니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">그럼 어떻 하면 이게 가능할까요?&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">이것을 알려면 브로드캐스트 주소(Broadcast Address)를 이해해야 합니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>&lt;font class="Apple-style-span" color="#2B8400">&lt;u>브로드캐스트 주소는 어드레스주소중 가장 큰 수이다.&lt;/u>&amp;nbsp;&lt;/font>&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">간단히 말하면 이것만 기억하면 됩니다.&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">즉 네트워크 를래스가 A이고 IP가 192.0.0.0 일 경우 브로드캐스트 주소는 192.255.255.255입니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">네트워크 를래스가 B이고 IP가 192.168.0.0 일 경우 브로드캐스트 주소는 192.168.255.255입니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">네트워크 를래스가 C이고 IP가 192.168.16.0 일 경우 브로드캐스트 주소는 192.168.16.255입니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">위와 같은 경우는 서브네팅이 많이 보는 경우이므로 간단히 알수 있는데 그럼 만약에 서브넷 마스크가 255.255.255.224 일 경우 어떻게 브로드캐스트 주소를 구할 수 있나요?&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>&lt;font class="Apple-style-span" color="#2B8400">브로드캐스트 주소 구하는 법&lt;/font>&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">IP address: 192.168.16.1&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">Subnet mask: 255.255.255.224&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;font class="Apple-style-span" color="#2B8400">&lt;b>1) Subnet mask를 invert한다.&lt;/b>&lt;/font>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">255.255.255.224 => 11111111.&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">11111111.&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">11111111.11100000&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&amp;nbsp;&amp;nbsp; 이것을 invert하면 00000000.&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">00000000.&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">00000000.00011111&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>&lt;font class="Apple-style-span" color="#2B8400">2) Invert한 subnet과 IP address를 Logical OR를 한다.&lt;/font>&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&amp;nbsp;&amp;nbsp;192.168.16.1 &amp;nbsp; &amp;nbsp;=> 11000000.10101000.00010000.00000001&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&amp;nbsp;&amp;nbsp;Invert한 서브넷 => &amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">00000000.&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">00000000.&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">00000000.00011111&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&amp;nbsp;&amp;nbsp;결과는 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;=> &amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">11000000.10101000.00010000.&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">00011111 => 192.168.16.31&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div></description></item></channel></rss>

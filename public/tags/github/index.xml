@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on OpenMicroLab</title><link>https://openmicrolab.com/tags/github/</link><description>Recent content in Github on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 18 Aug 2016 07:07:59 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Github에 100MB 이상 파일 올리는 법</title><link>https://openmicrolab.com/github%EC%97%90-100mb-%EC%9D%B4%EC%83%81-%ED%8C%8C%EC%9D%BC-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95/</link><pubDate>Thu, 18 Aug 2016 07:07:59 +0000</pubDate><guid>https://openmicrolab.com/github%EC%97%90-100mb-%EC%9D%B4%EC%83%81-%ED%8C%8C%EC%9D%BC-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95/</guid><description>
+&lt;p>Github은 100MB이상의 파일을 올리지 못하게 되어 있는데, 해결 방법은 git-lfs를 설치해서 올리면 된다.&lt;/p>
+&lt;p>&lt;strong>git-lfs를 설치&lt;/strong>&lt;br>
+&lt;a href="https://git-lfs.github.com/" target="_blank">&lt;a href="https://git-lfs.github.com/">https://git-lfs.github.com/&lt;/a>&lt;/a> 에서 파일을 다운로드하고 install.sh 를 실행한다.&lt;br>
+git lfs install을 실행해서 설치가 제대로 됐는지 확인한다.&lt;/p>
+&lt;blockquote>
+&lt;p>git lfs install&lt;/p>&lt;/blockquote>
+&lt;p>github에 올릴 파일을 등록한다.&lt;/p>
+&lt;blockquote>
+&lt;p>git lfs track “*.xxx”&lt;/p>&lt;/blockquote>
+&lt;p>그 다음은 똑같다.&lt;/p>
+&lt;blockquote>
+&lt;p>git add *.xxx&lt;br>
+git commit -m “Add design file”&lt;br>
+git push origin master&lt;/p>&lt;/blockquote></description></item><item><title>Github – Fork한 repo를 업데이트 하기</title><link>https://openmicrolab.com/github-fork%ED%95%9C-repo%EB%A5%BC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 16 Apr 2015 07:55:25 +0000</pubDate><guid>https://openmicrolab.com/github-fork%ED%95%9C-repo%EB%A5%BC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p style="text-align: justify;">
+Github에서  Fork한  repo를 원본과 싱크를 맞추어 업데이트하려면&amp;#8230; Fork한 repo를 셋업하고 local clone을 만든다.
+&lt;/p>
+&lt;pre class="command-line">&lt;span class="command">$ git clone https://github.com/&lt;em>YOUR-USERNAME&lt;/em>/xxxx.git&lt;/span>&lt;/pre>
+&lt;p style="text-align: justify;">
+그리고 이것을 original과 sync하려면 먼저 리모트 설정하고 패치를 하면 된다. local clone의 위치로 이동을 하고..
+&lt;/p>
+&lt;pre class="command-line">&lt;span class="command">$ git remote add upstream https://github.com/xxxx/xxxx.git
+&lt;/span>&lt;/pre>
+&lt;p>확인&lt;/p>
+&lt;pre class="command-line">&lt;span class="command">$ git remote -v&lt;/span>
+&lt;span class="output"># origin https://github.com/&lt;em>YOUR_USERNAME&lt;/em>/&lt;em>YOUR_FORK&lt;/em>.git (fetch)&lt;/span>
+&lt;span class="output"># origin https://github.com/&lt;em>YOUR_USERNAME&lt;/em>/&lt;em>YOUR_FORK&lt;/em>.git (push)&lt;/span>
+&lt;span class="output"># upstream https://github.com/&lt;em>ORIGINAL_OWNER&lt;/em>/&lt;em>ORIGINAL_REPOSITORY&lt;/em>.git (fetch)&lt;/span>
+&lt;span class="output"># upstream https://github.com/&lt;em>ORIGINAL_OWNER&lt;/em>/&lt;em>ORIGINAL_REPOSITORY&lt;/em>.git (push)
+&lt;/span>&lt;/pre>
+&lt;p>패치&lt;/p>
+&lt;pre class="command-line">&lt;span class="command">$ git fetch upstream&lt;/span>
+&lt;span class="output"># remote: Counting objects: 75, done.&lt;/span>
+&lt;span class="output"># remote: Compressing objects: 100% (53/53), done.&lt;/span>
+&lt;span class="output"># remote: Total 62 (delta 27), reused 44 (delta 9)&lt;/span>
+&lt;span class="output"># Unpacking objects: 100% (62/62), done.&lt;/span>
+&lt;span class="output"># From https://github.com/&lt;em>ORIGINAL_OWNER&lt;/em>/&lt;em>ORIGINAL_REPOSITORY&lt;/em>&lt;/span>
+&lt;span class="output"># * [new branch] master -&amp;gt; upstream/master
+&lt;/span>&lt;/pre>
+&lt;p>체크아웃&lt;/p></description></item><item><title>git 관련 팁 – .gitignore</title><link>https://openmicrolab.com/git-%EA%B4%80%EB%A0%A8-%ED%8C%81-gitignore/</link><pubDate>Fri, 13 Feb 2015 01:06:53 +0000</pubDate><guid>https://openmicrolab.com/git-%EA%B4%80%EB%A0%A8-%ED%8C%81-gitignore/</guid><description>
+&lt;p>.gitignore를 설정 전에 원하지 않는 파일(예를 들면 소스가 아닌 컴파일된 obj 파일 같은..)이 repositary에 add/initilized된 경우는 cache를 지우고 tracking을 다시 설정해야 한다.&lt;br>
+먼저 필요한 파일들을 commit한후 다음의 명령어를 실행한다.&lt;br>
+cache 삭제&lt;/p>
+&lt;blockquote>
+&lt;p>git rm -r –cached .&lt;/p>&lt;/blockquote>
+&lt;p>다시 tracking 하도록 설정&lt;/p>
+&lt;blockquote>
+&lt;p>git add .&lt;/p>&lt;/blockquote>
+&lt;p>그 다음 commit&lt;/p>
+&lt;blockquote>
+&lt;p>git commit -m “.gitignore is now working”&lt;/p>&lt;/blockquote></description></item><item><title>github에 SSH키 생성 및 등록</title><link>https://openmicrolab.com/github%EC%97%90-ssh%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%93%B1%EB%A1%9D/</link><pubDate>Sat, 31 Jan 2015 11:13:44 +0000</pubDate><guid>https://openmicrolab.com/github%EC%97%90-ssh%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%93%B1%EB%A1%9D/</guid><description>
+&lt;p>&lt;code>Permission denied (publickey).&amp;lt;br /&amp;gt; fatal: Could not read from remote repository.&lt;/code>&lt;br>
+github을 잘 사용하다가 어느 순간 위와 같은 Permission 에러가 나서 다시 SSH키를 등록했다.&lt;/p>
+&lt;p>아래와 같이 터미널에 입력하는데 이메일은 github에 등록한 이메일을 사용한다.&lt;br>
+&lt;code>ssh-keygen -t rsa -C “your_email@example.com”&lt;/code>&lt;/p>
+&lt;p>passphrase(암호)를 넣어준다.&lt;br>
+&lt;code>Enter passphrase (empty for no passphrase):&amp;lt;br /&amp;gt; Enter same passphrase again:&lt;/code>&lt;/p>
+&lt;p>새로운 키를 에이전트에 추가한다.&lt;br>
+&lt;code>eval “$(ssh-agent -s)”&amp;lt;br /&amp;gt; ssh-add ~/.ssh/id_rsa&lt;/code>&lt;/p>
+&lt;p>다음과 같이 입력하면 새로 만든 키가 클립보드에 저장이 된다.&lt;br>
+&lt;code>pbcopy &amp;lt; ~/.ssh/id_rsa.pub&lt;/code>&lt;/p></description></item><item><title>Github – Fork한 저장소 업데이트하기</title><link>https://openmicrolab.com/github-fork%ED%95%9C-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 14 Nov 2014 12:33:03 +0000</pubDate><guid>https://openmicrolab.com/github-fork%ED%95%9C-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>Github에서 fork한 저장소를 원본 저장소와 연결해서 업데이트하려면, github에서 제공하는 툴에는 메뉴가 없으므로 터미널에서 작업을 해야한다.&lt;/p>
+&lt;h3 id="remote-설정">Remote 설정&lt;/h3>
+&lt;p>현재 설정된 리모트 저장소를 확인&lt;/p>
+&lt;blockquote>
+&lt;p>$ git remote -v&lt;/p>&lt;/blockquote>
+&lt;p>새로운 리모트 업스트림을 추가&lt;/p>
+&lt;blockquote>
+&lt;p>$ git remote add upstream &lt;a href="https://github.com/ORIGINAL">https://github.com/ORIGINAL&lt;/a>_OWNER/ORIGINAL_REPOSITORY.git&lt;/p>&lt;/blockquote>
+&lt;p>추가된 리모트 저장소 확인&lt;/p>
+&lt;blockquote>
+&lt;p>$ git remote -v&lt;/p>&lt;/blockquote>
+&lt;p>다음과 같은 형태로 업스트림이 추가된 것을 볼 수 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/git_remote_v.png" alt="" width="606" height="102" />
+&lt;h3 id="fork한-것을-업데이트">Fork한 것을 업데이트&lt;/h3>
+&lt;p>패치를 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>$ git fetch upstream&lt;/p>&lt;/blockquote>
+&lt;p>그다음에 checkout… 일반적으로 master이고 내가 fork한 브랜치의 이름을 적어야 한다.&lt;/p></description></item><item><title>Markdown</title><link>https://openmicrolab.com/markdown/</link><pubDate>Tue, 07 May 2013 05:33:05 +0000</pubDate><guid>https://openmicrolab.com/markdown/</guid><description>
+&lt;p>Github의  readme  파일을 작성하다가… 자료를 정리하면 좋을 것 같아서…&lt;/p>
+&lt;p>Markdown이란… &lt;a title="Markdown" href="http://en.wikipedia.org/wiki/Markdown#Editors" target="_blank">&lt;a href="http://en.wikipedia.org/wiki/Markdown#Editors">http://en.wikipedia.org/wiki/Markdown#Editors&lt;/a>&lt;/a>&lt;/p>
+&lt;p>잘 정리된 사이트&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://help.github.com/articles/github-flavored-markdown" target="_blank">GitHub Flavored Markdown (GFM)&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height: 15px;">&lt;a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown Syntax&lt;/a> &lt;/span>&lt;/li>
+&lt;li>&lt;a href="http://lennienoh.com/markdown/" target="_blank">Markdown 문법 배워서 활용하기&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>git 사용법</title><link>https://openmicrolab.com/git-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Tue, 24 Jan 2012 10:08:10 +0000</pubDate><guid>https://openmicrolab.com/git-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>git에 대한 위키피디아 문서&lt;br>
+&lt;a href="http://en.wikipedia.org/wiki/Git_(software">http://en.wikipedia.org/wiki/Git_(software)&lt;/a>&lt;/p>
+&lt;p>git 사용자 설명서: 잘 정리된 메뉴얼&lt;br>
+&lt;a href="http://namhyung.springnote.com/pages/3132772">http://namhyung.springnote.com/pages/3132772&lt;/a>&lt;br>
+ &lt;br>
+git 튜토리얼 메뉴얼 페이지&lt;br>
+&lt;a href="http://www.funit.net/git">http://www.funit.net/git&lt;/a>&lt;/p>
+&lt;p>github에 대한 글: Github, 코드 개발 기반 소셜 네트웍&lt;br>
+&lt;a href="http://channy.creation.net/blog/626">http://channy.creation.net/blog/626&lt;/a>&lt;/p>
+&lt;p>git는 분산 버전 관리 시스템이며 리눅스 커널 개발에 사용하기 위해 리누스 토발츠가 처음 디자인과 개발을 하기 시작했다.&lt;br>
+가장 큰 장점인 수정 내용을 매번 마스터 저장소에 커밋해서 올리는 대신에 저장소 전체의 로컬 복사본을 사용한다는 것이다. git을 사용하면 각 개발자가 작업을 진행할 수 있는 자신만의 샌드박스를 가지고 있으며, 작업을 마친후에 변경내역을 마스터 저장소에 push  할 수 있다.&lt;/p></description></item></channel></rss>

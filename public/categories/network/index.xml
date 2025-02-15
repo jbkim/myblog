@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Network on OpenMicroLab</title><link>https://openmicrolab.com/categories/network/</link><description>Recent content in Network on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 11 Feb 2016 02:41:07 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/network/index.xml" rel="self" type="application/rss+xml"/><item><title>웹 디버깅 툴</title><link>https://openmicrolab.com/%EC%9B%B9-%EB%94%94%EB%B2%84%EA%B9%85-%ED%88%B4/</link><pubDate>Thu, 11 Feb 2016 02:41:07 +0000</pubDate><guid>https://openmicrolab.com/%EC%9B%B9-%EB%94%94%EB%B2%84%EA%B9%85-%ED%88%B4/</guid><description>
+&lt;p>웹(HTTP) 디버깅용 툴&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.charlesproxy.com/" target="_blank">Charles&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.telerik.com/fiddler" target="_blank">Fiddler&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.tuffcode.com/" target="_blank">Tuffcode&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://dutzi.github.io/tamper/" target="_blank">Tamper&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>물론 네트워크 패킷을 캡처하는 툴로 &lt;a href="https://www.wireshark.org/" target="_blank">wireshark&lt;/a>도 좋다. 😉&lt;/p></description></item><item><title>이더넷 PHY to PHY 연결</title><link>https://openmicrolab.com/%EC%9D%B4%EB%8D%94%EB%84%B7-phy-to-phy-%EC%97%B0%EA%B2%B0/</link><pubDate>Thu, 01 May 2014 00:19:05 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B4%EB%8D%94%EB%84%B7-phy-to-phy-%EC%97%B0%EA%B2%B0/</guid><description>
+&lt;div title="Page 1">
+&lt;p>
+이전 포스트 &lt;a href="http://openmicrolab.com/transformer%EC%97%86%EC%9D%B4-%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/" target="_blank">트랜스포머 없이 이더넷 구현하기 &lt;/a>의 추가적인 자료  &amp;#8211; MICREL에서 나온 자료&amp;#8230; 설명이 잘되어 있다. 이것은 PHY to PHY로 연결을 할 때 필요한 내용이다. 즉 상대측이 internal DC bias가 있을 경우와 없을 경우 2가지로 나뉜다.
+&lt;/p>
+&lt;p>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/internal_bias.png" width="532" height="267" />
+&lt;/p>
+&lt;p>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/without_internal_bias.png" width="527" height="258" />
+&lt;/p>
+&lt;p>
+&lt;strong>관련자료는&lt;/strong> : &lt;a href="http://www.micrel.com/_PDF/Ethernet/app-notes/an-120.pdf" target="_blank">Capacitive Coupling Ethernet Transceivers without Using Transformers &lt;/a>
+&lt;/p>
+&lt;/div></description></item><item><title>MAC 주소 관련</title><link>https://openmicrolab.com/mac-%EC%A3%BC%EC%86%8C-%EA%B4%80%EB%A0%A8/</link><pubDate>Thu, 01 May 2014 00:05:29 +0000</pubDate><guid>https://openmicrolab.com/mac-%EC%A3%BC%EC%86%8C-%EA%B4%80%EB%A0%A8/</guid><description>
+&lt;p>예전에 쓴 포스팅 &lt;a href="http://openmicrolab.com/mac-address-%ED%95%A0%EB%8B%B9-%EB%B0%9B%EA%B8%B0/" target="_blank">MAC address 할당받기&lt;/a>의 글에서 MAC address를 할당 받기위해서는 $1,600이 든다고 적었는데, 최근에 보니 $2,500로 올랐다. 그리고 추가적인 정보는 MAC주소 신청시 부여받는 숫자에 따라서, 3가지가 있다는 것.&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/IEEE_RA.png" width="712" height="460" />&lt;/p>
+&lt;h3 id="관련-추가적인-정보">관련 추가적인 정보&lt;/h3>
+&lt;ul>
+&lt;li> &lt;a href="https://standards.ieee.org/develop/regauth/index.html " target="_blank">&lt;a href="https://standards.ieee.org/develop/regauth/index.html">https://standards.ieee.org/develop/regauth/index.html&lt;/a> &lt;/a>&lt;/li>
+&lt;li>Tutorial : &lt;a href="https://standards.ieee.org/develop/regauth/tut/index.html" target="_blank">&lt;a href="https://standards.ieee.org/develop/regauth/tut/index.html">https://standards.ieee.org/develop/regauth/tut/index.html&lt;/a>&lt;/a>&lt;/li>
+&lt;li>맥어드레스가 어떤 회사에 할당되어 있는지 찾기 : &lt;a href="https://standards.ieee.org/develop/regauth/cid/public.html" target="_blank">&lt;a href="https://standards.ieee.org/develop/regauth/cid/public.html">https://standards.ieee.org/develop/regauth/cid/public.html&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Arduino Ethernet 라이브러리 업데이트</title><link>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link><pubDate>Sat, 01 Mar 2014 09:26:21 +0000</pubDate><guid>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid><description>
+&lt;p>WZnet 칩 W5100, W5200과 W5500을 지원하는 통합 아두이노 라이브러리인 &lt;a href="https://github.com/Wiznet/WIZ_Ethernet_Library" target="_blank">Arduino Ethernet 라이브러리&lt;/a>를 업데이트 했다. 기존 코드에서 달라진 점은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>Arduino IDE 1.5.x 지원 : Arduino Due를 지원하기 위함.&lt;/li>
+&lt;li>Due용  SPI 드라이버 추가&lt;/li>
+&lt;li>W5200및 W5500의 경우 SPI드라이버 속도를 높였다. 무려 42Mhz까지 지원&lt;/li>
+&lt;li>w5100::read_data함수의 파라미터의 형 변경&lt;/li>
+&lt;li>flush() 함수 추가&lt;/li>
+&lt;/ul>
+&lt;p>Arduino IDE 1.5.xx를 지원하기 위해서는&lt;/p>
+&lt;ul>
+&lt;li>32비트 SAM용 SPI 드라이버가 추가 되야한다.&lt;/li>
+&lt;li>IDE 1.5.x의 폴더 구조가 바뀌어서 헤더파일 include가 변경된다.아래 그림 참고…  예를 들면 #include “w5100.h”가 #include “utility/ w5100.h” 이런 식으로…&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/03/Arduino_Folder.png">&lt;img loading="lazy" class="alignnone wp-image-2890" alt="Arduino_Folder" src="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png" width="578" height="717" srcset="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png 826w, https://openmicrolab.com/images/2014/03/Arduino_Folder-242x300.png 242w, https://openmicrolab.com/images/2014/03/Arduino_Folder.png 831w" sizes="(max-width: 578px) 100vw, 578px" />&lt;/a>&lt;/p></description></item><item><title>TCP, UDP 포트 넘버</title><link>https://openmicrolab.com/tcp-udp-%ED%8F%AC%ED%8A%B8-%EB%84%98%EB%B2%84/</link><pubDate>Tue, 11 Feb 2014 09:06:07 +0000</pubDate><guid>https://openmicrolab.com/tcp-udp-%ED%8F%AC%ED%8A%B8-%EB%84%98%EB%B2%84/</guid><description>
+&lt;p>TCP, UDP의 포트 넘버 0~1023번까지는 Well-Known Port로 불리우며 &lt;a href="http://www.iana.org/" target="_blank">IANA&lt;/a>에서 TCP 및 UDP 포트넘버의 일부이다. 일반적으로 포트 번호는 다음과 같이 세 가지로 나눌 수 있다.&lt;/p>
+&lt;ul>
+&lt;li>0번 ~ 1023번: 잘 알려진 포트 (well-known port)&lt;/li>
+&lt;li>1024번 ~ 49151번: 등록된 포트 (registered port)&lt;/li>
+&lt;li>49152번 ~ 65535번: 동적 포트 (dynamic port)&lt;/li>
+&lt;/ul>
+&lt;p>더 자세한 정보:  &lt;a href="http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#cite_note-IANA-1" target="_blank">&lt;a href="http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#cite_note-IANA-1">http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#cite_note-IANA-1&lt;/a>&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>따라서 응용프로그램에서 다른 포트와 충돌을 일으키지않고 사용을 하려면 49152 ~ 65535사이의 포트를 사용을 한다. 만약 Registered Port에 등록을 하려면 아래 주소에서 신청을 하면 되는데, IANA에서 심사후 등록여부를 결정한다고 한다. &lt;a href="http://www.iana.org/cgi-bin/usr-port-number.pl" target="_blank">&lt;a href="http://www.iana.org/cgi-bin/usr-port-number.pl">http://www.iana.org/cgi-bin/usr-port-number.pl&lt;/a>&lt;/a>&lt;/p></description></item><item><title>사설 IP 대역</title><link>https://openmicrolab.com/%EC%82%AC%EC%84%A4-ip-%EB%8C%80%EC%97%AD/</link><pubDate>Tue, 28 Jan 2014 07:19:53 +0000</pubDate><guid>https://openmicrolab.com/%EC%82%AC%EC%84%A4-ip-%EB%8C%80%EC%97%AD/</guid><description>
+&lt;p>이런 것도 찾아볼 때가 있으니, 정리~&lt;/p>
+&lt;ul>
+&lt;li>A 클래스 : 10.0.0.0 ~ 10.255.255.255&lt;/li>
+&lt;li>B 클래스 : 172.16.0.0 ~ 172.31.255.255&lt;/li>
+&lt;li>C 클래스 : 192.168.0.0 ~ 192.168.255.255&lt;/li>
+&lt;/ul></description></item><item><title>부트로더도 네트웍으로 업로드하자</title><link>https://openmicrolab.com/%EB%B6%80%ED%8A%B8%EB%A1%9C%EB%8D%94%EB%8F%84-%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%9C%BC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EC%9E%90/</link><pubDate>Tue, 28 Jan 2014 07:17:10 +0000</pubDate><guid>https://openmicrolab.com/%EB%B6%80%ED%8A%B8%EB%A1%9C%EB%8D%94%EB%8F%84-%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%9C%BC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EC%9E%90/</guid><description>
+&lt;p>예전에 만들어 놓은 모듈은 부트로더도 업데이트가 가능했었던 것을 최근에 발견했다. 중요한 것은 메모리 맵이다. 예전 코드를 자세히 보다가 나중에도 써먹기 위해서 정리…&lt;/p>
+&lt;p>[slideshare id=30520771&amp;amp;doc=networkupdatablebootloader-140128005305-phpapp01]&lt;/p></description></item><item><title>Ethernet Auto negotiation – Duplex mismatch</title><link>https://openmicrolab.com/ethernet-auto-negotiation-duplex-mismatch/</link><pubDate>Fri, 13 Dec 2013 09:13:17 +0000</pubDate><guid>https://openmicrolab.com/ethernet-auto-negotiation-duplex-mismatch/</guid><description>
+&lt;p>이더넷 네트워크에서 auto negotiation은 PHY에서 담당하는 기능으로 전송선로상에서 상대방(peer)의 속도 및 half/ full duplex여부를 자동으로 결정하는 plug and play  같은 기능이다. 이 기능은 1997년에 Fast Ethernet IEEE802.3u 표준으로 들어갔고, 1999년에 Gigabit Ethenet 802.3ab 표준이 되었다.&lt;/p>
+&lt;p>Fast Ethernet 일 경우 1)양쪽이 auto일 경우 2) auto – 10/100 고정일 경우 3) 10/100고정 – 10/100 고정일 경우가 발생한다. 양쪽이 auto negotiation일 경우는 속도가 높고 duplex쪽으로 잡힌다. 즉 다음과 같은 우선 순위에 의해 속도 및 duplex가 결정이 된다.&lt;/p></description></item><item><title>W5500 드라이버 포팅: Parallax Propeller칩</title><link>https://openmicrolab.com/w5500-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%ED%8F%AC%ED%8C%85-parallax-propeller%EC%B9%A9/</link><pubDate>Tue, 10 Dec 2013 02:54:02 +0000</pubDate><guid>https://openmicrolab.com/w5500-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%ED%8F%AC%ED%8C%85-parallax-propeller%EC%B9%A9/</guid><description>
+&lt;p>&lt;a href="http://parallax.com/" target="_blank">Parrallax&lt;/a>는 미국의 펩리스 반도체 회사이다. 이 회사의 칩은 &lt;a href="http://parallax.com/microcontrollers/propeller" target="_blank">Propeller&lt;/a>인데 이 칩은 특이하게도 내부에 8개의 프로세어 코아가 있어서 병렬처리가 가능하다. 이 8개의 코아를 COG라고 부르는데, 아래 블럭다이아그램 처럼 내부에 각각 프로세서, RAM, 레지스터, 카운터 등이 있고 이 COG가 외부에 나와 있는 I/O를 공유한다. 그리고 각각의 COG를 제어하는 HUB가 있어서 각각의 COG각 언제 I/O를 access할지를 결정한다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/12/parallax_propeller.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2736" alt="parallax_propeller" src="https://openmicrolab.com/images/2013/12/parallax_propeller.png" width="921" height="570" srcset="https://openmicrolab.com/images/2013/12/parallax_propeller.png 921w, https://openmicrolab.com/images/2013/12/parallax_propeller-300x185.png 300w" sizes="(max-width: 921px) 100vw, 921px" />&lt;/a>&lt;/p>
+&lt;p>Propeller칩을 프로그래밍하게 위해서는 어셈블러, SPIN이라는 언어로 프로그래밍이 가능하며, 최근에는 C 컴파일러가 지원이어서 C로도 프로그래밍이 가능하지만 코드사이즈나 성능이슈로 대부분의 코드는 어셈블러나 SPIN으로 만들어져 있다.&lt;/p></description></item><item><title>Transformer없이 이더넷 구현하기</title><link>https://openmicrolab.com/transformer%EC%97%86%EC%9D%B4-%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 20 Nov 2013 11:14:11 +0000</pubDate><guid>https://openmicrolab.com/transformer%EC%97%86%EC%9D%B4-%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>일반적으로 이더넷 응용에서는 PHY의 출력단에 트랜스포머가 필요하다. 하지만 길이가 짧은 경우나 특별한 응용의 경우 트랜스포머를 사용하지 않고 구현이 가능하다. 이 때는 TX+-, RX+- 신호에 DC 커플링 캐패시터 33nF를 연결을 한다.&lt;/p>
+&lt;p>[wpdm_file id=6]&lt;/p>
+&lt;p>사실 이 내용보다는 IEEE802.3에서 요구하는 PHY signal의 형태가 다른 문서에서는 볼 수 없어서 귀중한 자료…&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/11/Phy_Signal.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2703" alt="Phy_Signal" src="https://openmicrolab.com/images/2013/11/Phy_Signal.png" width="631" height="726" srcset="https://openmicrolab.com/images/2013/11/Phy_Signal.png 631w, https://openmicrolab.com/images/2013/11/Phy_Signal-260x300.png 260w" sizes="(max-width: 631px) 100vw, 631px" />&lt;/a>&lt;/p></description></item><item><title>Gmail의 메일을 확인해 주는 파이썬 스크립트</title><link>https://openmicrolab.com/gmail%EC%9D%98-%EB%A9%94%EC%9D%BC%EC%9D%84-%ED%99%95%EC%9D%B8%ED%95%B4-%EC%A3%BC%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</link><pubDate>Sat, 01 Sep 2012 13:41:39 +0000</pubDate><guid>https://openmicrolab.com/gmail%EC%9D%98-%EB%A9%94%EC%9D%BC%EC%9D%84-%ED%99%95%EC%9D%B8%ED%95%B4-%EC%A3%BC%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</guid><description>
+&lt;p>Gmail 계정에 새로운 메일이 있는지 확인해 주는 파이썬 스크립트이다.&lt;/p>
+&lt;p>Feedpaeser라이브러리가 필요하다. &lt;a href="http://code.google.com/p/feedparser/" target="_blank" class="tx-link">&lt;a href="http://code.google.com/p/feedparser/">http://code.google.com/p/feedparser/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>파이썬에서 시리얼을 쓰러면 Pyserial도 필요하다. &lt;a href="http://pyserial.sourceforge.net/" target="_blank" class="tx-link">&lt;a href="http://pyserial.sourceforge.net/">http://pyserial.sourceforge.net/&lt;/a>&lt;/a>&lt;/p>
+&lt;pre style="margin: 20px; padding: 10px; border: 1px solid rgb(150, 150, 150); font: inherit; vertical-align: baseline; background-color: rgba(240, 240, 240, 0.898438); overflow: auto; color: rgb(50, 50, 50); ">&lt;code style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; font-family: Monaco, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace; ">import serial, sys, feedparser
+#Settings - Change these to match your account details
+USERNAME="username@gmail.com"
+PASSWORD="yourpassword"
+PROTO="https://"
+SERVER="mail.google.com"
+PATH="/gmail/feed/atom"
+SERIALPORT = "/dev/tty.usbserial-FTDK0P3M" # Change this to your serial port!
+# Set up serial port
+try:
+ser = serial.Serial(SERIALPORT, 9600)
+except serial.SerialException:
+sys.exit()
+newmails = int(feedparser.parse(
+PROTO + USERNAME + ":" + PASSWORD + "@" + SERVER + PATH
+)["feed"]["fullcount"])
+# Output data to serial port
+if newmails &amp;gt; 0: ser.write('M')
+else: ser.write('N')
+# Close serial port
+ser.close()&lt;/code>&lt;/pre>
+&lt;p>이 코드를 일정한 시간 간격 주기적으로 실행을 하려면, Mac OS X에서는 Launchd가 필요.&lt;/p></description></item><item><title>Wake on LAN</title><link>https://openmicrolab.com/wake-on-lan/</link><pubDate>Wed, 08 Aug 2012 23:10:50 +0000</pubDate><guid>https://openmicrolab.com/wake-on-lan/</guid><description>
+&lt;p>Wake on LAN은 네트워크 패킷(매직 패킷)으로 컴퓨터를 켜거나, 깨우는 기능을 하는 AMD와 HP에서 만든 표준이다.&lt;/p>
+&lt;p>요즘 PC들은 전원을 꺼도 이더넷 잭에 연결된 LED가 깜박이는 것을 볼 수 있는데, 즉 LAN은 패킷을 받을 수 있는 모드에 있다. &lt;/p>
+&lt;/p>
+&lt;p style="text-align: center; ">
+AMD의 White paper
+&lt;/p>&lt;/p>
+&lt;p style="text-align: center; ">
+&lt;a href="https://openmicrolab.com/images/1/cfile26.uf.1225CD3F5022E8BF13F2F0.pdf" class="aligncenter" filename="20213.pdf" filemime="application/pdf" />cfile26.uf.1225CD3F5022E8BF13F2F0.pdf&lt;/a>
+&lt;/p>
+&lt;p style="text-align: center; ">
+&lt;/p>
+&lt;p>&lt;strong>매직 패킷의 구성&lt;/strong>&lt;/p>
+&lt;p>매직 패킷은 2가 있는데, &lt;strong>ether-wake&lt;/strong>와 &lt;strong>UDP&lt;/strong>상에서 구현하는 패킷이 있다. 대부분의 PC 프로그램이 보내는 패킷은 후자이다.&lt;/p>
+&lt;p>아래 내용은 ether-wake패킷의 구성이다. 출처) &lt;a href="http://wiki.wireshark.org/WakeOnLAN" target="_blank" class="tx-link">&lt;a href="http://wiki.wireshark.org/WakeOnLAN">http://wiki.wireshark.org/WakeOnLAN&lt;/a>&lt;/a>&lt;/p>
+&lt;p>이 사이트에서 관련 패킷 샘플도 다운로드 가능하다.&lt;/p></description></item><item><title>TI의 SimpleLink Wi-Fi CC3000</title><link>https://openmicrolab.com/ti%EC%9D%98-simplelink-wi-fi-cc3000/</link><pubDate>Wed, 25 Jan 2012 05:25:53 +0000</pubDate><guid>https://openmicrolab.com/ti%EC%9D%98-simplelink-wi-fi-cc3000/</guid><description>
+&lt;p>TI가 기존의 &lt;A title="[http://liketheocean.tistory.com/109]로 이동합니다." href="http://liketheocean.tistory.com/109" target=_blank>오픈 소스 무선랜 솔루션&lt;/A>이 외에 새로이 SimpleLink 라는 Wi-Fi 솔루션을 릴리즈 했다. &lt;A title="[http://cdn.eetimes.com/electronics-news/4234866/TI-s-SimpleLink-connects-everyday-objects-with-Wi-Fi-]로 이동합니다." href="http://cdn.eetimes.com/electronics-news/4234866/TI-s-SimpleLink-connects-everyday-objects-with-Wi-Fi-" target=_blank>EETimes 기사&lt;/A>&lt;br>
+이 기사에 따르면 잔디깍기, 그릇 세척기, 알람시스템, 홈시큐리티, 혈압 모니터 등의 가전, 홈네트워크 및 헬스케어 디바이스에 쉽게 Wi-Fi를 추가할 수 있다고 한다. 심지어 우산에 장착해서 기상시스템에 연결해서 비가 올것으로 예상이 되면 LED를 켜는 내용의 소개도 있다.&lt;/p>
+&lt;p>마케팅 매니저인 Kurtz에 의하면&lt;/p>
+&lt;DIV style="BORDER-BOTTOM: #dbe8fb 1px solid; BORDER-LEFT: #dbe8fb 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #dbe8fb; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #dbe8fb 1px solid; BORDER-RIGHT: #dbe8fb 1px solid; PADDING-TOP: 10px" class=txc-textbox>“We realized that it was unreasonable to expect them to start running Linux and change to a high performance applications processor, so knowing the potential of the Internet of Things market, we rolled up our sleeves and rearchitected our existing Wi-Fi solution to make it suitable for any product – regardless of the architecture,” he said, adding that SimpleLink offered customers a “blueprint to connect even the simplest devices to the Internet.”&lt;/DIV>
+&lt;p>기존의 임베디스 Wi-Fi 솔루션을 가지고 있던 업체들과 동일한 얘기이다. 즉 &lt;A title="[http://www.gainspan.com/]로 이동합니다." href="http://www.gainspan.com/" target=_blank>Gainspan&lt;/A>이나 &lt;A title="[http://www.redpinesignals.com/]로 이동합니다." href="http://www.redpinesignals.com/" target=_blank>Redpine Signals&lt;/A>의 솔루션과 바로 경쟁이 될듯하다.&lt;br>
+아래 동영상을 보면 상당히 쉬운 솔루션으로 소개를 하고 있으며, &lt;A title="[http://liketheocean.tistory.com/183]로 이동합니다." href="http://liketheocean.tistory.com/183" target=_blank>IoT(Internet of Things)&lt;/A>의 시대가 바로 얼마남지 않은듯 하다.&lt;/p></description></item><item><title>STM32 Journal</title><link>https://openmicrolab.com/stm32-journal/</link><pubDate>Fri, 16 Dec 2011 07:04:14 +0000</pubDate><guid>https://openmicrolab.com/stm32-journal/</guid><description>
+&lt;p>ST에서 발간하는 STM32 Journal 첫호입니다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.132E684B4EEAEA3B1294E5.PNG" class="aligncenter" width="473" height="351" alt="" filename="stm32 journal.PNG" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile24.uf.190D3B4B4EEAEA973742D8.pdf" class="aligncenter" filename="stm32_journal.pdf" filemime="application/pdf" />cfile24.uf.190D3B4B4EEAEA973742D8.pdf&lt;/a>
+&lt;/P>주로 새로 출시한 STM32 F4에 대한 설명이 있습니다.
+&lt;P style="MARGIN: 0px">
+&lt;br /> Connectivity쪽 자료를 보면 아래 그림과 같은 테이블이 나옵니다.
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+아래 테이블을 보면 MCU에서 초당 처리해야할 패킷의 수가 수치적으로 나와 있습니다. 당연히 한 패킷당 바이트수가 작을 수록 처리해야할 패킷의 수가 많습니다. 100Mbps의 경우는 10Mbps의 경우의 10배이고&amp;#8230;&lt;br /> 그리고 괄호안의 수치는 각 Bandwidth를 만족하기위한 1 패킷을 처리하기 위해 걸리는 시간입니다.&lt;br /> 즉 MCU가 최소한 이정도 성능이 있어야 10M, 100Mbps를 만족한다는 것인데&amp;#8230;&lt;br /> &lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.1418BC4C4EEAEB5621FF04.PNG" class="aligncenter" width="586" height="223" alt="" filename="STM_throughput.PNG" filemime="image/jpeg" />&lt;br /> uC/TCP-IP 스텍을 사용시 zero copy&amp;nbsp;아키텍쳐를 사용하여 dedicated memory에 비해 장점이 있다고 설명을 합니다.&lt;br /> &lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.1318BC4C4EEAEB5620B1A1.PNG" class="aligncenter" width="552" height="399" alt="" filename="STM4_Figure.PNG" filemime="image/jpeg" />
+&lt;/P></description></item><item><title>Internet of Things를 위한 서비스</title><link>https://openmicrolab.com/internet-of-things%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4/</link><pubDate>Mon, 12 Dec 2011 10:12:32 +0000</pubDate><guid>https://openmicrolab.com/internet-of-things%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4/</guid><description>
+&lt;p>기존에 소개한 Pachube말고 IoT를 위한 서비스가 있어서 소개한다.&lt;/p>
+&lt;ul>
+&lt;li>Pachube 관련 이전 포스트(&lt;A title="[http://liketheocean.tistory.com/61]로 이동합니다." href="http://liketheocean.tistory.com/61" target=_blank>센서 데이터를 위한 데이터베이스&lt;/A>, &lt;A title="[http://liketheocean.tistory.com/145]로 이동합니다." href="http://liketheocean.tistory.com/145" target=_blank>Pachube 인수되다&lt;/A>)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>ThingSpeak :&lt;/strong> &lt;a href="https://www.thingspeak.com/">https://www.thingspeak.com/&lt;/a> 아래 iobridge와 관련이 있다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;A title="[https://www.thingspeak.com/]로 이동합니다." href="https://www.thingspeak.com/" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.1644A93C4EE5D2B820234C.PNG" class="aligncenter" width="477" height="151" alt="" filename="thingspeak.PNG" filemime="image/jpeg" />&lt;/A>
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;STRONG>ioBridge&lt;/STRONG> : &lt;A href="http://www.iobridge.com/index.html">http://www.iobridge.com/index.html&lt;/A>&lt;A title="[http://www.iobridge.com/index.html]로 이동합니다." href="http://www.iobridge.com/index.html" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.1844A93C4EE5D2B921EBA0.PNG" class="aligncenter" width="420" height="261" alt="" filename="iobridge.PNG" filemime="image/jpeg" />&lt;/A>&lt;STRONG>Nimbits&lt;/STRONG>:&amp;nbsp;무료서비스 &lt;A href="http://www.nimbits.com/index.html">http://www.nimbits.com/index.html&lt;/A>&lt;br /> &lt;A title="[ http://www.nimbits.com/index.html]로 이동합니다." href="http://www.nimbits.com/index.html" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.1844A93C4EE5D2BB229CAF.PNG" class="aligncenter" width="541" height="110" alt="" filename="nimbit.PNG" filemime="image/jpeg" />&lt;/A>
+&lt;/p></description></item><item><title>Ethernet 시스템 Layout guide</title><link>https://openmicrolab.com/ethernet-%EC%8B%9C%EC%8A%A4%ED%85%9C-layout-guide/</link><pubDate>Wed, 07 Dec 2011 10:04:53 +0000</pubDate><guid>https://openmicrolab.com/ethernet-%EC%8B%9C%EC%8A%A4%ED%85%9C-layout-guide/</guid><description>
+&lt;p>임베디드 시스템에서 Ethernet은 물리적으로 &lt;strong>Ethernet Controller + Magnetic + RJ45&lt;/strong>로 이루어 진다.&lt;br>
+Ethernet Controller는 다시 &lt;strong>Etherent MAC + PHY&lt;/strong>로 구성이 되는데, Ethernet MAC의 경우 최근 MCU에 들어가 있는 경우가 많고 MAC/PHY칩으로 존재하기도 한다.&lt;br>
+Magnetic의 경우 코일이 감겨진 transformer를 얘기하는데 RJ45잭 안에 이 Magnetic이 들어가 있는 경우 흔히 MagJack이라고 불리운다. 사실 MagJack은 &lt;A title="[http://www.belfuse.com/ProdList-MagJack.asp?pPrLinID=3&amp;pPrLin=MagJack%20Connector%20Modules&amp;pCat=ALL&amp;pRCM=Y&amp;pReset=Y&amp;pOrder=BelPartNumber]로 이동합니다." href="http://www.belfuse.com/ProdList-MagJack.asp?pPrLinID=3&amp;pPrLin=MagJack%20Connector%20Modules&amp;pCat=ALL&amp;pRCM=Y&amp;pReset=Y&amp;pOrder=BelPartNumber" target=_blank>BelFuse&lt;/A>사의 trade mark이다. PoE를 지원하는 MagJack의 경우 이전 &lt;A title="[http://liketheocean.tistory.com/166]로 이동합니다." href="http://liketheocean.tistory.com/166" target=_blank>포스트&lt;/A>를 참고.&lt;br>
+임베디드 시스템에서 Ethernet의 하드웨어를 구현시 PCB 레이아웃을 할때는 PHY의 뒷단 부터는 신호의 무결성을 위해 &lt;br>
+신경을 써야 한다. 대부분 PHY칩 업체의 가이드를 따르면 되며, 모든 벤더들의 가이드 역시 대동소이하다.&lt;/p></description></item><item><title>IEEE 1588 PTP (Precision Time Protocol)</title><link>https://openmicrolab.com/ieee-1588-ptp-precision-time-protocol/</link><pubDate>Mon, 05 Dec 2011 11:02:33 +0000</pubDate><guid>https://openmicrolab.com/ieee-1588-ptp-precision-time-protocol/</guid><description>
+&lt;p>장비 내 각각의 부분별로 별도의 정확한 클럭이 존재하지만 ns에서 μs 사이에 발생하는 회로의 변화나 작은 차이도 금방 누적된다. 또한 네트워크 장비에서의 버퍼링등으로 인한 딜레이 및 연결로 인해 레이턴시 지연, 즉 ‘지터(Jitter)’ 또한 발생한다. 하지만 PTP를 추가함으로써 이러한 타이밍에 대한 보상을 함으로써 문제를 해결할 수 있다. 네트워크 구성과 장비에 따라 수십ns~수μs 내로 클럭을 동기화 할 수 있다.&lt;/p>
+&lt;p>이러한 기능이 필요한 한가지 예는 스마트 그리드 시스템이다. 즉 peak-hour 빌링 같은 기능을 위해 정확한 시간정보가 필요하다. PTP의 장점은&lt;br>
+-. 이미 네트워크 기능이 들어가 있는 장비에 PTP 프로토콜을 탑재함으로써 적은 비용으로 이런 기능의 구현이 가능하고,&lt;br>
+-. Multicast(UDP)를 이용해서 작은 bandwidth 만 요구된다.&lt;/p></description></item><item><title>PoE 지원 MagJack</title><link>https://openmicrolab.com/poe-%EC%A7%80%EC%9B%90-magjack/</link><pubDate>Fri, 04 Nov 2011 04:05:12 +0000</pubDate><guid>https://openmicrolab.com/poe-%EC%A7%80%EC%9B%90-magjack/</guid><description>
+&lt;p>Ethernet 응용에서 가장 뒷단에 붙는 RJ-45 잭의 경우 흔히 맥잭(MagJack)이라고 부른다.&lt;br>
+그런데 MagJack은 magnetic(transformer)이 내장된 RJ-45으로 Belpuse사에서 사용하는 이름이다. PoE를 위해서는 PoE를 지원하는 MagJack를 사용해야한다.&lt;br>
+회로에서는 LAN 선의 1,3,5,6 또는 4,5,7,8 번 핀을 통해 전달되는 전원을 분리해야 한다.&lt;br>
+아래 데이터시트는 BelPuse 및 UDE사의 PoE지원 MagJack&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile9.uf.203B56374EB363B7184388.pdf" class="aligncenter" filename="0838-1X1T-W6.pdf" filemime="application/pdf" />cfile9.uf.203B56374EB363B7184388.pdf&lt;/a>
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile29.uf.1643EE374EB363C70A2837.PDF" class="aligncenter" filename="BS-RB10202(0202)RB1-125BHQ1A.PDF" filemime="application/pdf" />cfile29.uf.1643EE374EB363C70A2837.PDF&lt;/a>
+&lt;/P></description></item><item><title>Ethernet 성능 측정</title><link>https://openmicrolab.com/ethernet-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95/</link><pubDate>Thu, 14 Jul 2011 14:48:18 +0000</pubDate><guid>https://openmicrolab.com/ethernet-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95/</guid><description>
+&lt;p>NXP의 LPC1766의 Ethernet 성능을 측정한 자료입니다. 테스트 방법에 따라서 몇가지 변수가 있는데 참고하세요.&lt;br>
+최대 12.19Mbps 정도까지 나오네요.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.2068CF584E1EFD121D1C69.png" class="aligncenter" width="632" height="106" alt="" filename="LPC1766.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.16177D514E1EFDD0168BB3.png" class="aligncenter" width="664" height="217" alt="" filename="test_result.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>**관련 문서&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile29.uf.142D58394E1F017A32E692.pdf" class="aligncenter" filename="Digi-Key_TZM113US_Lighting_Solutions_Magazine_12-14.pdf" filemime="application/pdf" />cfile29.uf.142D58394E1F017A32E692.pdf&lt;/a>
+&lt;/P>**</description></item><item><title>퀄컴 아데로스 AR4100</title><link>https://openmicrolab.com/%ED%80%84%EC%BB%B4-%EC%95%84%EB%8D%B0%EB%A1%9C%EC%8A%A4-ar4100/</link><pubDate>Thu, 30 Jun 2011 09:04:09 +0000</pubDate><guid>https://openmicrolab.com/%ED%80%84%EC%BB%B4-%EC%95%84%EB%8D%B0%EB%A1%9C%EC%8A%A4-ar4100/</guid><description>
+&lt;p>퀄컴이 아데로스를 인수했죠.&lt;br>
+들리는 얘기로는 아데로스의 분위기는 더 좋아졌고, 퀄컴의 connectivity 부분이 아데로스와 합쳐져서 더 켜졌다고 합니다.&lt;/p>
+&lt;p>암튼 AR4100은 11n을 지원하지만 1T1R (SISO)로 low power, low cost, low end를 타겟으로 하고 있습니다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.1658E73C4E0C3B6C044FD7.jpg" class="aligncenter" width="650" height="432" alt="" filename="product_114_file0.jpg" filemime="image/jpeg" />
+&lt;/P>인터페이스도 SPI를 제공해서 low end MCU에서도 사용이 가능하게 되어 있는데, 현재 지원되는 개발 환경은 주로 Freescale솔루션에 적용이 가능합니다.
+&lt;p>**&lt;SPAN style="FONT-SIZE: 10pt">Currently Supported Development Environment&lt;/SPAN>&lt;br>
+** • Freescale Tower Development Platform&lt;br>
+• ColdFire MCF52259 or Kinetis MCU with greater then 128K NVM&lt;br>
+• Freescale MQX™ version 3.6.2&lt;br>
+• Freescale CodeWarrior® tool suite v7.2 for the ColdFire 52259 processor&lt;br>
+• IAR Embedded Workbench® v6.10 for the Kinetis MCUs&lt;/p></description></item><item><title>맥어드레스, Public OUI 찾기</title><link>https://openmicrolab.com/%EB%A7%A5%EC%96%B4%EB%93%9C%EB%A0%88%EC%8A%A4-public-oui-%EC%B0%BE%EA%B8%B0/</link><pubDate>Fri, 10 Jun 2011 09:16:37 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5%EC%96%B4%EB%93%9C%EB%A0%88%EC%8A%A4-public-oui-%EC%B0%BE%EA%B8%B0/</guid><description>
+&lt;p>회사에서 할당 받은 맥어드레스(Public OUI)를 찾거나, 맥어드레스로 이게 어느 회사에서 할당 받았는지 확인 하는 방법은 IEEE 홈페이지에서 확인이 가능하다.&lt;br>
+&lt;a href="https://standards.ieee.org/develop/regauth/oui/public.html">https://standards.ieee.org/develop/regauth/oui/public.html&lt;/a>&lt;/p>
+&lt;p>등록시 사용한 영문 회사 이름을 넣으면 해당하는 Public OUI(맥어드레스 상위 3바이트)를 찾아주고, 맥어드레스의 상위 3바이트를 입력하면 회사명을 알 수 있다.&lt;/p>
+&lt;p>참고로 맥어드레스 할당은 지난 포스팅 참고.. &lt;A title="[http://liketheocean.tistory.com/105]로 이동합니다." href="http://liketheocean.tistory.com/105" target=_blank>MAC address 할당 받기&lt;/A>&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile24.uf.113D8D4C4DF1E00811AF43.jpg" class="aligncenter" width="683" height="533" alt="" filename="IEEE_2.jpg" filemime="image/jpeg" />
+&lt;/P></description></item><item><title>Well Known Ports</title><link>https://openmicrolab.com/well-known-ports/</link><pubDate>Mon, 23 May 2011 06:57:23 +0000</pubDate><guid>https://openmicrolab.com/well-known-ports/</guid><description>
+&lt;p>**Well Known Port: 0&lt;del>1023&lt;br>
+Registered Port: 1024&lt;/del>49151&lt;br>
+Dynamic and/or Private Port : 49152~65535&lt;/p>&lt;/p>
+&lt;p>&lt;/STRONG>IANA(Internet Assigned Numbers Authority)에서 관리하는데, 전체 할당된 port number를 확인하려면 다음 링크를 확인&lt;br>
+&lt;a href="http://www.iana.org/assignments/port-numbers">http://www.iana.org/assignments/port-numbers&lt;/a>&lt;/p>
+&lt;p>그리고 Registered Port에 등록을 하려면 아래 주소에서 신청을 하면 되는데, IANA에서 심사후 등록여부를 결정합니다. &lt;a href="http://www.iana.org/cgi-bin/usr-port-number.pl">http://www.iana.org/cgi-bin/usr-port-number.pl&lt;/a>&lt;/p></description></item><item><title>TI 오픈 소스 무선랜 솔루션</title><link>https://openmicrolab.com/ti-%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%EB%AC%B4%EC%84%A0%EB%9E%9C-%EC%86%94%EB%A3%A8%EC%85%98/</link><pubDate>Thu, 28 Apr 2011 04:46:42 +0000</pubDate><guid>https://openmicrolab.com/ti-%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%EB%AC%B4%EC%84%A0%EB%9E%9C-%EC%86%94%EB%A3%A8%EC%85%98/</guid><description>
+&lt;H1 style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.2em; MARGIN: 0px auto; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 1.6em; PADDING-TOP: 0px" class=title>&lt;SPAN style="FONT-SIZE: 11pt">&lt;A title="[http://www.openlink.org/news/ti-introduces-openlink%E2%84%A2-open-source-wireless-connectivity-solutions-low-power-applications]로 이동합니다." href="http://www.openlink.org/news/ti-introduces-openlink%E2%84%A2-open-source-wireless-connectivity-solutions-low-power-applications" target=_blank>&lt;SPAN style="FONT-SIZE: 10pt">TI introduces OpenLink™, open source wireless connectivity solutions for low power applications&lt;/SPAN>&lt;/A>&lt;br /> &lt;/H1>&lt;/SPAN>TI가 모바일용, 배터리 최적화된 WiFi 솔루션을 &lt;A title="[http://www.openlink.org]로 이동합니다." href="http://www.openlink.org/" target=_blank>OpenLink&lt;/A>라는 오픈 소스 리눅스 커뮤니티를 통해 발표했습니다.
+&lt;p>&lt;strong>칩셋&lt;/strong>&lt;br>
+해당되는 칩셋을 찾아보니, Wi-Fi, Bluetooth, FM 콤보칩으로 TI에서는 WiLink 6.0 Solution 이라고 부릅니다.&lt;br>
+WL1271(802.11 b/g/n) , WL1273 (802.11 a/b/g/n) 2가지 종류의 칩이 있군요.&lt;/p></description></item><item><title>MAC address 할당 받기</title><link>https://openmicrolab.com/mac-address-%ED%95%A0%EB%8B%B9-%EB%B0%9B%EA%B8%B0/</link><pubDate>Tue, 26 Apr 2011 07:00:36 +0000</pubDate><guid>https://openmicrolab.com/mac-address-%ED%95%A0%EB%8B%B9-%EB%B0%9B%EA%B8%B0/</guid><description>
+&lt;p>근거리통신망에서 MAC 주소는 데이터 링크 계층의 MAC 계층에 의해 사용되는 주소로서 네트웍 카드의 48 비트 하드웨어 주소를 말하며, 이더넷 주소, 또는 토큰링 주소와 동일하다.&lt;/p>
+&lt;p>네트웍 카드 제조사에 의해 부여된 하드웨어 주소는 UAA (universally administered address)로서 모든 네트웍 카드가 유일한 값을 가진다. 그러나 UAA는 관리 목적상 변경이 가능한 데, 이러한 MAC 주소를 LAA (locally administered address)라 한다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile24.uf.1631A3564DB66D84247E3D.jpg" class="aligncenter" width="439" height="356" alt="" filename="MAC_address.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>모든 네트워크 장비가 고유의 값을 가져야 하며 일반적으로 제품 생산시에 제조 업체에서 할당된다.&lt;br>
+MAC 주소를 할당을 받기 위해서는 IEEE에 신청을 해서 할당을 받는데, 관련 URL은 다음과 같다. &lt;a href="https://standards.ieee.org/regauth-bin/application?rt=OUI">https://standards.ieee.org/regauth-bin/application?rt=OUI&lt;/a>&lt;br>
+FAQ는 다음을 참고. &lt;a href="http://standards.ieee.org/regauth/faqs.html#q1">http://standards.ieee.org/regauth/faqs.html#q1&lt;/a>&lt;/p></description></item><item><title>Wi-Fi Provisioning</title><link>https://openmicrolab.com/wi-fi-provisioning/</link><pubDate>Fri, 28 Jan 2011 05:01:12 +0000</pubDate><guid>https://openmicrolab.com/wi-fi-provisioning/</guid><description>
+&lt;p>&lt;FONT color=#000000>Provisioning의 의미는 위키피디어에 정의되어 있는 내용을 살펴보면 다음과 같다.&lt;/p>
+&lt;p>In telecommunication, provisioning is the process of preparing and equipping a network to allow it to provide (new) services to its users. In NS/EP telecommunications services, “provisioning” equates to “initiation” and includes altering the state of an existing priority service or capability.&lt;/p>
+&lt;p>핵심적인 얘기는 the process of preparing and equipping a network…&lt;/p>
+&lt;p>즉 통신(네트워크)에서 사용자에게 네트워킹을 가능하게 해주는 절차 및 방법 이라고 이해하면 될 듯…&lt;/p></description></item><item><title>‘차세대인터넷주소(IPv6) 실전적용서’ 발간</title><link>https://openmicrolab.com/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%9D%B8%ED%84%B0%EB%84%B7%EC%A3%BC%EC%86%8Cipv6-%EC%8B%A4%EC%A0%84%EC%A0%81%EC%9A%A9%EC%84%9C-%EB%B0%9C%EA%B0%84/</link><pubDate>Wed, 26 Jan 2011 11:11:24 +0000</pubDate><guid>https://openmicrolab.com/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%9D%B8%ED%84%B0%EB%84%B7%EC%A3%BC%EC%86%8Cipv6-%EC%8B%A4%EC%A0%84%EC%A0%81%EC%9A%A9%EC%84%9C-%EB%B0%9C%EA%B0%84/</guid><description>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">방송통신위원회(위원장 최시중)는 지난해 마련한「IPv6 전환 추진 계획(’10. 9.15)」에 따라 현 IPv4 인터넷주소체계에서 차세대 체계인 IPv6로 전환시 현장에서 바로 활용할 수 있는「차세대인터넷주소 (IPv6) 실전적용서」를 발간했다.&lt;/SPAN>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">방통위는 IPv4의 할당 *종료시점이 금명간 도래하기 때문에 금년부터 본격적인 “IPv6 전환 실행단계”로 돌입한다고 밝히고, 이 실전적용서는 정부가 2001년부터 민•학•연과 추진해왔던 기술개발, 시범사업 등을 모두 종합한 것으로써 실제 전환 작업현장에서 시행착오를 최소화해 주는 가이드 역할을 하게 될 것이라고 밝혔다.&lt;/p>&lt;/p>
+&lt;p>
+&lt;a href="https://openmicrolab.com/images/1/cfile21.uf.117DB5564D4001200F4C6D.pdf" class="aligncenter" filename="차세대인터넷주소(IPv6)실전적용서발간자료.pdf" filemime="application/pdf" />cfile21.uf.117DB5564D4001200F4C6D.pdf&lt;/a>&lt;/SPAN>&lt;br /> &lt;a href="https://openmicrolab.com/images/1/cfile10.uf.1470D6564D400130232D59.pdf" class="aligncenter" filename="차세대인터넷주소(IPv6)실전적용서주요내용.pdf" filemime="application/pdf" />cfile10.uf.1470D6564D400130232D59.pdf&lt;/a>
+&lt;/p></description></item><item><title>와이파이 혼신 최소화 가이드라인</title><link>https://openmicrolab.com/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%ED%98%BC%EC%8B%A0-%EC%B5%9C%EC%86%8C%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/</link><pubDate>Tue, 25 Jan 2011 10:51:44 +0000</pubDate><guid>https://openmicrolab.com/%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%ED%98%BC%EC%8B%A0-%EC%B5%9C%EC%86%8C%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/</guid><description>
+&lt;!--StartFragment-->
+&lt;P style="TEXT-ALIGN: center" class=바탕글>&lt;SPAN style="FONT-FAMILY: HY헤드라인M; FONT-SIZE: 20pt; mso-hansi-font-family: HY헤드라인M; mso-ascii-font-family: HY헤드라인M">&lt;SPAN style="FONT-SIZE: 11pt">&lt;SPAN style="FONT-SIZE: 12pt">&lt;SPAN style="FONT-SIZE: 10pt">방통위에서 배포한&amp;nbsp;&lt;/SPAN>&lt;SPAN style="FONT-SIZE: 10pt">와이파이 혼신 최소화 가이드라인입니다. &lt;br /> &lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: HY헤드라인M; FONT-SIZE: 20pt; mso-hansi-font-family: HY헤드라인M; mso-ascii-font-family: HY헤드라인M">&lt;SPAN style="FONT-SIZE: 11pt">&lt;SPAN style="FONT-SIZE: 12pt">&lt;SPAN style="FONT-SIZE: 10pt">&lt;br /> &lt;a href="https://openmicrolab.com/images/1/cfile7.uf.1336CF454D3EAB19275D41.hwp" class="aligncenter" filename="와이파이혼신최소화가이드라인자료(1.18).hwp" filemime="" />cfile7.uf.1336CF454D3EAB19275D41.hwp&lt;/a>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.16416E454D3EAA31105405.jpg" class="aligncenter" width="545" height="278" alt="" filename="bandwidth.jpg" filemime="image/jpeg" />
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-SIZE: 11pt">【 2.4㎓ 와이파이 채널 설명 】&lt;br /> &amp;nbsp; ○ 와이파이 채널은 5MHz 단위 13개 채널로 구성&lt;br /> &amp;nbsp; ○ 혼신을 최소화 하기 위해 채널 간섭이 적은 채널(1, 5, 9, 13) 사용 권장&lt;br /> &amp;nbsp;&amp;nbsp; &amp;#8211; 인접 채널 사용 시 채널간섭으로 인한 AP간 혼신유발&lt;br /> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2 번 채널 사용시 : 인접한 1, 5번 채널간섭&lt;br /> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;7 번 채널 사용시 : 인접한 5, 9번 채널간섭&lt;br /> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2 번 채널 사용시 : 인접한 9, 13번 채널 간섭&lt;/p></description></item><item><title>모니터링을 위한 무선 센서 시스템</title><link>https://openmicrolab.com/%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%84-%EC%9C%84%ED%95%9C-%EB%AC%B4%EC%84%A0-%EC%84%BC%EC%84%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C/</link><pubDate>Thu, 09 Dec 2010 07:21:42 +0000</pubDate><guid>https://openmicrolab.com/%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%84-%EC%9C%84%ED%95%9C-%EB%AC%B4%EC%84%A0-%EC%84%BC%EC%84%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: left; FONT-FAMILY: Arial; COLOR: rgb(82,82,82); FONT-SIZE: 16px" class=Apple-style-span>&lt;/p>
+&lt;H1 style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: rgb(181,10,26); FONT-SIZE: 26px; FONT-WEIGHT: normal; PADDING-TOP: 0px">
+&lt;SPAN style="FONT-SIZE: 12pt">출처 : &lt;A title="[http://www.sensorsmag.com/networking-communications/wireless/designing-a-wireless-sensor-system-storage-monitoring-7511]로 이동합니다." href="http://www.sensorsmag.com/networking-communications/wireless/designing-a-wireless-sensor-system-storage-monitoring-7511" target=_blank>Designing a Wireless Sensor System for Storage Monitoring&lt;/A>&lt;/SPAN>
+&lt;/H1>&lt;/SPAN>&lt;/SPAN>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile27.uf.112A411F4D00831711E17D.jpg" class="aligncenter" width="680" height="350" alt="" filename="Redpine.jpg" filemime="image/jpeg" />
+-. 창고 및 냉장 시스템의&amp;nbsp;온도, 습도, 문 개폐를 감지 및 모니터링
+-. Redpine Signals 의 802.11n모듈을 사용
+-. 온, 습도를 위한 센서는&amp;nbsp;Sensirion의 SHT75를 사용 (I2C 인터페이스)&amp;nbsp;
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.204E6C214D0082A935BD9F.jpg" class="aligncenter" width="268" height="163" alt="" filename="sht75.jpg" filemime="image/jpeg" />
+&lt;p>&lt;a href="https://openmicrolab.com/images/1/cfile6.uf.111F3B224D00825E229292.pdf" class="aligncenter" filename="Datasheet-humidity-sensor-SHT7x.pdf" filemime="application/pdf" /> cfile6.uf.111F3B224D00825E229292.pdf&lt;/a>&lt;br>
+-. 문개폐의 감지는 I/O를 이용&lt;br>
+-.Zigbee나 Bluetooth에 비해 Wi-Fi 솔루션이 좋은 이유는 이미 네트워크 인프라가 깔려 있기 때문&lt;br>
+-. 전력소모면에서 TCP 보다는 UDP 가 유리, 왜냐면 TCP의 경우 접속을 해야 하므로 ON 되는 시간이 길다.&lt;/p></description></item><item><title>Wireshark Display Filter</title><link>https://openmicrolab.com/wireshark-display-filter/</link><pubDate>Mon, 04 Oct 2010 04:18:51 +0000</pubDate><guid>https://openmicrolab.com/wireshark-display-filter/</guid><description>
+&lt;div>
+&lt;span style="font-size: 11pt; ">와이어샤크로 패킷 분석시 필요한 패킷만 필터링을 해주는&amp;nbsp;Display Filter에 대해 정리한 문서입니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">인터넷상에서 누군가는 고맙게도 이런 것을 정리해 주었네요. ^^&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile8.uf.19557F374CA9555B729F47.jpg" class="aligncenter" width="640" height="823" alt="" filename="Wireshark_filter.jpg" filemime="image/jpeg" />&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;a href="https://openmicrolab.com/images/1/cfile6.uf.1231A2344CA954F10251BF.pdf" class="aligncenter" filename="Wireshark_Display_Filters.pdf" filemime="application/pdf" />cfile6.uf.1231A2344CA954F10251BF.pdf&lt;/a>
+&lt;/div>
+&lt;div style="text-align: center;">
+&lt;span style="font-size: 11pt; ">출처 :&amp;nbsp;&lt;/span>&lt;a href="http://packetlife.net/library/cheat-sheets/">&lt;span style="font-size: 11pt; ">http://packetlife.net/library/cheat-sheets/&lt;/span>&lt;/a>
+&lt;/div>
+&lt;div id="__KO_DIC_LAYER__" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: fixed; z-index: 1e+009; overflow-x: hidden; overflow-y: hidden; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 51, 119); border-right-color: rgb(51, 51, 119); border-bottom-color: rgb(51, 51, 119); border-left-color: rgb(51, 51, 119); display: none; ">
+&lt;/div></description></item><item><title>Wireshark Header Checksum Error</title><link>https://openmicrolab.com/wireshark-header-checksum-error/</link><pubDate>Mon, 04 Oct 2010 04:07:46 +0000</pubDate><guid>https://openmicrolab.com/wireshark-header-checksum-error/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 11pt; ">﻿&lt;/span>와이어샤크를 사용해서 패킷을 잡다보면 패킷에 “&lt;b>Header Checksum Error&lt;/b>“라고 표시가 되어 있는 것을 볼 수 있다. 그리고 친절하게도 어떤값이 되어야 한다고 알려주기까지 한다.&lt;/span>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.2072920F4CA951186C030E.jpg" class="aligncenter" width="460" height="83" alt="" filename="ChecksumError.jpg" filemime="image/jpeg" />&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">체크섬이라는 것은 일반적으로 통신중에 데이터가 깨질수 도있기 때문에&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">삽입을 해서 데이터가 깨졌는지 여부를 확인을 한다.&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;pre>&lt;code>&amp;lt;div&amp;gt;
+&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;font-size: 10pt; &amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;IP 헤더의 경우를 보면 2 바이트로&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;구성되어 있고, 네트워크를 이동하는 각 홉에서(예를 들면, 라우터 통과시) 체크섬을 검증한다.&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;그리고&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;체크섬이 올바르지 않으면 네트워크 장비는 해당 패킷을 버리며,&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;체크섬은 재 계산되고 업데이트를 하게된다.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">그럼 어떻게 헤더체크섬이 틀린 패킷을 보내고 받을 수 있지??&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">원인은 여러가지가 있을 수 있는데 &lt;b>UDP의 경우는&amp;nbsp;&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>체크섬 값이 제로로 채워져 있는 경우는 보내는 측 쪽에서 계산되지 않는 경우라 정의하고 있다. (&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>RFC 768)&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&amp;nbsp;&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>그리고&amp;nbsp;&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>네트워크 장비나 기타 원인에 의해 헤더 체크섬 값이 계산되지 않았거나&amp;nbsp;&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>또는 의도적으로 빠지는 경우도 있다.&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;/p></description></item><item><title>Wi-Fi 모듈</title><link>https://openmicrolab.com/wi-fi-%EB%AA%A8%EB%93%88/</link><pubDate>Wed, 29 Sep 2010 03:48:37 +0000</pubDate><guid>https://openmicrolab.com/wi-fi-%EB%AA%A8%EB%93%88/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">Gainspan(&lt;span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: dotum, arial, sans-serif; font-size: 12px; line-height: 19px; ">&lt;a href="http://www.google.co.kr/url?q=http://www.gainspan.com&amp;sa=X&amp;ei=LqaiTMxZjcK9A4CjhIsE&amp;ved=0CC8Q7QgoATAA&amp;usg=AFQjCNEorFkDZVIMQxTKtI7RG-lvCP6hsw" target="_blank" class="fl" style="font-size: 12px; color: green !important; cursor: pointer; text-decoration: none; ">&lt;span style="font-size: 11pt; ">&lt;a href="https://www.gainspan.com">www.gainspan.com&lt;/a>&lt;/span>&lt;/a>&lt;/span>)에서 Wi-Fi 모듈을 출시했습니다. &lt;/span>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">기존에 무선랜 모듈 개발업체들에게 칩을 공급해서 해당 제품을 홈페이지에 소개를 하더니, 자체 모듈을 출시했네요. 어쩌면 이들 업체와 경쟁을 하는게 아닌가 하는 느낌도 있습니다.&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">지금도 4개 업체의 제품의 소개 페이지가 있습니다.&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px; ">&lt;span class="Apple-style-span" style="line-height: 18px; font-size: 12px; ">&lt;a href="http://www.gainspan.com/products/partner_modules.php">&lt;span style="font-size: 11pt; ">http://www.gainspan.com/products/partner_modules.php&lt;/span>&lt;/a>&lt;/span>&amp;nbsp;&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 27px; font-size: large; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile28.uf.162231054CA2A7AE19D5D6.jpg" class="aligncenter" width="680" height="945" alt="" filename="partner module.jpg" filemime="image/jpeg" />&lt;/span>
+&lt;/div>
+&lt;div style="text-align: auto;">
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div style="text-align: auto;">
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">다음 그림의 블럭 다이아그램처럼 Serial과 SPI&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">인터페이스를 통해서 모듈을 설정 및 제어합니다. 즉 간단하게 기존 시스템에 Wi-Fi기능을 추가할 수 있습니다.&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;div style="text-align: auto;">
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div style="text-align: auto;">
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile3.uf.1952A0194CA2B599214883.gif" class="aligncenter" width="400" height="163" alt="" filename="GS1011M_embedded_design.gif" filemime="image/jpeg" />&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px; ">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px; ">자체 모듈의 출시로 사용자의 확대를 노리고 있는 것 같은데 과연 이 전략이 성공할 지는 두고볼 일입니다. 그리고 GS1011칩셋을 가지고 무선랜 모듈을 만드는 회사는 최소한 Gainspan 보다는 싸게 만들어야 판매가 가능하겠네요. 현재 온라인에서 5개에 125불에 판매되고 있습니다.&amp;nbsp;&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile27.uf.120FC31A4CA2B677102F40.jpg" class="aligncenter" width="668" height="397" alt="" filename="GainSpan module2.jpg" filemime="image/jpeg" />&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div style="text-align: center;">
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px; ">&lt;a href="http://www.gainspan.com/store/s_modules.php">http://www.gainspan.com/store/s_modules.php&lt;/a>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;br /> &lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px; ">어찌됐던 개발자 입장에서는 좀 더 쉽게 무선랜 응용 개발이 가능할 것 같습니다.&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px; ">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;div>
+&lt;div>
+&lt;div id="__KO_DIC_LAYER__" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: fixed; z-index: 1e+009; overflow-x: hidden; overflow-y: hidden; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 51, 119); border-right-color: rgb(51, 51, 119); border-bottom-color: rgb(51, 51, 119); border-left-color: rgb(51, 51, 119); display: none; ">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Unix time converter</title><link>https://openmicrolab.com/unix-time-converter/</link><pubDate>Wed, 14 Jul 2010 10:14:13 +0000</pubDate><guid>https://openmicrolab.com/unix-time-converter/</guid><description>
+&lt;p>“년,월,일,시,분,초” 가 주어졌을때 이를 Unix 시간으로 바꿔줄 경우가 있는데, 실제로 이런 요구는 프로그래밍시 자주 발생한다. 자신이 작성한 코드가 맞는지 확인을 하려면 다음과 같은 사이트가 유용하다.&lt;br>
+인터넷상에서 Unix time을 변환해 주는 사이트 &lt;a title="[http://unixtime-converter.com/]로 이동합니다." target="_blank" href="http://unixtime-converter.com/">&lt;a href="http://unixtime-converter.com/">http://unixtime-converter.com/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>Unix  time에 관한 정보는 Wiki 페이지를 참조.. &lt;a title="[http://en.wikipedia.org/wiki/Unix_time]로 이동합니다." target="_blank" href="http://en.wikipedia.org/wiki/Unix_time">&lt;a href="http://en.wikipedia.org/wiki/Unix_time">http://en.wikipedia.org/wiki/Unix_time&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

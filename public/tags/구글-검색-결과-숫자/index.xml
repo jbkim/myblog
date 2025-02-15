@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>구글 검색 결과 숫자 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EA%B5%AC%EA%B8%80-%EA%B2%80%EC%83%89-%EA%B2%B0%EA%B3%BC-%EC%88%AB%EC%9E%90/</link><description>Recent content in 구글 검색 결과 숫자 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 05 Feb 2014 07:03:00 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EA%B5%AC%EA%B8%80-%EA%B2%80%EC%83%89-%EA%B2%B0%EA%B3%BC-%EC%88%AB%EC%9E%90/index.xml" rel="self" type="application/rss+xml"/><item><title>구글 검색 결과 숫자는 믿을 만한가?</title><link>https://openmicrolab.com/%EA%B5%AC%EA%B8%80-%EA%B2%80%EC%83%89-%EA%B2%B0%EA%B3%BC-%EC%88%AB%EC%9E%90%EB%8A%94-%EB%AF%BF%EC%9D%84-%EB%A7%8C%ED%95%9C%EA%B0%80/</link><pubDate>Wed, 05 Feb 2014 07:03:00 +0000</pubDate><guid>https://openmicrolab.com/%EA%B5%AC%EA%B8%80-%EA%B2%80%EC%83%89-%EA%B2%B0%EA%B3%BC-%EC%88%AB%EC%9E%90%EB%8A%94-%EB%AF%BF%EC%9D%84-%EB%A7%8C%ED%95%9C%EA%B0%80/</guid><description>
+&lt;p>구글 검색을 하다보면 내가 검색한 검색어의 결과 숫자 및 시간이 다음과 같이 나온다.&lt;/p>
+&lt;blockquote>
+&lt;p>검색결과 약 565,000개 (0.28초)&lt;/p>&lt;/blockquote>
+&lt;p>그리고 한 페이지당 10개씩 결과가 나오며 아래 그림과 같은 페이지가 표시된다.&lt;/p>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/02/google_search.png">&lt;img loading="lazy" class="size-full wp-image-2807 aligncenter" alt="google_search" src="https://openmicrolab.com/images/2014/02/google_search.png" width="324" height="75" srcset="https://openmicrolab.com/images/2014/02/google_search.png 324w, https://openmicrolab.com/images/2014/02/google_search-300x69.png 300w" sizes="(max-width: 324px) 100vw, 324px" />&lt;/a>
+&lt;/p>
+&lt;p style="text-align: left;">
+검색 결과가 약 565,000이니 56,500개의 페이지가 나와야 한다. 하지만 페이지를 클릭해서 계속 가다보면 다음과 같은 메세지를 만난다.
+&lt;/p>
+&lt;blockquote>
+&lt;p style="text-align: left;">
+&lt;i>관련성이 가장 높은 결과를 표시하기 위해 이미 표시된 226개와 매우 유사한 일부 항목을 생략했습니다.&lt;br /> 원하시면 &lt;a href="https://www.google.com/search?q=%EA%B5%AC%EA%B8%80+%EA%B2%80%EC%83%89+%EA%B2%B0%EA%B3%BC+%EC%88%AB%EC%9E%90&amp;newwindow=1&amp;safe=off&amp;espv=210&amp;es_sm=119&amp;biw=1440&amp;bih=735&amp;filter=0">생략된 결과를 포함하여 다시 검색&lt;/a>하실 수 있습니다.&lt;/i>
+&lt;/p></description></item></channel></rss>

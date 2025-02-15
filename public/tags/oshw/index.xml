@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OSHW on OpenMicroLab</title><link>https://openmicrolab.com/tags/oshw/</link><description>Recent content in OSHW on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 22 Jul 2021 01:28:52 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/oshw/index.xml" rel="self" type="application/rss+xml"/><item><title>OSHW 현황 2021</title><link>https://openmicrolab.com/oshw-%ED%98%84%ED%99%A9-2021/</link><pubDate>Thu, 22 Jul 2021 01:28:52 +0000</pubDate><guid>https://openmicrolab.com/oshw-%ED%98%84%ED%99%A9-2021/</guid><description>
+&lt;p>미국의 OSHW협회에서 발간한 &lt;strong>THE STATE OF OPEN SOURCE HARDWARE 2021&lt;/strong>. – &lt;a href="https://stateofoshw.oshwa.org/" target="_blank" rel="noopener">&lt;a href="https://stateofoshw.oshwa.org/">https://stateofoshw.oshwa.org/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2021/07/map-1024x572-1.png">&lt;img loading="lazy" class="aligncenter wp-image-4759 size-full" src="https://openmicrolab.com/images/2021/07/map-1024x572-1.png" alt="" width="1024" height="572" srcset="https://openmicrolab.com/images/2021/07/map-1024x572-1.png 1024w, https://openmicrolab.com/images/2021/07/map-1024x572-1-300x168.png 300w, https://openmicrolab.com/images/2021/07/map-1024x572-1-768x429.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>OSHW가 여러 분야의 프로젝트에 사용&lt;/li>
+&lt;li>인증은 2020년에 큰 폭으로 성장&lt;/li>
+&lt;li>국가별 그래프: 미국이 주도하고 있고,  &lt;a href="https://certification.oshwa.org/kr000001.html" target="_blank" rel="noopener">한국&lt;/a>의 경우 내가 2019년에 진행한 3D 프린터가 유일함.&lt;/li>
+&lt;li>Adafruit과 Sparkfun이 주도&lt;/li>
+&lt;li>처음 설립을 주도한 사람들이 여성이라서 그런지, 써밋의 스피커에 대한 표(Women, Non-White)도 이쪽의 분위기를 알 수 있다.&lt;/li>
+&lt;/ul></description></item><item><title>오픈소스하드웨어 인증 프로그램 – OSHW Certification Program</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%9D%B8%EC%A6%9D-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-oshw-certification-program/</link><pubDate>Mon, 10 Oct 2016 09:31:29 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%9D%B8%EC%A6%9D-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-oshw-certification-program/</guid><description>
+&lt;p>&lt;a href="http://www.oshwa.org/" target="_blank">오픈소스하드웨어협회&lt;/a>에서 2015년 부터 작업한 오픈소스하드웨어 인증 프로그램을 개시했다. 이 인증은 &lt;a href="http://www.oshwa.org/definition/korean/" target="_blank">오픈소스하드웨어 정의&lt;/a>를 따른 다면 받을 수 있는 인증이고, 인증을 받은 이후에 여기서 벗어난다면 패널티가 있다.&lt;/p>
+&lt;img loading="lazy" class="wp-image-3772 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1476091774/OSHWAcert_byp4td.png" width="448" height="356" />
+&lt;li style="text-align: left;">
+인증 관련 사이트: &lt;a href="http://certificate.oshwa.org/" target="_blank">http://certificate.oshwa.org/&lt;/a>
+&lt;/li>
+&lt;li style="text-align: left;">
+인증 로고: &lt;a href="https://github.com/oshwa/certification-mark" target="_blank">https://github.com/oshwa/certification-mark&lt;/a>
+&lt;/li>
+&lt;p style="text-align: left;">
+관련 자료 &amp;#8211; &lt;a href="http://www.oshwa.org/2016/10/07/announcing-the-oshwa-open-source-hardware-certification-program/" target="_blank">http://www.oshwa.org/2016/10/07/announcing-the-oshwa-open-source-hardware-certification-program/&lt;/a>
+&lt;/p></description></item><item><title>OSHW Certification – 오픈소스하드웨어 인증</title><link>https://openmicrolab.com/oshw-certification-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%9D%B8%EC%A6%9D/</link><pubDate>Fri, 02 Oct 2015 08:56:43 +0000</pubDate><guid>https://openmicrolab.com/oshw-certification-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%9D%B8%EC%A6%9D/</guid><description>
+&lt;p>지난 9월 19일 &lt;a href="http://2015.oshwa.org/about/" target="_blank">2015 OSHW 서밋&lt;/a>이 필라델피아에서 열렸다.  &lt;a href="http://ustre.am/1riMc" target="_blank">서밋의 Ustream&lt;/a>&lt;/p>
+&lt;h3 id="oshw-certification-8211-오픈소스하드웨어-인증">OSHW Certification – 오픈소스하드웨어 인증&lt;/h3>
+&lt;p>이미 &lt;a href="http://www.oshwa.org/definition/korean/" target="_blank">OSHW 의 정의&lt;/a>는 릴리즈가 되어 있지만 이 서밋에서는 OSHW Certification즉 오픈소스하드웨어 인증관련해서 버전 1.0일 릴리즈 됐다. OSHW 로고가 생기고 OSHW가 Selling Point가 된 지금 시장에서는 실제로 OSHW가 아닌 제품들이 이 로고를 사용함으로써 사용자에게 혼란을 주는 경우가 있다고 하는데, 이런 이슈들을 해결하기 위해 인증제도가 도입이 되는 것 같다.&lt;/p>
+&lt;p>이 제도의 목표는 다음과 같다.&lt;/p>
+&lt;blockquote>
+&lt;p>Make it easier for the public to identify open source hardware.&lt;br>
+Expand the reach of open hardware by making it easier for newer members to join the open source hardware community.&lt;/p></description></item><item><title>OSHWA를 중심으로 하는 OSHW의 이해</title><link>https://openmicrolab.com/oshwa%EB%A5%BC-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%ED%95%98%EB%8A%94-oshw%EC%9D%98-%EC%9D%B4%ED%95%B4/</link><pubDate>Sat, 09 May 2015 17:22:56 +0000</pubDate><guid>https://openmicrolab.com/oshwa%EB%A5%BC-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%ED%95%98%EB%8A%94-oshw%EC%9D%98-%EC%9D%B4%ED%95%B4/</guid><description>
+&lt;p>개방형컴퓨터통신연구회(OSIA)에 기고한 글입니다.&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="OSHWA를 중심으로 하는 OSHW의 이해" href="//www.slideshare.net/JinbuhmKim/oshwa-oshw" target="_blank">OSHWA를 중심으로 하는 OSHW의 이해&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="//www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>Arduino Yún 뒷 이야기</title><link>https://openmicrolab.com/arduino-yun-%EB%92%B7-%EC%9D%B4%EC%95%BC%EA%B8%B0/</link><pubDate>Thu, 26 Feb 2015 02:19:36 +0000</pubDate><guid>https://openmicrolab.com/arduino-yun-%EB%92%B7-%EC%9D%B4%EC%95%BC%EA%B8%B0/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://arduino.cc/en/uploads/Main/ArduinoYunFront_2.jpg" alt="Arduino Yun" width="1600" height="1067" />
+&lt;p>&lt;a href="http://arduino.cc/en/Main/ArduinoBoardYun" target="_blank">Arduino YUN&lt;/a>은 Artheros의 AR9331칩셋을 사용하는 모듈을 이용해서 만든 무선랜 보드이다. 물론 이 모듈에는 리눅스가 돌아간다. 전통적으로 무선랜 칩셋업체들은 무선랜 장비를 개발할 만한 업체에게 선별적으로 자신들의 무선랜 레퍼런스 보드의 회로도나 관련 자료들을 NDA를 맺고 공개한다. 이것은 자료를 완전히 오픈했을때 기술지원이 감당이 되지 않아서 이기도 하다. Arduino Yun은 &lt;a href="http://www.doghunter.org/?portfolio=arduino-yun" target="_blank">dog hunter&lt;/a>라는 업체로 부터 공급을 받아서 제품화한 것인데 모듈 내부의 회로도는 공개가 되지 않고 인터페이스만 공개가 되어 있다.   &lt;a href="http://arduino.cc/en/uploads/Main/arduino-Yun-schematic.pdf" target="_blank">&lt;a href="http://arduino.cc/en/uploads/Main/arduino-Yun-schematic.pdf">http://arduino.cc/en/uploads/Main/arduino-Yun-schematic.pdf&lt;/a>&lt;/a>&lt;/p>
+&lt;p>Arduino 또는 dog hunter에서 Artheros랑 NDA를 맺고 모든 자료를 받았을 것인데, 오픈할 수 없는 상황이다. 하지만 &lt;a href="http://forum.arduino.cc/index.php?topic=187766.0" target="_blank">Arduino포럼에는 회로도를 오픈하라는 것&lt;/a>…재미있는 것은 처음 이슈를 제기한 사람 [&lt;a href="https://github.com/Squonk42/TL-WR703N" target="_blank">squonk42&lt;/a>]이 TL-WR703N을 리버스 엔지니어링 한 사람이라는… 물론 OSHW의 원칙에 따르면 일부만 오픈해도 상관이 없다. 하지만 그동안의 Arduino의 명성에 좋지않은 이슈라는 것.&lt;/p></description></item><item><title>오픈소스하드웨어 체크리스트</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8/</link><pubDate>Thu, 26 Jun 2014 01:26:13 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8/</guid><description>
+&lt;p>OSHWA에서 발표한 오픈소스하드웨어 체크리스트. 이것은 오픈소스하드웨어 정의 및 베스트 프랙티스의 내용을 기반으로 체크리스트를 만들었다.  그리고 오픈소스하드웨어가 반드시 갖추어야 할 요건에  관한 문서도 유용하다.&lt;/p>
+&lt;p>&lt;span style="line-height: 1.5em;">❏      Does your hardware comply with the open source hardware definition: &lt;/span>&lt;a style="line-height: 1.5em;" href="http://www.oshwa.org/definition/">&lt;a href="http://www.oshwa.org/definition/">http://www.oshwa.org/definition/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>❏      Have you allowed anyone to study, modify, distribute, make and sell the hardware?&lt;/p>
+&lt;p>❏      If you used a Creative Commons license for your source files (documentation), did you chose options compatible with the definition? Non-Commercial and No Derivatives are not open source.&lt;/p></description></item><item><title>인포그래픽 – 오픈소스하드웨어</title><link>https://openmicrolab.com/%EC%9D%B8%ED%8F%AC%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4/</link><pubDate>Thu, 26 Jun 2014 01:15:12 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B8%ED%8F%AC%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4/</guid><description>
+&lt;p>&lt;a href="http://www.oshwa.org/" target="_blank">OSHWA&lt;/a>에서 공개한 인포그래픽.  OSHW definition 을 인포그래픽으로 만든 것.&lt;/p>
+&lt;div style="width: 600px" class="wp-caption alignnone">
+&lt;img loading="lazy" alt="" src="http://openmicrolab.cdn2.cafe24.com/what-is-open-source-hardware.jpg" width="590" height="764" />
+&lt;p class="wp-caption-text">
+오픈소스하드웨어 &amp;#8211; 인포그래픽
+&lt;/p>
+&lt;/div></description></item><item><title>Open Source Hardware 관련 기사들</title><link>https://openmicrolab.com/open-source-hardware-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%82%AC%EB%93%A4/</link><pubDate>Sun, 20 Apr 2014 15:49:13 +0000</pubDate><guid>https://openmicrolab.com/open-source-hardware-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%82%AC%EB%93%A4/</guid><description>
+&lt;p>좀 오래된 기사도 있지만 나름 읽어볼 만 하다.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;h3 id="a-hrefhttpwwwcnbccomid101133560-target_blankhardware-is-now-open-sourced-for-businessa">&lt;a href="http://www.cnbc.com/id/101133560" target="_blank">Hardware is now open (sourced) for business&lt;/a>&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;em>Adafruit’s revenue has tripled year over year, and the company projects full-year revenue for 2013 will reach $20 million. Customers are not just limited to hobbyists and isolated makers, said Limor Fried, founder of Adafruit.&lt;/em>&lt;/p>
+&lt;p>“What we’re building is really twofold,” said co-founder David Lang. “The individual tool and specific device is great. The other half is this community of people who have assembled.” – OpenRoV&lt;/p></description></item><item><title>오픈 소스 하드웨어란?</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%9E%80/</link><pubDate>Wed, 26 Jun 2013 08:39:35 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%9E%80/</guid><description>
+&lt;p>오픈 소스 하드웨어에 대한 정의를 &lt;a title="OSHWA" href="http://www.oshwa.org/" target="_blank">오픈 소스 하드웨어 협회(Open Source Hardware Association: OSHWA)&lt;/a>가 정의 했으며, &lt;a href="http://www.oshwa.org/definition/" target="_blank">1.0버젼&lt;/a>이 릴리즈되어 있으며, 1.1 버젼이 작업중이다.  &lt;a href="http://freedomdefined.org/OSHW" target="_blank">&lt;a href="http://freedomdefined.org/OSHW">http://freedomdefined.org/OSHW&lt;/a>&lt;/a> 에 위키 형태로 올라와 있어서 한글 번역을 했는데, &lt;del>new user라서 아직 업로드가 안된다. -_-;;; Moderator들에게 메일을 보내놨으니 회신이 오겠지…&lt;/del> 하루 만에 바로 연락이 와서 업로드가 가능.. ^^  &lt;a href="http://freedomdefined.org/OSHW/translations/ko" target="_blank">WiKi 링크&lt;/a>&lt;/p>
+&lt;p>&lt;del>한글 번역본을 테스트용 WiKi에… 그리고 &lt;a href="https://github.com/jbkim/OSHW" target="_blank">github&lt;/a>에도…&lt;/del>&lt;/p></description></item><item><title>오픈 소스 하드웨어를 말한다</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%A5%BC-%EB%A7%90%ED%95%9C%EB%8B%A4/</link><pubDate>Wed, 26 Jun 2013 07:55:36 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%A5%BC-%EB%A7%90%ED%95%9C%EB%8B%A4/</guid><description>
+&lt;p>지난번에 블로터넷에서 진행한 인터뷰(?) 혹은 대담(?)에 참석해서 김성수님과 한 대화의 내용이 기사화됐다. ^^*&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/06/open-HW.jpg">&lt;img loading="lazy" class="alignleft size-full wp-image-2559" alt="open-HW" src="https://openmicrolab.com/images/2013/06/open-HW.jpg" width="500" height="333" srcset="https://openmicrolab.com/images/2013/06/open-HW.jpg 500w, https://openmicrolab.com/images/2013/06/open-HW-300x199.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />&lt;/a>{.prettyPhoto}&lt;/p>
+&lt;p>&lt;a title="블로터넷 기사" href="http://www.bloter.net/archives/156583" target="_blank">&lt;a href="http://www.bloter.net/archives/156583">http://www.bloter.net/archives/156583&lt;/a>&lt;/a>&lt;/p></description></item><item><title>OSHW Logo 선정</title><link>https://openmicrolab.com/oshw-logo-%EC%84%A0%EC%A0%95/</link><pubDate>Wed, 20 Apr 2011 05:12:35 +0000</pubDate><guid>https://openmicrolab.com/oshw-logo-%EC%84%A0%EC%A0%95/</guid><description>
+&lt;p>대략 9000명이 투표를 해서 OSHW Logo가 선정이 되었네요.&lt;br>
+투표중 몇개의 IP가 자동으로 많은 투표를 했고 이걸 무효 처리했다는 에피소드도 있었답니다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.11691B454DAE67DE30935D.png" class="aligncenter" width="300" height="300" alt="" filename="OpenHardwareLogo.png" filemime="image/jpeg" />
+&lt;/P>PCB에 디자인을 위해 Eagle PCB 및 EDA툴용 자료도 있습니다.
+&lt;p>&lt;a href="http://www.openhardwaresummit.org/2011/04/08/eagle-files-for-the-open-hardware-logo/">http://www.openhardwaresummit.org/2011/04/08/eagle-files-for-the-open-hardware-logo/&lt;/a>&lt;/p>
+&lt;p>Jason Kruse라는 분이 스티커로도 제작을 해서 배송비만 내면 무료로 보내준다고도 합니다.&lt;br>
+&lt;a href="http://www.openhardwaresummit.org/2011/04/13/open-hardware-decals/">http://www.openhardwaresummit.org/2011/04/13/open-hardware-decals/&lt;/a>&lt;br>
+미국은 $1, 해외는 $2 이네요. Paypal로 구매했는데 살짝 기대되네요. ^^&lt;/p></description></item></channel></rss>

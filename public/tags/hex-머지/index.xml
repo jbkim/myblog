@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hex 머지 on OpenMicroLab</title><link>https://openmicrolab.com/tags/hex-%EB%A8%B8%EC%A7%80/</link><description>Recent content in Hex 머지 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 20 Sep 2019 01:32:52 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/hex-%EB%A8%B8%EC%A7%80/index.xml" rel="self" type="application/rss+xml"/><item><title>Hex 파일 합치기</title><link>https://openmicrolab.com/hex-%ED%8C%8C%EC%9D%BC-%ED%95%A9%EC%B9%98%EA%B8%B0/</link><pubDate>Fri, 20 Sep 2019 01:32:52 +0000</pubDate><guid>https://openmicrolab.com/hex-%ED%8C%8C%EC%9D%BC-%ED%95%A9%EC%B9%98%EA%B8%B0/</guid><description>
+&lt;p>Bootloader 및 Application 펌웨어가 있는 경우 양산시 하나의 파일을 합쳐서 프로그래밍을 하면 1단계가 줄어든다.&lt;/p>
+&lt;h3 id="hex-파일-합치기">Hex 파일 합치기&lt;/h3>
+&lt;p>&lt;a href="https://sourceforge.net/projects/srecord/files/srecord-win32/1.64/srecord-1.64-win32.zip/download" target="_blank" rel="noopener">srec_cat.exe&lt;/a> 이라는 윈도우즈 프로그램을 사용하여 다음과 같이 하나의 파일로 합친다.&lt;/p>
+&lt;pre>srec_cat.exe HexFile1.hex -Intel HexFile2.hex -Intel -o MergedHexFile.hex -Intel
+&lt;/pre>
+&lt;h3 id="인텔-hex-파일포맷">인텔 Hex 파일포맷&lt;/h3>
+&lt;h4 id="record-format">Record Format&lt;/h4>
+&lt;pre>:llaaaatt[dd...]cc
+&lt;/pre>
+&lt;ul>
+&lt;li>&lt;strong>:&lt;/strong> is the colon that starts every Intel HEX record.&lt;/li>
+&lt;li>&lt;strong>&lt;em>ll&lt;/em>&lt;/strong> is the record-length field that represents the number of data bytes (&lt;strong>dd&lt;/strong>) in the record.&lt;/li>
+&lt;li>&lt;strong>&lt;em>aaaa&lt;/em>&lt;/strong> is the address field that represents the starting address for subsequent data in the record.&lt;/li>
+&lt;li>&lt;strong>&lt;em>tt&lt;/em>&lt;/strong> is the field that represents the HEX record type, which may be one of the following:&lt;br>
+&lt;strong>00&lt;/strong> – data record&lt;br>
+&lt;strong>01&lt;/strong> – end-of-file record&lt;br>
+&lt;strong>02&lt;/strong> – extended segment address record&lt;br>
+&lt;strong>04&lt;/strong> – extended linear address record&lt;br>
+&lt;strong>05&lt;/strong> – start linear address record (MDK-ARM only)&lt;/li>
+&lt;li>&lt;strong>&lt;em>dd&lt;/em>&lt;/strong> is a data field that represents one byte of data. A record may have multiple data bytes. The number of data bytes in the record must match the number specified by the &lt;strong>ll&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>&lt;em>cc&lt;/em>&lt;/strong> is the checksum field that represents the checksum of the record. The checksum is calculated by summing the values of all hexadecimal digit pairs in the record modulo 256 and taking the two’s complement.&lt;/li>
+&lt;/ul>
+&lt;h4 id="data-records">Data Records&lt;/h4>
+&lt;pre>:10246200464C5549442050524F46494C4500464C33
+&lt;/pre>
+&lt;p>This record is decoded as follows:&lt;/p></description></item></channel></rss>

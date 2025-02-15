@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HC-05 on OpenMicroLab</title><link>https://openmicrolab.com/tags/hc-05/</link><description>Recent content in HC-05 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 11 Feb 2017 06:29:02 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/hc-05/index.xml" rel="self" type="application/rss+xml"/><item><title>HC-05, HC-06 블루투스 모듈</title><link>https://openmicrolab.com/hc-05-hc-06-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EB%AA%A8%EB%93%88/</link><pubDate>Sat, 11 Feb 2017 06:29:02 +0000</pubDate><guid>https://openmicrolab.com/hc-05-hc-06-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EB%AA%A8%EB%93%88/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-3895" src="http://res.cloudinary.com/openmicrolab/image/upload/v1486793995/HC-05_HC-06_lkpfkl.jpg" width="603" height="413" />
+&lt;p>&lt;strong>HC-05&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Default baud: 38400&lt;/li>
+&lt;li>6Pin (EN pin)&lt;/li>
+&lt;li>시리얼 터미널은 Both NL-CR 세팅&lt;/li>
+&lt;li>&lt;a href="http://www.linotux.ch/arduino/HC-0305_serial_module_AT_commamd_set_201104_revised.pdf" target="_blank">AT command&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>HC-06&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Default baud: 9600&lt;/li>
+&lt;li>4Pin&lt;/li>
+&lt;li>Line ending 없음&lt;/li>
+&lt;li>&lt;a href="http://www.micro4you.com/files/ElecFreaks/Bluetooth%20HC-06.pdf" target="_blank">AT command&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>참고 자료: &lt;a href="http://www.martyncurrey.com/category/bluetooth/" target="_blank">&lt;a href="http://www.martyncurrey.com/category/bluetooth/">http://www.martyncurrey.com/category/bluetooth/&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

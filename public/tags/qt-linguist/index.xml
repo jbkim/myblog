@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Qt Linguist on OpenMicroLab</title><link>https://openmicrolab.com/tags/qt-linguist/</link><description>Recent content in Qt Linguist on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 08 Jun 2012 06:42:08 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/qt-linguist/index.xml" rel="self" type="application/rss+xml"/><item><title>온라인 공동 번역툴</title><link>https://openmicrolab.com/%EC%98%A8%EB%9D%BC%EC%9D%B8-%EA%B3%B5%EB%8F%99-%EB%B2%88%EC%97%AD%ED%88%B4/</link><pubDate>Fri, 08 Jun 2012 06:42:08 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A8%EB%9D%BC%EC%9D%B8-%EA%B3%B5%EB%8F%99-%EB%B2%88%EC%97%AD%ED%88%B4/</guid><description>
+&lt;p>&lt;strong>온라인 공동 번역툴인 &lt;a href="http://crowdin.net/" target="_blank" class="tx-link">Crowdin&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>모든 것이 인터넷상에서 가능한 시대다. 번역도 마찬가지…&lt;/p>
+&lt;p>다국어 버젼의 소프트웨어나 문서를 다른 언어로 번역할때 유용할 것 같다.&lt;/p>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.137D654D4FD19E6E1A86BC.png" class="aligncenter" width="683" height="487" filename="Crowdin.png" filemime="image/jpeg" />
+&lt;/p>
+&lt;/p>
+&lt;p>화면 왼쪽에는 각 스트링의 기본언어의 표현이 나타나며, 빨강, 초록, 체크모양의 아이콘이 있는데, 각각은 미완료, 번역완료,확인완료 를 의미한다. 왼쪽에서 스트링하나를 선택하면 그 오른쪽 화면에 번역 작업을 할 수 있는 내용이 나오며, 매 문장마다 기계가 번역한 단어도 보여준다. &lt;/p>&lt;/p>
+&lt;p>오른쪽에 다른 사용자가 코멘트를 남길 수도 있다. 즉 온라인에서 관리 및 협업이 가능하다는 뜻…&lt;/p></description></item></channel></rss>

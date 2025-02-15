@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>맥 OS on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%A7%A5-os/</link><description>Recent content in 맥 OS on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 13 Sep 2016 06:56:05 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%A7%A5-os/index.xml" rel="self" type="application/rss+xml"/><item><title>맥 OS에서 AVR 툴 체인 설치</title><link>https://openmicrolab.com/%EB%A7%A5-os%EC%97%90%EC%84%9C-avr-%ED%88%B4-%EC%B2%B4%EC%9D%B8-%EC%84%A4%EC%B9%98/</link><pubDate>Tue, 13 Sep 2016 06:56:05 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5-os%EC%97%90%EC%84%9C-avr-%ED%88%B4-%EC%B2%B4%EC%9D%B8-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;p>ruby -e “$(curl -fsSL &lt;a href="https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;amp;#8221;">https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;amp;#8221;&lt;/a>&lt;br>
+brew tap osx-cross/avr&lt;br>
+brew install avr-gcc&lt;br>
+brew install avrdude –with-usb&lt;/p>
+&lt;p>참고&lt;/p>
+&lt;p>– &lt;a href="https://github.com/osx-cross/homebrew-avr">https://github.com/osx-cross/homebrew-avr &lt;/a>&lt;/p>
+&lt;p>– &lt;a href="http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/" target="_blank" rel="noopener">&lt;a href="http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/">http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flash Magic on OpenMicroLab</title><link>https://openmicrolab.com/tags/flash-magic/</link><description>Recent content in Flash Magic on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 23 May 2014 07:29:47 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/flash-magic/index.xml" rel="self" type="application/rss+xml"/><item><title>NXP LPC 시리즈 맥에서 개발 환경 – Flash Magic</title><link>https://openmicrolab.com/nxp-lpc-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%A7%A5%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-flash-magic/</link><pubDate>Fri, 23 May 2014 07:29:47 +0000</pubDate><guid>https://openmicrolab.com/nxp-lpc-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%A7%A5%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-flash-magic/</guid><description>
+&lt;p>NXP의 LPC 시리즈는 이클립스 기반의 툴인 &lt;a href="http://www.lpcware.com/lpcxpresso/home" target="_blank">LPCExpresso&lt;/a>를 제공한다. 대부분의 개발 환경은 &lt;a href="http://openmicrolab.com/lpc810-arm-cortexm0-project-1/" target="_blank">지난 포스팅&lt;/a>을 참고. 따라서 Mac에서도 윈도우즈와 동일한 개발환경을 구축할 수 있다.  LPC 시리즈 칩 역시 시리얼 부트로더가 내장이 되어 있어서 쉽게 flash를 write할 수 있으며, &lt;a href="http://www.flashmagictool.com/" target="_blank">FlashMagic&lt;/a>이라는 툴을 사용한다. 원래 윈도우 기반으로 개발된 툴을 Mac에 Wine을 사용하여 포팅이 되어 있다. 그래서 시리얼 포트도 COM1, COM2 이런 식으로 표시가 된다.&lt;br>
+&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt="FlashMagic"
+class="image_figure image_external image_unprocessed"
+src="http://openmicrolab.cdn2.cafe24.com/FlashMagic_program.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;p>Mac에서 잡힌 시리얼 포트를 FlashMagic이 구동이 될때 COM1, COM2.. 으로 매핑이 되는데, 이것을 확인해서 해당되는 COM 포트를 넣어주면 된다. 매핑된 포트를 찾는 방법은 다음의 그림을 참고… 대개 serial to USB 컨버터를 사용하는데, Mac에서는 cu.*의 형태와 tty.*의 형태가 잡히는데, *&lt;em>cu.&lt;em>의 형태로 잡힌 포트를 사용하면 된다.&lt;/em>&lt;/em>&lt;br>
+&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt="FlashMagic 포트찾기"
+class="image_figure image_external image_unprocessed"
+src="http://openmicrolab.cdn2.cafe24.com/FlashMagic.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;br>
+즉 명령어는&lt;/p></description></item></channel></rss>

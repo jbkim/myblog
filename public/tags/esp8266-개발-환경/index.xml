@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESP8266 개발 환경 on OpenMicroLab</title><link>https://openmicrolab.com/tags/esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</link><description>Recent content in ESP8266 개발 환경 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 13 Sep 2017 04:06:37 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/index.xml" rel="self" type="application/rss+xml"/><item><title>Mac OS에서 ESP8266 개발 환경</title><link>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</link><pubDate>Wed, 13 Sep 2017 04:06:37 +0000</pubDate><guid>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</guid><description>
+&lt;h3 id="아두이노">아두이노&lt;/h3>
+&lt;ol>
+&lt;li>Arduino &amp;gt; Preferences… 의 메뉴에서 추가적인 보드매니저 URLs에 다음의 링크를 입력한다.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="http://arduino.esp8266.com/stable/package">http://arduino.esp8266.com/stable/package&lt;/a>_esp8266com_index.json&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4040" src="https://res.cloudinary.com/openmicrolab/image/upload/v1505273144/ESP_Arduino_qgvl3z.png" width="459" height="164" />
+&lt;ol start="2">
+&lt;li>툴 &amp;gt; 보드 &amp;gt; 보드 매니저… 의 메뉴의 필터에 ESP를 입력 후 esp8266을 선택후 설치한다.&lt;/li>
+&lt;/ol>
+&lt;img loading="lazy" class="alignnone wp-image-4041" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_451/v1505273144/ESP8266_Arduino_uewfwx.png" width="635" height="357" />
+&lt;h3 id="a-hrefhttpsgithubcomsminghubsming-target_blank-relnoopener-noreferrersminga">&lt;a href="https://github.com/SmingHub/Sming" target="_blank" rel="noopener noreferrer">Sming&lt;/a>&lt;/h3>
+&lt;p>맥에서는&lt;a href="https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart" target="_blank" rel="noopener noreferrer"> https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart&lt;/a> 이 링크의 내용대로 따라하면 별 무리가 없다. 즉 이클립스, 툴체인, ESP SDK를 설치하고 Sming core를 빌드한다.&lt;/p>
+&lt;p>이클립스의 환경설정에서 SMING_HOME, ESP_HOME 설정을 한다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4045" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_569/v1505275296/ESP_Eclipse_xkwyit.png" width="569" height="371" />
+&lt;p> &lt;/p>
+&lt;p>SmingFramework의 Makefile-project.mk파일에서 ESPTOOL2의 경로를 다음과 같이 수정한다.&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;span class="s1">ESPTOOL2 ?&lt;/span>= /opt/esp-open-sdk/utils/esptool2
+&lt;/p></description></item></channel></rss>

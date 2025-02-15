@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Socket Programming on OpenMicroLab</title><link>https://openmicrolab.com/tags/socket-programming/</link><description>Recent content in Socket Programming on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 26 May 2010 03:43:04 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/socket-programming/index.xml" rel="self" type="application/rss+xml"/><item><title>유용한 툴 – Socket Tester</title><link>https://openmicrolab.com/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%88%B4-socket-tester/</link><pubDate>Wed, 26 May 2010 03:43:04 +0000</pubDate><guid>https://openmicrolab.com/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%88%B4-socket-tester/</guid><description>
+&lt;p>개발을 하다보면 테스트에 필요한 툴을 직접 만들어야 할때도 있다. 하지만 그전에 이미 누군가 만들어 놓은 툴이 있다면?&lt;br>
+이것을 사용하는 것이 보다 효과적이다. 문제가 있을때 툴이 문제인지 보드가 문제인지 확인하기 전에, 일단 툴은 이상이 없다는 가정이 되니깐…&lt;/p>
+&lt;p>네트워크 프로그래밍을 하다보면 테스트가 필요한데,&lt;br>
+가장 간단한 TCP server 및 client 로 동작하는 툴이 Castalia Technologies에서 만든 Socket Tester 프로그램이다.&lt;/p>
+&lt;p>확인해 보니 Castalia Technologies는 이젠 검색이 되지 않는데, 이 프로그램은 실행파일 하나로 동작하는 간단하지만 유용한 툴! 게다가 Freeware…&lt;/p></description></item></channel></rss>

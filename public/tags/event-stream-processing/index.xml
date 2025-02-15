@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Event Stream Processing on OpenMicroLab</title><link>https://openmicrolab.com/tags/event-stream-processing/</link><description>Recent content in Event Stream Processing on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 09 Mar 2016 02:22:04 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/event-stream-processing/index.xml" rel="self" type="application/rss+xml"/><item><title>가트너가 꼽은 2017, 2018년도의 10가지 IoT기술</title><link>https://openmicrolab.com/%EA%B0%80%ED%8A%B8%EB%84%88%EA%B0%80-%EA%BC%BD%EC%9D%80-2017-2018%EB%85%84%EB%8F%84%EC%9D%98-10%EA%B0%80%EC%A7%80-iot%EA%B8%B0%EC%88%A0/</link><pubDate>Wed, 09 Mar 2016 02:22:04 +0000</pubDate><guid>https://openmicrolab.com/%EA%B0%80%ED%8A%B8%EB%84%88%EA%B0%80-%EA%BC%BD%EC%9D%80-2017-2018%EB%85%84%EB%8F%84%EC%9D%98-10%EA%B0%80%EC%A7%80-iot%EA%B8%B0%EC%88%A0/</guid><description>
+&lt;p>가트너가 꼽은 2017, 2018년도의 10가지 IoT기술&lt;/p>
+&lt;ul>
+&lt;li>IoT Security&lt;/li>
+&lt;li>IoT Analytics&lt;/li>
+&lt;li>IoT Device (Thing) Management&lt;/li>
+&lt;li>Low-Power, Short-Range IoT Networks&lt;/li>
+&lt;li>Low-Power, Wide-Area Networks&lt;/li>
+&lt;li>IoT Processors&lt;/li>
+&lt;li>IoT Operating Systems&lt;/li>
+&lt;li>Event Stream Processing&lt;/li>
+&lt;li>IoT Platforms&lt;/li>
+&lt;li>IoT Standards and Ecosystems&lt;/li>
+&lt;/ul>
+&lt;p>리스트의 제목만으로 이해가 가는 내용인데, 위 리스트에서 IoT Processor는 윗쪽에 언급된 IoT Security, Low-Power, Connectivity, IoT OS까지 포함된 개념이고, Event Stream Processing은 동영상같은 스트림을 실시간으로 처리하는 것으로 distributed stream computing platforms (DSCPs)이 필요하다는 것.&lt;/p>
+&lt;p>그리고 IoT Platform은 다음과 같이 3가지 카테고리가 있을 수 있다.&lt;/p></description></item></channel></rss>

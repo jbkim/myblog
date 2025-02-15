@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino Tutorial on OpenMicroLab</title><link>https://openmicrolab.com/categories/arduino-tutorial/</link><description>Recent content in Arduino Tutorial on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 12 Oct 2019 12:05:08 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/arduino-tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>ATTiny85 아두이노</title><link>https://openmicrolab.com/attiny85-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</link><pubDate>Sat, 12 Oct 2019 12:05:08 +0000</pubDate><guid>https://openmicrolab.com/attiny85-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</guid><description>
+&lt;p>ATTiny85는 8핀짜리 칩이나 아두이노 환경에서 개발가능하다.&lt;/p>
+&lt;ul>
+&lt;li>Digispark-Compatible ATtiny85 USB 같이 부트로더가 있는 보드를 사용하거나&lt;/li>
+&lt;li>ATMEL ICE 같은 장비를 사용하고 아두이노 IDE에서 다운로드가 가능하다.&lt;/li>
+&lt;/ul>
+&lt;h3 id="digispark-compatible-attiny85-usb">Digispark-Compatible ATtiny85 USB&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4652" src="https://res.cloudinary.com/openmicrolab/image/upload/v1570881833/Digispark-Compatible-ATtiny85-USB_opp5wt.jpg" width="261" height="229" />
+&lt;img loading="lazy" class="alignnone wp-image-4653" src="https://res.cloudinary.com/openmicrolab/image/upload/v1570881833/Circuit-Diagram-of-the-ATtiny85-USB-Mini-Development-Board_ijr4av.png" width="675" height="568" />
+&lt;h3 id="주의할-점">주의할 점&lt;/h3>
+&lt;p>Fuse 비트를 수정하면 Reset 핀도 사용이 가능하지만 일반적으로 안쓰는 것이 좋다. 나머지 사용이 가능한 핀은 다음과 같고, 시리얼 출력은 Software Serial이 사용이 가능하다. 단 프로그래밍을 할때 8Mhz로 해야 한다. &lt;strong>Tools&lt;/strong> –&amp;gt; &lt;strong>Board&lt;/strong> –&amp;gt; &lt;strong>ATtiny85 (internal 8 MHz clock)&lt;/strong>&lt;/p></description></item><item><title>아두이노 적외선 통신</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%A0%81%EC%99%B8%EC%84%A0-%ED%86%B5%EC%8B%A0/</link><pubDate>Tue, 15 Aug 2017 01:02:01 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%A0%81%EC%99%B8%EC%84%A0-%ED%86%B5%EC%8B%A0/</guid><description>
+&lt;p>&lt;strong>IR (&lt;a href="https://en.wikipedia.org/wiki/Infrared" target="_blank" rel="noopener noreferrer">Infrared&lt;/a>) 통신&lt;/strong>&lt;/p>
+&lt;p>적외선을 이용한 통신인데, 적외선은 빛에 포함되어 있다. 따라서 이것을 통신에 이용하기위해 38Khz modulation을 한다. IR 수신할때 문제는 리모콘에만 반응하지 않고, 형광등이나 빛에 오동작 할 수 도 있다는 것.&lt;/p>
+&lt;p>&lt;strong>Modulation&lt;/strong>&lt;/p>
+&lt;img loading="lazy" src="https://cdn.sparkfun.com/r/600-600/assets/9/3/2/b/a/5159e97ece395f9643000000.jpg" alt="" width="600" height="272" />
+&lt;p>&lt;strong>Demodulation&lt;/strong>&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="600"
+height="259"
+src="https://openmicrolab.com/5159e980ce395f8840000000_10373173191218754359.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;p>&lt;strong>IR Receiver Pinout&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Infrared/tsop382.pdf?_ga=2.139818227.1550690696.1502755614-1828696942.1487513070">TSOP382 datasheet&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="" src="https://cdn.sparkfun.com/assets/6/a/f/b/f/524b36e8757b7f3d6c8b4567.png" width="462" height="285" />
+&lt;p>&lt;strong>IR Protocol&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>(IR) ProtocolAn algorithm for turning a number of parameters into an &lt;a href="http://www.harctoolbox.org/Glossary.html#IrSignal">IR signal&lt;/a>. It defines the necessary parameters and their allowed values. In almost all protocols, the most frequently changing parameter is called “F” (function number). Almost all protocols have a “device number” called “D”. Many protocols have a “sub-device” number, called “S”. A few protocols have a &lt;a href="http://www.harctoolbox.org/Glossary.html#Toggle">toggle&lt;/a> parameter, in general called “T”, and being &lt;a href="http://www.harctoolbox.org/Glossary.html#PersistantParameter">persistent&lt;/a>. A protocol may also have other parameters, with “arbitrary” names.&lt;/p></description></item><item><title>Make파일을 사용해서 아두이노 스케치 다운로드</title><link>https://openmicrolab.com/make%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</link><pubDate>Wed, 16 Mar 2016 02:31:53 +0000</pubDate><guid>https://openmicrolab.com/make%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</guid><description>
+&lt;p>아두이노 IDE를 사용하여 스케치를 다운로드를 하면 매번 컴파일을 해서 시간이 걸린다. 따라서  Make파일을 써서 스케치를 다운로드하고 있었는데, UART to USB칩이 Atmega16U2, FTDI에서는 이상이 없었는데, Silab CP2102를 사용하면 다운로드가 안된다. 원인을 찾아보니 Make파일에서 다음과 같이 AVRDUDE_PROGRAMMER를 stk500대신 wiring으로 하니 다운로드가 잘된다.&lt;/p>
+&lt;blockquote>
+&lt;p>#AVRDUDE_PROGRAMMER ?= stk500&lt;br>
+AVRDUDE_PROGRAMMER ?= wiring&lt;/p>&lt;/blockquote>
+&lt;p>&lt;a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx" target="_blank">CP2102 드라이버&lt;/a>, &lt;a href="https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf" target="_blank">CP2102데이터시트&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DPT on OpenMicroLab</title><link>https://openmicrolab.com/tags/dpt/</link><description>Recent content in DPT on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 03 Aug 2014 15:32:17 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/dpt/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenWRT 기반 보드들</title><link>https://openmicrolab.com/openwrt-%EA%B8%B0%EB%B0%98-%EB%B3%B4%EB%93%9C%EB%93%A4/</link><pubDate>Sun, 03 Aug 2014 15:32:17 +0000</pubDate><guid>https://openmicrolab.com/openwrt-%EA%B8%B0%EB%B0%98-%EB%B3%B4%EB%93%9C%EB%93%A4/</guid><description>
+&lt;p>&lt;a href="https://openwrt.org/" target="_blank">OpenWRT&lt;/a>가 최근 IPv6까지 지원을 한다. OpenWRT기반 보드들…&lt;/p>
+&lt;ul>
+&lt;li> &lt;a href="http://arduino.cc/en/Main/ArduinoBoardYun?from=Products.ArduinoYUN" target="_blank">Arduino Yun&lt;/a> – Atheros AR9331&lt;/li>
+&lt;li>&lt;a href="https://www.dptechnics.com/" target="_blank">DPT&lt;/a> – Atheros AR9331&lt;/li>
+&lt;li>&lt;a href="http://www.we-io.net/" target="_blank">WeIO&lt;/a> – Atheros AR9331&lt;/li>
+&lt;li>&lt;a href="https://www.indiegogo.com/projects/vocore-a-coin-sized-linux-computer-with-wifi" target="_blank">VoCore&lt;/a> – Ralink RT5350&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/OpenWRT_adds_IPv6__preps_for_IoT_future%C2%A0%C2%B7%C2%A0_LinuxGizmos_com.png" width="770" height="192" /></description></item></channel></rss>

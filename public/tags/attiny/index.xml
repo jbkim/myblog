@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ATTiny on OpenMicroLab</title><link>https://openmicrolab.com/tags/attiny/</link><description>Recent content in ATTiny on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 08 Dec 2019 13:50:02 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/attiny/index.xml" rel="self" type="application/rss+xml"/><item><title>전력소모를 줄이는 법 – Low Power System</title><link>https://openmicrolab.com/%EC%A0%84%EB%A0%A5%EC%86%8C%EB%AA%A8%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B2%95-low-power-system/</link><pubDate>Sun, 08 Dec 2019 13:50:02 +0000</pubDate><guid>https://openmicrolab.com/%EC%A0%84%EB%A0%A5%EC%86%8C%EB%AA%A8%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B2%95-low-power-system/</guid><description>
+&lt;p>배터리를 사용하는 제품은 필수적으로 전력소모를 줄여야 한다. 시스템에서 전력소모를 줄이기 위한 방법은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>MCU의 동작 전압을 낮추고, 동작 Clock를 낮출 것&lt;/li>
+&lt;li>리니어 레귤레이터 대신 스위칭 레귤레이터를 사용할 것&lt;/li>
+&lt;li>MCU내의 사용하지 않는 peripheral을 disable할 것: Timer, BOD, Watch Dog Timer, UART, ADC 등 특히 ADC나 UART&lt;/li>
+&lt;li>전류를 센싱하는 저항이 있다면 이 저항의 크기를 높일 것&lt;/li>
+&lt;li>코드에서 최대한 Sleep 모드를 사용할 것&lt;/li>
+&lt;/ul>
+&lt;p>참고로 Attiny45의 경우 어떤 응용에서 동작시 1.6mA정도까지 줄여봤다. 그리고 &lt;a href="https://learn.sparkfun.com/tutorials/reducing-arduino-power-consumption/all" target="_blank" rel="noopener">이런 문서&lt;/a>도 참고하면 좋을 듯.&lt;/p></description></item><item><title>ATTiny85 아두이노</title><link>https://openmicrolab.com/attiny85-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</link><pubDate>Sat, 12 Oct 2019 12:05:08 +0000</pubDate><guid>https://openmicrolab.com/attiny85-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</guid><description>
+&lt;p>ATTiny85는 8핀짜리 칩이나 아두이노 환경에서 개발가능하다.&lt;/p>
+&lt;ul>
+&lt;li>Digispark-Compatible ATtiny85 USB 같이 부트로더가 있는 보드를 사용하거나&lt;/li>
+&lt;li>ATMEL ICE 같은 장비를 사용하고 아두이노 IDE에서 다운로드가 가능하다.&lt;/li>
+&lt;/ul>
+&lt;h3 id="digispark-compatible-attiny85-usb">Digispark-Compatible ATtiny85 USB&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4652" src="https://res.cloudinary.com/openmicrolab/image/upload/v1570881833/Digispark-Compatible-ATtiny85-USB_opp5wt.jpg" width="261" height="229" />
+&lt;img loading="lazy" class="alignnone wp-image-4653" src="https://res.cloudinary.com/openmicrolab/image/upload/v1570881833/Circuit-Diagram-of-the-ATtiny85-USB-Mini-Development-Board_ijr4av.png" width="675" height="568" />
+&lt;h3 id="주의할-점">주의할 점&lt;/h3>
+&lt;p>Fuse 비트를 수정하면 Reset 핀도 사용이 가능하지만 일반적으로 안쓰는 것이 좋다. 나머지 사용이 가능한 핀은 다음과 같고, 시리얼 출력은 Software Serial이 사용이 가능하다. 단 프로그래밍을 할때 8Mhz로 해야 한다. &lt;strong>Tools&lt;/strong> –&amp;gt; &lt;strong>Board&lt;/strong> –&amp;gt; &lt;strong>ATtiny85 (internal 8 MHz clock)&lt;/strong>&lt;/p></description></item></channel></rss>

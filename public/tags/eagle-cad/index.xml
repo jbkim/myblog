@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eagle CAD on OpenMicroLab</title><link>https://openmicrolab.com/tags/eagle-cad/</link><description>Recent content in Eagle CAD on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 29 May 2018 04:33:33 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/eagle-cad/index.xml" rel="self" type="application/rss+xml"/><item><title>EagleCAD 이전 버전 다운로드</title><link>https://openmicrolab.com/eaglecad-%EC%9D%B4%EC%A0%84-%EB%B2%84%EC%A0%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</link><pubDate>Tue, 29 May 2018 04:33:33 +0000</pubDate><guid>https://openmicrolab.com/eaglecad-%EC%9D%B4%EC%A0%84-%EB%B2%84%EC%A0%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</guid><description>
+&lt;p>한번에 찾기 힘들어서…&lt;/p>
+&lt;p>&lt;a href="http://eagle.autodesk.com/eagle/software-versions" target="_blank" rel="noopener noreferrer">&lt;a href="http://eagle.autodesk.com/eagle/software-versions">http://eagle.autodesk.com/eagle/software-versions&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Eagle CAD 실크 폰트를 한꺼번에 변경하기</title><link>https://openmicrolab.com/eagle-cad-%EC%8B%A4%ED%81%AC-%ED%8F%B0%ED%8A%B8%EB%A5%BC-%ED%95%9C%EA%BA%BC%EB%B2%88%EC%97%90-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 26 Jan 2018 02:50:14 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad-%EC%8B%A4%ED%81%AC-%ED%8F%B0%ED%8A%B8%EB%A5%BC-%ED%95%9C%EA%BA%BC%EB%B2%88%EC%97%90-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>PCB실크를 하나 하나 수정하기는 귀찮은 작업이다. 따라서 다음과 같이 커맨드로 한번에 수정이 가능하다.&lt;/p>
+&lt;ol>
+&lt;li>Smash all parts.&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>display none tOrigin bOrigin;&lt;br>
+group all;&lt;br>
+smash (&amp;gt;0 0);&lt;br>
+display last;&lt;/p>&lt;/blockquote>
+&lt;ol start="2">
+&lt;li>폰트 변경하기 – 사이즈는 1.27mm, 벡터 폰트, ratio 10%&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>display none tNames bNames;&lt;br>
+group all;&lt;br>
+change size 1.27 (&amp;gt;0 0);&lt;br>
+change font vector (&amp;gt;0 0);&lt;br>
+change ratio 10 (&amp;gt;0 0);&lt;br>
+display last;&lt;/p>&lt;/blockquote>
+&lt;p>여기서 “(&amp;gt;0 0)” 는 origin에서 Control-LeftClick 수행한다.&lt;/p></description></item><item><title>Eagle CAD 4층 기판 설정</title><link>https://openmicrolab.com/eagle-cad-4%EC%B8%B5-%EA%B8%B0%ED%8C%90-%EC%84%A4%EC%A0%95/</link><pubDate>Wed, 20 Dec 2017 05:39:29 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad-4%EC%B8%B5-%EA%B8%B0%ED%8C%90-%EC%84%A4%EC%A0%95/</guid><description>
+&lt;p>Eagle CAD는 기본이 2층이라서 4층이상의 PCB설계시 설정변경이 필요하다. 아래그림과 같이 DRC메뉴의 Layers에서 Setup항목의 설정을 (1*16)에서 [2:(1*(2*3)*16):3]으로 변경을 한다.  그러면 레이어가 추가가 된다.&lt;/p>
+&lt;img loading="lazy" class="wp-image-4177 aligncenter" src="https://res.cloudinary.com/openmicrolab/image/upload/v1513748170/eagle_4Layer_vwdhqm.png" width="663" height="535" />
+&lt;p>&lt;strong>참고&lt;/strong>: &lt;a href="http://brc-electronics.nl/Generalfiles/Report2.pdf" target="_blank" rel="noopener noreferrer">&lt;a href="http://brc-electronics.nl/Generalfiles/Report2.pdf">http://brc-electronics.nl/Generalfiles/Report2.pdf&lt;/a>&lt;/a>&lt;/p></description></item><item><title>PCB 레이아웃 가이드</title><link>https://openmicrolab.com/pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B0%80%EC%9D%B4%EB%93%9C/</link><pubDate>Wed, 19 Jul 2017 02:21:44 +0000</pubDate><guid>https://openmicrolab.com/pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B0%80%EC%9D%B4%EB%93%9C/</guid><description>
+&lt;p>PCB 레이아웃 설계시 PCB house에서 지원하는 규격내에서 설계를 하는 것이 바람직하다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3997" src="https://res.cloudinary.com/openmicrolab/image/upload/v1500430679/PCB_Spec_kxt81w.png" width="1029" height="674" />
+&lt;p>추가적인 내용은  &lt;a href="https://www.hsdgt.com/order/info.asp" target="_blank" rel="noopener noreferrer">한샘디지텍&lt;/a> 참고.&lt;/p></description></item><item><title>보드에 장홀(plated slot) 또는 슬롯만들기</title><link>https://openmicrolab.com/%EB%B3%B4%EB%93%9C%EC%97%90-%EC%9E%A5%ED%99%80plated-slot-%EB%98%90%EB%8A%94-%EC%8A%AC%EB%A1%AF%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Wed, 18 Jan 2017 05:53:46 +0000</pubDate><guid>https://openmicrolab.com/%EB%B3%B4%EB%93%9C%EC%97%90-%EC%9E%A5%ED%99%80plated-slot-%EB%98%90%EB%8A%94-%EC%8A%AC%EB%A1%AF%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>
+&lt;p>&lt;strong>Routing 과 Milling의 차이&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>“Routing” describes the cutting of the board profile, outline or contour.  We use a 2 mm cutter for this.  Any feature which can be cut with the 2 mm cutter is part of the profile.&lt;br>
+“Milling” refers to any slots or cut-outs inside the PCB, but also to any slots in the profile of the PCB which can’t be cut with a 2 mm cutter.&lt;/p>&lt;/blockquote>
+&lt;p>즉 라우팅은 2mm 커터로 보드의 외곽을 자르는 것이고, 밀링은 보드 안쪽에 있는 cut-out 또는 슬롯을 더 작은 툴로 작업을 하는 것이다.&lt;/p></description></item><item><title>Eagle CAD에 네거티브 실크 넣기</title><link>https://openmicrolab.com/eagle-cad%EC%97%90-negative-silk-%EB%84%A3%EA%B8%B0/</link><pubDate>Thu, 14 Jul 2016 08:02:23 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EC%97%90-negative-silk-%EB%84%A3%EA%B8%B0/</guid><description>
+&lt;p>아두이노 보드의 모델명 같은 것은 일반 실크가 아닌 네거티브 실크로 되어 있다. Eagle Cad에서 이 작업을 하려면 negasilk.ulp를 사용하면 되는데 방법은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>실크를 TXT로 적은 후 41 tRestrict 레이어에 만들고 넣을 위치를 잡는다.&lt;/li>
+&lt;li>41레이어를 끄고 나머지 레이어만 켜서 블럭으로 잡아서 다른 위치로 이동한다.&lt;/li>
+&lt;li>41레이어를 켜서 Top에서 폴리곤으로 글자를 둘러싸고 Copper pour를 한다. 다른 위치로 이동한 회로에는 Copper pour가 되지 않도록 폴리곤 작업을 하지 않는 것이 좋다.&lt;/li>
+&lt;li>negasilk.ulp를 실행하면 작업 폴더에 스크립트(확장자 scr)가 생긴다.&lt;/li>
+&lt;li>이 스크립트를 열어서 3번째 라인에 LAYER 21;을 입력한다. 즉 21번째 레이어에 네거티브 실크를 생성할 것이다.&lt;/li>
+&lt;li>네거티브 실크가 생성된 위치의 Top에 깔린 Copper 및 글씨를 지운다.&lt;/li>
+&lt;li>이동한 회로들을 다시 원점으로 이동한후 폴리곤 작업을 하고 Copper pour를 한다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=lVpzqZfN2A4">https://www.youtube.com/watch?v=lVpzqZfN2A4&lt;/a>&lt;/p></description></item><item><title>Eagle CAD에 로고 넣기</title><link>https://openmicrolab.com/eagle-cad%EC%97%90-%EB%A1%9C%EA%B3%A0-%EB%84%A3%EA%B8%B0/</link><pubDate>Tue, 05 Jul 2016 03:43:47 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EC%97%90-%EB%A1%9C%EA%B3%A0-%EB%84%A3%EA%B8%B0/</guid><description>
+&lt;p>예전에 포스팅한 글 “&lt;a href="http://openmicrolab.com/eagle-cad%EB%A1%9C-%EC%9E%91%EC%97%85%ED%95%9C-pcb%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%84%A3%EA%B8%B0/" target="_blank">Eagle CAD로 작업한 PCB에 이미지 파일 넣기&lt;/a>“에 대한 추가적인 정보.  보드에 넣을 이미지의 사이즈를 DPI로 맞추고 실제 이미지의 DPI의 배수로 맞추면 편하다.&lt;/p>
+&lt;p>아래 그림은 72DPI로 작업한 이미지를 실제 사이즈에 맞추기 위한 설정&lt;/p>
+&lt;img loading="lazy" class="wp-image-3699 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1467690110/Eagle_Image_insert_crvrs1.png" width="341" height="577" /></description></item><item><title>Eagel CAD에서 Pick &amp; Place 파일 만들기</title><link>https://openmicrolab.com/eagel-cad%EC%97%90%EC%84%9C-pick-place-%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Tue, 24 May 2016 07:09:53 +0000</pubDate><guid>https://openmicrolab.com/eagel-cad%EC%97%90%EC%84%9C-pick-place-%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>
+&lt;p>Eagle PCB에서 c&lt;strong>entroid-screamingcircuits-smd.ulp&lt;/strong>를 실행시킨다. 그러면 csv파일이 생긴다. 이파일은 inch단위의 파일이 생성된다. 만약 mm 단위의 파일이 필요하면 Mountsmd.ulp를 사용한다.&lt;/p>
+&lt;p>Allegro PCB에서는 &lt;strong>File &amp;gt; Placement…&lt;/strong> 를 실행한다.&lt;/p>
+&lt;p>참고: &lt;a href="https://www.element14.com/community/community/cadsoft_eagle/blog/2015/01/19/eagle-ulps-every-user-should-know" target="_blank">&lt;a href="https://www.element14.com/community/community/cadsoft_eagle/blog/2015/01/19/eagle-ulps-every-user-should-know">https://www.element14.com/community/community/cadsoft_eagle/blog/2015/01/19/eagle-ulps-every-user-should-know&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Eagle CAD tip</title><link>https://openmicrolab.com/eagle-cad-tip/</link><pubDate>Fri, 20 May 2016 05:49:51 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad-tip/</guid><description>
+&lt;p>&lt;strong>1. Commnad Line 활용&lt;/strong>&lt;/p>
+&lt;div class="table-responsive">
+&lt;table class="table table-bordered" summary="Schematic Editor ">
+&lt;caption>&lt;strong>Schematic Editor&lt;/strong>&lt;/caption> &lt;tr>
+&lt;td>
+&lt;strong>Tool Name&lt;/strong>
+&lt;/td>
+&lt;pre>&lt;code> &amp;lt;td&amp;gt;
+&amp;lt;strong&amp;gt;Command&amp;lt;/strong&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Add element
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+a,ad,add
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Net
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+ne,Net
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Move
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Mov,move
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Copy
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Cop,copy
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Name
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+n,na,nam,name
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Value
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+v,va,value
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Label
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+l,la,lab,labe,label
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Text
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+T,tex,text
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/table>
+&lt;/div>
+&lt;div class="table-responsive">
+&lt;table class="table table-bordered" summary="Board Editor ">
+&lt;caption>&lt;strong>Board Editor&lt;/strong>&lt;/caption> &lt;tr>
+&lt;td>
+&lt;strong>Tool Name &lt;/strong>
+&lt;/td>
+&lt;pre>&lt;code> &amp;lt;td&amp;gt;
+&amp;lt;strong&amp;gt;Command &amp;lt;/strong&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Route
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+rou,rout,route
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Ripup
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+ri,rip,ripu,ripup
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Via
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Vi,via
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+Ratsnest
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+r,ra,rat,rasts,ratsn,ratsne,ratsnest
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/table>
+&lt;/div>
+&lt;p>&lt;strong>2. Show 명령어: ex) Show R&lt;/strong>*&lt;/p></description></item><item><title>CAM350에서 Eagle CAD NC drill 데이터를 제대로 불러오기</title><link>https://openmicrolab.com/cam350%EC%97%90%EC%84%9C-eagle-cad-nc-drill-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/</link><pubDate>Fri, 24 Apr 2015 09:54:17 +0000</pubDate><guid>https://openmicrolab.com/cam350%EC%97%90%EC%84%9C-eagle-cad-nc-drill-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/cam350_merge.png" alt="" width="326" height="367" />
+&lt;p>위 그림은 CAM350에서 Eagle CAD로 만든 거버데이터를 Auto import로 불러온 것이다. drill data의 좌표가 맞지 않아서 우측 상단에 표시된 것 을 볼 수 있다. 이렇게 된 이유는 Eagle CAD에서 NC 데이터를 출력하는 포맷은 2.5인데 CAM350의 기본 설정은 2.4이다. 따라서 다음과 같이 CAM350의 Auto import 포맷에서 Digits항목을 2, 5로 수정하면 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/cam350_drill_setting.png" alt="" width="475" height="304" />
+&lt;p>단순히 거버 데이터를 보는 수준이면 상관이 없는데 샘플 PCB가격을 아끼기 위해 &lt;a href="http://openmicrolab.com/cam350%EC%9C%BC%EB%A1%9C-2%EA%B0%9C%EC%9D%98-%EA%B1%B0%EB%B2%84%EB%A5%BC-%ED%95%98%EB%82%98%EB%A1%9C-%ED%95%A9%EC%B9%98%EA%B8%B0/" target="_blank">2개 이상의 거버데이터를 합기기&lt;/a>(영어로 PCB Penalization)위해서는 중요한 이슈이다.&lt;/p></description></item><item><title>Eagle CAD에서 DXF 파일 불러오기</title><link>https://openmicrolab.com/eagle-cad%EC%97%90%EC%84%9C-dxf-%ED%8C%8C%EC%9D%BC-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/</link><pubDate>Wed, 21 Jan 2015 07:08:41 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EC%97%90%EC%84%9C-dxf-%ED%8C%8C%EC%9D%BC-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/</guid><description>
+&lt;h3 id="dxf파일-불러오기">DXF파일 불러오기&lt;/h3>
+&lt;p>Eagle CAD에서 보드의 외곽을 그릴 때 20 Dimension 레이어에서 Width 0으로 외곽선을 그린다. 일반적으로 보드가 사각형이면 그리는데 어려움은 없는데, 보드에 곡선이 있으면 쉽지 않다. 기구 설계하는 쪽에서 보드 외곽을 만들어 논 것이 있으면 이것을  DXF 파일로 변환하고, 이것을 Eagle CAD에서 불러와서 그대로 사용이 가능한다. Eagle CAD에서 바로 이 기능을 지원하는 것은 아니고 import-dxf 라는 ulp를 받아서 사용하면 된다.  이 파일은 &lt;a href="http://www.cadsoftusa.com/downloads/ulps" target="_blank">&lt;a href="http://www.cadsoftusa.com/downloads/ulps">http://www.cadsoftusa.com/downloads/ulps&lt;/a>&lt;/a> 에서 import-dxf를 검색하면 import-dxf-1_6.ulp를 받을 수 있다.&lt;/p>
+&lt;p>ulp를 실행한 후 dxf파일을 선택하고 Metric, Scale을 설정하면 된다. 단 DXF파일은 도면 형태가 아니고, 보드의 외곽만 있어야 제대로 import가 된다.&lt;/p></description></item><item><title>이글 캐드 팁 – Trace의 길이 정보 확인하는 법</title><link>https://openmicrolab.com/%EC%9D%B4%EA%B8%80-%EC%BA%90%EB%93%9C-%ED%8C%81-trace%EC%9D%98-%EA%B8%B8%EC%9D%B4-%EC%A0%95%EB%B3%B4-%ED%99%95%EC%9D%B8%ED%95%98%EB%8A%94-%EB%B2%95/</link><pubDate>Wed, 22 Oct 2014 11:49:05 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B4%EA%B8%80-%EC%BA%90%EB%93%9C-%ED%8C%81-trace%EC%9D%98-%EA%B8%B8%EC%9D%B4-%EC%A0%95%EB%B3%B4-%ED%99%95%EC%9D%B8%ED%95%98%EB%8A%94-%EB%B2%95/</guid><description>
+&lt;p>고속의 메모리 신호들은 trace의 길이를 맞춰주는데 이때 trace의 길이를 확인할 필요가 있다. 그리고 Trace만으로 저항 성분을 만들때도 Trace의 길이 정보가 필요하다. Trace길이에 따른 저항값은 이전 포스팅[&lt;a href="http://openmicrolab.com/pcb-trace-%EC%A0%80%ED%95%AD%EA%B0%92-%EA%B3%84%EC%82%B0%EA%B8%B0/" target="_blank">PCB Trace 저항값 계산기&lt;/a>] 참고&lt;/p>
+&lt;p>이글 캐드에서 trace의 길이를 확인하려면 다음과 같이 ulp를 사용하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong style="color: #000000;">“run length-freq-ri”&lt;/strong>&lt;/p>&lt;/blockquote>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Eagle_Trace_Length.png" alt="" width="802" height="450" />
+&lt;p>&lt;span style="color: #141823;">&lt;/span>&lt;/p></description></item><item><title>CAM350으로 2개의 거버를 하나로 합치기</title><link>https://openmicrolab.com/cam350%EC%9C%BC%EB%A1%9C-2%EA%B0%9C%EC%9D%98-%EA%B1%B0%EB%B2%84%EB%A5%BC-%ED%95%98%EB%82%98%EB%A1%9C-%ED%95%A9%EC%B9%98%EA%B8%B0/</link><pubDate>Mon, 19 May 2014 05:13:01 +0000</pubDate><guid>https://openmicrolab.com/cam350%EC%9C%BC%EB%A1%9C-2%EA%B0%9C%EC%9D%98-%EA%B1%B0%EB%B2%84%EB%A5%BC-%ED%95%98%EB%82%98%EB%A1%9C-%ED%95%A9%EC%B9%98%EA%B8%B0/</guid><description>
+&lt;ul>
+&lt;li>첫번째 거버 파일을 auto import후 CAM 파일로 저장하는데, 좌표 계산을 쉽게하기 위해 &lt;strong>Edit &amp;raquo; Change Origin&lt;/strong>하여 원점을 맞춘다. Auto import를 할때 NC drill data는 선택하지 말고 따로 불러와서 저장을 한다. Eagle CAD의 경우 확장자는 drd이다.&lt;/li>
+&lt;li>두번째 거버 파일도 auto import후 CAM 파일로 저장&lt;/li>
+&lt;li>첫번째 CAM 파일을 불러온 후 &lt;strong>File &amp;raquo; Merge&lt;/strong>하여 두번째 파일을 불러오는데, 각각의 레이어를 맞춘다.&lt;/li>
+&lt;li>불러온 데이터를 원하는 위치에 올린다. 이때 **Setting &amp;raquo; View Option의 “View merged Databases”**를 선택해 놓으면 불러온 거버 파일을 이미지로 볼 수 있다.&lt;/li>
+&lt;li>불러온 거버 데이터는 merged data이므로 이것을 풀어야 한다. &lt;strong>Edit &amp;raquo; Change &amp;raquo; Explode &amp;raquo; Merged database&lt;/strong>를 선택후 커서가 십자 표시가 되면 불러온 거버파일을 선택한다.&lt;/li>
+&lt;li>이제 각 레이어 별로 선택을 해 보면서 제대로 Merge가 됐는지 확인한다.&lt;/li>
+&lt;li>**Export &amp;raquo; gerber Data… Export &amp;raquo; Drill Data…**를 하여 데이터를 저장한다.&lt;/li>
+&lt;li>저장된 Merged 된 거버 데이터를 불러와서 제대로 되어 있는 지 확인한다.&lt;/li>
+&lt;/ul>
+&lt;p>참고 자료: &lt;a href="http://www.elecrow.com/wiki/index.php?title=How_to_panelize_PCBs_with_CAM350" target="_blank">&lt;a href="http://www.elecrow.com/wiki/index.php?title=How_to_panelize_PCBs_with_CAM350">http://www.elecrow.com/wiki/index.php?title=How_to_panelize_PCBs_with_CAM350&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Eagle CAD로 거버만들때 주의사항</title><link>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EA%B1%B0%EB%B2%84%EB%A7%8C%EB%93%A4%EB%95%8C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/</link><pubDate>Mon, 19 May 2014 01:38:25 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EA%B1%B0%EB%B2%84%EB%A7%8C%EB%93%A4%EB%95%8C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/</guid><description>
+&lt;p>이전에 작성한 포스팅 &lt;a href="http://openmicrolab.com/eagle-cad/" target="_blank" rel="noopener noreferrer">Eagle CAD&lt;/a>에서 거버 만들기는 일반적으로 2층 PCB의 경우 bottom에 부품이 없을 경우를 가정한다. 만약 bottom면에 부품을 실장을 하거나, &lt;a href="http://openmicrolab.com/eagle-cad%EB%A1%9C-%EC%9E%91%EC%97%85%ED%95%9C-pcb%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%84%A3%EA%B8%B0/" target="_blank" rel="noopener noreferrer">PCB에 이미지를 넣을 경우&lt;/a>는 기본으로 설정된 레이어 이외의 레이어를 사용하므로, 거버를 만들때 추가적인 레이어가 선택이 되도록 해야 한다.&lt;/p>
+&lt;p>Bottom면에 부품을 실장할 경우는 Silk screen solder를 추가한다. 즉 거버파일을 만드는 단계에서 *&lt;em>gerb274x.cam를 선택하고 작업을 할때 Silk screen SOL을 만들고 파일 확장자는 &lt;em>.pls로 해서 작업을 하면 된다.&lt;/em>&lt;/em>&lt;/p>
+&lt;img loading="lazy" src="http://openmicrolab.cdn2.cafe24.com/eale_gerber.png" alt="null" width="680" height="405" />
+&lt;p>&lt;strong>이렇게 할 경우 최종 거버파일은 10개가 된다.&lt;/strong>&lt;/p></description></item></channel></rss>

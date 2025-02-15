@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D 프린터 on OpenMicroLab</title><link>https://openmicrolab.com/tags/3d-%ED%94%84%EB%A6%B0%ED%84%B0/</link><description>Recent content in 3D 프린터 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 26 Nov 2018 04:23:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/3d-%ED%94%84%EB%A6%B0%ED%84%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>Cura에 새로운 프린터 프로파일 추가하기</title><link>https://openmicrolab.com/cura%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 26 Nov 2018 04:23:09 +0000</pubDate><guid>https://openmicrolab.com/cura%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>기기 정의 파일, 익스트루더 정의 파일을 만들어서 적용을 해야한다.&lt;/p>
+&lt;ol>
+&lt;li>기기 정의 파일&lt;br>
+기기의 특성을 정의한 파일로 &lt;a href="https://github.com/Ultimaker/Cura/blob/master/resources/definitions/ultimaker_original.def.json" target="_blank" rel="noopener noreferrer">템플릿&lt;/a>을 참고한다.&lt;br>
+보다 자세한 내용은 &lt;a href="https://github.com/Ultimaker/Cura/wiki/Definition-Files-Explained" target="_blank" rel="noopener noreferrer">여기&lt;/a> 참고&lt;/li>
+&lt;li>익스트루더 정의 파일&lt;/li>
+&lt;/ol>
+&lt;p>Creatable D3를 Cura에 적용한 &lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1543206099/Creatable_D3_Profile_Test_reayqr.pdf" target="_blank" rel="noopener noreferrer">문서 &lt;/a>&lt;/p></description></item><item><title>2017년 3D 프린터 시장정보</title><link>https://openmicrolab.com/2017%EB%85%84-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8B%9C%EC%9E%A5%EC%A0%95%EB%B3%B4/</link><pubDate>Thu, 20 Jul 2017 11:30:01 +0000</pubDate><guid>https://openmicrolab.com/2017%EB%85%84-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8B%9C%EC%9E%A5%EC%A0%95%EB%B3%B4/</guid><description>
+&lt;p>2017년 Q1에 88,000대가 팔림. 대략 연간 시장은 많이 잡아서 400K 정도임.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4000" src="https://res.cloudinary.com/openmicrolab/image/upload/v1500549990/3D-Printer-Shipments-up-16-in-Q1-2017-as-Mid-Market-Starts-to-Heat-Up-12.07.2017_garfos.jpg" width="787" height="643" /></description></item><item><title>Makerbot, Prusa 그리고 3D 프린팅 시장</title><link>https://openmicrolab.com/makerbot-prusa-%EA%B7%B8%EB%A6%AC%EA%B3%A0-3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5/</link><pubDate>Tue, 28 Feb 2017 02:04:20 +0000</pubDate><guid>https://openmicrolab.com/makerbot-prusa-%EA%B7%B8%EB%A6%AC%EA%B3%A0-3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5/</guid><description>
+&lt;p>최근 &lt;a href="http://www.fabbaloo.com/blog/2017/2/16/whats-really-going-on-at-makerbot" target="_blank">메이커봇이 인원을 30% 감원한다는 기사&lt;/a>&lt;/p>
+&lt;p>여기서 Makerbot과 Prusa의 현재 상황과 3D 프린팅 시장을 알 수 있다.&lt;/p>
+&lt;blockquote>
+&lt;p>consumers are incapable of 3D design, fixing wonky machines and desire 3D models that aren’t easily found&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>고객들이 아직은 3D 디자인을 할 수 없고&lt;/li>
+&lt;li>기기에 문제가 생길 경우 해결이 안되며&lt;/li>
+&lt;li>원하는 3D 모델을 찾기 여러움&lt;/li>
+&lt;/ul>
+&lt;p>그래서 시장은 아직 일반인 대상이 아니라 DIY community인데, 이쪽을 포커싱하고 있는 &lt;a href="http://www.prusaprinters.org/" target="_blank">Prusa&lt;/a>의 경우 90명 정도의 스텝이 월 3천대 이상을 판매한다고 함.&lt;/p></description></item><item><title>3D 프린터 슬라이싱 툴</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%ED%88%B4/</link><pubDate>Fri, 09 Dec 2016 03:00:45 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%ED%88%B4/</guid><description>
+&lt;table id="tablepress-75" class="tablepress tablepress-id-75">
+&lt;tr class="row-1 odd">
+&lt;th class="column-1">
+Software
+&lt;/th>
+&lt;pre>&lt;code>&amp;lt;th class=&amp;quot;column-2&amp;quot;&amp;gt;
+User
+&amp;lt;/th&amp;gt;
+&amp;lt;th class=&amp;quot;column-3&amp;quot;&amp;gt;
+Price
+&amp;lt;/th&amp;gt;
+&amp;lt;th class=&amp;quot;column-4&amp;quot;&amp;gt;
+OS
+&amp;lt;/th&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-2 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#3DPrinterOS">3DPrinterOS&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Freemium
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser, Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-3 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Astroprint">Astroprint&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Freemium
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser, Raspberry Pi, pcDuino
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-4 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Craftware">Craftware&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-5 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Cura">Cura&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-6 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#IceSL">IceSL&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-7 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#KISSlicer">KISSlicer&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free/$35
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux, Raspberry Pie
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-8 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#MakerBot%20Print">MakerBot Print&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-9 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#MatterControl">MatterControl&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-10 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Netfabb%20Basic">Netfabb Basic&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-11 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#OctoPrint">OctoPrint&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Raspberry Pi, Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-12 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Repetier">Repetier&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-13 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Simplify3D">Simplify3D&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginers, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+$150
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-14 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Slic3r">Slic3r&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users, Professional Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-15 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#SliceCrafter">SliceCrafter&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-16 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Tinkerine%20Suite">Tinkerine Suite&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-17 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Z-Suite">Z-Suite&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;/table></description></item><item><title>A4988 Step motor driver</title><link>https://openmicrolab.com/a4988-step-motor-driver/</link><pubDate>Mon, 04 Jul 2016 09:05:28 +0000</pubDate><guid>https://openmicrolab.com/a4988-step-motor-driver/</guid><description>
+&lt;p>3D프린터에 많이 사용되는 스텝모터 드라이버인 Allegro사의 A4988칩. 모터드라이버에서 가장 중요한 것은 전류인데, 이것을 설정하는 방법은 칩의 17번 핀 REF에 걸리는 전압에 의해 결정이 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>Current Limit = VREF × 2.5&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>즉 만약 Vref가 0.3이면 Current limit는 0.75A. 그런데 full step mode일때의 전류는 Current limit의 70%로 제한이 되므로 만약 1A의 전류제한으로 설정을 하려면 1/0.7 = 1.4A로 가정을 하고 계산을 한다. 따라서 Vref = 1.4 / 2.5 = 0.56V 가 되게 설정을 한다.&lt;/strong>&lt;/p></description></item><item><title>3D 프린터 – 다이렉트 &amp; 보우덴 방식</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8-%EB%B3%B4%EC%9A%B0%EB%8D%B4-%EB%B0%A9%EC%8B%9D/</link><pubDate>Thu, 14 Apr 2016 02:10:09 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8-%EB%B3%B4%EC%9A%B0%EB%8D%B4-%EB%B0%A9%EC%8B%9D/</guid><description>
+&lt;p>3D 프린터 – 다이렉트 &amp;amp; 보우덴 방식의 비교&lt;/p>
+&lt;p>&lt;strong>다이렉트 방식&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>피더의 구동부와 노즐사이의 간격이 짧아서 응답성이 좋다. 따라서 stringing, oozing이 덜 생기고 피더 모터의 토크가 좀 작아도 된다. 플랙시블 필라멘트사용이 쉽다.&lt;/li>
+&lt;li>하지만 헤드가 무거워져서 “backlash, overshoot, and frame wobble” 등이 생기기 쉽다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>보우덴 방식&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>헤드가 가벼워져서 모든 조건이 같을때 빨리움직일 수 있다.&lt;/li>
+&lt;li>필라멘트 리트렉션, strining, oozing, 필라멘트 마찰등의 단점&lt;/li>
+&lt;/ul>
+&lt;p>참고로 응답성은 시스템의 hysteresis, lag와 관련이 있다._ _&lt;/p>
+&lt;p>관련 문서: &lt;a href="http://www.matterhackers.com/articles/extruders-101:-a-crash-course-on-an-essential-component-of-your-3d-printer" target="_blank">&lt;a href="http://www.matterhackers.com/articles/extruders-101:-a-crash-course-on-an-essential-component-of-your-3d-printer">http://www.matterhackers.com/articles/extruders-101:-a-crash-course-on-an-essential-component-of-your-3d-printer&lt;/a>&lt;/a>&lt;/p>
+&lt;div class="articleElement">
+&lt;/div>
+&lt;div class="articleElement">
+&lt;/div></description></item><item><title>3D Printer 레이어 두께 계산</title><link>https://openmicrolab.com/3d_printer_layer_width/</link><pubDate>Thu, 07 Apr 2016 10:08:34 +0000</pubDate><guid>https://openmicrolab.com/3d_printer_layer_width/</guid><description>
+&lt;p>&lt;a href="http://prusaprinters.org/calculator/" target="_blank" rel="noopener">&lt;a href="http://prusaprinters.org/calculator/">http://prusaprinters.org/calculator/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>이 외에도 유용한 계산을 할 수 있는 툴이 있다.&lt;/p></description></item><item><title>3D 프린팅이 세상을 바꾸는 33가지 방법</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9D%B4-%EC%84%B8%EC%83%81%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8A%94-33%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</link><pubDate>Thu, 05 Nov 2015 03:08:20 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9D%B4-%EC%84%B8%EC%83%81%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8A%94-33%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</guid><description>
+&lt;p>RS Components에서 만든 자료 – 3D 프린팅이 세상을 바꾸는 33가지 방법&lt;/p>
+&lt;p>&lt;span style="font-size: 13px; color: #000000;">33 Ways 3D Printing Is Transforming The World – &lt;a style="color: #000000; font-size: 13px;" href="http://uk.rs-online.com/web/generalDisplay.html?id=i/3d-printing">RS Components UK&lt;/a>.&lt;/span>&lt;/p></description></item><item><title>3D 프린팅: 전설을 만들다</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%A0%84%EC%84%A4%EC%9D%84-%EB%A7%8C%EB%93%A4%EB%8B%A4/</link><pubDate>Sat, 05 Sep 2015 14:55:48 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%A0%84%EC%84%A4%EC%9D%84-%EB%A7%8C%EB%93%A4%EB%8B%A4/</guid><description>
+&lt;p>타큐멘타리-  &lt;a href="http://www.eidf.co.kr/2015kor/movie/view/150" target="_blank">3D 프린팅: 전설을 만들다&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/09/prt_legend.jpg">&lt;img loading="lazy" class="alignnone size-medium wp-image-3407" src="https://openmicrolab.com/images/2015/09/prt_legend-300x169.jpg" alt="prt_legend" width="300" height="169" srcset="https://openmicrolab.com/images/2015/09/prt_legend-300x169.jpg 300w, https://openmicrolab.com/images/2015/09/prt_legend.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" />&lt;/a>&lt;/p>
+&lt;p>데스크탑 3D 프린팅 업계의 Makerbot과 Formlabs의 파란 만장한 이야기와 총기를 3D 프린팅한 사나이의 이랴기들려준다. 특히Makerbot과 Formlabs 이 두 회사가 커지면서 발생하는 문제들을 보여준다.&lt;/p>
+&lt;p>Formlabs는 MIT 출신 Maxim Lobovsky, Natan Linder, David Cranor가 2011년 회사를 설립하고  Kickstarter에서 SLA프린터인 Form1으로 &lt;a href="https://www.kickstarter.com/projects/formlabs/form-1-an-affordable-professional-3d-printer/description" target="_blank">$3M가까이 펀딩&lt;/a>을 받았으나, 6개월이나 제품출시가 늦어지고 3D system사로 부터 소송까지 휘말린다.&lt;/p>
+&lt;p>Makerbot은 2009년 Bre Pettis, Adam Mayer, Zach “Hoeken” Smith가  오픈소스하드웨어에 기반한 FDM 방식의 3D 프린터를 개발하였다. 재미있는 것은 이 3명의 설립자들이 다 애플의 워즈니악이 되고 싶었다는 것. 하지만 CEO는 Bre Pettis가 맡아서 잡스의 역할을 수행했고, 2013년 스트라타시스에 합병까지 이끌었다($403M). 이 과정에서 넓고 좋은 사무실로 옮기고 회가의 직원들이 늘어났지만 오픈소스하드웨어에서 출발한 제품은 Replicator 2부터는 closed s/w로 바뀌었고 이것으로 공동창업자인 Zach는 회사 철학에 엄청난 변화를 준 것에 대해 “궁극적 배신”이라고 하며 회사를 떠난다.&lt;/p></description></item><item><title>3D 프린터 트러블 슈팅</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85/</link><pubDate>Tue, 23 Jun 2015 01:55:35 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85/</guid><description>
+&lt;p>&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baaedae4b08d4d93a1c214/file-GN9iWX4Uso.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53bbd820e4b09d13bf3cdd35/file-mjx4MffrQn.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53ba99cfe4b09d13bf3cdb5f/file-NZnhvOw08g.jpg" alt="" width="200" height="200" />&lt;/p>
+&lt;p>&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baa2d5e4b08d4d93a1c203/file-aJTtLfvFX7.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baa75fe4b08d4d93a1c20e/file-sDk3kVHFi4.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53bbe483e4b08d4d93a1c3e3/file-1ZrZKjRNje.jpg" alt="" width="200" height="200" />&lt;/p>
+&lt;p>&lt;strong>&lt;span class="s1">Pillowng&lt;/span>&lt;/strong>&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">Top layer에서 팬의 속도가 최대가 아닐때 이런 문제가 발생할 수 있다.  &lt;/span>&lt;span class="s1">Top Layer는 최소 6 top layer가 되야.. 즉 0.1mm 레이어 두께일때 0.6mm&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>&lt;span class="s1">Warping&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">히트베드, 풀 사용, &lt;/span>&lt;span class="s1">Brim 을 적용&lt;/span>
+&lt;/p>
+&lt;p class="p3">
+&lt;strong>&lt;span class="s1">Elephant’s foot&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">레벨링을 해서 약간 띄움&lt;/span>
+&lt;/p>
+&lt;p class="p3">
+&lt;strong>&lt;span class="s1">Stringing&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">Retracation &amp; 온도를 낮춤&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>&lt;span class="s1">Ringing&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">프린팅 속도를 낮춤, &lt;/span>&lt;span class="s1">acceleration 속도를 낮춤, &lt;/span>&lt;span class="s1">Outer wall을 0.8mm 이상으로&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">과도한 열도 이런 형상을 유발할 수 있다.&lt;/span>
+&lt;/p>
+&lt;p>&lt;strong>참고자료&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/23-a-visual-ultimaker-troubleshooting-guide" target="_blank">Visual Ultimaker troubleshooting guide&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/30-getting-better-prints" target="_blank">Getting better print&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/38-designing-for-3d-printing">Designing for 3D print&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p class="p1"></description></item><item><title>3D 프린터 필라멘트 – PLA(Polylactic Acid)</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-plapolylactic-acid/</link><pubDate>Tue, 20 Jan 2015 09:32:47 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%95%84%EB%9D%BC%EB%A9%98%ED%8A%B8-plapolylactic-acid/</guid><description>
+&lt;h3 id="특징">특징&lt;/h3>
+&lt;ul>
+&lt;li>생분해성 폴리머로 원재료의 대부분을 natureworks에서 공급됨&lt;/li>
+&lt;li>공기중의 습기를 빨아들여서 출력할때 이것이 버블로 나타날 수 있음&lt;/li>
+&lt;li>녹는 온도는 180~220°C이며, 80°C 정도면 부드러워 진다. 하지만 3D프린팅 필라멘트는 다른 재료를 섞어서 만드므로 구체적인 온도 조건은 데이터 시트를 참고해야 함. 색깔별로도 온도 특성이 다름에 유의!
+&lt;ul>
+&lt;li>4032D (&lt;a class="external text" href="http://www.natureworksllc.com/~/media/Technical_Resources/Technical_Data_Sheets/TechnicalDataSheet_4032D_films_pdf.pdf" rel="nofollow">datasheet&lt;/a>) is a high-temperature PLA. Requires higher temperatures and may need to be set as high as 230°C&lt;/li>
+&lt;li>4042D (&lt;a class="external text" href="http://forums.reprap.org/file.php?94,file=4512,filename=TechnicalDataSheet_4042D_pdf.pdf" rel="nofollow">datasheet&lt;/a>) should extrude at 190°C&lt;/li>
+&lt;li>4043D (&lt;a class="external text" href="http://www.natureworksllc.com/~/media/Technical_Resources/Technical_Data_Sheets/TechnicalDataSheet_4043D_films_pdf.pdf" rel="nofollow">datasheet&lt;/a>) 160-220°C around 180°C is a good start (see &lt;a class="external free" href="http://ultimachine.com/pla" rel="nofollow">&lt;a href="http://ultimachine.com/pla">http://ultimachine.com/pla&lt;/a>&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Glass transition temperature (유리전이 온도): 비체적의 변화율이 갑자기 바뀌는 온도, 대략 굳는 온도라고 이해. 60-65°C 임&lt;/li>
+&lt;li>ABS보다 강하고, PLA보다 약간 더 나은 표면의 품질을 가지나 더 낮은 온도를 필요로 하고 더 강한 프린트 물을 만들 수 있음&lt;/li>
+&lt;li>ABS보다 마찰 계수가 조금 더 높지만 녹을때 낮은 점도때문에 이것을 상쇄한다. 즉 더 낮은 압력으로 밀어 낼 수 있다.&lt;/li>
+&lt;/ul>
+&lt;h3 id="베드">베드&lt;/h3>
+&lt;ul>
+&lt;li>PLA는 아크릴 베드에 너무 잘 붙으므로 아크릴 베드를 바로 사용하기보다는 테이프를 사용을 추천&lt;/li>
+&lt;li>히트베드 없이 출력이 가능&lt;/li>
+&lt;li>하지만 가열된 Polymide(Kapton)에 잘 붙지만 베드와 프린트물이 식으면 떼어내기 힘들다.&lt;/li>
+&lt;li>블루테이트를 사용할 때는 베드를 가열하지 말것&lt;/li>
+&lt;li>히트베드를 사용시에는 70도를 추천&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고"> 참고&lt;/h3>
+&lt;p>&lt;a href="http://reprap.org/wiki/PLA" target="_blank">&lt;a href="http://reprap.org/wiki/PLA">http://reprap.org/wiki/PLA&lt;/a>&lt;/a>&lt;/p></description></item><item><title>3D 프린팅 앱</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%95%B1/</link><pubDate>Sat, 27 Dec 2014 09:11:54 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%95%B1/</guid><description>
+&lt;p>일반 프린터를 쓰기위해서는 타이핑만 하면 되지만 3D 프린팅을 위해서는 3D모델링을 해야한다.  하지만 이것은 설계 또는 디자인의 영역이고 3D 디자인 툴을 사용해야 하는데 이 S/W는 워드수준이 아니므로 다음과 같은 2가지 접근이 나올 것으로 예상된다.&lt;/p>
+&lt;ul>
+&lt;li>이미 잘 디자인된 모델들을 &lt;a title="thingiverse" href="http://www.thingiverse.com/" target="_blank">Thingiverse&lt;/a>같은 사이트에서 다운로드 해서 사용하기&lt;/li>
+&lt;li>특정 응용에 따른 S/W가 나와서 쉽게 모델링이 가능하게 하는 것&lt;/li>
+&lt;/ul>
+&lt;p>첫번째 경우 Thingiverse가 계속 확장이 되어서, 일반 회사들도 자신들의 계정으로 페이지를 만들어서 디자인을 오픈하기도 한다.  &lt;a href="http://www.thingiverse.com/GE/about" target="_blank">GE&lt;/a>, &lt;a href="http://www.thingiverse.com/adafruit/about" target="_blank">Adafruit&lt;/a> …&lt;/p>
+&lt;p>두번째의 경우 Makerbot에서는 자신들의 프린터와 호환이 되는 App을 만들 것을 권장하며, &lt;a href="http://www.makerbot.com/developers" target="_blank">MakerBot Developer Program&lt;/a>을 운영해서 ECO System을 구축하고 있다. 하기는 &lt;a href="http://www.makerbot.com/readyapps" target="_blank">Makerbot Ready App&lt;/a>으로 소개된 프로그램들이다.&lt;/p></description></item><item><title>PEI 3D 프린터 베드</title><link>https://openmicrolab.com/pei-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%B2%A0%EB%93%9C/</link><pubDate>Thu, 04 Sep 2014 01:55:47 +0000</pubDate><guid>https://openmicrolab.com/pei-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%B2%A0%EB%93%9C/</guid><description>
+&lt;p>3D 프린터의 힛베드(heat bed)에 모델을 잘 붙게하고, 프린팅이 끝난후 힛베드의 온도가 내려가면 모델을 잘 떼어지게 하기위해서 여러가지 방법이 있다. 일반적으로 가장 저렴한 방법은 힛베드에 테이핑을 하거나 딱풀이나 스프레이등을 뿌린다. 참고로 3가지 프린터를 구매해서 확인해 보니 MakerBot은 캡톤 필름시트, Ultimaker는 딱풀, 오픈크리에이터스는 테이프를 넣어서 준다.&lt;/p>
+&lt;h3 id="peia-hrefhttpsenwikipediaorgwikipolyetherimide-target_blankpolyetherimidea--발음이8230--_--베드를-사용하는-시도">PEI(&lt;a href="https://en.wikipedia.org/wiki/Polyetherimide" target="_blank">Polyetherimide&lt;/a> : 발음이… -_-;;)  베드를 사용하는 시도&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://www.spiderbot.eu/en/products/upgrades/pei-bed-detail.html" target="_blank">SpiderBot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kickstarter.com/projects/robox/robox-desktop-3d-printer-and-micro-manufacturing-p" target="_blank">Robox&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>PEI는 &lt;a href="http://www.aetnaplastics.com/products/d/Ultem" target="_blank">Ultem&lt;/a>(울템)이라고 불리는데 가격이 테이프에 비해서 좀 고가인듯 하다. PEI는 얇은 판처럼 사용할 수 있어서 테이프처럼 붙이는 수고가 필요하지 않아서 저렴하게 소싱할 수 있으면 가장 좋은 솔루션이 될 것 같다.&lt;/p></description></item><item><title>3D 프린터 테스트를 위한 모델</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%AA%A8%EB%8D%B8/</link><pubDate>Mon, 04 Aug 2014 06:55:30 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%AA%A8%EB%8D%B8/</guid><description>
+&lt;p>&lt;span style="line-height: 1.5em;">       &lt;/span>&lt;img loading="lazy" class="alignnone" style="line-height: 1.5em;" src="http://openmicrolab.cdn2.cafe24.com/1.png" alt="" width="145" height="108" /> &lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/2.png" alt="" width="145" height="109" /> &lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/3.png" alt="" width="146" height="110" />&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/4.png" alt="" width="146" height="109" />&lt;/p>
+&lt;p>일명 Torture test..&lt;/p>
+&lt;ul>
+&lt;li>Snake: &lt;a href="http://www.thingiverse.com/thing:4743" target="_blank">&lt;a href="http://www.thingiverse.com/thing:4743">http://www.thingiverse.com/thing:4743&lt;/a>&lt;/a>&lt;/li>
+&lt;li>Owl Statue: &lt;a href="http://www.thingiverse.com/thing:18218" target="_blank">&lt;a href="http://www.thingiverse.com/thing:18218">http://www.thingiverse.com/thing:18218&lt;/a>&lt;/a>&lt;/li>
+&lt;li>Nautilus Gears: &lt;a href="http://www.thingiverse.com/thing:27551" target="_blank">&lt;a href="http://www.thingiverse.com/thing:27551">http://www.thingiverse.com/thing:27551&lt;/a>&lt;/a>&lt;/li>
+&lt;li>Dimension Torture Test:&lt;a href="http://www.thingiverse.com/thing:33902" target="_blank"> http://www.thingiverse.com/thing:33902&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

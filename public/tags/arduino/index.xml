@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino on OpenMicroLab</title><link>https://openmicrolab.com/tags/arduino/</link><description>Recent content in Arduino on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 20 Jul 2021 09:51:10 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/arduino/index.xml" rel="self" type="application/rss+xml"/><item><title>파이썬을 사용한 실시간 데이터 그래프</title><link>https://openmicrolab.com/4752-2/</link><pubDate>Tue, 20 Jul 2021 09:51:10 +0000</pubDate><guid>https://openmicrolab.com/4752-2/</guid><description>
+&lt;p>아두이노에도 데이터를 실시간으로 plot하는 기능이 있지만, 오토스케일링 기능 때문에 가끔 불편할 때도 있다. Python Playground 책의 저자의 블로그를 보니 실시간으로 시리얼 데이터를 받아서 mathplot을 사용해서 그래프를 출력하는 프로그램이 있어서 사용해 봤다.&lt;/p>
+&lt;blockquote>
+&lt;p>사용법: python ldr.py –port [port]&lt;/p>&lt;/blockquote>
+&lt;p>VS Code에서 파이썬 코드를 디버깅할 때 인자를 입력 빋아서 디버깅하는 방법이 있는 것 같아서 구글링을 해보고 tasks.json파일을 수정해서 해봤는데, 잘 안되어서 코드를 수정해서 테스트를 했다. 원래 사용법은  위 사용법처럼 포트명을 입력을 해야 함.&lt;/p></description></item><item><title>PlatformIO, Arduino에서의 핀매핑 정보</title><link>https://openmicrolab.com/platformio-arduino%EC%97%90%EC%84%9C%EC%9D%98-%ED%95%80%EB%A7%A4%ED%95%91-%EC%A0%95%EB%B3%B4/</link><pubDate>Thu, 18 Feb 2021 08:23:52 +0000</pubDate><guid>https://openmicrolab.com/platformio-arduino%EC%97%90%EC%84%9C%EC%9D%98-%ED%95%80%EB%A7%A4%ED%95%91-%EC%A0%95%EB%B3%B4/</guid><description>
+&lt;p>펌웨어 개발을 할때 MCU의 I/O핀을 맵핑해서 사용을 하게 된다. 아두이노의 경우에는 실제 HW 핀 매핑을 MCU 벤더에서 제공하는 것 처럼 low level로 access하지 않고, 보드의 실크에 적혀있는 핀 번호로 access할 수 있도록 추상화를 해 놓았다. 실제로 핀 매핑이 어떻게 되는지 보려면 맥의 경우 $HOME/라이브러리/Arduino15/packages 아래에 각 플랫폼 별로 되어 있는 폴더를 확인해 봐야 한다. 예를 들면 adafruit의 경우 /packages/adafruit/hardware/nrf52/0.21.0/variants/feather_nrf52840_express/variant.h파일과 variant.cpp 파일을 확인해 보면 된다.&lt;/p>
+&lt;p>PlatformIO도 아두이노와 마찬가지로 VSCode에 설치를 하면 맥에서는 $HOME/.platformio/packages 폴더 아래에 각각의 프레임워크에서 사용하는 bootloader, library들이 설치가 되어 있다.&lt;/p></description></item><item><title>ATTiny85 아두이노</title><link>https://openmicrolab.com/attiny85-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</link><pubDate>Sat, 12 Oct 2019 12:05:08 +0000</pubDate><guid>https://openmicrolab.com/attiny85-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</guid><description>
+&lt;p>ATTiny85는 8핀짜리 칩이나 아두이노 환경에서 개발가능하다.&lt;/p>
+&lt;ul>
+&lt;li>Digispark-Compatible ATtiny85 USB 같이 부트로더가 있는 보드를 사용하거나&lt;/li>
+&lt;li>ATMEL ICE 같은 장비를 사용하고 아두이노 IDE에서 다운로드가 가능하다.&lt;/li>
+&lt;/ul>
+&lt;h3 id="digispark-compatible-attiny85-usb">Digispark-Compatible ATtiny85 USB&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4652" src="https://res.cloudinary.com/openmicrolab/image/upload/v1570881833/Digispark-Compatible-ATtiny85-USB_opp5wt.jpg" width="261" height="229" />
+&lt;img loading="lazy" class="alignnone wp-image-4653" src="https://res.cloudinary.com/openmicrolab/image/upload/v1570881833/Circuit-Diagram-of-the-ATtiny85-USB-Mini-Development-Board_ijr4av.png" width="675" height="568" />
+&lt;h3 id="주의할-점">주의할 점&lt;/h3>
+&lt;p>Fuse 비트를 수정하면 Reset 핀도 사용이 가능하지만 일반적으로 안쓰는 것이 좋다. 나머지 사용이 가능한 핀은 다음과 같고, 시리얼 출력은 Software Serial이 사용이 가능하다. 단 프로그래밍을 할때 8Mhz로 해야 한다. &lt;strong>Tools&lt;/strong> –&amp;gt; &lt;strong>Board&lt;/strong> –&amp;gt; &lt;strong>ATtiny85 (internal 8 MHz clock)&lt;/strong>&lt;/p></description></item><item><title>아두이노에서 WebUSB 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-webusb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 27 Sep 2018 07:14:47 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%97%90%EC%84%9C-webusb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>구글 크롬 65버전 이상일 경우 &lt;a href="https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web" target="_blank" rel="noopener noreferrer">WebUSB&lt;/a>를 지원한다.&lt;/p>
+&lt;h3 id="microbit">&lt;strong>Micro:Bit&lt;/strong>&lt;/h3>
+&lt;p>Micro:bit의 경우 웹에서 MakeCode같은 프로그램으로 코딩을 하고 hex 파일을 다운로드 후 외장 디스크로 연결된 디바이스에 drag &amp;amp; drop를 해서 프로그래밍을 했는데, 이제는 웹브라우저에서 바로 USB를 통해 프로그래밍이 가능하다.&lt;/p>
+&lt;h3 id="arduino">&lt;strong>Arduino&lt;/strong>&lt;/h3>
+&lt;p>아두이노의 경우 다음과 같이 작업을 한다.&lt;/p>
+&lt;ul>
+&lt;li>아두이노는 1.6.11 이상 버전 사용&lt;/li>
+&lt;li>Contents/Java/hardware/arduino/avr/cores/arduino/USBCore.h 파일의 #define USB_VERSION 0x200를 0x210 로 수정&lt;/li>
+&lt;li>&lt;a href="https://github.com/webusb/arduino" target="_blank" rel="noopener noreferrer">&lt;a href="https://github.com/webusb/arduino">https://github.com/webusb/arduino&lt;/a>&lt;/a> 이 repo의 WebUSB폴더를 아두이노 라이브러리에 copy&lt;/li>
+&lt;li>예제 프로그램으로 동작 확인&lt;/li>
+&lt;li>현재 지원되는 보드
+&lt;ul>
+&lt;li>Arduino Leonardo&lt;/li>
+&lt;li>Arduino/Genuino Micro&lt;/li>
+&lt;li>Arduino/Genuino Zero&lt;/li>
+&lt;li>Arduino MKR1000&lt;/li>
+&lt;li>Arduino MKRZero&lt;/li>
+&lt;li>Arduino MKRFox1200&lt;/li>
+&lt;li>Adafruit Feather 32u4&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;p>&lt;a href="https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a">https://www.hackster.io/FreeGroup/arduino-webusb-circuit-simulator-fun-9c841a&lt;/a>&lt;/a>&lt;/p></description></item><item><title>벽돌된 Arduino Pro Micro 살리기</title><link>https://openmicrolab.com/%EB%B2%BD%EB%8F%8C%EB%90%9C-arduino-pro-micro-%EC%82%B4%EB%A6%AC%EA%B8%B0/</link><pubDate>Tue, 13 Feb 2018 11:40:34 +0000</pubDate><guid>https://openmicrolab.com/%EB%B2%BD%EB%8F%8C%EB%90%9C-arduino-pro-micro-%EC%82%B4%EB%A6%AC%EA%B8%B0/</guid><description>
+&lt;p>Sparkfun사의 &lt;a href="https://www.sparkfun.com/products/12640" target="_blank" rel="noopener noreferrer">Arduino Pro Micro&lt;/a>는 ATmega32U4를 사용하고 USB CDC기능이 있다. 문제는 이 보드를 잘못 프로그래밍하면, 즉 아두이노에서 디바이스 선택을 잘못하거나, 5V 디바이스(16Mhz)인데 3.3V 디바이스(8Mhz)로 선택을 해서 프로그래밍을 하면 USB CDC포트가 사라져서 더 이상 프로그래밍을 할 수 없다.&lt;/p>
+&lt;h3 id="해결-방법">해결 방법&lt;/h3>
+&lt;p>Serial 포트를 연결해서 전원을 공급하고 보드의 RST와 GND를 연결했다 떼면, PC에서 시리얼 포트가 잡힌다. 이때 아두이노에서 제대로 된 세팅으로 다시 프로그래밍을 하면 된다.&lt;/p>
+&lt;img loading="lazy" class="aligncenter" src="https://cdn.sparkfun.com/assets/6/d/3/4/a/523c8e23757b7fbe5f8b4584.png" width="423" height="309" /></description></item><item><title>Blynk 사용법</title><link>https://openmicrolab.com/blynk-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Thu, 26 Oct 2017 06:55:27 +0000</pubDate><guid>https://openmicrolab.com/blynk-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>&lt;a href="http://www.blynk.cc/" target="_blank" rel="noopener noreferrer">Blynk&lt;/a>는 IoT응용을 쉽게만들어 주는 앱이다.  동작 방식은 아래 그림과 같이 앱이 서버를 거쳐서 디바이스에 접근을 하고, 디바이스역시 서버를 거쳐서 앱과 통신을 한다. 단 디바이스에는 Blynk에서 제공하는 라이브러리를 설치를 해야한다.&lt;/p>
+&lt;img loading="lazy" class="alignnone " src="http://docs.blynk.cc/images/architecture.png" width="515" height="385" />
+&lt;h3 id="디바이스">&lt;strong>디바이스&lt;/strong>&lt;/h3>
+&lt;p>현재 지원하는 디바이스는 아두이노, ESP8266, 라즈베리파이… 등 다양하며(&lt;a href="http://docs.blynk.cc/#supported-hardware-platforms" target="_blank" rel="noopener noreferrer">지원하는 하드웨어&lt;/a>), Bluetooth, WiFi등의 connectivity가 없는 경우에도 PC를 통해서 동작이 가능하다. 아두이노에서는 **스케치 &amp;gt; 라이브러리 포함하기 &amp;gt; 라이브러리 관리…**를 선택해서 Blynk로 검색을 하면 라이브러리 및 예제의 설치가 가능하다. 그리고 펌웨어에서는 앱을 통해 받은 토큰을 코드에 넣어서 서버와 통신을 한다.&lt;/p></description></item><item><title>Mac OS에서 ESP8266 개발 환경</title><link>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</link><pubDate>Wed, 13 Sep 2017 04:06:37 +0000</pubDate><guid>https://openmicrolab.com/mac-os%EC%97%90%EC%84%9C-esp8266-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</guid><description>
+&lt;h3 id="아두이노">아두이노&lt;/h3>
+&lt;ol>
+&lt;li>Arduino &amp;gt; Preferences… 의 메뉴에서 추가적인 보드매니저 URLs에 다음의 링크를 입력한다.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="http://arduino.esp8266.com/stable/package">http://arduino.esp8266.com/stable/package&lt;/a>_esp8266com_index.json&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4040" src="https://res.cloudinary.com/openmicrolab/image/upload/v1505273144/ESP_Arduino_qgvl3z.png" width="459" height="164" />
+&lt;ol start="2">
+&lt;li>툴 &amp;gt; 보드 &amp;gt; 보드 매니저… 의 메뉴의 필터에 ESP를 입력 후 esp8266을 선택후 설치한다.&lt;/li>
+&lt;/ol>
+&lt;img loading="lazy" class="alignnone wp-image-4041" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_451/v1505273144/ESP8266_Arduino_uewfwx.png" width="635" height="357" />
+&lt;h3 id="a-hrefhttpsgithubcomsminghubsming-target_blank-relnoopener-noreferrersminga">&lt;a href="https://github.com/SmingHub/Sming" target="_blank" rel="noopener noreferrer">Sming&lt;/a>&lt;/h3>
+&lt;p>맥에서는&lt;a href="https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart" target="_blank" rel="noopener noreferrer"> https://github.com/SmingHub/Sming/wiki/MacOS-Quickstart&lt;/a> 이 링크의 내용대로 따라하면 별 무리가 없다. 즉 이클립스, 툴체인, ESP SDK를 설치하고 Sming core를 빌드한다.&lt;/p>
+&lt;p>이클립스의 환경설정에서 SMING_HOME, ESP_HOME 설정을 한다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4045" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_569/v1505275296/ESP_Eclipse_xkwyit.png" width="569" height="371" />
+&lt;p> &lt;/p>
+&lt;p>SmingFramework의 Makefile-project.mk파일에서 ESPTOOL2의 경로를 다음과 같이 수정한다.&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;span class="s1">ESPTOOL2 ?&lt;/span>= /opt/esp-open-sdk/utils/esptool2
+&lt;/p></description></item><item><title>아두이노 적외선 통신</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%A0%81%EC%99%B8%EC%84%A0-%ED%86%B5%EC%8B%A0/</link><pubDate>Tue, 15 Aug 2017 01:02:01 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%A0%81%EC%99%B8%EC%84%A0-%ED%86%B5%EC%8B%A0/</guid><description>
+&lt;p>&lt;strong>IR (&lt;a href="https://en.wikipedia.org/wiki/Infrared" target="_blank" rel="noopener noreferrer">Infrared&lt;/a>) 통신&lt;/strong>&lt;/p>
+&lt;p>적외선을 이용한 통신인데, 적외선은 빛에 포함되어 있다. 따라서 이것을 통신에 이용하기위해 38Khz modulation을 한다. IR 수신할때 문제는 리모콘에만 반응하지 않고, 형광등이나 빛에 오동작 할 수 도 있다는 것.&lt;/p>
+&lt;p>&lt;strong>Modulation&lt;/strong>&lt;/p>
+&lt;img loading="lazy" src="https://cdn.sparkfun.com/r/600-600/assets/9/3/2/b/a/5159e97ece395f9643000000.jpg" alt="" width="600" height="272" />
+&lt;p>&lt;strong>Demodulation&lt;/strong>&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="600"
+height="259"
+src="https://openmicrolab.com/5159e980ce395f8840000000_10373173191218754359.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;p>&lt;strong>IR Receiver Pinout&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Infrared/tsop382.pdf?_ga=2.139818227.1550690696.1502755614-1828696942.1487513070">TSOP382 datasheet&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="" src="https://cdn.sparkfun.com/assets/6/a/f/b/f/524b36e8757b7f3d6c8b4567.png" width="462" height="285" />
+&lt;p>&lt;strong>IR Protocol&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>(IR) ProtocolAn algorithm for turning a number of parameters into an &lt;a href="http://www.harctoolbox.org/Glossary.html#IrSignal">IR signal&lt;/a>. It defines the necessary parameters and their allowed values. In almost all protocols, the most frequently changing parameter is called “F” (function number). Almost all protocols have a “device number” called “D”. Many protocols have a “sub-device” number, called “S”. A few protocols have a &lt;a href="http://www.harctoolbox.org/Glossary.html#Toggle">toggle&lt;/a> parameter, in general called “T”, and being &lt;a href="http://www.harctoolbox.org/Glossary.html#PersistantParameter">persistent&lt;/a>. A protocol may also have other parameters, with “arbitrary” names.&lt;/p></description></item><item><title>CREATOR Pro 보드 사용 및 분석</title><link>https://openmicrolab.com/creator-pro-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9-%EB%B0%8F-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 26 Jul 2017 07:09:23 +0000</pubDate><guid>https://openmicrolab.com/creator-pro-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9-%EB%B0%8F-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;p>&lt;a href="http://www.rakwireless.com/en/" target="_blank" rel="noopener noreferrer">Rak Wireless&lt;/a>사의 CREATOR Pro 보드는 Arduino Uno의 폼펙터를 가지며, RAK473 WiFi 모듈을 사용하고 NXP사의 LPC11U35를 사용해서 mbed에서도 프로그래밍이 가능하고, Arduino에서도 프로그래밍이 가능하다. &lt;a href="http://wiki.rakwireless.com/doku.php?id=wisnode_series:creator_pro" target="_blank" rel="noopener noreferrer">WiKi&lt;/a>에 나온 이 제품의 정보는 다음과 같은데, Realtek사의 &lt;a href="https://www.amebaiot.com/en/" target="_blank" rel="noopener noreferrer">Ameba RTL8710보드&lt;/a>와 거의 동일하다.&lt;/p>
+&lt;blockquote>
+&lt;p>CREATOR is a programmable platform for developing all kind of IoT applications. CREATOR is equiped with various peripheral interfaces, including Wifi, GPIO, I2C, UART, PWM, ADC. Through these interfaces, CREATOR can connect with electronic components such as LED, switches, manometer, hygrometer, PM2.5 dust sensors etc.&lt;br>
+The collected data can be uploaded via WiFi, and be utilized by applications on smart devices to realize IoT implementation.&lt;br>
+CREATOR and Arduino Uno have similar size, and the pins on CREATOR are compatible with Arduino Uno. CREATOR uses Micro USB to supply power, which is common in many smart devices.&lt;br>
+Currently, CREATOR currently supports Windows XP/7/8 32 and 64 bits and MAC OS operating systems. In this example, please use Arduino IDE with version 1.6.7 or later.&lt;/p></description></item><item><title>아두이노의 숨겨진 히스토리</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%B9%84%ED%99%94/</link><pubDate>Sun, 03 Apr 2016 13:38:24 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%B9%84%ED%99%94/</guid><description>
+&lt;p>이제껏 몰랐던 아두이노의 숨겨진 이야기 &lt;a href="http://arduinohistory.github.io/" target="_blank">&lt;a href="http://arduinohistory.github.io/">http://arduinohistory.github.io/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>이 글의 저자는 Hernando Barragán로 아두이노가 차용한 &lt;a href="https://en.wikipedia.org/wiki/Wiring_(development_platform)" target="_blank">Wiring&lt;/a>을 개발한 사람이다. 이 이야기의 핵심은 자신이 학생으로 있을 때 개발한 wiring을 당시 교수로 있었던 Massimo Banzi가 fork해서 아두이노를 만들었다는 것. 잘못된 정보는 무책임한 미디어에 의해 더 확산이 되고… 암튼 당사자가 주장하는 얘기의 핵심은&lt;/p>
+&lt;blockquote>
+&lt;p>It is unethical and a bad example for academics to do something like this with the work of a student. Educators, more than anybody else, should avoid taking advantage of their student’s work.&lt;/p></description></item><item><title>Make파일을 사용해서 아두이노 스케치 다운로드</title><link>https://openmicrolab.com/make%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</link><pubDate>Wed, 16 Mar 2016 02:31:53 +0000</pubDate><guid>https://openmicrolab.com/make%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</guid><description>
+&lt;p>아두이노 IDE를 사용하여 스케치를 다운로드를 하면 매번 컴파일을 해서 시간이 걸린다. 따라서  Make파일을 써서 스케치를 다운로드하고 있었는데, UART to USB칩이 Atmega16U2, FTDI에서는 이상이 없었는데, Silab CP2102를 사용하면 다운로드가 안된다. 원인을 찾아보니 Make파일에서 다음과 같이 AVRDUDE_PROGRAMMER를 stk500대신 wiring으로 하니 다운로드가 잘된다.&lt;/p>
+&lt;blockquote>
+&lt;p>#AVRDUDE_PROGRAMMER ?= stk500&lt;br>
+AVRDUDE_PROGRAMMER ?= wiring&lt;/p>&lt;/blockquote>
+&lt;p>&lt;a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx" target="_blank">CP2102 드라이버&lt;/a>, &lt;a href="https://www.silabs.com/Support%20Documents/TechnicalDocs/CP2102-9.pdf" target="_blank">CP2102데이터시트&lt;/a>&lt;/p></description></item><item><title>Teensy 사용하기</title><link>https://openmicrolab.com/teensy-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 09 Mar 2016 08:01:24 +0000</pubDate><guid>https://openmicrolab.com/teensy-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;a href="https://www.pjrc.com/teensy/index.html" target="_blank">Teensy&lt;/a>는 아두이노 호환 보드로 Cortex M0, M4기반의 보드가 있어서 보다 높은 프로세싱이 필요한 응용에 적합하다. 이 보드를 사용하기 위해서는 &lt;a href="https://www.pjrc.com/teensy/teensyduino.html" target="_blank">Teensyduino&lt;/a>라는 프로그램을 설치해야 하는데, 이것은 기존 아두이노 IDE에 추가적으로 설치되는 코드들과 다운로드를 위한 프로그램이 포함되어 있다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1.png">&lt;img loading="lazy" class="aligncenter wp-image-3570" src="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1.png" alt="Teensy_USB_Development_Board_1" width="592" height="409" srcset="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1.png 799w, https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1-300x207.png 300w" sizes="(max-width: 592px) 100vw, 592px" />&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-3571" src="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board.png" alt="Teensy_USB_Development_Board" width="485" height="298" srcset="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board.png 485w, https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board-300x184.png 300w" sizes="(max-width: 485px) 100vw, 485px" />&lt;/a>&lt;/p>
+&lt;p>먼저 아두이노를 설치하고 &lt;a href="https://www.pjrc.com/teensy/td_download.html" target="_blank">&lt;a href="https://www.pjrc.com/teensy/td_download.html">https://www.pjrc.com/teensy/td_download.html&lt;/a>&lt;/a> 이 사이트에서 파일을 다운로드해서 설치하는데 문제는 아두이노 1.0과 아두이노 1.6.x 이 동시에 설치가 되어 있으면 아두이노 1.0쪽에만 설치가 된다.(아두이노 1.6.x쪽을 지정이 안됨) 따라서 일단 아두이노 1.0을 언인스톨하고 1.6.x에 설치를 한 후 다시 아두이노 1.0을 설치를 해야 한다. Teensy 3.2의 경우 Cortex M4이기 때문에 SPI를 사용하는 응용은 &lt;a href="https://www.pjrc.com/teensy/td_libs.html" target="_blank">Teensy 라이브러리&lt;/a>에서 SPI 드라이버(&lt;a href="https://github.com/xxxajk/spi4teensy3">faster SPI library for Teensy 3.0&lt;/a>)도 같이 설치를 해야한다. 그리고 나머지 필요한 라이브러리는 아두이노 1.6.x의 라이브러리 매니저에서 추가한다.&lt;/p></description></item><item><title>아두이노 스케치를 네트워크로 업로드하기 – Arduino update remotely</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0-arduino-remote-firmware-update/</link><pubDate>Fri, 05 Feb 2016 07:47:54 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%A5%BC-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0-arduino-remote-firmware-update/</guid><description>
+&lt;p>아두이노 보드의 펌웨어는 USB 케이블을 PC와 연결후 PC상에서 잡히는 것은 COM 포트를 통해 아두이노 IDE를 통해 업데이트가 된다. 좀 더 구체적으로는 &lt;a href="http://www.nongnu.org/avrdude/" target="_blank">avrdude&lt;/a>라는 프로그램을 써서 &lt;a href="http://www.atmel.com/images/doc2591.pdf" target="_blank">stk500프로토콜&lt;/a>을 사용해서 프로그램이 된다.&lt;/p>
+&lt;h3 id="아두이노-스케치를-네트워크로-업로드하기">아두이노 스케치를 네트워크로 업로드하기&lt;/h3>
+&lt;p>&lt;strong>필요한 것들&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.wiznet.co.kr/product-item/wiz550s2e/" target="_blank">Wiznet의 WIZ550S2E&lt;/a> –  1개&lt;/li>
+&lt;li>Arduino pro mini – 테스트에 사용한 아두이노 보드&lt;/li>
+&lt;li>와이어링 케이블 – WIZ550S2E와 Arduino pro mini를 연결&lt;/li>
+&lt;li>TFTP server program – Windows의 경우 &lt;a href="http://tftpd32.jounin.net/tftpd32_download.html" target="_blank">tftpd&lt;/a>, 맥의 경우 &lt;a href="http://ww2.unime.it/flr/tftpserver/" target="_blank">Tftp Server&lt;/a>&lt;/li>
+&lt;li>아두이노 IDE 프로그램&lt;/li>
+&lt;/ul>
+&lt;h4 id="케이블-연결-및-설정">케이블 연결 및 설정&lt;/h4>
+&lt;p>WIZ550S2E는 Serial to Ethernet 게이트웨이 모듈로 시리얼로 들어온 데이터는 네트워크로 보내고, 네트워크에서 들어온 데이터는 시리얼로 보낸다. &lt;a href="http://wizwiki.net/wiki/doku.php?id=products:wiz550s2e:wiz550s2eds_kr" target="_blank">WIZ550S2E의 회로도&lt;/a>를 보면 J1에 있는 입력핀들은 풀업이 되어 있어서, 아두이노와 연결에 필요한 핀은  3V3D, GND, TXD, RXD, STATUS2 핀이다.&lt;/p></description></item><item><title>아두이노는 hex파일을 어디에 저장하는가?</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%8A%94-hex%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%96%B4%EB%94%94%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EB%8A%94%EA%B0%80/</link><pubDate>Mon, 01 Feb 2016 10:32:30 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%8A%94-hex%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%96%B4%EB%94%94%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EB%8A%94%EA%B0%80/</guid><description>
+&lt;p>아두이노는 스케치를 avr-gcc 또는 arm-gcc를 사용해서 컴파일을 한다. 이 컴파일러의 위치는 맥의 경우 Arduino.app/Contents/Java/hardware/arduino/avr/platform.txt에 정의가 되어 있다. 즉 /Arduino.app/Contents/Java/hardware/tools/ 아래에 avr, arm 컴파일러가 컴파일을 한다.&lt;/p>
+&lt;h4 id="그럼-아두이노는-hex-파일을-어디에-저장을-하는가">그럼 아두이노는 hex 파일을 어디에 저장을 하는가?&lt;/h4>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/02/Arduino_Prefernece.png">&lt;img loading="lazy" class="aligncenter wp-image-3525" src="https://openmicrolab.com/images/2016/02/Arduino_Prefernece.png" alt="Arduino_Prefernece" width="628" height="564" srcset="https://openmicrolab.com/images/2016/02/Arduino_Prefernece.png 905w, https://openmicrolab.com/images/2016/02/Arduino_Prefernece-300x270.png 300w" sizes="(max-width: 628px) 100vw, 628px" />&lt;/a>&lt;/p>
+&lt;p>이것을 알아보기위해서는 Arduino &amp;gt; Preference의 설정에서 “다음 동작중 자세한 출력보기”의 컴파일 부분을 체크하면 hex파일이 생성되는 위치를 알 수 있다.  그런데 저장되는 폴더의 위치가…&lt;/p>
+&lt;p>“/var/folders/4v/frv3pzr55x77gnv6_342m3wm0000gn/T/buildd18630de25a90c7712fff203789659dd.tmp/WebServer.ino.hex”&lt;/p>
+&lt;p>이 폴더의 위치를 바꾸기 위해서는 아두이노를 종료하고 &lt;strong>Preference.txt&lt;/strong> 파일에 다음과 같이 “&lt;strong>build.path=&lt;/strong>” 항목을 추가하고 폴더의 위치를 기입후 다시 아두이노를 실행한다.&lt;/p></description></item><item><title>ZeroPi – Arduino and Raspberry Pi compatible development kit</title><link>https://openmicrolab.com/zeropi-arduino-and-raspberry-pi-compatible-development-kit/</link><pubDate>Tue, 13 Oct 2015 09:09:29 +0000</pubDate><guid>https://openmicrolab.com/zeropi-arduino-and-raspberry-pi-compatible-development-kit/</guid><description>
+&lt;p>&lt;strong>ZeroPi는 Arduino and Raspberry Pi 호환 개발보드&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Arduino Zero Compatible development kit&lt;/li>
+&lt;li>Atmel SAMD21J18, 32-bit ARM Cortex M0+&lt;/li>
+&lt;li>3D printer,Laser Cutter, CNC에 적용 가능&lt;/li>
+&lt;li>Marlin and Repetier firmware&lt;/li>
+&lt;li>Open Source: &lt;a href="https://github.com/Makeblock-official/ZeroPi" target="_blank">&lt;a href="https://github.com/Makeblock-official/ZeroPi">https://github.com/Makeblock-official/ZeroPi&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/10/photo-original.jpg">&lt;img loading="lazy" class="aligncenter wp-image-3446 " src="https://openmicrolab.com/images/2015/10/photo-original-1024x768.jpg" alt="photo-original" width="571" height="428" srcset="https://openmicrolab.com/images/2015/10/photo-original.jpg 1024w, https://openmicrolab.com/images/2015/10/photo-original-300x225.jpg 300w" sizes="(max-width: 571px) 100vw, 571px" />&lt;/a>&lt;/p>
+&lt;p>참고자료: &lt;a href="https://www.kickstarter.com/projects/1204283/zeropi-arduino-and-raspberry-pi-compatible-develop" target="_blank">&lt;a href="https://www.kickstarter.com/projects/1204283/zeropi-arduino-and-raspberry-pi-compatible-develop">https://www.kickstarter.com/projects/1204283/zeropi-arduino-and-raspberry-pi-compatible-develop&lt;/a>&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>Yaler.net relay service</title><link>https://openmicrolab.com/yaler-net-relay-service/</link><pubDate>Fri, 02 Oct 2015 13:28:48 +0000</pubDate><guid>https://openmicrolab.com/yaler-net-relay-service/</guid><description>
+&lt;p>네트워크 기능이 내장된 임베디드 디바이스의 경우 내부 네트워크에서 외부로 접속은 쉽지만, 반대로 외부에서 이 디바이스로의 접근은 방화벽등이 있으면 쉽지않고, 공유기에서 NAT, 포트포워딩 등의 기능을 사용해야 해서 일반사용자들은 이용이 어렵다.&lt;/p>
+&lt;p>&lt;strong>Yaler.net relay service&lt;/strong>&lt;br>
+&lt;a href="https://yaler.net/" target="_blank">Yaler.net&lt;/a>은 이런 문제점을 해결해 줄 수 있는 서비스인데 아래 그림을 보면 동작이 쉽게 이해가 되며, &lt;a href="https://yaler.net/help" target="_blank">튜토리얼 문서&lt;/a>를 보면 Arduino, Beaglebone, Raspberry Pi… 등의 유명한 보드들의 셋업가이드도 자세하게 나와있다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web.jpg">&lt;img loading="lazy" class="aligncenter wp-image-3429 size-full" src="https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web.jpg" alt="Yaler_net_-_access_devices_from_the_Web" width="531" height="508" srcset="https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web.jpg 531w, https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web-300x287.jpg 300w" sizes="(max-width: 531px) 100vw, 531px" />&lt;/a>&lt;/p>
+&lt;p>&lt;strong>비용&lt;/strong>&lt;br>
+비용은 회원가입을 하면 30일 무료이고, 최저 10CHF (스위스 프랑)이니 약 10불정도이니 비싸지 않다.&lt;/p></description></item><item><title>아두이노 Serial to USB 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-serial-to-usb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 28 Apr 2015 06:50:34 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-serial-to-usb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>원본소스는 Mac에서 \Resource\Java\hardware\arduino\firmware\atmegaxxu2 아래에 있다. arduino-usbdfu 또는 arduino-usbserial 를 사용한다. 이 소스에는 USB 프레임워크인 &lt;a href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank">LUFA&lt;/a>(Lightweight USB Framework for AVRs)가 빠져있으므로 &lt;a title="LUFA" href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank">&lt;a href="http://www.fourwalledcubicle.com/LUFA.php">http://www.fourwalledcubicle.com/LUFA.php&lt;/a>&lt;/a> 에서 다운로드한다. 다운로드한 LUFA 폴더를 arduino-usbserial 폴더와 같은 위치에 복사한다.&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">make 파일에서 다음과 같은 내용을 수정한다.&lt;/span>
+&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;strong>LUFA_PATH&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1"># Path to the LUFA library&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">LUFA_PATH = ../&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>MCU&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+MCU = at90usb162  #atmega16u2와 pin to pin 호환임
+&lt;/p>&lt;/blockquote>
+&lt;p class="p1">
+컴파일된 hex파일은 avr isp등으로 write하면 된다.
+&lt;/p>
+&lt;p class="p1">
+이렇게 작업한 내용은 &lt;a href="https://github.com/jbkim/usbserial" target="_blank">https://github.com/jbkim/usbserial&lt;/a>
+&lt;/p>
+&lt;p class="p1"></description></item><item><title>Arduino Scuola와 3D 프린팅</title><link>https://openmicrolab.com/arduino-scuola%EC%99%80-3d-%ED%94%84%EB%A6%B0%ED%8C%85/</link><pubDate>Mon, 19 Jan 2015 04:10:44 +0000</pubDate><guid>https://openmicrolab.com/arduino-scuola%EC%99%80-3d-%ED%94%84%EB%A6%B0%ED%8C%85/</guid><description>
+&lt;p>최근에 발견한 Arduino Scuola 사이트: &lt;a href="http://scuola.arduino.cc/" target="_blank">&lt;a href="http://scuola.arduino.cc/">http://scuola.arduino.cc/&lt;/a>&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Arduino_Scuola.png" alt="Arduino Scuola" width="680" height="609" />
+&lt;p>이 사이트는 &lt;a href="https://learn.adafruit.com/guides/latest" target="_blank">Adafruit&lt;/a>와 &lt;a href="https://learn.sparkfun.com/?_ga=1.96420316.1388457354.1418889582" target="_blank">Sparkfun의 learn사이트&lt;/a>와 같은 컨셉의 사이트인데, 아직 자료가 많지 않아서 인지 메인 사이트에서 링크도 없다. 하지만 아두이노의 블로그의 글에서 언급한 내용에 이 사이트의 내용이 링크로 연결되는 것으로 보아 곧 활성화가 될 것같다. 오픈소스 하드웨어 비즈니스에서 이러한 접근은 몇 년 전부터 내가 예측하고 있던 방향이다. 즉 초보자 들이 쉽게 따라할 수 있는 컨텐츠를 제공하고, 관련된 부품이나 키트를 온라인 샵에서 같이 판매를 하는 것이다.&lt;/p>
+&lt;p>또 한가지 추세는 &lt;strong>3D프린팅과 디지털기기의 결합&lt;/strong>이다. 아주 &lt;a href="http://scuola.arduino.cc/courses/lessons/cover/gQ7noDN" target="_blank">간단한 예&lt;/a>가 소개가 되고 있는데, 이런 추세는 더 활발해 질 것 같다. 즉 디지털 기기에 3D 프린터를 사용하여 개인화된 내용이 부가되는 형태이다. 이런 식의 접근을 하고 있는 업체중 하나는 &lt;a href="http://www.3dracers.com/" target="_blank">3D Racers&lt;/a>인데 온라인에서 장난감 자동차의 외관을 사용자가 디자인 할 수 있다.&lt;/p></description></item><item><title>아두이노 &amp; 이클립스 (Arduino &amp; Eclipse)</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-arduino-eclipse/</link><pubDate>Tue, 25 Nov 2014 06:07:29 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-arduino-eclipse/</guid><description>
+&lt;p>지난번 포스팅 &lt;a href="http://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4eclipse%EC%97%90%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8arduino%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" target="_blank">‘이클립스(Eclipse)에서 아두이노(Arduino)사용하기’&lt;/a> 은 이클립스에서 플러그인을 설치해서 아두이노를 사용하는 것이었다. 하지만 아두이노는 command line에서 컴파일을 지원하므로 이런 플러그인 없이도 make 파일의 위치, 컴파일러 정보등만 이클립스에 설정하면 사용이 가능하다.&lt;/p>
+&lt;h3 id="1-프로젝트-만들기">1. 프로젝트 만들기&lt;/h3>
+&lt;p>File &amp;gt; New &amp;gt; Makefile Project with Existing Code를 선택후 Project Name을 설정하고 Existing Code Location을 설정한다.&lt;/p>
+&lt;h3 id="2-project-properties">2. Project Properties&lt;/h3>
+&lt;p>C/C++ Build항목에서 Build location의 Build directoty 설정은 makefile이 있는 위치를 지정한다.&lt;/p>
+&lt;p>C/C++ General 항목의 Path and Symbols에서 Include할 폴더들을 입력하고  Symbol에도 미리 정의돼야 할 심볼을 입력한다.&lt;/p></description></item><item><title>이클립스(Eclipse)에서 아두이노(Arduino)사용하기</title><link>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4eclipse%EC%97%90%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8arduino%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 12 Aug 2014 03:08:15 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4eclipse%EC%97%90%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8arduino%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="이클립스-개발환경에서-아두이노사용하기">이클립스 개발환경에서 아두이노사용하기&lt;/h3>
+&lt;ol>
+&lt;li>이클립스(Eclipse) 설치 &lt;a href="http://www.eclipse.org/downloads/" target="_blank">&lt;a href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/&lt;/a>&lt;/a> &lt;strong>Eclipse IDE for C/C++ Developers&lt;/strong> 를 설치&lt;/li>
+&lt;li>아두이노 이클립스 플러그인:  &lt;a href="http://www.baeyens.it/eclipse/" target="_blank">저작자의 홈페이지&lt;/a> – &lt;a href="http://www.baeyens.it/eclipse/installAdvice.shtml" target="_blank">Installation advice&lt;/a>, 가 있으니 참고. 플러그인 설치는 이클립스를 실행후 **Help &amp;raquo; Install New Software…**를 실행후 “&lt;strong>&lt;a href="http://www.baeyens.it/eclipse/update">http://www.baeyens.it/eclipse/update&lt;/a>&lt;/strong>” 주소를 입력하고 Add 버튼을 누른다. 그러면 &lt;strong>Arduino Eclipse extensions&lt;/strong> 이 나타나는데 이것을 선택하면 설치가 된다.&lt;/li>
+&lt;li>&lt;strong>Preferences &amp;gt; General &amp;gt; Workspace&lt;/strong>를 선택하고 **“Save automatically before build”**를 선택 &lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/eclipse_arduino1.png" width="780" height="612" />&lt;/li>
+&lt;li>&lt;strong>Arduino&lt;/strong>항목에서 &lt;strong>Arduino가 설치된 path와 library path&lt;/strong> 를 입력하고, &lt;strong>Use Arduino ODE tools in eclipse&lt;/strong>를 선택한다. 그리고 test serial dll를 클릭해서 serial drive가 동작하는 지 확인한다.&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/eclipse_arduino2.png" width="909" height="608" />&lt;/li>
+&lt;li>아두이노 프로젝트 만들기: &lt;strong>New &amp;raquo; Project &amp;raquo; Arduino &amp;raquo; New Arduino sketch&lt;/strong>를 선택, 프로젝트 이름를 설정, 보드와 COM port를 설정하면 setup()과 loop()함수가 만들어진 빈 프로젝트가 생긴다.&lt;/li>
+&lt;li>간단한 blink 예제를 만들고 &lt;strong>Project &amp;raquo; Build All&lt;/strong>하면 컴파일이되고, &lt;strong>AVR &amp;raquo; Upload Project to Target Devic&lt;/strong>e를 선택하면 아두이노 보드에 프로그래밍이된다.&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/Arduino_Eclipse_Test.png" width="684" height="472" />&lt;/li>
+&lt;/ol></description></item><item><title>오픈소스하드웨어 활동</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%99%9C%EB%8F%99/</link><pubDate>Thu, 03 Apr 2014 00:34:15 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%99%9C%EB%8F%99/</guid><description>
+&lt;p>지난 몇년간 오픈소스하드웨어 활동을 정리했다.&lt;/p>
+&lt;p>Open Source Hardware Activities for recent years.&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="OSHW Activities" href="https://www.slideshare.net/JinbuhmKim/oshw-activities" target="_blank">OSHW Activities&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>SPI of Arduino</title><link>https://openmicrolab.com/spi-of-arduino/</link><pubDate>Mon, 17 Mar 2014 09:50:04 +0000</pubDate><guid>https://openmicrolab.com/spi-of-arduino/</guid><description>
+&lt;h3 id="spi-of-arduino">SPI of Arduino&lt;/h3>
+&lt;p>[table id=2 /]&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;span style="line-height: 1.5em;">SPI 신호들은 ICSP핀이나 보드의 우측 상단(AREF 있는 쪽)에 같이 연결된 경우도 있으나, 그렇지 않은 경우도 있다. 그러므로 SPI를 사용하는 쉴드를 디자인 할 경우 라우팅을 쉽게하기 위해 한쪽만 SPI를 사용하려면 ICSP핀 쪽에만 연결을 하면 된다.&lt;/span>&lt;/p>&lt;/blockquote></description></item><item><title>mbed – SeeedArch 프로그래밍하기</title><link>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 06 Mar 2014 06:42:53 +0000</pubDate><guid>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="seeedarch">SeeedArch&lt;/h3>
+&lt;p>&lt;a href="http://mbed.org/" target="_blank">mbed&lt;/a>의 플랫폼 중의 하나인 Seeedstudio에서 만든 보드, &lt;a href="http://mbed.org/platforms/Seeeduino-Arch/" target="_blank">SeeedArch&lt;/a>를 테스트중이다. 이 보드의 스펙은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>mbed enabled
+&lt;ul>
+&lt;li>online development tools&lt;/li>
+&lt;li>easy to use C/C++ SDK&lt;/li>
+&lt;li>lots of published libraries, projects&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Standard Arduino Appearance, two Grove connectors
+&lt;ul>
+&lt;li>available with 3.3V compatible shields&lt;/li>
+&lt;li>a large number of grove modules&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Drag-n-drop programming&lt;/li>
+&lt;li>NXP LPC11U24 MCU
+&lt;ul>
+&lt;li>Low power ARM Cortex-M0 Core&lt;/li>
+&lt;li>48MHz, 32KB Flash, 8KB RAM, 4KB EEPROM&lt;/li>
+&lt;li>USB Device, 2xSPI, UART, I2C&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>이 보드의 가장 큰 특징은 보드의 형태가 아두이노 보드와 같아서 아두이노 쉴드를 연결할 수 있다.&lt;/p></description></item><item><title>Arduino Ethernet 라이브러리 업데이트</title><link>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link><pubDate>Sat, 01 Mar 2014 09:26:21 +0000</pubDate><guid>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid><description>
+&lt;p>WZnet 칩 W5100, W5200과 W5500을 지원하는 통합 아두이노 라이브러리인 &lt;a href="https://github.com/Wiznet/WIZ_Ethernet_Library" target="_blank">Arduino Ethernet 라이브러리&lt;/a>를 업데이트 했다. 기존 코드에서 달라진 점은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>Arduino IDE 1.5.x 지원 : Arduino Due를 지원하기 위함.&lt;/li>
+&lt;li>Due용  SPI 드라이버 추가&lt;/li>
+&lt;li>W5200및 W5500의 경우 SPI드라이버 속도를 높였다. 무려 42Mhz까지 지원&lt;/li>
+&lt;li>w5100::read_data함수의 파라미터의 형 변경&lt;/li>
+&lt;li>flush() 함수 추가&lt;/li>
+&lt;/ul>
+&lt;p>Arduino IDE 1.5.xx를 지원하기 위해서는&lt;/p>
+&lt;ul>
+&lt;li>32비트 SAM용 SPI 드라이버가 추가 되야한다.&lt;/li>
+&lt;li>IDE 1.5.x의 폴더 구조가 바뀌어서 헤더파일 include가 변경된다.아래 그림 참고…  예를 들면 #include “w5100.h”가 #include “utility/ w5100.h” 이런 식으로…&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/03/Arduino_Folder.png">&lt;img loading="lazy" class="alignnone wp-image-2890" alt="Arduino_Folder" src="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png" width="578" height="717" srcset="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png 826w, https://openmicrolab.com/images/2014/03/Arduino_Folder-242x300.png 242w, https://openmicrolab.com/images/2014/03/Arduino_Folder.png 831w" sizes="(max-width: 578px) 100vw, 578px" />&lt;/a>&lt;/p></description></item><item><title>Arduino 코드에서 WIZnet칩 구별하기</title><link>https://openmicrolab.com/arduino-%EC%BD%94%EB%93%9C%EC%97%90%EC%84%9C-wiznet%EC%B9%A9-%EA%B5%AC%EB%B3%84%ED%95%98%EA%B8%B0/</link><pubDate>Sat, 01 Mar 2014 08:41:49 +0000</pubDate><guid>https://openmicrolab.com/arduino-%EC%BD%94%EB%93%9C%EC%97%90%EC%84%9C-wiznet%EC%B9%A9-%EA%B5%AC%EB%B3%84%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="wiznet-칩">WIZnet 칩&lt;/h3>
+&lt;p>WIZnet 칩중에서 SPI가 지원되는 칩은 W5100, W5200 그리고 W5500이 있다. 이중 W5100은 아두이노에 적용이 되어 Ethernet Shield 및 Arduino Ethernet 보드에 사용이 되고 있다. 물론 W5200으로 만든 Ethernet Shield도 있고 W5500으로 만든 Ethernet Shield도 있다. 그리고 최근에는 아두이노 팀에서 W5500으로 Ethernet Shield를 만들고 있다. 이렇게 3가지 칩으로 적용된 보드가 있는데, 그럼 코드에서 이 칩들을 구별할 수 있는 방법이 있는가?&lt;/p>
+&lt;h3 id="arduino-코드에서-wiznet칩-구별하기">Arduino 코드에서 WIZnet칩 구별하기&lt;/h3>
+&lt;p>W5100, W5200, W5500의 칩들의 기본 기능은 같지만 H/W적으로는 패키지도 다르고 핀도 다르고, 내부 메모리 맵도 다르다. 모두 SPI 를 사용하지만 칩을 제어하기 위한 SPI format도 다르다. 그리고 W5100은 소켓이 4개이고 나머지 칩들은 모두 8개의 소켓을 지원한다.&lt;/p></description></item><item><title>오픈 소스 하드웨어를 위해 정부가 할 일?</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%A5%BC-%EC%9C%84%ED%95%B4-%EC%A0%95%EB%B6%80%EA%B0%80-%ED%95%A0-%EC%9D%BC/</link><pubDate>Wed, 29 Jan 2014 06:09:32 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%A5%BC-%EC%9C%84%ED%95%B4-%EC%A0%95%EB%B6%80%EA%B0%80-%ED%95%A0-%EC%9D%BC/</guid><description>
+&lt;h3 id="오픈-소스-하드웨어">오픈 소스 하드웨어&lt;/h3>
+&lt;p>업무때문에 2010년도에 아두이노팀을 만나고 오픈소스 하드웨어에 관심을 갖게되어서 뉴욕에서 열린 오픈하드웨어 서밋에도 참석을 하고, 메이커페어도 참석을 했다. 이후에 아두이노 IDE가 다국어 버젼을 지원을 할때, 한국어 번역도 하고(덕분에 지금도 버젼이 바뀌면 메일이 온다…) &lt;a href="http://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%A0%95%EC%9D%98-oshw-definition-1-0/" target="_blank">OSHW definition 도 번역&lt;/a>을 했다.  최근 아두이노의 영향때문에 크라우드 펀딩 사이트인 &lt;a href="https://www.kickstarter.com/" target="_blank">Kickstarter.com&lt;/a>에도 아두이노로 검색을 하면 161여개의 프로젝트가 뜬다.&lt;/p>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/01/Kickstarter_Arduino.png">&lt;img loading="lazy" class=" wp-image-2786 aligncenter" alt="Kickstarter_Arduino" src="https://openmicrolab.com/images/2014/01/Kickstarter_Arduino.png" width="595" height="583" srcset="https://openmicrolab.com/images/2014/01/Kickstarter_Arduino.png 744w, https://openmicrolab.com/images/2014/01/Kickstarter_Arduino-300x293.png 300w" sizes="(max-width: 595px) 100vw, 595px" />&lt;/a>
+&lt;/p>
+&lt;h3 id="ict-diy">ICT D.I.Y&lt;/h3>
+&lt;p>국내에도 오픈소스 하드웨어에 대한 관심아 졌는데 특히 정부에서도 이 분야에 관심을 가지고 있는듯 하다. &lt;a href="http://www.msip.go.kr/www/brd/m_211/view.do?seq=878&amp;srchFr=&amp;srchTo=&amp;srchWord=%EC%B0%BD%EC%A1%B0%EA%B2%BD%EC%A0%9C&amp;srchTp=1&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=14" target="_blank">미래창조과학부의 보도 자료&lt;/a>에 의하면 2017년까지 ICT R&amp;amp;D예산 총 8.5조를 투자하는데 이중 15대 미래서비스 중 하나로 들어가 있는 것이 ICT D.I.Y서비스 이다. 물론 IoT플랫폼도 오픈 소스 하드웨어와 관련이 있다. 그런데 몇가지 궁금한 점이 있다.&lt;/p></description></item><item><title>Intel Galileo board와 Arduino Tre</title><link>https://openmicrolab.com/intel-galileo-board%EC%99%80-arduino-tre/</link><pubDate>Mon, 07 Oct 2013 08:08:37 +0000</pubDate><guid>https://openmicrolab.com/intel-galileo-board%EC%99%80-arduino-tre/</guid><description>
+&lt;h3 id="intel-galileo-board">Intel Galileo Board&lt;/h3>
+&lt;p>최근 &lt;a href="http://arduino.cc/" target="_blank">아두이노&lt;/a>는 매년 메이커페어에서 신제품의 출시에 대한 내용을 발표하는 것 같다. 올해는 지난 주말에 이태리 로마에서 있었던 &lt;a href="http://www.makerfairerome.eu/en/" target="_blank">메이커페어 유럽에디션&lt;/a>에서 인텔과의 협력으로 나온 보드인 &lt;a href="http://arduino.cc/en/ArduinoCertified/IntelGalileo" target="_blank">Intel Galileo Board&lt;/a>를 발표를 했다. PC 기반의 칩셋업체인 인텔이 임베디드분야에 그것도 오픈하드웨어에 발을 담그기 시작한 것이니 최근 오픈 소스 하드웨어의 열풍이 세상을 변화시키고 있는 것은 확실한 것 같다.&lt;/p>
+&lt;blockquote>
+&lt;p>그런데 한가지 재미있는 것은 이 제품이 아두이노의 “Arduino Certified” 제품군에 들어간 것이다. 우리가 익히 알고 있듯이 인텔은 자신들의 칩셋을 PC 업체에 공급을 하면서 Intel Inside라는 로고를 붙이게 했다. 하지만 오픈소스하드웨어 시장에서는 도리어 아두이노가 거대 기업 인텔에게 “Arduino Certified”라는 로고를 주다니…&lt;/p></description></item><item><title>MQTT</title><link>https://openmicrolab.com/mqtt/</link><pubDate>Wed, 14 Nov 2012 10:55:15 +0000</pubDate><guid>https://openmicrolab.com/mqtt/</guid><description>
+&lt;ul style="list-style-type: square;">
+&lt;li>
+MQTT: MQ Telemetry Transport protocol의 약자. M2M에서 사용.&amp;nbsp;
+&lt;/li>
+&lt;li>
+IBM에서 개발했다. &lt;a href="http://www.ibm.com/developerworks/webservices/library/ws-mqtt/index.html" target="_blank" class="tx-link">프로토톨 스펙&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="http://mqtt.org/faq" target="_blank" class="tx-link">http://mqtt.org/faq&lt;/a> 에서는 다음과 같이 정의
+&lt;/li>
+&lt;/ul>
+&lt;div>
+&lt;/div>
+&lt;div class="txc-textbox" style="border: 1px solid rgb(238, 238, 238); background-color: rgb(238, 238, 238); padding: 10px;">
+&lt;p>
+&lt;!--[if gte mso 9]>&lt;xml>
+&lt;o:OfficeDocumentSettings>
+&lt;o:AllowPNG/>
+&lt;/o:OfficeDocumentSettings>
+&lt;/xml>&lt;![endif]-->
+&lt;/p>
+&lt;p>
+&lt;!--[if gte mso 9]>&lt;xml>
+&lt;w:WordDocument>
+&lt;w:View>Normal&lt;/w:View>
+&lt;w:Zoom>0&lt;/w:Zoom>
+&lt;w:TrackMoves/>
+&lt;w:TrackFormatting/>
+&lt;w:PunctuationKerning/>
+&lt;w:ValidateAgainstSchemas/>
+&lt;w:SaveIfXMLInvalid>false&lt;/w:SaveIfXMLInvalid>
+&lt;w:IgnoreMixedContent>false&lt;/w:IgnoreMixedContent>
+&lt;w:AlwaysShowPlaceholderText>false&lt;/w:AlwaysShowPlaceholderText>
+&lt;w:DoNotPromoteQF/>
+&lt;w:LidThemeOther>EN-US&lt;/w:LidThemeOther>
+&lt;w:LidThemeAsian>JA&lt;/w:LidThemeAsian>
+&lt;w:LidThemeComplexScript>X-NONE&lt;/w:LidThemeComplexScript>
+&lt;w:Compatibility>
+&lt;w:BreakWrappedTables/>
+&lt;w:SnapToGridInCell/>
+&lt;w:WrapTextWithPunct/>
+&lt;w:UseAsianBreakRules/>
+&lt;w:DontGrowAutofit/>
+&lt;w:SplitPgBreakAndParaMark/>
+&lt;w:EnableOpenTypeKerning/>
+&lt;w:DontFlipMirrorIndents/>
+&lt;w:OverrideTableStyleHps/>
+&lt;w:UseFELayout/>
+&lt;/w:Compatibility>
+&lt;m:mathPr>
+&lt;m:mathFont m:val="Cambria Math"/>
+&lt;m:brkBin m:val="before"/>
+&lt;m:brkBinSub m:val="&amp;#45;-"/>
+&lt;m:smallFrac m:val="off"/>
+&lt;m:dispDef/>
+&lt;m:lMargin m:val="0"/>
+&lt;m:rMargin m:val="0"/>
+&lt;m:defJc m:val="centerGroup"/>
+&lt;m:wrapIndent m:val="1440"/>
+&lt;m:intLim m:val="subSup"/>
+&lt;m:naryLim m:val="undOvr"/>
+&lt;/m:mathPr>&lt;/w:WordDocument>
+&lt;/xml>&lt;![endif]-->
+&lt;pre>&lt;code>&amp;lt;!--[if gte mso 9]&amp;gt;&amp;lt;xml&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>&amp;lt;w:LatentStyles DefLockedState=&amp;ldquo;false&amp;rdquo; DefUnhideWhenUsed=&amp;ldquo;true&amp;rdquo;
+DefSemiHidden=&amp;ldquo;true&amp;rdquo; DefQFormat=&amp;ldquo;false&amp;rdquo; DefPriority=&amp;ldquo;99&amp;rdquo;
+LatentStyleCount=&amp;ldquo;276&amp;rdquo;&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;0&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Normal&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 7&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 8&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;9&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;heading 9&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 7&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 8&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; Name=&amp;ldquo;toc 9&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;35&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;caption&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;10&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Title&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;1&amp;rdquo; Name=&amp;ldquo;Default Paragraph Font&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;11&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Subtitle&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;22&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Strong&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;20&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Emphasis&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;59&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Table Grid&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Placeholder Text&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;1&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;No Spacing&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Revision&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;34&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;List Paragraph&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;29&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Quote&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;30&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Intense Quote&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 1&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 2&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 3&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 4&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 5&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;60&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Shading Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;61&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light List Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;62&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Light Grid Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;63&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 1 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;64&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Shading 2 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;65&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 1 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;66&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium List 2 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;67&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 1 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;68&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 2 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;69&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Medium Grid 3 Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;70&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Dark List Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;71&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Shading Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;72&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful List Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;73&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; Name=&amp;ldquo;Colorful Grid Accent 6&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;19&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Subtle Emphasis&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;21&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Intense Emphasis&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;31&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Subtle Reference&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;32&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Intense Reference&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;33&amp;rdquo; SemiHidden=&amp;ldquo;false&amp;rdquo;
+UnhideWhenUsed=&amp;ldquo;false&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;Book Title&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;37&amp;rdquo; Name=&amp;ldquo;Bibliography&amp;rdquo;/&amp;gt;
+&amp;lt;w:LsdException Locked=&amp;ldquo;false&amp;rdquo; Priority=&amp;ldquo;39&amp;rdquo; QFormat=&amp;ldquo;true&amp;rdquo; Name=&amp;ldquo;TOC Heading&amp;rdquo;/&amp;gt;
+&amp;lt;/w:LatentStyles&amp;gt;
+&lt;/xml>&amp;lt;![endif]&amp;ndash;&amp;gt;&lt;/p></description></item><item><title>Gmail의 메일을 확인해 주는 파이썬 스크립트</title><link>https://openmicrolab.com/gmail%EC%9D%98-%EB%A9%94%EC%9D%BC%EC%9D%84-%ED%99%95%EC%9D%B8%ED%95%B4-%EC%A3%BC%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</link><pubDate>Sat, 01 Sep 2012 13:41:39 +0000</pubDate><guid>https://openmicrolab.com/gmail%EC%9D%98-%EB%A9%94%EC%9D%BC%EC%9D%84-%ED%99%95%EC%9D%B8%ED%95%B4-%EC%A3%BC%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</guid><description>
+&lt;p>Gmail 계정에 새로운 메일이 있는지 확인해 주는 파이썬 스크립트이다.&lt;/p>
+&lt;p>Feedpaeser라이브러리가 필요하다. &lt;a href="http://code.google.com/p/feedparser/" target="_blank" class="tx-link">&lt;a href="http://code.google.com/p/feedparser/">http://code.google.com/p/feedparser/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>파이썬에서 시리얼을 쓰러면 Pyserial도 필요하다. &lt;a href="http://pyserial.sourceforge.net/" target="_blank" class="tx-link">&lt;a href="http://pyserial.sourceforge.net/">http://pyserial.sourceforge.net/&lt;/a>&lt;/a>&lt;/p>
+&lt;pre style="margin: 20px; padding: 10px; border: 1px solid rgb(150, 150, 150); font: inherit; vertical-align: baseline; background-color: rgba(240, 240, 240, 0.898438); overflow: auto; color: rgb(50, 50, 50); ">&lt;code style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; font-family: Monaco, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace; ">import serial, sys, feedparser
+#Settings - Change these to match your account details
+USERNAME="username@gmail.com"
+PASSWORD="yourpassword"
+PROTO="https://"
+SERVER="mail.google.com"
+PATH="/gmail/feed/atom"
+SERIALPORT = "/dev/tty.usbserial-FTDK0P3M" # Change this to your serial port!
+# Set up serial port
+try:
+ser = serial.Serial(SERIALPORT, 9600)
+except serial.SerialException:
+sys.exit()
+newmails = int(feedparser.parse(
+PROTO + USERNAME + ":" + PASSWORD + "@" + SERVER + PATH
+)["feed"]["fullcount"])
+# Output data to serial port
+if newmails &amp;gt; 0: ser.write('M')
+else: ser.write('N')
+# Close serial port
+ser.close()&lt;/code>&lt;/pre>
+&lt;p>이 코드를 일정한 시간 간격 주기적으로 실행을 하려면, Mac OS X에서는 Launchd가 필요.&lt;/p></description></item><item><title>아두이노 IDE 빌드 환경 만들기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-ide-%EB%B9%8C%EB%93%9C-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Sat, 14 Apr 2012 13:41:34 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-ide-%EB%B9%8C%EB%93%9C-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>
+&lt;p>&lt;a href="http://arduino.cc/playground/Main/LanguagesIDE" target="_blank" class="tx-link">아두이노 IDE의 한글화&lt;/a>를 진행하기 위해 윈도우즈 환경에 아두이노 IDE 빌드 환경을 세팅을 했다. &lt;/p>
+&lt;p>&lt;strong>1. 개발툴 설치&lt;/strong>&lt;/p>
+&lt;p>필요한 사항: Cygwin, Java JDK, ant가 필요하다.&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Cygwin&lt;/strong> : Cygwin 은 윈도우즈 환경에서 리눅스를 쓰기위한 툴이다. 이걸 다운로드 한다. &lt;u>&lt;span style="color: rgb(9, 0, 255); ">&lt;a href="http://www.cygwin.com/setup.exe" target="_blank" class="tx-link">&lt;span style="color: rgb(9, 0, 255); ">http://&lt;/span>&lt;/a>&lt;/span>&lt;span style="color: rgb(9, 0, 255); ">&lt;a href="http://www.cygwin.com/setup.exe" target="_blank" class="tx-link">&lt;span style="color: rgb(9, 0, 255); ">&lt;a href="https://www.cygwin.com/setup.exe">www.cygwin.com/setup.exe&lt;/a>&lt;/span>&lt;/a>&lt;span style="color: rgb(9, 0, 255); ">&lt;/span>&lt;/span>&lt;/u>&lt;/li>
+&lt;/ol>
+&lt;p>    다운받은 파일을 실행시키고, 필요한 패키지만 선택을 해서 다운로드 받는다.&lt;/p>
+&lt;p>    필요한 패키지는 &lt;strong>git, make, gcc-mingw, g++, perl, unzip, zip, coreutils, gzip, tar&lt;/strong> 이다.&lt;/p></description></item><item><title>Eagle CAD</title><link>https://openmicrolab.com/eagle-cad/</link><pubDate>Thu, 22 Mar 2012 08:33:31 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad/</guid><description>
+&lt;p>Open Hardware를 위해 &lt;a title="[http://www.cadsoftusa.com/]로 이동합니다." href="http://www.cadsoftusa.com/" target="_blank">Eagel CAD&lt;/a>를 많이 사용을 하지만 정작 사용법에 대한 한글 안내는 많지 않다.&lt;br>
+유일한 것이 &lt;a href="http://nohau.com.ne.kr/eagle.htm">http://nohau.com.ne.kr/eagle.htm&lt;/a> 의 링크에 있는 내용이다.&lt;br>
+이 링크는 일본 자료를 번역한 것 같은데, 실제 툴이라는 것이 각각의 기능에 대한 알기보다는 실제로 자기가 사용을 해가면서 왜 기능이 필요한 가를 터득하는 것이 중요하다. 툴의 모든 기능이 다 필요로 하지는 않으니까…&lt;br>
+이 링크가 별로 마음에 안드는 것은 웹사이트의 모든 키를 막아놔서 copy가 안되는데, Evernote같은 툴로 페이지를 스크랩하는 것은 가능하다. ^^*&lt;/p></description></item><item><title>Fritzing에 Wiz820io 라이브러리 공식 등록</title><link>https://openmicrolab.com/fritzing%EC%97%90-wiz820io-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B3%B5%EC%8B%9D-%EB%93%B1%EB%A1%9D/</link><pubDate>Tue, 24 Jan 2012 10:18:03 +0000</pubDate><guid>https://openmicrolab.com/fritzing%EC%97%90-wiz820io-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B3%B5%EC%8B%9D-%EB%93%B1%EB%A1%9D/</guid><description>
+&lt;p>&lt;A title="[http://liketheocean.tistory.com/159]로 이동합니다." href="http://liketheocean.tistory.com/159" target=_blank>Fritzing &lt;/A>툴의이 최근 버젼(0.6.4)버젼부터 &lt;A title="[http://liketheocean.tistory.com/169]로 이동합니다." href="http://liketheocean.tistory.com/169" target=_blank>지난번에 제가 만든 Wiz820io&lt;/A>가 공식 라이브러리도 등록이 되었습니다.&lt;br>
+이번 버젼에서 눈에 띄게 달라진 점은 part 라이브러리가 각 제조사별로 브랜딩되어 있습니다.&lt;br>
+즉 Arduino, Parallax, Sparkfun등의 탭들이 생겨서 각 제조사 별로 부품을 찾을 수 있게 되어 있네요.&lt;br>
+제가 만든 Wiz820io는 Core Parts에 Connection 항목에 들어가 있습니다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile24.uf.1353813F4F1E84A618F627.PNG" class="aligncenter" width="290" height="700" alt="" filename="Fritzing_Wiz820io.PNG" filemime="image/jpeg" />
+&lt;/P></description></item><item><title>아두이노 보드에서 W5200 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-w5200-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 12 Dec 2011 09:59:33 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-w5200-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>아두이노의 공식 Ethernet 쉴드에는 &lt;A title="[http://wiznet.co.kr]로 이동합니다." href="http://wiznet.co.kr/" target=_blank>Wiznet&lt;/A>의 &lt;A title="[http://www.wiznet.co.kr/w5100]로 이동합니다." href="http://www.wiznet.co.kr/w5100" target=_blank>W5100&lt;/A>이 사용된다. 따라서 모든 Ethernet 라이브러리는 &lt;A title="[http://www.wiznet.co.kr/w5100]로 이동합니다." href="" target=_blank>W5100&lt;/A>을 이용하는 것으로 되어있는데 &lt;A title="[http://wiznet.co.kr]로 이동합니다." href="" target=_blank>Wiznet&lt;/A>의 신규칩인 &lt;A title="[http://www.wiznet.co.kr/w5200]로 이동합니다." href="http://www.wiznet.co.kr/w5200" target=_blank>W5200&lt;/A>을 아두이노 보드에서 사용하기 위해서는 라이브러리를 일부 수정을 해야 한다. &lt;A title="[http://www.wiznet.co.kr/w5100]로 이동합니다." href="" target=_blank>W5100&lt;/A>과 비교해서 &lt;A title="[http://www.wiznet.co.kr/w5200]로 이동합니다." href="" target=_blank>W5200&lt;/A>의 장점은 대략 작은 패키지, 8 socket 지원(W5100의 경우 4 socket 지원), Power down mode, Wake on LAN 기능 지원 등이다. &lt;br>
+**    W5100 to W5200 migration guide&lt;/P>&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;br />
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile3.uf.1221F0404EE59A7B11507B.pdf" class="aligncenter" filename="w5100_w5200_migration guide.pdf" filemime="application/pdf" />cfile3.uf.1221F0404EE59A7B11507B.pdf&lt;/a>
+&lt;/P>&lt;/STRONG>
+&lt;/DIV>
+&lt;p>&lt;strong>Hardware 연결&lt;/strong>&lt;br>
+간단한 테스트를 위해 &lt;A title="[http://www.wiznet.co.kr/wiz820io]로 이동합니다." href="http://www.wiznet.co.kr/wiz820io" target=_blank>Wiz820io&lt;/A>를 사용을 해서 아래 그림처럼 테스트를 했다. 아래 그림은 Fritzing 이라는 툴로 &lt;A title="[http://www.wiznet.co.kr/wiz820io]로 이동합니다." href="" target=_blank>Wiz820io &lt;/A>라이브러리를 만든 후 작성한 연결도이다. Fritzing관련해서는 이전 포스트 참고(&lt;A title="[http://liketheocean.tistory.com/159]로 이동합니다." href="http://liketheocean.tistory.com/159" target=_blank>Fritzing&lt;/A>, &lt;A title="[http://liketheocean.tistory.com/169]로 이동합니다." href="http://liketheocean.tistory.com/169" target=_blank>Fritzing 라이브러리 만들기&lt;/A>)&lt;br>
+&lt;strong>    Wiz820io의 Fritzing 라이브러리&lt;/strong>&lt;/p></description></item><item><title>LeafLabs의 Maple mini, Maple Ret 5 보드 사용기</title><link>https://openmicrolab.com/leaflabs%EC%9D%98-maple-mini-maple-ret-5-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</link><pubDate>Fri, 25 Nov 2011 11:31:38 +0000</pubDate><guid>https://openmicrolab.com/leaflabs%EC%9D%98-maple-mini-maple-ret-5-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</guid><description>
+&lt;p>&lt;A title="[http://arduino.cc]로 이동합니다." href="http://arduino.cc/" target=_blank>Arduino&lt;/A>가 AVR을 기반으로 하여 오픈하드웨어 플랫폼을 주도하고 있는데, &lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>은 STM32시리즈를 기반으로 하는 오픈하드웨어 플랫폼을 만들고 있다. &lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>의 보드들의 이름은 Maple이다.&lt;br>
+&lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>사의 홈페이지에서 주문을 하니 한 일주일만에 배송이 되었다. &lt;A title="[http://arduino.cc]로 이동합니다." href="http://arduino.cc/" target=_blank>Arduino&lt;/A>가 요즘에는 브랜딩 작업을 하고 있고, 포장 및 디자인까지 신경을 쓰는 반면 역시 후발 주자답게 포장이 좀 허접하다. 대신 사탕을 같이 넣어서 주네..ㅋㅋ&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.180B40494ECF78311B6A81.jpg" class="aligncenter" width="490" height="322" alt="" filename="Maple with Candy.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile6.uf.180B55484ECF78B6227356.jpg" class="aligncenter" width="551" height="331" alt="" filename="Maple.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>아두이노와 같은 모습의 IDE를 사용하는데, 일단 처음 부터 막힌다. &lt;A title="[http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip]로 이동합니다." href="http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip" target=_blank>IDE 다운로드&lt;/A>&lt;/p></description></item><item><title>아두이노의 미래</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%EB%AF%B8%EB%9E%98/</link><pubDate>Thu, 22 Sep 2011 08:23:23 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%EB%AF%B8%EB%9E%98/</guid><description>
+&lt;IFRAME height=315 src="http://www.youtube.com/embed/GbsgFKyI_Mk" frameBorder=0 width=560 allowfullscreen>&lt;/IFRAME>
+What&amp;#8217;s Ahead Of Arduino &amp;#8211; Part 1 &amp;#8211; Massimo &lt;Banzi@MakerFaire> 2011
+&lt;IFRAME height=315 src="http://www.youtube.com/embed/zJwtZSS6kqU" frameBorder=0 width=560 allowfullscreen>&lt;/IFRAME>
+What&amp;#8217;s Ahead Of Arduino &amp;#8211; Part&amp;nbsp;2 &amp;#8211; Massimo &lt;Banzi@MakerFaire> 2011
+결국 아두이노의 힘은 커뮤니티!!
+&lt;p>아래 사진은 Make Fair에서 나눠준 아두이노의 리플렛인데 신제품만 모았다.&lt;br>
+각각의 제품마다 밑에 이 보드로 무엇을 할 수 있는지 설명이 있다.&lt;br>
+가령 WiFi의 경우 Fully Hackable!&lt;br>
+ADK의 경우 Develop your own android accessory !&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.141C993E4E7AF181391842.jpg" class="aligncenter" width="683" height="442" alt="" filename="6167088135_1270e2ff44_b.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>아래 슬라이드는 아두이노가 OSHW 서밋에서 발표한 자료..&lt;/p></description></item><item><title>아두이노의 신제품</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%EC%8B%A0%EC%A0%9C%ED%92%88/</link><pubDate>Thu, 22 Sep 2011 08:04:07 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%EC%8B%A0%EC%A0%9C%ED%92%88/</guid><description>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.14128D3F4E7AE3971CFAC1.jpg" class="aligncenter" width="223" height="241" alt="" filename="Due-300x300.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;DIV style="BORDER-BOTTOM: #fefeb8 1px solid; BORDER-LEFT: #fefeb8 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #fefeb8; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #fefeb8 1px solid; BORDER-RIGHT: #fefeb8 1px solid; PADDING-TOP: 10px" class=txc-textbox>For the second year in a row we decided to announce our new products at Maker Faire in NYC.
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+Tomorrow morning, if you come to the Arduino tent, you will be able to see:
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;STRONG>Arduino 1.0&lt;/STRONG>, we finally froze the Arduino API, the IDE and the layout of the boards. We’ve made some minor additions to the Arduino connectors to make them more flexible. Tomorrow you will be able to download the release candidate and in 1 month of frantic testing with the community, the platform will be ready and stable.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;STRONG>Arduino Leonardo&lt;/STRONG>, a low cost Arduino board with the Atmega32u4. It has the same shape and connectors as the UNO but it has a simpler circuit. On the software side it has a nifty USB driver able to simulate a mouse , a keyboard, a serial port (with more drivers coming later). As usual for Arduino, everything will be released as open source (Core, Bootloader, Hardware).
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;STRONG>Arduino Due,&lt;/STRONG>&lt;SPAN class=Apple-converted-space> &lt;/SPAN>a major breakthrough for Arduino because we’re launching an Arduino board with a 32bit Cortex-M3 ARM processor on it. We’re using the SAM3U processor from ATMEL running at 96MHz with 256Kb of Flash, 50Kb of Sram, 5 SPI buses, 2 I2C interfaces, 5 UARTS, 16 Analog Inputs at 12Bit resolution and much more.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+Instead of just releasing the finished platform we are opening the process to the community early on. We’re going to be demoing the board and giving away some boards to a selected group of developers who will be invited to shape the platform while it’s been created. After Maker Faire, we will begin selling a small batch of Developer Edition boards on the Arduino store (store.arduino,cc) for members of the community who want to be join the development effort. We plan a final and tested release by the end of 2011
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;STRONG>Arduino Wifi Shield.&lt;SPAN class=Apple-converted-space> &lt;/SPAN>&lt;/STRONG>It adds Wi-Fi communication capabilities to any Arduino. Instead of using any of the classic WiFi modules on the market we wanted to have something that will provide the maximum level of hackability to the user. The shield is based on a wifi micro module made by H&amp;D Wireless coupled with a powerful AVR32 processor that carries the full TCP-IP stack leaving room to add your own protocols and customisations. We’ve also worked hard to make sure that you will be able to migrate your code from the Ethernet Shield with minor changes.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+We’re also going to show some prototypes of new platforms we’ve been working on: We have robots, new IDEs and more.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+It has been a crazy few months and we want to thank ATMEL very much the support that we got on all the new products.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+Come over to Maker Faire and have a look for yourself!
+&lt;/P>&lt;/DIV>
+&lt;p>지난 9월 17, 18일 뉴욕의 &lt;A title="[http://makerfaire.com/]로 이동합니다." href="http://makerfaire.com/" target=_blank>Make Fair&lt;/A>에서 아두이노는 자신들의 신제품 출시 계획을 발표했다.&lt;br>
+&lt;strong>Arduino 1.0&lt;/strong>&lt;br>
+API, IDE가 드리어 1.0버젼을 달았다. 커뮤니티에서 1달여간의 추가적인 테스트를 거쳐 최종적으로 fix될 예정&lt;br>
+&lt;a href="http://code.google.com/p/arduino/wiki/Arduino1">http://code.google.com/p/arduino/wiki/Arduino1&lt;/a> 에서 다운로드 가능하다.&lt;/p></description></item><item><title>임베디드보드에서 트위터하기 2 – 아두이노를 이용한 트위터</title><link>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0-2-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C/</link><pubDate>Fri, 16 Sep 2011 06:35:43 +0000</pubDate><guid>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0-2-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C/</guid><description>
+&lt;p>이전에 올린 &lt;A title="[ http://liketheocean.tistory.com/150]로 이동합니다." href="http://liketheocean.tistory.com/150" target=_blank>&lt;A title="[ http://liketheocean.tistory.com/150]로 이동합니다." href="http://liketheocean.tistory.com/150" target=_blank>임베디드보드에서 트위터&lt;/A>&lt;A title="[ http://liketheocean.tistory.com/150]로 이동합니다." href="http://liketheocean.tistory.com/150" target=_blank>하기&lt;/A>의 2번째 버젼으로 아두이노를 이용해서 트위터하는 방법에 대한 분석자료입니다.&lt;br>
+관련 자료: &lt;a href="http://www.arduino.cc/playground/Code/TwitterLibrary">http://www.arduino.cc/playground/Code/TwitterLibrary&lt;/a>&lt;br>
+역시 proxy 사용해서 구현을 하고있는데 이전의 &lt;A title="[http://www.supertweet.net/]로 이동합니다." href="http://www.supertweet.net/" target=_blank>Supertweet.net&lt;/A> 보다는 간단한 것 같지만, 테스트를 해보니 단점은 같은 내용의 메시지를 연속해서 보내면 에러가 난다. 아마도 스팸성 트윗을 걸러내기 위한 조치 같네요.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;A title="[http://arduino-tweet.appspot.com/]로 이동합니다." href="http://arduino-tweet.appspot.com/" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.172B51414E72EB421A9E6C.PNG" class="aligncenter" width="624" height="139" alt="" filename="twitter_arduino.PNG" filemime="image/jpeg" />&lt;/A>
+&lt;/P>먼저
+&lt;p>&lt;a href="http://arduino-tweet.appspot.com/">http://arduino-tweet.appspot.com/&lt;/a> 에 접속을 해서 사용하는 트위터 아이디의 토큰을 받는다.&lt;br>
+이 토큰은 아래 소스에서 사용이 된다.&lt;/p></description></item><item><title>임베디드 보드에서 트위터하기</title><link>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 15 Sep 2011 12:32:02 +0000</pubDate><guid>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>이 블로그 포스트는 Twitter API Proxy 서비스인 supertweet.net를 이용해서 PC나 스마트폰이 아닌 임베디드 보드에서 트위터 메시지를 보내는 방법을 설명한다.&lt;br>
+참조 사이트:mbed의 &lt;A title="[http://mbed.org/cookbook/SuperTweet]로 이동합니다." href="http://mbed.org/cookbook/SuperTweet" target=_blank>post to Twitter via SuperTweet &lt;/A>&lt;/p>
+&lt;p>먼저 트위터 아이디가 필요한데, 테스트를 위해 twitter.com 에서 ID를 하나 만들었다. EspressoDopio2. 참고로 내 트위터 아이디는 EspressoDopio&lt;/p>
+&lt;p>&lt;A title="[http://www.supertweet.net/]로 이동합니다." href="http://www.supertweet.net/" target=_blank>Supertweet.net&lt;/A> 에 접속해서 docoment link에 가면 3가지 step으로 설명을 해 놓고 있다.&lt;/p>
+&lt;ol>
+&lt;li>Sign UP/ Sign in now를 클릭해서 MyAuthAPIProxy가 계정 사용을 승인하도록 한다.&lt;/li>
+&lt;li>Basic Auth를 위한 패스워드를 설정한다. 이 password는 패스워드와 다르게 설정함.&lt;br>
+이 설정이 되면 다음과 같이 Username이 나타다고 Secret 밑에 Show 를 클릭하면 내가 정한 password가 나타난다.&lt;/li>
+&lt;/ol>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.167B64414E71EC861C6440.PNG" class="aligncenter" width="683" height="93" alt="" filename="twitter2.PNG" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>3. 이젠 임베디드 보드에서 트위터 메시지를 보내면 되는데, Twitter.com 대신에  &lt;a href="http://api.supertweet.net/">http://api.supertweet.net&lt;/a> 로 보내면 된다.&lt;br>
+구체적인 방법은 &lt;a href="http://www.supertweet.net/about/api">http://www.supertweet.net/about/api&lt;/a> 링크를 확인하면 되는데, 간단히 메시지 post하는 것을 설명하면…&lt;/p></description></item><item><title>Arduino Education</title><link>https://openmicrolab.com/arduino-education/</link><pubDate>Thu, 08 Sep 2011 04:00:56 +0000</pubDate><guid>https://openmicrolab.com/arduino-education/</guid><description>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile26.uf.1127934C4E68393F1E1E93.PNG" class="aligncenter" width="254" height="93" alt="" filename="Arduino_education.PNG" filemime="image/jpeg" />
+아두이노가 Store, Labs에 이어 Education이라는 카테고리를 만들었습니다. &lt;http://scuola.arduino.cc/en>
+교사를 위한 공간이지만 반드시 교사일 필요는 없고, 기존의 커뮤니티 처럼 모두가 참여할 수 있는 구조입니다.
+아직 베타버젼이어서 현재 한 20 명정도가 참여하고 있는데, 활성화가 되면 이들의 커뮤니티 확장이 가속도를 내는 것 같습니다.
+&lt;P style="MARGIN: 0px">
+&lt;br /> 최근 Lesson중 하나인 아두이노 이더넷 관련 내용 한번 보시죠.&lt;br />
+&lt;/P>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; LETTER-SPACING: normal; FONT: 12px/16px 'Lucida grande', Tahoma, Verdana, Arial, Helvetica, 'Bitstream Vera Sans', sans-serif; WHITE-SPACE: normal; ORPHANS: 2; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;br /> &lt;H1 style="LINE-HEIGHT: 1.3em; MARGIN-TOP: 0px; FONT-FAMILY: 'Lucida grande', 'Lucida Sans', Lucida, Verdana, sans-serif; MARGIN-BOTTOM: 0px; COLOR: rgb(0,151,156); FONT-SIZE: 1.5em; FONT-WEIGHT: bold" class=title>&lt;A title="[http://scuola.arduino.cc/en/content/getting-started-arduino-ethernet]로 이동합니다." href="http://scuola.arduino.cc/en/content/getting-started-arduino-ethernet" target=_blank>Getting Started With Arduino Ethernet&lt;/A>&lt;/H1>&lt;/SPAN>
+&lt;/DIV>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.135A27484E683D3B0BC9F8.jpg" class="aligncenter" width="519" height="270" alt="" filename="etherneteserial2usb.jpg" filemime="image/jpeg" />
+&lt;/P>최신 보드인 Arduino Ethernet은 W5100이 메인 보드에 default로 들어가 있고, USB가 빠졌습니다. 대신 작은 USB to Serial 보드로 연결해서 툴과 연결을 합니다.
+&lt;p>최근에 Arduino의 멤버인 Banzi가 Getting Started with Arduino의 2nd 버젼도 거의 완성이 됐다는 트윗도 있습니다.&lt;/p></description></item><item><title>만화로 배우는 아두이노</title><link>https://openmicrolab.com/%EB%A7%8C%ED%99%94%EB%A1%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</link><pubDate>Thu, 08 Sep 2011 03:35:53 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%8C%ED%99%94%EB%A1%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8/</guid><description>
+&lt;p>아두이노의 영향력은 대단하다.&lt;br>
+아두이노에 대한 소개가 만화로도 제작이 되었다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;A title="[http://www.jodyculkin.com/comics-2/introduction-to-arduino]로 이동합니다." href="http://www.jodyculkin.com/comics-2/introduction-to-arduino" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.115CCF4B4E683796292E2A.jpg" class="aligncenter" width="300" height="158" alt="" filename="cover-panel-300x158.jpg" filemime="image/jpeg" />&lt;/A>
+&lt;/P>PDF 버젼도 있다.
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile22.uf.177FB24F4E6837D41C0354.pdf" class="aligncenter" filename="arduino-comic-latest.pdf" filemime="application/pdf" />cfile22.uf.177FB24F4E6837D41C0354.pdf&lt;/a>
+&lt;/P></description></item><item><title>마이크로칩 chipKIT for the Arduino™ Community</title><link>https://openmicrolab.com/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%B9%A9-chipkit-for-the-arduino-community/</link><pubDate>Tue, 24 May 2011 04:56:22 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%B9%A9-chipkit-for-the-arduino-community/</guid><description>
+&lt;p>지난 글(&lt;A title="[http://liketheocean.tistory.com/111]로 이동합니다." href="http://liketheocean.tistory.com/111" target=_blank>이젠 오픈소스 하드웨어가 대세&lt;/A>)에서 마이크로칩에서 Arduino 호환 보드인 chipKIT를 릴리즈 했다고 했는데, 유트브에 동영상이 올라왔네요.&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;br />
+&lt;/DIV>
+&lt;DIV>
+아래 링크는 공식 릴리즈 주소&lt;br /> &lt;A href="http://www.microchip.com/pagehandler/en-us/chipKIT-Development-Platform.html">http://www.microchip.com/pagehandler/en-us/chipKIT-Development-Platform.html&lt;/A>&lt;/p>
+&lt;p>
+&lt;/DIV>
+&lt;/p></description></item><item><title>아두이노 팀 (Arduino Team) 뒷조사</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%ED%8C%80-arduino-team-%EB%92%B7%EC%A1%B0%EC%82%AC/</link><pubDate>Mon, 21 Mar 2011 10:35:50 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%ED%8C%80-arduino-team-%EB%92%B7%EC%A1%B0%EC%82%AC/</guid><description>
+&lt;p>명함을 정리하다가 보니 작년 여름에 이태리에서 미팅한 &lt;A title="[http://www.smartprj.com/catalog/index.php]로 이동합니다." href="http://www.smartprj.com/catalog/index.php" target=_blank>Smart Projects&lt;/A>의 사장이 오픈소스 하드웨어 플랫폼인 아두이노를 개발한 팀의 한명임을 뒤늦게 알았네요.&lt;br>
+아두이노 홈페이지에서 다른 멤버들의 이름을 기점으로 뒷조사를 해 보니 재미있네요.&lt;br>
+인터넷 세상에서 그 사람이 어디 출신인지 학력은 어떤지 블로그, 이메일, 플리커등의 주소 정보가 고스란히 알 수 있는 세상…&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.127178344D87284631DC03.jpg" class="aligncenter" width="454" height="304" alt="" filename="Arduino Team.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>사진 출처: &lt;A title="[http://www.flickr.com/photos/dcuartielles/2363657276/in/photostream/]로 이동합니다." href="http://www.flickr.com/photos/dcuartielles/2363657276/in/photostream/" target=_blank>플리커&lt;/A> &amp;lt;= 계정을 보니 David의 플리커 사이트네요.&lt;br>
+암튼 위 아두이노 팀 사진에서 제가 만났던 분은 아랫줄 맨 왼쪽의 Gianluca라는 사람입니다.&lt;/p></description></item><item><title>센서 데이터를 위한 데이터베이스: Pachube</title><link>https://openmicrolab.com/%EC%84%BC%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-pachube/</link><pubDate>Fri, 10 Dec 2010 10:43:03 +0000</pubDate><guid>https://openmicrolab.com/%EC%84%BC%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-pachube/</guid><description>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile24.uf.1322152E4D0203A40EA111.jpg" class="aligncenter" width="680" height="484" alt="" filename="pachube.jpg" filemime="image/jpeg" />
+&lt;FONT color=#000000>**&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">Pachube&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>**&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">, 발음은 &lt;/SPAN>&lt;/SPAN>&lt;/SPAN>**&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">&amp;#8220;PATCH-bay&amp;#8221;&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>**&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim"> 로 한다고 합니다.&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>
+**&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">Pachube&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>**&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">는 온라인 센서데이터를&amp;nbsp;웹에 보여주기 위한 온라인 데이터베이스 서비스를 해줍니다.&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">즉 전 세계에 있는 다양한 센서들의 정보를 display하고 공유하기 위한 웹 서비스입니다.&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">이 서비스가 제공하는 기능은 다음과 같습니다.&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;br>
+&lt;/FONT>&lt;strong>&lt;FONT color=#000000>&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">  &lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;br /> &lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">  -. Manage realtime sensor &amp;amp; environment data&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;br /> &lt;/SPAN>&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">  -. Graph, monitor &amp;amp; control remote environments&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">  -. Build mobile &amp;amp; web apps that create value&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-FAMILY: Batang">&lt;SPAN style="FONT-FAMILY: Gulim">  -. Share data &amp;amp; create communitie&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/FONT>&lt;/strong>&lt;/p></description></item><item><title>Top 40 Arduino 프로젝트</title><link>https://openmicrolab.com/top-40-arduino-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</link><pubDate>Thu, 04 Nov 2010 11:06:33 +0000</pubDate><guid>https://openmicrolab.com/top-40-arduino-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: left; FONT-FAMILY: Arial, Helvetica, sans-serif" class=Apple-style-span>&lt;/p>
+&lt;P style="PADDING-BOTTOM: 0px; BACKGROUND-COLOR: rgb(255,255,255); MARGIN: 12px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px; background-origin: initial; background-clip: initial">
+출처: &lt;A href="http://hacknmod.com/hack/top-40-arduino-projects-of-the-web/">http://hacknmod.com/hack/top-40-arduino-projects-of-the-web/&lt;/A>
+&lt;/p>
+&lt;OL style="PADDING-BOTTOM: 0px; BACKGROUND-COLOR: rgb(255,255,255); LIST-STYLE-TYPE: decimal; MARGIN: 12px 0px 12px 20px; PADDING-LEFT: 25px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; background-origin: initial; background-clip: initial">
+&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=40>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.instructables.com/id/Make-a-wall-avoiding-Robot!/" target=_blank>Make a Simple Wall Avoiding Robot&lt;/A>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.instructables.com/id/How-To-Smell-Pollutants/?ALLSTEPS" target=_blank>&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=39>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.atomicvpp.com/wpblog/2007/11/25/led-cube-project/">Basic LED Cube&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>–&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/tutorial-how-to-make-led-cubes/" target=_blank>Learn to Make LED Cubes&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=38>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.instructables.com/id/How-To-Smell-Pollutants/?ALLSTEPS" target=_blank>How To Smell Pollutants&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=37>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.damonkohler.com/2008/11/xbee-znet-25-wireless-accelerometer.html" target=_blank>XBee Wireless Accelerometer&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=36>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.instructables.com/id/Breathalyzer-Microphone/?ALLSTEPS" target=_blank>Breathalyzer Microphone&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=35>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/control-servo-motors-with-the-wii-mote-joystick/" target=_blank>Control Servo Motors with the Wii Mote Joystick&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=34>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.instructables.com/id/Lo_fi_Arduino_Guitar_Pedal/?ALLSTEPS" target=_blank>Lo-fi Arduino Guitar Pedal&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=33>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.cibomahto.com/2008/02/thing-a-day-day-9-servo-as-input-device/" target=_blank>Positional Memory with a Servo&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=32>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.critterandguitari.com/home/store/arduino-piano.php" target=_blank>Miniature Pocket Piano&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=31>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/dirt-simple-pov-led-display/" target=_blank>Dirt Simple POV LED Display&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>see also&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://translate.google.com/translate?hl=en&amp;sl=es&amp;u=http://www.bricogeek.com/index/cat/7/nid/913/&amp;sa=X&amp;oi=translate&amp;resnum=3&amp;ct=result&amp;prev=/search%3Fq%3Dbricogeek%2Bpov%26hl%3Den%26sa%3DG" target=_blank>Wireless POV&lt;/A>&lt;/LI>
+&lt;/OL>
+&lt;P style="PADDING-BOTTOM: 0px; BACKGROUND-COLOR: rgb(255,255,255); MARGIN: 12px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px; background-origin: initial; background-clip: initial">
+&lt;IMG style="BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px auto; DISPLAY: block; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" class="aligncenter size-full wp-image-2534" title=arduino-projects-61 alt=arduino-projects-61 src="http://www.hacknmod.com/wp-content/uploads/2009/01/arduino-projects-61.jpg" width=600 height=275>
+&lt;/P>
+&lt;OL style="PADDING-BOTTOM: 0px; BACKGROUND-COLOR: rgb(255,255,255); LIST-STYLE-TYPE: decimal; MARGIN: 12px 0px 12px 20px; PADDING-LEFT: 25px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; background-origin: initial; background-clip: initial">
+&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=30>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/make-a-mini-segway-using-the-arduino/" target=_blank>How to Build a Self Balancing Segway-like Robot&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=29>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/website-visitor-blinker/" target=_blank>Website Visitor Blinker&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>–&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://tinkerlog.com/2007/12/04/arduino-xmas-hitcounter/" target=_blank>Christmas Bell&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=28>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.instructables.com/id/turn-signal-biking-jacket/" target=_blank>Turn Signal Biking Jacket&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=27>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.larsby.com/johan/diytar/" target=_blank>DIY Musical Keytar&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=26>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://blog.makezine.com/archive/2009/01/tweetawatt_our_entry_for_the_core77.html" target=_blank>Tweet-a-Watt Wireless Electricity Monitor&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=25>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/rc-car-controled-via-the-web/" target=_blank>RC Car Controlled Via the Web&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=24>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.instructables.com/id/DIY-3D-Controller/" target=_blank>DIY Gaming with a 3D Controller&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=23>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://sanguino.cc/" target=_blank>Sanguino&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>–&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.vimeo.com/1491854?pg=embed&amp;sec=1491854" target=_blank>Arduino with extra I/O pins&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=22>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/rocker-scale-measures-how-hard-you-rock/" target=_blank>Rocker Scale Measures how Hard You Rock&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=21>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/hack-a-nes-controller-into-a-security-keypad/" target=_blank>Hack a NES Controller into a Security Keypad&lt;/A>&lt;/LI>
+&lt;/OL>
+&lt;P style="PADDING-BOTTOM: 0px; BACKGROUND-COLOR: rgb(255,255,255); MARGIN: 12px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px; background-origin: initial; background-clip: initial">
+&lt;IMG style="BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px auto; DISPLAY: block; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" class="aligncenter size-full wp-image-2530" title=arduino-projects-8 alt=arduino-projects-8 src="http://www.hacknmod.com/wp-content/uploads/2009/01/arduino-projects-8.jpg" width=600 height=275>
+&lt;/P>
+&lt;OL style="PADDING-BOTTOM: 0px; BACKGROUND-COLOR: rgb(255,255,255); LIST-STYLE-TYPE: decimal; MARGIN: 12px 0px 12px 20px; PADDING-LEFT: 25px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; background-origin: initial; background-clip: initial">
+&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=20>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://blog.makezine.com/archive/2008/12/maya_and_arduino_control.html" target=_blank>Interfacing with Maya&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>and&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://melka.one.free.fr/blog/?p=34" target=_blank>3d Studio Max&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=19>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://subzonepen.blogspot.com/2009/01/arduino-webcam-servo-project.html" target=_blank>Web Based Servo Control&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=18>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://vimeo.com/2402904?pg=embed&amp;sec=2402904" target=_blank>How To Make A Daft Punk Helmet&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>– (see also&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/how-to-make-your-clothing-glow-using-electroluminescent-wire/">DIY Daft Punk Suits&lt;/A>)&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=17>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/automatic-head-tracking-with-arduino/" target=_blank>Automatic Head Tracking with Arduino&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=16>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1187659197">Pong with the Arduino&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=15>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://blog.makezine.com/archive/2008/12/arduino_accelerometer_papervision3d.html" target=_blank>Interactive gaming controller&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=14>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://someoneknows.wordpress.com/2009/01/12/arduino-powered-robotic-labyrinth-game/" target=_blank>Marble Labrynth controlled using the WiiFit&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=13>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.ladyada.net/make/eshield/index.html" target=_blank>Connect the the web: Ethernet Shield&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=12>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/make-an-led-gmail-notifier/">Physical Gmail LED Notifiers&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>–&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/gmail-and-rss-notifiers-using-the-arduino/">RSS Notifier&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=11>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://blog.mozmonkey.com/2008/ganzbot-an-arduino-robot-who-reads-twitter/" target=_blank>Robot that Reads and Speaks RSS Feeds&lt;/A>&lt;/LI>
+&lt;/OL>
+&lt;P style="PADDING-BOTTOM: 0px; BACKGROUND-COLOR: rgb(255,255,255); MARGIN: 12px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px; background-origin: initial; background-clip: initial">
+&lt;IMG style="BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px auto; DISPLAY: block; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" class="aligncenter size-full wp-image-2533" title=arduino-projects-7 alt=arduino-projects-7 src="http://www.hacknmod.com/wp-content/uploads/2009/01/arduino-projects-7.jpg" width=600 height=275>
+&lt;/P>
+&lt;OL style="PADDING-BOTTOM: 0px; BACKGROUND-COLOR: rgb(255,255,255); LIST-STYLE-TYPE: decimal; MARGIN: 12px 0px 12px 20px; PADDING-LEFT: 25px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; background-origin: initial; background-clip: initial">
+&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=10>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.botanicalls.com/" target=_blank>Botanicalls Twittering Plants&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=9>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://growdown.blogspot.com/2008/04/arduino-and-silvia-two-italians-one.html">Wiimote Controlled Espresso Machine&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=8>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/high-speed-photography-how-to-trigger-using-arduino/" target=_blank>How to: High Speed Photography using the Arduino&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=7>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/use-the-wii-and-iphone-to-control-an-rc-car/" target=_blank>Controlling an RC Car with iPhone and Wii&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>–&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/iphone-controlled-rc-car/" target=_blank>Another version&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=6>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://blog.makezine.com/archive/2008/03/etchasketch_clock.html?CMP=OTC-0D6B48984890" target=_blank>Etch-a-Sketch Clock&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=5>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://antipastohw.blogspot.com/2008/10/using-inputshield-to-make-open-source.html" target=_blank>Open source Game Boy&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=4>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/electronics-filled-arduino-powered-room/" target=_blank>Electronics Filled, Arduino Powered Room&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=3>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://hackaday.com/2008/06/12/how-to-make-an-rgb-combination-door-lock-%20# art-1/" target=_blank>How-To: Make an RGB combination door lock&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=2>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/make-a-uav-spyplane-using-the-arduino/" target=_blank>Make a UAV Spyplane Using the Arduino&lt;/A>&lt;/LI>&lt;br /> &lt;LI style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 0px" value=1>&lt;A style="COLOR: rgb(255,82,0); FONT-WEIGHT: 700; TEXT-DECORATION: none" href="http://www.hacknmod.com/hack/create-techno-with-a-laser-harp/" target=_blank>Fantastic Arduino Laser Harp&lt;/A>&lt;/LI>
+&lt;/OL>&lt;/SPAN>&lt;/SPAN></description></item><item><title>어떻게 하면 오픈 소스 하드웨어 (Open Source Hardware)가 성공을 할까?</title><link>https://openmicrolab.com/%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EB%A9%B4-%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-open-source-hardware%EA%B0%80-%EC%84%B1%EA%B3%B5%EC%9D%84-%ED%95%A0%EA%B9%8C/</link><pubDate>Mon, 06 Sep 2010 12:28:51 +0000</pubDate><guid>https://openmicrolab.com/%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EB%A9%B4-%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-open-source-hardware%EA%B0%80-%EC%84%B1%EA%B3%B5%EC%9D%84-%ED%95%A0%EA%B9%8C/</guid><description>
+&lt;p>&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;/p>&lt;/p>
+&lt;p class="MsoNormal" align="left" style="text-align:left;mso-pagination:widow-orphan;
+text-autospace:ideograph-numeric ideograph-other;word-break:keep-all">
+&lt;font class="Apple-style-span" color="#000000">이미 소프트웨어쪽에서는&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000"> Linux&lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">를 필두로 많은&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000"> Open Source Software&lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">들이&lt;br /> 있었고 지금도 활성화되고 있다&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">. &lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">이러한 움직임은 하드웨어에도 영향을 미치게 되었다&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">. &lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">잘 정리된 페이지는&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">&amp;nbsp;&lt;/font>&lt;a href="http://makezine.com/" target="_blank" title="[http://makezine.com/]로 이동합니다.">&lt;font class="Apple-style-span" color="#5C7FB0">MakeZine&lt;/font>&lt;/a>&lt;/span>&lt;font class="Apple-style-span" color="#000000">의&lt;br /> 블로그를 참고하자&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">.&amp;nbsp;&lt;/font>&lt;/span>&lt;b>&lt;span lang="EN-US" style="font-size: 11pt; ">&lt;a href="http://blog.makezine.com/archive/2009/12/open_source_hardware_2009_-_the_def.html" target="_blank" title="[http://blog.makezine.com/archive/2009/12/open_source_hardware_2009_-_the_def.html]로 이동합니다.">&lt;font class="Apple-style-span" color="#5C7FB0">Open source hardware 2009 &amp;#8211; The definitive guide to open&lt;br /> source hardware projects in 2009&lt;/font>&lt;/a>&lt;/span>&lt;/b>
+&lt;/p>
+&lt;p>
+&lt;/span>&lt;/font>&lt;font class="Apple-style-span" size="4" style="line-height: 1; ">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;/p>
+&lt;p class="MsoNormal" align="left" style="text-align:left;mso-pagination:widow-orphan;
+text-autospace:ideograph-numeric ideograph-other;word-break:keep-all">
+&lt;font class="Apple-style-span" color="#000000">내용을 살펴보면&lt;br /> 매우 다양한 분야에서 오픈 소스 하드웨어의 이슈가 있다&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">.&amp;nbsp;&lt;/font>&lt;/span>&lt;font class="Apple-style-span" color="#000000">그럼 어떻게&lt;br /> 하면 이 오픈 소스 하드웨어가 활성화 될 수 있을까&lt;/font>&lt;span lang="EN-US">&lt;font class="Apple-style-span" color="#000000">?&lt;/font>&lt;/span>
+&lt;/p></description></item></channel></rss>

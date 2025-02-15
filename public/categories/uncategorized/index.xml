@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Uncategorized on OpenMicroLab</title><link>https://openmicrolab.com/categories/uncategorized/</link><description>Recent content in Uncategorized on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 09 Nov 2022 07:58:50 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/uncategorized/index.xml" rel="self" type="application/rss+xml"/><item><title>GUI 프로그램 솔루션</title><link>https://openmicrolab.com/gui-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%86%94%EB%A3%A8%EC%85%98/</link><pubDate>Wed, 09 Nov 2022 07:58:50 +0000</pubDate><guid>https://openmicrolab.com/gui-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%86%94%EB%A3%A8%EC%85%98/</guid><description>
+&lt;p>PC에서 GUI 프로그램을 만들 수 있는 툴은 많지만 그중에서 맥, 윈도우즈, 리눅스등 멀티 플랫폼을 지원하는 툴중에서 라이브러리 지원이 잘 되어 있고 많이 사용되는 툴은 Qt와 openframworks 인 것 같다. 둘다 C++ 인테 Qt의 경우 PyQt 또는 PySide로 파이썬으로 개발이 가능하다.&lt;br>
+그리고 Qt Designer로 GUI를 설계하고 파이썬 코드에서 불러와서 사용이 가능하다. Qt Designer는 윈도우즈의 경우 아나콘다가 설치되면 같이 설치되지만 맥에서는 그렇지 않아서 &lt;a href="https://build-system.fman.io/qt-designer-download">https://build-system.fman.io/qt-designer-download&lt;/a> 에서 다운로드 가능한다.&lt;/p>
+&lt;p> &lt;/p>
+&lt;h3 id="블루투스-관련된-라이브러리">블루투스 관련된 라이브러리&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.huihoo.com/pyqt/PyQt5/QtBluetooth.html#PyQt5-QtBluetooth">QtBluetooth&lt;/a>&lt;/li>
+&lt;li>참고할 코드 : &lt;a href="https://gist.github.com/StefanD986/1b00e6c078516a60e5e3e691903b9051">https://gist.github.com/StefanD986/1b00e6c078516a60e5e3e691903b9051&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://doc.qt.io/qtforpython/overviews/qtbluetooth-btchat-example.html#bluetooth-chat-example">Bluetooth Chat Example&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="gui-관련-예제">GUI 관련 예제&lt;/h3>
+&lt;p>GUI 관련된 예제들은 기본적인 것만 확인하고 필요한 것이 있을때 참고하면 된다.&lt;/p></description></item><item><title>ECG – ADS1292 module test</title><link>https://openmicrolab.com/ecg-ads1292-module-test/</link><pubDate>Sat, 28 Aug 2021 08:24:53 +0000</pubDate><guid>https://openmicrolab.com/ecg-ads1292-module-test/</guid><description>
+&lt;p>심장의 ECG신호를 측정할 수 있는 ADS1292모듈을 테스트해 봤다. 먼저 Arduino Uno를 가지고 테스트를 해서 신호가 제대로 나오는 지를 확인한다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2021/08/arduinoUno_ecg.jpg">&lt;img loading="lazy" class="wp-image-4772 aligncenter" src="https://openmicrolab.com/images/2021/08/arduinoUno_ecg-300x300.jpg" alt="" width="353" height="353" srcset="https://openmicrolab.com/images/2021/08/arduinoUno_ecg-300x300.jpg 300w, https://openmicrolab.com/images/2021/08/arduinoUno_ecg-1024x1024.jpg 1024w, https://openmicrolab.com/images/2021/08/arduinoUno_ecg-150x150.jpg 150w, https://openmicrolab.com/images/2021/08/arduinoUno_ecg-768x768.jpg 768w, https://openmicrolab.com/images/2021/08/arduinoUno_ecg-1536x1536.jpg 1536w, https://openmicrolab.com/images/2021/08/arduinoUno_ecg-2048x2048.jpg 2048w, https://openmicrolab.com/images/2021/08/arduinoUno_ecg-100x100.jpg 100w, https://openmicrolab.com/images/2021/08/arduinoUno_ecg-336x336.jpg 336w" sizes="(max-width: 353px) 100vw, 353px" />&lt;br>
+&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2021/08/ecg_uno.png">&lt;img loading="lazy" class="wp-image-4773 aligncenter" src="https://openmicrolab.com/images/2021/08/ecg_uno-300x132.png" alt="" width="505" height="222" srcset="https://openmicrolab.com/images/2021/08/ecg_uno-300x132.png 300w, https://openmicrolab.com/images/2021/08/ecg_uno-1024x452.png 1024w, https://openmicrolab.com/images/2021/08/ecg_uno-768x339.png 768w, https://openmicrolab.com/images/2021/08/ecg_uno-1536x678.png 1536w, https://openmicrolab.com/images/2021/08/ecg_uno-2048x904.png 2048w" sizes="(max-width: 505px) 100vw, 505px" />&lt;/a>&lt;/p>
+&lt;p>신호의 출력값은 Arduino Plotter를 이용해서 확인을 한다. 다음 스텝은 이 값을&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>SeeedStudio 의 Wio Terminal같은 디스플레이가 있는 디바이스에서 진행을 하거나,&lt;/p></description></item><item><title>체온 측정 관련</title><link>https://openmicrolab.com/%EC%B2%B4%EC%98%A8-%EC%B8%A1%EC%A0%95-%EA%B4%80%EB%A0%A8/</link><pubDate>Sat, 10 Jul 2021 10:50:24 +0000</pubDate><guid>https://openmicrolab.com/%EC%B2%B4%EC%98%A8-%EC%B8%A1%EC%A0%95-%EA%B4%80%EB%A0%A8/</guid><description>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2021/07/body-temperature.png">&lt;img loading="lazy" class="aligncenter wp-image-4749 size-full" src="https://openmicrolab.com/images/2021/07/body-temperature.png" alt="" width="694" height="402" srcset="https://openmicrolab.com/images/2021/07/body-temperature.png 694w, https://openmicrolab.com/images/2021/07/body-temperature-300x174.png 300w" sizes="(max-width: 694px) 100vw, 694px" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>TI 자료 – &lt;a href="https://www.digikey.kr/ko/articles/build-a-reliable-battery-powered-clinical-grade-wireless-thermometer-for-continuous-monitoring">지속적인 모니터링을 위해 신뢰할 수 있는 배터리 구동식 임상용 무선 온도계 제작&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>MAXIM 자료 – &lt;a href="https://www.maximintegrated.com/en/design/technical-documents/app-notes/7/7069.html">Think Multi-Site Sensors for Continuous B – Maxim Integrated&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>애플기기에 체온 센서가 달릴것으로 예상된다는 기사 – &lt;a href="http://www.itdaily.kr/news/articleView.html?idxno=203307">[글로벌] 에어팟·애플 워치 등 애플 기기에 체온 센서 달린다&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>관련 특허 자료 – &lt;a href="https://www.patentlyapple.com/patently-apple/2021/06/apple-invents-packaging-technologies-for-temperature-sensing-in-health-care-devices-like-future-airpods-apple-watch-bands.html">Apple Invents Packaging Technologies for Temperature Sensing in Health Care Devices like future AirPods &amp;amp; Apple Watch Bands&lt;/a>&lt;/p></description></item><item><title>가장 작은 MCU</title><link>https://openmicrolab.com/%EA%B0%80%EC%9E%A5-%EC%9E%91%EC%9D%80-mcu/</link><pubDate>Mon, 06 Aug 2018 03:26:27 +0000</pubDate><guid>https://openmicrolab.com/%EA%B0%80%EC%9E%A5-%EC%9E%91%EC%9D%80-mcu/</guid><description>
+&lt;p>응용에 따라서 작은 MCU가 필요할 때가 있다. 검색을 해보니 &lt;a href="http://www.theorycircuit.com/top-5-smallest-microcontrollers/">Top 5 Smallest Microcontrollers&lt;/a> 기사가 있다.&lt;/p>
+&lt;ul>
+&lt;li>ATtiny20 – 3 x 3&lt;/li>
+&lt;li>PSoC 4000 – 1.45 x 1.56&lt;/li>
+&lt;li>KL02 – 2 x 1.61&lt;/li>
+&lt;li>PIC12LF1552 – 2 x 3&lt;/li>
+&lt;li>C8051T606 – 3 x 3&lt;/li>
+&lt;/ul>
+&lt;p>이중에서 4번째, 5번째는 각각 PIC, 8051 코어라서 패스, ATtiny는 그냥 평범한 작은 AVR. 따라서 가장 작은 PSoC4000과 KL02이 선택의 대상이 된다. 가격은 &lt;a href="https://kr.mouser.com/ProductDetail/Cypress-Semiconductor/CY8C4014FNI-421AT?qs=%2fha2pyFaduiULo716echaHwd2fNkGBjKD%2fYxQUhizpEBf7qLGyFUnw%3d%3d" target="_blank" rel="noopener noreferrer">PSoC4000&lt;/a>이 1K에 1,451원 &lt;a href="https://kr.mouser.com/ProductDetail/NXP-Freescale/MKL02Z32CAF4R?qs=%2fha2pyFaduhaefiqIIPU8GYPUXaKyRgYCLhD5ycniyA%3d" target="_blank" rel="noopener noreferrer">KL02&lt;/a>가 1,741원 정도이고 &lt;a href="https://kr.mouser.com/ProductDetail/Cypress-Semiconductor/CY8C4014FNI-421AT?qs=%2fha2pyFaduiULo716echaHwd2fNkGBjKD%2fYxQUhizpEBf7qLGyFUnw%3d%3d" target="_blank" rel="noopener noreferrer">PSoC4000&lt;/a>이 리드 타임도 더 좋다. 하지만 칩의 스펙은 KL02가 Clock 48Mhz(16Mhz *괄호안은 PSoC4000), Flash 32KB(16KB), SRAM 4KB(2KB), ADC, SPI, UART, Timer2개로 훨씬 더 좋다. 단 PSoC4000은 동작 전압이 1.71 V to 5.5 V로 KL02(3.3V)대비 더 넓고,  Capacitive Sensing 기능이 있다.&lt;/p></description></item><item><title>EAGLE 파일을 Fritzing 파일로 변환하기</title><link>https://openmicrolab.com/eagle-%ED%8C%8C%EC%9D%BC%EC%9D%84-fritzing-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 22 Jan 2018 05:10:29 +0000</pubDate><guid>https://openmicrolab.com/eagle-%ED%8C%8C%EC%9D%BC%EC%9D%84-fritzing-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>####&lt;img loading="lazy" class="alignnone wp-image-4197" src="https://res.cloudinary.com/openmicrolab/image/upload/v1516597806/eagle2fritzing_y1kj1g.png" width="690" height="278" />&lt;/p>
+&lt;h4 id="1-아래-repo를-깃헙에서-클론한다">1. 아래 repo를 깃헙에서 클론한다.&lt;/h4>
+&lt;li style="font-weight: 400;">
+&lt;span style="font-weight: 400;">Fritzing&lt;/span>
+&lt;/li>
+&lt;blockquote>
+&lt;p>&lt;span style="font-weight: 400;">clone &lt;/span>&lt;a href="https://github.com/fritzing/fritzing-app">&lt;span style="font-weight: 400;">https://github.com/fritzing/fritzing-app&lt;/span>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>Fritzing parts&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;a href="https://github.com/fritzing/fritzing-parts" target="_blank" rel="noopener noreferrer">&lt;a href="https://github.com/fritzing/fritzing-parts">https://github.com/fritzing/fritzing-parts&lt;/a>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;li style="font-weight: 400;">
+&lt;span style="font-weight: 400;">eagle2fritzing &lt;/span>
+&lt;/li>
+&lt;blockquote>
+&lt;p>&lt;span style="font-weight: 400;">clone &lt;/span>&lt;a href="https://github.com/adafruit/eagle2fritzing">&lt;span style="font-weight: 400;">https://github.com/adafruit/eagle2fritzing&lt;/span>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>font download &amp;amp; install&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;a href="http://fritzing.org/fritzings-graphic-standards/download-fonts-and-templates">http://fritzing.org/fritzings-graphic-standards/download-fonts-and-templates&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;h4 id="2eagle2fritzing의-brd2svg-빌드">2. eagle2fritzing의 brd2svg 빌드&lt;/h4>
+&lt;ul>
+&lt;li>빌드시 xcode 9.2 가 필요하며, qt를 설치후 PATH 설정해야 한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>brew install qt&lt;br>
+cd eagle2fritzing/brd2svg&lt;br>
+qmake -spec macx-g++ brd2svg.pro&lt;br>
+make&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>make를 하면 brd2svg가 빌드가 되는데,&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;span style="font-weight: 400;">clang: error: linker command failed with exit code 1 (use -v to see invocation)&lt;/span>&lt;/p></description></item><item><title>구글 스크립트</title><link>https://openmicrolab.com/%EA%B5%AC%EA%B8%80-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</link><pubDate>Fri, 06 Oct 2017 10:46:32 +0000</pubDate><guid>https://openmicrolab.com/%EA%B5%AC%EA%B8%80-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</guid><description>
+&lt;p>구글 캘린더에서 다음주 1주일의 일정을 불러와서 출력을 해주는 스크립트.&lt;/p>
+&lt;p>여기서 캘린더 ID는 구글 캘린더의 설정에 들어가서 원하는 캘린더의 세부설정 항목의 캘린더 주소 항목에서 찾을 수 있으며 다음과 같은 형태이거나 자신의 구글 계정정보이다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="mailto:xxxxxxxxxxxxxxxxxxxxx@group.calendar.google.com">xxxxxxxxxxxxxxxxxxxxx@group.calendar.google.com&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;p>위 코드는 &lt;a href="https://script.google.com/">Google Apps Scripts&lt;/a> 에서 작성을 한다.&lt;/p></description></item><item><title>MAC OSX에서 Wireshark를 사용한 무선랜 데이터 캡쳐</title><link>https://openmicrolab.com/mac-osx%EC%97%90%EC%84%9C-wireshark%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EB%AC%B4%EC%84%A0%EB%9E%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%BA%A1%EC%B3%90/</link><pubDate>Fri, 02 Dec 2016 09:05:52 +0000</pubDate><guid>https://openmicrolab.com/mac-osx%EC%97%90%EC%84%9C-wireshark%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EB%AC%B4%EC%84%A0%EB%9E%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%BA%A1%EC%B3%90/</guid><description>
+&lt;p>&lt;a href="https://wiki.wireshark.org/CaptureSetup/WLAN#Mac_OS_X" target="_blank">Wireshark wiki&lt;/a>에 monitor mode에 대한 설명이 나온다. 그런데 airport를 사용하는 내용이라서 별 의미가 없다. Wireshark에서 무선랜 데이터를 캡쳐하려면 monitor mode를 enable해야 하는데, 이 옵션은 윈도우즈를 오른쪽으로 많이 드래그를 해야 옵션을 찾을 수 있다. 그리고 link-layer를 802.11로 변경은 그냥 프로그램을 재실행하면 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3804" src="http://res.cloudinary.com/openmicrolab/image/upload/v1480669330/WireShark_Monitor_mode_sp2hzp.png" width="1205" height="461" /></description></item><item><title>IoT Developer Survey</title><link>https://openmicrolab.com/iot-developer-survey/</link><pubDate>Fri, 15 Apr 2016 03:32:38 +0000</pubDate><guid>https://openmicrolab.com/iot-developer-survey/</guid><description>
+&lt;p>Top 5 IoT Industries&lt;/p>
+&lt;ul>
+&lt;li>Iot Platform&lt;/li>
+&lt;li>Home Automation&lt;/li>
+&lt;li>Industrial Automation&lt;/li>
+&lt;li>Energy Management&lt;/li>
+&lt;li>Connected Cities&lt;/li>
+&lt;/ul>
+&lt;p>3가지 이슈 – 보안, 상호호환성, 연결방식&lt;br>
+주로 사용되는 메시징 프로토콜은 MQTT, HTTP&lt;br>
+클라우드 서비스는 아마존 클라우드&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="IoT Developer Survey 2016" href="//www.slideshare.net/IanSkerrett/iot-developer-survey-2016" target="_blank">IoT Developer Survey 2016&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="//www.slideshare.net/IanSkerrett" target="_blank">Ian Skerrett&lt;/a>&lt;/strong>
+&lt;/div>
+&lt;p>관련자료 – &lt;a href="https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/" target="_blank">&lt;a href="https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/">https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>여기 나온 PT자료도 같이 보면 좋을 듯: &lt;a href="http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/" target="_blank">&lt;a href="http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/">http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>ZeroPi – Arduino and Raspberry Pi compatible development kit</title><link>https://openmicrolab.com/zeropi-arduino-and-raspberry-pi-compatible-development-kit/</link><pubDate>Tue, 13 Oct 2015 09:09:29 +0000</pubDate><guid>https://openmicrolab.com/zeropi-arduino-and-raspberry-pi-compatible-development-kit/</guid><description>
+&lt;p>&lt;strong>ZeroPi는 Arduino and Raspberry Pi 호환 개발보드&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Arduino Zero Compatible development kit&lt;/li>
+&lt;li>Atmel SAMD21J18, 32-bit ARM Cortex M0+&lt;/li>
+&lt;li>3D printer,Laser Cutter, CNC에 적용 가능&lt;/li>
+&lt;li>Marlin and Repetier firmware&lt;/li>
+&lt;li>Open Source: &lt;a href="https://github.com/Makeblock-official/ZeroPi" target="_blank">&lt;a href="https://github.com/Makeblock-official/ZeroPi">https://github.com/Makeblock-official/ZeroPi&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/10/photo-original.jpg">&lt;img loading="lazy" class="aligncenter wp-image-3446 " src="https://openmicrolab.com/images/2015/10/photo-original-1024x768.jpg" alt="photo-original" width="571" height="428" srcset="https://openmicrolab.com/images/2015/10/photo-original.jpg 1024w, https://openmicrolab.com/images/2015/10/photo-original-300x225.jpg 300w" sizes="(max-width: 571px) 100vw, 571px" />&lt;/a>&lt;/p>
+&lt;p>참고자료: &lt;a href="https://www.kickstarter.com/projects/1204283/zeropi-arduino-and-raspberry-pi-compatible-develop" target="_blank">&lt;a href="https://www.kickstarter.com/projects/1204283/zeropi-arduino-and-raspberry-pi-compatible-develop">https://www.kickstarter.com/projects/1204283/zeropi-arduino-and-raspberry-pi-compatible-develop&lt;/a>&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>3D 프린터 트러블 슈팅</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85/</link><pubDate>Tue, 23 Jun 2015 01:55:35 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85/</guid><description>
+&lt;p>&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baaedae4b08d4d93a1c214/file-GN9iWX4Uso.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53bbd820e4b09d13bf3cdd35/file-mjx4MffrQn.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53ba99cfe4b09d13bf3cdb5f/file-NZnhvOw08g.jpg" alt="" width="200" height="200" />&lt;/p>
+&lt;p>&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baa2d5e4b08d4d93a1c203/file-aJTtLfvFX7.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53baa75fe4b08d4d93a1c20e/file-sDk3kVHFi4.jpg" alt="" width="200" height="200" />&lt;img loading="lazy" class="alignnone" src="http://d33v4339jhl8k0.cloudfront.net/docs/assets/53970867e4b0c76107b1091a/images/53bbe483e4b08d4d93a1c3e3/file-1ZrZKjRNje.jpg" alt="" width="200" height="200" />&lt;/p>
+&lt;p>&lt;strong>&lt;span class="s1">Pillowng&lt;/span>&lt;/strong>&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">Top layer에서 팬의 속도가 최대가 아닐때 이런 문제가 발생할 수 있다.  &lt;/span>&lt;span class="s1">Top Layer는 최소 6 top layer가 되야.. 즉 0.1mm 레이어 두께일때 0.6mm&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>&lt;span class="s1">Warping&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">히트베드, 풀 사용, &lt;/span>&lt;span class="s1">Brim 을 적용&lt;/span>
+&lt;/p>
+&lt;p class="p3">
+&lt;strong>&lt;span class="s1">Elephant’s foot&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">레벨링을 해서 약간 띄움&lt;/span>
+&lt;/p>
+&lt;p class="p3">
+&lt;strong>&lt;span class="s1">Stringing&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p3">
+&lt;span class="s1">Retracation &amp; 온도를 낮춤&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>&lt;span class="s1">Ringing&lt;/span>&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">프린팅 속도를 낮춤, &lt;/span>&lt;span class="s1">acceleration 속도를 낮춤, &lt;/span>&lt;span class="s1">Outer wall을 0.8mm 이상으로&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">과도한 열도 이런 형상을 유발할 수 있다.&lt;/span>
+&lt;/p>
+&lt;p>&lt;strong>참고자료&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/23-a-visual-ultimaker-troubleshooting-guide" target="_blank">Visual Ultimaker troubleshooting guide&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/30-getting-better-prints" target="_blank">Getting better print&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://support.3dverkstan.se/article/38-designing-for-3d-printing">Designing for 3D print&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p class="p1"></description></item><item><title>OSHW 인증</title><link>https://openmicrolab.com/oshw-%EC%9D%B8%EC%A6%9D/</link><pubDate>Sun, 07 Jun 2015 13:15:14 +0000</pubDate><guid>https://openmicrolab.com/oshw-%EC%9D%B8%EC%A6%9D/</guid><description>
+&lt;p>OSHWA에서 OSHW 인증을 구축하기 위한 작업을 진행중이다.&lt;/p>
+&lt;p>관련자료: &lt;a href="http://www.oshwa.org/2015/06/02/building-an-open-source-hardware-certification-with-oshwa/" target="_blank">&lt;a href="http://www.oshwa.org/2015/06/02/building-an-open-source-hardware-certification-with-oshwa/">http://www.oshwa.org/2015/06/02/building-an-open-source-hardware-certification-with-oshwa/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>공개되는 정보에 따라  몇가지 레벨의 인증이 생길 것 같고, 인증로고도 만들어 질 것 같다.&lt;/p>
+&lt;p>&lt;strong>Primary Goals&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Make it easier for the public to identify open source hardware.&lt;/li>
+&lt;li>Move towards common expectations of what qualifies as open source hardware, including how non-open elements of putatively open source hardware is handled.&lt;/li>
+&lt;li>Expand the reach of open hardware by making it easier for “outsiders” to participate by setting clear expectations and definitions.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Optional/Secondary Goals&lt;/strong>&lt;/p></description></item><item><title>git 관련 팁 – .gitignore</title><link>https://openmicrolab.com/git-%EA%B4%80%EB%A0%A8-%ED%8C%81-gitignore/</link><pubDate>Fri, 13 Feb 2015 01:06:53 +0000</pubDate><guid>https://openmicrolab.com/git-%EA%B4%80%EB%A0%A8-%ED%8C%81-gitignore/</guid><description>
+&lt;p>.gitignore를 설정 전에 원하지 않는 파일(예를 들면 소스가 아닌 컴파일된 obj 파일 같은..)이 repositary에 add/initilized된 경우는 cache를 지우고 tracking을 다시 설정해야 한다.&lt;br>
+먼저 필요한 파일들을 commit한후 다음의 명령어를 실행한다.&lt;br>
+cache 삭제&lt;/p>
+&lt;blockquote>
+&lt;p>git rm -r –cached .&lt;/p>&lt;/blockquote>
+&lt;p>다시 tracking 하도록 설정&lt;/p>
+&lt;blockquote>
+&lt;p>git add .&lt;/p>&lt;/blockquote>
+&lt;p>그 다음 commit&lt;/p>
+&lt;blockquote>
+&lt;p>git commit -m “.gitignore is now working”&lt;/p>&lt;/blockquote></description></item><item><title>이클립스 팁 – 줄번호 표시, 테마설정</title><link>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%8C%81-%EC%A4%84%EB%B2%88%ED%98%B8-%ED%91%9C%EC%8B%9C-%ED%85%8C%EB%A7%88%EC%84%A4%EC%A0%95/</link><pubDate>Tue, 12 Aug 2014 03:23:18 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%8C%81-%EC%A4%84%EB%B2%88%ED%98%B8-%ED%91%9C%EC%8B%9C-%ED%85%8C%EB%A7%88%EC%84%A4%EC%A0%95/</guid><description>
+&lt;p>이클립스에서 줄 번호 설정: &lt;strong>Preference &amp;raquo; General &amp;raquo; Editors &amp;raquo; Text Editors&lt;/strong>에서 “&lt;strong>Show line numbers&lt;/strong>“를 선택한다.&lt;/p>
+&lt;p>테마 설정: &lt;a href="http://eclipsecolorthemes.org/?view=plugin" target="_blank">&lt;a href="http://eclipsecolorthemes.org/?view=plugin">http://eclipsecolorthemes.org/?view=plugin&lt;/a>&lt;/a> 여기에서 Color Theme를 받을 수 있다. 아니면 &lt;strong>Help &amp;raquo; Eclipse Market Place&lt;/strong>…  **“Color Theme”**를 검색을 해서 플러그인 설치&lt;/p>
+&lt;p>&lt;span style="line-height: 1.5em;">테마중에 SubllimeText의 테마가 있는데, 사용해 보니 Obsidian 이 보다 더 좋은 느낌.. &lt;/span>&lt;/p>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/Preferences.png" width="779" height="611" />
+&lt;p> &lt;/p></description></item><item><title>IoT 디바이스 개발을 위한 ARM의 플랫폼적 접근</title><link>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</link><pubDate>Fri, 18 Apr 2014 10:09:20 +0000</pubDate><guid>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</guid><description>
+&lt;p>ARM의 IoT 플랫폼 디렉터인 Simon Ford의 발표 @Embedded World.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/04/mbed_Simon.png">&lt;img loading="lazy" class="alignnone wp-image-3008" alt="mbed_Simon" src="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png" width="819" height="609" srcset="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png 1024w, https://openmicrolab.com/images/2014/04/mbed_Simon-300x223.png 300w, https://openmicrolab.com/images/2014/04/mbed_Simon.png 1054w" sizes="(max-width: 819px) 100vw, 819px" />&lt;/a>&lt;/p>
+&lt;p>관련 링크: &lt;a href="http://player.vimeo.com/video/88152800" target="_blank">link&lt;/a>&lt;/p>
+&lt;p>&lt;span style="line-height: 1.5em;">지난번 ARM Techcon의 발표와 거의 같다.&lt;/span>&lt;/p></description></item><item><title>스팸입니다</title><link>https://openmicrolab.com/%EC%8A%A4%ED%8C%B8%EC%9E%85%EB%8B%88%EB%8B%A4/</link><pubDate>Thu, 03 Apr 2014 00:28:37 +0000</pubDate><guid>https://openmicrolab.com/%EC%8A%A4%ED%8C%B8%EC%9E%85%EB%8B%88%EB%8B%A4/</guid><description>
+&lt;blockquote>
+&lt;p>phpBB 영문판을 사용하는데, 포럼의 회원가입 과정에서 엉뚱하게 다음과 같은 한글 메시지 “스팸입니다”가 출력될때…&lt;/p>&lt;/blockquote>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/04/spam.jpg">&lt;img loading="lazy" class="alignnone size-full wp-image-2957" alt="spam" src="https://openmicrolab.com/images/2014/04/spam.jpg" width="448" height="263" srcset="https://openmicrolab.com/images/2014/04/spam.jpg 448w, https://openmicrolab.com/images/2014/04/spam-300x176.jpg 300w" sizes="(max-width: 448px) 100vw, 448px" />&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>phpBB와는 전혀 상관이 없고, 호스팅 서비스 업체인 cafe24의 게시판 스팸필터 관리설정 문제이다.&lt;br>
+이 설정을 사용안함으로 설정하면 해결된다.&lt;/p>&lt;/blockquote>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/04/%EA%B3%84%EC%8B%9C%ED%8C%90-%EC%8A%A4%ED%8C%B8%ED%95%84%ED%84%B0-%EA%B4%80%EB%A6%AC.jpeg">&lt;img loading="lazy" class="alignnone wp-image-2958" alt="계시판 스팸필터 관리" src="https://openmicrolab.com/images/2014/04/계시판-스팸필터-관리.jpeg" width="482" height="274" srcset="https://openmicrolab.com/images/2014/04/계시판-스팸필터-관리.jpeg 688w, https://openmicrolab.com/images/2014/04/계시판-스팸필터-관리-300x170.jpeg 300w" sizes="(max-width: 482px) 100vw, 482px" />&lt;/a>&lt;/p></description></item><item><title>W5500 드라이버 포팅: Parallax Propeller칩</title><link>https://openmicrolab.com/w5500-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%ED%8F%AC%ED%8C%85-parallax-propeller%EC%B9%A9/</link><pubDate>Tue, 10 Dec 2013 02:54:02 +0000</pubDate><guid>https://openmicrolab.com/w5500-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%ED%8F%AC%ED%8C%85-parallax-propeller%EC%B9%A9/</guid><description>
+&lt;p>&lt;a href="http://parallax.com/" target="_blank">Parrallax&lt;/a>는 미국의 펩리스 반도체 회사이다. 이 회사의 칩은 &lt;a href="http://parallax.com/microcontrollers/propeller" target="_blank">Propeller&lt;/a>인데 이 칩은 특이하게도 내부에 8개의 프로세어 코아가 있어서 병렬처리가 가능하다. 이 8개의 코아를 COG라고 부르는데, 아래 블럭다이아그램 처럼 내부에 각각 프로세서, RAM, 레지스터, 카운터 등이 있고 이 COG가 외부에 나와 있는 I/O를 공유한다. 그리고 각각의 COG를 제어하는 HUB가 있어서 각각의 COG각 언제 I/O를 access할지를 결정한다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/12/parallax_propeller.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2736" alt="parallax_propeller" src="https://openmicrolab.com/images/2013/12/parallax_propeller.png" width="921" height="570" srcset="https://openmicrolab.com/images/2013/12/parallax_propeller.png 921w, https://openmicrolab.com/images/2013/12/parallax_propeller-300x185.png 300w" sizes="(max-width: 921px) 100vw, 921px" />&lt;/a>&lt;/p>
+&lt;p>Propeller칩을 프로그래밍하게 위해서는 어셈블러, SPIN이라는 언어로 프로그래밍이 가능하며, 최근에는 C 컴파일러가 지원이어서 C로도 프로그래밍이 가능하지만 코드사이즈나 성능이슈로 대부분의 코드는 어셈블러나 SPIN으로 만들어져 있다.&lt;/p></description></item><item><title>Making Sense Of The Internet Of Things | TechCrunch</title><link>https://openmicrolab.com/making-sense-of-the-internet-of-things-techcrunch/</link><pubDate>Wed, 29 May 2013 02:59:15 +0000</pubDate><guid>https://openmicrolab.com/making-sense-of-the-internet-of-things-techcrunch/</guid><description>
+&lt;p>See on &lt;a style='font-weight: bold; font-size: 18px;' href='http://www.scoop.it/t/open-hardware-news/p/4002396186/making-sense-of-the-internet-of-things-techcrunch'>Scoop.it&lt;/a> – &lt;a href="http://www.scoop.it/t/open-hardware-news">Open Hardware News&lt;/a>&lt;br>
+&lt;a href="http://www.scoop.it/t/open-hardware-news/p/4002396186/making-sense-of-the-internet-of-things-techcrunch">&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="127"
+height="96"
+src="https://openmicrolab.com/RqGeUsMwXMhijbPzQ0dg7Dl72eJkfbmt4t8yenImKBXEejxNn4ZJNZ2ss5Ku7Cxt_11348713772412113366.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>Editor’s note: Matt Turck is a managing director of FirstMark Capital.&lt;/p>
+&lt;p>The emerging Internet of Things is experiencing a burst of activity and creativity that is getting entrepreneurs, VCs and the press equally excited.&lt;/p>&lt;/blockquote>
+&lt;p>See on &lt;a href="http://techcrunch.com/2013/05/25/making-sense-of-the-internet-of-things/">techcrunch.com&lt;/a>&lt;/p></description></item><item><title>Markdown</title><link>https://openmicrolab.com/markdown/</link><pubDate>Tue, 07 May 2013 05:33:05 +0000</pubDate><guid>https://openmicrolab.com/markdown/</guid><description>
+&lt;p>Github의  readme  파일을 작성하다가… 자료를 정리하면 좋을 것 같아서…&lt;/p>
+&lt;p>Markdown이란… &lt;a title="Markdown" href="http://en.wikipedia.org/wiki/Markdown#Editors" target="_blank">&lt;a href="http://en.wikipedia.org/wiki/Markdown#Editors">http://en.wikipedia.org/wiki/Markdown#Editors&lt;/a>&lt;/a>&lt;/p>
+&lt;p>잘 정리된 사이트&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://help.github.com/articles/github-flavored-markdown" target="_blank">GitHub Flavored Markdown (GFM)&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height: 15px;">&lt;a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown Syntax&lt;/a> &lt;/span>&lt;/li>
+&lt;li>&lt;a href="http://lennienoh.com/markdown/" target="_blank">Markdown 문법 배워서 활용하기&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>[스크랩] Wi-Fi, Ethernet, HomePlug GP 지원하는 홈 에너지 솔루션</title><link>https://openmicrolab.com/%EC%8A%A4%ED%81%AC%EB%9E%A9-wi-fi-ethernet-homeplug-gp-%EC%A7%80%EC%9B%90%ED%95%98%EB%8A%94-%ED%99%88-%EC%97%90%EB%84%88%EC%A7%80-%EC%86%94%EB%A3%A8%EC%85%98/</link><pubDate>Mon, 24 Oct 2011 03:04:58 +0000</pubDate><guid>https://openmicrolab.com/%EC%8A%A4%ED%81%AC%EB%9E%A9-wi-fi-ethernet-homeplug-gp-%EC%A7%80%EC%9B%90%ED%95%98%EB%8A%94-%ED%99%88-%EC%97%90%EB%84%88%EC%A7%80-%EC%86%94%EB%A3%A8%EC%85%98/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; LETTER-SPACING: normal; FONT: 14px/22px Arial, Helvetica, sans-serif, '??'; WHITE-SPACE: normal; ORPHANS: 2; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>프리스케일은&lt;SPAN class=Apple-converted-space> &lt;/SPAN>&lt;A style="LINE-HEIGHT: 22px; MARGIN: 0px; COLOR: rgb(0,0,102); FONT-SIZE: 14px; TEXT-DECORATION: underline" href="http://www.eetkorea.com/SEARCH/ART/Wi~%40~Fi.HTM">&lt;SPAN style="MARGIN: 0px" class=maintext>Wi-Fi&lt;/SPAN>&lt;/A>, 이더넷 및 HomePlug Green PHY (&lt;A style="LINE-HEIGHT: 22px; MARGIN: 0px; COLOR: rgb(0,0,102); FONT-SIZE: 14px; TEXT-DECORATION: underline" href="http://www.eetkorea.com/SEARCH/ART/HomePlug+GP.HTM">&lt;SPAN style="MARGIN: 0px" class=maintext>HomePlug GP&lt;/SPAN>&lt;/A>) 표준을 통해 Smart Energy Profile 2.0을 사용하는 홈에너지 관리 솔루션을 선보이기 위해 퀄컴 아테로스와 협력한다고 발표했다. HomePlug GP는 스마트 그리드 및 스마트 에너지 어플리케이션을 위한 사양으로, 고객들의 비용, 커버리지 및 성능 요구를 기반으로 한다.&lt;/p></description></item><item><title>[스크랩] ‘Invincible Apple’에서 배우는 10가지 교훈</title><link>https://openmicrolab.com/%EC%8A%A4%ED%81%AC%EB%9E%A9-invincible-apple%EC%97%90%EC%84%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-10%EA%B0%80%EC%A7%80-%EA%B5%90%ED%9B%88/</link><pubDate>Mon, 25 Jul 2011 23:12:50 +0000</pubDate><guid>https://openmicrolab.com/%EC%8A%A4%ED%81%AC%EB%9E%A9-invincible-apple%EC%97%90%EC%84%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-10%EA%B0%80%EC%A7%80-%EA%B5%90%ED%9B%88/</guid><description>
+&lt;p>이 보고서는 ‘무적의 애플에게서 배우는 10가지 교훈’ 기사의 내용 요약을 통해 기업에게 주는 시사점을 제공하고자 한다.&lt;br>
+애플이 주는 교훈을 통해 기업은 고객가치 제고, 기업 자원의 재조합, 장기적 안목으로의 경영 등 다양한 함의를 재해석해&lt;br>
+볼 필요가 있다.&lt;br>
+ &lt;br>
+출처 : KT경제경영연구소&lt;/p>
+&lt;P style="MARGIN: 0px">
+&amp;nbsp;
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile2.uf.196A18404E2DF83E0353AC.pdf" class="aligncenter" filename="‘Invincible Apple’에서 배우는 10가지 교훈.pdf" filemime="application/pdf" />cfile2.uf.196A18404E2DF83E0353AC.pdf&lt;/a>
+&lt;/P>
+&lt;p>이것이 가능한 이유는 스티브잡스 및 애플은 제품에 대한 확신이 있었기 때문이다.&lt;br>
+즉 자신들이 만드는 제품이 사용자에게 어떤 반응을 일으킬지를 알고 그것을 위해 제품을 만들기 때문에 기존의 규칙들은 모두 무시할 수 있었던 것.&lt;/p></description></item><item><title>안드로이드 추천 어플 – 게임</title><link>https://openmicrolab.com/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%B6%94%EC%B2%9C-%EC%96%B4%ED%94%8C-%EA%B2%8C%EC%9E%84/</link><pubDate>Mon, 04 Oct 2010 14:05:53 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%B6%94%EC%B2%9C-%EC%96%B4%ED%94%8C-%EA%B2%8C%EC%9E%84/</guid><description>
+&lt;p>&lt;font class="Apple-style-span" color="#333333" face="굴림">&lt;/p>&lt;/p>
+&lt;div>
+&lt;span style="font-size: 11pt; ">제 AppBrain에 있는 추천 게임입니다. &lt;/span>&lt;a href="http://www.appbrain.com/user/jbkim/%EC%B6%94%EC%B2%9C-%EA%B2%8C%EC%9E%84" target="_blank" title="[http://www.appbrain.com/user/jbkim/%EC%B6%94%EC%B2%9C-%EA%B2%8C%EC%9E%84]로 이동합니다.">&lt;span style="font-size: 11pt; ">&lt;font class="Apple-style-span" color="#E31600">링크&amp;nbsp;&lt;/font>&lt;/span>&lt;/a>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">게임의 성격들이 대부분 비슷한데, &lt;/span>&lt;a href="http://www.appbrain.com/browse/dev/Camel+Games" target="_blank" title="[http://www.appbrain.com/browse/dev/Camel+Games]로 이동합니다.">&lt;span style="font-size: 11pt; ">&lt;font class="Apple-style-span" color="#E31600">Camel Games&lt;/font>&lt;/span>&lt;/a>&lt;a href="http://www.appbrain.com/browse/dev/Camel+Games">&lt;/a>&lt;span style="font-size: 11pt; ">사의 게임이 3개나 되네요.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;p>
+&lt;span style="font-size: 11pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.167DC6374CA9DD6B02C1C0.jpg" class="aligncenter" width="514" height="690" alt="" filename="안드로이드 어플_게임.jpg" filemime="image/jpeg" />&lt;/span>&lt;br /> &lt;/font>
+&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" color="#333333" face="굴림">&lt;br /> &lt;/font>
+&lt;/div>
+&lt;div style="text-align: center;">
+&lt;font class="Apple-style-span" face="굴림">&lt;span style="font-size: 11pt; ">&lt;font class="Apple-style-span" color="#E31600">이중에서 &lt;/font>&lt;b>&lt;font class="Apple-style-span" color="#E31600">&lt;/font>&lt;a href="http://www.appbrain.com/app/alchemy/me.zed_0xff.android.alchemy" target="_blank" title="[http://www.appbrain.com/app/alchemy/me.zed_0xff.android.alchemy]로 이동합니다.">&lt;font class="Apple-style-span" color="#E31600">Alchemy&lt;/font>&lt;/a>&lt;/b>&lt;font class="Apple-style-span" color="#E31600">의 Hint를 정리한 파일을 올립니다.&amp;nbsp;&lt;a href="https://openmicrolab.com/images/1/cfile22.uf.2027F9354CABEA882CED49.xlsx" class="aligncenter" filename="Alchemy.xlsx" filemime="application/zip" />cfile22.uf.2027F9354CABEA882CED49.xlsx&lt;/a>&lt;/font>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" color="#333333" face="굴림">&lt;span style="font-size: 11pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.156E230E4CA9DEFA3EC8CB.jpg" class="aligncenter" width="647" height="386" alt="" filename="Alchemy.jpg" filemime="image/jpeg" />&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" color="#333333" face="굴림">&lt;span style="font-size: 11pt; ">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" color="#333333" face="굴림">&lt;span style="font-size: 11pt; ">&lt;br /> .&lt;/span>&lt;/font>&lt;/p>
+&lt;div id="__KO_DIC_LAYER__" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: fixed; z-index: 1e+009; overflow-x: hidden; overflow-y: hidden; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 51, 119); border-right-color: rgb(51, 51, 119); border-bottom-color: rgb(51, 51, 119); border-left-color: rgb(51, 51, 119); display: none; ">
+&lt;/div>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" color="#333333" face="굴림">&lt;br /> &lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" color="#333333" face="굴림">&lt;br /> &lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" color="#333333" face="굴림">&lt;br /> &lt;/font>
+&lt;/div></description></item><item><title>안드로이드 어플 추천 – AppBrain</title><link>https://openmicrolab.com/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%96%B4%ED%94%8C-%EC%B6%94%EC%B2%9C-appbrain/</link><pubDate>Mon, 04 Oct 2010 13:47:47 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%96%B4%ED%94%8C-%EC%B6%94%EC%B2%9C-appbrain/</guid><description>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile6.uf.1659DD134CA9C6FA7C0C32.jpg" class="aligncenter" width="650" height="408" alt="" filename="Appbrain.jpg" filemime="image/jpeg" />&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;b>AppBrain&lt;/b>은 안드로이드앱의 설치와 관리를 쉽게 해줍니다. 그리고 기존의 안드로이드 마켓에 없는 게임도 쉽게 찾아서 설치를 할 수 있죠. 특히 &lt;b>Fast Web Installer&lt;/b>를 같이 설치를 하면 PC에서 앱을 찾고 이것을 폰에 Sync 시켜서 인스톨이 되게 합니다.&amp;nbsp;&lt;/span>&lt;span style="font-size: 11pt; ">그래서 자신의 폰에 있는 어플을 다른 사용자들에게 알려준다거나 추천할때 편리합니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;b>AppBrain 설치 =>&amp;nbsp;&lt;a href="http://www.appbrain.com/app/com.appspot.swisscodemonkeys.apps" target="_blank" title="[http://www.appbrain.com/app/com.appspot.swisscodemonkeys.apps]로 이동합니다.">http://www.appbrain.com/app/com.appspot.swisscodemonkeys.apps&lt;/a>&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;b>Fast Web Installer =>&amp;nbsp;&lt;a href="http://www.appbrain.com/info/fast-web-install" target="_blank" title="[http://www.appbrain.com/info/fast-web-install]로 이동합니다.">http://www.appbrain.com/info/fast-web-install&lt;/a>&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">아래 그림은 제가 사용하는 갤럭시S 폰에 설치된 어플입니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.167767174CA9DA20953C19.jpg" class="aligncenter" width="665" height="854" alt="" filename="안드로이드 어플.jpg" filemime="image/jpeg" />
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">제가 제 갤럭시S 폰에 설치한 어플 전체를 확인하실 수 있습니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;/span>&lt;span style="font-size: 11pt; ">&lt;a href="http://www.appbrain.com/user/jbkim/apps-on-the-phone" target="_blank" title="[http://www.appbrain.com/user/jbkim/apps-on-the-phone]로 이동합니다.">http://www.appbrain.com/user/jbkim/apps-on-the-phone&lt;/a>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;div>
+&lt;/div>
+&lt;/div></description></item><item><title>최고의 안드로이드용 RSS 리더</title><link>https://openmicrolab.com/%EC%B5%9C%EA%B3%A0%EC%9D%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%9A%A9-rss-%EB%A6%AC%EB%8D%94/</link><pubDate>Thu, 09 Sep 2010 05:38:04 +0000</pubDate><guid>https://openmicrolab.com/%EC%B5%9C%EA%B3%A0%EC%9D%98-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%9A%A9-rss-%EB%A6%AC%EB%8D%94/</guid><description>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">저는 스마트폰에서 트위터와 뉴스를 많이 읽는 편입니다.&amp;nbsp;&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">안드로이드용 트위터 어플은 &lt;a href="http://liketheocean.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%9A%A9-%ED%8A%B8%EC%9C%84%ED%84%B0-%EC%96%B4%ED%94%8C" target="_blank" title="[http://liketheocean.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%9A%A9-%ED%8A%B8%EC%9C%84%ED%84%B0-%EC%96%B4%ED%94%8C]로 이동합니다.">이전 포스트&lt;/a>를 참고하시고, 아래 내용은 RSS 리더에 관련한 겁니다.&amp;nbsp;&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;br /> &lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;a href="http://androinica.com/" target="_blank" title="[http://androinica.com/]로 이동합니다.">Androinica&lt;/a>에서 &amp;#8221;&amp;nbsp;&lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; line-height: 28px; font-size: 22px; ">&lt;span style="font-size: 11pt; ">&lt;/span>&lt;span style="font-family: Gulim; ">&lt;span style="font-size: 11pt; ">&lt;a href="http://androinica.com/2010/08/25/the-best-rss-android-app-with-google-reader-is-droid-vs-droid/" target="_blank" title="[http://androinica.com/2010/08/25/the-best-rss-android-app-with-google-reader-is-droid-vs-droid/]로 이동합니다.">The Best RSS Android app with Google Reader is…&lt;/a>&amp;#8220;&lt;/span>&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&amp;nbsp;이란 제목으로 RSS 앱을 비교한 자료입니다.&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">개인적으로는 처음에 &lt;b>NewsRob&lt;/b>을 썼다가 갤S에서 좀 버벅거리는 바람에 &lt;b>gReader&lt;/b>로 바꿨는데, 훨씬 빠른 것을 느꼈습니다. 따라서 자신의 안드로이드 폰에 맞는 것을 선택하면 될 것 같습니다.&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" face="Gulim" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile27.uf.1935DD0B4C886FD746E494.png" class="aligncenter" width="680" height="496" alt="" filename="dvd_best_google_readers.png" filemime="image/jpeg" />&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;br /> &lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">표에서 보면 &lt;b>Offline support&lt;/b>는 feed는 다운로드에서 연결이 끊어졌을 때도 볼수 있는 기능입니다.&amp;nbsp;&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">모바일에서 &lt;b>Sync speed&lt;/b>와&amp;nbsp;&lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="font-family: Gulim; line-height: 22px; font-size: 15px; ">&lt;b>Offline support&lt;/b>는 중요한 기능이므로 일단 이 부분에서 낮은 점수를 보인 &lt;b>A Good Reader&lt;/b>와 &lt;b>FreeSquare&lt;/b>는 제외하고 &lt;b>Notification &lt;/b>기능이 없는 &lt;b>Pulse&lt;/b>와 &lt;b>Readerscope&lt;/b>를 제외하면 &lt;b>gReader, Greed, NewsRob&lt;/b> 세가지가 남네요. 이 세가지 중에서 자신의 폰에 가장 맞는 것을 고르면 될 듯 합니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="font-family: Gulim; line-height: 22px; font-size: 15px; ">&lt;i>* 표에서 gReader가 &amp;#8220;Mark all read&amp;#8221;기능이 없는 것으로 되어 있는데 사실은 있습니다. ^^&lt;/i>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="font-family: Gulim; line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="font-family: Gulim; line-height: 22px; font-size: 15px; ">Greed를 새로 다운 받아서 사용을 해봤는데, 제 폰에서 속도는 &lt;b>gReader&lt;/b>와 비슷한데 화면 초기에 &lt;b>&amp;#8220;What&amp;#8217;s new&amp;#8221;&lt;/b> 항목이 있어서 새로운 뉴스만 리스트해 주는 기능이 있어서 좋네요.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="font-family: Gulim; line-height: 22px; font-size: 15px; ">&lt;b>&amp;#8220;Where was I ?&amp;#8221;&lt;/b>기능이 있어서 마지막에 읽은 뉴스로 돌아가게 해주는 기능도 좋습니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" face="Gulim" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;b>Greed&lt;/b>로 바꿔야 겠네요. ^^&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="font-family: Gulim; line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;br /> &lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;br /> &lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div id="__KO_DIC_LAYER__" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: fixed; z-index: 1e+009; overflow-x: hidden; overflow-y: hidden; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 51, 119); border-right-color: rgb(51, 51, 119); border-bottom-color: rgb(51, 51, 119); border-left-color: rgb(51, 51, 119); display: none; ">
+&lt;/div>
+&lt;div>
+&lt;/div></description></item><item><title>안드로이드용 트위터 어플</title><link>https://openmicrolab.com/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%9A%A9-%ED%8A%B8%EC%9C%84%ED%84%B0-%EC%96%B4%ED%94%8C/</link><pubDate>Thu, 02 Sep 2010 12:04:48 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%9A%A9-%ED%8A%B8%EC%9C%84%ED%84%B0-%EC%96%B4%ED%94%8C/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">스마트폰으로 할 수 있는 일은 많지만 그중에 제가 가장 많이 사용하는 어플중의 하나가 트위터입니다. &lt;/span>&lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">물론 안드로이드용 공식 트위터 어플도 있지만 제가 즐겨쓰는 트위터 어플은 TweetCaster입니다.&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">인터넷상에서 여러가지 안드로이드용 트위터 어플을 비교해 놓은 내용을 발견했습니다.&lt;/span>&lt;/span>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">제가 쓰고 있는&amp;nbsp;&lt;/span>&lt;/span>&lt;/span>&lt;/font>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">TweetCaster는 별로 평이 좋지 않네요. -_-;;&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">하지만 인터페이스는 각자의 취양에 따라 다르니 어떤게 딱히 좋다고 할 수 없습니다.&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">&lt;br /> &lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.144DB60E4C7F91A5D2B784.jpg" class="aligncenter" width="640" height="529.8823529411765" alt="" filename="cfile9.uf.144DB60E4C7F91A5D2B784.jpg" filemime="" />&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div style="text-align: center;">
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">출처 (&lt;/span>&lt;/font>&lt;a href="http://androinica.com/2010/03/25/the-best-android-twitter-app-is-droid-vs-droid/">&lt;/a>&lt;a href="http://androinica.com/2010/03/25/the-best-android-twitter-app-is-droid-vs-droid/" target="_blank" title="[http://androinica.com/2010/03/25/the-best-android-twitter-app-is-droid-vs-droid/]로 이동합니다.">http://androinica.com/2010/03/25/the-best-android-twitter-app-is-droid-vs-droid/&lt;/a>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">)&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;/span>&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">일단 몇가지 어플들을 다운 받아서 테스트를 해봤습니다.&lt;/span>&lt;/span>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">제가 주안점을 둔 것은 속도와 다음의 기능이 있는지 여부입니다.&lt;/span>&lt;/span>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;b>&lt;span style="font-size: 11pt; ">&lt;/p></description></item><item><title>리뷰 – 삼성 VLUU WB650 사용기</title><link>https://openmicrolab.com/%EC%82%AC%EC%9A%A9%EA%B8%B0-%EC%82%BC%EC%84%B1-vluu-wb650-%EC%82%AC%EC%9A%A9%EA%B8%B0/</link><pubDate>Mon, 31 May 2010 04:13:06 +0000</pubDate><guid>https://openmicrolab.com/%EC%82%AC%EC%9A%A9%EA%B8%B0-%EC%82%BC%EC%84%B1-vluu-wb650-%EC%82%AC%EC%9A%A9%EA%B8%B0/</guid><description>
+&lt;p>그 동안 &lt;a title="[http://liketheocean.tistory.com/entry/u720SW]로 이동합니다." target="_blank" href="http://liketheocean.tistory.com/entry/u720SW">사용하던 카메라&lt;/a>가 문제가 있어 하나 새로 장만을 해야고 마음을 먹고 나름의 기준을 가지고 검색을 해보았다.&lt;br>
+-. 광각&lt;br>
+-. 광학 줌기능&lt;br>
+-. 동영상 기능&lt;br>
+이러한 조건으로 검색을 하니, 나온것은 &lt;a title="[http://www.samsungimaging.co.kr/learn/digital-camera-camcorder/productDetailView.do?prdCtgSeq=8&amp;langPrdSeq=6190]로 이동합니다." target="_blank" href="http://www.samsungimaging.co.kr/learn/digital-camera-camcorder/productDetailView.do?prdCtgSeq=8&amp;langPrdSeq=6190">삼성 VLUU WB650&lt;/a>. 웹에서 가격 비교를 하고 동네 삼성대리점에 확인을 해보니, 대리점이 좀 더싸서 대리점에서 바로 질러버렸다. ^^&lt;br>
+이 카메라의 가장 재미있는 기능은 바로 GPS. 자신이 찍은 사진에 GPS 정보를 담아서 저장하는 기능으로 구글같은 맵에서 사진을 찍은 위치를 확인 할 수 있다.&lt;br>
+같이 제공되는  Intelli-Studio에서도 아래와 같이 확인이 가능하다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.127B7C0B4C03356B3362F8.jpg" class="aligncenter" width="602" height="501" alt="" filename="WB650.jpg" filemime="image/jpeg" />&lt;/p></description></item><item><title>올-인-원 WLAN 모듈</title><link>https://openmicrolab.com/%EC%98%AC-%EC%9D%B8-%EC%9B%90-wlan-%EB%AA%A8%EB%93%88/</link><pubDate>Thu, 20 May 2010 00:38:44 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%AC-%EC%9D%B8-%EC%9B%90-wlan-%EB%AA%A8%EB%93%88/</guid><description>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.144175264BF4846941165B.jpg" class="aligncenter" width="240" height="160" alt="" filename="Alps.jpg" filemime="image/jpeg" />
+&lt;p>Alps Electric Europe은 무선 네트워크를 위한 올-인-원 WLAN 모듈 UGFZ1 시리즈를 출시했다.&lt;/p>
+&lt;p>이 모듈의 빌트인 CPU와 네트워킹 프로토콜은 전력 소모가 낮으며, 센서 또는 스마트 미터기에 사용되는 것과 같은 기타 디바이스 네트웍스에 간편하게 설정된다.&lt;/p>
+&lt;p>Alps 무선 LAN 모듈은 GainSpan 개발의 초소형 GS 1011 칩을 통합하여 안테나, 와이파이 프로토콜, 네트워크 연결 어플리케이션 기능을 한다.&lt;/p>
+&lt;p>이 모듈은 또한 UART 피지컬 인터페이스, ADC, IC, 변조 펄스 및 GPIO 아날로그/디지털 포트를 제공하여 습도 및 조명 센서와 같은 디바이스에 바로 연결시킬 수 있다.&lt;/p></description></item><item><title>Wi2Wi – WiFi, Bluetooth 모듈</title><link>https://openmicrolab.com/wi2wi-wifi-bluetooth-%EB%AA%A8%EB%93%88/</link><pubDate>Thu, 20 May 2010 00:35:19 +0000</pubDate><guid>https://openmicrolab.com/wi2wi-wifi-bluetooth-%EB%AA%A8%EB%93%88/</guid><description>
+&lt;p>Wi2Wi는 산업 온도 제품군인 W2CBW009Di Wi-Fi 및 블루투스 모듈을 처음으로 선보였다. 마벨의 88W8688 WLAN 칩셋을 기반으로 한 이 모듈은 IEEE Wi-Fi 802.11 b/g 및 블루투스 2.1 연결을 초소형 풋프린트로 제공하고, -40°C에서 +85°C의 폭넓은 산업 온도 범위를 지원한다.&lt;/p>
+&lt;p>16mm x 16mm x 2.1mm 크기에 불과한 W2CBW009Di는 전세계 주요 수직 시장에 비용 효율적이고도 고성능 WLAN-BT 모듈의 필요성을 만족시킨다.&lt;/p>
+&lt;p>새로운 모듈은 산업용, 방위, 홈 인프라, 의료용, 테스트 장비 및 가전 어플라이언스를 포함한 주요 시장군을 겨냥하고 있다.&lt;/p></description></item><item><title>SyChip Introduces Industry’s Smallest, Lowest- Power Smart Energy Device</title><link>https://openmicrolab.com/sychip-introduces-industrys-smallest-lowest-power-smart-energy-device/</link><pubDate>Thu, 20 May 2010 00:29:02 +0000</pubDate><guid>https://openmicrolab.com/sychip-introduces-industrys-smallest-lowest-power-smart-energy-device/</guid><description>
+&lt;p>SyChip는 스마트 에너지 및 홈 어플리케이션 프로파일을 지원하는 초소형, 저전력, 지그비 모듈인 SyNode 스마트 에너지 임베디드 모듈, ‘SN3020’를 출시했다.&lt;/p>
+&lt;p>SN3020는 지그비 SoC 트랜시버, 파워 증폭기(PA), LNA를 통합하여 +20dBm의 출력 파워와 -103dBm의 수신 감도를 지원한다. 또한 스마트 에너지 데이터 로깅을 위한 512Kbyte 시리얼 플래시를 갖추고 있다.&lt;/p>
+&lt;p>SN3020는 420mm² 크기와 SyChip의 전력 관리 프로토콜을 이용한 낮은 전력을 사용한다. 슬립 모드의 경우, 타이머와 함께 1.2µA, 전송 모드에서는 160mA @ 20dBm, 수신 모드에서는 28mA를 사용한다.&lt;br>
+&lt;a href="https://openmicrolab.com/images/1/cfile27.uf.174E3D054BF4820836D442.pdf" class="aligncenter" filename="SyChip_Introduces_Industry_1.pdf" filemime="application/pdf" /> cfile27.uf.174E3D054BF4820836D442.pdf&lt;/a>&lt;/p></description></item></channel></rss>

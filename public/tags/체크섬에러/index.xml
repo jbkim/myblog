@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>체크섬에러 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%B2%B4%ED%81%AC%EC%84%AC%EC%97%90%EB%9F%AC/</link><description>Recent content in 체크섬에러 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 04 Oct 2010 04:07:46 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%B2%B4%ED%81%AC%EC%84%AC%EC%97%90%EB%9F%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>Wireshark Header Checksum Error</title><link>https://openmicrolab.com/wireshark-header-checksum-error/</link><pubDate>Mon, 04 Oct 2010 04:07:46 +0000</pubDate><guid>https://openmicrolab.com/wireshark-header-checksum-error/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 11pt; ">﻿&lt;/span>와이어샤크를 사용해서 패킷을 잡다보면 패킷에 “&lt;b>Header Checksum Error&lt;/b>“라고 표시가 되어 있는 것을 볼 수 있다. 그리고 친절하게도 어떤값이 되어야 한다고 알려주기까지 한다.&lt;/span>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>&lt;/p>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.2072920F4CA951186C030E.jpg" class="aligncenter" width="460" height="83" alt="" filename="ChecksumError.jpg" filemime="image/jpeg" />&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">체크섬이라는 것은 일반적으로 통신중에 데이터가 깨질수 도있기 때문에&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">삽입을 해서 데이터가 깨졌는지 여부를 확인을 한다.&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;pre>&lt;code>&amp;lt;div&amp;gt;
+&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;font-size: 10pt; &amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;IP 헤더의 경우를 보면 2 바이트로&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;구성되어 있고, 네트워크를 이동하는 각 홉에서(예를 들면, 라우터 통과시) 체크섬을 검증한다.&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;그리고&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;체크섬이 올바르지 않으면 네트워크 장비는 해당 패킷을 버리며,&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;Apple-style-span&amp;quot; style=&amp;quot;line-height: 22px; font-size: 15px; &amp;quot;&amp;gt;체크섬은 재 계산되고 업데이트를 하게된다.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">그럼 어떻게 헤더체크섬이 틀린 패킷을 보내고 받을 수 있지??&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">원인은 여러가지가 있을 수 있는데 &lt;b>UDP의 경우는&amp;nbsp;&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>체크섬 값이 제로로 채워져 있는 경우는 보내는 측 쪽에서 계산되지 않는 경우라 정의하고 있다. (&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>RFC 768)&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&amp;nbsp;&amp;nbsp;&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>그리고&amp;nbsp;&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>네트워크 장비나 기타 원인에 의해 헤더 체크섬 값이 계산되지 않았거나&amp;nbsp;&lt;/b>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 22px; font-size: 15px; ">&lt;b>또는 의도적으로 빠지는 경우도 있다.&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;/p></description></item></channel></rss>

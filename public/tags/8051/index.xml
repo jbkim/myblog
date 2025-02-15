@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8051 on OpenMicroLab</title><link>https://openmicrolab.com/tags/8051/</link><description>Recent content in 8051 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 01 Jun 2011 08:13:29 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/8051/index.xml" rel="self" type="application/rss+xml"/><item><title>SDCC putchar 버그 수정</title><link>https://openmicrolab.com/sdcc-putchar-%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95/</link><pubDate>Wed, 01 Jun 2011 08:13:29 +0000</pubDate><guid>https://openmicrolab.com/sdcc-putchar-%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95/</guid><description>
+&lt;p>지난번 포스팅때 &lt;A title="[http://liketheocean.tistory.com/83]로 이동합니다." href="http://liketheocean.tistory.com/83" target=_blank>8051 무료 컴파일러인 SDCC&lt;/A>를 소개했었고, 이를 이용해서 &lt;A title="[http://liketheocean.tistory.com/84]로 이동합니다." href="http://liketheocean.tistory.com/84" target=_blank>W7100 TCP loopback 코드까지 &lt;/A>만들어 봤었다.&lt;br>
+이미 그때도 printf가 잘 안되어서 이상하다고 했었는데, 이번에 telnet 코드를 포팅하면서 문제를 해결했다.&lt;br>
+문제는 SDCC 컴파일러가 제대로 C 코드를 ASM으로 변환을 해주지 못하는게 원인… 역시 무료 컴파일러라서 그런가???&lt;/p>
+&lt;DIV style="BORDER-BOTTOM: #c1c1c1 1px dashed; BORDER-LEFT: #c1c1c1 1px dashed; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #c1c1c1 1px dashed; BORDER-RIGHT: #c1c1c1 1px dashed; PADDING-TOP: 10px" class=txc-textbox>void putchar (char c)&amp;nbsp;
+{
+&amp;nbsp; SBUF = c;
+&amp;nbsp; while(!TI);
+&amp;nbsp; TI = 0;
+}
+&lt;/DIV>
+위&amp;nbsp;putchar 함수가 어셈으로 변환된 코드를 보니 TI = 0 을 CLR TI 로 변환을 하지 않네요.
+그래서 다음과 같이 inline assembler를 사용해서 수정을 하니 잘 동작을 합니다.
+&lt;DIV style="BORDER-BOTTOM: #c1c1c1 1px dashed; BORDER-LEFT: #c1c1c1 1px dashed; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #c1c1c1 1px dashed; BORDER-RIGHT: #c1c1c1 1px dashed; PADDING-TOP: 10px" class=txc-textbox>void putchar (char c)&amp;nbsp;
+{
+&amp;nbsp;SBUF = c;
+&amp;nbsp;while(!TI);
+&lt;FONT color=#e31600>__asm&amp;nbsp;
+&amp;nbsp;clr TI
+__endasm;
+&lt;/FONT>}
+&lt;/DIV>
+W7100A에 telnet server code를 SDCC로 포팅한 코드로 첨부.
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile29.uf.181ED1344DE5F44423398E.zip" class="aligncenter" filename="telnet_sdcc.zip" filemime="application/zip" />cfile29.uf.181ED1344DE5F44423398E.zip&lt;/a>
+&lt;/P></description></item><item><title>무료 8051 컴파일러 – SDCC</title><link>https://openmicrolab.com/%EB%AC%B4%EB%A3%8C-8051-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC-sdcc/</link><pubDate>Tue, 08 Feb 2011 02:14:47 +0000</pubDate><guid>https://openmicrolab.com/%EB%AC%B4%EB%A3%8C-8051-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC-sdcc/</guid><description>
+&lt;p>SDCC는 Small Device C Compiler의 약자입니다. GPL 라이센스를 따르는 free open source software입니다.&lt;br>
+그리고 8051뿐만 아니라 motolora 60HC08 시리즈와 Microchip PIC16, PIC18시리즈도 지원을 하며, Linux, Windows, MAC OS를 지원하네요. 관련자료는 =&amp;gt; &lt;a href="http://sdcc.sourceforge.net/">&lt;A title="[http://sdcc.sourceforge.net/]로 이동합니다." href="http://sdcc.sourceforge.net/" target=_blank>http://sdcc.sourceforge.net/&lt;/a>&lt;/A> 에서 찾을 수 있습니다.&lt;/p>
+&lt;p>&lt;a href="http://sourceforge.net/projects/sdcc/files/">http://sourceforge.net/projects/sdcc/files/&lt;/a> 에서 사용하는 OS 맞는 버젼을 다운받으시고 인스톨하시면 됩니다.&lt;br>
+압축이 풀린 폴더에는 다음과 같은 내용의 파일들이 설치 됩니다.&lt;br>
+**&lt;br>
+In &lt;installdir>/bin:&lt;br>
+** sdcc – The compiler.&lt;br>
+sdcpp – The C preprocessor.&lt;br>
+sdas8051 – The assembler for 8051 type processors.&lt;br>
+sdasz80, sdasgb – The Z80 and GameBoy Z80 assemblers.&lt;br>
+sdas6808 – The 6808 assembler.&lt;br>
+sdld -The linker for 8051 type processors.&lt;br>
+sdldz80, sdldgb – The Z80 and GameBoy Z80 linkers.&lt;br>
+sdld6808 – The 6808 linker.&lt;br>
+s51 – The ucSim 8051 simulator.&lt;br>
+sz80 – The ucSim Z80 simulator.&lt;br>
+shc08 – The ucSim 6808 simulator.&lt;br>
+sdcdb – The source debugger.&lt;br>
+sdcclib – A tool for creating sdcc libraries&lt;br>
+asranlib – A tool for indexing sdcc ar libraries&lt;br>
+packihx – A tool to pack (compress) Intel hex files.&lt;br>
+makebin – A tool to convert Intel Hex file to a binary and GameBoy binary image file format.&lt;br>
+**In &lt;installdir>/share/sdcc/include&lt;br>
+** the include files&lt;br>
+**In &lt;installdir>/share/sdcc/non-free/include&lt;br>
+** the non-free include files&lt;br>
+&lt;strong>In &lt;installdir>/share/sdcc/lib&lt;/strong>&lt;br>
+the src and target subdirectories with the precompiled relocatables.&lt;br>
+**In &lt;installdir>/share/sdcc/non-free/lib&lt;br>
+** the src and target subdirectories with the non-free precompiled relocatables.&lt;br>
+**In &lt;installdir>/share/sdcc/doc&lt;br>
+** the documentation&lt;/p></description></item></channel></rss>

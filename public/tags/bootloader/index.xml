@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bootloader on OpenMicroLab</title><link>https://openmicrolab.com/tags/bootloader/</link><description>Recent content in Bootloader on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 18 Dec 2017 08:01:33 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/bootloader/index.xml" rel="self" type="application/rss+xml"/><item><title>Mass Storage bootloader</title><link>https://openmicrolab.com/mass-storage-bootloader/</link><pubDate>Mon, 18 Dec 2017 08:01:33 +0000</pubDate><guid>https://openmicrolab.com/mass-storage-bootloader/</guid><description>
+&lt;p>USB device를 가진 MCU를 PC에 연결시 Mass Storage Device로 동작시키고, Hex파일을 copy하면 MCU의 application code가 업데이트 되는 형태.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://os.mbed.com/handbook/cmsis-dap-interface-firmware" target="_blank" rel="noopener noreferrer">mbed의 CMSIS DAP 인터페이스&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.nxp.com/docs/en/application-note/AN4379.pdf">NXP사의 자료&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://blog.myelectronics.com.ua/stm32-usb-mass-storage-bootloader/" target="_blank" rel="noopener noreferrer">Russia blogger의 자료&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Microsoft/uf2">MS의 MakeCode에 적용된 UF2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Microsoft/uf2-samd21">MSC bootloader (based on UF2) for SAMD21&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>아두이노 Serial to USB 사용하기</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-serial-to-usb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 28 Apr 2015 06:50:34 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-serial-to-usb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>원본소스는 Mac에서 \Resource\Java\hardware\arduino\firmware\atmegaxxu2 아래에 있다. arduino-usbdfu 또는 arduino-usbserial 를 사용한다. 이 소스에는 USB 프레임워크인 &lt;a href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank">LUFA&lt;/a>(Lightweight USB Framework for AVRs)가 빠져있으므로 &lt;a title="LUFA" href="http://www.fourwalledcubicle.com/LUFA.php" target="_blank">&lt;a href="http://www.fourwalledcubicle.com/LUFA.php">http://www.fourwalledcubicle.com/LUFA.php&lt;/a>&lt;/a> 에서 다운로드한다. 다운로드한 LUFA 폴더를 arduino-usbserial 폴더와 같은 위치에 복사한다.&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">make 파일에서 다음과 같은 내용을 수정한다.&lt;/span>
+&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;strong>LUFA_PATH&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1"># Path to the LUFA library&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;span class="s1">LUFA_PATH = ../&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>MCU&lt;/strong>
+&lt;/p>
+&lt;p class="p1">
+MCU = at90usb162  #atmega16u2와 pin to pin 호환임
+&lt;/p>&lt;/blockquote>
+&lt;p class="p1">
+컴파일된 hex파일은 avr isp등으로 write하면 된다.
+&lt;/p>
+&lt;p class="p1">
+이렇게 작업한 내용은 &lt;a href="https://github.com/jbkim/usbserial" target="_blank">https://github.com/jbkim/usbserial&lt;/a>
+&lt;/p>
+&lt;p class="p1"></description></item><item><title>부트로더도 네트웍으로 업로드하자</title><link>https://openmicrolab.com/%EB%B6%80%ED%8A%B8%EB%A1%9C%EB%8D%94%EB%8F%84-%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%9C%BC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EC%9E%90/</link><pubDate>Tue, 28 Jan 2014 07:17:10 +0000</pubDate><guid>https://openmicrolab.com/%EB%B6%80%ED%8A%B8%EB%A1%9C%EB%8D%94%EB%8F%84-%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%9C%BC%EB%A1%9C-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EC%9E%90/</guid><description>
+&lt;p>예전에 만들어 놓은 모듈은 부트로더도 업데이트가 가능했었던 것을 최근에 발견했다. 중요한 것은 메모리 맵이다. 예전 코드를 자세히 보다가 나중에도 써먹기 위해서 정리…&lt;/p>
+&lt;p>[slideshare id=30520771&amp;amp;doc=networkupdatablebootloader-140128005305-phpapp01]&lt;/p></description></item></channel></rss>

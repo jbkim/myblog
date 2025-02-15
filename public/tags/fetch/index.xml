@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fetch on OpenMicroLab</title><link>https://openmicrolab.com/tags/fetch/</link><description>Recent content in Fetch on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 14 Nov 2014 12:33:03 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/fetch/index.xml" rel="self" type="application/rss+xml"/><item><title>Github – Fork한 저장소 업데이트하기</title><link>https://openmicrolab.com/github-fork%ED%95%9C-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 14 Nov 2014 12:33:03 +0000</pubDate><guid>https://openmicrolab.com/github-fork%ED%95%9C-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>Github에서 fork한 저장소를 원본 저장소와 연결해서 업데이트하려면, github에서 제공하는 툴에는 메뉴가 없으므로 터미널에서 작업을 해야한다.&lt;/p>
+&lt;h3 id="remote-설정">Remote 설정&lt;/h3>
+&lt;p>현재 설정된 리모트 저장소를 확인&lt;/p>
+&lt;blockquote>
+&lt;p>$ git remote -v&lt;/p>&lt;/blockquote>
+&lt;p>새로운 리모트 업스트림을 추가&lt;/p>
+&lt;blockquote>
+&lt;p>$ git remote add upstream &lt;a href="https://github.com/ORIGINAL">https://github.com/ORIGINAL&lt;/a>_OWNER/ORIGINAL_REPOSITORY.git&lt;/p>&lt;/blockquote>
+&lt;p>추가된 리모트 저장소 확인&lt;/p>
+&lt;blockquote>
+&lt;p>$ git remote -v&lt;/p>&lt;/blockquote>
+&lt;p>다음과 같은 형태로 업스트림이 추가된 것을 볼 수 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/git_remote_v.png" alt="" width="606" height="102" />
+&lt;h3 id="fork한-것을-업데이트">Fork한 것을 업데이트&lt;/h3>
+&lt;p>패치를 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>$ git fetch upstream&lt;/p>&lt;/blockquote>
+&lt;p>그다음에 checkout… 일반적으로 master이고 내가 fork한 브랜치의 이름을 적어야 한다.&lt;/p></description></item></channel></rss>

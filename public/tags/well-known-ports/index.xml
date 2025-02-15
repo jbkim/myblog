@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Well Known Ports on OpenMicroLab</title><link>https://openmicrolab.com/tags/well-known-ports/</link><description>Recent content in Well Known Ports on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 23 May 2011 06:57:23 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/well-known-ports/index.xml" rel="self" type="application/rss+xml"/><item><title>Well Known Ports</title><link>https://openmicrolab.com/well-known-ports/</link><pubDate>Mon, 23 May 2011 06:57:23 +0000</pubDate><guid>https://openmicrolab.com/well-known-ports/</guid><description>
+&lt;p>**Well Known Port: 0&lt;del>1023&lt;br>
+Registered Port: 1024&lt;/del>49151&lt;br>
+Dynamic and/or Private Port : 49152~65535&lt;/p>&lt;/p>
+&lt;p>&lt;/STRONG>IANA(Internet Assigned Numbers Authority)에서 관리하는데, 전체 할당된 port number를 확인하려면 다음 링크를 확인&lt;br>
+&lt;a href="http://www.iana.org/assignments/port-numbers">http://www.iana.org/assignments/port-numbers&lt;/a>&lt;/p>
+&lt;p>그리고 Registered Port에 등록을 하려면 아래 주소에서 신청을 하면 되는데, IANA에서 심사후 등록여부를 결정합니다. &lt;a href="http://www.iana.org/cgi-bin/usr-port-number.pl">http://www.iana.org/cgi-bin/usr-port-number.pl&lt;/a>&lt;/p></description></item></channel></rss>

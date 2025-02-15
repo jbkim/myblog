@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Low Power on OpenMicroLab</title><link>https://openmicrolab.com/tags/low-power/</link><description>Recent content in Low Power on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 08 Dec 2019 13:50:02 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/low-power/index.xml" rel="self" type="application/rss+xml"/><item><title>전력소모를 줄이는 법 – Low Power System</title><link>https://openmicrolab.com/%EC%A0%84%EB%A0%A5%EC%86%8C%EB%AA%A8%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B2%95-low-power-system/</link><pubDate>Sun, 08 Dec 2019 13:50:02 +0000</pubDate><guid>https://openmicrolab.com/%EC%A0%84%EB%A0%A5%EC%86%8C%EB%AA%A8%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B2%95-low-power-system/</guid><description>
+&lt;p>배터리를 사용하는 제품은 필수적으로 전력소모를 줄여야 한다. 시스템에서 전력소모를 줄이기 위한 방법은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>MCU의 동작 전압을 낮추고, 동작 Clock를 낮출 것&lt;/li>
+&lt;li>리니어 레귤레이터 대신 스위칭 레귤레이터를 사용할 것&lt;/li>
+&lt;li>MCU내의 사용하지 않는 peripheral을 disable할 것: Timer, BOD, Watch Dog Timer, UART, ADC 등 특히 ADC나 UART&lt;/li>
+&lt;li>전류를 센싱하는 저항이 있다면 이 저항의 크기를 높일 것&lt;/li>
+&lt;li>코드에서 최대한 Sleep 모드를 사용할 것&lt;/li>
+&lt;/ul>
+&lt;p>참고로 Attiny45의 경우 어떤 응용에서 동작시 1.6mA정도까지 줄여봤다. 그리고 &lt;a href="https://learn.sparkfun.com/tutorials/reducing-arduino-power-consumption/all" target="_blank" rel="noopener">이런 문서&lt;/a>도 참고하면 좋을 듯.&lt;/p></description></item></channel></rss>

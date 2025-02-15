@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Winmail.dat on OpenMicroLab</title><link>https://openmicrolab.com/tags/winmail.dat/</link><description>Recent content in Winmail.dat on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 15 Oct 2012 05:06:18 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/winmail.dat/index.xml" rel="self" type="application/rss+xml"/><item><title>winmail.dat 복구 방법</title><link>https://openmicrolab.com/winmaildat-%EB%B3%B5%EA%B5%AC-%EB%B0%A9%EB%B2%95/</link><pubDate>Mon, 15 Oct 2012 05:06:18 +0000</pubDate><guid>https://openmicrolab.com/winmaildat-%EB%B3%B5%EA%B5%AC-%EB%B0%A9%EB%B2%95/</guid><description>
+&lt;p>Mac OS X에서 마이크로 소프트 아웃룩을 사용중이다. &lt;/p>
+&lt;p>기존 Windows의 아웃룩과의 호환성 때문에 메일에 winmail.dat파일이 첨부가 되어온다. &lt;/p>
+&lt;p>이것의 원인은 마이크로소프트의 support에 의하면 다음과 같다.&lt;/p>
+&lt;p>&lt;a href="http://support.microsoft.com/kb/278061/ko" target="_blank" class="tx-link">&lt;a href="http://support.microsoft.com/kb/278061/ko">http://support.microsoft.com/kb/278061/ko&lt;/a>&lt;/a>&lt;/p>
+&lt;p>즉 아웃룩에서 서식있는 텍스트 형식(RTF)로 메일을 보낼때 이런 경우가 발생을 하는데, 메일을 수신 하는 측에서 RTF를 지원하지 않는 경우에 이것을 보완하기 위해 자신들만의 포맷인 TNEF(Transport Neutral Encapsulation Format)으로 보내기 때문이다. &lt;/p>
+&lt;p>해결 방법은 보내는 측에 일반 텍스트 형태로 메일을 다시 보내달라는 방법과&lt;/p>
+&lt;p>winmail.dat를 복구하는 프로그램을 사용하면 된다. 물론 100% 복구되는 지는 잘 모르겠지만, Mac OS X용으로는 TNEF’s Enough가 있다.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>삼성 아틱 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%82%BC%EC%84%B1-%EC%95%84%ED%8B%B1/</link><description>Recent content in 삼성 아틱 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 14 Nov 2017 09:22:28 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%82%BC%EC%84%B1-%EC%95%84%ED%8B%B1/index.xml" rel="self" type="application/rss+xml"/><item><title>삼성 Artik Edge-to-cloud Security</title><link>https://openmicrolab.com/%EC%82%BC%EC%84%B1-artik-edge-cloud-security/</link><pubDate>Tue, 14 Nov 2017 09:22:28 +0000</pubDate><guid>https://openmicrolab.com/%EC%82%BC%EC%84%B1-artik-edge-cloud-security/</guid><description>
+&lt;p>삼성 아틱의 보안은 Edge-to-cloud Security라고 설명을 한다. 즉 칩레벨에서 부터 클라우드까지 보안요소가 있다는 얘기.&lt;/p>
+&lt;h3 id="device-protection-and-trusted-code-execution">Device Protection and Trusted Code Execution&lt;/h3>
+&lt;p>Hardware의 경우 Device protection과 trusted code execution이 가장 중심이 되는 요소임.&lt;/p>
+&lt;img loading="lazy" class="" src="https://www.artik.io/wp-content/uploads/2017/10/device-protection-2-1024x469.png" width="703" height="322" />
+&lt;ul>
+&lt;li>&lt;strong>Secure Boot&lt;/strong>&lt;br>
+타겟 디바이스에서 동작하는 코드의 신뢰성을 보장이 필요&lt;br>
+소프트웨어는 타겟장치에서 코드 실행을 허용하기 위해 소프트웨어 공급자가 서명해야함.&lt;/li>
+&lt;li>&lt;strong>KMS infrastructure for code signing&lt;/strong>&lt;br>
+코드 서명을 쉽게하기위한 Key Management Service (KMS), ARTIK CodeSigner service, FIPS-certified hardware security modules (HSM)를 제공&lt;/li>
+&lt;li>&lt;strong>Secure Element&lt;/strong>&lt;br>
+각 디바이스에 SmartThings cloud에 등록된 private/public key쌍이 저장이 되어서 출시됨.&lt;/li>
+&lt;li>&lt;strong>Secure JTAG access&lt;/strong>&lt;br>
+JTAG을 사용시 패스워드 필요&lt;/li>
+&lt;/ul>
+&lt;h3 id="protected-communications">Protected Communications&lt;/h3>
+&lt;p>디바이스와 클라우드 사이의 통신 보안&lt;/p></description></item></channel></rss>

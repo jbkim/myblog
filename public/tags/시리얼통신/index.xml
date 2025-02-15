@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>시리얼통신 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%8B%9C%EB%A6%AC%EC%96%BC%ED%86%B5%EC%8B%A0/</link><description>Recent content in 시리얼통신 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 22 Mar 2011 06:17:04 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%8B%9C%EB%A6%AC%EC%96%BC%ED%86%B5%EC%8B%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>RTS/CTS flow control</title><link>https://openmicrolab.com/rtscts-flow-control/</link><pubDate>Tue, 22 Mar 2011 06:17:04 +0000</pubDate><guid>https://openmicrolab.com/rtscts-flow-control/</guid><description>
+&lt;p>시리얼 통신에서 H/W flow control은 RTS, CTS signal을 사용을 한다.&lt;br>
+아래 자료는 ST의 칩 데이터시트에서 가져온 내용인데, RTS/CTS flow control에 대해 쉽게 이해가 된다.&lt;br>
+**&lt;br>
+&lt;U>&lt;FONT color=#e31600>RTS 신호가 RX 회로쪽에 CTS 신호가 TX 회로쪽에 연결이 되어 있다는 점에 유의하자.&lt;br /> &lt;/FONT>&lt;/U>**&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.20023B334D883E8D2B0FA8.jpg" class="aligncenter" width="561" height="645" alt="" filename="HW_FlowControl_1.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.1835C3364D883EAB381C2F.jpg" class="aligncenter" width="550" height="129" alt="" filename="HW_FlowControl_2.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.116F3C354D883EB4352522.jpg" class="aligncenter" width="552" height="324" alt="" filename="HW_FlowControl_3.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>**1. RTS flow control&lt;br>
+** RTS 신호는 수신이 가능한 상태이면 Low로 되며, 수신이 불가능하면 High로 한다.&lt;/p>
+&lt;p>**2. CTS flow control&lt;br>
+** TX를 하기전에 CTS 입력을 확인해서 CTS가 Low이면 데이터를 보낸다.&lt;/p></description></item><item><title>유용한 툴 – Terminal</title><link>https://openmicrolab.com/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%88%B4-terminal/</link><pubDate>Wed, 26 May 2010 04:14:19 +0000</pubDate><guid>https://openmicrolab.com/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%88%B4-terminal/</guid><description>
+&lt;p>대부분의 임베디드 시스템에서 시리얼 인터페이스는 필수적으로 가지고 있다. 이 시리얼 인터페이스를 통해 디버깅도 하는데 이때 필요한 것이 터미널 프로그램이다. 일반적으로 윈도우즈의 Hyper Terminal을 써도 되지만 Hyper Terminal은 불편하기도 하고, null 문자를 제대로 수신 및 전송을 하지 못하는 버그도 있다.&lt;/p>
+&lt;p>&lt;img src="https://openmicrolab.com/images/1/cfile3.uf.1320FF1F4BFC9EF5057204.jpg" class="aligncenter" width="539"
+height="569" alt=""
+filename="Terminal.jpg" filemime="image/jpeg" />&lt;br>
+그리고 데이터를 Hex로 수신하거나 전송할때도 이 프로그램은 유용하며, 매크로 기능이 있어서 지정한 시간동안 반복적으로 데이터를 보낼때 유용하다.&lt;br>
+Hex로 데이터를 보내려면 $를 붙여야 한다. 즉 0x0D를 보내려면 $0d 로 입력하면 된다.&lt;br>
+물론 freeware..&lt;br>
+&lt;a href="https://openmicrolab.com/images/1/cfile8.uf.176F5A214BFC9F82566D23.zip" class="aligncenter" filename="Terminal.zip" filemime="application/zip" /> cfile8.uf.176F5A214BFC9F82566D23.zip&lt;/a>&lt;/p></description></item></channel></rss>

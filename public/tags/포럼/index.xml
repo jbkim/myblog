@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>포럼 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%8F%AC%EB%9F%BC/</link><description>Recent content in 포럼 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 19 Nov 2012 07:08:42 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%8F%AC%EB%9F%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>phpBB 설치</title><link>https://openmicrolab.com/phpbb-%EC%84%A4%EC%B9%98/</link><pubDate>Mon, 19 Nov 2012 07:08:42 +0000</pubDate><guid>https://openmicrolab.com/phpbb-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;p>몇달전 phpBB를 설치하고 일이 있어서 다시 영문을 설치하게 됐다. 사실 phpBB 설치는 크게 어려운 것은 없다.&lt;/p>
+&lt;p>&lt;a href="https://www.phpbb.com/" target="_blank" class="tx-link">phpBB사이트&lt;/a>에서 최신 버젼을 다운로드에서 설치하면 된다.&lt;/p>
+&lt;p>설치방법은 &lt;a href="https://www.phpbb.com/community/docs/INSTALL.html#postinstall" target="_blank" class="tx-link">&lt;a href="https://www.phpbb.com/community/docs/INSTALL.html#postinstall">https://www.phpbb.com/community/docs/INSTALL.html#postinstall&lt;/a>&lt;/a> 를 참고,&lt;/p>
+&lt;p>보안을 위해서는 6절도 읽어봐야…&lt;/p>
+&lt;p>&lt;a href="http://www.phpbbkorea.com/" target="_blank" class="tx-link">phpBB Korea&lt;/a>도 있으니 관련 정보는 풍부하다. &lt;/p>
+&lt;p>설치를 하고 나서, 포럼을 운영을 하다보면 스팸글들이 도배가 되는데, 이를 위한 방지는 필수….&lt;/p>
+&lt;p>한글 포럼이라면 특정 한글을 입력하게하면 외국으로 부터 오는 스팸은 거를 수 있다.&lt;/p>
+&lt;p>아래 링크 참고&lt;/p>
+&lt;p>&lt;a href="http://www.waitfor.com/phpBB3/viewtopic.php?f=5&amp;t=812" target="_blank" class="tx-link">&lt;a href="http://www.waitfor.com/phpBB3/viewtopic.php?f=5&amp;amp;t=812">http://www.waitfor.com/phpBB3/viewtopic.php?f=5&amp;amp;t=812&lt;/a>&lt;/a>&lt;/p>
+&lt;p>디폴트로 설치가 끝나면 아래 그림처럼 횡한 포럼이 나타나는데, 여기서부터 세부 설정을 하면 된다.&lt;/p></description></item></channel></rss>

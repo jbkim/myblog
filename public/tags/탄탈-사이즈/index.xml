@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>탄탈 사이즈 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%83%84%ED%83%88-%EC%82%AC%EC%9D%B4%EC%A6%88/</link><description>Recent content in 탄탈 사이즈 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 17 Aug 2010 05:47:45 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%83%84%ED%83%88-%EC%82%AC%EC%9D%B4%EC%A6%88/index.xml" rel="self" type="application/rss+xml"/><item><title>탄탈 캐패시터 용량 및 사이즈</title><link>https://openmicrolab.com/%ED%83%84%ED%83%88-%EC%BA%90%ED%8C%A8%EC%8B%9C%ED%84%B0-%EC%9A%A9%EB%9F%89-%EB%B0%8F-%EC%82%AC%EC%9D%B4%EC%A6%88/</link><pubDate>Tue, 17 Aug 2010 05:47:45 +0000</pubDate><guid>https://openmicrolab.com/%ED%83%84%ED%83%88-%EC%BA%90%ED%8C%A8%EC%8B%9C%ED%84%B0-%EC%9A%A9%EB%9F%89-%EB%B0%8F-%EC%82%AC%EC%9D%B4%EC%A6%88/</guid><description>
+&lt;p>칩 탄탈 패키지에 대한 정보. 외우기는 힘들고 필요할 때 마다 참조 할 수 밖에..&lt;br>
+아래 자료는 Vishay 자료에서 발췌한 것입니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.1951B6224C6A21864C30A7.jpg" class="aligncenter" width="640" height="328" alt="" filename="Tantal_Size.jpg" filemime="image/jpeg" /> **&lt;span style="font-weight: normal;">즉 다음과 같은 사이즈를 가지는데…&lt;/span>&lt;br>
+P  :  2012&lt;br>
+A  :  3216&lt;br>
+B  :  3528&lt;br>
+C  :  6032&lt;br>
+D  :  7343&lt;/p>&lt;/p>
+&lt;p>&lt;/strong>용량별로 사이즈가 다르므로 다음의 표가 유용함.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.204921204C6A220A5EEA92.jpg" class="aligncenter" width="682" height="482" alt="" filename="Tantal_Size2.jpg" filemime="image/jpeg" />&lt;/p></description></item></channel></rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rascal on OpenMicroLab</title><link>https://openmicrolab.com/tags/rascal/</link><description>Recent content in Rascal on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 05 Jan 2012 11:29:06 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/rascal/index.xml" rel="self" type="application/rss+xml"/><item><title>Rascal 오픈 하드웨어 플랫폼</title><link>https://openmicrolab.com/rascal-%EC%98%A4%ED%94%88-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%94%8C%EB%9E%AB%ED%8F%BC/</link><pubDate>Thu, 05 Jan 2012 11:29:06 +0000</pubDate><guid>https://openmicrolab.com/rascal-%EC%98%A4%ED%94%88-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%ED%94%8C%EB%9E%AB%ED%8F%BC/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.15648E464F05855D0BE66D.jpg" class="aligncenter" width="492" height="299" alt="" filename="rascal-0.6-beta-2011-02-26.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>위 사진에 보이는 보드가 Rascal이다. Rascal은 아두이노와 같은 오픈하드웨어 플랫폼이다.&lt;br>
+특징은 아두이노보다 파워풀한 하드웨어 스펙이라서 아두이노 보다 높은 성능을 요구하는 응용에 알맞다. &lt;/p>
+&lt;p>**하드웨어&lt;br>
+**&lt;/p>
+&lt;UL style="LIST-STYLE-TYPE: square">
+&lt;br />
+&lt;LI>
+Atmel사의 AT91SAM9G20
+&lt;/LI>
+&lt;br />
+&lt;LI>
+MicroSD
+&lt;/LI>
+&lt;br />
+&lt;LI>
+4M Serial Flash&lt;br /> 등의 하드웨어의 리눅스 기반의 보드이다.&lt;br /> 관련 하드웨어 정보: &lt;A href="http://rascalmicro.com/docs/sources.html">http://rascalmicro.com/docs/sources.html&lt;/A>
+&lt;/LI>
+&lt;/UL>
+&lt;p>그리고 아두이노의 쉴드들을 활용할 수 있게 보드사이즈를 맞추었다.&lt;/p>
+&lt;p>**가장 특징적인 것은 기본적으로 네트워크가 지원이 되고 Phyton을 이용해서 프로그래밍을 한다.&lt;br>
+즉 보드에 자체 웹서버가 있고 웹 에디터가 내장이 되어 있어서 PC에서 보드에 접속을 해서 웹 환경에서 Phyton으로 프로그래밍을 하는 형태이다.&lt;br>
+**&lt;br>
+&lt;strong>Rascal의 특징&lt;/strong>&lt;/p></description></item></channel></rss>

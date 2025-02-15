@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D Pritner on OpenMicroLab</title><link>https://openmicrolab.com/tags/3d-pritner/</link><description>Recent content in 3D Pritner on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 06 Oct 2014 06:40:26 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/3d-pritner/index.xml" rel="self" type="application/rss+xml"/><item><title>3D 프린팅 팁 – 첫번째 레이어의 인쇄</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%ED%8C%81-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EB%A0%88%EC%9D%B4%EC%96%B4%EC%9D%98-%EC%9D%B8%EC%87%84/</link><pubDate>Mon, 06 Oct 2014 06:40:26 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85-%ED%8C%81-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EB%A0%88%EC%9D%B4%EC%96%B4%EC%9D%98-%EC%9D%B8%EC%87%84/</guid><description>
+&lt;p>3D 프린터에서 프린팅을 할때 가장 중요한 것은 출력하려는 모델이 베드에 잘 붙어있는 것이다. 이렇게 하기위해서는 몇가지 조치사항이 필요하다.&lt;/p>
+&lt;h3 id="베드-레벨링">베드 레벨링&lt;/h3>
+&lt;p>노즐과 베드와의 사이에 A4용지 하나가 들어갈 정도로 맞춘다. 만약 간격이 이 보다 더 가까우면 원료가 잘 나오지 못해서 끊어지듯이 그려지며, 간격이 넓으면 필라멘트가 베드에 잘 붙지 않는다.&lt;/p>
+&lt;h3 id="베드의-소재">베드의 소재&lt;/h3>
+&lt;p>베드에 잘붙이기 위해서 덕성 테이프, 캡톤(Kapton)테이프, PET등이 사용이 되며, Ultimkaer의 경우 딱풀을 주기도 한다. &lt;a href="http://openmicrolab.com/pei-3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EB%B2%A0%EB%93%9C/" target="_blank">PEI 재질의 베드&lt;/a>를 사용하는 경우도 있다.&lt;/p>
+&lt;h3 id="프린터-설정">프린터 설정&lt;/h3>
+&lt;ul>
+&lt;li>온도는 5도 정도 높이고 – 따라서 쿨링팬은 off&lt;/li>
+&lt;li>속도는 약 30-50%로 줄이고&lt;/li>
+&lt;li>&lt;strong>&lt;span style="text-decoration: underline;">적층 두께는 노즐의 직경 정도 만큼&lt;/span>&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>&lt;span style="text-decoration: underline;">압출량은 일반적으로 200%인데 이 값은 레이어 두께 대비 값이므로 잘 설정을 해야 한다&lt;/span>&lt;/strong>.&lt;/li>
+&lt;/ul></description></item><item><title>3D 프린터 테스트를 위한 모델</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%AA%A8%EB%8D%B8/</link><pubDate>Mon, 04 Aug 2014 06:55:30 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%AA%A8%EB%8D%B8/</guid><description>
+&lt;p>&lt;span style="line-height: 1.5em;">       &lt;/span>&lt;img loading="lazy" class="alignnone" style="line-height: 1.5em;" src="http://openmicrolab.cdn2.cafe24.com/1.png" alt="" width="145" height="108" /> &lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/2.png" alt="" width="145" height="109" /> &lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/3.png" alt="" width="146" height="110" />&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/4.png" alt="" width="146" height="109" />&lt;/p>
+&lt;p>일명 Torture test..&lt;/p>
+&lt;ul>
+&lt;li>Snake: &lt;a href="http://www.thingiverse.com/thing:4743" target="_blank">&lt;a href="http://www.thingiverse.com/thing:4743">http://www.thingiverse.com/thing:4743&lt;/a>&lt;/a>&lt;/li>
+&lt;li>Owl Statue: &lt;a href="http://www.thingiverse.com/thing:18218" target="_blank">&lt;a href="http://www.thingiverse.com/thing:18218">http://www.thingiverse.com/thing:18218&lt;/a>&lt;/a>&lt;/li>
+&lt;li>Nautilus Gears: &lt;a href="http://www.thingiverse.com/thing:27551" target="_blank">&lt;a href="http://www.thingiverse.com/thing:27551">http://www.thingiverse.com/thing:27551&lt;/a>&lt;/a>&lt;/li>
+&lt;li>Dimension Torture Test:&lt;a href="http://www.thingiverse.com/thing:33902" target="_blank"> http://www.thingiverse.com/thing:33902&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

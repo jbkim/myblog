@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Simplify3D 기능 on OpenMicroLab</title><link>https://openmicrolab.com/tags/simplify3d-%EA%B8%B0%EB%8A%A5/</link><description>Recent content in Simplify3D 기능 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 23 Nov 2017 07:19:28 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/simplify3d-%EA%B8%B0%EB%8A%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>Simplify3D 기능</title><link>https://openmicrolab.com/simplify3d-%EA%B8%B0%EB%8A%A5/</link><pubDate>Thu, 23 Nov 2017 07:19:28 +0000</pubDate><guid>https://openmicrolab.com/simplify3d-%EA%B8%B0%EB%8A%A5/</guid><description>
+&lt;h3 id="process-system-improvement">Process System Improvement&lt;/h3>
+&lt;ul>
+&lt;li>Visual Print Setting: Z 축방향으로 구역을 지정해서 다른 설정으로 프린팅 가능&lt;/li>
+&lt;li>Preview Your Process: 위 기능으로 설정이 다른 것을 미리보기 가능한 것&lt;/li>
+&lt;li>Seamless Process Transitions: 영역별로 다른 설정시 자동으로 심리스하게 연결해 주는 기능&lt;/li>
+&lt;li>Drag-and-Drop Recording: 여러개의 모델을 출력시 순서를 쉽게 변경할 수 있는 기능&lt;/li>
+&lt;li>Improved Sequential Printing: 여러개 모델 출력시 한개의 모델을 출력후 다음 모델을 출력하는 기능. 이렇게 하면 모델을 여러개 동시에 출려시 보다 헤드의 이동이 적어짐.&lt;/li>
+&lt;li>Dual Extrusion Customizations: Prime pillar와 ooze 쉴드의 높이의 설정 가능함.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4126" src="https://res.cloudinary.com/openmicrolab/image/upload/v1511419738/Simplify3D_features_vhzrf6.png" width="708" height="650" />
+&lt;h3 id="new-options-for-thin-walls-and-gaps">New Options for Thin Walls and Gaps&lt;/h3>
+&lt;ul>
+&lt;li>Variable Extrusion Sizing – 압출량을 자동 조절. 작거나 얇은 출력물에 유용&lt;/li>
+&lt;li>Dynamic Gap Fill – 모델의 벽의 두께가 달라져도 자동으로 채움&lt;/li>
+&lt;/ul>
+&lt;p>###&lt;img loading="lazy" class="alignnone wp-image-4128" src="https://res.cloudinary.com/openmicrolab/image/upload/v1511420910/Simplify3D_features2_xtmhee.png" width="640" height="288" />&lt;/p></description></item></channel></rss>

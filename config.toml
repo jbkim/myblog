@@ -1,0 +1,8 @@
+baseURL = 'https://openmicrolab.com/'
+languageCode = 'ko'
+title = 'OpenMicroLab'
+theme = 'hugo-clarity'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

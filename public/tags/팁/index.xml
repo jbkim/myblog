@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>팁 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%8C%81/</link><description>Recent content in 팁 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 17 Aug 2010 11:42:55 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%8C%81/index.xml" rel="self" type="application/rss+xml"/><item><title>갤럭시S 사용 팁</title><link>https://openmicrolab.com/%EA%B0%A4%EB%9F%AD%EC%8B%9Cs-%EC%82%AC%EC%9A%A9-%ED%8C%81/</link><pubDate>Tue, 17 Aug 2010 11:42:55 +0000</pubDate><guid>https://openmicrolab.com/%EA%B0%A4%EB%9F%AD%EC%8B%9Cs-%EC%82%AC%EC%9A%A9-%ED%8C%81/</guid><description>
+&lt;p>&lt;span style="font-weight: bold;">화면 밝기 조절&lt;/span>&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.112036334C6A7489470027.jpg" class="aligncenter" width="412" height="346" alt="" filename="SAM_1218.jpg" filemime="image/jpeg" />&lt;br>
+화면 밝기를 조절을 하려면 “환경 설정&amp;gt;소리 및 디스플레이&amp;gt;밝기” 메뉴로 접근을 해서 조절이 가능하다.&lt;br>
+하지만 밧데리 소모를 줄이기 위해 수동 밝기로 설정을 하고, 밝기를 조절할 필요가 있으면&lt;br>
+LCD 상단부 밧데리가 표시되는 부분을 좌,우로 문지르면 밝기가 조절이 된다.&lt;/p>
+&lt;p>&lt;span style="font-weight: bold;">폴더 이름 변경&lt;/span>&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.180874374C6A74B59E4E3B.jpg" class="aligncenter" width="444" height="338" alt="" filename="SAM_1219.jpg" filemime="image/jpeg" />&lt;br>
+일반적으로 홈 화면에 자주쓰는 어플의 바로가기를 추가하는데, 비슷한 종류의 어플을 폴더에 넣어서 관리를 하면 화면이 깔끔해진다. 이때 폴더를 계속 생성을 해도 “폴더”라는 이름의 폴더가 생성이 된다.&lt;br>
+이 폴더의 이름을 바꾸기 위해서는 생성된 폴더를 눌러서 활성화 시키고 폴더의 윗부분 바를 누르면 “폴더 이름 바꾸기” 창이 뜨는데 여기서 폴더 이름을 변경하면 된다.&lt;/p></description></item><item><title>Wireshark 사용팁-2</title><link>https://openmicrolab.com/wireshark-%EC%82%AC%EC%9A%A9%ED%8C%81-2/</link><pubDate>Mon, 17 May 2010 11:53:50 +0000</pubDate><guid>https://openmicrolab.com/wireshark-%EC%82%AC%EC%9A%A9%ED%8C%81-2/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt;">지난번 &lt;a title="[http://liketheocean.tistory.com/entry/Wireshark-사용법]로 이동합니다." target="_blank" href="http://liketheocean.tistory.com/entry/Wireshark-%EC%82%AC%EC%9A%A9%EB%B2%95">Wireshark 사용법&lt;/a>과 &lt;span style="color: rgb(0, 0, 0);">&lt;a title="[http://Wireshark 사용팁-1]로 이동합니다." target="_blank" href="http://Wireshark%20%EC%82%AC%EC%9A%A9%ED%8C%81-1">&lt;a title="[http://liketheocean.tistory.com/entry/Wireshark-사용팁-1]로 이동합니다." target="_blank" href="http://liketheocean.tistory.com/entry/Wireshark-%EC%82%AC%EC%9A%A9%ED%8C%81-1">Wireshark사용팁-1&lt;/a>&lt;/a>&lt;/span>에 이은 2탄 ^^&lt;/span>&lt;br>
+&lt;span style="font-size: 11pt;">이 기능도 꽤나 자주 사용되는 팁이다.&lt;/span>&lt;br>
+&lt;span style="font-size: 11pt;">네트워크 패킷을 잡다보면 내가 원하는 패킷만 봐야 패킷이 어떻게 오고 가는지 이해하기가 쉽니다.&lt;/span>&lt;br>
+&lt;span style="font-size: 11pt;">이때 필요한 것이 필터기능이다. 필터에는 2가지가 있는데 Display Filter와 Capture Filter가 있다.&lt;/span>&lt;br>
+&lt;span style="font-size: 11pt;">Display filter는 패킷을 다 잡고 원하는 패킷만 filtering해서 보여주는 것이고, Capture Filter는 패킷을 잡을때 필터링을 해서 패킷을 잡는것이다. &lt;/span>&lt;/p>
+&lt;p>&lt;span style="font-size: 11pt;">이것이 Display Filter인데 만약 IP address가 192.168.0.1로 오고가는 패킷만 보고 싶으면 이것을 사용하면 된다.&lt;/span>&lt;br>
+&lt;span style="font-size: 11pt;">아래 그림처럼 이 필터의 이름은 “IP address 192.168.0.1″이고 Filter string은 “ip.addr == 192.168.0.1″인데, 이름이야 어찌 됐든 이 Filter string이 중요하다. 즉 아래 보이는 형태대로 필터를 구성을 해야지 Wireshark가 알아먹는다.&lt;/span>&lt;br>
+&lt;span style="font-size: 11pt;">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.19305E0F4BF12C5F0634C8.jpg" class="aligncenter" width="458" height="434" alt="" filename="Wireshark_4.jpg" filemime="image/jpeg" />&lt;/span>&lt;/p></description></item></channel></rss>

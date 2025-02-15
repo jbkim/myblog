@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Meshlab 빌드 on OpenMicroLab</title><link>https://openmicrolab.com/tags/meshlab-%EB%B9%8C%EB%93%9C/</link><description>Recent content in Meshlab 빌드 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 02 Nov 2016 06:46:53 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/meshlab-%EB%B9%8C%EB%93%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>Meshlab 빌드</title><link>https://openmicrolab.com/meshlab-%EB%B9%8C%EB%93%9C/</link><pubDate>Wed, 02 Nov 2016 06:46:53 +0000</pubDate><guid>https://openmicrolab.com/meshlab-%EB%B9%8C%EB%93%9C/</guid><description>
+&lt;p>&lt;a href="http://meshlab.sourceforge.net/" target="_blank">Meshlab&lt;/a>은 3D프린팅에 필요한 파일의 메쉬를 수정할 수 있는 툴로 오픈소스이며, 3가지 OS를 지원한다. 그리고 &lt;a href="http://www.meshlabjs.net/" target="_blank">웹에서 구현&lt;/a>한 버전도 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3790" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478068545/eye_cropped_x9neij.png" width="155" height="155" />
+&lt;p>이 소스를 빌드하려면 다음과 같은 3가지 소스가 필요하다.&lt;br>
+*** 필요한 소스들 3가지**&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/" target="_blank">MeshLab 소스 코드&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://vcg.isti.cnr.it/vcglib/" target="_blank">VCG 라이브러리&lt;/a>&lt;br>
+위 2개의 코드를 &lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/" target="_blank">&lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/">https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/&lt;/a>&lt;/a>&lt;br>
+에서 받을 수 있다.&lt;/li>
+&lt;li>&lt;a href="https://www.qt.io/" target="_blank">Qt&lt;/a> : &lt;a href="http://download.qt.io/archive/qt/" target="_blank">Qt의 아카이브&lt;/a>에서 호스트에 따른 버전을 다운로드한다.&lt;/li>
+&lt;/ul>
+&lt;p>*** VS(Visual Studio)로 컴파일하기**&lt;br>
+&lt;strong>1. QT 컴파일&lt;/strong>&lt;br>
+(1) QT소스의 압축을 풀고, VS(Visual Studio) Command prompt를 실행하여 해서 다음과 같이 설정을 한다.&lt;br>
+(2) 만약 VS가 여러 버전이 설치되어 있다면,&lt;/p></description></item></channel></rss>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ethernet 성능 on OpenMicroLab</title><link>https://openmicrolab.com/tags/ethernet-%EC%84%B1%EB%8A%A5/</link><description>Recent content in Ethernet 성능 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 14 Jul 2011 14:48:18 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ethernet-%EC%84%B1%EB%8A%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>Ethernet 성능 측정</title><link>https://openmicrolab.com/ethernet-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95/</link><pubDate>Thu, 14 Jul 2011 14:48:18 +0000</pubDate><guid>https://openmicrolab.com/ethernet-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95/</guid><description>
+&lt;p>NXP의 LPC1766의 Ethernet 성능을 측정한 자료입니다. 테스트 방법에 따라서 몇가지 변수가 있는데 참고하세요.&lt;br>
+최대 12.19Mbps 정도까지 나오네요.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.2068CF584E1EFD121D1C69.png" class="aligncenter" width="632" height="106" alt="" filename="LPC1766.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.16177D514E1EFDD0168BB3.png" class="aligncenter" width="664" height="217" alt="" filename="test_result.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>**관련 문서&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile29.uf.142D58394E1F017A32E692.pdf" class="aligncenter" filename="Digi-Key_TZM113US_Lighting_Solutions_Magazine_12-14.pdf" filemime="application/pdf" />cfile29.uf.142D58394E1F017A32E692.pdf&lt;/a>
+&lt;/P>**</description></item></channel></rss>

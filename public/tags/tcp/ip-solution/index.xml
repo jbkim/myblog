@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TCP/IP Solution on OpenMicroLab</title><link>https://openmicrolab.com/tags/tcp/ip-solution/</link><description>Recent content in TCP/IP Solution on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 04 Nov 2010 10:53:20 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/tcp/ip-solution/index.xml" rel="self" type="application/rss+xml"/><item><title>TCP/IP solutions</title><link>https://openmicrolab.com/tcpip-solutions/</link><pubDate>Thu, 04 Nov 2010 10:53:20 +0000</pubDate><guid>https://openmicrolab.com/tcpip-solutions/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="BORDER-COLLAPSE: collapse; FONT-FAMILY: verdana, sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;/p>
+&lt;H1 style="MARGIN-TOP: 0px; FONT: bold 16pt verdana, sans-serif; PADDING-TOP: 6px">
+&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="BORDER-COLLAPSE: collapse; FONT-FAMILY: verdana, sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;STRONG>&lt;SPAN style="FONT-SIZE: 12pt">TCP/IP solutions 관련 자료 링크입니다.&lt;/SPAN>&lt;/STRONG>&lt;/SPAN>&lt;/SPAN>
+&lt;/H1>
+&lt;UL style="PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: square; MARGIN: 6px 0px 16px 28px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.atmel.com/atmel/acrobat/doc4002.pdf">@Web TCP/IP Evaluation Kit&lt;/A>&lt;/B>&lt;br /> Atmel has a product called the @Web TCP/IP Evaluation Kit. It works with the T89C51AC2 and the T89C51CC01 and the Keil C51 tools.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/ar166/">Advanced RTX Real-Time Kernel&lt;/A>&lt;/B>&lt;br /> The Advanced Real-Time Kernel for XC16x, C16x, and ST10devices offers an RTX Real-Time Kernel, Flash File System, and TCP/IP Protocol Suite.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.circuitcellar.com/library/print/0902/brady/index.htm">Circuit Cellar 8051 Web Server&lt;/A>&lt;/B>&lt;br /> Circuit Cellar writer Jim Brady has created an 8051-based web server.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.cmx.com/">CMX-MicroNet&lt;/A>&lt;/B>&lt;br /> CMX provides a small TCP/IP stack (CMX-MicroNet) for 8-bit devices included the 8051 family of microcontrollers.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.cmx.com/">CMX-TCP/IP&lt;/A>&lt;/B>&lt;br /> CMX provides a TCP/IP stack (CMX-TCP/IP) for the C16x/ST10 and with protocol support for PPP, DHCP, SMTP, TFTP, FTP, SNMP, and Web Server.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.embeddedpower.com/">Embedded Power Corporation&lt;/A>&lt;/B>&lt;br /> Embedded Power Corporation makes a TCP/IP stack for the C16x/ST10 Devices.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.iniche.com/">InterNiche&lt;/A>&lt;/B>&lt;br /> InterNiche makes a TCP/IP stack and lots of plug-ins that work with the Keil C16x/ST10 development tools and the Keil MCB167-NET Evaluation Board.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/mcb167net/">MCB167-NET&lt;/A>&lt;/B>&lt;br /> The MCB167-NET Evaluation Board from Keil Software is an Internet-Ready single-board computer based on the Infineon C167 microcontroller. This board offers true Ethernet connectivity as well as support for single and dual CAN controllers.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.nexgen-software.fr/Modules/Products/NexGenIP.html">NexGen&lt;/A>&lt;/B>&lt;br /> NexGen makes a TCP/IP stack that works with the Keil C16x/ST10 development tools and the MCB167-NET Evaluation Board.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/rl-arm/">RealView Real-Time Library&lt;/A>&lt;/B>&lt;br /> The RealView Real-Time Library for ARM7, ARM9, and Cortex-M3 devices offers an RTX Real-Time Kernel, Flash File System, and TCP/IP Protocol Suite.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.dmhsoftware.com/">SNMP Agent&lt;/A>&lt;/B>&lt;br /> DMH Software makes an SNMP Agent that works with the 8051 family.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.iinet.net.au/~vanluynm/">uIP TCP/IP stack&lt;/A>&lt;/B>&lt;br /> Adam Dunkels&amp;#8217; uIP v0.9 TCP/IP stack has been ported to work with C51. Included is the uIP web server application and drivers for both serial port SLIP and RTL8018AS network card Ethernet communication. This port requires 256 bytes of internal (data + idata) and 1K of external (xram) RAM.
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+&lt;B>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.keil.com/_relinks/link.asp?http://www.ussw.com/">US Software&lt;/A>&lt;/B>&lt;br /> US Software makes a TCP/IP stack for the C16x/ST10.
+&lt;/LI>
+&lt;/UL>&lt;/SPAN>&lt;/SPAN></description></item></channel></rss>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IBIS on OpenMicroLab</title><link>https://openmicrolab.com/tags/ibis/</link><description>Recent content in IBIS on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 26 Oct 2010 04:38:42 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ibis/index.xml" rel="self" type="application/rss+xml"/><item><title>IBIS 관련 링크</title><link>https://openmicrolab.com/ibis-%EA%B4%80%EB%A0%A8-%EB%A7%81%ED%81%AC/</link><pubDate>Tue, 26 Oct 2010 04:38:42 +0000</pubDate><guid>https://openmicrolab.com/ibis-%EA%B4%80%EB%A0%A8-%EB%A7%81%ED%81%AC/</guid><description>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 11pt; ">&lt;b>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">Ansoft :&amp;nbsp;&lt;/span>&lt;/span>&lt;/b>&lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="line-height: 20px; ">&lt;span style="font-size: 16pt; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 11pt; ">&lt;b>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">&lt;a href="http://www.ansoft.co.kr/html/sup/apds_lecture3.php" target="_blank" title="[http://www.ansoft.co.kr/html/sup/apds_lecture3.php]로 이동합니다.">PCB Design에서의 PI/SI/EMI 이야기&lt;/a>&lt;/span>&lt;/span>&lt;font class="Apple-style-span" color="#666666">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">&amp;nbsp;&lt;/span>&lt;/span>&lt;/font>&lt;/b>&lt;/span>&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;b>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">Actel :&amp;nbsp;&lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="font-family: dotum, arial, sans-serif; line-height: 19px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">&amp;nbsp;&lt;/span>&lt;/span>&lt;/p>
+&lt;h3 class="r" style="font-size: 13px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font: normal normal normal 13px/normal 굴림, 돋움, arial, sans-serif; display: inline; line-height: 19px; ">
+&lt;a href="http://www.actel.com/documents/Ibis_AN.pdf" target="_blank" class="l vst noline" style="font: normal normal normal 13px/normal 굴림, 돋움, arial, sans-serif; line-height: 19px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: initial; color: rgb(85, 26, 139); cursor: pointer; outline-width: 0px; outline-style: initial; outline-color: initial; ">&lt;em style="font-style: normal; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">&lt;b>&lt;a href="http://www.actel.com/documents/Ibis_AN.pdf" target="_blank" title="[http://www.actel.com/documents/Ibis_AN.pdf]로 이동합니다.">IBIS Models&lt;/a>&lt;/b>&lt;/span>&lt;/span>&lt;/em>&lt;span style="font-size: 11pt; ">&lt;span style="font-size: 10pt; ">&lt;b>&lt;a href="http://www.actel.com/documents/Ibis_AN.pdf" target="_blank" title="[http://www.actel.com/documents/Ibis_AN.pdf]로 이동합니다.">: Background and Usage&lt;/a>&lt;/b>&lt;/span>&lt;/span>&lt;/a>
+&lt;/h3>
+&lt;p>
+&lt;/span>&lt;/b>&lt;/div>
+&lt;pre>&lt;code>&amp;lt;div&amp;gt;
+&amp;lt;b&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 10pt; &amp;quot;&amp;gt;IBIS open Forum :&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 10pt; &amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.vhdl.org/ibis/&amp;quot;&amp;gt;http://www.vhdl.org/ibis/&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;a href=&amp;quot;http://www.vhdl.org/ibis/&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/b&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;b&amp;gt;&amp;lt;span style=&amp;quot;font-size: 11pt; &amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/b&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;__KO_DIC_LAYER__&amp;quot; style=&amp;quot;padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: fixed; z-index: 1e+009; overflow-x: hidden; overflow-y: hidden; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 51, 119); border-right-color: rgb(51, 51, 119); border-bottom-color: rgb(51, 51, 119); border-left-color: rgb(51, 51, 119); display: none; &amp;quot;&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre></description></item><item><title>Visual IBIS Editor</title><link>https://openmicrolab.com/visual-ibis-editor/</link><pubDate>Tue, 26 Oct 2010 04:23:10 +0000</pubDate><guid>https://openmicrolab.com/visual-ibis-editor/</guid><description>
+&lt;p>&lt;a href="http://liketheocean.tistory.com/entry/IBIS-%EB%AA%A8%EB%8D%B8" target="_blank" title="[http://liketheocean.tistory.com/entry/IBIS-%EB%AA%A8%EB%8D%B8]로 이동합니다.">&lt;b>&lt;span style="font-size: 10pt; ">&lt;span style="font-size: 11pt; ">IBIS &lt;/span>&lt;/span>&lt;/b>&lt;/a>&lt;span style="font-size: 10pt; ">&lt;span style="font-size: 11pt; ">파일을 읽어서 분석을 해주는 무료툴입니다. &lt;/span>&lt;/span>&lt;/p>
+&lt;div>
+&lt;span style="font-size: 10pt; ">&lt;span style="font-size: 11pt; ">&lt;br /> 라이센스 버젼에 비해 몇가지 제한된 기능이 있지만 IBIS 파일의 Syntax 확인 및 IBIS 데이터를 그래프로 보여줍니다.&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 10pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile27.uf.144507364CC657272C2C3E.jpg" class="aligncenter" width="680" height="514" alt="" filename="mentot_ibis_editor.jpg" filemime="image/jpeg" />&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div>
+&lt;a href="http://www.mentor.com/products/pcb-system-design/circuit-simulation/hyperlynx-signal-integrity/visual_ibis_editor/" target="_blank" title="[http://www.mentor.com/products/pcb-system-design/circuit-simulation/hyperlynx-signal-integrity/visual_ibis_editor/]로 이동합니다.">&lt;span style="font-size: 10pt; ">&lt;b>&lt;span style="font-size: 11pt; ">Mentor Graphics&lt;/span>&lt;/b>&lt;/span>&lt;/a>&lt;span style="font-size: 10pt; ">&lt;span style="font-size: 11pt; ">사에서 간단한 정보 등록후 받으실 수 있습니다.&amp;nbsp;&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div id="__KO_DIC_LAYER__" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: fixed; z-index: 1e+009; overflow-x: hidden; overflow-y: hidden; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 51, 119); border-right-color: rgb(51, 51, 119); border-bottom-color: rgb(51, 51, 119); border-left-color: rgb(51, 51, 119); display: none; ">
+&lt;/div></description></item><item><title>IBIS 모델</title><link>https://openmicrolab.com/ibis-%EB%AA%A8%EB%8D%B8/</link><pubDate>Mon, 20 Sep 2010 02:05:49 +0000</pubDate><guid>https://openmicrolab.com/ibis-%EB%AA%A8%EB%8D%B8/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">&lt;b>&lt;/p>&lt;/p>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;b>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.173ABF164C96C0F5891479.jpg" class="aligncenter" width="520" height="559.0415335463258" alt="" filename="cfile2.uf.173ABF164C96C0F5891479.jpg" filemime="" />&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;b>&lt;br /> &lt;/b>&lt;/span>
+&lt;/div>
+&lt;p>
+IBIS&lt;/b>는 &amp;#8220;&lt;b>I/O Buffer Information Specification&lt;/b>&amp;#8220;의 약자입니다.&lt;/span>
+&lt;/p>
+&lt;div>
+&lt;div>
+&lt;div>
+&lt;font class="Apple-style-span" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;/p>
+&lt;pre>&lt;code> &amp;lt;div&amp;gt;
+IBIS는 말 그대로 반도체 칩의 입출력 핀에 대한 정보를 담고 있어서 반도체 칩의 사용자들이 PCB를 설계할 때 신호 충실도(Signal Integrity) 및 EMI/EMC 관련 시물레이션 및 디자인에 필수적인 요소입니다. 즉&amp;amp;nbsp;회로 설계를 위한 칩의 기본적인 I/O 정보를 담고 있습니다.&amp;amp;nbsp;물론 보드가 복잡하고 High Speed의 보드일 경우에 그리고 이것을 해석하고 시뮬레이션 할 수 있는 툴이 있을 때 가능한 얘기입니다.
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+1990년 초, 인텔사에서 PCI 버스에 대한 엄격한 요구사항을 내 놓기 시작하여 그 특이한 형식이 대두되고 그 이후 반도체 제조회사, EDA 및 컴퓨터 제조관련회사 등 약 35개의 회원사를 구성하여 공개적인 표준규격을 정한 것이 바로 이것이 IBIS Model입니다.
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+이 IBIS 모델의 특징은 다음과 같습니다.
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;ul style=&amp;quot;list-style-type: square; &amp;quot;&amp;gt;
+&amp;lt;li&amp;gt;
+반도체 칩의 I/O 버퍼 특성을 I/V관계로 나타낸다.
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;ul style=&amp;quot;list-style-type: square; &amp;quot;&amp;gt;
+&amp;lt;li&amp;gt;
+회로에 대한 정보를 숨길 수 있어, 제작사에서 IBIS Model를 공개/보급이 가능함
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;ul style=&amp;quot;list-style-type: square; &amp;quot;&amp;gt;
+&amp;lt;li&amp;gt;
+Spice Model과는 달리 상용 EDA 도구와 호환성을 가짐
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+IBIS모델은 반도체 칩의 I/O를 기준으로 칩을 모델링한 것이기 때문에 칩 내부의 정보는 회로설계자들이 알 수 없으므로 칩 제조사의 노하우나 기술들은 비밀이 보장되는 장점이 있습니다. 그리고 시뮬레이션 시간도 SPICE모델에 비해 몇배 빠릅니다.&amp;amp;nbsp;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+보다 많은 정보는 IBIS 오픈 포럼에 ==&amp;gt;&amp;amp;nbsp;&amp;lt;a href=&amp;quot;http://www.eda.org/ibis/&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;a href=&amp;quot;http://www.eda.org/ibis/&amp;quot; target=&amp;quot;_blank&amp;quot; title=&amp;quot;[http://www.eda.org/ibis/]로 이동합니다.&amp;quot;&amp;gt;http://www.eda.org/ibis/&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+함께 보면 좋은 자료 : &amp;lt;a href=&amp;quot;http://www.emccenter.or.kr/emc/board/detail.jsp?c_no=004003001&amp;amp;b_no=26&amp;amp;bt_no=20&amp;quot; target=&amp;quot;_blank&amp;quot; title=&amp;quot;[http://www.emccenter.or.kr/emc/board/detail.jsp?c_no=004003001&amp;amp;b_no=26&amp;amp;bt_no=20]로 이동합니다.&amp;quot;&amp;gt;고속 디지털회로의 신호충실도와 복사해석&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;p&amp;gt;
+&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre></description></item></channel></rss>

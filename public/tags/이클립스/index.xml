@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>이클립스 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4/</link><description>Recent content in 이클립스 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 16 May 2018 09:15:28 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4/index.xml" rel="self" type="application/rss+xml"/><item><title>STM32 이클립스 환경에서 디버깅시 에러</title><link>https://openmicrolab.com/stm32-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-%EB%94%94%EB%B2%84%EA%B9%85%EC%8B%9C-%EC%97%90%EB%9F%AC/</link><pubDate>Wed, 16 May 2018 09:15:28 +0000</pubDate><guid>https://openmicrolab.com/stm32-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-%EB%94%94%EB%B2%84%EA%B9%85%EC%8B%9C-%EC%97%90%EB%9F%AC/</guid><description>
+&lt;p>Stm32Cube와 Eclipse의 조합으로 개발을 할때 연결된 보드를 디버깅시 다음과 같은 에러 메시지가 뜰 경우가 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4300" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_893/v1526461893/Eclipse_error_ffqlxo.png" width="485" height="299" />
+&lt;p>이럴때는 프로젝트의 설정의 Run/Debug Setings의 Startup 탭에서 다음 그림에 보이는 2가지 항목의 설정을 해제하면 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4301" src="https://res.cloudinary.com/openmicrolab/image/upload/v1526461892/Eclipse_debug_uu8snd.png" width="2102" height="1542" /></description></item><item><title>System Workbench for STM32</title><link>https://openmicrolab.com/system-workbench-stm32/</link><pubDate>Thu, 01 Mar 2018 09:04:19 +0000</pubDate><guid>https://openmicrolab.com/system-workbench-stm32/</guid><description>
+&lt;p>System Workbench for STM32를 설치하는 방법은 2가지이다. 인스톨 프로그램으로 설치하는 방법과 기존에 설치되어 있는 이클립스에 설치하는 방법이 있다.&lt;/p>
+&lt;h3 id="인스톨-프로그램">&lt;strong>인스톨 프로그램&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>System Workbench for STM32를 &lt;a href="http://www.openstm32.org/Downloading%2Bthe%2BSystem%2BWorkbench%2Bfor%2BSTM32%2Binstaller" target="_blank" rel="noopener noreferrer">링크&lt;/a>에서 다운로드 한다.&lt;/li>
+&lt;li>다운로드 받은 바이너리 파일의  퍼미션을 수정후 파일을 실행한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>chmod 755 install_sw4stm32.run then ./install_sw4stm32.run&lt;/p>&lt;/blockquote>
+&lt;img loading="lazy" class="alignnone wp-image-4222" src="https://res.cloudinary.com/openmicrolab/image/upload/v1519891095/System_Workbench_for_STM32_wlfr7n.png" width="568" height="431" />
+&lt;p>문제는 이렇게 설치를 하다가 다음과 같은 에러메시지가 나오고 더 이상 진행이 되지 않는다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4224" src="https://res.cloudinary.com/openmicrolab/image/upload/v1519892823/error_nqiihq.png" width="765" height="132" />
+&lt;h3 id="이클립스에서-추가하는-방법">&lt;strong>이클립스에서 추가하는 방법&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>이클립스에서“Help &amp;raquo; Install New Software”를 선택&lt;/li>
+&lt;li>&lt;a href="http://ac6-tools.com/Eclipse-updates/org.openstm32.system-workbench.update-site-v2">http://ac6-tools.com/Eclipse-updates/org.openstm32.system-workbench.update-site-v2&lt;/a>를 입력하고, 이름은 System Workbench for STM32 – Bare Machine edition으로 한다.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4230" src="https://openmicrolab.com/images/2021/03/install_bo1tqe-1.png" width="633" height="511" />
+&lt;ul>
+&lt;li>인스톨 전에 다음과 같이 맥의 게이트키퍼를 disable후 설치를 하고, 설치후 enable한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>#To disable&lt;br>
+sudo spctl –master-disable&lt;br>
+#To enable&lt;br>
+sudo spctl –master-enable&lt;/p></description></item><item><title>Freescale FRDM-K82F 보드</title><link>https://openmicrolab.com/freescale-frdm-k82f-%EB%B3%B4%EB%93%9C/</link><pubDate>Tue, 19 Apr 2016 08:03:31 +0000</pubDate><guid>https://openmicrolab.com/freescale-frdm-k82f-%EB%B3%B4%EB%93%9C/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-3639" src="http://res.cloudinary.com/openmicrolab/image/upload/a_0/v1461052393/Freescale_FRDM-K82F_aaxwqd.jpg" alt="" width="314" height="314" />
+&lt;h3 id="freescale-frdm-k82f-보드의-개발-환경설정">Freescale FRDM-K82F 보드의 개발 환경설정&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://nxp.flexnetoperations.com/control/frse/download?agree=Accept&amp;element=6912747" target="_blank">Kinetis SDK 다운로드 및 설치&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.nxp.com/webapp/swlicensing/sso/downloadSoftware.sp?catid=KINETIS-KDS-IDE" target="_blank">Kinetis Design Studio (KDS) 다운로드 및 설치&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://developer.mbed.org/media/downloads/drivers/mbedWinSerial_16466.exe" target="_blank">윈도우즈의 경우 virtual COM port 드라이버 설치&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="1-이클립스-업데이트-파일-설치">1. 이클립스 업데이트 파일 설치&lt;/h3>
+&lt;p>“Help”-&amp;gt;Check for Updates를 누르고, Processor Expert for Kinetis만 선택하고 업데이트 한다.&lt;/p>
+&lt;p>“Help” -&amp;gt; “Install New Software”를 선택하고 Add 버튼 &amp;gt; Archive 버튼을 눌러서 SDK 설치 폴더 아래 /tools/eclipse_update 폴더에서 KSDK_&lt;version>_Eclipse_Update_zip file. 를 선택한다&lt;/p>
+&lt;h3 id="2-플랫폼-라이브러리-빌드하기">2. 플랫폼 라이브러리 빌드하기&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-3640" src="http://res.cloudinary.com/openmicrolab/image/upload/v1461052909/lib_kykbku.png" alt="" width="272" height="399" />
+&lt;p>“File-&amp;gt;Import”를 선택후 “General”을 눌러서 “Existing Projects into Workspace”를 선택한다.&lt;br>
+루트 디렉토리는 &amp;lt;install_dir&amp;gt;/lib/ksdk_platform_lib/kds/K82F25615 를 선택하고 finish를 클릭한다.&lt;br>
+메뉴에 헤머 아이콘을 눌러 빌드한다.&lt;/p></description></item><item><title>아두이노 &amp; 이클립스 (Arduino &amp; Eclipse)</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-arduino-eclipse/</link><pubDate>Tue, 25 Nov 2014 06:07:29 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-arduino-eclipse/</guid><description>
+&lt;p>지난번 포스팅 &lt;a href="http://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4eclipse%EC%97%90%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8arduino%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" target="_blank">‘이클립스(Eclipse)에서 아두이노(Arduino)사용하기’&lt;/a> 은 이클립스에서 플러그인을 설치해서 아두이노를 사용하는 것이었다. 하지만 아두이노는 command line에서 컴파일을 지원하므로 이런 플러그인 없이도 make 파일의 위치, 컴파일러 정보등만 이클립스에 설정하면 사용이 가능하다.&lt;/p>
+&lt;h3 id="1-프로젝트-만들기">1. 프로젝트 만들기&lt;/h3>
+&lt;p>File &amp;gt; New &amp;gt; Makefile Project with Existing Code를 선택후 Project Name을 설정하고 Existing Code Location을 설정한다.&lt;/p>
+&lt;h3 id="2-project-properties">2. Project Properties&lt;/h3>
+&lt;p>C/C++ Build항목에서 Build location의 Build directoty 설정은 makefile이 있는 위치를 지정한다.&lt;/p>
+&lt;p>C/C++ General 항목의 Path and Symbols에서 Include할 폴더들을 입력하고  Symbol에도 미리 정의돼야 할 심볼을 입력한다.&lt;/p></description></item><item><title>이클립스 팁 – 줄번호 표시, 테마설정</title><link>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%8C%81-%EC%A4%84%EB%B2%88%ED%98%B8-%ED%91%9C%EC%8B%9C-%ED%85%8C%EB%A7%88%EC%84%A4%EC%A0%95/</link><pubDate>Tue, 12 Aug 2014 03:23:18 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%8C%81-%EC%A4%84%EB%B2%88%ED%98%B8-%ED%91%9C%EC%8B%9C-%ED%85%8C%EB%A7%88%EC%84%A4%EC%A0%95/</guid><description>
+&lt;p>이클립스에서 줄 번호 설정: &lt;strong>Preference &amp;raquo; General &amp;raquo; Editors &amp;raquo; Text Editors&lt;/strong>에서 “&lt;strong>Show line numbers&lt;/strong>“를 선택한다.&lt;/p>
+&lt;p>테마 설정: &lt;a href="http://eclipsecolorthemes.org/?view=plugin" target="_blank">&lt;a href="http://eclipsecolorthemes.org/?view=plugin">http://eclipsecolorthemes.org/?view=plugin&lt;/a>&lt;/a> 여기에서 Color Theme를 받을 수 있다. 아니면 &lt;strong>Help &amp;raquo; Eclipse Market Place&lt;/strong>…  **“Color Theme”**를 검색을 해서 플러그인 설치&lt;/p>
+&lt;p>&lt;span style="line-height: 1.5em;">테마중에 SubllimeText의 테마가 있는데, 사용해 보니 Obsidian 이 보다 더 좋은 느낌.. &lt;/span>&lt;/p>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/Preferences.png" width="779" height="611" />
+&lt;p> &lt;/p></description></item><item><title>이클립스(Eclipse)에서 아두이노(Arduino)사용하기</title><link>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4eclipse%EC%97%90%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8arduino%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 12 Aug 2014 03:08:15 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4eclipse%EC%97%90%EC%84%9C-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8arduino%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="이클립스-개발환경에서-아두이노사용하기">이클립스 개발환경에서 아두이노사용하기&lt;/h3>
+&lt;ol>
+&lt;li>이클립스(Eclipse) 설치 &lt;a href="http://www.eclipse.org/downloads/" target="_blank">&lt;a href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/&lt;/a>&lt;/a> &lt;strong>Eclipse IDE for C/C++ Developers&lt;/strong> 를 설치&lt;/li>
+&lt;li>아두이노 이클립스 플러그인:  &lt;a href="http://www.baeyens.it/eclipse/" target="_blank">저작자의 홈페이지&lt;/a> – &lt;a href="http://www.baeyens.it/eclipse/installAdvice.shtml" target="_blank">Installation advice&lt;/a>, 가 있으니 참고. 플러그인 설치는 이클립스를 실행후 **Help &amp;raquo; Install New Software…**를 실행후 “&lt;strong>&lt;a href="http://www.baeyens.it/eclipse/update">http://www.baeyens.it/eclipse/update&lt;/a>&lt;/strong>” 주소를 입력하고 Add 버튼을 누른다. 그러면 &lt;strong>Arduino Eclipse extensions&lt;/strong> 이 나타나는데 이것을 선택하면 설치가 된다.&lt;/li>
+&lt;li>&lt;strong>Preferences &amp;gt; General &amp;gt; Workspace&lt;/strong>를 선택하고 **“Save automatically before build”**를 선택 &lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/eclipse_arduino1.png" width="780" height="612" />&lt;/li>
+&lt;li>&lt;strong>Arduino&lt;/strong>항목에서 &lt;strong>Arduino가 설치된 path와 library path&lt;/strong> 를 입력하고, &lt;strong>Use Arduino ODE tools in eclipse&lt;/strong>를 선택한다. 그리고 test serial dll를 클릭해서 serial drive가 동작하는 지 확인한다.&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/eclipse_arduino2.png" width="909" height="608" />&lt;/li>
+&lt;li>아두이노 프로젝트 만들기: &lt;strong>New &amp;raquo; Project &amp;raquo; Arduino &amp;raquo; New Arduino sketch&lt;/strong>를 선택, 프로젝트 이름를 설정, 보드와 COM port를 설정하면 setup()과 loop()함수가 만들어진 빈 프로젝트가 생긴다.&lt;/li>
+&lt;li>간단한 blink 예제를 만들고 &lt;strong>Project &amp;raquo; Build All&lt;/strong>하면 컴파일이되고, &lt;strong>AVR &amp;raquo; Upload Project to Target Devic&lt;/strong>e를 선택하면 아두이노 보드에 프로그래밍이된다.&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/Arduino_Eclipse_Test.png" width="684" height="472" />&lt;/li>
+&lt;/ol></description></item><item><title>ARM 개발 환경</title><link>https://openmicrolab.com/arm-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</link><pubDate>Mon, 12 May 2014 10:02:42 +0000</pubDate><guid>https://openmicrolab.com/arm-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</guid><description>
+&lt;h3 id="hex-to-bin--bin-to-hex">hex to bin / bin to hex&lt;/h3>
+&lt;p>MAC에서 개발 환경을 세팅하다보니 윈도우즈 기반의 툴들에서 쉽게 찾던 것들을 구글링하게 된다. ARM 이클립스 개발환경에서 hex, bin을 만들어 주는 툴은 arm-none-eabi-objcopy 인테, 다음과 같이 hex와 binary간의 변환이 가능하다.&lt;/p>
+&lt;blockquote>
+&lt;p>arm-none-eabi-objcopy -I binary -O ihex filename.bin filename.hex&lt;/p>
+&lt;p>arm-none-eabi-objcopy -I ihex -O binary filename.hex filename.bin&lt;/p>&lt;/blockquote>
+&lt;p>물론 이클립스의 프로젝트 설정에서 Cross ARM GNU Create Flash Image설정에서 Raw binary 또는_ _Intel Hex를 설정이 가능함.&lt;/p>
+&lt;h3 id="flash-downloaderdemonstrator">flash downloader demonstrator&lt;/h3>
+&lt;p>STM32 칩들은 내부에 시리얼 부트로더가 있어서 쉽게 flash를 업데이트 가능하다. ST에서도 flash downloader demonstrator라는 프로그램을 제공하는데 윈도우즈만 제공한다. Mac에서 사용할 수 있는 것은 &lt;a href="https://github.com/jsnyder/stm32loader" target="_blank">stm32loader scrypt&lt;/a>와 &lt;a href="https://github.com/jsnyder/stm32ld" target="_blank">stm32ld program&lt;/a>이다.&lt;/p></description></item></channel></rss>

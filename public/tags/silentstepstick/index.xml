@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SilentstepStick on OpenMicroLab</title><link>https://openmicrolab.com/tags/silentstepstick/</link><description>Recent content in SilentstepStick on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 20 Dec 2017 03:02:30 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/silentstepstick/index.xml" rel="self" type="application/rss+xml"/><item><title>TMC2100 모터드라이버</title><link>https://openmicrolab.com/tmc2100-%EB%AA%A8%ED%84%B0%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84/</link><pubDate>Wed, 20 Dec 2017 03:02:30 +0000</pubDate><guid>https://openmicrolab.com/tmc2100-%EB%AA%A8%ED%84%B0%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84/</guid><description>
+&lt;p>TMC2100 스텝 모터드라이버는 다음과 같은 특징이 있다. 특히 stealthChop이라는 기능으로 모터의 소음을 줄여준다.&lt;/p>
+&lt;p>&lt;strong>FEATURES AND BENEFITS&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>2-phase stepper motors up to 2.0A coil current (2.5A peak) Standalone Driver&lt;/li>
+&lt;li>Step/Dir Interface with microstep interpolation microPlyerTM&lt;/li>
+&lt;li>Voltage Range 4.75… 46V DC&lt;/li>
+&lt;li>Highest Resolution 256 microsteps per full step&lt;/li>
+&lt;li>stealthChopTM for extremely quiet operation and smooth motion&lt;/li>
+&lt;li>spreadCycleTM highly dynamic motor control chopper Integrated Current Sense Option&lt;/li>
+&lt;li>Standstill Current Reduction&lt;/li>
+&lt;li>Full Protection &amp;amp; Diagnostics (two outputs)&lt;/li>
+&lt;li>Small Size 5x6mm2 QFN36 package or TQFP48 package&lt;/li>
+&lt;/ul>
+&lt;h3 id="모터의-전류제한을-위한-설정">&lt;strong>모터의 전류제한을 위한 설정&lt;/strong>&lt;/h3>
+&lt;p>&lt;strong>Formulas for calculating the values:&lt;/strong>&lt;/p></description></item></channel></rss>

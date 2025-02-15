@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>W5500 on OpenMicroLab</title><link>https://openmicrolab.com/tags/w5500/</link><description>Recent content in W5500 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 01 Mar 2014 09:26:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/w5500/index.xml" rel="self" type="application/rss+xml"/><item><title>Arduino Ethernet 라이브러리 업데이트</title><link>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link><pubDate>Sat, 01 Mar 2014 09:26:21 +0000</pubDate><guid>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid><description>
+&lt;p>WZnet 칩 W5100, W5200과 W5500을 지원하는 통합 아두이노 라이브러리인 &lt;a href="https://github.com/Wiznet/WIZ_Ethernet_Library" target="_blank">Arduino Ethernet 라이브러리&lt;/a>를 업데이트 했다. 기존 코드에서 달라진 점은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>Arduino IDE 1.5.x 지원 : Arduino Due를 지원하기 위함.&lt;/li>
+&lt;li>Due용  SPI 드라이버 추가&lt;/li>
+&lt;li>W5200및 W5500의 경우 SPI드라이버 속도를 높였다. 무려 42Mhz까지 지원&lt;/li>
+&lt;li>w5100::read_data함수의 파라미터의 형 변경&lt;/li>
+&lt;li>flush() 함수 추가&lt;/li>
+&lt;/ul>
+&lt;p>Arduino IDE 1.5.xx를 지원하기 위해서는&lt;/p>
+&lt;ul>
+&lt;li>32비트 SAM용 SPI 드라이버가 추가 되야한다.&lt;/li>
+&lt;li>IDE 1.5.x의 폴더 구조가 바뀌어서 헤더파일 include가 변경된다.아래 그림 참고…  예를 들면 #include “w5100.h”가 #include “utility/ w5100.h” 이런 식으로…&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/03/Arduino_Folder.png">&lt;img loading="lazy" class="alignnone wp-image-2890" alt="Arduino_Folder" src="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png" width="578" height="717" srcset="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png 826w, https://openmicrolab.com/images/2014/03/Arduino_Folder-242x300.png 242w, https://openmicrolab.com/images/2014/03/Arduino_Folder.png 831w" sizes="(max-width: 578px) 100vw, 578px" />&lt;/a>&lt;/p></description></item><item><title>W5500 드라이버 포팅: Parallax Propeller칩</title><link>https://openmicrolab.com/w5500-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%ED%8F%AC%ED%8C%85-parallax-propeller%EC%B9%A9/</link><pubDate>Tue, 10 Dec 2013 02:54:02 +0000</pubDate><guid>https://openmicrolab.com/w5500-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%ED%8F%AC%ED%8C%85-parallax-propeller%EC%B9%A9/</guid><description>
+&lt;p>&lt;a href="http://parallax.com/" target="_blank">Parrallax&lt;/a>는 미국의 펩리스 반도체 회사이다. 이 회사의 칩은 &lt;a href="http://parallax.com/microcontrollers/propeller" target="_blank">Propeller&lt;/a>인데 이 칩은 특이하게도 내부에 8개의 프로세어 코아가 있어서 병렬처리가 가능하다. 이 8개의 코아를 COG라고 부르는데, 아래 블럭다이아그램 처럼 내부에 각각 프로세서, RAM, 레지스터, 카운터 등이 있고 이 COG가 외부에 나와 있는 I/O를 공유한다. 그리고 각각의 COG를 제어하는 HUB가 있어서 각각의 COG각 언제 I/O를 access할지를 결정한다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/12/parallax_propeller.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2736" alt="parallax_propeller" src="https://openmicrolab.com/images/2013/12/parallax_propeller.png" width="921" height="570" srcset="https://openmicrolab.com/images/2013/12/parallax_propeller.png 921w, https://openmicrolab.com/images/2013/12/parallax_propeller-300x185.png 300w" sizes="(max-width: 921px) 100vw, 921px" />&lt;/a>&lt;/p>
+&lt;p>Propeller칩을 프로그래밍하게 위해서는 어셈블러, SPIN이라는 언어로 프로그래밍이 가능하며, 최근에는 C 컴파일러가 지원이어서 C로도 프로그래밍이 가능하지만 코드사이즈나 성능이슈로 대부분의 코드는 어셈블러나 SPIN으로 만들어져 있다.&lt;/p></description></item></channel></rss>

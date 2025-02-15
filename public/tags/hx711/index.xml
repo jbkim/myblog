@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HX711 on OpenMicroLab</title><link>https://openmicrolab.com/tags/hx711/</link><description>Recent content in HX711 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 28 Sep 2018 08:36:37 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/hx711/index.xml" rel="self" type="application/rss+xml"/><item><title>무게센서와 HX711 사용하기</title><link>https://openmicrolab.com/%EB%AC%B4%EA%B2%8C%EC%84%BC%EC%84%9C%EC%99%80-hx711-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 28 Sep 2018 08:36:37 +0000</pubDate><guid>https://openmicrolab.com/%EB%AC%B4%EA%B2%8C%EC%84%BC%EC%84%9C%EC%99%80-hx711-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="무게센서">무게센서&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4441" src="https://res.cloudinary.com/openmicrolab/image/upload/v1538122944/load_cell_hn0zqk.png" width="660" height="235" />
+&lt;p>일반적으로 무게센서는 스트레인게이지(Strain Gauge) 기반의 로드셀(Lode Cell)를 사용한다. 스트레인 게이지는 저항으로 이루어진 센서로서 피 측정물에 부착되어 피 측정물의 물리적인 변형률(Strain)을 &lt;a href="https://en.wikipedia.org/wiki/Wheatstone_bridge" target="_blank" rel="noopener noreferrer">휘스톤 브릿지&lt;/a> 방식으로 전기적인 신호로 바꾸어 측정물의 변형량을 측정하는 저항 센서이다.&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="461"
+height="286"
+src="https://openmicrolab.com/Wheatstone-Bridge-02_2682268210215289130.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;ul>
+&lt;li>Excitation+ (E+) or VCC is red&lt;/li>
+&lt;li>Excitation- (E-) or ground is black.&lt;/li>
+&lt;li>Output+ (O+), Signal+ (S+)+ or Amplifier+ (A+) is white&lt;/li>
+&lt;li>O-, S-, or A- is green or blue&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4443" src="https://res.cloudinary.com/openmicrolab/image/upload/v1538123734/hx711_cabling_e2qlud.jpg" width="611" height="405" />
+&lt;h3 id="hx711">HX711&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/bogde/HX711" target="_blank" rel="noopener noreferrer">HX711 github library&lt;/a> 라이브러리를 Arduino에 설치&lt;/li>
+&lt;li>&lt;a href="https://github.com/sparkfun/HX711-Load-Cell-Amplifier" target="_blank" rel="noopener noreferrer">Sparkfun HX711 example code&lt;/a> 중 캘리브레이션 코드로 캘리브레이션을 한다.&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide?_ga=2.6286835.196014269.1538042880-991341443.1528683253" target="_blank" rel="noopener noreferrer">Sparkfun 가이드 문서&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackster.io/daveVertu/make-a-screen-less-google-fit-connected-smart-scale-9a5934" target="_blank" rel="noopener noreferrer">Google fit 연결 응용&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.hackster.io/luciansabo/healthzuilla-scale-c359f9" target="_blank" rel="noopener noreferrer">HTTP API 사용 응용&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.instructables.com/id/Wi-Fi-Smart-Scale-with-ESP8266-Arduino-IDE-Adafrui/" target="_blank" rel="noopener noreferrer">ESP8266 사용 Adafruit ID 연결 응용&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

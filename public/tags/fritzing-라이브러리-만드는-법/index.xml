@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fritzing 라이브러리 만드는 법 on OpenMicroLab</title><link>https://openmicrolab.com/tags/fritzing-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B2%95/</link><description>Recent content in Fritzing 라이브러리 만드는 법 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 04 Nov 2011 11:53:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/fritzing-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B2%95/index.xml" rel="self" type="application/rss+xml"/><item><title>Fritzing 라이브러리 만들기</title><link>https://openmicrolab.com/fritzing-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Fri, 04 Nov 2011 11:53:09 +0000</pubDate><guid>https://openmicrolab.com/fritzing-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>
+&lt;p>Frtizing이라는 툴을 지난번에 소개한 적이 있다.  &lt;a title="[http://liketheocean.tistory.com/159]로 이동합니다." href="http://liketheocean.tistory.com/159" target="_blank" rel="noopener">독일의 오픈 소스툴&lt;/a>&lt;br>
+이 툴을 직접 사용을 해봤는데, 실제 피지컬한 보드를 가지고 설계를 하는 듯한 느낌이 있고 이것을 다시 회로로 변환을 해주는 것이 흥미롭다. 전자공학을 하는 초보자들에게는 좋은 툴인 동시에 이미 많이 개발된 파트 라이브러리 덕에 문서 작업에 유용하게 쓰일 수 있다.&lt;br>
+이미 아두이노, 아두이노 이더넷 쉴드, Xbee, mbed…등등의 파트들이 제작이 되어 있다.&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;p style="margin: 0px;">
+&lt;img loading="lazy" class="aligncenter" src="https://openmicrolab.com/images/1/cfile22.uf.1357A9424EB3D30434EFCF.PNG" alt="" width="683" height="575" />
+&lt;/p>
+&lt;p>
+자신만의 라이브러리를 만들여면 이미지 작업을 해야하는데, 이미 만들어 놓은 라이브러리를 수정해서 사용하면 좀 편하다. 이미지 파일은 벡터기반의 SVG포맷으로 만들어야 한다. 따라서 오픈 소스 툴인 &lt;a title="[http://inkscape.org/]로 이동합니다." href="http://inkscape.org/" target="_blank" rel="noopener">InkScape&lt;/a>를 사용하던지 상용툴인 어도비사의 일러스트레이터를 사용해야 한다. 구체적인 정보: &lt;a href="http://fritzing.org/learning/tutorials/creating-custom-parts/">http://fritzing.org/learning/tutorials/creating-custom-parts/&lt;/a>
+&lt;/p></description></item></channel></rss>

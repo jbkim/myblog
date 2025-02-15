@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BLE on OpenMicroLab</title><link>https://openmicrolab.com/tags/ble/</link><description>Recent content in BLE on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 01 Jun 2020 09:14:20 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ble/index.xml" rel="self" type="application/rss+xml"/><item><title>SES(Segger Embedded Studio)에서 NRF_LOG_INFO 문제</title><link>https://openmicrolab.com/sessegger-embedded-studio%EC%97%90%EC%84%9C-nrf_log_info-%EB%AC%B8%EC%A0%9C/</link><pubDate>Mon, 01 Jun 2020 09:14:20 +0000</pubDate><guid>https://openmicrolab.com/sessegger-embedded-studio%EC%97%90%EC%84%9C-nrf_log_info-%EB%AC%B8%EC%A0%9C/</guid><description>
+&lt;p>SES환경에서 NRF_LOG_INFO(“Blinky example started!!!”)와 같은 같은 디버그 문구가 Debug Terminal에 보이지 않는 이슈 해결 방법&lt;/p>
+&lt;p>sdk_config.h 파일에서 다음과 같이 기존에 1로 설정되어 있던 값을 0 으로 수정한다.&lt;/p>
+&lt;p>```#define NRF_LOG_DEFERRED 0&lt;code> &lt;/code>#define NRF_FPRINTF_FLAG_AUTOMATIC_CR_ON_LF_ENABLED 0`&lt;/p>
+&lt;p>&lt;code>#define NRF_LOG_BACKEND_RTT_ENABLED 1&lt;/code>&lt;br>
+&lt;code>#define NRF_LOG_ENABLED 1&lt;/code>&lt;br>
+이 설정도 되어 있어야 함.&lt;/p>
+&lt;p>그런데 다음 설정은 0으로 되야 함&lt;br>
+&lt;code>#define NRF_LOG_BACKEND_UART_ENABLED 0&lt;/code>&lt;/p>
+&lt;p>그리고 보드가 바뀌면 아래 핀 설정도 같이 해야 함.&lt;br>
+&lt;code>#define NRF_LOG_BACKEND_UART_TX_PIN 6&lt;/code>&lt;/p></description></item><item><title>코인셀 배터리 사용시 시스템 설계</title><link>https://openmicrolab.com/%EC%BD%94%EC%9D%B8%EC%85%80-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84/</link><pubDate>Tue, 05 Nov 2019 08:46:30 +0000</pubDate><guid>https://openmicrolab.com/%EC%BD%94%EC%9D%B8%EC%85%80-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84/</guid><description>
+&lt;p>코인셀 배터리의 경우 용량도 중요하지만 한번에 땡겨서 쓸 수 있는 전류도 중요하다. 하지만 이 값은 일반적으로 충분히 크지 않다.&lt;/p>
+&lt;p>따라서 코인셀 배터리의 용량만큼 잘 쓰려면&lt;/p>
+&lt;ul>
+&lt;li>코인셀에 병렬로 cap을 달아라. 47~100uF, 슈퍼캡?&lt;/li>
+&lt;li>전류소모가 낮은 부품으로 구성 (당연한 얘기)&lt;/li>
+&lt;li>FEP(Functional End Point) 마진 확보 : 즉 구동 전압이 낮은 칩 사용&lt;/li>
+&lt;li>테스트 결과를 보면 전류를 갑자기 땡기는 구간이 짧아야하고, 휴지기간이 길어야 한다.&lt;/li>
+&lt;li>시스템을 설계할때 동시에 구동되는 부품을 줄이도록 설계: 즉 RF칩이 TX를 할때 모터를 구동하지 않는 다거나… (LCD, 모터, RF칩, LED) &amp;lt;= 이게 중요할 듯&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>참고문헌&lt;/strong>&lt;/p></description></item><item><title>Puck.JS 사용법</title><link>https://openmicrolab.com/puck-js-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Sun, 29 Jan 2017 13:09:41 +0000</pubDate><guid>https://openmicrolab.com/puck-js-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>##&lt;img loading="lazy" class="alignnone wp-image-3867" src="http://res.cloudinary.com/openmicrolab/image/upload/v1485692576/puck_js_nmdhjx.jpg" width="301" height="307" />&lt;/p>
+&lt;h2 id="features">FEATURES&lt;/h2>
+&lt;ul>
+&lt;li>Bluetooth Low Energy&lt;/li>
+&lt;li>Espruino JavaScript interpreter pre-installed&lt;/li>
+&lt;li>nRF52832 SoC – 64MHz Cortex M4, 64kB RAM, 512kB Flash&lt;/li>
+&lt;li>8 x 0.1″ GPIO (capable of PWM, SPI, I2C, UART, Analog Input)&lt;/li>
+&lt;li>9 x SMD GPIO (capable of PWM, SPI, I2C, UART)&lt;/li>
+&lt;li>ABS plastic rear case with lanyard mount&lt;/li>
+&lt;li>Silicone cover with tactile button&lt;/li>
+&lt;li>MAG3110 Magnetometer&lt;/li>
+&lt;li>IR Transmitter&lt;/li>
+&lt;li>Built in thermometer, light and battery level sensors&lt;/li>
+&lt;li>Red, Green and Blue LEDs&lt;/li>
+&lt;li>NFC tag programmable from JavaScript&lt;/li>
+&lt;li>Pin capable of capacitive sensing&lt;/li>
+&lt;li>Weight: 14g in plastic case, 20g in packaging&lt;/li>
+&lt;li>Dimensions of cardboard box: 64mm x 62mm x 16mm&lt;/li>
+&lt;li>Dimensions of plastic case: 36mm dia, 12.5mm thick&lt;/li>
+&lt;li>Dimensions of bare PCB: 29mm dia, 9mm thick&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://github.com/espruino/EspruinoBoard/tree/master/Puck.js" target="_blank">&lt;strong>회로도 및 PCB Layout Eagle File&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>피지컬 웹 (Physical Web)</title><link>https://openmicrolab.com/%ED%94%BC%EC%A7%80%EC%BB%AC-%EC%9B%B9-physical-web/</link><pubDate>Sun, 29 Jan 2017 09:36:51 +0000</pubDate><guid>https://openmicrolab.com/%ED%94%BC%EC%A7%80%EC%BB%AC-%EC%9B%B9-physical-web/</guid><description>
+&lt;p>IoT 디바이스에 접급을 위해서 앱이 필요한 경우가 있는데, 이럴 경우 디바이스마다 앱이 존재하게 된다. 구글에서는 이걸 웹에서 해결하겠다는 접근이 피지컬 웹(Physical Web)이다. 이렇게 할 때의 장점은 디바이스에는 적은 기능만 넣고, 나머지는 웹쪽에서 구현을 하겠다는 의미이다. 이때 IoT 디바이스(비콘)가 자신의 URL을 주기적으로 Broadcasting하기만 하면 된다.&lt;br>
+관련 정보&lt;br>
+&lt;a href="https://github.com/google/physical-web" target="_blank">&lt;a href="https://github.com/google/physical-web">https://github.com/google/physical-web&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Mac OS X에 nRF51 개발 환경 설정하기</title><link>https://openmicrolab.com/mac-os-x%EC%97%90-nrf51-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 02 Jan 2017 13:26:38 +0000</pubDate><guid>https://openmicrolab.com/mac-os-x%EC%97%90-nrf51-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;strong>1. gcc 설치&lt;/strong>&lt;br>
+&lt;a href="https://launchpad.net/gcc-arm-embedded/+download" target="_blank" rel="noopener">여기&lt;/a>에서 다운로드 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>$ mkdir /usr/local/gcc-arm&lt;br>
+$ tar -xjf gcc-arm-none-eabi-5_4-2016q3-20160926-mac.tar.bz2 -C /usr/local/gcc-arm&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>2. nRF5x-Command-Line-Tools-OSX&lt;/strong>&lt;br>
+&lt;a href="http://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank" rel="noopener">여기&lt;/a>에서 다운로드 한다.&lt;br>
+/usr/local/ 에 nrfjprog와 mergehex를 copy한다.&lt;/p>
+&lt;p>&lt;strong>3. .bash_profile 수정&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/nrfjprog:$PATH&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>4. Segger Software and documentation pack for Mac OS X 설치&lt;/strong>&lt;br>
+&lt;a href="https://www.segger.com/jlink-software.html" target="_blank" rel="noopener">여기&lt;/a>에 패키지 파일이 있다.&lt;/p>
+&lt;p>&lt;strong>5. SDK설치 및 Makefile.posix 파일 수정&lt;/strong>&lt;br>
+&lt;a href="http://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank" rel="noopener">여기&lt;/a> 또는 &lt;a href="http://developer.nordicsemi.com/" target="_blank" rel="noopener">여기&lt;/a>에서 SDK를 다운로드 해서 원하는 곳에서 압축을 푼다.&lt;br>
+components/toolchain/gcc/Makefile.posix 이 파일을 gcc 버전에 맞게 수정한다.&lt;/p>
+&lt;blockquote>
+&lt;p>GNU_INSTALL_ROOT := /usr/local/gcc-arm/gcc-arm-none-eabi-5_4-2016q3&lt;br>
+GNU_VERSION := 5.4.1&lt;br>
+GNU_PREFIX := arm-none-eabi&lt;/p></description></item><item><title>Wi-Fi Direct, ad hoc, Bluetooth 4.0 비교</title><link>https://openmicrolab.com/wi-fi-direct-ad-hoc-bluetooth-4-0-%EB%B9%84%EA%B5%90/</link><pubDate>Mon, 10 Feb 2014 05:45:33 +0000</pubDate><guid>https://openmicrolab.com/wi-fi-direct-ad-hoc-bluetooth-4-0-%EB%B9%84%EA%B5%90/</guid><description>
+&lt;h3 id="wi-fi-direct">Wi-Fi Direct&lt;/h3>
+&lt;p>Wi-Fi Direct가 무엇인지를 알기쉽게 나타내는 동영상&lt;/p>
+&lt;p>그럼 Wi-Fi Direct와 기존 ad-hoc은 어떻게 다른가?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Wi-Fi Direct is not the same as ad-hoc networking&lt;/strong>: The most significant difference between traditional ad-hoc wireless networking (traditional peer-to-peer networking) and Wi-Fi Direct is security. In Windows ad-hoc networks, the highest level of security supported is WEP in mixed client environments (Windows 7 will support WPA2 provided all adapters support it, as well). Wi-Fi Direct, as mentioned, supports WPA2. Another difference, Wi-Fi Direct devices can also simultaneously connect to existing wireless networks. More granular control and better discovery of devices also differentiate Wi-Fi Direct from ad-hoc networking&lt;/p></description></item></channel></rss>

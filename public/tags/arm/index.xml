@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arm on OpenMicroLab</title><link>https://openmicrolab.com/tags/arm/</link><description>Recent content in Arm on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 04 Apr 2019 01:42:56 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/arm/index.xml" rel="self" type="application/rss+xml"/><item><title>arm White paper – The route to a trillion devices</title><link>https://openmicrolab.com/arm-white-paper-the-route-to-a-trillion-devices/</link><pubDate>Thu, 04 Apr 2019 01:42:56 +0000</pubDate><guid>https://openmicrolab.com/arm-white-paper-the-route-to-a-trillion-devices/</guid><description>
+&lt;p>소프트뱅크가 arm을 인수후  2017년에 발간된 arm의 백서 – &lt;a href="http://openmicrolab.godohosting.com/Files/Arm-The-route-to-trillion-devices_2018.pdf">The route to a trillion devices&lt;/a>&lt;/p>
+&lt;p>2035년에는 1조개의 IoT 디바이스가 사용될 것이라는 전망&lt;/p>
+&lt;blockquote>
+&lt;p>By 2035, the technology companies that sell IoT hardware and services could be serving a market worth a trillion dollars per annum. That is an exciting figure, but an even greater value will flow to the companies that utilize the information collected by those systems, and to the consumers who will benefit from widespread efficiency gains across the economy.&lt;/p></description></item><item><title>arm Tech Symposia 2018</title><link>https://openmicrolab.com/arm-tech-symposia-2018/</link><pubDate>Fri, 16 Nov 2018 05:03:08 +0000</pubDate><guid>https://openmicrolab.com/arm-tech-symposia-2018/</guid><description>
+&lt;p>&lt;a href="http://myseminar.co.kr/arm/ARM_01.asp" target="_blank" rel="noopener noreferrer">arm의 Tech Symposia 2018&lt;/a>&lt;/p>
+&lt;h3 id="arm의iot-서비스">arm의IoT 서비스&lt;/h3>
+&lt;p>역시 보안이 중요하다. PSA는 Platform Security Architecture의 약자&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4467" src="https://res.cloudinary.com/openmicrolab/image/upload/v1542343612/arm_service_gzngq6.jpg" width="664" height="277" />
+&lt;h3 id="1-trillion">1 Trillion&lt;/h3>
+&lt;p>1 Trillion – 1조,  Billion – 10억. 2017년까지 1천억개가 26년 걸렸는데, 4년(2017~2021년)만에 이 숫자가 달성된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4468" src="https://res.cloudinary.com/openmicrolab/image/upload/v1542343615/Connected_device_kjkjwg.jpg" width="649" height="407" />
+&lt;h3 id="embedded-linux-관련-수치들">Embedded Linux 관련 수치들&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4469" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_2961/v1542343612/embedded_linux_acydxl.jpg" width="676" height="400" />
+&lt;h3 id="fifth-wave">Fifth wave&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4471" src="https://res.cloudinary.com/openmicrolab/image/upload/v1542343612/arm_5th_wave_kqizd1.jpg" width="655" height="356" />
+&lt;p>1 – Mainframe, 2 – PC, 3 – Internet, 4 -Mobile, Cloud에 이어서5th Wave는 Data driven computing 시대가 될 것이며, 이것은&lt;/p>
+&lt;ul>
+&lt;li>Generating Data : IoT&lt;/li>
+&lt;li>Transporting Data : 5G&lt;/li>
+&lt;li>Processing Data: AI&lt;/li>
+&lt;/ul>
+&lt;h3 id="processing-at-the-edge">Processing at the Edge&lt;/h3>
+&lt;p>Bandwidth, latency, power, security, cost 때문&lt;/p></description></item><item><title>Fabless: The Transformation of the Semiconductor Industry</title><link>https://openmicrolab.com/fabless-the-transformation-of-the-semiconductor-industry/</link><pubDate>Sat, 05 Sep 2015 13:16:55 +0000</pubDate><guid>https://openmicrolab.com/fabless-the-transformation-of-the-semiconductor-industry/</guid><description>
+&lt;div class="vw-text restore floatcontainer">
+무료로 다운로드 받은 책 : &lt;a href="https://www.dropbox.com/s/o7isyzlwiupxeq5/Fabless%20Book%20for%20SemiWiki%20Subscribers.pdf?dl=0" target="_blank">다운로드&lt;/a>
+&lt;/div>
+&lt;div class="vw-text restore floatcontainer">
+&lt;a href="https://openmicrolab.com/images/2015/09/Book-Cover-Final.jpg">&lt;img loading="lazy" class="alignnone size-medium wp-image-3402" src="https://openmicrolab.com/images/2015/09/Book-Cover-Final-200x300.jpg" alt="Book Cover Final" width="200" height="300" srcset="https://openmicrolab.com/images/2015/09/Book-Cover-Final-200x300.jpg 200w, https://openmicrolab.com/images/2015/09/Book-Cover-Final.jpg 510w" sizes="(max-width: 200px) 100vw, 200px" />&lt;/a>
+&lt;/div>
+&lt;div id="post_message_23864" class="vw-text restore floatcontainer">
+&lt;span style="font-size: medium;">&lt;b>Table of Contents&lt;/b>&lt;br /> &lt;i>Chapter 1: The Semiconductor Century&lt;/i>&lt;br /> &lt;i>Chapter 2: The ASIC Business&lt;/i>&lt;br /> &lt;i>In Their Own Words: VLSI Technology&lt;/i>&lt;br /> &lt;i>In Their Own Words: eSilicon Corporation&lt;/i>&lt;br /> &lt;i>Chapter 3: The FPGA&lt;/i>&lt;br /> &lt;i>In Their Own Words: Xilinx &lt;/i>&lt;br /> &lt;i>Chapter 4: Moving To The Fabless Model&lt;/i>&lt;br /> &lt;i>In Their Own Words: Chips And Technologies&lt;/i>&lt;br /> &lt;i>Chapter 5: The Rise Of The Foundry&lt;/i>&lt;br /> &lt;i>In Their Own Words: TSMC And Open Innovation Platform&lt;/i>&lt;br /> &lt;i>In Their Own Words: GLOBALFOUNDRIES&lt;/i>&lt;br /> &lt;i>Chapter 6: Electronic Design Automation&lt;/i>&lt;br /> &lt;i>In Their Own Words: Mentor Graphics&lt;/i>&lt;br /> &lt;i>In Their Own Words: Cadence Design Systems&lt;/i>&lt;br /> &lt;i>In Their Own Words: Synopsys&lt;/i>&lt;br /> &lt;i>Chapter 7: Intellectual Property&lt;/i>&lt;br /> &lt;i>In Their Own Words: ARM&lt;/i>&lt;br /> &lt;i>In Their Own Words: Imagination&lt;/i>&lt;br /> &lt;i>Chapter 8: What’s Next For The Semiconductor Industry&lt;/i>&lt;/span>
+&lt;/div>
+&lt;div class="vw-text restore floatcontainer">
+&lt;/div></description></item><item><title>WIZnet mbed 라이브러리</title><link>https://openmicrolab.com/wiznet-mbed-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/</link><pubDate>Wed, 14 May 2014 02:15:19 +0000</pubDate><guid>https://openmicrolab.com/wiznet-mbed-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/</guid><description>
+&lt;p>W5500 Ethernet 라이브러리를 mbed에 포팅후 W5100,W5200, W5500까지 지원을 하는 라이브러리를 만들어 &lt;a href="http://mbed.org/teams/WIZnet/code/WIZnet_Library/" target="_blank">mbed.org&lt;/a>에 업로드했다. 사용법은 간단하다. 라이브러리를 import하고 사용하는 Wiznet칩 또는 모듈에 따라서 wiznet.h에 있는 #define문에서 사용할 칩만 나두고 나머지는 주석 처리하면 된다.&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="Wiznet Ethernet library for ARM mbed" href="https://www.slideshare.net/JinbuhmKim/wiznet-ethernet-library-for-arm-mbed" target="_blank">Wiznet Ethernet library for ARM mbed&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>IoT 디바이스 개발을 위한 ARM의 플랫폼적 접근</title><link>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</link><pubDate>Fri, 18 Apr 2014 10:09:20 +0000</pubDate><guid>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</guid><description>
+&lt;p>ARM의 IoT 플랫폼 디렉터인 Simon Ford의 발표 @Embedded World.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/04/mbed_Simon.png">&lt;img loading="lazy" class="alignnone wp-image-3008" alt="mbed_Simon" src="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png" width="819" height="609" srcset="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png 1024w, https://openmicrolab.com/images/2014/04/mbed_Simon-300x223.png 300w, https://openmicrolab.com/images/2014/04/mbed_Simon.png 1054w" sizes="(max-width: 819px) 100vw, 819px" />&lt;/a>&lt;/p>
+&lt;p>관련 링크: &lt;a href="http://player.vimeo.com/video/88152800" target="_blank">link&lt;/a>&lt;/p>
+&lt;p>&lt;span style="line-height: 1.5em;">지난번 ARM Techcon의 발표와 거의 같다.&lt;/span>&lt;/p></description></item><item><title>mbed – SeeedArch 프로그래밍하기</title><link>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 06 Mar 2014 06:42:53 +0000</pubDate><guid>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="seeedarch">SeeedArch&lt;/h3>
+&lt;p>&lt;a href="http://mbed.org/" target="_blank">mbed&lt;/a>의 플랫폼 중의 하나인 Seeedstudio에서 만든 보드, &lt;a href="http://mbed.org/platforms/Seeeduino-Arch/" target="_blank">SeeedArch&lt;/a>를 테스트중이다. 이 보드의 스펙은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>mbed enabled
+&lt;ul>
+&lt;li>online development tools&lt;/li>
+&lt;li>easy to use C/C++ SDK&lt;/li>
+&lt;li>lots of published libraries, projects&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Standard Arduino Appearance, two Grove connectors
+&lt;ul>
+&lt;li>available with 3.3V compatible shields&lt;/li>
+&lt;li>a large number of grove modules&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Drag-n-drop programming&lt;/li>
+&lt;li>NXP LPC11U24 MCU
+&lt;ul>
+&lt;li>Low power ARM Cortex-M0 Core&lt;/li>
+&lt;li>48MHz, 32KB Flash, 8KB RAM, 4KB EEPROM&lt;/li>
+&lt;li>USB Device, 2xSPI, UART, I2C&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>이 보드의 가장 큰 특징은 보드의 형태가 아두이노 보드와 같아서 아두이노 쉴드를 연결할 수 있다.&lt;/p></description></item><item><title>ARM Cortex M0 – 기술적 개요</title><link>https://openmicrolab.com/arm-cortex-m0-%EA%B8%B0%EC%88%A0%EC%A0%81-%EA%B0%9C%EC%9A%94/</link><pubDate>Thu, 06 Feb 2014 10:40:05 +0000</pubDate><guid>https://openmicrolab.com/arm-cortex-m0-%EA%B8%B0%EC%88%A0%EC%A0%81-%EA%B0%9C%EC%9A%94/</guid><description>
+&lt;h3 id="일반적인-정보">일반적인 정보&lt;/h3>
+&lt;ul>
+&lt;li>폰노이만 아키텍처(단일버스 인터페이스)를 가지는 32비트 RISC 프로세서&lt;/li>
+&lt;li>ARMv6 아키텍쳐 : M0, M1(FPGA에 최적화)이 ARMv6 아키텍쳐이며, M3는 ARMv7 아키텍처임. 상위호환이 가능해 M0코드가 M3로 쉽게 이식이 가능.&lt;/li>
+&lt;li>56개의 명령어: Thumb 명령어 지원, Thumb-2 명령어의 일부 지원&lt;/li>
+&lt;/ul>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram.png">&lt;img loading="lazy" class="size-full wp-image-2759 aligncenter" alt="Cortex-M0 block diagram" src="https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram.png" width="340" height="307" srcset="https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram.png 340w, https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram-300x270.png 300w" sizes="(max-width: 340px) 100vw, 340px" />&lt;/a>
+&lt;/p>
+&lt;h3 id="arm-cortex-m0의-특징">ARM Cortex-M0의 특징&lt;/h3>
+&lt;ul>
+&lt;li>0.9DMIPS/MHz&lt;/li>
+&lt;li>프로세스 코어는 3단계 파이프라인&lt;/li>
+&lt;li>NVIC: 프로그램 가능한  4개의 서로 다른 우선 순위 레벨을 가질 수 있으며, 32개까지의 interrrupt request를 받을 수 있다.&lt;/li>
+&lt;li>WIC (Wakeup Interrupt Controller)는 옵션&lt;/li>
+&lt;li>OS지원을 위한 System Tick지원&lt;/li>
+&lt;/ul>
+&lt;h3 id="arm-cortex-m0의-장점">ARM Cortex-M0의 장점&lt;/h3>
+&lt;ul>
+&lt;li>에너지 효율성 – 슬립모드와 연계되어 있다. 즉 평소에는 슬립모드에 있다가 인터럽트가 발생을 하면 빨리 처리하고 다시 슬립모드로 들어감.&lt;/li>
+&lt;li>8, 16비트의 제약을 극복 – 32비트 linear address 사용(더 큰 메모리의 사용 가능), 더 큰 스텍사용(참고로 8051은 256바이트), 향상된 명령어 셋으로 더 작은 크기의 코드 가능( 참고로 8051은 항상 ACC를 사용해야 함)&lt;/li>
+&lt;/ul>
+&lt;h3 id="저전력을-가능하게-하는-요소들">저전력을 가능하게 하는 요소들&lt;/h3>
+&lt;ul>
+&lt;li>적은 게이트수 : 최소 설정으로는 12K, 일반적으로 17~25K&lt;/li>
+&lt;li>높은 효율성 : 0.9 DMIPS/MHz (80486DX가 0.81 DMIPS/MHz 였다는…)&lt;/li>
+&lt;li>슬립모드 : WIC(Wakeup Interrupt Controller), 2 개의 슬립모드: WFI(Wait for Interrupt ), WFE(Wait for Event)&lt;/li>
+&lt;li>로직셀 향상 : Ultra Low Leakage 로직 셀 라이브러리 도입&lt;/li>
+&lt;/ul>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/01/average-current.png">&lt;img loading="lazy" class=" wp-image-2762 aligncenter" alt="average current" src="https://openmicrolab.com/images/2014/01/average-current.png" width="671" height="241" srcset="https://openmicrolab.com/images/2014/01/average-current.png 959w, https://openmicrolab.com/images/2014/01/average-current-300x107.png 300w" sizes="(max-width: 671px) 100vw, 671px" />&lt;/a>
+&lt;/p></description></item><item><title>ARM Cortex M0 – 아키텍처</title><link>https://openmicrolab.com/arm-cortex-m0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link><pubDate>Thu, 06 Feb 2014 09:40:43 +0000</pubDate><guid>https://openmicrolab.com/arm-cortex-m0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid><description>
+&lt;h3 id="programmer8217s-model">Programmer’s Model&lt;/h3>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode.png">&lt;img loading="lazy" class="wp-image-2828 aligncenter" alt="CortexM0 Processor mode" src="https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode-1024x476.png" width="614" height="286" srcset="https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode-1024x476.png 1024w, https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode-300x139.png 300w, https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode.png 1227w" sizes="(max-width: 614px) 100vw, 614px" />&lt;/a>
+&lt;/p>
+&lt;blockquote>
+&lt;p>ARMv6-M 아키텍처에서는 쓰레드 모드와 핸들러 모드가 거의 같다. 유일한 차이는 쓰레드 모드에서는 CONTROL이라는 특별 레지스터의 설정으로 shadow된 스텍포인터를 사용한다는 것이다.&lt;/p>&lt;/blockquote>
+&lt;h3 id="레지스터">레지스터&lt;/h3>
+&lt;p style="font-size: 14px;">
+&lt;img loading="lazy" style="font-size: 13px;" alt="201402061550.jpg" src="https://openmicrolab.com/images/2014/02/201402061550.jpg" width="561" height="368" />
+&lt;/p>
+&lt;blockquote>
+&lt;p>로드 스토어 아키텍쳐: 메모리에 있는 데이터를 처리하기 위해 이 데이터는 메모리로 부터 레지스터 뱅크의 레지스터에 옮겨져서 내부 프로세서에 의해 처리되고, 이것이 다시 메모리에 쓰여진다.&lt;br>
+Cortex-M0는 13개의 32비트 범용 레지스터와 몇개의 특별(special)레지스터를 가진다.&lt;/p></description></item><item><title>ARM Cortex M0 – 소개</title><link>https://openmicrolab.com/arm-cortex-m0-%EC%86%8C%EA%B0%9C/</link><pubDate>Wed, 29 Jan 2014 06:12:46 +0000</pubDate><guid>https://openmicrolab.com/arm-cortex-m0-%EC%86%8C%EA%B0%9C/</guid><description>
+&lt;blockquote>
+&lt;p>ARM사는 Acorn Computer Group, Apple 컴퓨터, VLSI Technology의 합작투자회사로 1990년에 Advanced RISC Machine Ltd라는 이름으로 설립&lt;/p>&lt;/blockquote>
+&lt;h3 id="arm-cortex-m0의-특징">ARM Cortex-M0의 특징&lt;/h3>
+&lt;ul>
+&lt;li>적은 게이트수: 12,000&lt;/li>
+&lt;li>저전력 기능 지원 및 높은 에너지 효율성 – 0.9 DMIPS/MHz&lt;/li>
+&lt;li>사용하기 쉬운 인터럽트 우선순위 제어를 가진 내장형 인터럽트 콘트롤러&lt;/li>
+&lt;li>Low interrupt latency, 타이밍이 확정적(deterministic)&lt;/li>
+&lt;li>Thumb 지원- 높은 코드 밀도&lt;/li>
+&lt;/ul>
+&lt;h3 id="arm-프로세서와-아키텍처">ARM 프로세서와 아키텍처&lt;/h3>
+&lt;ul>
+&lt;li>2006년에 Cortex-M3 (ARMv7-M 아키텍쳐) 출시&lt;/li>
+&lt;li>Cortex-M0는 ARMv6-M 아키텍쳐기반&lt;/li>
+&lt;li>ARMv6-M 아키텍쳐는 ARMv7-M의 메모리 맵,  프로그래머 모델과 익셉션 모델, Thumb2 시스템과 ARMv6의 Thumb 명령어 셋 그리고 CoreSight Debug 아키켁쳐를 결합한 형태이며, 여기에 저전력에 특화된 설계로 나온 것이 M0이며, FPRGA 특화된 특성을 넣은 것이 M1이다.&lt;/li>
+&lt;/ul>
+&lt;div id="attachment_2751" style="width: 727px" class="wp-caption aligncenter">
+&lt;a href="https://openmicrolab.com/images/2013/12/arm-processor-architecture.jpg">&lt;img aria-describedby="caption-attachment-2751" loading="lazy" class="wp-image-2751 " title="ARM 프로세서 아키텍처의 진화" alt="arm processor architecture" src="https://openmicrolab.com/images/2013/12/arm-processor-architecture-1024x483.jpg" width="717" height="338" srcset="https://openmicrolab.com/images/2013/12/arm-processor-architecture-1024x483.jpg 1024w, https://openmicrolab.com/images/2013/12/arm-processor-architecture-300x141.jpg 300w" sizes="(max-width: 717px) 100vw, 717px" />&lt;/a>
+&lt;p id="caption-attachment-2751" class="wp-caption-text">
+ARM 프로세서 아키텍처의 진화
+&lt;/p></description></item><item><title>ARM Techcon 2013, ARM Technology Symposia 2013</title><link>https://openmicrolab.com/arm-techcon-2013-arm-technology-symposia-2013/</link><pubDate>Thu, 21 Nov 2013 00:44:45 +0000</pubDate><guid>https://openmicrolab.com/arm-techcon-2013-arm-technology-symposia-2013/</guid><description>
+&lt;p>지난 10월 29일부터 3일간 미국 캘리포니아 산타클라라 컨벤션 센터에서 열린 “&lt;a href="http://www.armtechcon.com">ARM Techcon 2013&lt;/a>” 행사에 참석해서 관련 글을 블로터넷에 기고를 했다. 보낸 원고에서 몇가지 영어 표현들이 한글로 바뀌고 제목들이 추가로 달렸는데, 에디터의 손을 거치니 좀 나아지는 것 같다. 한국에서는 IoT(Internet of Things)가 사물인터넷으로 번역되는 것이 좀 이상하지만…&lt;/p>
+&lt;p>&lt;span style="text-decoration: underline;">&lt;strong>기고문: &lt;a title="‘사물인터넷’ 눈독 들이는 ARM" href="http://www.bloter.net/archives/169566" target="_blank"> “사물인터넷” 눈독 들이는 ARM&lt;/a>&lt;/strong>&lt;/span>&lt;/p>
+&lt;p>최근  ARM CEO인 Simon Segars의 키노트가 유투브에 올라와 있다.&lt;/p>
+&lt;p>당시 3일 일정의 모든 세션을 들을 수 있는 티켓을 구매(약 1500불)해서 들었는데, ARM에서는 한국에서도  비슷한 행사를 개최했다.&lt;/p></description></item><item><title>6LowPAN Network Processor – CC1180</title><link>https://openmicrolab.com/6lowpan-network-processor-cc1180/</link><pubDate>Wed, 20 Nov 2013 10:37:39 +0000</pubDate><guid>https://openmicrolab.com/6lowpan-network-processor-cc1180/</guid><description>
+&lt;p>CC118은 6LowPAN chip으로 검색을 하면 나오는 TI의 칩이다. 데이터시트를 보니 최근 ARM에 인수된 Sendinode의 솔루션이 칩에 들어가 있다. MCU와의 인터페이스는 UART이다.&lt;/p>
+&lt;p>데이터시트 다운로드는 아래 링크에서… [wpdm_file id=5]&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/11/CC1180.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2696" alt="CC1180" src="https://openmicrolab.com/images/2013/11/CC1180.png" width="650" height="468" srcset="https://openmicrolab.com/images/2013/11/CC1180.png 650w, https://openmicrolab.com/images/2013/11/CC1180-300x216.png 300w" sizes="(max-width: 650px) 100vw, 650px" />&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>CMSIS-DAP 란?</title><link>https://openmicrolab.com/cmsis-dap/</link><pubDate>Wed, 11 Sep 2013 11:05:03 +0000</pubDate><guid>https://openmicrolab.com/cmsis-dap/</guid><description>
+&lt;h3 id="cmsis">CMSIS&lt;/h3>
+&lt;p>Cortex Microcontroller Software Interface Standard의 약자. 즉 다양한 칩 벤더가 Cortex 시리즈의 IP를 라이센스해가면서 **&lt;span style="text-decoration: underline;">하드웨어 독립적인 표준화된 소프트웨어 인터페이스&lt;/span>**가 필요하게 됨.  이것은 다음을 포함한다. 스펙은 ARM에 사용자 등록을 하면 받을 수 있다. 회원 가입을 하고 이 링크에 접속을 한다.  &lt;a href="https://silver.arm.com/browse/CMSIS" target="_blank" rel="noopener">&lt;a href="https://silver.arm.com/browse/CMSIS">https://silver.arm.com/browse/CMSIS&lt;/a>&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>CMSIS-CORE: provides an interface to Cortex-M0, Cortex-M3, Cortex-M4, SC000, and SC300 processors and peripheral registers&lt;/li>
+&lt;li>CMSIS-DSP: DSP library with over 60 functions in fixed-point (fractional q7, q15, q31) and single precision floating-point (32-bit) implementation&lt;/li>
+&lt;li>CMSIS-RTOS API: standardized programming interface for real-time operating systems for thread control, resource, and time management&lt;/li>
+&lt;li>CMSIS-SVD: System View Description XML files that contain the programmer’s view of a complete microcontroller system including peripherals&lt;/li>
+&lt;li>CMSIS-DAP&lt;/li>
+&lt;/ul>
+&lt;p>CMSIS-DAP의 DAP는 Coresight Debug Access Port의 약자이다. 구체적인 스펙은 역시 ARM에 사용자 등록을 하면 받을 수 있다. &lt;a href="https://silver.arm.com/browse/CMSISDAP" target="_blank" rel="noopener">&lt;a href="https://silver.arm.com/browse/CMSISDAP">https://silver.arm.com/browse/CMSISDAP&lt;/a>&lt;/a> 아래 그림은 3가지 mbed모듈에 어떻게 CMSIS-DAP가 연결이 되어 있는지를 보여준다.&lt;/p></description></item><item><title>mbed 분석</title><link>https://openmicrolab.com/mbed-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 11 Sep 2013 11:04:48 +0000</pubDate><guid>https://openmicrolab.com/mbed-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;h3 id="mbed">mbed&lt;/h3>
+&lt;p>mbed는 웹 기반의 컴파일러를 사용하는 보드로 2005년 ARM 사의 2엔지니어인 &lt;a href="http://mbed.org/users/simon/" target="_blank">Simon&lt;/a>(ARM R&amp;amp;D)과 &lt;a href="http://mbed.org/users/chris/" target="_blank">Chris&lt;/a>(ARM Support)가 “Rapid Prototyping for Microcontrollers”라는 비젼으로 시작을 했다. 이제는 오프라인 툴들로의 변환도 지원을 하고 활발한 커뮤니티를 가지고 있는데, 2007년 정도에 지금의 모습을 갖추었다고 한다&lt;a href="http://mbed.org/handbook/Founders-interview" target="_blank">&lt;a href="https://openmicrolab.com/images/2013/09/mbed_pinout.png">1&lt;/a>&lt;/a>. 현재 NXP의 ARM CortexM3 칩인 LPC1768을 사용한 모듈과 M0기반인 LPC11U24을 사용한 버젼 그리고 올 2013년에 Freescale의 MKL25Z128VLK4을 사용한  &lt;a href="http://mbed.org/blog/entry/mbed-enabled-Freescale-FRDM-KL25Z-board/" target="_blank">Freedom FRDM-KL25Z&lt;/a> 보드등 다양한 플랫폼(&lt;a href="http://mbed.org/platforms/" target="_blank">&lt;a href="http://mbed.org/platforms/">http://mbed.org/platforms/&lt;/a>&lt;/a>) 들이 있다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/09/mbed_pinout.png">&lt;img loading="lazy" class="size-full wp-image-2664 alignnone" alt="mbed_pinout" src="https://openmicrolab.com/images/2013/09/mbed_pinout.png" width="610" height="383" srcset="https://openmicrolab.com/images/2013/09/mbed_pinout.png 610w, https://openmicrolab.com/images/2013/09/mbed_pinout-300x188.png 300w" sizes="(max-width: 610px) 100vw, 610px" />&lt;/a>&lt;/p></description></item><item><title>Nuvoton의 Cortex M0 칩</title><link>https://openmicrolab.com/nuvoton%EC%9D%98-cortex-m0-%EC%B9%A9/</link><pubDate>Mon, 31 Jan 2011 04:48:49 +0000</pubDate><guid>https://openmicrolab.com/nuvoton%EC%9D%98-cortex-m0-%EC%B9%A9/</guid><description>
+&lt;p>&lt;FONT color=#474747>제가 알기로는 현시점(2011년 1월)에서 Cortex M0 코어 칩은 &lt;/FONT>&lt;A title="[http://www.nxp.com/]로 이동합니다." href="http://www.nxp.com/" target=_blank>&lt;FONT color=#3058d2>NXP&lt;/FONT>&lt;/A>&lt;FONT color=#474747>의 &lt;/FONT>&lt;A title="[http://www.nxp.com/#/homepage/cb=[t=p,p=/50809/71391]|pp=[t=pfp,i=71391]]로 이동합니다." href="http://www.nxp.com/#/homepage/cb=[t=p,p=/50809/71391]|pp=[t=pfp,i=71391]" target=_blank>&lt;FONT color=#3058d2>LPC11xxx 시리즈&lt;/FONT>&lt;/A>&lt;FONT color=#474747>와 &lt;/FONT>&lt;A title="[http://www.nuvoton.com/]로 이동합니다." href="http://www.nuvoton.com/" target=_blank>&lt;A title="[http://www.nuvoton.com/]로 이동합니다." href="http://www.nuvoton.com/" target=_blank>&lt;FONT color=#3058d2>Nuvoton&lt;/FONT>&lt;/A>&lt;/A>&lt;FONT color=#474747>의 &lt;/FONT>&lt;A title="[http://www.nuvoton.com/NuvotonMOSS/Community/ProductInfo.aspx?tp\_GUID=5dbf7d7a-b6df-4fe1-91c9-063449500ce7]로 이동합니다." href="http://www.nuvoton.com/NuvotonMOSS/Community/ProductInfo.aspx?tp\_GUID=5dbf7d7a-b6df-4fe1-91c9-063449500ce7" target=_blank>&lt;FONT color=#3058d2>NuMicro M051™ 시리즈&lt;/FONT>&lt;/A>&lt;FONT color=#474747>가 유일 합니다.&lt;br>
+Nuvoton은 대만에 본사가 있는데 Winbond로 부터 분사한 회사 같군요.&lt;br>
+칩들은 메모리와 페리페럴별로 다양한 라인업이 준비가 되어 있으며, 온라인상에서 제품을 선택을 할수 있는 &lt;/FONT>&lt;A title="[http://www.nuvoton.com/hq/enu/ProductAndSales/ProductLines/IndustrialIC/ARMMicrocontroller/ARMCortexTMM0/Pages/SelectGuide.aspx]로 이동합니다." href="http://www.nuvoton.com/hq/enu/ProductAndSales/ProductLines/IndustrialIC/ARMMicrocontroller/ARMCortexTMM0/Pages/SelectGuide.aspx" target=_blank>&lt;FONT color=#3058d2>On-line Products Slection Guide&lt;/FONT>&lt;/A>&lt;FONT color=#474747>도 잘 준비가 되어 있네요. &lt;/FONT>&lt;/p></description></item><item><title>mbed 개발자 구인 스펙</title><link>https://openmicrolab.com/mbed-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EA%B5%AC%EC%9D%B8-%EC%8A%A4%ED%8E%99/</link><pubDate>Fri, 28 Jan 2011 01:38:29 +0000</pubDate><guid>https://openmicrolab.com/mbed-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EA%B5%AC%EC%9D%B8-%EC%8A%A4%ED%8E%99/</guid><description>
+&lt;DIV style="LINE-HEIGHT: 1.2">
+&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="BORDER-COLLAPSE: collapse; FONT-FAMILY: Arial, Verdana, Tahoma, sans-serif; FONT-SIZE: 14px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: justify" class=pc-rtg-body>&lt;FONT size=2>&lt;B>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;br />
+&lt;H2 style="FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700">
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;SPAN style="FONT-SIZE: 9pt">&lt;SPAN style="FONT-FAMILY: Dotum">&lt;SPAN style="FONT-FAMILY: Gulim">﻿mbed 개발자 스펙인데, 세계적인 회사에서 어떤 스펙을 요구하는지 이해하고 국내 개발자들도 실력을 갖추면 좋지 않을 까 생각이 드네요.&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;br /> &lt;FONT size=3>&lt;SPAN style="FONT-SIZE: 9pt">&lt;SPAN style="FONT-FAMILY: Dotum">&lt;SPAN style="FONT-FAMILY: Gulim">구체적인 내용은 링크 참고 ==> &lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/FONT>&lt;A href="http://mbed.org/handbook/Jobs">&lt;A title="[http://mbed.org/handbook/Jobs]로 이동합니다." href="http://mbed.org/handbook/Jobs" target=_blank>&lt;SPAN style="FONT-SIZE: 12pt">&lt;SPAN style="FONT-SIZE: 9pt">&lt;SPAN style="FONT-FAMILY: Dotum">&lt;SPAN style="FONT-FAMILY: Gulim">http://mbed.org/handbook/Jobs&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/A>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;/B>&lt;/FONT>&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="BORDER-COLLAPSE: collapse; FONT-FAMILY: Arial, Verdana, Tahoma, sans-serif; FONT-SIZE: 14px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: justify" class=pc-rtg-body>&lt;FONT size=2>&lt;B>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;br /> &amp;nbsp;&lt;/H2>&lt;/DIV>&lt;br />
+&lt;pre>&lt;code>&amp;lt;DIV&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;H2 style=&amp;quot;FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700&amp;quot;&amp;gt;
+Ninja Microcontroller Embedded Software Engineer
+&amp;lt;/H2&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;SPAN style=&amp;quot;WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px&amp;quot; class=Apple-style-span&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px&amp;quot; class=Apple-style-span&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;H3 style=&amp;quot;FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700&amp;quot;&amp;gt;
+Job Requirements
+&amp;lt;/H3&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P&amp;gt;
+Essential Skills &amp;amp; Experience
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Excellent embedded programming skills in C/C++
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience using MCUs
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience porting and working with stacks (OS/RTOS, TCP/IP, USB, &amp;amp;#8230;)
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience with compilers, build tools and toolchains, Linux
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience with version control (svn, git, github)
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Good university degree in a relevant subject
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+A desire to be involved in mbed and help deliver its goals
+&amp;lt;/LI&amp;gt;
+&amp;lt;/UL&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P&amp;gt;
+Desirable Skills &amp;amp; Experience
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience developing substantial embedded applications
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Good understanding of electronics, circuit design and fault finding
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience with Assembly, Python, Other languages
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience working with open source projects
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Interesting portfolio of projects
+&amp;lt;/LI&amp;gt;
+&amp;lt;/UL&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;
+&amp;lt;br /&amp;gt; &amp;lt;SPAN style=&amp;quot;WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px&amp;quot; class=Apple-style-span&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px&amp;quot; class=Apple-style-span&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;H2 style=&amp;quot;FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700&amp;quot;&amp;gt;
+Embedded Software and Electronics Industrial Placements
+&amp;lt;/H2&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;SPAN style=&amp;quot;WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px&amp;quot; class=Apple-style-span&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: 'Arial, sans-serif', sans-serif; FONT-SIZE: 13px&amp;quot; class=Apple-style-span&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;H3 style=&amp;quot;FONT-FAMILY: 'Trebuchet MS', sans-serif; FONT-WEIGHT: 700&amp;quot;&amp;gt;
+Job Requirements
+&amp;lt;/H3&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P&amp;gt;
+You should have completed at least two years at a university studying a course with a significant electronics or software engineering element to it.
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P&amp;gt;
+Desirable Skills &amp;amp; Experience
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Embedded programming skills in C/C++
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Experience developing embedded applications for microcontrollers
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+Hardware and PCB design, circuit level fault finding and debug
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+An understanding of electronic circuit design
+&amp;lt;/LI&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;LI&amp;gt;
+A keen general interest in software engineering, computer science and embedded electronics
+&amp;lt;/LI&amp;gt;
+&amp;lt;/UL&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;
+&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12pt&amp;quot;&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/SPAN&amp;gt;&amp;lt;/A&amp;gt;
+&amp;lt;/DIV&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code>&lt;/pre></description></item><item><title>Cortex Debug Connector</title><link>https://openmicrolab.com/cortex-%EB%94%94%EB%B2%84%EA%B7%B8-%EC%BD%98%EB%84%A5%ED%84%B0/</link><pubDate>Thu, 04 Nov 2010 11:15:30 +0000</pubDate><guid>https://openmicrolab.com/cortex-%EB%94%94%EB%B2%84%EA%B7%B8-%EC%BD%98%EB%84%A5%ED%84%B0/</guid><description>
+&lt;p>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="BORDER-COLLAPSE: collapse; FONT-FAMILY: verdana, sans-serif; FONT-SIZE: 13px" class=Apple-style-span>&lt;/p>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+&lt;B>ARM Standard JTAG 콘넥터는 2.54 피치이며,&lt;/B>
+&lt;/P>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+&lt;B>Cortex debug 콘넥터와 Cortex debug + ETM 콘넥터는 1.27 피치입니다.&lt;/B>
+&lt;/P>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+&lt;B>&lt;/B>&amp;nbsp;
+&lt;/P>
+&lt;UL style="PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: square; MARGIN: 6px 0px 16px 28px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+10-pin (0.05&amp;#8243;) &amp;#8211; Cortex Debug Connector
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+20-pin (0.10&amp;#8243;) &amp;#8211; ARM Standard JTAG Connector
+&lt;/LI>
+&lt;br />
+&lt;LI style="PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px">
+20-pin (0.05&amp;#8243;) &amp;#8211; Cortex Debug+ETM Connector
+&lt;/LI>
+&lt;/UL>&lt;MAP name=headerimage>&lt;/MAP>
+&lt;DIV align=center>&lt;IMG style="BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none" class=center alt="Cortex Debug and Trace Connectors" src="http://www.keil.com/coresight/coresightconnectors.jpg" width=400 height=273 useMap=#headerimage>
+&lt;DIV style="FONT-SIZE: 8pt" align=center>_Debug and Trace Connectors for Cortex-M devices._&lt;/DIV>&lt;/DIV>
+&lt;H3 style="PADDING-BOTTOM: 0px; FONT: bold 13pt verdana, sans-serif; MARGIN-BOTTOM: 0px; PADDING-TOP: 15px">
+Cortex Debug Connector (10-pin)&lt;A style="COLOR: rgb(0,102,153)" name=10pin>&lt;/A>
+&lt;/H3>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px" align=center>&lt;IMG style="BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none" alt="Cortex Debug and JTAG Pin Identification" src="http://www.keil.com/coresight/cortex10pin.gif" />
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+A 10-pin header&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.samtec.com/ftppub/pdf/FTSH_MT.PDF" target=_blank>(Samtec FTSH-105-01)&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>is specified with dimensions: 0.25&amp;#8243; x 0.188&amp;#8243; (6.35mm x 4.78mm).
+&lt;/P>
+&lt;H3 style="PADDING-BOTTOM: 0px; FONT: bold 13pt verdana, sans-serif; MARGIN-BOTTOM: 0px; PADDING-TOP: 15px">
+ARM Standard JTAG Connector (20-pin)&lt;A style="COLOR: rgb(0,102,153)" name=20pinjtag>&lt;/A>
+&lt;/H3>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px" align=left>&lt;IMG style="BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none" hspace=135 alt="Cortex Debug and JTAG Pin Identification" src="http://www.keil.com/coresight/jtag20pin.gif">&lt;/P>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+Dimensions of the ARM JTAG Connector are 1.29&amp;#8243; x 0.722&amp;#8243; (33mm x 18.5mm).
+&lt;/P>
+&lt;H3 style="PADDING-BOTTOM: 0px; FONT: bold 13pt verdana, sans-serif; MARGIN-BOTTOM: 0px; PADDING-TOP: 15px">
+Cortex Debug+ETM Connector (20-pin)&lt;A style="COLOR: rgb(0,102,153)" name=20pin>&lt;/A>
+&lt;/H3>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px" align=left>&lt;IMG style="BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none" hspace=130 alt="Cortex Debug and JTAG Pin Identification" src="http://www.keil.com/coresight/cortex20pin.gif">&lt;/P>
+&lt;P style="PADDING-BOTTOM: 0px; MARGIN: 16px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px">
+A 20-pin header&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>&lt;A style="COLOR: rgb(0,102,153)" href="http://www.samtec.com/ftppub/pdf/FTSH_MT.PDF" target=_blank>(Samtec FTSH-110-01)&lt;/A>&lt;SPAN class=Apple-converted-space>&amp;nbsp;&lt;/SPAN>is specified with dimensions: 0.50&amp;#8243; x 0.188&amp;#8243; (12.70mm x 4.78mm).
+&lt;/P>&lt;/SPAN>&lt;/SPAN>
+&lt;p>출처 : &lt;a href="http://www.keil.com/coresight/connectors.asp">http://www.keil.com/coresight/connectors.asp&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ch340 on OpenMicroLab</title><link>https://openmicrolab.com/tags/ch340/</link><description>Recent content in Ch340 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 16 Jun 2017 01:39:01 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ch340/index.xml" rel="self" type="application/rss+xml"/><item><title>CH340 USB to Serial driver</title><link>https://openmicrolab.com/ch340-usb-serial-driver/</link><pubDate>Fri, 16 Jun 2017 01:39:01 +0000</pubDate><guid>https://openmicrolab.com/ch340-usb-serial-driver/</guid><description>
+&lt;p>WCH라는 중국회사의 CH340시리즈의 맥용 USB to Serial Driver.&lt;/p>
+&lt;p>&lt;a href="http://www.wch.cn/download/CH341SER_MAC_ZIP.html" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.wch.cn/download/CH341SER_MAC_ZIP.html">http://www.wch.cn/download/CH341SER_MAC_ZIP.html&lt;/a>&lt;/a>&lt;/p>
+&lt;p>만약 설치에 문제가 발생하면, 다음과 같은 작업을 한후 다시 설치한다.&lt;/p>
+&lt;ol>
+&lt;li>기존 드라이버 제거&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>sudo rm -rf /System/Library/Extensions/usb.kext&lt;/code>&lt;/p>
+&lt;p>&lt;code>sudo rm -rf /Library/Extensions/usbserial.kext&lt;/code>&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>맥을 재시작&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>드라이버 패키지 파일 재설치&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>재부팅&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

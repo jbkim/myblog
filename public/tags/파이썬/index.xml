@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>파이썬 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/</link><description>Recent content in 파이썬 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 02 May 2014 08:56:22 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>파이썬 Serial 라이브러리 모듈 설치</title><link>https://openmicrolab.com/%ED%8C%8C%EC%9D%B4%EC%8D%AC-serial-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%AA%A8%EB%93%88-%EC%84%A4%EC%B9%98/</link><pubDate>Fri, 02 May 2014 08:56:22 +0000</pubDate><guid>https://openmicrolab.com/%ED%8C%8C%EC%9D%B4%EC%8D%AC-serial-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EB%AA%A8%EB%93%88-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;h3 id="pyserial-다운로드">PySerial 다운로드&lt;/h3>
+&lt;p>PySerial 2.6 from &lt;a href="https://pypi.python.org/pypi/pyserial">https://pypi.python.org/pypi/pyserial&lt;/a>&lt;/p>
+&lt;p>pyserial-2.6.tar.gz을 받아서 압축을 푼다.&lt;/p>
+&lt;blockquote>
+&lt;p>$ tar -xzf pyserial-2.6.tar.gz&lt;/p>&lt;/blockquote>
+&lt;h3 id="설치">설치&lt;/h3>
+&lt;blockquote>
+&lt;p>sudo python setup.py install&lt;/p>&lt;/blockquote></description></item></channel></rss>

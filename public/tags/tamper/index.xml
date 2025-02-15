@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tamper on OpenMicroLab</title><link>https://openmicrolab.com/tags/tamper/</link><description>Recent content in Tamper on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 11 Feb 2016 02:41:07 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/tamper/index.xml" rel="self" type="application/rss+xml"/><item><title>웹 디버깅 툴</title><link>https://openmicrolab.com/%EC%9B%B9-%EB%94%94%EB%B2%84%EA%B9%85-%ED%88%B4/</link><pubDate>Thu, 11 Feb 2016 02:41:07 +0000</pubDate><guid>https://openmicrolab.com/%EC%9B%B9-%EB%94%94%EB%B2%84%EA%B9%85-%ED%88%B4/</guid><description>
+&lt;p>웹(HTTP) 디버깅용 툴&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.charlesproxy.com/" target="_blank">Charles&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.telerik.com/fiddler" target="_blank">Fiddler&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.tuffcode.com/" target="_blank">Tuffcode&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://dutzi.github.io/tamper/" target="_blank">Tamper&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>물론 네트워크 패킷을 캡처하는 툴로 &lt;a href="https://www.wireshark.org/" target="_blank">wireshark&lt;/a>도 좋다. 😉&lt;/p></description></item></channel></rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NRF51822 on OpenMicroLab</title><link>https://openmicrolab.com/tags/nrf51822/</link><description>Recent content in NRF51822 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 02 Jan 2017 13:26:38 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/nrf51822/index.xml" rel="self" type="application/rss+xml"/><item><title>Mac OS X에 nRF51 개발 환경 설정하기</title><link>https://openmicrolab.com/mac-os-x%EC%97%90-nrf51-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 02 Jan 2017 13:26:38 +0000</pubDate><guid>https://openmicrolab.com/mac-os-x%EC%97%90-nrf51-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;strong>1. gcc 설치&lt;/strong>&lt;br>
+&lt;a href="https://launchpad.net/gcc-arm-embedded/+download" target="_blank" rel="noopener">여기&lt;/a>에서 다운로드 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>$ mkdir /usr/local/gcc-arm&lt;br>
+$ tar -xjf gcc-arm-none-eabi-5_4-2016q3-20160926-mac.tar.bz2 -C /usr/local/gcc-arm&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>2. nRF5x-Command-Line-Tools-OSX&lt;/strong>&lt;br>
+&lt;a href="http://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank" rel="noopener">여기&lt;/a>에서 다운로드 한다.&lt;br>
+/usr/local/ 에 nrfjprog와 mergehex를 copy한다.&lt;/p>
+&lt;p>&lt;strong>3. .bash_profile 수정&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/nrfjprog:$PATH&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>4. Segger Software and documentation pack for Mac OS X 설치&lt;/strong>&lt;br>
+&lt;a href="https://www.segger.com/jlink-software.html" target="_blank" rel="noopener">여기&lt;/a>에 패키지 파일이 있다.&lt;/p>
+&lt;p>&lt;strong>5. SDK설치 및 Makefile.posix 파일 수정&lt;/strong>&lt;br>
+&lt;a href="http://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank" rel="noopener">여기&lt;/a> 또는 &lt;a href="http://developer.nordicsemi.com/" target="_blank" rel="noopener">여기&lt;/a>에서 SDK를 다운로드 해서 원하는 곳에서 압축을 푼다.&lt;br>
+components/toolchain/gcc/Makefile.posix 이 파일을 gcc 버전에 맞게 수정한다.&lt;/p>
+&lt;blockquote>
+&lt;p>GNU_INSTALL_ROOT := /usr/local/gcc-arm/gcc-arm-none-eabi-5_4-2016q3&lt;br>
+GNU_VERSION := 5.4.1&lt;br>
+GNU_PREFIX := arm-none-eabi&lt;/p></description></item></channel></rss>

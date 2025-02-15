@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>맥 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%A7%A5/</link><description>Recent content in 맥 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 11 Jul 2017 05:35:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%A7%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>맥에서 키보드 단축키 추가하기</title><link>https://openmicrolab.com/%EB%A7%A5%EC%97%90%EC%84%9C-%ED%82%A4%EB%B3%B4%EB%93%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link><pubDate>Tue, 11 Jul 2017 05:35:21 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5%EC%97%90%EC%84%9C-%ED%82%A4%EB%B3%B4%EB%93%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h4 id="automator-설정">Automator 설정&lt;/h4>
+&lt;ul>
+&lt;li>Automator를 실행후 “서비스”를 선택한다.&lt;img loading="lazy" class="wp-image-3971 aligncenter" src="https://res.cloudinary.com/openmicrolab/image/upload/v1499751111/automator_f0uft2.png" width="492" height="440" />&lt;/li>
+&lt;li>다음 그림과 같이 실행으로 필터링을 해서 “응용 프로그램 실행”을 선택 후 우측 창에 드래깅한다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_836/v1499751111/automator2_giqqj8.png">&lt;img loading="lazy" class="aligncenter wp-image-3972" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_836/h_812,w_1024/v1499751111/automator2_giqqj8.png" alt="" width="599" height="475" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>서비스가 받는 항목에는 “입력없음”으로 설정후 실행할 프로그램을 선택후 저장한다.&lt;/li>
+&lt;/ul>
+&lt;h4 id="키보드-단축키-설정">키보드 단축키 설정&lt;/h4>
+&lt;p>시스템 환경설정 &amp;gt; 키보드 &amp;gt; 단축키 &amp;gt; 서비스를 선택후 “일반” 항목에 좀전에 추가한 서비스를 선택후 단축키 설정을 한다.&lt;/p>
+&lt;img loading="lazy" class="wp-image-3973 aligncenter" src="https://res.cloudinary.com/openmicrolab/image/upload/v1499751110/keyboard_iagn7i.png" width="640" height="569" /></description></item><item><title>맥 OS에서 AVR 툴 체인 설치</title><link>https://openmicrolab.com/%EB%A7%A5-os%EC%97%90%EC%84%9C-avr-%ED%88%B4-%EC%B2%B4%EC%9D%B8-%EC%84%A4%EC%B9%98/</link><pubDate>Tue, 13 Sep 2016 06:56:05 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5-os%EC%97%90%EC%84%9C-avr-%ED%88%B4-%EC%B2%B4%EC%9D%B8-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;p>ruby -e “$(curl -fsSL &lt;a href="https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;amp;#8221;">https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;amp;#8221;&lt;/a>&lt;br>
+brew tap osx-cross/avr&lt;br>
+brew install avr-gcc&lt;br>
+brew install avrdude –with-usb&lt;/p>
+&lt;p>참고&lt;/p>
+&lt;p>– &lt;a href="https://github.com/osx-cross/homebrew-avr">https://github.com/osx-cross/homebrew-avr &lt;/a>&lt;/p>
+&lt;p>– &lt;a href="http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/" target="_blank" rel="noopener">&lt;a href="http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/">http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>맥 ISO 이미지를 부팅용 USB로 복사하기</title><link>https://openmicrolab.com/%EB%A7%A5-iso-%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%EB%B6%80%ED%8C%85%EC%9A%A9-usb%EB%A1%9C-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 06 Jul 2016 08:18:53 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5-iso-%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%EB%B6%80%ED%8C%85%EC%9A%A9-usb%EB%A1%9C-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;strong>ISO파일을 img파일로 변환&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>hdiutil convert -format UDRW -o OSX-Mavericks.img OSX-Mavericks.iso&lt;/p>&lt;/blockquote>
+&lt;p>OS X 는 자동적으로 확장자를 .dmg 로 한다. 즉 OSX-Mavericks.img.dmg&lt;/p>
+&lt;p>diskutil list를 실행하여 USB 메모리 스틱이 어떤 디바이스에 할당됐는지 확인하고 다음과 같이 unmount를 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>diskutil unmountDisk /dev/disk2&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>디스크 이미지를 복사&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>sudo dd if=OSX-Mavericks.img of=/dev/rdisk2 bs=1m&lt;/p>&lt;/blockquote>
+&lt;p>Disk Utility.app’ 를 실행하여 드라이버를 unmount&lt;/p>
+&lt;p>diskutil eject /dev/disk2 를 실행하고 USB 메모리 스틱을 물리적으로 분리&lt;/p>
+&lt;p>&lt;em>*위 글에서 OSX-Mavericks.iso가 맥용 이미지 파일이고, USB 메모리 스틱은 /dev/disk2에 있다고 가정&lt;/em>&lt;/p></description></item><item><title>NXP LPC 시리즈 맥에서 개발 환경 – Flash Magic</title><link>https://openmicrolab.com/nxp-lpc-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%A7%A5%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-flash-magic/</link><pubDate>Fri, 23 May 2014 07:29:47 +0000</pubDate><guid>https://openmicrolab.com/nxp-lpc-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%A7%A5%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-flash-magic/</guid><description>
+&lt;p>NXP의 LPC 시리즈는 이클립스 기반의 툴인 &lt;a href="http://www.lpcware.com/lpcxpresso/home" target="_blank">LPCExpresso&lt;/a>를 제공한다. 대부분의 개발 환경은 &lt;a href="http://openmicrolab.com/lpc810-arm-cortexm0-project-1/" target="_blank">지난 포스팅&lt;/a>을 참고. 따라서 Mac에서도 윈도우즈와 동일한 개발환경을 구축할 수 있다.  LPC 시리즈 칩 역시 시리얼 부트로더가 내장이 되어 있어서 쉽게 flash를 write할 수 있으며, &lt;a href="http://www.flashmagictool.com/" target="_blank">FlashMagic&lt;/a>이라는 툴을 사용한다. 원래 윈도우 기반으로 개발된 툴을 Mac에 Wine을 사용하여 포팅이 되어 있다. 그래서 시리얼 포트도 COM1, COM2 이런 식으로 표시가 된다.&lt;br>
+&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt="FlashMagic"
+class="image_figure image_external image_unprocessed"
+src="http://openmicrolab.cdn2.cafe24.com/FlashMagic_program.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;p>Mac에서 잡힌 시리얼 포트를 FlashMagic이 구동이 될때 COM1, COM2.. 으로 매핑이 되는데, 이것을 확인해서 해당되는 COM 포트를 넣어주면 된다. 매핑된 포트를 찾는 방법은 다음의 그림을 참고… 대개 serial to USB 컨버터를 사용하는데, Mac에서는 cu.*의 형태와 tty.*의 형태가 잡히는데, *&lt;em>cu.&lt;em>의 형태로 잡힌 포트를 사용하면 된다.&lt;/em>&lt;/em>&lt;br>
+&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt="FlashMagic 포트찾기"
+class="image_figure image_external image_unprocessed"
+src="http://openmicrolab.cdn2.cafe24.com/FlashMagic.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;br>
+즉 명령어는&lt;/p></description></item></channel></rss>

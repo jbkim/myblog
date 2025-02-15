@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CoolTerm on OpenMicroLab</title><link>https://openmicrolab.com/tags/coolterm/</link><description>Recent content in CoolTerm on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 12 Jan 2016 07:09:46 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/coolterm/index.xml" rel="self" type="application/rss+xml"/><item><title>CoolTerm에 custom baudrate 추가하는 법</title><link>https://openmicrolab.com/coolterm%EC%97%90-custom-baudrate-%EC%B6%94%EA%B0%80%ED%95%98%EB%8A%94-%EB%B2%95/</link><pubDate>Tue, 12 Jan 2016 07:09:46 +0000</pubDate><guid>https://openmicrolab.com/coolterm%EC%97%90-custom-baudrate-%EC%B6%94%EA%B0%80%ED%95%98%EB%8A%94-%EB%B2%95/</guid><description>
+&lt;p>Mac OS X에서 유일하게 사용하고 있는 시리얼 터미널 프로그램인 &lt;a href="http://freeware.the-meiers.org/" target="_blank">CoolTerm&lt;/a>은 무료인데다가 웬만한 기능은 다있어서 개발할때 주로 사용을 한다. 그런데 일반적인 baudrate가 아닌 경우에 코드를 수정해서 테스트를 했는데 그럴 필요가 없다. 왜냐면 CoolTerm이 custom baudrate를 지원한다.&lt;/p>
+&lt;h3 id="coolterm에-custom-baudrate-추가하는-법">&lt;strong>CoolTerm에 custom baudrate 추가하는 법&lt;/strong>&lt;/h3>
+&lt;p>CoolTerm이 설치되어 있는 폴더에 &lt;strong>baudrates.ini&lt;/strong>파일을 하나 만들고 필요한 baudrate를 입력한다. 즉 다음과 같이 입력을 하면, 기존에 설정된 baudrate에 추가로 입력된 baudrate가 생성이 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>100&lt;br>
+110&lt;br>
+150&lt;br>
+128000&lt;br>
+153600&lt;br>
+256000&lt;br>
+460800&lt;br>
+921600&lt;/p></description></item></channel></rss>

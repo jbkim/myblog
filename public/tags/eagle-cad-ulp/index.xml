@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eagle CAD Ulp on OpenMicroLab</title><link>https://openmicrolab.com/tags/eagle-cad-ulp/</link><description>Recent content in Eagle CAD Ulp on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 18 Jun 2012 11:12:14 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/eagle-cad-ulp/index.xml" rel="self" type="application/rss+xml"/><item><title>Eagle CAD로 작업한 PCB에 이미지 파일 넣기</title><link>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EC%9E%91%EC%97%85%ED%95%9C-pcb%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%84%A3%EA%B8%B0/</link><pubDate>Mon, 18 Jun 2012 11:12:14 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EC%9E%91%EC%97%85%ED%95%9C-pcb%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%84%A3%EA%B8%B0/</guid><description>
+&lt;p>Eagle CAD로 PCB작업을 하다보면 회사 로고 같은 이미지를 PCB에 넣을 때가 있다.&lt;/p>
+&lt;p>방법은 다음과 같다.&lt;/p>
+&lt;p>1. 원하는 그림을 그림판에서 불러와서 단색 BMP로 저장을 한다.&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>새로 프로젝트를 만들고, 보드 파일을 연후에 , File &amp;gt; Run &amp;gt; “import-bmp.ulp”을 실행한다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>윈도우가 하나 뜨면 OK버튼을 누르고, BMP 파일을 불러온다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>단색 BMP로 저장을 했기 때문에 다음과 같이 사용할 색깔이 2가지 색으로 나온다.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>   검적색으로 된 부분만 필요하므로 검정색만 선택을 한다.&lt;/p>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.137C073E4FDF03610C6CBD.png" class="aligncenter" width="356" height="166" filename="eagle_bmp_1.png" filemime="image/jpeg" style="""" />
+&lt;/p></description></item><item><title>Eagle CAD 3D 모델 만들기</title><link>https://openmicrolab.com/eagle-cad-3d-%EB%AA%A8%EB%8D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Wed, 25 Apr 2012 04:20:42 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad-3d-%EB%AA%A8%EB%8D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>
+&lt;p>Eagle CAD에는 많은 ULP(User Language Program)이 존재한다. 일종의 C-like 프로그램으로 Eagle CAD의 데이터를 가지고 어떤 작업을 할 수 있게 해준다. 예를 들면 BOM를 뽑아주는 ULP 등…&lt;/p>
+&lt;p>Eagle 홈페이지에 사용자가 자신이 작업한 ULP를 올릴 수 도 있다. &lt;/p>
+&lt;p>&lt;a href="http://www.cadsoftusa.com/downloads/ulps?language=en">http://www.cadsoftusa.com/downloads/ulps?language=en&lt;/a>&lt;/p>
+&lt;p>스위스의 &lt;a href="http://eagleup.wordpress.com/about/" target="_blank" class="tx-link">Jerome Lamy&lt;/a> 라는 엔지니어는  Eagle CAD에서 작업한 PCB를 3D로 모델링해 주는 ULP를 만들었다.&lt;/p>
+&lt;p>이것을 하기위해서는 다음과 같은 s/w가 필요하다.&lt;/p>
+&lt;ul style="list-style-type: disc; ">
+&lt;li>
+Eagle CAD : 당연히 이게 필요하고&amp;#8230;.
+&lt;/li>
+&lt;li>
+Google Sketchup:&amp;nbsp;&lt;a href="http://sketchup.google.com/intl/en/download/">http://sketchup.google.com/intl/en/download/&lt;/a>
+&lt;/li>
+&lt;li>
+ImageMagic:&amp;nbsp;&lt;a href="http://www.imagemagick.org/script/index.php">http://www.imagemagick.org/script/index.php&lt;/a>&amp;nbsp;여기에서 Binary Releases에서 OS에 맞는 것을 설치
+&lt;/li>
+&lt;li>
+Eagleup ULP:&amp;nbsp;&lt;a href="https://sites.google.com/site/eagleupwarehouse/eagleUp4.3.zip?attredirects=0&amp;d=1">https://sites.google.com/site/eagleupwarehouse/eagleUp4.3.zip?attredirects=0&amp;d=1&lt;/a>&amp;nbsp;
+&lt;/li>
+&lt;/ul>
+&lt;div>
+위 s/w를 다운로드하고 인스톨한다.
+&lt;/div>
+&lt;div>
+Eagleup ULP 압축 파일을 풀면 아래 그림의 폴더와 같다.
+&lt;/div>
+&lt;div>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.185C1A344F977564062E55.PNG" class="aligncenter" width="173" height="138" filename="eagleup.PNG" filemime="image/jpeg" style="""" />
+&lt;/p></description></item></channel></rss>

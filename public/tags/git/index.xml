@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on OpenMicroLab</title><link>https://openmicrolab.com/tags/git/</link><description>Recent content in Git on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 21 Aug 2018 01:43:59 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Resin.io 사용법</title><link>https://openmicrolab.com/resin-io-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Tue, 21 Aug 2018 01:43:59 +0000</pubDate><guid>https://openmicrolab.com/resin-io-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>&lt;a href="https://resin.io/" target="_blank" rel="noopener noreferrer">Resin.io&lt;/a>의 홈페이지에는 다음과 같이 자신들의 서비스를 설명을 한다.&lt;/p>
+&lt;blockquote>
+&lt;p class="header__subtitle">
+Resin.io brings the benefits of Linux containers to the IoT. Develop iteratively, deploy safely, and manage at scale.
+&lt;/p>&lt;/blockquote>
+&lt;p class="header__subtitle">
+&lt;span style="color: #0000ff;">&lt;strong>Linux containers to the IoT&amp;#8230; 리눅스 기반의 IoT 디바이스를 위한 도커같은 서비스 일 것 같다.&lt;/strong>&lt;/span>
+&lt;/p>
+&lt;h2 class="header__subtitle" id="resinio-사용법">Resin.io 사용법&lt;/h2>
+&lt;h3 id="account-setup">Account setup&lt;/h3>
+&lt;p>resin.io 에 계정을 생성후 SSH 키 설정하여 resin에 저장을 하는데,  깃헙계정으로 로그인 할 경우 깃헙계정에 저장된 SSH 키 중 하나를 선택한다.&lt;/p>
+&lt;h3 id="ssh-키-확인">SSH 키 확인&lt;/h3>
+&lt;blockquote>
+&lt;p>ls -al ~/.ssh&lt;/p></description></item><item><title>git 관련 팁 – .gitignore</title><link>https://openmicrolab.com/git-%EA%B4%80%EB%A0%A8-%ED%8C%81-gitignore/</link><pubDate>Fri, 13 Feb 2015 01:06:53 +0000</pubDate><guid>https://openmicrolab.com/git-%EA%B4%80%EB%A0%A8-%ED%8C%81-gitignore/</guid><description>
+&lt;p>.gitignore를 설정 전에 원하지 않는 파일(예를 들면 소스가 아닌 컴파일된 obj 파일 같은..)이 repositary에 add/initilized된 경우는 cache를 지우고 tracking을 다시 설정해야 한다.&lt;br>
+먼저 필요한 파일들을 commit한후 다음의 명령어를 실행한다.&lt;br>
+cache 삭제&lt;/p>
+&lt;blockquote>
+&lt;p>git rm -r –cached .&lt;/p>&lt;/blockquote>
+&lt;p>다시 tracking 하도록 설정&lt;/p>
+&lt;blockquote>
+&lt;p>git add .&lt;/p>&lt;/blockquote>
+&lt;p>그 다음 commit&lt;/p>
+&lt;blockquote>
+&lt;p>git commit -m “.gitignore is now working”&lt;/p>&lt;/blockquote></description></item><item><title>윈도우 환경에서의 오픈소스 프로그래밍 툴 설치</title><link>https://openmicrolab.com/%EC%9C%88%EB%8F%84%EC%9A%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%88%B4-%EC%84%A4%EC%B9%98/</link><pubDate>Fri, 22 Aug 2014 04:02:24 +0000</pubDate><guid>https://openmicrolab.com/%EC%9C%88%EB%8F%84%EC%9A%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%88%B4-%EC%84%A4%EC%B9%98/</guid><description>
+&lt;p>원래 맥(Mac)을 사용하기 때문에 윈도우즈는 은행업무를 할때나 HWP 파일을 작성할때 빼고는 사용하지 않는다. 그런데 배포할 프로그램이 3가지 OS (Mac, Linux, Win)인지라 윈도우 환경에서도 개발툴의 설치가 필요하다. 사실 코드의 수정 보다도 이런 작업이 더 어려울 수 있는데, &lt;a href="https://en.wikipedia.org/wiki/Software_deployment" target="_blank">software deployment&lt;/a>(한글로는 뭔지 잘….)를 위해서는 필요한 작업이고……..&lt;/p>
+&lt;p>내용은 윈도우환경에서 리눅스 개발환경 설치하기 정도가 될 것 같다. 리눅스 버젼의 배포판을 위해 가상머신에 우분투도 설치해서 설치패키지를 만들어 봤는데, 생각보다 깔끔하고 문제 없이 동작한다. 개발용이 아닌 한글을 사용한 워드, PPT작업등의 일반 업무 사용을 위해서는 어떨지 살짝 궁금하기도 했다는…&lt;/p></description></item><item><title>git 사용법</title><link>https://openmicrolab.com/git-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Tue, 24 Jan 2012 10:08:10 +0000</pubDate><guid>https://openmicrolab.com/git-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>git에 대한 위키피디아 문서&lt;br>
+&lt;a href="http://en.wikipedia.org/wiki/Git_(software">http://en.wikipedia.org/wiki/Git_(software)&lt;/a>&lt;/p>
+&lt;p>git 사용자 설명서: 잘 정리된 메뉴얼&lt;br>
+&lt;a href="http://namhyung.springnote.com/pages/3132772">http://namhyung.springnote.com/pages/3132772&lt;/a>&lt;br>
+ &lt;br>
+git 튜토리얼 메뉴얼 페이지&lt;br>
+&lt;a href="http://www.funit.net/git">http://www.funit.net/git&lt;/a>&lt;/p>
+&lt;p>github에 대한 글: Github, 코드 개발 기반 소셜 네트웍&lt;br>
+&lt;a href="http://channy.creation.net/blog/626">http://channy.creation.net/blog/626&lt;/a>&lt;/p>
+&lt;p>git는 분산 버전 관리 시스템이며 리눅스 커널 개발에 사용하기 위해 리누스 토발츠가 처음 디자인과 개발을 하기 시작했다.&lt;br>
+가장 큰 장점인 수정 내용을 매번 마스터 저장소에 커밋해서 올리는 대신에 저장소 전체의 로컬 복사본을 사용한다는 것이다. git을 사용하면 각 개발자가 작업을 진행할 수 있는 자신만의 샌드박스를 가지고 있으며, 작업을 마친후에 변경내역을 마스터 저장소에 push  할 수 있다.&lt;/p></description></item></channel></rss>

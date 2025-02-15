@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vector Font on OpenMicroLab</title><link>https://openmicrolab.com/tags/vector-font/</link><description>Recent content in Vector Font on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 26 Jan 2018 02:50:14 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/vector-font/index.xml" rel="self" type="application/rss+xml"/><item><title>Eagle CAD 실크 폰트를 한꺼번에 변경하기</title><link>https://openmicrolab.com/eagle-cad-%EC%8B%A4%ED%81%AC-%ED%8F%B0%ED%8A%B8%EB%A5%BC-%ED%95%9C%EA%BA%BC%EB%B2%88%EC%97%90-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 26 Jan 2018 02:50:14 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad-%EC%8B%A4%ED%81%AC-%ED%8F%B0%ED%8A%B8%EB%A5%BC-%ED%95%9C%EA%BA%BC%EB%B2%88%EC%97%90-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>PCB실크를 하나 하나 수정하기는 귀찮은 작업이다. 따라서 다음과 같이 커맨드로 한번에 수정이 가능하다.&lt;/p>
+&lt;ol>
+&lt;li>Smash all parts.&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>display none tOrigin bOrigin;&lt;br>
+group all;&lt;br>
+smash (&amp;gt;0 0);&lt;br>
+display last;&lt;/p>&lt;/blockquote>
+&lt;ol start="2">
+&lt;li>폰트 변경하기 – 사이즈는 1.27mm, 벡터 폰트, ratio 10%&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>display none tNames bNames;&lt;br>
+group all;&lt;br>
+change size 1.27 (&amp;gt;0 0);&lt;br>
+change font vector (&amp;gt;0 0);&lt;br>
+change ratio 10 (&amp;gt;0 0);&lt;br>
+display last;&lt;/p>&lt;/blockquote>
+&lt;p>여기서 “(&amp;gt;0 0)” 는 origin에서 Control-LeftClick 수행한다.&lt;/p></description></item></channel></rss>

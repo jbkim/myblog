@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NXP on OpenMicroLab</title><link>https://openmicrolab.com/tags/nxp/</link><description>Recent content in NXP on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 10 Aug 2018 04:10:27 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/nxp/index.xml" rel="self" type="application/rss+xml"/><item><title>NXP MCUXpresso 사용법</title><link>https://openmicrolab.com/nxp-mcuxpresso-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Fri, 10 Aug 2018 04:10:27 +0000</pubDate><guid>https://openmicrolab.com/nxp-mcuxpresso-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>MCU 벤더들에서 제공하는 무료툴들은 대부분 이클립스 기반의 툴을 수정해서 제공을 한다. 그래서 하나의 툴에 익숙하면 다른 툴도 쉽게 쓸 수 있지만 다른 기능들은 메뉴얼을 보면서 익혀야 한다. NXP사의 MCUXpresso도 약간 특이한 점이 있어서 정리.&lt;/p>
+&lt;p>&lt;strong>1. 먼저 회원가입을 하고, &lt;a href="https://mcuxpresso.nxp.com/en/dashboard" target="_blank" rel="noopener noreferrer">&lt;a href="https://mcuxpresso.nxp.com/en/dashboard">https://mcuxpresso.nxp.com/en/dashboard&lt;/a>&lt;/a> 에서 보드나 칩을 선택해서 설정을 한후 SDK파일을 다운로드 받는다.&lt;/strong>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4376" src="https://res.cloudinary.com/openmicrolab/image/upload/v1533873657/mcuxpresso_0_qtna5m.png" width="732" height="667" />
+&lt;p>&lt;strong>2. MCUXpress에서 Installed SDKs에 이 파일을 Drag &amp;amp; Drop한 후 좌측의 Import SDK examples를 클릭한다.&lt;/strong>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4375" src="https://res.cloudinary.com/openmicrolab/image/upload/v1533873657/mcuxpresso_1_damxra.png" width="774" height="578" />
+&lt;p>&lt;strong>3. 보드, 칩을 선택하고 Next 버튼을 클릭&lt;/strong>&lt;/p></description></item><item><title>NXP LPC 시리즈 맥에서 개발 환경 – Flash Magic</title><link>https://openmicrolab.com/nxp-lpc-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%A7%A5%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-flash-magic/</link><pubDate>Fri, 23 May 2014 07:29:47 +0000</pubDate><guid>https://openmicrolab.com/nxp-lpc-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%A7%A5%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-flash-magic/</guid><description>
+&lt;p>NXP의 LPC 시리즈는 이클립스 기반의 툴인 &lt;a href="http://www.lpcware.com/lpcxpresso/home" target="_blank">LPCExpresso&lt;/a>를 제공한다. 대부분의 개발 환경은 &lt;a href="http://openmicrolab.com/lpc810-arm-cortexm0-project-1/" target="_blank">지난 포스팅&lt;/a>을 참고. 따라서 Mac에서도 윈도우즈와 동일한 개발환경을 구축할 수 있다.  LPC 시리즈 칩 역시 시리얼 부트로더가 내장이 되어 있어서 쉽게 flash를 write할 수 있으며, &lt;a href="http://www.flashmagictool.com/" target="_blank">FlashMagic&lt;/a>이라는 툴을 사용한다. 원래 윈도우 기반으로 개발된 툴을 Mac에 Wine을 사용하여 포팅이 되어 있다. 그래서 시리얼 포트도 COM1, COM2 이런 식으로 표시가 된다.&lt;br>
+&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt="FlashMagic"
+class="image_figure image_external image_unprocessed"
+src="http://openmicrolab.cdn2.cafe24.com/FlashMagic_program.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;p>Mac에서 잡힌 시리얼 포트를 FlashMagic이 구동이 될때 COM1, COM2.. 으로 매핑이 되는데, 이것을 확인해서 해당되는 COM 포트를 넣어주면 된다. 매핑된 포트를 찾는 방법은 다음의 그림을 참고… 대개 serial to USB 컨버터를 사용하는데, Mac에서는 cu.*의 형태와 tty.*의 형태가 잡히는데, *&lt;em>cu.&lt;em>의 형태로 잡힌 포트를 사용하면 된다.&lt;/em>&lt;/em>&lt;br>
+&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt="FlashMagic 포트찾기"
+class="image_figure image_external image_unprocessed"
+src="http://openmicrolab.cdn2.cafe24.com/FlashMagic.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;br>
+즉 명령어는&lt;/p></description></item><item><title>STmicro의 Cortex M0 칩</title><link>https://openmicrolab.com/stmicro%EC%9D%98-cortex-m0-%EC%B9%A9/</link><pubDate>Mon, 12 Mar 2012 10:42:38 +0000</pubDate><guid>https://openmicrolab.com/stmicro%EC%9D%98-cortex-m0-%EC%B9%A9/</guid><description>
+&lt;p>최근의 MCU vendor들은 너나 할 것 없이 ARM사의 Cortex 코아를 내장한 칩을 출시하고 있다.&lt;br>
+Cortex M3를 필두로 M4, M0까지…&lt;br>
+기존의 &lt;A title="[http://liketheocean.tistory.com/78]로 이동합니다." href="http://liketheocean.tistory.com/78" target=_blank>NXP&lt;/A>, &lt;A title="[http://liketheocean.tistory.com/77]로 이동합니다." href="http://liketheocean.tistory.com/77" target=_blank>Nuvoton&lt;/A>등 많은 MCU 벤더들이 이미 M0기반의 칩을 출시했듯이, 이번에 ST도 M3, M4에 이어 M0기반의 칩을 출시했다.&lt;br>
+ST의 Press release 기사: &lt;a href="http://www.st.com/internet/com/press_release/p3275.jsp">http://www.st.com/internet/com/press_release/p3275.jsp&lt;/a>&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile27.uf.1505A8344F5DD2D81A9FFA.PNG" class="aligncenter" width="683" height="746" alt="" filename="STM_CortexM0.PNG" filemime="image/jpeg" />
+&lt;/P>좀 SRAM사이즈가 작은 듯하지만&amp;#8230;
+&lt;p>CortexM0와 M3, ARM7 과의 비교자료는 이전 포스트 “&lt;A title="[http://liketheocean.tistory.com/75]로 이동합니다." href="http://liketheocean.tistory.com/75" target=_blank>Cortex M0 비교 자료&lt;/A>“참고..&lt;/p></description></item><item><title>Ethernet 성능 측정</title><link>https://openmicrolab.com/ethernet-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95/</link><pubDate>Thu, 14 Jul 2011 14:48:18 +0000</pubDate><guid>https://openmicrolab.com/ethernet-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95/</guid><description>
+&lt;p>NXP의 LPC1766의 Ethernet 성능을 측정한 자료입니다. 테스트 방법에 따라서 몇가지 변수가 있는데 참고하세요.&lt;br>
+최대 12.19Mbps 정도까지 나오네요.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.2068CF584E1EFD121D1C69.png" class="aligncenter" width="632" height="106" alt="" filename="LPC1766.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.16177D514E1EFDD0168BB3.png" class="aligncenter" width="664" height="217" alt="" filename="test_result.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>**관련 문서&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile29.uf.142D58394E1F017A32E692.pdf" class="aligncenter" filename="Digi-Key_TZM113US_Lighting_Solutions_Magazine_12-14.pdf" filemime="application/pdf" />cfile29.uf.142D58394E1F017A32E692.pdf&lt;/a>
+&lt;/P>**</description></item><item><title>세상에서 가장 작은 32bit ARM Microcontroller</title><link>https://openmicrolab.com/%EC%84%B8%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%9E%91%EC%9D%80-32bit-arm-microcontroller/</link><pubDate>Mon, 31 Jan 2011 05:02:49 +0000</pubDate><guid>https://openmicrolab.com/%EC%84%B8%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%9E%91%EC%9D%80-32bit-arm-microcontroller/</guid><description>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">NXP에서 출시한 2×2 mm 풋프린트를 가지는 초소형 Cortex M0 칩셋입니다. &lt;/SPAN>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.12211A4D4D4640BE0214A3.jpg" class="aligncenter" width="324" height="330" alt="" filename="NXP_M0.jpg" filemime="image/jpeg" />&lt;/SPAN>&lt;/p>
+&lt;p>&lt;A title="[http://www.nxp.com/news/content/file\_1701.html]로 이동합니다." href="http://www.nxp.com/news/content/file\_1701.html" target=_blank>&lt;SPAN style="FONT-SIZE: 10pt">관련기사 링크&lt;/SPAN>&lt;/A>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">LPC1102 데이터시트&lt;/SPAN>&lt;br>
+&lt;a href="https://openmicrolab.com/images/1/cfile28.uf.12211C4D4D46422A093487.pdf" class="aligncenter" filename="LPC1102.pdf" filemime="application/pdf" /> cfile28.uf.12211C4D4D46422A093487.pdf&lt;/a>&lt;/p>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">개발툴은 &lt;/SPAN>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: 11px Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: left; LINE-HEIGHT: 17px; BORDER-COLLAPSE: collapse; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: rgb(102,102,102)" class=Apple-style-span>&lt;/p>
+&lt;H2 style="PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; WHITE-SPACE: nowrap; FONT-SIZE: 18px; FONT-WEIGHT: bold; PADDING-TOP: 4px">
+&lt;SPAN style="FONT-SIZE: 10pt">LPCXpresso&lt;/SPAN>
+&lt;/H2>&lt;/SPAN>&lt;/SPAN>
+&lt;p>&lt;SPAN style="FONT-SIZE: 10pt">라고 부르는데 관련 자료는 아래 링크에서…&lt;/SPAN>&lt;br>
+&lt;SPAN style="FONT-SIZE: 10pt">&lt;a href="http://ics.nxp.com/lpcxpresso/">http://ics.nxp.com/lpcxpresso/&lt;/a>&lt;/SPAN>&lt;/A>&lt;/p></description></item></channel></rss>

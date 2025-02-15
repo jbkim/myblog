@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>W7100A on OpenMicroLab</title><link>https://openmicrolab.com/tags/w7100a/</link><description>Recent content in W7100A on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 01 Jun 2011 08:13:29 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/w7100a/index.xml" rel="self" type="application/rss+xml"/><item><title>SDCC putchar 버그 수정</title><link>https://openmicrolab.com/sdcc-putchar-%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95/</link><pubDate>Wed, 01 Jun 2011 08:13:29 +0000</pubDate><guid>https://openmicrolab.com/sdcc-putchar-%EB%B2%84%EA%B7%B8-%EC%88%98%EC%A0%95/</guid><description>
+&lt;p>지난번 포스팅때 &lt;A title="[http://liketheocean.tistory.com/83]로 이동합니다." href="http://liketheocean.tistory.com/83" target=_blank>8051 무료 컴파일러인 SDCC&lt;/A>를 소개했었고, 이를 이용해서 &lt;A title="[http://liketheocean.tistory.com/84]로 이동합니다." href="http://liketheocean.tistory.com/84" target=_blank>W7100 TCP loopback 코드까지 &lt;/A>만들어 봤었다.&lt;br>
+이미 그때도 printf가 잘 안되어서 이상하다고 했었는데, 이번에 telnet 코드를 포팅하면서 문제를 해결했다.&lt;br>
+문제는 SDCC 컴파일러가 제대로 C 코드를 ASM으로 변환을 해주지 못하는게 원인… 역시 무료 컴파일러라서 그런가???&lt;/p>
+&lt;DIV style="BORDER-BOTTOM: #c1c1c1 1px dashed; BORDER-LEFT: #c1c1c1 1px dashed; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #c1c1c1 1px dashed; BORDER-RIGHT: #c1c1c1 1px dashed; PADDING-TOP: 10px" class=txc-textbox>void putchar (char c)&amp;nbsp;
+{
+&amp;nbsp; SBUF = c;
+&amp;nbsp; while(!TI);
+&amp;nbsp; TI = 0;
+}
+&lt;/DIV>
+위&amp;nbsp;putchar 함수가 어셈으로 변환된 코드를 보니 TI = 0 을 CLR TI 로 변환을 하지 않네요.
+그래서 다음과 같이 inline assembler를 사용해서 수정을 하니 잘 동작을 합니다.
+&lt;DIV style="BORDER-BOTTOM: #c1c1c1 1px dashed; BORDER-LEFT: #c1c1c1 1px dashed; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #c1c1c1 1px dashed; BORDER-RIGHT: #c1c1c1 1px dashed; PADDING-TOP: 10px" class=txc-textbox>void putchar (char c)&amp;nbsp;
+{
+&amp;nbsp;SBUF = c;
+&amp;nbsp;while(!TI);
+&lt;FONT color=#e31600>__asm&amp;nbsp;
+&amp;nbsp;clr TI
+__endasm;
+&lt;/FONT>}
+&lt;/DIV>
+W7100A에 telnet server code를 SDCC로 포팅한 코드로 첨부.
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile29.uf.181ED1344DE5F44423398E.zip" class="aligncenter" filename="telnet_sdcc.zip" filemime="application/zip" />cfile29.uf.181ED1344DE5F44423398E.zip&lt;/a>
+&lt;/P></description></item></channel></rss>

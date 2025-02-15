@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eagle CAD 라이브러리 on OpenMicroLab</title><link>https://openmicrolab.com/tags/eagle-cad-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/</link><description>Recent content in Eagle CAD 라이브러리 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 12 Dec 2012 05:07:40 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/eagle-cad-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>Eagle CAD에서 라이브러리 관리</title><link>https://openmicrolab.com/eagle-cad%EC%97%90%EC%84%9C-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B4%80%EB%A6%AC/</link><pubDate>Wed, 12 Dec 2012 05:07:40 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EC%97%90%EC%84%9C-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B4%80%EB%A6%AC/</guid><description>
+&lt;ul style="list-style-type: disc;">
+&lt;li>
+&lt;b>Eagle CAD에서 라이브러리에 있는 파트를 삭제하는 방법은 ?&lt;/b>
+&lt;/li>
+&lt;/ul>
+&lt;p>라이브러리 자체를 삭제하는 것은 간단하지만, 라이브러리에 있는 부품을 삭제하고 싶을 때는 다음과 같이 하면 된다.&lt;/p>
+&lt;p>-. Control Panel에서 일단 해당라이브러리를 연다. File &amp;gt; Open &amp;gt; Library&lt;/p>
+&lt;p>-. Library &amp;gt; Remove… 메뉴를 선택을 하고, 삭제하고자 하는 라이브러리 명을 입력한다.&lt;/p>
+&lt;p style="text-align: center; clear: none; float: none;">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.16465C3F50C80E33158773.png" class="aligncenter" width="275" height="161" filename="스크린샷 2012-12-12 오후 1.54.41.png" filemime="image/jpeg" />
+&lt;/p>
+&lt;ul style="list-style-type: disc;">
+&lt;li>
+&lt;b>라이브러리에 있는 부품을&amp;nbsp;복사하는 방법?&lt;/b>
+&lt;/li>
+&lt;/ul>
+&lt;p>이건 간단한데, 자주쓰는 부품을 모아서 나만의 라이브러리를 만들때 유용하다.&lt;/p></description></item></channel></rss>

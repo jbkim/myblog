@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Panelizing on OpenMicroLab</title><link>https://openmicrolab.com/tags/panelizing/</link><description>Recent content in Panelizing on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 19 May 2014 05:13:01 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/panelizing/index.xml" rel="self" type="application/rss+xml"/><item><title>CAM350으로 2개의 거버를 하나로 합치기</title><link>https://openmicrolab.com/cam350%EC%9C%BC%EB%A1%9C-2%EA%B0%9C%EC%9D%98-%EA%B1%B0%EB%B2%84%EB%A5%BC-%ED%95%98%EB%82%98%EB%A1%9C-%ED%95%A9%EC%B9%98%EA%B8%B0/</link><pubDate>Mon, 19 May 2014 05:13:01 +0000</pubDate><guid>https://openmicrolab.com/cam350%EC%9C%BC%EB%A1%9C-2%EA%B0%9C%EC%9D%98-%EA%B1%B0%EB%B2%84%EB%A5%BC-%ED%95%98%EB%82%98%EB%A1%9C-%ED%95%A9%EC%B9%98%EA%B8%B0/</guid><description>
+&lt;ul>
+&lt;li>첫번째 거버 파일을 auto import후 CAM 파일로 저장하는데, 좌표 계산을 쉽게하기 위해 &lt;strong>Edit &amp;raquo; Change Origin&lt;/strong>하여 원점을 맞춘다. Auto import를 할때 NC drill data는 선택하지 말고 따로 불러와서 저장을 한다. Eagle CAD의 경우 확장자는 drd이다.&lt;/li>
+&lt;li>두번째 거버 파일도 auto import후 CAM 파일로 저장&lt;/li>
+&lt;li>첫번째 CAM 파일을 불러온 후 &lt;strong>File &amp;raquo; Merge&lt;/strong>하여 두번째 파일을 불러오는데, 각각의 레이어를 맞춘다.&lt;/li>
+&lt;li>불러온 데이터를 원하는 위치에 올린다. 이때 **Setting &amp;raquo; View Option의 “View merged Databases”**를 선택해 놓으면 불러온 거버 파일을 이미지로 볼 수 있다.&lt;/li>
+&lt;li>불러온 거버 데이터는 merged data이므로 이것을 풀어야 한다. &lt;strong>Edit &amp;raquo; Change &amp;raquo; Explode &amp;raquo; Merged database&lt;/strong>를 선택후 커서가 십자 표시가 되면 불러온 거버파일을 선택한다.&lt;/li>
+&lt;li>이제 각 레이어 별로 선택을 해 보면서 제대로 Merge가 됐는지 확인한다.&lt;/li>
+&lt;li>**Export &amp;raquo; gerber Data… Export &amp;raquo; Drill Data…**를 하여 데이터를 저장한다.&lt;/li>
+&lt;li>저장된 Merged 된 거버 데이터를 불러와서 제대로 되어 있는 지 확인한다.&lt;/li>
+&lt;/ul>
+&lt;p>참고 자료: &lt;a href="http://www.elecrow.com/wiki/index.php?title=How_to_panelize_PCBs_with_CAM350" target="_blank">&lt;a href="http://www.elecrow.com/wiki/index.php?title=How_to_panelize_PCBs_with_CAM350">http://www.elecrow.com/wiki/index.php?title=How_to_panelize_PCBs_with_CAM350&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

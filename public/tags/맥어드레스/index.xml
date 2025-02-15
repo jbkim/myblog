@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>맥어드레스 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%A7%A5%EC%96%B4%EB%93%9C%EB%A0%88%EC%8A%A4/</link><description>Recent content in 맥어드레스 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 10 Jun 2011 09:16:37 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%A7%A5%EC%96%B4%EB%93%9C%EB%A0%88%EC%8A%A4/index.xml" rel="self" type="application/rss+xml"/><item><title>맥어드레스, Public OUI 찾기</title><link>https://openmicrolab.com/%EB%A7%A5%EC%96%B4%EB%93%9C%EB%A0%88%EC%8A%A4-public-oui-%EC%B0%BE%EA%B8%B0/</link><pubDate>Fri, 10 Jun 2011 09:16:37 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5%EC%96%B4%EB%93%9C%EB%A0%88%EC%8A%A4-public-oui-%EC%B0%BE%EA%B8%B0/</guid><description>
+&lt;p>회사에서 할당 받은 맥어드레스(Public OUI)를 찾거나, 맥어드레스로 이게 어느 회사에서 할당 받았는지 확인 하는 방법은 IEEE 홈페이지에서 확인이 가능하다.&lt;br>
+&lt;a href="https://standards.ieee.org/develop/regauth/oui/public.html">https://standards.ieee.org/develop/regauth/oui/public.html&lt;/a>&lt;/p>
+&lt;p>등록시 사용한 영문 회사 이름을 넣으면 해당하는 Public OUI(맥어드레스 상위 3바이트)를 찾아주고, 맥어드레스의 상위 3바이트를 입력하면 회사명을 알 수 있다.&lt;/p>
+&lt;p>참고로 맥어드레스 할당은 지난 포스팅 참고.. &lt;A title="[http://liketheocean.tistory.com/105]로 이동합니다." href="http://liketheocean.tistory.com/105" target=_blank>MAC address 할당 받기&lt;/A>&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile24.uf.113D8D4C4DF1E00811AF43.jpg" class="aligncenter" width="683" height="533" alt="" filename="IEEE_2.jpg" filemime="image/jpeg" />
+&lt;/P></description></item></channel></rss>

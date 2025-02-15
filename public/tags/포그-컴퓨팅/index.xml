@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>포그 컴퓨팅 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%8F%AC%EA%B7%B8-%EC%BB%B4%ED%93%A8%ED%8C%85/</link><description>Recent content in 포그 컴퓨팅 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 29 Jun 2018 05:32:57 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%8F%AC%EA%B7%B8-%EC%BB%B4%ED%93%A8%ED%8C%85/index.xml" rel="self" type="application/rss+xml"/><item><title>엣지 컴퓨팅, 포그 컴퓨팅, 클라우드렛</title><link>https://openmicrolab.com/%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%8F%AC%EA%B7%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EB%A0%9B/</link><pubDate>Fri, 29 Jun 2018 05:32:57 +0000</pubDate><guid>https://openmicrolab.com/%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%8F%AC%EA%B7%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EB%A0%9B/</guid><description>
+&lt;p>엣지 컴퓨팅은 IoT기기들이 생성한 데이터를 데이터센터나 클라우드까지의 기나긴 경로를 통해서 송신하는 대신 데이터가 생성된 위치에서 더 가까운 곳에서 처리될 수 있도록 함으로써 중요한 데이터를 준 실시간으로 처리가 가능하게 한다.&lt;/p>
+&lt;h3 id="의미">의미&lt;/h3>
+&lt;blockquote>
+&lt;p>중요한 데이터를 지역에서 처리하거나 저장하고, 수신된 모든 데이터를 중앙 데이터센터나 클라우드 스토리지 리포지토리로 보내는 약 10평방미터 이하 규모의 마이크로 데이터센터들로 구성된 메시 네트워크(Mesh Network) – IDC의 정의&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>엣지 컴퓨팅은 클라우드 컴퓨팅과 대조되는 기술&lt;/li>
+&lt;li>클라우드 컴퓨팅이 ‘중앙 데이터센터와 직접 소통(communicate)하는’ 방식이라면 엣지 컴퓨팅은 기기 가까이 위치한 일명 ‘엣지 데이터센터’와 주로 소통하며 2차 작업(과 그 결과물의 저장)을 중앙 클라우드에 맡기는 방식&lt;/li>
+&lt;li>따라서 클라우드에 걸리는 데이터 부하(負荷)가 대폭 줄어 대역폭 상으론 문제가 많았던 부분이 크게 개선될 수 있음.&lt;/li>
+&lt;li>결국은 클라우드 컴퓨팅 방식을 보다 정교하게 만든 형태&lt;/li>
+&lt;/ul>
+&lt;h3 id="응용">응용&lt;/h3>
+&lt;ul>
+&lt;li>IoT기기등으로 인해 데이터양의 증가&lt;/li>
+&lt;li>접속 환경이 열악해서 IoT 기기들이 중앙 클라우드에 끊임없이 연결하는 것이 비효율적인 경우&lt;/li>
+&lt;li>지연에 민감한 정보 처리의 경우 – 데이터가 처리를 위해 데이터센터나 클라우드까지 이동할 필요가 없기 때문에 지연시간이 줄어듬. 이는 금융 서비스나 제조처럼 ms 단위의 지연시간에도 민감한 상황에서 이상적임.&lt;/li>
+&lt;li>많은 양의 데이터를 만들어 내고 있지만 데이터의 대부분은 중요하지 않은 경우.  예를 들면 수천 개의 센서를 가지고 있는 바다 한 가운데 있는 석유 시추시설. &amp;lt;= 데이터 그 자체가 시스템이 정상적으로 작동하고 있다는 사실을 보여주는 것이기 때문.&lt;/li>
+&lt;li>통신업체의 차세대 5G 네트워크 확장 – 5G를 구축하면서 5G 송수신 타워 자체에 마이크로 데이터센터를 추가. 기업 고객들은 에지 컴퓨팅을 하기 위해 이런 마이크로 데이터센터를 소유하거나 임대하게 되면, 통신 업체가 보유하고 있는 더 방대한 네트워크로의 게이트웨이에 직접 액세스할 수 있고, 그렇게 되면 퍼블릭 IaaS 클라우드 공급업체에 연결할 수 있게 됨.
+&lt;h3 id="heading">&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="" src="https://news.samsung.com/kr/wp-content/uploads/2017/05/%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-01-2.jpg" width="503" height="474" />
+&lt;pre>&lt;code>클라우드 컴퓨팅 아키텍트(architect)로 잘 알려진 재너카이럼(Janakiram MSV)은 “엣지 컴퓨팅 환경에선 세 개의 층, 즉 1) 데이터 소스(data source) 2)인텔리전스 레이어(intelligence layer) 3)실천 가능한 인사이트(actionable insight)가 서로 맞물리며 상호작용한다”라고 주장
+엣지 컴퓨팅에서 **머신 러닝**은 엣지와 클라우드 간 파트너십을 규정한다. 클라우드는 대용량 데이터 세트와 복잡한 알고리즘에 기초해 머신 러닝 모델을 창출, 엣지 플랫폼에 넘겨준다. 그러면 엣지 플랫폼은 해당 모델을 이용, 실시간으로 데이터 세트를 처리하게 된다. 이 과정에서 엣지 층(layer)과 클라우드 층을 연결해주는 게 바로 **인텔리전스 레이어**, 곧 엣지 컴퓨팅 체계의 두 번째 차원이다.
+엣지 컴퓨팅 시스템 사용자(이를테면 기업의 정책 결정자)는 인텔리전스 레이어가 제공한 분석에 기초해 정확한 판단을 내릴 수 있다. 이게 바로 엣지 컴퓨팅의 세 번째 요소, 곧 **실천 가능한 인사이트**다. 요컨대 엣지 컴퓨팅은 머신 러닝의 지원에 따라 과거 인간 전유물로 간주됐던 창의적 인사이트를 기계로 창출, 인간에게 제공하는 시스템이다. 이 같은 작동 기제는 곧 엣지 컴퓨팅이 ‘가장 바람직한 행동을 위한 판단’을 도출해낼 수 있는 근거이기도 하다.
+**엣지 컴퓨팅**은 ‘**클라우드-엣지-디바이스**’라는 (물리적 차원의) 3중 구조를 띤다. 동시에 ‘**데이터 소스-인텔리전스 레이어-실천 가능한 인사이트**’라는 (형이상학적) 3중 구조를 취하고 있기도 하다. 말하자면 **‘2중적 3중 구조**’인 셈.
+### 포그 컴퓨팅
+에지 기기들과 클라우드 간의 네트워크 연결을 가리킨다. 반면에, 에지 컴퓨팅은 에지 기기 가까이에서 수행되는 컴퓨팅 과정을 좀 더 구체적으로 가리킨다. 그렇기 때문에, 포그 컴퓨팅은 에지 컴퓨팅을 포함하면서, 처리된 데이터를 최종 목적지까지 보내기 위해 필요한 네트워크도 포함하고 있다.
+### 관련 용어
+* 에지 기기(Edge Device) : 데이터를 생성하는 모든 기기가 될 수 있다. 에지 기기는 데이터를 생성 또는 수집하는 센서, 산업용 머신 또는 따른 기기들이 될 수 있다.
+* 에지(Edge) : 에지가 무엇인가는 용도에 따라 달라진다. 통신 분야에서 에지는 아마도 휴대 전화기 또는 송수신 타워가 될 수 있다. 자동차 시나리오에서는 정비소 바닥의 장비가 되고 기업 IT에서는 노트북이 에지가 될 수 있다.
+* 에지 게이트웨이(Edge Gateway) : 게이트웨이는 에지 컴퓨팅 처리가 수행되는 곳과 더 폭넓은 포그 네트워크 사이의 버퍼이다. 게이트웨이는 네트워크 에지를 넘어서는 더 큰 환경으로의 창구이다.
+* 팻 클라이언트(Fat Client) : 에지 기기에서 어느 정도의 데이터 처리를 할 수 있는 소프트웨어. 단순하게 데이터를 전송하기만 하는 씬 클라이언트(Thin Client)와 상대가 되는 용어이다.
+* 에지 컴퓨팅 장비(Edge Computing Equipment) : 에지 컴퓨팅은 다양한 기존 장비와 신규 장비를 사용한다. 여러 가지 기기, 센서 그리고 머신들을 인터넷 액세스 가능하게 만들기만 하면 에지 컴퓨팅 환경에서 작동하게 할 수 있다. 시스코를 비롯한 다른 하드웨어 공급업체들은 현장 환경에서 사용할 목적으로 외장이 강화된 견고한 네트워크 장비 라인을 보유하고 있다. 다양한 컴퓨트 서버, 컨버지드 시스템 그리고 심지어는 AWS 스노우볼(Snowball) 같은 스토리지 기반 하드웨어 시스템까지도 에지 컴퓨팅 배치에 사용될 수 있다.
+* 모바일 에지 컴퓨팅(Mobile Edge Computing) : 통신 시스템 특히, 5G 시나리오에서 에지 컴퓨팅의 확장을 가리킨다
+### 참고
+&amp;lt;li class=&amp;quot;postTitle&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://news.samsung.com/kr/%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%8B%9C%EB%8C%80%EC%9D%98-%EC%83%88-%EC%9E%A5%E5%A0%B4-%EC%97%B4%EB%8B%A4&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;엣지 컴퓨팅, 클라우드 컴퓨팅 시대의 새 장(場) 열다&amp;lt;/a&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li class=&amp;quot;postTitle&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;http://www.itworld.co.kr/news/106579#csidxa3327d4577de24c8ce97acac7961aab&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;에지 컴퓨팅의 이해와 네트워크의 변화&amp;lt;/a&amp;gt;
+&amp;lt;/li&amp;gt;
+&lt;/code>&lt;/pre></description></item></channel></rss>

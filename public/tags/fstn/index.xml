@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FSTN on OpenMicroLab</title><link>https://openmicrolab.com/tags/fstn/</link><description>Recent content in FSTN on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 21 Dec 2017 07:20:24 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/fstn/index.xml" rel="self" type="application/rss+xml"/><item><title>LCD 타입별 특징</title><link>https://openmicrolab.com/lcd-%ED%83%80%EC%9E%85%EB%B3%84-%ED%8A%B9%EC%A7%95/</link><pubDate>Thu, 21 Dec 2017 07:20:24 +0000</pubDate><guid>https://openmicrolab.com/lcd-%ED%83%80%EC%9E%85%EB%B3%84-%ED%8A%B9%EC%A7%95/</guid><description>
+&lt;table border="1" cellspacing="0" cellpadding="0">
+&lt;colgroup> &lt;col width="72" /> &lt;col width="101" /> &lt;col span="2" width="157" /> &lt;col width="143" /> &lt;col width="163" />&lt;/colgroup> &lt;tr>
+&lt;td colspan="2" bgcolor="#FFCC99" width="173">
+Display Type
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#FFCC99&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+TN LCD
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FFCC99&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+HTN LCD
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FFCC99&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+STN LCD
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FFCC99&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+FSTN LCD
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td colspan="2" rowspan="4" bgcolor="#99FFCC">
+Advantage
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#FF6600&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+cheapest
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FF6600&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+cheaper
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FF6600&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+a big  view angle
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FF6600&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+have all the advantage of STN
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td bgcolor="#33FFFF" width="157">
+A wide range of applications
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#33FFFF&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+a wiser view angle than TN
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#33FFFF&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+Diversity of display mode
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#33FFFF&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+a better background color
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td bgcolor="#00FF00" width="157">
+easy to produce
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#00FF00&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+easy to produce
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#00FF00&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+It can realize multichannel drive and large amount of displayed information
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#00FF00&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td bgcolor="#CCCCCC" width="157">
+best effect in display Black and white
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#CCCCCC&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#CCCCCC&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#CCCCCC&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td colspan="2" rowspan="3" bgcolor="#99FFCC">
+Disadvantage
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#FF99CC&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+a small view angle
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FF99CC&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+a small view angle
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FF99CC&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+a few more manufacturing process
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FF99CC&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+have all the disadvantage of STN
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td bgcolor="#999966" width="157">
+simple display mode
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#999966&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+ordinary display effect
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#999966&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+a high requirement for raw material
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#999966&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+a higher cost than STN
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td bgcolor="#9999CC" width="157">
+low contrast ratio
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#9999CC&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+low contrast ratio
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#9999CC&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+a high requirement for manufacturing process and equipment
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#9999CC&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td colspan="2" bgcolor="#99FFCC" width="173">
+The liquid crystal molecules twist angle
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#996699&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+900
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#996699&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+1100
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#996699&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+2100-2550
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#996699&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+2100-2550
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td colspan="2" bgcolor="#99FFCC" width="173">
+contrast ratio
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#00CCFF&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+acceptable
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#00CCFF&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+good
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#00CCFF&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+better
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#00CCFF&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+best
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td colspan="2" bgcolor="#99FFCC" width="173">
+Bios
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#CCCCCC&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+statics-1/16
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#CCCCCC&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+1/8-1/16
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#CCCCCC&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+1/16 above
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#CCCCCC&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+1/64 above
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td rowspan="2" bgcolor="#99FFCC">
+Display
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#99FFCC&amp;quot; width=&amp;quot;101&amp;quot;&amp;gt;
+positive
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FFFF99&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+white background and black letter
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FFFF99&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+white background and black letter
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FFFF99&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+yellow and green background and black letter (yellow and green  film)
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FFFF99&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+white background and black letter
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td bgcolor="#99FFCC" width="101">
+negative
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#FF3366&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+black background and white letter
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FF3366&amp;quot; width=&amp;quot;157&amp;quot;&amp;gt;
+black background and white letter
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FF3366&amp;quot; width=&amp;quot;143&amp;quot;&amp;gt;
+blue background and white letter (blue film)
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#FF3366&amp;quot; width=&amp;quot;163&amp;quot;&amp;gt;
+black background and white letter
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td colspan="2" bgcolor="#99FFCC">
+price
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td bgcolor=&amp;quot;#66CCFF&amp;quot;&amp;gt;
+cheapest
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#66CCFF&amp;quot;&amp;gt;
+cheaper
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#66CCFF&amp;quot;&amp;gt;
+cheap
+&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#66CCFF&amp;quot;&amp;gt;
+high
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;/table>
+&lt;p>**&lt;br>
+출처:  **&lt;a href="https://www.displaybly.com/lcd-news/the-comparison-of-tn-htn-stn-fstn-lcd/" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.displaybly.com/lcd-news/the-comparison-of-tn-htn-stn-fstn-lcd/">https://www.displaybly.com/lcd-news/the-comparison-of-tn-htn-stn-fstn-lcd/&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

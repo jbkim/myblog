@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Coding on OpenMicroLab</title><link>https://openmicrolab.com/categories/coding/</link><description>Recent content in Coding on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 18 Dec 2017 08:01:33 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/coding/index.xml" rel="self" type="application/rss+xml"/><item><title>Mass Storage bootloader</title><link>https://openmicrolab.com/mass-storage-bootloader/</link><pubDate>Mon, 18 Dec 2017 08:01:33 +0000</pubDate><guid>https://openmicrolab.com/mass-storage-bootloader/</guid><description>
+&lt;p>USB device를 가진 MCU를 PC에 연결시 Mass Storage Device로 동작시키고, Hex파일을 copy하면 MCU의 application code가 업데이트 되는 형태.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://os.mbed.com/handbook/cmsis-dap-interface-firmware" target="_blank" rel="noopener noreferrer">mbed의 CMSIS DAP 인터페이스&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.nxp.com/docs/en/application-note/AN4379.pdf">NXP사의 자료&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://blog.myelectronics.com.ua/stm32-usb-mass-storage-bootloader/" target="_blank" rel="noopener noreferrer">Russia blogger의 자료&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Microsoft/uf2">MS의 MakeCode에 적용된 UF2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/Microsoft/uf2-samd21">MSC bootloader (based on UF2) for SAMD21&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Google C++ Style Guide</title><link>https://openmicrolab.com/google-c-style-guide/</link><pubDate>Thu, 28 Sep 2017 03:44:44 +0000</pubDate><guid>https://openmicrolab.com/google-c-style-guide/</guid><description>
+&lt;p>구글의 C++ 스타일가이드: &lt;a href="https://google.github.io/styleguide/cppguide.html" target="_blank" rel="noopener noreferrer">&lt;a href="https://google.github.io/styleguide/cppguide.html">https://google.github.io/styleguide/cppguide.html&lt;/a>&lt;/a>&lt;/p>
+&lt;p>그리고 한글로 번역된 링크: &lt;a href="http://jongwook.kim/google-styleguide/trunk/cppguide.xml" target="_blank" rel="noopener noreferrer">&lt;a href="http://jongwook.kim/google-styleguide/trunk/cppguide.xml">http://jongwook.kim/google-styleguide/trunk/cppguide.xml&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

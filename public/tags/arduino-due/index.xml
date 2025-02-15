@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino Due on OpenMicroLab</title><link>https://openmicrolab.com/tags/arduino-due/</link><description>Recent content in Arduino Due on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 22 Sep 2011 08:04:07 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/arduino-due/index.xml" rel="self" type="application/rss+xml"/><item><title>아두이노의 신제품</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%EC%8B%A0%EC%A0%9C%ED%92%88/</link><pubDate>Thu, 22 Sep 2011 08:04:07 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EC%9D%98-%EC%8B%A0%EC%A0%9C%ED%92%88/</guid><description>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.14128D3F4E7AE3971CFAC1.jpg" class="aligncenter" width="223" height="241" alt="" filename="Due-300x300.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;DIV style="BORDER-BOTTOM: #fefeb8 1px solid; BORDER-LEFT: #fefeb8 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #fefeb8; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #fefeb8 1px solid; BORDER-RIGHT: #fefeb8 1px solid; PADDING-TOP: 10px" class=txc-textbox>For the second year in a row we decided to announce our new products at Maker Faire in NYC.
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+Tomorrow morning, if you come to the Arduino tent, you will be able to see:
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;STRONG>Arduino 1.0&lt;/STRONG>, we finally froze the Arduino API, the IDE and the layout of the boards. We’ve made some minor additions to the Arduino connectors to make them more flexible. Tomorrow you will be able to download the release candidate and in 1 month of frantic testing with the community, the platform will be ready and stable.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;STRONG>Arduino Leonardo&lt;/STRONG>, a low cost Arduino board with the Atmega32u4. It has the same shape and connectors as the UNO but it has a simpler circuit. On the software side it has a nifty USB driver able to simulate a mouse , a keyboard, a serial port (with more drivers coming later). As usual for Arduino, everything will be released as open source (Core, Bootloader, Hardware).
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;STRONG>Arduino Due,&lt;/STRONG>&lt;SPAN class=Apple-converted-space> &lt;/SPAN>a major breakthrough for Arduino because we’re launching an Arduino board with a 32bit Cortex-M3 ARM processor on it. We’re using the SAM3U processor from ATMEL running at 96MHz with 256Kb of Flash, 50Kb of Sram, 5 SPI buses, 2 I2C interfaces, 5 UARTS, 16 Analog Inputs at 12Bit resolution and much more.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+Instead of just releasing the finished platform we are opening the process to the community early on. We’re going to be demoing the board and giving away some boards to a selected group of developers who will be invited to shape the platform while it’s been created. After Maker Faire, we will begin selling a small batch of Developer Edition boards on the Arduino store (store.arduino,cc) for members of the community who want to be join the development effort. We plan a final and tested release by the end of 2011
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+&lt;STRONG>Arduino Wifi Shield.&lt;SPAN class=Apple-converted-space> &lt;/SPAN>&lt;/STRONG>It adds Wi-Fi communication capabilities to any Arduino. Instead of using any of the classic WiFi modules on the market we wanted to have something that will provide the maximum level of hackability to the user. The shield is based on a wifi micro module made by H&amp;D Wireless coupled with a powerful AVR32 processor that carries the full TCP-IP stack leaving room to add your own protocols and customisations. We’ve also worked hard to make sure that you will be able to migrate your code from the Ethernet Shield with minor changes.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+We’re also going to show some prototypes of new platforms we’ve been working on: We have robots, new IDEs and more.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+It has been a crazy few months and we want to thank ATMEL very much the support that we got on all the new products.
+&lt;/P>
+&lt;P style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 5px">
+Come over to Maker Faire and have a look for yourself!
+&lt;/P>&lt;/DIV>
+&lt;p>지난 9월 17, 18일 뉴욕의 &lt;A title="[http://makerfaire.com/]로 이동합니다." href="http://makerfaire.com/" target=_blank>Make Fair&lt;/A>에서 아두이노는 자신들의 신제품 출시 계획을 발표했다.&lt;br>
+&lt;strong>Arduino 1.0&lt;/strong>&lt;br>
+API, IDE가 드리어 1.0버젼을 달았다. 커뮤니티에서 1달여간의 추가적인 테스트를 거쳐 최종적으로 fix될 예정&lt;br>
+&lt;a href="http://code.google.com/p/arduino/wiki/Arduino1">http://code.google.com/p/arduino/wiki/Arduino1&lt;/a> 에서 다운로드 가능하다.&lt;/p></description></item></channel></rss>

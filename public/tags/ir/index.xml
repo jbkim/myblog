@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ir on OpenMicroLab</title><link>https://openmicrolab.com/tags/ir/</link><description>Recent content in Ir on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 15 Aug 2017 01:02:01 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ir/index.xml" rel="self" type="application/rss+xml"/><item><title>아두이노 적외선 통신</title><link>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%A0%81%EC%99%B8%EC%84%A0-%ED%86%B5%EC%8B%A0/</link><pubDate>Tue, 15 Aug 2017 01:02:01 +0000</pubDate><guid>https://openmicrolab.com/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-%EC%A0%81%EC%99%B8%EC%84%A0-%ED%86%B5%EC%8B%A0/</guid><description>
+&lt;p>&lt;strong>IR (&lt;a href="https://en.wikipedia.org/wiki/Infrared" target="_blank" rel="noopener noreferrer">Infrared&lt;/a>) 통신&lt;/strong>&lt;/p>
+&lt;p>적외선을 이용한 통신인데, 적외선은 빛에 포함되어 있다. 따라서 이것을 통신에 이용하기위해 38Khz modulation을 한다. IR 수신할때 문제는 리모콘에만 반응하지 않고, 형광등이나 빛에 오동작 할 수 도 있다는 것.&lt;/p>
+&lt;p>&lt;strong>Modulation&lt;/strong>&lt;/p>
+&lt;img loading="lazy" src="https://cdn.sparkfun.com/r/600-600/assets/9/3/2/b/a/5159e97ece395f9643000000.jpg" alt="" width="600" height="272" />
+&lt;p>&lt;strong>Demodulation&lt;/strong>&lt;/p>
+&lt;p>&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt=""
+class="image_figure image_external image_processed"
+width="600"
+height="259"
+src="https://openmicrolab.com/5159e980ce395f8840000000_10373173191218754359.jpg"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;p>&lt;strong>IR Receiver Pinout&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Infrared/tsop382.pdf?_ga=2.139818227.1550690696.1502755614-1828696942.1487513070">TSOP382 datasheet&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="" src="https://cdn.sparkfun.com/assets/6/a/f/b/f/524b36e8757b7f3d6c8b4567.png" width="462" height="285" />
+&lt;p>&lt;strong>IR Protocol&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>(IR) ProtocolAn algorithm for turning a number of parameters into an &lt;a href="http://www.harctoolbox.org/Glossary.html#IrSignal">IR signal&lt;/a>. It defines the necessary parameters and their allowed values. In almost all protocols, the most frequently changing parameter is called “F” (function number). Almost all protocols have a “device number” called “D”. Many protocols have a “sub-device” number, called “S”. A few protocols have a &lt;a href="http://www.harctoolbox.org/Glossary.html#Toggle">toggle&lt;/a> parameter, in general called “T”, and being &lt;a href="http://www.harctoolbox.org/Glossary.html#PersistantParameter">persistent&lt;/a>. A protocol may also have other parameters, with “arbitrary” names.&lt;/p></description></item></channel></rss>

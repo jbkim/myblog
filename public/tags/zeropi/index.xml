@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ZeroPi on OpenMicroLab</title><link>https://openmicrolab.com/tags/zeropi/</link><description>Recent content in ZeroPi on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 13 Oct 2015 09:09:29 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/zeropi/index.xml" rel="self" type="application/rss+xml"/><item><title>ZeroPi – Arduino and Raspberry Pi compatible development kit</title><link>https://openmicrolab.com/zeropi-arduino-and-raspberry-pi-compatible-development-kit/</link><pubDate>Tue, 13 Oct 2015 09:09:29 +0000</pubDate><guid>https://openmicrolab.com/zeropi-arduino-and-raspberry-pi-compatible-development-kit/</guid><description>
+&lt;p>&lt;strong>ZeroPi는 Arduino and Raspberry Pi 호환 개발보드&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Arduino Zero Compatible development kit&lt;/li>
+&lt;li>Atmel SAMD21J18, 32-bit ARM Cortex M0+&lt;/li>
+&lt;li>3D printer,Laser Cutter, CNC에 적용 가능&lt;/li>
+&lt;li>Marlin and Repetier firmware&lt;/li>
+&lt;li>Open Source: &lt;a href="https://github.com/Makeblock-official/ZeroPi" target="_blank">&lt;a href="https://github.com/Makeblock-official/ZeroPi">https://github.com/Makeblock-official/ZeroPi&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/10/photo-original.jpg">&lt;img loading="lazy" class="aligncenter wp-image-3446 " src="https://openmicrolab.com/images/2015/10/photo-original-1024x768.jpg" alt="photo-original" width="571" height="428" srcset="https://openmicrolab.com/images/2015/10/photo-original.jpg 1024w, https://openmicrolab.com/images/2015/10/photo-original-300x225.jpg 300w" sizes="(max-width: 571px) 100vw, 571px" />&lt;/a>&lt;/p>
+&lt;p>참고자료: &lt;a href="https://www.kickstarter.com/projects/1204283/zeropi-arduino-and-raspberry-pi-compatible-develop" target="_blank">&lt;a href="https://www.kickstarter.com/projects/1204283/zeropi-arduino-and-raspberry-pi-compatible-develop">https://www.kickstarter.com/projects/1204283/zeropi-arduino-and-raspberry-pi-compatible-develop&lt;/a>&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item></channel></rss>

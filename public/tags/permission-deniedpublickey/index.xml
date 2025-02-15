@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Permission Denied(publickey) on OpenMicroLab</title><link>https://openmicrolab.com/tags/permission-deniedpublickey/</link><description>Recent content in Permission Denied(publickey) on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 31 Jan 2015 11:13:44 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/permission-deniedpublickey/index.xml" rel="self" type="application/rss+xml"/><item><title>github에 SSH키 생성 및 등록</title><link>https://openmicrolab.com/github%EC%97%90-ssh%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%93%B1%EB%A1%9D/</link><pubDate>Sat, 31 Jan 2015 11:13:44 +0000</pubDate><guid>https://openmicrolab.com/github%EC%97%90-ssh%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%93%B1%EB%A1%9D/</guid><description>
+&lt;p>&lt;code>Permission denied (publickey).&amp;lt;br /&amp;gt; fatal: Could not read from remote repository.&lt;/code>&lt;br>
+github을 잘 사용하다가 어느 순간 위와 같은 Permission 에러가 나서 다시 SSH키를 등록했다.&lt;/p>
+&lt;p>아래와 같이 터미널에 입력하는데 이메일은 github에 등록한 이메일을 사용한다.&lt;br>
+&lt;code>ssh-keygen -t rsa -C “your_email@example.com”&lt;/code>&lt;/p>
+&lt;p>passphrase(암호)를 넣어준다.&lt;br>
+&lt;code>Enter passphrase (empty for no passphrase):&amp;lt;br /&amp;gt; Enter same passphrase again:&lt;/code>&lt;/p>
+&lt;p>새로운 키를 에이전트에 추가한다.&lt;br>
+&lt;code>eval “$(ssh-agent -s)”&amp;lt;br /&amp;gt; ssh-add ~/.ssh/id_rsa&lt;/code>&lt;/p>
+&lt;p>다음과 같이 입력하면 새로 만든 키가 클립보드에 저장이 된다.&lt;br>
+&lt;code>pbcopy &amp;lt; ~/.ssh/id_rsa.pub&lt;/code>&lt;/p></description></item></channel></rss>

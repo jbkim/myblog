@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>이메일 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%9D%B4%EB%A9%94%EC%9D%BC/</link><description>Recent content in 이메일 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 18 May 2015 09:02:36 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%9D%B4%EB%A9%94%EC%9D%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>MX 레코드</title><link>https://openmicrolab.com/mx-%EB%A0%88%EC%BD%94%EB%93%9C/</link><pubDate>Mon, 18 May 2015 09:02:36 +0000</pubDate><guid>https://openmicrolab.com/mx-%EB%A0%88%EC%BD%94%EB%93%9C/</guid><description>
+&lt;p>MX 레코드는 사용자의 메일 계정을 호스팅하는 서버로 메일을 전송하는 도메인에 연결된 DNS 설정이다. 이 설정은 도메인 호스트가 관리하며, 메일이 제대로 전송되도록 하기 위해 일반적으로 여러 개의 서버에 레코드를 만든다. 이렇게 하는 이유는 서버 하나가 다운되더라도 메일이 다른 서버로 라우팅하기 위해서인데, 10, 20, 30 등의 값을 사용하여 우선순위를 부여하며, 숫자가 작을수록 우선순위가 높다.&lt;/p>
+&lt;h3 id="google-apps-mx-레코드-값">Google Apps MX 레코드 값&lt;/h3>
+&lt;table class="nice-table wide" summary="This table displays server addresses for use in MX records configured for Google Apps">
+&lt;tr>
+&lt;th>
+이름/호스트/별칭
+&lt;/th>
+&lt;pre>&lt;code>&amp;lt;th&amp;gt;
+TTL*(Time To Live)
+&amp;lt;/th&amp;gt;
+&amp;lt;th&amp;gt;
+레코드 유형
+&amp;lt;/th&amp;gt;
+&amp;lt;th&amp;gt;
+우선순위
+&amp;lt;/th&amp;gt;
+&amp;lt;th&amp;gt;
+값/응답/목적지
+&amp;lt;/th&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+공백 또는 @
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td&amp;gt;
+3,600
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+MX
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+1
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+ASPMX.L.GOOGLE.COM
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+공백 또는 @
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td&amp;gt;
+3,600
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+MX
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+5
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+ALT1.ASPMX.L.GOOGLE.COM
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+공백 또는 @
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td&amp;gt;
+3,600
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+MX
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+5
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+ALT2.ASPMX.L.GOOGLE.COM
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+공백 또는 @
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td&amp;gt;
+3,600
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+MX
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+10
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+ALT3.ASPMX.L.GOOGLE.COM
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+공백 또는 @
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td&amp;gt;
+3,600
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+MX
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+10
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+ALT4.ASPMX.L.GOOGLE.COM
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;/table></description></item></channel></rss>

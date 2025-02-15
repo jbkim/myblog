@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>라즈베리파이 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4/</link><description>Recent content in 라즈베리파이 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 20 Aug 2018 02:02:49 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4/index.xml" rel="self" type="application/rss+xml"/><item><title>키보드, 모니터 없이 라즈베리파이 개발 환경 설정</title><link>https://openmicrolab.com/%ED%82%A4%EB%B3%B4%EB%93%9C-%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%97%86%EC%9D%B4-%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/</link><pubDate>Mon, 20 Aug 2018 02:02:49 +0000</pubDate><guid>https://openmicrolab.com/%ED%82%A4%EB%B3%B4%EB%93%9C-%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%97%86%EC%9D%B4-%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/</guid><description>
+&lt;h3 id="라즈베리파리rpi-핀맵">라즈베리파리(RPI) 핀맵&lt;/h3>
+&lt;p>###&lt;img loading="lazy" class="alignnone wp-image-4404" src="https://res.cloudinary.com/openmicrolab/image/upload/v1534730311/RP2_Pinout_jbzzwg.png" width="823" height="491" />&lt;/p>
+&lt;h3 id="1-라즈베리파이-기본-설정">1. 라즈베리파이 기본 설정&lt;/h3>
+&lt;p>– RPI 이미지 다운로드: &lt;a href="https://www.raspberrypi.org/downloads/" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.raspberrypi.org/downloads/">https://www.raspberrypi.org/downloads/&lt;/a>&lt;/a>&lt;br>
+– &lt;a href="https://etcher.io/" target="_blank" rel="noopener noreferrer">Etcher&lt;/a> 같은 image writing 툴로 다운로드 받은 이미지를 SD에 writing&lt;br>
+– RPI에 SD를 넣고, 시리얼 포트를 연결하고 맥의 터미널에서 115200으로 연결한다.&lt;/p>
+&lt;blockquote>
+&lt;p>screen /dev/tty.SLAB_USBtoUART 115200&lt;/p>&lt;/blockquote>
+&lt;p>– pi/raspberry로 로그인 한다.&lt;br>
+– &lt;strong>sudo raspi-config&lt;/strong>로 wifi 설정 및 SSH 설정후 재부팅&lt;br>
+– 다시 로그인하면 &lt;strong>ifconfig&lt;/strong>로 할당 받은 ip 확인&lt;br>
+– 맥의 터미널에서 &lt;strong>ssh &lt;a href="mailto:pi@xxx.xxx.xxx.xxx">pi@xxx.xxx.xxx.xxx&lt;/a>로 접속&lt;/strong>&lt;/p>
+&lt;h3 id="2-gpio-프로그래밍">2. GPIO 프로그래밍&lt;/h3>
+&lt;p>&lt;strong>Package들의 최신버전 체크 및 설치&lt;/strong>&lt;/p></description></item></channel></rss>

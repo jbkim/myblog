@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gatekeeper on OpenMicroLab</title><link>https://openmicrolab.com/tags/gatekeeper/</link><description>Recent content in Gatekeeper on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 06 Dec 2016 01:46:44 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/gatekeeper/index.xml" rel="self" type="application/rss+xml"/><item><title>Mac OS X 커맨드라인에서 Gatekeeper 기능 설정</title><link>https://openmicrolab.com/mac-os-x-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-gatekeeper-%EA%B8%B0%EB%8A%A5-%EC%84%A4%EC%A0%95/</link><pubDate>Tue, 06 Dec 2016 01:46:44 +0000</pubDate><guid>https://openmicrolab.com/mac-os-x-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-gatekeeper-%EA%B8%B0%EB%8A%A5-%EC%84%A4%EC%A0%95/</guid><description>
+&lt;p>애플 앱 스토어가 아닌 다른 경로로 프로그램을 다운로드해서 인스톨시 문제가 생기는 경우, 대부분의 경우 원인은 Gatekeeper가 enable되어서 생기는 문제.&lt;/p>
+&lt;p>현재 상태확인&lt;/p>
+&lt;blockquote>
+&lt;p>spctl –status&lt;/p>&lt;/blockquote>
+&lt;p>비활성화 &amp;amp; 활성화&lt;/p>
+&lt;blockquote>
+&lt;p>sudo spctl –master-disable&lt;/p>
+&lt;p>sudo spctl –master-enable&lt;/p>&lt;/blockquote>
+&lt;p> &lt;/p></description></item></channel></rss>

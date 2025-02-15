@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Battery on OpenMicroLab</title><link>https://openmicrolab.com/tags/battery/</link><description>Recent content in Battery on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 08 Dec 2019 13:50:02 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/battery/index.xml" rel="self" type="application/rss+xml"/><item><title>전력소모를 줄이는 법 – Low Power System</title><link>https://openmicrolab.com/%EC%A0%84%EB%A0%A5%EC%86%8C%EB%AA%A8%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B2%95-low-power-system/</link><pubDate>Sun, 08 Dec 2019 13:50:02 +0000</pubDate><guid>https://openmicrolab.com/%EC%A0%84%EB%A0%A5%EC%86%8C%EB%AA%A8%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B2%95-low-power-system/</guid><description>
+&lt;p>배터리를 사용하는 제품은 필수적으로 전력소모를 줄여야 한다. 시스템에서 전력소모를 줄이기 위한 방법은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>MCU의 동작 전압을 낮추고, 동작 Clock를 낮출 것&lt;/li>
+&lt;li>리니어 레귤레이터 대신 스위칭 레귤레이터를 사용할 것&lt;/li>
+&lt;li>MCU내의 사용하지 않는 peripheral을 disable할 것: Timer, BOD, Watch Dog Timer, UART, ADC 등 특히 ADC나 UART&lt;/li>
+&lt;li>전류를 센싱하는 저항이 있다면 이 저항의 크기를 높일 것&lt;/li>
+&lt;li>코드에서 최대한 Sleep 모드를 사용할 것&lt;/li>
+&lt;/ul>
+&lt;p>참고로 Attiny45의 경우 어떤 응용에서 동작시 1.6mA정도까지 줄여봤다. 그리고 &lt;a href="https://learn.sparkfun.com/tutorials/reducing-arduino-power-consumption/all" target="_blank" rel="noopener">이런 문서&lt;/a>도 참고하면 좋을 듯.&lt;/p></description></item><item><title>코인셀 배터리 사용시 시스템 설계</title><link>https://openmicrolab.com/%EC%BD%94%EC%9D%B8%EC%85%80-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84/</link><pubDate>Tue, 05 Nov 2019 08:46:30 +0000</pubDate><guid>https://openmicrolab.com/%EC%BD%94%EC%9D%B8%EC%85%80-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84/</guid><description>
+&lt;p>코인셀 배터리의 경우 용량도 중요하지만 한번에 땡겨서 쓸 수 있는 전류도 중요하다. 하지만 이 값은 일반적으로 충분히 크지 않다.&lt;/p>
+&lt;p>따라서 코인셀 배터리의 용량만큼 잘 쓰려면&lt;/p>
+&lt;ul>
+&lt;li>코인셀에 병렬로 cap을 달아라. 47~100uF, 슈퍼캡?&lt;/li>
+&lt;li>전류소모가 낮은 부품으로 구성 (당연한 얘기)&lt;/li>
+&lt;li>FEP(Functional End Point) 마진 확보 : 즉 구동 전압이 낮은 칩 사용&lt;/li>
+&lt;li>테스트 결과를 보면 전류를 갑자기 땡기는 구간이 짧아야하고, 휴지기간이 길어야 한다.&lt;/li>
+&lt;li>시스템을 설계할때 동시에 구동되는 부품을 줄이도록 설계: 즉 RF칩이 TX를 할때 모터를 구동하지 않는 다거나… (LCD, 모터, RF칩, LED) &amp;lt;= 이게 중요할 듯&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>참고문헌&lt;/strong>&lt;/p></description></item></channel></rss>

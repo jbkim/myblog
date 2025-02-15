@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STRAVA on OpenMicroLab</title><link>https://openmicrolab.com/tags/strava/</link><description>Recent content in STRAVA on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 09 Nov 2022 07:54:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/strava/index.xml" rel="self" type="application/rss+xml"/><item><title>Google fit, Apple HealthKit으로 부터 Health data 가져오기</title><link>https://openmicrolab.com/google-fit-apple-healthkit%EC%9C%BC%EB%A1%9C-%EB%B6%80%ED%84%B0-health-data-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/</link><pubDate>Wed, 09 Nov 2022 07:54:21 +0000</pubDate><guid>https://openmicrolab.com/google-fit-apple-healthkit%EC%9C%BC%EB%A1%9C-%EB%B6%80%ED%84%B0-health-data-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/</guid><description>
+&lt;h3 id="google-fit">Google Fit&lt;/h3>
+&lt;p>&lt;a href="https://developers.google.com/fit/">여기&lt;/a>에서 안드로이드 API나 REST API 관련 내용을 확인 가능&lt;/p>
+&lt;p>다음 4가지 데이터를 얻을 수 있음 (퍼미션 필요함)&lt;/p>
+&lt;ul>
+&lt;li>Activity &amp;amp; Exercise — step count, burned calories, workout duration, basal metabolic rate, steep data.&lt;/li>
+&lt;li>Location — total running/cycling distance and speed as well as cycling cadence (RPM).&lt;/li>
+&lt;li>Body — heart rate, weight, body fat percentage.&lt;/li>
+&lt;li>Nutrition — food &amp;amp; hydration.&lt;/li>
+&lt;/ul>
+&lt;p>다음의 데이터는 OAuth가 필요함&lt;/p>
+&lt;ul>
+&lt;li>Oxygen saturation&lt;/li>
+&lt;li>Body temperature&lt;/li>
+&lt;li>Blood pressure&lt;/li>
+&lt;li>Blood glucose&lt;/li>
+&lt;li>Cervical position and others&lt;/li>
+&lt;/ul>
+&lt;p>이런 데이터를 사용하는 것에 대한 &lt;a href="https://developers.google.com/fit/terms">Term &amp;amp; Condition&lt;/a>&lt;/p></description></item></channel></rss>

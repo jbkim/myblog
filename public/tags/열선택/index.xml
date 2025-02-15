@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>열선택 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%97%B4%EC%84%A0%ED%83%9D/</link><description>Recent content in 열선택 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 12 Feb 2015 02:45:46 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%97%B4%EC%84%A0%ED%83%9D/index.xml" rel="self" type="application/rss+xml"/><item><title>Sublime Text 단축키 -열선택</title><link>https://openmicrolab.com/sublime-text-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%97%B4%EC%84%A0%ED%83%9D/</link><pubDate>Thu, 12 Feb 2015 02:45:46 +0000</pubDate><guid>https://openmicrolab.com/sublime-text-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%97%B4%EC%84%A0%ED%83%9D/</guid><description>
+&lt;p>에디터에서 열선택 기능이 있으면 유용하다. Sublime Text의 맥버전에서는&lt;/p>
+&lt;blockquote>
+&lt;p>Option + 마우스키&lt;/p>&lt;/blockquote>
+&lt;p>기타 많이 사용하는 단축키는&lt;/p>
+&lt;h2 id="editing">Editing&lt;/h2>
+&lt;div class="wy-table-responsive">
+&lt;table class="docutils" border="1">
+&lt;colgroup> &lt;col width="22%" /> &lt;col width="78%" />&lt;/colgroup> &lt;tr class="row-odd">
+&lt;th class="head">
+Keypress
+&lt;/th>
+&lt;pre>&lt;code> &amp;lt;th class=&amp;quot;head&amp;quot;&amp;gt;
+Command
+&amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + X
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Cut line
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + D
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+ Select word &amp;amp;#8211; Repeat to select next occurrence
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌃ + M
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Jump to closing parentheses Repeat to jump to opening parentheses
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ]
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Indent current line(s)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + [
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Un-indent current line(s)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + /
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Comment/un-comment current line
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ⌥ + /
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Block comment current selection
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/table>
+&lt;/div>
+&lt;div id="navigation-goto-anywhere" class="section">
+&lt;h2>
+Navigation/Goto Anywhere
+&lt;/h2>
+&lt;div class="wy-table-responsive">
+&lt;table class="docutils" border="1">
+&lt;colgroup> &lt;col width="22%" /> &lt;col width="78%" />&lt;/colgroup> &lt;tr class="row-odd">
+&lt;th class="head">
+Keypress
+&lt;/th>
+&lt;pre>&lt;code> &amp;lt;th class=&amp;quot;head&amp;quot;&amp;gt;
+Command
+&amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + P or ⌘ + T
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Quick-open files by name
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + R
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Goto symbol
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Goto word in current file
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌃ + G
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Goto line in current file
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div>
+&lt;div id="general" class="section">
+&lt;h2>
+General
+&lt;/h2>
+&lt;div class="wy-table-responsive">
+&lt;table class="docutils" border="1">
+&lt;colgroup> &lt;col width="22%" /> &lt;col width="78%" />&lt;/colgroup> &lt;tr class="row-odd">
+&lt;th class="head">
+Keypress
+&lt;/th>
+&lt;pre>&lt;code> &amp;lt;th class=&amp;quot;head&amp;quot;&amp;gt;
+Command
+&amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ⇧ + P
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Command Palette
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="findreplace">Find/Replace&lt;/h2>
+&lt;div class="wy-table-responsive">
+&lt;table class="docutils" border="1">
+&lt;colgroup> &lt;col width="22%" /> &lt;col width="78%" />&lt;/colgroup> &lt;tr class="row-odd">
+&lt;th class="head">
+Keypress
+&lt;/th>
+&lt;pre>&lt;code> &amp;lt;th class=&amp;quot;head&amp;quot;&amp;gt;
+Command
+&amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + F
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Find
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-odd&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ⌥ + F
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Replace
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;row-even&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+⌘ + ⇧ + F
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+Find in files
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/table>
+&lt;/div>
+&lt;p>참고: &lt;a href="http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html" target="_blank">&lt;a href="http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html">http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dos2unix on OpenMicroLab</title><link>https://openmicrolab.com/tags/dos2unix/</link><description>Recent content in Dos2unix on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 18 Feb 2022 06:16:11 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/dos2unix/index.xml" rel="self" type="application/rss+xml"/><item><title>bad interpreter: /bin/bash^M: no such file or directory</title><link>https://openmicrolab.com/bad-interpreter-bin-bashm-no-such-file-or-directory/</link><pubDate>Fri, 18 Feb 2022 06:16:11 +0000</pubDate><guid>https://openmicrolab.com/bad-interpreter-bin-bashm-no-such-file-or-directory/</guid><description>
+&lt;p>쉘 스크립트를 실행을 했는데, “&lt;span class="s1">bad interpreter: /bin/bash^M: no such file or directory”이런 메시지가 나오면 dos2unix를 실행한다.&lt;/span>&lt;/p>
+&lt;blockquote>
+&lt;p>$ brew install dos2unix&lt;/p>
+&lt;p>$&lt;span class="s1">dos2unix ./build_all.sh &lt;/span>&lt;/p>
+&lt;p>$./build_all.sh&lt;/p>
+&lt;p class="p1">
+&lt;/blockquote>
+&lt;p>
+&amp;nbsp;
+&lt;/p>
+&lt;p>
+&amp;nbsp;
+&lt;/p>&lt;/blockquote></description></item></channel></rss>

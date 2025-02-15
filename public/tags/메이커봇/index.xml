@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>메이커봇 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%A9%94%EC%9D%B4%EC%BB%A4%EB%B4%87/</link><description>Recent content in 메이커봇 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 29 May 2017 03:59:13 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%A9%94%EC%9D%B4%EC%BB%A4%EB%B4%87/index.xml" rel="self" type="application/rss+xml"/><item><title>3D Printer – S3G, X3G 파일 포맷</title><link>https://openmicrolab.com/3d-printer-s3g-x3g-%ED%8C%8C%EC%9D%BC-%ED%8F%AC%EB%A9%A7/</link><pubDate>Mon, 29 May 2017 03:59:13 +0000</pubDate><guid>https://openmicrolab.com/3d-printer-s3g-x3g-%ED%8C%8C%EC%9D%BC-%ED%8F%AC%EB%A9%A7/</guid><description>
+&lt;ul>
+&lt;li>S3G는 “Sanguino3 Gcode”의 약자로 3D 프린터를 제어하기 위한 언어&lt;/li>
+&lt;li>자세한 내용은 &lt;a href="https://github.com/makerbot/s3g/blob/master/doc/s3gProtocol.md" target="_blank" rel="noopener noreferrer">이 링크&lt;/a>를 참고&lt;/li>
+&lt;li>Makerbot과 Sailfish 팀에서 기능을 추가해서 S3G와 구별하기 위해 X3G를 만듦&lt;/li>
+&lt;li>Makerbot 프린터는 gcode를 직접받아서 출력하지 않음&lt;/li>
+&lt;li>따라서 ReplicatorG, MakerBot MakerWare, MakerBot Desktop 프로그램의 슬라이서에서 Gcode를 변환하는 기능이 있음&lt;/li>
+&lt;li>OctoPrint의 경우 &lt;a href="https://github.com/markwal/OctoPrint-GPX/blob/master/README.md" target="_blank" rel="noopener noreferrer">다음 링크&lt;/a> 참고&lt;/li>
+&lt;/ul>
+&lt;p>참고: &lt;a href="http://www.sailfishfirmware.com/doc/details-s3g-and-x3g.html#x52-1340009.3" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.sailfishfirmware.com/doc/details-s3g-and-x3g.html#x52-1340009.3">http://www.sailfishfirmware.com/doc/details-s3g-and-x3g.html#x52-1340009.3&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Makerbot, Prusa 그리고 3D 프린팅 시장</title><link>https://openmicrolab.com/makerbot-prusa-%EA%B7%B8%EB%A6%AC%EA%B3%A0-3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5/</link><pubDate>Tue, 28 Feb 2017 02:04:20 +0000</pubDate><guid>https://openmicrolab.com/makerbot-prusa-%EA%B7%B8%EB%A6%AC%EA%B3%A0-3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EC%8B%9C%EC%9E%A5/</guid><description>
+&lt;p>최근 &lt;a href="http://www.fabbaloo.com/blog/2017/2/16/whats-really-going-on-at-makerbot" target="_blank">메이커봇이 인원을 30% 감원한다는 기사&lt;/a>&lt;/p>
+&lt;p>여기서 Makerbot과 Prusa의 현재 상황과 3D 프린팅 시장을 알 수 있다.&lt;/p>
+&lt;blockquote>
+&lt;p>consumers are incapable of 3D design, fixing wonky machines and desire 3D models that aren’t easily found&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>고객들이 아직은 3D 디자인을 할 수 없고&lt;/li>
+&lt;li>기기에 문제가 생길 경우 해결이 안되며&lt;/li>
+&lt;li>원하는 3D 모델을 찾기 여러움&lt;/li>
+&lt;/ul>
+&lt;p>그래서 시장은 아직 일반인 대상이 아니라 DIY community인데, 이쪽을 포커싱하고 있는 &lt;a href="http://www.prusaprinters.org/" target="_blank">Prusa&lt;/a>의 경우 90명 정도의 스텝이 월 3천대 이상을 판매한다고 함.&lt;/p></description></item></channel></rss>

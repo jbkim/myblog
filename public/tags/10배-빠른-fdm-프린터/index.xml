@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>10배 빠른 FDM 프린터 on OpenMicroLab</title><link>https://openmicrolab.com/tags/10%EB%B0%B0-%EB%B9%A0%EB%A5%B8-fdm-%ED%94%84%EB%A6%B0%ED%84%B0/</link><description>Recent content in 10배 빠른 FDM 프린터 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 08 Dec 2017 08:21:23 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/10%EB%B0%B0-%EB%B9%A0%EB%A5%B8-fdm-%ED%94%84%EB%A6%B0%ED%84%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>MIT의 10배 빠른 FDM 프린터 – FastFFF</title><link>https://openmicrolab.com/mit%EC%9D%98-10%EB%B0%B0-%EB%B9%A0%EB%A5%B8-fdm-%ED%94%84%EB%A6%B0%ED%84%B0-fastfff/</link><pubDate>Fri, 08 Dec 2017 08:21:23 +0000</pubDate><guid>https://openmicrolab.com/mit%EC%9D%98-10%EB%B0%B0-%EB%B9%A0%EB%A5%B8-fdm-%ED%94%84%EB%A6%B0%ED%84%B0-fastfff/</guid><description>
+&lt;h3 id="fdm-프린터에서-속도를-높이기-위해-기존에-사용한-방법">FDM 프린터에서 속도를 높이기 위해 기존에 사용한 방법&lt;/h3>
+&lt;ul id="yui_3_17_2_1_1512714297221_422">
+&lt;li>
+노즐 사이즈를 크게해서 필라멘트를 단위시간당 많이 출력하게 함. 해상도 문제
+&lt;/li>
+&lt;li>
+펠릿 방식으로 기존 필라멘트 보다 더 잘 밀어내게 함
+&lt;/li>
+&lt;li>
+히팅 구간을 더 크게해서 필라멘트에 열이 잘 전달되게 함
+&lt;/li>
+&lt;li>
+높은 성능의 프린터 보드를 사용해서 기구부의 움직임을 빠르게 함
+&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4156" src="https://openmicrolab.com/images/2021/03/mit_fastFFF_chjrxq.jpg" width="343" height="336" />
+&lt;h3 id="mit가-적용한-방식">MIT가 적용한 방식&lt;/h3>
+&lt;ul>
+&lt;li>힘을 더 잘 주기 위해 나사산이 있는 필라멘트 사용. 기존 방식은 pinch wheel방식이며 이것은 nut feed 방식임&lt;/li>
+&lt;li>2 단계 히팅 – 기존 히트 블럭 + 레이저(50W near-infrared laser pre-heats). 단 필라멘트 색에 따라 레이저를 조정해야 함&lt;/li>
+&lt;li>서보 모터를 사용&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4157" src="https://openmicrolab.com/images/2021/03/buildrate_x2jgij.jpg" width="524" height="297" />
+&lt;h3 id="이슈">이슈&lt;/h3>
+&lt;ul>
+&lt;li>나사산이 있는 필라멘트가 필요&lt;/li>
+&lt;li>FastFFF 방식의 특허&lt;/li>
+&lt;li>더 빠른 프린터와 속도 비교를 한 것이 아니고 일반적인 프린터와 속도를 비교함&lt;/li>
+&lt;li>이정도 속도가 빨라지면 실제적인 이득은 무엇인가?&lt;/li>
+&lt;/ul>
+&lt;h3 id="참고">참고&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://www.fabbaloo.com/blog/2017/11/30/mits-laser-powered-3d-printer-is-this-the-speed-weve-been-waiting-for" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.fabbaloo.com/blog/2017/11/30/mits-laser-powered-3d-printer-is-this-the-speed-weve-been-waiting-for">http://www.fabbaloo.com/blog/2017/11/30/mits-laser-powered-3d-printer-is-this-the-speed-weve-been-waiting-for&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.ni.com/white-paper/3656/ko/" target="_blank" rel="noopener noreferrer">스테핑 모터와 서보 모터&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://openmicrolab.com/download/fastfff/" target="_blank" rel="noopener noreferrer">저널에 실린 내용&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

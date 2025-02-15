@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OpenMicroLab</title><link>https://openmicrolab.com/tags/support/</link><description>Recent content in Support on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 19 Sep 2014 04:06:28 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/support/index.xml" rel="self" type="application/rss+xml"/><item><title>3D 프린터 관련 용어 정리</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EA%B4%80%EB%A0%A8-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC/</link><pubDate>Fri, 19 Sep 2014 04:06:28 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EA%B4%80%EB%A0%A8-%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC/</guid><description>
+&lt;p>3D 프린팅에서 사용되는 용어중 “&lt;a href="https://play.google.com/store/books/details?id=PVX_AAAAQBAJ" target="_blank">과학과 교육 및 지속가능한 발전을 위한 저비용 3D프린팅&lt;/a>“과 Cura 프로그램의 help에서 발췌하여 &lt;a href="https://github.com/jbkim/Cura" target="_blank">한글 번역&lt;/a>을 한 것임.&lt;/p>
+&lt;h3 id="infill">Infill&lt;/h3>
+&lt;p>이것은 출력된 부품의 안쪽부분을 말한다. 이것은 매우 다양한 패턴으로 만들어질 수 있어서, 그냥 꽉 채우는 것보다는 필라멘트를 절약할 수 있게 된다.&lt;/p>
+&lt;h3 id="skirt">Skirt&lt;/h3>
+&lt;p>skirt란 처음에 프린팅을 시작할 때, 노즐이 완전히 비어있으므로, 실제로 프린팅을 하기 전에 미리 조금 압출하는 플라스틱의 양을 말한다.&lt;/p>
+&lt;p>Cura – Skirt는 첫 번째 계층에서 오브젝트 주위에 그려진 라인입니다. 이것은 압출기에게 준비를 시키는데 도움을 줍니다. 그리고 오브젝트가 플랫폼에 맞는지 확인합니다.&lt;/p></description></item></channel></rss>

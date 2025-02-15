@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ultimaker 3 내부 구성 on OpenMicroLab</title><link>https://openmicrolab.com/tags/ultimaker-3-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%84%B1/</link><description>Recent content in Ultimaker 3 내부 구성 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 20 Feb 2017 06:24:56 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ultimaker-3-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%84%B1/index.xml" rel="self" type="application/rss+xml"/><item><title>Ultimaker 3 내부 구성</title><link>https://openmicrolab.com/ultimaker-3-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%84%B1/</link><pubDate>Mon, 20 Feb 2017 06:24:56 +0000</pubDate><guid>https://openmicrolab.com/ultimaker-3-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%84%B1/</guid><description>
+&lt;img loading="lazy" class="" title="Meet the new Ultimaker 3" src="https://d2py9w124w2itd.cloudfront.net/photo/topic/1920x1080/5804d6818123d/Ultimaker_3_Release.jpg" alt="Meet the new Ultimaker 3" width="437" height="246" />
+&lt;p>&lt;strong>Ultimaker 3의 특징 – &lt;a href="https://d2py9w124w2itd.cloudfront.net/src/media/data/pdf/products/um3/Ultimaker_3_specification_sheet.pdf" target="_blank">Ultimaker 3 Spec.&lt;/a>&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>듀얼 노즐:서포트를 쉽게 제거하기 위해 물에 녹는 재질의 필라멘트 사용가능&lt;/li>
+&lt;li>쉽게 교체 가능한 노즐&lt;/li>
+&lt;li>향상된 쿨링 시스템&lt;/li>
+&lt;li>상태를 나타내는 LED&lt;/li>
+&lt;li>Wi-Fi &amp;amp; USB stick 지원: Wi-Fi는 Local에서만 지원된다.&lt;/li>
+&lt;li>카메라 지원&lt;/li>
+&lt;li>Active bed leveling&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Ultimaker 3 내부 구성&lt;img loading="lazy" class="alignnone wp-image-3905" src="http://res.cloudinary.com/openmicrolab/image/upload/v1487570738/UM3_Internal_ifnqqi.png" width="700" height="540" />&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>A20 LIME2 Linux보드 &amp;amp; ATmega 보드&lt;/strong>&lt;/p>
+&lt;p>위 블럭다이어그램에서 보듯이기존 UM2의 경우에는 메인보드에 ATmega2560칩이 있었으나, UM3는 Connectivity를 추가하기 위해 &lt;a href="https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXIno-LIME2/" target="_blank">A20 LIME2 Linux보드&lt;/a>가 메인이 되고, 기존의 Atmega보드는 실시간 처리가 필요한 모터제어에만 사용이 되었다. 이 보드에 카메라 및 WiFI, Ethernet, USB Host, NFC 리더가 있는데, NFC리더는 필라멘트에 붙어 있는 NFC 테그를 태깅하기 위해 사용이 된다. WiFi의 경우 USB to WiFI 동글이 사용되는데, 앱을 확인해 보니 Local network에서만 사용이 된다.&lt;/p></description></item></channel></rss>

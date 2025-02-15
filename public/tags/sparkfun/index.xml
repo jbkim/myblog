@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SparkFun on OpenMicroLab</title><link>https://openmicrolab.com/tags/sparkfun/</link><description>Recent content in SparkFun on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 24 Jan 2012 10:18:03 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/sparkfun/index.xml" rel="self" type="application/rss+xml"/><item><title>Fritzing에 Wiz820io 라이브러리 공식 등록</title><link>https://openmicrolab.com/fritzing%EC%97%90-wiz820io-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B3%B5%EC%8B%9D-%EB%93%B1%EB%A1%9D/</link><pubDate>Tue, 24 Jan 2012 10:18:03 +0000</pubDate><guid>https://openmicrolab.com/fritzing%EC%97%90-wiz820io-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B3%B5%EC%8B%9D-%EB%93%B1%EB%A1%9D/</guid><description>
+&lt;p>&lt;A title="[http://liketheocean.tistory.com/159]로 이동합니다." href="http://liketheocean.tistory.com/159" target=_blank>Fritzing &lt;/A>툴의이 최근 버젼(0.6.4)버젼부터 &lt;A title="[http://liketheocean.tistory.com/169]로 이동합니다." href="http://liketheocean.tistory.com/169" target=_blank>지난번에 제가 만든 Wiz820io&lt;/A>가 공식 라이브러리도 등록이 되었습니다.&lt;br>
+이번 버젼에서 눈에 띄게 달라진 점은 part 라이브러리가 각 제조사별로 브랜딩되어 있습니다.&lt;br>
+즉 Arduino, Parallax, Sparkfun등의 탭들이 생겨서 각 제조사 별로 부품을 찾을 수 있게 되어 있네요.&lt;br>
+제가 만든 Wiz820io는 Core Parts에 Connection 항목에 들어가 있습니다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile24.uf.1353813F4F1E84A618F627.PNG" class="aligncenter" width="290" height="700" alt="" filename="Fritzing_Wiz820io.PNG" filemime="image/jpeg" />
+&lt;/P></description></item><item><title>Footprint를 살짝 변경함으로 생산의 에러를 줄이는 방법</title><link>https://openmicrolab.com/footprint%EB%A5%BC-%EC%82%B4%EC%A7%9D-%EB%B3%80%EA%B2%BD%ED%95%A8%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%82%B0%EC%9D%98-%EC%97%90%EB%9F%AC%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95/</link><pubDate>Wed, 23 Nov 2011 11:03:31 +0000</pubDate><guid>https://openmicrolab.com/footprint%EB%A5%BC-%EC%82%B4%EC%A7%9D-%EB%B3%80%EA%B2%BD%ED%95%A8%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%82%B0%EC%9D%98-%EC%97%90%EB%9F%AC%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95/</guid><description>
+&lt;p>핀헤더를 PCB보드에 직각으로 제대로 솔더링하기 위해서 PCB footprint를 변경하는 아이디어&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.133175404ECCD22E15A1F6.jpg" class="aligncenter" width="500" height="97" alt="" filename="PCB_Footprint_existing.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="TEXT-ALIGN: center; MARGIN: 0px">
+기존의 라이브러리
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.143175404ECCD22E16DED8.jpg" class="aligncenter" width="500" height="173" alt="" filename="PCB_Footprint_Modified.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;DIV style="TEXT-ALIGN: center">
+화살표 방향으로 센터를 옮긴 라이브러리&lt;/p>
+&lt;p>
+&lt;/DIV>&lt;br />
+&lt;pre>&lt;code>&amp;lt;DIV style=&amp;quot;TEXT-ALIGN: left&amp;quot;&amp;gt;
+양방향으로 조금 벌어진 구멍때문에 핀헤더를 지지하게 되어, PCB 보드에 핀헤더가 직각으로 장착이 된다.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;
+관련 자료: &amp;lt;A href=&amp;quot;http://www.sparkfun.com/tutorials/114&amp;quot;&amp;gt;http://www.sparkfun.com/tutorials/114&amp;lt;/A&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/DIV&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;DIV style=&amp;quot;TEXT-ALIGN: left&amp;quot;&amp;gt;
+&amp;lt;br /&amp;gt; SparkFun의 EagleCAD Footprint 라이브러리 : &amp;lt;A href=&amp;quot;http://www.opencircuits.com/SFE_Footprint_Library_Eagle&amp;quot;&amp;gt;http://www.opencircuits.com/SFE_Footprint_Library_Eagle&amp;lt;/A&amp;gt;
+&amp;lt;/DIV&amp;gt;
+&amp;lt;/p&amp;gt;
+&lt;/code>&lt;/pre></description></item></channel></rss>

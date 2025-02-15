@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IFTTT on OpenMicroLab</title><link>https://openmicrolab.com/tags/ifttt/</link><description>Recent content in IFTTT on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 25 Oct 2018 10:12:42 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ifttt/index.xml" rel="self" type="application/rss+xml"/><item><title>IFTTT의 Webhook 사용하기</title><link>https://openmicrolab.com/ifttt%EC%9D%98-webhook-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 25 Oct 2018 10:12:42 +0000</pubDate><guid>https://openmicrolab.com/ifttt%EC%9D%98-webhook-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>IFTTT에서 Webhook 서비스를 만들고 이 서비스의 endpoint 를 찾을 수가 없었는데, 이것은 &lt;a href="https://ifttt.com/services/maker_webhooks/settings" target="_blank" rel="noopener noreferrer">&lt;a href="https://ifttt.com/services/maker_webhooks/settings">https://ifttt.com/services/maker_webhooks/settings&lt;/a>&lt;/a> 에서 찾을 수 있다.&lt;/p>
+&lt;p>이 페이지에서 나온 URL을 브라우저에 입력을 하면 키값과 POST GET을 할 수 있는 URL 정보를 얻을 수 있다. 여기서 {event}의 값은 생성한 서비스의 event 이름이다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://maker.ifttt.com/trigger/%7Bevent%7D%7D/with/key/%7Bkey">https://maker.ifttt.com/trigger/{event}}/with/key/{key&lt;/a> 값}&lt;/p>&lt;/blockquote>
+&lt;img loading="lazy" class="alignnone wp-image-4461" src="https://res.cloudinary.com/openmicrolab/image/upload/v1540461977/ifttt_kgy2ad.png" width="759" height="426" />
+&lt;p>IF + Webhook + Notification 으로 만들면 IFTTT앱에서 알림을 받을 수 있다.&lt;/p>
+&lt;p>&lt;strong>참고&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://help.ifttt.com/hc/en-us/articles/115010230347-The-Webhooks-Service" target="_blank" rel="noopener noreferrer">&lt;a href="https://help.ifttt.com/hc/en-us/articles/115010230347-The-Webhooks-Service">https://help.ifttt.com/hc/en-us/articles/115010230347-The-Webhooks-Service&lt;/a>&lt;/a>&lt;/p>
+&lt;blockquote class="wp-embedded-content" data-secret="Rf5yuLTtD7">
+&lt;p>
+&lt;a href="https://www.learnrobotics.org/blog/connect-arduino-to-ifttt-for-iot-projects/">Connect Arduino to IFTTT for IoT Projects&lt;/a>
+&lt;/p>
+&lt;/blockquote></description></item><item><title>Yaler.net relay service</title><link>https://openmicrolab.com/yaler-net-relay-service/</link><pubDate>Fri, 02 Oct 2015 13:28:48 +0000</pubDate><guid>https://openmicrolab.com/yaler-net-relay-service/</guid><description>
+&lt;p>네트워크 기능이 내장된 임베디드 디바이스의 경우 내부 네트워크에서 외부로 접속은 쉽지만, 반대로 외부에서 이 디바이스로의 접근은 방화벽등이 있으면 쉽지않고, 공유기에서 NAT, 포트포워딩 등의 기능을 사용해야 해서 일반사용자들은 이용이 어렵다.&lt;/p>
+&lt;p>&lt;strong>Yaler.net relay service&lt;/strong>&lt;br>
+&lt;a href="https://yaler.net/" target="_blank">Yaler.net&lt;/a>은 이런 문제점을 해결해 줄 수 있는 서비스인데 아래 그림을 보면 동작이 쉽게 이해가 되며, &lt;a href="https://yaler.net/help" target="_blank">튜토리얼 문서&lt;/a>를 보면 Arduino, Beaglebone, Raspberry Pi… 등의 유명한 보드들의 셋업가이드도 자세하게 나와있다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web.jpg">&lt;img loading="lazy" class="aligncenter wp-image-3429 size-full" src="https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web.jpg" alt="Yaler_net_-_access_devices_from_the_Web" width="531" height="508" srcset="https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web.jpg 531w, https://openmicrolab.com/images/2015/10/Yaler_net_-_access_devices_from_the_Web-300x287.jpg 300w" sizes="(max-width: 531px) 100vw, 531px" />&lt;/a>&lt;/p>
+&lt;p>&lt;strong>비용&lt;/strong>&lt;br>
+비용은 회원가입을 하면 30일 무료이고, 최저 10CHF (스위스 프랑)이니 약 10불정도이니 비싸지 않다.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bluetooth on OpenMicroLab</title><link>https://openmicrolab.com/tags/bluetooth/</link><description>Recent content in Bluetooth on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 09 Mar 2020 01:16:17 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/bluetooth/index.xml" rel="self" type="application/rss+xml"/><item><title>Bluetooth 보안 문제 – SweynTooth</title><link>https://openmicrolab.com/bluetooth-%EB%B3%B4%EC%95%88-%EB%AC%B8%EC%A0%9C-sweyntooth/</link><pubDate>Mon, 09 Mar 2020 01:16:17 +0000</pubDate><guid>https://openmicrolab.com/bluetooth-%EB%B3%B4%EC%95%88-%EB%AC%B8%EC%A0%9C-sweyntooth/</guid><description>
+&lt;p>블루투스 소프트웨어 스텍에서 발견된 문제들. 다수의 칩 벤더들의 SDK에 문제(&lt;span id="textcolor3">&lt;span class="ptmb8t-">deadlocks, crashes&lt;/span>&lt;/span> and &lt;span id="textcolor4">&lt;span class="ptmb8t-">buffer overflows&lt;/span>&lt;/span> or &lt;span id="textcolor5">&lt;span class="ptmb8t-">completely bypass&lt;/span> &lt;span class="ptmb8t-">security&lt;/span>&lt;/span>)가 있어서 패치가 제공되었다.&lt;/p>
+&lt;div class="caption">
+&lt;span class="id">Table 1: &lt;/span>&lt;span class="content">Vulnerabilities type and affected vendors&lt;/span>
+&lt;/div>
+&lt;div class="tabular">
+&lt;table id="TBL-2" class="tabular" cellspacing="0" cellpadding="0">
+&lt;colgroup id="TBL-2-1g"> &lt;col id="TBL-2-1" />&lt;/colgroup> &lt;colgroup id="TBL-2-2g"> &lt;col id="TBL-2-2" />&lt;/colgroup> &lt;colgroup id="TBL-2-3g"> &lt;col id="TBL-2-3" />&lt;/colgroup> &lt;colgroup id="TBL-2-4g"> &lt;col id="TBL-2-4" />&lt;/colgroup> &lt;tr class="hline">
+&lt;td>
+&lt;hr />
+&lt;/td>
+&lt;pre>&lt;code> &amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-1-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-1-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;Type&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-1-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;Vulnerability Name&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-1-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;Affected Vendors&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-1-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;CVE&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-2-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-2-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Crash&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-2-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+Link Layer Length Overflow
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-2-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+Cypress
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-2-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16336&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-16336&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-110006.1&amp;quot;&amp;gt;6.1&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-3-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-3-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-3-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-3-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+NXP
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-3-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17519&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-17519&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-110006.1&amp;quot;&amp;gt;6.1&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-4-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-4-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;cline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-5-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-5-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-5-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Truncated L2CAP
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-5-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Dialog Semiconductors
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-5-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17517&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-17517&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-130006.3&amp;quot;&amp;gt;6.3&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-6-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-6-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;cline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-7-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-7-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-7-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Silent Length Overflow
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-7-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Dialog Semiconductors
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-7-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17518&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-17518&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-140006.4&amp;quot;&amp;gt;6.4&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-8-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-8-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;cline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-9-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-9-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-9-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Public Key Crash
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-9-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Texas Instruments
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-9-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17520&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-17520&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-160006.6&amp;quot;&amp;gt;6.6&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-10-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-10-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;cline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-11-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-11-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-11-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Invalid L2CAP Fragment
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-11-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Microchip
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-11-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19195&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-19195&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-180006.8&amp;quot;&amp;gt;6.8&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-12-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-12-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;cline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-13-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-13-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-13-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Key Size Overflow
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-13-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Telink Semiconductor
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-13-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19196&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-19196&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-190006.9&amp;quot;&amp;gt;6.9&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-14-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-14-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Deadlock&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-14-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+LLID Deadlock
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-14-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+Cypress
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-14-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17061&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-17061&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-120006.2&amp;quot;&amp;gt;6.2&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-15-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-15-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-15-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-15-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+NXP
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-15-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17060&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-17060&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-120006.2&amp;quot;&amp;gt;6.2&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-16-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-16-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;cline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-17-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-17-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-17-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Sequential ATT Deadlock
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-17-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+STMicroelectronics
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-17-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19192&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-19192&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-170006.7&amp;quot;&amp;gt;6.7&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-18-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-18-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;cline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-19-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-19-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-19-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Invalid Connection Request
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-19-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Texas Instruments
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-19-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19193&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-19193&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-150006.5&amp;quot;&amp;gt;6.5&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-2-20-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-20-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Security Bypass&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-20-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Zero LTK Installation
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-20-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Telink Semiconductor
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-2-20-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19194&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;CVE-2019-19194&amp;lt;/a&amp;gt; (&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-200006.10&amp;quot;&amp;gt;6.10&amp;lt;/a&amp;gt;)
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/table>
+&lt;/div>
+&lt;div class="table row items-start justify-center">
+&lt;div class="float">
+&lt;div>
+&lt;/div>
+&lt;pre>&lt;code>&amp;lt;div class=&amp;quot;caption&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;id&amp;quot;&amp;gt;Table 2: &amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;content&amp;quot;&amp;gt;Vulnerabilities and SDK versions of the affected SoCs.* indicates extra affected SoCs reported by the vendor not tracked by our team.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;tabular&amp;quot;&amp;gt;
+&amp;lt;table id=&amp;quot;TBL-3&amp;quot; class=&amp;quot;tabular&amp;quot; cellspacing=&amp;quot;0&amp;quot; cellpadding=&amp;quot;0&amp;quot;&amp;gt;
+&amp;lt;colgroup id=&amp;quot;TBL-3-1g&amp;quot;&amp;gt; &amp;lt;col id=&amp;quot;TBL-3-1&amp;quot; /&amp;gt; &amp;lt;col id=&amp;quot;TBL-3-2&amp;quot; /&amp;gt; &amp;lt;col id=&amp;quot;TBL-3-3&amp;quot; /&amp;gt; &amp;lt;col id=&amp;quot;TBL-3-4&amp;quot; /&amp;gt; &amp;lt;col id=&amp;quot;TBL-3-5&amp;quot; /&amp;gt;&amp;lt;/colgroup&amp;gt; &amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-1-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-1-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Vuln.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-1-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;SoC Vendor&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-1-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;SoC Model&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-1-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;SDK Ver.&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-1-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;Qualification ID(s)&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-2-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-2-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-2-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;BLE Version 5.0/5.1&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-2-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-2-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-2-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-3-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-3-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-110006.1&amp;quot;&amp;gt;6.1&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-120006.2&amp;quot;&amp;gt;6.2&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-3-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Cypress (PSoC 6)
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-3-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+CYBLE-416045
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-3-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+2.10
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-3-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+99158
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-4-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-4-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-150006.5&amp;quot;&amp;gt;6.5&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-160006.6&amp;quot;&amp;gt;6.6&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-4-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Texas Instruments
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-4-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+CC2640R2
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-4-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+3.30.00.20
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-4-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+94079
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-5-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-5-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-190006.9&amp;quot;&amp;gt;6.9&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-200006.10&amp;quot;&amp;gt;6.10&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-5-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Telink
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-5-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+TLSR8258
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-5-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+3.4.0
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-5-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+92269, 136037
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-6-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-6-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-170006.7&amp;quot;&amp;gt;6.7&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-6-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+STMicroelectronics
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-6-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+WB55
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-6-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+1.3.0
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-6-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+111668
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-7-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-7-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-170006.7&amp;quot;&amp;gt;6.7&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-7-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+STMicroelectroncis
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-7-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+BlueNRG-2
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-7-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+3.1.0
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-7-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+87428, 106700, 94075
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-8-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-8-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-140006.4&amp;quot;&amp;gt;6.4&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-8-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Dialog
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-8-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+DA1469X*
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-8-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+10.0.6
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-8-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+100899
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-9-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-9-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-130006.3&amp;quot;&amp;gt;6.3&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-9-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Dialog
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-9-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+DA14585/6*
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-9-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+6.0.12.1020
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-9-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+91436
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-10-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-10-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-10-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;BLE Version 4.2&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-10-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-10-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-10-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-11-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-11-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-110006.1&amp;quot;&amp;gt;6.1&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-120006.2&amp;quot;&amp;gt;6.2&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-11-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Cypress (PSoC 4)
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-11-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+CYBL11573
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-11-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+3.60
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-11-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+62243, 136808, 79697, 82951, 79480
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-12-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-12-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-110006.1&amp;quot;&amp;gt;6.1&amp;lt;/a&amp;gt;,&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-120006.2&amp;quot;&amp;gt;6.2&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-12-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+NXP
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-12-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+KW41Z
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-12-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+2.2.1
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-12-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+84040
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-13-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-13-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-140006.4&amp;quot;&amp;gt;6.4&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-13-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Dialog
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-13-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+DA14680
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-13-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+1.0.14.X
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-13-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+87407, 84084, 71309, 75255
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-14-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-14-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-14-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmbi8t-&amp;quot;&amp;gt;BLE Version 4.1&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-14-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-14-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-14-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-15-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-15-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-150006.5&amp;quot;&amp;gt;6.5&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-15-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Texas Instruments
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-15-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+CC2540
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-15-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+1.5.0
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-15-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+23454, 127418
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-16-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-16-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-130006.3&amp;quot;&amp;gt;6.3&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-16-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Dialog
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-16-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+DA14580
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-16-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+5.0.4
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-16-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+83573
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-17-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-17-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-180006.8&amp;quot;&amp;gt;6.8&amp;lt;/a&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-17-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Microchip
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-17-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+ATSAMB11
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-17-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+6.2
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-17-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+73346
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-3-18-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-3-18-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div>
+&lt;h4 class="subsectionHead" id="span-classtitlemark21spana-idx1-500021aattacks-on-iot">&lt;span class="titlemark">2.1 &lt;/span>&lt;a id="x1-50002.1">&lt;/a>Attacks on IoT&lt;/h4>
+&lt;div class="table row items-start justify-center">
+&lt;div class="float">
+&lt;div class="caption">
+&lt;span class="id">Table 3: &lt;/span>&lt;span class="content">Products verified to be vulnerable&lt;/span>
+&lt;/div>
+&lt;pre>&lt;code>&amp;lt;div class=&amp;quot;tabular&amp;quot;&amp;gt;
+&amp;lt;table id=&amp;quot;TBL-4&amp;quot; class=&amp;quot;tabular&amp;quot; cellspacing=&amp;quot;0&amp;quot; cellpadding=&amp;quot;0&amp;quot;&amp;gt;
+&amp;lt;colgroup id=&amp;quot;TBL-4-1g&amp;quot;&amp;gt; &amp;lt;col id=&amp;quot;TBL-4-1&amp;quot; /&amp;gt; &amp;lt;col id=&amp;quot;TBL-4-2&amp;quot; /&amp;gt; &amp;lt;col id=&amp;quot;TBL-4-3&amp;quot; /&amp;gt; &amp;lt;col id=&amp;quot;TBL-4-4&amp;quot; /&amp;gt; &amp;lt;col id=&amp;quot;TBL-4-5&amp;quot; /&amp;gt;&amp;lt;/colgroup&amp;gt; &amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-4-1-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-1-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Product&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-1-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Category&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-1-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;BLE SoC&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-1-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Vulnerability&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-1-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Impact&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-4-2-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-2-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Eve Energy&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-2-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Smart Home
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-2-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+DA14680
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-2-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+(&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-140006.4&amp;quot;&amp;gt;6.4&amp;lt;/a&amp;gt;) Silent Length Overflow
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-2-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+&amp;lt;span id=&amp;quot;textcolor7&amp;quot;&amp;gt;Crash&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-4-3-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-3-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;August Smart Lock&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-3-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Smart Home
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-3-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+DA14680
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-3-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+(&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-140006.4&amp;quot;&amp;gt;6.4&amp;lt;/a&amp;gt;) Silent Length Overflow
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-3-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+&amp;lt;span id=&amp;quot;textcolor8&amp;quot;&amp;gt;Crash&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-4-4-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-4-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;Fitbit Inspire&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-4-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+Wearables
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-4-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+CY8C68237
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-4-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+(&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-110006.1&amp;quot;&amp;gt;6.1&amp;lt;/a&amp;gt;) LL Length Overflow
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-4-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+&amp;lt;span id=&amp;quot;textcolor9&amp;quot;&amp;gt;Crash&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-4-5-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-5-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-5-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-5-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-5-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+(&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-120006.2&amp;quot;&amp;gt;6.2&amp;lt;/a&amp;gt;) LLID Deadlock
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-5-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multirow&amp;quot;&amp;gt;
+&amp;lt;span id=&amp;quot;textcolor10&amp;quot;&amp;gt;Crash&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-4-6-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-6-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;CubiTag&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-6-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Gadget Tracking
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-6-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+CC2640R2
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-6-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+(&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-160006.6&amp;quot;&amp;gt;6.6&amp;lt;/a&amp;gt;) Public Key Crash
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-6-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span id=&amp;quot;textcolor11&amp;quot;&amp;gt;Deadlock&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-4-7-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-7-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;ptmb8t-&amp;quot;&amp;gt;eGeeTouch TSA Lock&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-7-2&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+Security
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-7-3&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+CC2540
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-7-4&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;multicolumn&amp;quot;&amp;gt;
+(&amp;lt;a href=&amp;quot;https://asset-group.github.io/disclosures/sweyntooth/disclosure.html#x1-150006.5&amp;quot;&amp;gt;6.5&amp;lt;/a&amp;gt;) Invalid Connection Request
+&amp;lt;/div&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-7-5&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;span id=&amp;quot;textcolor12&amp;quot;&amp;gt;Deadlock&amp;lt;/span&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr class=&amp;quot;hline&amp;quot;&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;hr /&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr id=&amp;quot;TBL-4-8-&amp;quot;&amp;gt;
+&amp;lt;td id=&amp;quot;TBL-4-8-1&amp;quot; class=&amp;quot;td11&amp;quot;&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;p&amp;gt;
+문제가 있는 제품들
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div>
+&lt;p class="indent">
+&lt;img src="https://asset-group.github.io/disclosures/sweyntooth/Tables/prods_affected.png" />
+&lt;/p></description></item><item><title>ESP32 개발 환경 설정 – Mac OS</title><link>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</link><pubDate>Fri, 06 Jul 2018 06:02:04 +0000</pubDate><guid>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</guid><description>
+&lt;p>Mac OS에서 ESP32 개발 환경 설정은 다음의 &lt;a href="http://esp-idf.readthedocs.io/en/latest/get-started/index.html#introduction" target="_blank" rel="noopener noreferrer">링크&lt;/a>를 참고한다.&lt;/p>
+&lt;img loading="lazy" class="" src="http://esp-idf.readthedocs.io/en/latest/_images/what-you-need.png" width="468" height="305" />
+&lt;h3 id="tool-chain-설정">Tool chain 설정&lt;/h3>
+&lt;p>pip와 pyserial을 설치- 이 과정중에 dependency가 있는 라이브러리 설치는 sudo easy_install xxx  형태로 설치한다.&lt;/p>
+&lt;pre>&lt;span class="n">sudo&lt;/span> &lt;span class="n">easy_install&lt;/span> &lt;span class="n">pip
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell1">&lt;span class="n">brew&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">cmake&lt;/span> &lt;span class="n">ninja&lt;/span> &lt;span class="n">dfu&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">util&lt;/span>&lt;/pre>
+&lt;p>&lt;span class="n">다음은 툴체인을 다운로드하고, 설치를 하는 과정임&lt;/span>&lt;/p>
+&lt;pre>&lt;span class="n">mkdir&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">cd&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">git clone --recursive https://github.com/espressif/esp-idf.git
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell3">&lt;span class="nb">cd&lt;/span> ~/esp/esp-idf
+./install.sh&lt;/pre>
+&lt;p>환경설정&lt;/p>
+&lt;blockquote>
+&lt;p>. $HOME/esp/esp-idf/export.sh&lt;/p>&lt;/blockquote>
+&lt;p>다음의 내용을  .bash_profile에 추가한 다음에 esp 개발시 터미널에서 get_idf를 실행하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>alias get_idf=’. $HOME/esp/esp-idf/export.sh’&lt;/p>&lt;/blockquote>
+&lt;p>추후에 리모트 깃의 내용을 업데이트 하려면 다음과 같이 한다.&lt;/p></description></item><item><title>HC-05, HC-06 블루투스 모듈</title><link>https://openmicrolab.com/hc-05-hc-06-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EB%AA%A8%EB%93%88/</link><pubDate>Sat, 11 Feb 2017 06:29:02 +0000</pubDate><guid>https://openmicrolab.com/hc-05-hc-06-%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4-%EB%AA%A8%EB%93%88/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-3895" src="http://res.cloudinary.com/openmicrolab/image/upload/v1486793995/HC-05_HC-06_lkpfkl.jpg" width="603" height="413" />
+&lt;p>&lt;strong>HC-05&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Default baud: 38400&lt;/li>
+&lt;li>6Pin (EN pin)&lt;/li>
+&lt;li>시리얼 터미널은 Both NL-CR 세팅&lt;/li>
+&lt;li>&lt;a href="http://www.linotux.ch/arduino/HC-0305_serial_module_AT_commamd_set_201104_revised.pdf" target="_blank">AT command&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>HC-06&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Default baud: 9600&lt;/li>
+&lt;li>4Pin&lt;/li>
+&lt;li>Line ending 없음&lt;/li>
+&lt;li>&lt;a href="http://www.micro4you.com/files/ElecFreaks/Bluetooth%20HC-06.pdf" target="_blank">AT command&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>참고 자료: &lt;a href="http://www.martyncurrey.com/category/bluetooth/" target="_blank">&lt;a href="http://www.martyncurrey.com/category/bluetooth/">http://www.martyncurrey.com/category/bluetooth/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Mac OS X에 nRF51 개발 환경 설정하기</title><link>https://openmicrolab.com/mac-os-x%EC%97%90-nrf51-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 02 Jan 2017 13:26:38 +0000</pubDate><guid>https://openmicrolab.com/mac-os-x%EC%97%90-nrf51-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;strong>1. gcc 설치&lt;/strong>&lt;br>
+&lt;a href="https://launchpad.net/gcc-arm-embedded/+download" target="_blank" rel="noopener">여기&lt;/a>에서 다운로드 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>$ mkdir /usr/local/gcc-arm&lt;br>
+$ tar -xjf gcc-arm-none-eabi-5_4-2016q3-20160926-mac.tar.bz2 -C /usr/local/gcc-arm&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>2. nRF5x-Command-Line-Tools-OSX&lt;/strong>&lt;br>
+&lt;a href="http://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank" rel="noopener">여기&lt;/a>에서 다운로드 한다.&lt;br>
+/usr/local/ 에 nrfjprog와 mergehex를 copy한다.&lt;/p>
+&lt;p>&lt;strong>3. .bash_profile 수정&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/nrfjprog:$PATH&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>4. Segger Software and documentation pack for Mac OS X 설치&lt;/strong>&lt;br>
+&lt;a href="https://www.segger.com/jlink-software.html" target="_blank" rel="noopener">여기&lt;/a>에 패키지 파일이 있다.&lt;/p>
+&lt;p>&lt;strong>5. SDK설치 및 Makefile.posix 파일 수정&lt;/strong>&lt;br>
+&lt;a href="http://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank" rel="noopener">여기&lt;/a> 또는 &lt;a href="http://developer.nordicsemi.com/" target="_blank" rel="noopener">여기&lt;/a>에서 SDK를 다운로드 해서 원하는 곳에서 압축을 푼다.&lt;br>
+components/toolchain/gcc/Makefile.posix 이 파일을 gcc 버전에 맞게 수정한다.&lt;/p>
+&lt;blockquote>
+&lt;p>GNU_INSTALL_ROOT := /usr/local/gcc-arm/gcc-arm-none-eabi-5_4-2016q3&lt;br>
+GNU_VERSION := 5.4.1&lt;br>
+GNU_PREFIX := arm-none-eabi&lt;/p></description></item><item><title>무선 통신 기술의 비교</title><link>https://openmicrolab.com/3560-2/</link><pubDate>Fri, 04 Mar 2016 01:41:30 +0000</pubDate><guid>https://openmicrolab.com/3560-2/</guid><description>
+&lt;p>잘 정리된 무선 통신 기술의 비교표&lt;br>
+&lt;a href="https://openmicrolab.com/images/2016/03/matrix.png">&lt;img loading="lazy" class="aligncenter size-large wp-image-3561" src="https://openmicrolab.com/images/2016/03/matrix-1024x510.png" alt="matrix" width="1024" height="510" srcset="https://openmicrolab.com/images/2016/03/matrix-1024x510.png 1024w, https://openmicrolab.com/images/2016/03/matrix-300x149.png 300w, https://openmicrolab.com/images/2016/03/matrix.png 1371w" sizes="(max-width: 1024px) 100vw, 1024px" />&lt;/a>&lt;/p>
+&lt;p>출처: &lt;a href="https://www.opensensors.io/connectivity" target="_blank">&lt;a href="https://www.opensensors.io/connectivity">https://www.opensensors.io/connectivity&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Wi-Fi, Bluetooth가 스마트홈의 주요 프로토롤로 사용될 전망</title><link>https://openmicrolab.com/wi-fi-bluetooth%EA%B0%80-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%99%88%EC%9D%98-%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%ED%86%A0%EB%A1%A4%EB%A1%9C-%EC%82%AC%EC%9A%A9%EB%90%A0-%EC%A0%84%EB%A7%9D/</link><pubDate>Wed, 13 Jan 2016 07:29:55 +0000</pubDate><guid>https://openmicrolab.com/wi-fi-bluetooth%EA%B0%80-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%99%88%EC%9D%98-%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%ED%86%A0%EB%A1%A4%EB%A1%9C-%EC%82%AC%EC%9A%A9%EB%90%A0-%EC%A0%84%EB%A7%9D/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="https://cdn0.vox-cdn.com/thumbor/cHmoiy6OLOrrqQxfTKb6ODJQOLk=/0x0:2050x1367/1280x854/cdn0.vox-cdn.com/uploads/chorus_image/image/48526393/v-DSC00808.0.0.jpg" alt="" width="1280" height="854" />
+&lt;p>10년전만 해도 홈네트워크를 구축하려면 Zigbee, Z-Wave를 사용했지만 앞으로는 WI-Fi나 Bluetooth가 Zigbee를 대체할 수 있을 것으로 기대된다. 그 이유는 Wi-Fi의 경우 상대적으로 전력 소모가 많아서 단말에 쓰이기 어려웠는데, &lt;a href="http://www.wi-fi.org/discover-wi-fi/wi-fi-halow" target="_blank">Wi-Fi HaLow(IEEE802.11ah)&lt;/a> 덕분에 low power, long range를 지원하게 됐다. 그리고 Bluetooth도 1:1 연결에서 벗어나 &lt;a href="http://www.theverge.com/2015/11/12/9720768/bluetooth-upgrade-roadmap-2016-sig" target="_blank">mesh network를 지원&lt;/a>한다니 기존 스마트 홈시장의 판도가 바뀔 예정이다.&lt;/p>
+&lt;p>관련기사:&lt;a href="http://www.theverge.com/2016/1/8/10737900/wifi-bluetooth-coming-for-zigbee-zwave-smart-home-iot-ces-2016" target="_blank">The Verge &lt;/a>이미지 출처:&lt;a href="http://www.theverge.com/2016/1/8/10737900/wifi-bluetooth-coming-for-zigbee-zwave-smart-home-iot-ces-2016" target="_blank">The Verge&lt;/a>&lt;/p>
+&lt;p>&lt;strong>[My Insight]&lt;/strong> 스마트 홈에서의 주도권을 하나의 기기나 인터페이스가 장악할 것으로 기대되지 않기때문에 이 시장을 바라보는 회사들은 모두 기기간의 호환성 및 에코시스템을 구축해야만 한다. 이러한 에코시스템을 구축할때 이미 스마트폰에 탑재된 프로토콜을 사용하면 추가적인 기기가 필요하지 않고 사용자도 쉽게 접근이 가능하다. 하지만 ZigBee의 경우 IP기반이 아니기 때문에 필립스 Hue의 경우처럼 Zigbee 프로토콜을 IP로 변환해주는 게이트웨이(&lt;a href="http://www.anandtech.com/show/6805/philips-hue-automated-home-lighting-gets-colorful/4" target="_blank">Hue Bridge&lt;/a>)가 필요하다. 따라서 이미 스마트폰에 탑재되어 있는 Bluetooth나 Wi-Fi가 Zigbee를 대체하면 Zigbee는 그 영역이 줄어들 수 밖에 없을 것이다.&lt;/p></description></item><item><title>Wi2Wi – WiFi, Bluetooth 모듈</title><link>https://openmicrolab.com/wi2wi-wifi-bluetooth-%EB%AA%A8%EB%93%88/</link><pubDate>Thu, 20 May 2010 00:35:19 +0000</pubDate><guid>https://openmicrolab.com/wi2wi-wifi-bluetooth-%EB%AA%A8%EB%93%88/</guid><description>
+&lt;p>Wi2Wi는 산업 온도 제품군인 W2CBW009Di Wi-Fi 및 블루투스 모듈을 처음으로 선보였다. 마벨의 88W8688 WLAN 칩셋을 기반으로 한 이 모듈은 IEEE Wi-Fi 802.11 b/g 및 블루투스 2.1 연결을 초소형 풋프린트로 제공하고, -40°C에서 +85°C의 폭넓은 산업 온도 범위를 지원한다.&lt;/p>
+&lt;p>16mm x 16mm x 2.1mm 크기에 불과한 W2CBW009Di는 전세계 주요 수직 시장에 비용 효율적이고도 고성능 WLAN-BT 모듈의 필요성을 만족시킨다.&lt;/p>
+&lt;p>새로운 모듈은 산업용, 방위, 홈 인프라, 의료용, 테스트 장비 및 가전 어플라이언스를 포함한 주요 시장군을 겨냥하고 있다.&lt;/p></description></item></channel></rss>

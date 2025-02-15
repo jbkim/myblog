@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wireless 3D Printing on OpenMicroLab</title><link>https://openmicrolab.com/tags/wireless-3d-printing/</link><description>Recent content in Wireless 3D Printing on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 19 Oct 2016 09:17:40 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/wireless-3d-printing/index.xml" rel="self" type="application/rss+xml"/><item><title>AstroPrint 분석</title><link>https://openmicrolab.com/astroprint-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 19 Oct 2016 09:17:40 +0000</pubDate><guid>https://openmicrolab.com/astroprint-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;p>원격 3D프린팅을 지원하는 기기인 &lt;a href="https://www.astroprint.com/" target="_blank">AstroPrint&lt;/a> 분석&lt;/p>
+&lt;p>&lt;strong>1. 가격&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>AstroPrint에서 파는 기기 – $149&lt;/li>
+&lt;li>Raspberry Pi 세트: $65&lt;/li>
+&lt;li>지원하는 카메라: $30 ~ $68 (라즈베리용 카메라는 지원하지 않음)&lt;/li>
+&lt;li>따라서 카메라 포함 가격은 $95 ~ $217 정도&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>2. 카메라&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>카메라는 리눅스를 지원하는 USB카메라(Video for Linux v2)이어야 하며 웹에서 카메라 스트리밍을 보는 형태라서(WebRTC) FireFox, Chrome and Opera에서만 영상을 볼 수 있음&lt;/li>
+&lt;li>pcDuino 기반의 AstroPrint는 스트리밍 지원 안됨. &lt;span style="text-decoration: underline;">즉 Raspberry Pi기반만 웹 스트리밍 지원&lt;/span>.&lt;/li>
+&lt;li>&lt;a href="http://iswebrtcreadyyet.com/" target="_blank">WebRTC의 한계&lt;/a>: 브라우저 지원&lt;/li>
+&lt;/ul>
+&lt;p>**참고 자료: **&lt;a href="https://blog.astroprint.com/live-video-streaming-is-now-available-on-astroprint/" target="_blank">&lt;a href="https://blog.astroprint.com/live-video-streaming-is-now-available-on-astroprint/">https://blog.astroprint.com/live-video-streaming-is-now-available-on-astroprint/&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

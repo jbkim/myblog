@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Source on OpenMicroLab</title><link>https://openmicrolab.com/tags/open-source/</link><description>Recent content in Open Source on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 24 May 2011 04:56:22 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/open-source/index.xml" rel="self" type="application/rss+xml"/><item><title>마이크로칩 chipKIT for the Arduino™ Community</title><link>https://openmicrolab.com/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%B9%A9-chipkit-for-the-arduino-community/</link><pubDate>Tue, 24 May 2011 04:56:22 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%B9%A9-chipkit-for-the-arduino-community/</guid><description>
+&lt;p>지난 글(&lt;A title="[http://liketheocean.tistory.com/111]로 이동합니다." href="http://liketheocean.tistory.com/111" target=_blank>이젠 오픈소스 하드웨어가 대세&lt;/A>)에서 마이크로칩에서 Arduino 호환 보드인 chipKIT를 릴리즈 했다고 했는데, 유트브에 동영상이 올라왔네요.&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;br />
+&lt;/DIV>
+&lt;DIV>
+아래 링크는 공식 릴리즈 주소&lt;br /> &lt;A href="http://www.microchip.com/pagehandler/en-us/chipKIT-Development-Platform.html">http://www.microchip.com/pagehandler/en-us/chipKIT-Development-Platform.html&lt;/A>&lt;/p>
+&lt;p>
+&lt;/DIV>
+&lt;/p></description></item><item><title>Open Source Hardware Logo</title><link>https://openmicrolab.com/open-source-hardware-logo/</link><pubDate>Mon, 21 Mar 2011 11:48:47 +0000</pubDate><guid>https://openmicrolab.com/open-source-hardware-logo/</guid><description>
+&lt;p>Open Source Software에서는 다음과 같은 로고를 사용을 합니다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.1844AA504D873A401B5B45.png" class="aligncenter" width="168" height="140" alt="" filename="opensource-logo.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>&lt;strong>OSHW&lt;/strong>에서도 공식 로고를 만들기 위해 공모를 했습니다.&lt;br>
+총 129개가 접수가 됐네요.&lt;br>
+로고로 선정되기 위한 3가지 기준은&lt;br>
+  -. PCB에 인쇄가 쉽고 보기 쉬워야 하고,&lt;br>
+  -. 회로도에 인쇄가 쉽고 보기 쉬워야 하고,&lt;br>
+  -. 개방성을 잘 나타내야하네요.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile3.uf.153BC74D4D8739FE389333.png" class="aligncenter" width="100" height="102" alt="" filename="oh-1-100.png" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>이건 Open Hardware Summit에서 제출한 로고이고…&lt;br>
+나머지는 아래 링크에서 확인 가능 합니다.&lt;br>
+&lt;a href="http://www.openhardwaresummit.org/oshw-logo-v1-0/">http://www.openhardwaresummit.org/oshw-logo-v1-0/&lt;/a>&lt;/p>
+&lt;p>129개의 응모작중에서 10개의 작품이 투표가 진행이 되고 있습니다.&lt;br>
+어떤 로고가 좋은신 가요? &lt;a href="http://www.openhardwaresummit.org/oshw-logo-selection/">http://www.openhardwaresummit.org/oshw-logo-selection/&lt;/a>&lt;/p></description></item></channel></rss>

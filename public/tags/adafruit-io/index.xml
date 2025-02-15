@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Adafruit IO on OpenMicroLab</title><link>https://openmicrolab.com/tags/adafruit-io/</link><description>Recent content in Adafruit IO on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 11 Nov 2017 14:59:36 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/adafruit-io/index.xml" rel="self" type="application/rss+xml"/><item><title>MQTT 란?</title><link>https://openmicrolab.com/mqtt-%EB%9E%80/</link><pubDate>Sat, 11 Nov 2017 14:59:36 +0000</pubDate><guid>https://openmicrolab.com/mqtt-%EB%9E%80/</guid><description>
+&lt;h3 class="p1" id="mqttspan-classs1란span">MQTT&lt;span class="s1">란&lt;/span>?&lt;/h3>
+&lt;p class="p1">
+MQ Telemetry Transport&lt;span class="s1">의&lt;/span> &lt;span class="s1">약자&lt;/span>
+&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+It is a publish/subscribe, extremely simple and lightweight messaging protocol, designed for constrained devices and low-bandwidth, high-latency or unreliable networks.
+&lt;/p>&lt;/blockquote>
+&lt;h3 class="p1" id="span-classs1왜span-mqttspan-classs1를span-span-classs1사용하는가span">&lt;span class="s1">왜&lt;/span> MQTT&lt;span class="s1">를&lt;/span> &lt;span class="s1">사용하는가&lt;/span>?&lt;/h3>
+&lt;p class="p3">
+&lt;span class="s2">IoT(Internet of Thing): Thing&lt;/span>을&lt;span class="s2"> Internet&lt;/span>에 연결을 하려면&lt;span class="s2"> Ethernet, WiFi, Cellular &lt;/span>등이 필요하다&lt;span class="s2">. &lt;/span>이런&lt;span class="s2"> connectivity&lt;/span>가 대부분 무선으로 가고 있는데&lt;span class="s2">, &lt;/span>무선이라 함은 이동성이 보장되야 하므로 밧데리가 필요하고 파워소모는 중요한 요소이다&lt;span class="s2">. &lt;/span>파워를 적게 사용하기 위해서는 빨리 연결을 하고&lt;span class="s2">, &lt;/span>데이터를 보내고 빨리 연결을 끊어야 한다&lt;span class="s2">. &lt;/span>특히 데이터에 오버헤드가 없어야 한다&lt;span class="s2">. &lt;/span>셀룰라에서 데이터는 돈이니&lt;span class="s2">…&lt;/span>
+&lt;/p></description></item></channel></rss>

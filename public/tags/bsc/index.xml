@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BSC on OpenMicroLab</title><link>https://openmicrolab.com/tags/bsc/</link><description>Recent content in BSC on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 22 May 2012 11:35:38 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/bsc/index.xml" rel="self" type="application/rss+xml"/><item><title>칩 용어: BSC</title><link>https://openmicrolab.com/%EC%B9%A9-%EC%9A%A9%EC%96%B4-bsc/</link><pubDate>Tue, 22 May 2012 11:35:38 +0000</pubDate><guid>https://openmicrolab.com/%EC%B9%A9-%EC%9A%A9%EC%96%B4-bsc/</guid><description>
+&lt;/p>
+&lt;p>칩의 패키지 dimension 정보에 나오는 &lt;strong>BSC&lt;/strong>란?&lt;/p>
+&lt;div class="txc-textbox" style="border: 1px dashed rgb(243, 197, 52); background-color: rgb(254, 254, 184); padding: 10px; ">
+&lt;p>
+&lt;b>BSC &lt;/b>(&lt;b>Basic Spacing between Centers&lt;/b>) is a term that appears on IC package drawings in reference to dimensions between pins.
+&lt;/p>
+&lt;p>
+&amp;#8220;Basic&amp;#8221; spacing is nominal and can change with conditions. For example, the distance between the rows of pins on a DIP (dual inline package) is BSC because it changes when the auto insertion machine grabs the part, and again when the part is inserted. The BSC dimension, in this case, is the dimension of the hole spacing that the part will fit into, rather than the dimensions of the part itself.
+&lt;/p></description></item></channel></rss>

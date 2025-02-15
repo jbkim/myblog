@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>프로파일 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC/</link><description>Recent content in 프로파일 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 26 Nov 2018 04:23:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>Cura에 새로운 프린터 프로파일 추가하기</title><link>https://openmicrolab.com/cura%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 26 Nov 2018 04:23:09 +0000</pubDate><guid>https://openmicrolab.com/cura%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>기기 정의 파일, 익스트루더 정의 파일을 만들어서 적용을 해야한다.&lt;/p>
+&lt;ol>
+&lt;li>기기 정의 파일&lt;br>
+기기의 특성을 정의한 파일로 &lt;a href="https://github.com/Ultimaker/Cura/blob/master/resources/definitions/ultimaker_original.def.json" target="_blank" rel="noopener noreferrer">템플릿&lt;/a>을 참고한다.&lt;br>
+보다 자세한 내용은 &lt;a href="https://github.com/Ultimaker/Cura/wiki/Definition-Files-Explained" target="_blank" rel="noopener noreferrer">여기&lt;/a> 참고&lt;/li>
+&lt;li>익스트루더 정의 파일&lt;/li>
+&lt;/ol>
+&lt;p>Creatable D3를 Cura에 적용한 &lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1543206099/Creatable_D3_Profile_Test_reayqr.pdf" target="_blank" rel="noopener noreferrer">문서 &lt;/a>&lt;/p></description></item></channel></rss>

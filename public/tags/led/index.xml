@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LED on OpenMicroLab</title><link>https://openmicrolab.com/tags/led/</link><description>Recent content in LED on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 12 Oct 2019 02:43:52 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/led/index.xml" rel="self" type="application/rss+xml"/><item><title>칩 LED 극성</title><link>https://openmicrolab.com/%EC%B9%A9-led-%EA%B7%B9%EC%84%B1/</link><pubDate>Sat, 12 Oct 2019 02:43:52 +0000</pubDate><guid>https://openmicrolab.com/%EC%B9%A9-led-%EA%B7%B9%EC%84%B1/</guid><description>
+&lt;p>전류가 흐르는 방향으로 기억하면 될 듯 하다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4645" src="https://res.cloudinary.com/openmicrolab/image/upload/v1570848064/Chip_LED_skuelv.png" width="322" height="322" /></description></item><item><title>LED 회로 주의점</title><link>https://openmicrolab.com/led-%ED%9A%8C%EB%A1%9C-%EC%A3%BC%EC%9D%98%EC%A0%90/</link><pubDate>Tue, 27 Aug 2019 01:33:18 +0000</pubDate><guid>https://openmicrolab.com/led-%ED%9A%8C%EB%A1%9C-%EC%A3%BC%EC%9D%98%EC%A0%90/</guid><description>
+&lt;blockquote>
+&lt;p>각  LED의 최대 전류를 넘으면 안됨. 하지만 각 LED 소자의 Forward Voltage가 조금씩 다를 수 있기 때문에 각각의 LED에 저항을 달으라는 이야기.&lt;/p>&lt;/blockquote>
+&lt;img loading="lazy" class="alignnone wp-image-4615" src="https://res.cloudinary.com/openmicrolab/image/upload/v1566869294/LED_Circuit_l8aoww.png" width="654" height="486" /></description></item><item><title>챨리플랙싱 – Charliplexing</title><link>https://openmicrolab.com/%EC%B1%A8%EB%A6%AC%ED%94%8C%EB%9E%99%EC%8B%B1-charliplexing/</link><pubDate>Sat, 13 Aug 2016 05:21:20 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%A8%EB%A6%AC%ED%94%8C%EB%9E%99%EC%8B%B1-charliplexing/</guid><description>
+&lt;p>&lt;strong>챨리플랙싱 – Charliplexing&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>챨리플랙싱(Charliplexing)은 다수의 LED를 적은 수의 핀으로 제어하기 위한 기법.&lt;/li>
+&lt;li>&lt;a href="https://www.maximintegrated.com/en.html" target="_blank">Maxim&lt;/a>사의 Charles Allen가 개발.&lt;/li>
+&lt;li>N개의 핀으로는 N*(N-1)개의 LED를 제어할 수 있다.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-3726" src="http://res.cloudinary.com/openmicrolab/image/upload/v1471065535/Charlieplexing_LED_rtwotx.png" width="609" height="519" />
+&lt;p>참고&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.instructables.com/id/Charlieplexing-LEDs--The-theory/?ALLSTEPS" target="_blank">&lt;a href="http://www.instructables.com/id/Charlieplexing-LEDs&amp;amp;#8211;The-theory/?ALLSTEPS">http://www.instructables.com/id/Charlieplexing-LEDs&amp;amp;#8211;The-theory/?ALLSTEPS&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://en.wikipedia.org/wiki/Charlieplexing" target="_blank">&lt;a href="http://en.wikipedia.org/wiki/Charlieplexing">http://en.wikipedia.org/wiki/Charlieplexing&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

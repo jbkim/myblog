@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brew on OpenMicroLab</title><link>https://openmicrolab.com/tags/brew/</link><description>Recent content in Brew on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 25 Nov 2014 12:52:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/brew/index.xml" rel="self" type="application/rss+xml"/><item><title>OS X 10.10 요세미티에서 Homebrew 문제</title><link>https://openmicrolab.com/os-x-10-10-%EC%9A%94%EC%84%B8%EB%AF%B8%ED%8B%B0%EC%97%90%EC%84%9C-homebrew-%EB%AC%B8%EC%A0%9C/</link><pubDate>Tue, 25 Nov 2014 12:52:09 +0000</pubDate><guid>https://openmicrolab.com/os-x-10-10-%EC%9A%94%EC%84%B8%EB%AF%B8%ED%8B%B0%EC%97%90%EC%84%9C-homebrew-%EB%AC%B8%EC%A0%9C/</guid><description>
+&lt;p>요세미티로 업데이트가 되면서 brew가 이상해졌다.  대략 아래와 같은 에러메시지가 나온다.&lt;/p>
+&lt;blockquote>
+&lt;p>/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory /usr/local/bin/brew: line 26: /usr/local/Library/brew.rb: Undefined error: 0&lt;/p>&lt;/blockquote>
+&lt;p>일단 Xocde를 업데이트하고 Xcode command line tool도 업데이트 했는데 해결책은 그게 아니고… brew.rb 파일을 수정하면 된다.&lt;/p>
+&lt;p>/usr/local/Library/brew.rb 파일을 열어서 첫째줄의&lt;/p>
+&lt;blockquote>
+&lt;p>#!/System/Library/Frameworks/Ruby.framework/Versions/&lt;span style="color: #ff0000;">1.8&lt;/span>/usr/bin/ruby -W0&lt;/p>
+&lt;p>를 다음과 같이 수정한다.&lt;br>
+#!/System/Library/Frameworks/Ruby.framework/Versions/&lt;span style="color: #ff0000;">Current&lt;/span>/usr/bin/ruby -W0&lt;/p>&lt;/blockquote>
+&lt;p>그 다음에&lt;/p>
+&lt;blockquote>
+&lt;p>brew update&lt;/p>&lt;/blockquote></description></item></channel></rss>

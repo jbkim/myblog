@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>저항값 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%A0%80%ED%95%AD%EA%B0%92/</link><description>Recent content in 저항값 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 03 Aug 2014 14:57:49 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%A0%80%ED%95%AD%EA%B0%92/index.xml" rel="self" type="application/rss+xml"/><item><title>PCB Trace 저항값 계산기</title><link>https://openmicrolab.com/pcb-trace-%EC%A0%80%ED%95%AD%EA%B0%92-%EA%B3%84%EC%82%B0%EA%B8%B0/</link><pubDate>Sun, 03 Aug 2014 14:57:49 +0000</pubDate><guid>https://openmicrolab.com/pcb-trace-%EC%A0%80%ED%95%AD%EA%B0%92-%EA%B3%84%EC%82%B0%EA%B8%B0/</guid><description>
+&lt;p>PCB의 선폭, 동박의 두께, 길이를 입력하면 저항값을 얻을 수 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone" alt="" src="http://openmicrolab.cdn2.cafe24.com/pcb_resistance.png" width="365" height="325" />
+&lt;p>&lt;strong>Electrical Equations:&lt;/strong>&lt;br>
+Resistance = Resistivity*Length/Area*(1 + (Temp_Co*(Temp – 25))&lt;br>
+Where, Area = Thickness*Width&lt;br>
+A copper Thickness of 1 oz/ft^2 = 0.0035 cm&lt;br>
+Copper Resistivity = 1.7E-6 ohm-cm&lt;br>
+Copper Temp_Co = 3.9E-3 ohm/ohm/C&lt;/p>
+&lt;p>&lt;strong>Thermal Equations:&lt;/strong>&lt;br>
+Thermal_Resistance = Thermal_Resistivity*Length/Area&lt;br>
+Copper Thermal_Resistivity = 0.249 cm-K/W (at 300K)&lt;/p>
+&lt;p>관련 링크: &lt;a href="http://circuitcalculator.com/wordpress/2006/01/24/trace-resistance-calculator" target="_blank">&lt;a href="http://circuitcalculator.com/wordpress/2006/01/24/trace-resistance-calculator">http://circuitcalculator.com/wordpress/2006/01/24/trace-resistance-calculator&lt;/a>&lt;/a>&lt;/p></description></item></channel></rss>

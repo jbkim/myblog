@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ARM on OpenMicroLab</title><link>https://openmicrolab.com/categories/arm/</link><description>Recent content in ARM on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 26 Nov 2021 01:42:32 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/arm/index.xml" rel="self" type="application/rss+xml"/><item><title>ST-LINK가 STM32CubeIDE에서의 오류</title><link>https://openmicrolab.com/st-link%EA%B0%80-stm32cubeide%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%EB%A5%98/</link><pubDate>Fri, 26 Nov 2021 01:42:32 +0000</pubDate><guid>https://openmicrolab.com/st-link%EA%B0%80-stm32cubeide%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%EB%A5%98/</guid><description>
+&lt;p>기존에 사용하던 ST-LINK가 있었고, 새로 구매한 ST-LINK를 연결해서 테스트를 하려고 했는데, 다음과 같은 에러 메시지가 보인다. ST-LINK의 펌웨어도 업데이트를 해보았으나 동일한 메시지가 계속 발생.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2021/11/st-link1.png">&lt;img loading="lazy" class="aligncenter wp-image-4808" src="https://openmicrolab.com/images/2021/11/st-link1.png" alt="" width="471" height="114" srcset="https://openmicrolab.com/images/2021/11/st-link1.png 578w, https://openmicrolab.com/images/2021/11/st-link1-300x73.png 300w" sizes="(max-width: 471px) 100vw, 471px" />&lt;/a>&lt;/p>
+&lt;p>디버그 설정에서 보니 ST-LINK S/N 에서 Scan을 하면 자동으로 리스트가 업데이트가 되는 것이 아니라, &lt;strong>리스트 중에 하나를 수동으로 선택 해야하는 것.&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2021/11/stm32cubeIDE.png">&lt;img loading="lazy" class="aligncenter wp-image-4809" src="https://openmicrolab.com/images/2021/11/stm32cubeIDE.png" alt="" width="574" height="527" srcset="https://openmicrolab.com/images/2021/11/stm32cubeIDE.png 803w, https://openmicrolab.com/images/2021/11/stm32cubeIDE-300x275.png 300w, https://openmicrolab.com/images/2021/11/stm32cubeIDE-768x705.png 768w" sizes="(max-width: 574px) 100vw, 574px" />&lt;/a>&lt;/p></description></item><item><title>STM32 USB 솔루션</title><link>https://openmicrolab.com/stm32-usb-%EC%86%94%EB%A3%A8%EC%85%98/</link><pubDate>Sun, 16 May 2021 07:33:01 +0000</pubDate><guid>https://openmicrolab.com/stm32-usb-%EC%86%94%EB%A3%A8%EC%85%98/</guid><description>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2021/05/STM32_USB.png">&lt;img loading="lazy" class="aligncenter wp-image-4740 size-large" src="https://openmicrolab.com/images/2021/05/STM32_USB-1024x737.png" alt="" width="1024" height="737" srcset="https://openmicrolab.com/images/2021/05/STM32_USB-1024x737.png 1024w, https://openmicrolab.com/images/2021/05/STM32_USB-300x216.png 300w, https://openmicrolab.com/images/2021/05/STM32_USB-768x553.png 768w, https://openmicrolab.com/images/2021/05/STM32_USB.png 1248w" sizes="(max-width: 1024px) 100vw, 1024px" />&lt;/a>&lt;/p></description></item><item><title>SWD Pin map</title><link>https://openmicrolab.com/swd-pin-map/</link><pubDate>Sun, 30 Aug 2020 08:32:05 +0000</pubDate><guid>https://openmicrolab.com/swd-pin-map/</guid><description>
+&lt;p>J-link 디버거의 SWD Pin map은 다음과 같다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2020/08/segger.jpg">&lt;img loading="lazy" class="size-full wp-image-4697 aligncenter" src="https://openmicrolab.com/images/2020/08/segger.jpg" alt="" width="381" height="352" srcset="https://openmicrolab.com/images/2020/08/segger.jpg 381w, https://openmicrolab.com/images/2020/08/segger-300x277.jpg 300w" sizes="(max-width: 381px) 100vw, 381px" />&lt;/a>&lt;/p></description></item><item><title>Hex 파일 합치기</title><link>https://openmicrolab.com/hex-%ED%8C%8C%EC%9D%BC-%ED%95%A9%EC%B9%98%EA%B8%B0/</link><pubDate>Fri, 20 Sep 2019 01:32:52 +0000</pubDate><guid>https://openmicrolab.com/hex-%ED%8C%8C%EC%9D%BC-%ED%95%A9%EC%B9%98%EA%B8%B0/</guid><description>
+&lt;p>Bootloader 및 Application 펌웨어가 있는 경우 양산시 하나의 파일을 합쳐서 프로그래밍을 하면 1단계가 줄어든다.&lt;/p>
+&lt;h3 id="hex-파일-합치기">Hex 파일 합치기&lt;/h3>
+&lt;p>&lt;a href="https://sourceforge.net/projects/srecord/files/srecord-win32/1.64/srecord-1.64-win32.zip/download" target="_blank" rel="noopener">srec_cat.exe&lt;/a> 이라는 윈도우즈 프로그램을 사용하여 다음과 같이 하나의 파일로 합친다.&lt;/p>
+&lt;pre>srec_cat.exe HexFile1.hex -Intel HexFile2.hex -Intel -o MergedHexFile.hex -Intel
+&lt;/pre>
+&lt;h3 id="인텔-hex-파일포맷">인텔 Hex 파일포맷&lt;/h3>
+&lt;h4 id="record-format">Record Format&lt;/h4>
+&lt;pre>:llaaaatt[dd...]cc
+&lt;/pre>
+&lt;ul>
+&lt;li>&lt;strong>:&lt;/strong> is the colon that starts every Intel HEX record.&lt;/li>
+&lt;li>&lt;strong>&lt;em>ll&lt;/em>&lt;/strong> is the record-length field that represents the number of data bytes (&lt;strong>dd&lt;/strong>) in the record.&lt;/li>
+&lt;li>&lt;strong>&lt;em>aaaa&lt;/em>&lt;/strong> is the address field that represents the starting address for subsequent data in the record.&lt;/li>
+&lt;li>&lt;strong>&lt;em>tt&lt;/em>&lt;/strong> is the field that represents the HEX record type, which may be one of the following:&lt;br>
+&lt;strong>00&lt;/strong> – data record&lt;br>
+&lt;strong>01&lt;/strong> – end-of-file record&lt;br>
+&lt;strong>02&lt;/strong> – extended segment address record&lt;br>
+&lt;strong>04&lt;/strong> – extended linear address record&lt;br>
+&lt;strong>05&lt;/strong> – start linear address record (MDK-ARM only)&lt;/li>
+&lt;li>&lt;strong>&lt;em>dd&lt;/em>&lt;/strong> is a data field that represents one byte of data. A record may have multiple data bytes. The number of data bytes in the record must match the number specified by the &lt;strong>ll&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>&lt;em>cc&lt;/em>&lt;/strong> is the checksum field that represents the checksum of the record. The checksum is calculated by summing the values of all hexadecimal digit pairs in the record modulo 256 and taking the two’s complement.&lt;/li>
+&lt;/ul>
+&lt;h4 id="data-records">Data Records&lt;/h4>
+&lt;pre>:10246200464C5549442050524F46494C4500464C33
+&lt;/pre>
+&lt;p>This record is decoded as follows:&lt;/p></description></item><item><title>1불짜리 MCU</title><link>https://openmicrolab.com/1%EB%B6%88%EC%A7%9C%EB%A6%AC-mcu/</link><pubDate>Wed, 28 Aug 2019 14:33:15 +0000</pubDate><guid>https://openmicrolab.com/1%EB%B6%88%EC%A7%9C%EB%A6%AC-mcu/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-4619" src="https://res.cloudinary.com/openmicrolab/image/upload/v1567002552/1MCU_ribcwa.png" width="2304" height="632" />
+&lt;p>&lt;a href="https://jaycarlson.net/microcontrollers/" target="_blank" rel="noopener">잘 정리된 1불짜리 MCU 리스트&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4621" src="https://res.cloudinary.com/openmicrolab/image/upload/v1567002548/MCUs_xqorml.png" width="1836" height="564" />
+&lt;p>위 칩 들의  스펙을 비교할 수 있다.&lt;/p></description></item><item><title>Mac OSX에 nRF52 개발 환경 설정하기</title><link>https://openmicrolab.com/mac-osx%EC%97%90-nrf52-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link><pubDate>Sun, 11 Aug 2019 13:02:07 +0000</pubDate><guid>https://openmicrolab.com/mac-osx%EC%97%90-nrf52-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>2년전에 작업한 Mac OS X에 &lt;a href="http://openmicrolab.com/mac-os-x%ec%97%90-nrf51-%ea%b0%9c%eb%b0%9c-%ed%99%98%ea%b2%bd-%ec%84%a4%ec%a0%95%ed%95%98%ea%b8%b0/" target="_blank" rel="noopener">nRF51 개발 환경 설정하기 포스팅&lt;/a>을 보면서 nRF52 환경을 설정하다가 달라진 점이 있어서 다시 쓰게된 포스팅.&lt;/p>
+&lt;p>개념은 다음과 같다. 1) gcc 와 툴체인 설치 2) OSX용 nRF5x Command Line Tools 설치 3) SDK 설치.  이 과정에서 gcc 실행파일 위치를 bash_profile에 입력하고, SDK의 gcc 컴파일 설정을 이에 맞게 하면 된다.&lt;/p>
+&lt;h3 id="gcc-와-툴체인-설치">gcc 와 툴체인 설치&lt;/h3>
+&lt;p>여기에서 최신 버전 &lt;a href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads" target="_blank" rel="noopener">다운로드&lt;/a> 및 다음과 같이 압축을 푼다. 설치 위치는 크게 중요하지 않다. 만약 이전에 설치를 했을 경우 ~/usr/local/bin 아래 설치를 했을 수도 있음.&lt;/p></description></item><item><title>arm White paper – The route to a trillion devices</title><link>https://openmicrolab.com/arm-white-paper-the-route-to-a-trillion-devices/</link><pubDate>Thu, 04 Apr 2019 01:42:56 +0000</pubDate><guid>https://openmicrolab.com/arm-white-paper-the-route-to-a-trillion-devices/</guid><description>
+&lt;p>소프트뱅크가 arm을 인수후  2017년에 발간된 arm의 백서 – &lt;a href="http://openmicrolab.godohosting.com/Files/Arm-The-route-to-trillion-devices_2018.pdf">The route to a trillion devices&lt;/a>&lt;/p>
+&lt;p>2035년에는 1조개의 IoT 디바이스가 사용될 것이라는 전망&lt;/p>
+&lt;blockquote>
+&lt;p>By 2035, the technology companies that sell IoT hardware and services could be serving a market worth a trillion dollars per annum. That is an exciting figure, but an even greater value will flow to the companies that utilize the information collected by those systems, and to the consumers who will benefit from widespread efficiency gains across the economy.&lt;/p></description></item><item><title>OpenSDA 인터페이스</title><link>https://openmicrolab.com/opensda-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/</link><pubDate>Tue, 18 Sep 2018 06:54:00 +0000</pubDate><guid>https://openmicrolab.com/opensda-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/</guid><description>
+&lt;p>OpenSDA는 open-standard 시리얼 디버거 어댑터로 MSD Bootloader 및 USB CDC기능을 가진다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4430" src="https://res.cloudinary.com/openmicrolab/image/upload/v1537252916/OpenSDA_ew7268.png" width="686" height="295" />
+&lt;p>NXP, Freescale사의 보드의 경우 &lt;a href="http://www.pemicro.com/opensda/" target="_blank" rel="noopener noreferrer">P&amp;amp;E micro&lt;/a>사의 솔루션이 들어가 있는데 보드에 오래된 bootloader가 들어가 있으면 업데이트를 해야하며 다음과 같은 순서로 업데이트를 한다. 어떤 OS에서는 캐쉬기능 때문에 파일을 넣어도 write가 안된 경우도 있고, &lt;a href="https://mcuoneclipse.com/2016/08/01/bricking_and_recovering_opensda_boards_in_windows_8_and_10/" target="_blank" rel="noopener noreferrer">Windows8, Windows 10에서 문제&lt;/a>가 있다고 하기도 함.&lt;/p>
+&lt;div class="page" title="Page 7">
+&lt;div class="layoutArea">
+&lt;div class="column">
+&lt;ol>
+&lt;li>
+Unplug the USB cable (if attached).
+&lt;/li>
+&lt;li>
+Press and hold the Reset button.
+&lt;/li>
+&lt;li>
+Plug in a USB cable from a USB Host to the OpenSDA USB port.
+&lt;/li>
+&lt;li>
+Release the RESET/Bootloader button.
+&lt;/li>
+&lt;li>
+A removable drive will be visible in the host file system with a volume label of BOOTLOADER.
+&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code> &amp;lt;p&amp;gt;
+보드의  LED는 다음과 상태값을 가진다.
+&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;
+&amp;lt;img loading=&amp;quot;lazy&amp;quot; class=&amp;quot;alignnone wp-image-4429&amp;quot; src=&amp;quot;https://res.cloudinary.com/openmicrolab/image/upload/v1537252916/OpenSDA_LED_ehaeef.png&amp;quot; width=&amp;quot;807&amp;quot; height=&amp;quot;296&amp;quot; /&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;h3&amp;gt;
+&amp;lt;img loading=&amp;quot;lazy&amp;quot; class=&amp;quot;alignnone wp-image-4432&amp;quot; src=&amp;quot;https://res.cloudinary.com/openmicrolab/image/upload/v1537253610/OpenSDA_Version_q5dnyy.png&amp;quot; width=&amp;quot;884&amp;quot; height=&amp;quot;325&amp;quot; /&amp;gt;
+&amp;lt;/h3&amp;gt;
+&amp;lt;h3 id=&amp;quot;comparison_table&amp;quot;&amp;gt;
+참고
+&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;
+&amp;lt;a href=&amp;quot;https://mcuoneclipse.com/2014/11/01/illustrated-step-by-step-instructions-updating-the-freescale-freedom-board-firmware/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;https://mcuoneclipse.com/2014/11/01/illustrated-step-by-step-instructions-updating-the-freescale-freedom-board-firmware/&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;a href=&amp;quot;https://mcuoneclipse.com/2016/06/26/how-to-recover-the-opensda-v2-x-bootloader/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;https://mcuoneclipse.com/2016/06/26/how-to-recover-the-opensda-v2-x-bootloader/&amp;lt;/a&amp;gt;
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div></description></item><item><title>NXP MCUXpresso 사용법</title><link>https://openmicrolab.com/nxp-mcuxpresso-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Fri, 10 Aug 2018 04:10:27 +0000</pubDate><guid>https://openmicrolab.com/nxp-mcuxpresso-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>MCU 벤더들에서 제공하는 무료툴들은 대부분 이클립스 기반의 툴을 수정해서 제공을 한다. 그래서 하나의 툴에 익숙하면 다른 툴도 쉽게 쓸 수 있지만 다른 기능들은 메뉴얼을 보면서 익혀야 한다. NXP사의 MCUXpresso도 약간 특이한 점이 있어서 정리.&lt;/p>
+&lt;p>&lt;strong>1. 먼저 회원가입을 하고, &lt;a href="https://mcuxpresso.nxp.com/en/dashboard" target="_blank" rel="noopener noreferrer">&lt;a href="https://mcuxpresso.nxp.com/en/dashboard">https://mcuxpresso.nxp.com/en/dashboard&lt;/a>&lt;/a> 에서 보드나 칩을 선택해서 설정을 한후 SDK파일을 다운로드 받는다.&lt;/strong>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4376" src="https://res.cloudinary.com/openmicrolab/image/upload/v1533873657/mcuxpresso_0_qtna5m.png" width="732" height="667" />
+&lt;p>&lt;strong>2. MCUXpress에서 Installed SDKs에 이 파일을 Drag &amp;amp; Drop한 후 좌측의 Import SDK examples를 클릭한다.&lt;/strong>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4375" src="https://res.cloudinary.com/openmicrolab/image/upload/v1533873657/mcuxpresso_1_damxra.png" width="774" height="578" />
+&lt;p>&lt;strong>3. 보드, 칩을 선택하고 Next 버튼을 클릭&lt;/strong>&lt;/p></description></item><item><title>STM32 이클립스 환경에서 디버깅시 에러</title><link>https://openmicrolab.com/stm32-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-%EB%94%94%EB%B2%84%EA%B9%85%EC%8B%9C-%EC%97%90%EB%9F%AC/</link><pubDate>Wed, 16 May 2018 09:15:28 +0000</pubDate><guid>https://openmicrolab.com/stm32-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-%EB%94%94%EB%B2%84%EA%B9%85%EC%8B%9C-%EC%97%90%EB%9F%AC/</guid><description>
+&lt;p>Stm32Cube와 Eclipse의 조합으로 개발을 할때 연결된 보드를 디버깅시 다음과 같은 에러 메시지가 뜰 경우가 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4300" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_893/v1526461893/Eclipse_error_ffqlxo.png" width="485" height="299" />
+&lt;p>이럴때는 프로젝트의 설정의 Run/Debug Setings의 Startup 탭에서 다음 그림에 보이는 2가지 항목의 설정을 해제하면 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4301" src="https://res.cloudinary.com/openmicrolab/image/upload/v1526461892/Eclipse_debug_uu8snd.png" width="2102" height="1542" /></description></item><item><title>Nucleo 보드에서의 printf</title><link>https://openmicrolab.com/nucleo-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C%EC%9D%98-printf/</link><pubDate>Thu, 26 Apr 2018 11:06:33 +0000</pubDate><guid>https://openmicrolab.com/nucleo-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C%EC%9D%98-printf/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-4290" src="https://res.cloudinary.com/openmicrolab/image/upload/v1524740338/IMG_6522_autbwr.jpg" width="361" height="361" />
+&lt;p>임베디드 보드에서의 Hello World인 blink 테스트를 끝나면 printf를 찍기위해 UART를 연결하고 테스트를 한다. Nucleo 보드에서도 마찬가지로 작업을 하는데, 회로도를 보면 아두이노 핀 호환 컨넥터의 TX, RX핀에 연결이 되어있다. 하지만 자세히 회로도를 보면 default 연결은 이 핀들이 아니라 ST-Link칩에 연결이 되어 있다. 즉 UART2의 경우 ST-Link를 통해서 USB 컨넥터에 연결이되고 virtual COM port로 잡힌다. 매뉴얼에 보면 다음과 같이 나온다.&lt;/p>
+&lt;blockquote>
+&lt;p>The USART2 interface available on PA2 and PA3 of the STM32 microcontroller can be connected to ST-LINK MCU, ST morpho connector or to Arduino connector. The choice can be changed by setting the related solder bridges. By default the USART2 communication between the target STM32 and ST-LINK MCU is enabled, in order to support virtual COM port for MbedTM (SB13 and SB14 ON, SB62 and SB63 OFF). If the communication between the target STM32 PA2 (D1) or PA3 (D0) and shield or extension board is required, SB62 and SB63 should be ON, SB13 and SB14 should be OFF. In such case it is possible to connect another USART to ST-LINK MCU using flying wires between ST morpho connector and CN3.&lt;/p></description></item><item><title>System Workbench for STM32</title><link>https://openmicrolab.com/system-workbench-stm32/</link><pubDate>Thu, 01 Mar 2018 09:04:19 +0000</pubDate><guid>https://openmicrolab.com/system-workbench-stm32/</guid><description>
+&lt;p>System Workbench for STM32를 설치하는 방법은 2가지이다. 인스톨 프로그램으로 설치하는 방법과 기존에 설치되어 있는 이클립스에 설치하는 방법이 있다.&lt;/p>
+&lt;h3 id="인스톨-프로그램">&lt;strong>인스톨 프로그램&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>System Workbench for STM32를 &lt;a href="http://www.openstm32.org/Downloading%2Bthe%2BSystem%2BWorkbench%2Bfor%2BSTM32%2Binstaller" target="_blank" rel="noopener noreferrer">링크&lt;/a>에서 다운로드 한다.&lt;/li>
+&lt;li>다운로드 받은 바이너리 파일의  퍼미션을 수정후 파일을 실행한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>chmod 755 install_sw4stm32.run then ./install_sw4stm32.run&lt;/p>&lt;/blockquote>
+&lt;img loading="lazy" class="alignnone wp-image-4222" src="https://res.cloudinary.com/openmicrolab/image/upload/v1519891095/System_Workbench_for_STM32_wlfr7n.png" width="568" height="431" />
+&lt;p>문제는 이렇게 설치를 하다가 다음과 같은 에러메시지가 나오고 더 이상 진행이 되지 않는다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4224" src="https://res.cloudinary.com/openmicrolab/image/upload/v1519892823/error_nqiihq.png" width="765" height="132" />
+&lt;h3 id="이클립스에서-추가하는-방법">&lt;strong>이클립스에서 추가하는 방법&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>이클립스에서“Help &amp;raquo; Install New Software”를 선택&lt;/li>
+&lt;li>&lt;a href="http://ac6-tools.com/Eclipse-updates/org.openstm32.system-workbench.update-site-v2">http://ac6-tools.com/Eclipse-updates/org.openstm32.system-workbench.update-site-v2&lt;/a>를 입력하고, 이름은 System Workbench for STM32 – Bare Machine edition으로 한다.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone wp-image-4230" src="https://openmicrolab.com/images/2021/03/install_bo1tqe-1.png" width="633" height="511" />
+&lt;ul>
+&lt;li>인스톨 전에 다음과 같이 맥의 게이트키퍼를 disable후 설치를 하고, 설치후 enable한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>#To disable&lt;br>
+sudo spctl –master-disable&lt;br>
+#To enable&lt;br>
+sudo spctl –master-enable&lt;/p></description></item><item><title>J-link 인터페이스</title><link>https://openmicrolab.com/j-link-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/</link><pubDate>Tue, 31 Jan 2017 05:03:07 +0000</pubDate><guid>https://openmicrolab.com/j-link-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/</guid><description>
+&lt;p>Segger사의 &lt;a href="https://www.segger.com/jlink-debug-probes.html" target="_blank">J-link 디버거&lt;/a>는 JTAG과 SWD인터페이스를 제공한다.&lt;/p>
+&lt;p>&lt;strong>JTAG  pin-out&lt;/strong>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3878" src="http://res.cloudinary.com/openmicrolab/image/upload/v1485838196/JLink_Interface_Pinout_JTAG_ehkrff.png" width="190" height="146" />
+&lt;p>SWD를 사용하기위해서는 위 20핀에서 필요한 4핀만 연결하면 된다. 여기서 &lt;strong>VTref신호는 디버거에서 타겟보드의 전압을 체크하고 전압레퍼런스로 사용하기 때문에 타겟 보드의 전원을 연결하고, 프로그래밍을 할 MCU의 전압과 연결해야 한다. 그렇지 않을 경우 VTref is 0.xxxxV라고 에러메시지가 나면서 연결이 되지 않는다.&lt;/strong>&lt;/p>
+&lt;p>*참고로 J-link와 같은 디버거를 DIY형태로 개발을 해서 OSHW로 판매를 하는 것이 있다.  &lt;a href="http://oshchip.org/products/OSHChip_CMSIS_DAP_V1.0_Product.html">OSHChip_CMSIS_DAP_V1.0&lt;/a>&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3881" src="http://res.cloudinary.com/openmicrolab/image/upload/c_scale,w_91/v1485838879/JLink_Interface_Pinout_SWD__org_cgyloy.png" width="181" height="157" />
+&lt;img loading="lazy" class="alignnone wp-image-3882" src="http://res.cloudinary.com/openmicrolab/image/upload/v1485838915/SEGGER_-_The_Embedded_Experts_-_J-Link_Debug_Probes_-_General_Info_-_Interface_description_e6hsuz.png" width="851" height="423" />
+&lt;p>참고: &lt;a href="https://www.segger.com/interface-description.html" target="_blank">&lt;a href="https://www.segger.com/interface-description.html">https://www.segger.com/interface-description.html&lt;/a>&lt;/a>&lt;/p></description></item><item><title>BBC Microbit 오프라인에서 사용하기</title><link>https://openmicrolab.com/bbc-microbit-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 16 Sep 2016 09:43:18 +0000</pubDate><guid>https://openmicrolab.com/bbc-microbit-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>BBC microbit를 오프라인에서 사용하려면 &lt;a href="http://yottadocs.mbed.com/#installing" target="_blank">링크&lt;/a>를 참고 하고 Manuall Installation 항목을 따라서 환경을 셋업한다.&lt;/p>
+&lt;p>&lt;strong>1. yotta설치&lt;/strong>&lt;/p>
+&lt;p>Mac OS의 경우&lt;/p>
+&lt;blockquote>
+&lt;p>brew tap ARMmbed/homebrew-formulae&lt;br>
+brew install python cmake ninja arm-none-eabi-gcc&lt;br>
+pip install yotta&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>Trouble shooting&lt;/strong>&lt;br>
+brew 관련 아래과 같은 문제가 있을 경우&lt;/p>
+&lt;blockquote>
+&lt;p>sudo chown -R $(whoami):admin /usr/local&lt;br>
+cd $(brew –prefix) &amp;amp;&amp;amp; git fetch origin &amp;amp;&amp;amp; git reset –hard origin/master&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>터미널에서 다음과 같은 에러메시지가 나올때&lt;/strong>&lt;br>
+error: connection error: (“bad handshake: Error([(‘SSL routines’, ‘ssl3_get_server_certificate’, ‘certificate verify failed’)],)”,)&lt;/p></description></item><item><title>BBC micro:bit 분석</title><link>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</link><pubDate>Sun, 11 Sep 2016 14:45:36 +0000</pubDate><guid>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</guid><description>
+&lt;p class="p1">
+&lt;span class="s1">BBC &lt;a href="http://microbit.co.uk/">&lt;span class="s2">micro:bit&lt;/span>&lt;/a>&lt;/span>는 영국에서 컴퓨터 교육용으로 디자인된 마이크로컨트롤러 보드이다&lt;span class="s1">.&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;img loading="lazy" class="alignnone wp-image-3744" src="http://res.cloudinary.com/openmicrolab/image/upload/v1473602467/MicroBit_board_xcvrdp.jpg" width="472" height="364" />
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>개발에 참여한 파트너사들&lt;/strong>
+&lt;/p>
+&lt;ul class="ul1">
+&lt;li class="li3">
+&lt;span class="s2">Microsoft&lt;/span> – Block Editor, Touch Develop 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://lancaster-university.github.io/microbit-docs/" target="_blank">&lt;span class="s2">Lancaster University&lt;/span> – Device runtime개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Farnell element14&lt;/span> – 디바이스 생산
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank">&lt;span class="s2">Nordic Semiconductor&lt;/span> – MCU 제공&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">NXP Semiconductors&lt;/span> – USB인터테이스 칩 및 센서 칩제공
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">ARM Holdings&lt;/span> – &lt;a href="https://developer.mbed.org/" target="_blank">mbed&lt;/a> 하드웨어, 컴파일러 서비스
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.techwillsaveus.com/" target="_blank">&lt;span class="s2">Technology Will Save Us&lt;/span> – 하드웨어 디바이스 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="http://www.samsung.com/uk/microbit/" target="_blank">&lt;span class="s2">Samsung&lt;/span> – 안드로이드 앱 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://sciencescope.uk/" target="_blank">ScienceScope&lt;/a> –iOS앱 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Python Software Foundation&lt;/span> – &lt;a href="https://en.wikipedia.org/wiki/MicroPython">&lt;span class="s2">MicroPython&lt;/span>&lt;/a> 제공, 웹기반 파이썬 에디터 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.bluetooth.com/" target="_blank">Bluetooth SIG&lt;/a> &amp;#8211; Developed the custom Bluetooth LE profile.
+&lt;/li>
+&lt;/ul>
+&lt;p class="p1">
+&lt;strong>하드웨어&lt;/strong>
+&lt;/p></description></item><item><title>Freescale FRDM-K82F 보드</title><link>https://openmicrolab.com/freescale-frdm-k82f-%EB%B3%B4%EB%93%9C/</link><pubDate>Tue, 19 Apr 2016 08:03:31 +0000</pubDate><guid>https://openmicrolab.com/freescale-frdm-k82f-%EB%B3%B4%EB%93%9C/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-3639" src="http://res.cloudinary.com/openmicrolab/image/upload/a_0/v1461052393/Freescale_FRDM-K82F_aaxwqd.jpg" alt="" width="314" height="314" />
+&lt;h3 id="freescale-frdm-k82f-보드의-개발-환경설정">Freescale FRDM-K82F 보드의 개발 환경설정&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://nxp.flexnetoperations.com/control/frse/download?agree=Accept&amp;element=6912747" target="_blank">Kinetis SDK 다운로드 및 설치&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.nxp.com/webapp/swlicensing/sso/downloadSoftware.sp?catid=KINETIS-KDS-IDE" target="_blank">Kinetis Design Studio (KDS) 다운로드 및 설치&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://developer.mbed.org/media/downloads/drivers/mbedWinSerial_16466.exe" target="_blank">윈도우즈의 경우 virtual COM port 드라이버 설치&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="1-이클립스-업데이트-파일-설치">1. 이클립스 업데이트 파일 설치&lt;/h3>
+&lt;p>“Help”-&amp;gt;Check for Updates를 누르고, Processor Expert for Kinetis만 선택하고 업데이트 한다.&lt;/p>
+&lt;p>“Help” -&amp;gt; “Install New Software”를 선택하고 Add 버튼 &amp;gt; Archive 버튼을 눌러서 SDK 설치 폴더 아래 /tools/eclipse_update 폴더에서 KSDK_&lt;version>_Eclipse_Update_zip file. 를 선택한다&lt;/p>
+&lt;h3 id="2-플랫폼-라이브러리-빌드하기">2. 플랫폼 라이브러리 빌드하기&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-3640" src="http://res.cloudinary.com/openmicrolab/image/upload/v1461052909/lib_kykbku.png" alt="" width="272" height="399" />
+&lt;p>“File-&amp;gt;Import”를 선택후 “General”을 눌러서 “Existing Projects into Workspace”를 선택한다.&lt;br>
+루트 디렉토리는 &amp;lt;install_dir&amp;gt;/lib/ksdk_platform_lib/kds/K82F25615 를 선택하고 finish를 클릭한다.&lt;br>
+메뉴에 헤머 아이콘을 눌러 빌드한다.&lt;/p></description></item><item><title>Teensy 사용하기</title><link>https://openmicrolab.com/teensy-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 09 Mar 2016 08:01:24 +0000</pubDate><guid>https://openmicrolab.com/teensy-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;a href="https://www.pjrc.com/teensy/index.html" target="_blank">Teensy&lt;/a>는 아두이노 호환 보드로 Cortex M0, M4기반의 보드가 있어서 보다 높은 프로세싱이 필요한 응용에 적합하다. 이 보드를 사용하기 위해서는 &lt;a href="https://www.pjrc.com/teensy/teensyduino.html" target="_blank">Teensyduino&lt;/a>라는 프로그램을 설치해야 하는데, 이것은 기존 아두이노 IDE에 추가적으로 설치되는 코드들과 다운로드를 위한 프로그램이 포함되어 있다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1.png">&lt;img loading="lazy" class="aligncenter wp-image-3570" src="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1.png" alt="Teensy_USB_Development_Board_1" width="592" height="409" srcset="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1.png 799w, https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board_1-300x207.png 300w" sizes="(max-width: 592px) 100vw, 592px" />&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-3571" src="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board.png" alt="Teensy_USB_Development_Board" width="485" height="298" srcset="https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board.png 485w, https://openmicrolab.com/images/2016/03/Teensy_USB_Development_Board-300x184.png 300w" sizes="(max-width: 485px) 100vw, 485px" />&lt;/a>&lt;/p>
+&lt;p>먼저 아두이노를 설치하고 &lt;a href="https://www.pjrc.com/teensy/td_download.html" target="_blank">&lt;a href="https://www.pjrc.com/teensy/td_download.html">https://www.pjrc.com/teensy/td_download.html&lt;/a>&lt;/a> 이 사이트에서 파일을 다운로드해서 설치하는데 문제는 아두이노 1.0과 아두이노 1.6.x 이 동시에 설치가 되어 있으면 아두이노 1.0쪽에만 설치가 된다.(아두이노 1.6.x쪽을 지정이 안됨) 따라서 일단 아두이노 1.0을 언인스톨하고 1.6.x에 설치를 한 후 다시 아두이노 1.0을 설치를 해야 한다. Teensy 3.2의 경우 Cortex M4이기 때문에 SPI를 사용하는 응용은 &lt;a href="https://www.pjrc.com/teensy/td_libs.html" target="_blank">Teensy 라이브러리&lt;/a>에서 SPI 드라이버(&lt;a href="https://github.com/xxxajk/spi4teensy3">faster SPI library for Teensy 3.0&lt;/a>)도 같이 설치를 해야한다. 그리고 나머지 필요한 라이브러리는 아두이노 1.6.x의 라이브러리 매니저에서 추가한다.&lt;/p></description></item><item><title>SD 메모리 SPI로 제어하기 – 2</title><link>https://openmicrolab.com/sd-%EB%A9%94%EB%AA%A8%EB%A6%AC-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0-2/</link><pubDate>Thu, 19 Nov 2015 05:53:48 +0000</pubDate><guid>https://openmicrolab.com/sd-%EB%A9%94%EB%AA%A8%EB%A6%AC-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0-2/</guid><description>
+&lt;p>지난번 포스팅 “&lt;a href="http://openmicrolab.com/sd-%EB%A9%94%EB%AA%A8%EB%A6%AC-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0/" target="_blank">SD 메모리 SPI로 제어하기&lt;/a>“의 내용만으로는 부족하여 추가적으로 정리한다.&lt;/p>
+&lt;p>SD 메모리 카드는 기본적으로 전원이 들어오면 SDIO로 동작을 한다. 따라서 대부분의 칩벤더에서는 SDIO인터페이스를 사용하는 예제를 제공하는데, SDIO가 없는 작은 MCU에서는 SPI를 사용해야 한다. 따라서 다음 그림과 같은 초기화 루틴이 필요하다.&lt;/p>
+&lt;h3 id="spi모드에서-sd-메모리-초기화-루틴">SPI모드에서 SD 메모리 초기화 루틴&lt;/h3>
+&lt;p>&lt;a href="http://elm-chan.org/docs/mmc/gx1/sdinit.png">&lt;img loading="lazy" class="aligncenter" src="http://elm-chan.org/docs/mmc/gx1/sdinit.png" alt="" width="850" height="920" />&lt;/a>&lt;/p>
+&lt;h3 id="sd-메모리-커맨드">SD 메모리 커맨드&lt;/h3>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-3468" src="https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC.png" alt="How_to_Use_MMC_SDC" width="1368" height="787" srcset="https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC.png 1368w, https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC-300x173.png 300w, https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC-1024x589.png 1024w" sizes="(max-width: 1368px) 100vw, 1368px" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>1번: CS, MISO를 High로 하고 74개 이상의 SPI dummy clock을 전송한다.&lt;/li>
+&lt;li>2번: CRC가 반드시 일치해야 한다.&lt;/li>
+&lt;/ul>
+&lt;p>위 표에서 CMD0은 0, CMD8은 8을 전송하는 형태이고, ACMD41은 CMD55를 전송후 CMD41를 전송하는 것이며, argument로 30번째 비트가 세트된 32비트를 전송한다.&lt;/p></description></item><item><title>Fabless: The Transformation of the Semiconductor Industry</title><link>https://openmicrolab.com/fabless-the-transformation-of-the-semiconductor-industry/</link><pubDate>Sat, 05 Sep 2015 13:16:55 +0000</pubDate><guid>https://openmicrolab.com/fabless-the-transformation-of-the-semiconductor-industry/</guid><description>
+&lt;div class="vw-text restore floatcontainer">
+무료로 다운로드 받은 책 : &lt;a href="https://www.dropbox.com/s/o7isyzlwiupxeq5/Fabless%20Book%20for%20SemiWiki%20Subscribers.pdf?dl=0" target="_blank">다운로드&lt;/a>
+&lt;/div>
+&lt;div class="vw-text restore floatcontainer">
+&lt;a href="https://openmicrolab.com/images/2015/09/Book-Cover-Final.jpg">&lt;img loading="lazy" class="alignnone size-medium wp-image-3402" src="https://openmicrolab.com/images/2015/09/Book-Cover-Final-200x300.jpg" alt="Book Cover Final" width="200" height="300" srcset="https://openmicrolab.com/images/2015/09/Book-Cover-Final-200x300.jpg 200w, https://openmicrolab.com/images/2015/09/Book-Cover-Final.jpg 510w" sizes="(max-width: 200px) 100vw, 200px" />&lt;/a>
+&lt;/div>
+&lt;div id="post_message_23864" class="vw-text restore floatcontainer">
+&lt;span style="font-size: medium;">&lt;b>Table of Contents&lt;/b>&lt;br /> &lt;i>Chapter 1: The Semiconductor Century&lt;/i>&lt;br /> &lt;i>Chapter 2: The ASIC Business&lt;/i>&lt;br /> &lt;i>In Their Own Words: VLSI Technology&lt;/i>&lt;br /> &lt;i>In Their Own Words: eSilicon Corporation&lt;/i>&lt;br /> &lt;i>Chapter 3: The FPGA&lt;/i>&lt;br /> &lt;i>In Their Own Words: Xilinx &lt;/i>&lt;br /> &lt;i>Chapter 4: Moving To The Fabless Model&lt;/i>&lt;br /> &lt;i>In Their Own Words: Chips And Technologies&lt;/i>&lt;br /> &lt;i>Chapter 5: The Rise Of The Foundry&lt;/i>&lt;br /> &lt;i>In Their Own Words: TSMC And Open Innovation Platform&lt;/i>&lt;br /> &lt;i>In Their Own Words: GLOBALFOUNDRIES&lt;/i>&lt;br /> &lt;i>Chapter 6: Electronic Design Automation&lt;/i>&lt;br /> &lt;i>In Their Own Words: Mentor Graphics&lt;/i>&lt;br /> &lt;i>In Their Own Words: Cadence Design Systems&lt;/i>&lt;br /> &lt;i>In Their Own Words: Synopsys&lt;/i>&lt;br /> &lt;i>Chapter 7: Intellectual Property&lt;/i>&lt;br /> &lt;i>In Their Own Words: ARM&lt;/i>&lt;br /> &lt;i>In Their Own Words: Imagination&lt;/i>&lt;br /> &lt;i>Chapter 8: What’s Next For The Semiconductor Industry&lt;/i>&lt;/span>
+&lt;/div>
+&lt;div class="vw-text restore floatcontainer">
+&lt;/div></description></item><item><title>SD 메모리 SPI로 제어하기</title><link>https://openmicrolab.com/sd-%EB%A9%94%EB%AA%A8%EB%A6%AC-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 10 Jun 2015 09:36:12 +0000</pubDate><guid>https://openmicrolab.com/sd-%EB%A9%94%EB%AA%A8%EB%A6%AC-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="sd-메모리-카드">SD 메모리 카드&lt;/h3>
+&lt;p>SD메모리 는 SDC(Secure Digital Memory Card)를 지칭하며 MMC(Multi Media Card)와 호환된다. 이 SD메모리 카드는 SDIO 또는 SPI로 제어가 가능하다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/06/sd-card-pinout.png">&lt;img loading="lazy" class="alignnone wp-image-3374" src="https://openmicrolab.com/images/2015/06/sd-card-pinout.png" alt="SD card pinout" width="353" height="394" srcset="https://openmicrolab.com/images/2015/06/sd-card-pinout.png 447w, https://openmicrolab.com/images/2015/06/sd-card-pinout-269x300.png 269w" sizes="(max-width: 353px) 100vw, 353px" />&lt;/a>&lt;/p>
+&lt;h3 id="sd-메모리-spi로-제어하기">SD 메모리 SPI로 제어하기&lt;/h3>
+&lt;p>SPI 모드는 4가지가 있는데, SD를 제어하기 위해서는  Mode 0를 사용한다. 즉 CPHA = 0, CPOL = 0&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3376" src="https://openmicrolab.com/images/2015/06/SD_SPI_CMD.png" alt="SD_SPI_CMD" width="721" height="155" srcset="https://openmicrolab.com/images/2015/06/SD_SPI_CMD.png 800w, https://openmicrolab.com/images/2015/06/SD_SPI_CMD-300x65.png 300w" sizes="(max-width: 721px) 100vw, 721px" />
+&lt;p>SPI로 제어시 command는 Command Index(1바이트) + Argument(4바이트) + CRC(1바이트) = 총 6바이트로 구성이되며, 항상 응답코드가 있다. CRC는 CMD0의 경우 0x95, CMD8의 경우 0x87이며, 나머지는 코드에서 0xFF로 처리한다. 아래 링크의 스펙 문서의 부록에 command list 참고&lt;/p></description></item><item><title>ARM mbed – 데모 (big mouth billy bass)</title><link>https://openmicrolab.com/arm-mbed-%EB%8D%B0%EB%AA%A8-big-mouth-billy-bass/</link><pubDate>Sat, 28 Feb 2015 06:09:33 +0000</pubDate><guid>https://openmicrolab.com/arm-mbed-%EB%8D%B0%EB%AA%A8-big-mouth-billy-bass/</guid><description>
+&lt;p>ARM mbed는 2008년 ARM사의 직원이었던 Simon과 Chris가 Rapid Prototyping을 위한 개발 보드를 기획하면서 프로젝트가 시작이 되었다. 이때 ARM 코어를 사용하는 NXP사의 LPC1768칩을 사용하여 모듈을 구성하였으며, 2009년에 보스턴에서 열린 ESC(Embedded System Conference)에서 NXP사의 부스에서 모듈이 릴리즈가 되었고 물고기가 트위터 메시지를 네트워크로 수신해서 음성으로 출력하는 데모를 진행하였다.&lt;br>
+2009년도 관련 동영상&lt;/p></description></item><item><title>ARM mbed connect</title><link>https://openmicrolab.com/arm-mbed-connect/</link><pubDate>Wed, 09 Jul 2014 14:07:26 +0000</pubDate><guid>https://openmicrolab.com/arm-mbed-connect/</guid><description>
+&lt;p>2011년 참석한 ARM mebd connect 1회 행사에 대해 정리한 파일&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="ARM mbed connect" href="https://www.slideshare.net/JinbuhmKim/arm-mbed-connect" target="_blank">ARM mbed connect&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>NXP LPC 시리즈 맥에서 개발 환경 – Flash Magic</title><link>https://openmicrolab.com/nxp-lpc-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%A7%A5%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-flash-magic/</link><pubDate>Fri, 23 May 2014 07:29:47 +0000</pubDate><guid>https://openmicrolab.com/nxp-lpc-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%A7%A5%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-flash-magic/</guid><description>
+&lt;p>NXP의 LPC 시리즈는 이클립스 기반의 툴인 &lt;a href="http://www.lpcware.com/lpcxpresso/home" target="_blank">LPCExpresso&lt;/a>를 제공한다. 대부분의 개발 환경은 &lt;a href="http://openmicrolab.com/lpc810-arm-cortexm0-project-1/" target="_blank">지난 포스팅&lt;/a>을 참고. 따라서 Mac에서도 윈도우즈와 동일한 개발환경을 구축할 수 있다.  LPC 시리즈 칩 역시 시리얼 부트로더가 내장이 되어 있어서 쉽게 flash를 write할 수 있으며, &lt;a href="http://www.flashmagictool.com/" target="_blank">FlashMagic&lt;/a>이라는 툴을 사용한다. 원래 윈도우 기반으로 개발된 툴을 Mac에 Wine을 사용하여 포팅이 되어 있다. 그래서 시리얼 포트도 COM1, COM2 이런 식으로 표시가 된다.&lt;br>
+&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt="FlashMagic"
+class="image_figure image_external image_unprocessed"
+src="http://openmicrolab.cdn2.cafe24.com/FlashMagic_program.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;/p>
+&lt;p>Mac에서 잡힌 시리얼 포트를 FlashMagic이 구동이 될때 COM1, COM2.. 으로 매핑이 되는데, 이것을 확인해서 해당되는 COM 포트를 넣어주면 된다. 매핑된 포트를 찾는 방법은 다음의 그림을 참고… 대개 serial to USB 컨버터를 사용하는데, Mac에서는 cu.*의 형태와 tty.*의 형태가 잡히는데, *&lt;em>cu.&lt;em>의 형태로 잡힌 포트를 사용하면 된다.&lt;/em>&lt;/em>&lt;br>
+&lt;figure>
+&lt;picture>
+&lt;img
+loading="lazy"
+decoding="async"
+alt="FlashMagic 포트찾기"
+class="image_figure image_external image_unprocessed"
+src="http://openmicrolab.cdn2.cafe24.com/FlashMagic.png"
+/>
+&lt;/picture>
+&lt;/figure>
+&lt;br>
+즉 명령어는&lt;/p></description></item><item><title>WIZnet mbed 라이브러리</title><link>https://openmicrolab.com/wiznet-mbed-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/</link><pubDate>Wed, 14 May 2014 02:15:19 +0000</pubDate><guid>https://openmicrolab.com/wiznet-mbed-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/</guid><description>
+&lt;p>W5500 Ethernet 라이브러리를 mbed에 포팅후 W5100,W5200, W5500까지 지원을 하는 라이브러리를 만들어 &lt;a href="http://mbed.org/teams/WIZnet/code/WIZnet_Library/" target="_blank">mbed.org&lt;/a>에 업로드했다. 사용법은 간단하다. 라이브러리를 import하고 사용하는 Wiznet칩 또는 모듈에 따라서 wiznet.h에 있는 #define문에서 사용할 칩만 나두고 나머지는 주석 처리하면 된다.&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="Wiznet Ethernet library for ARM mbed" href="https://www.slideshare.net/JinbuhmKim/wiznet-ethernet-library-for-arm-mbed" target="_blank">Wiznet Ethernet library for ARM mbed&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>ARM 개발 환경</title><link>https://openmicrolab.com/arm-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</link><pubDate>Mon, 12 May 2014 10:02:42 +0000</pubDate><guid>https://openmicrolab.com/arm-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD/</guid><description>
+&lt;h3 id="hex-to-bin--bin-to-hex">hex to bin / bin to hex&lt;/h3>
+&lt;p>MAC에서 개발 환경을 세팅하다보니 윈도우즈 기반의 툴들에서 쉽게 찾던 것들을 구글링하게 된다. ARM 이클립스 개발환경에서 hex, bin을 만들어 주는 툴은 arm-none-eabi-objcopy 인테, 다음과 같이 hex와 binary간의 변환이 가능하다.&lt;/p>
+&lt;blockquote>
+&lt;p>arm-none-eabi-objcopy -I binary -O ihex filename.bin filename.hex&lt;/p>
+&lt;p>arm-none-eabi-objcopy -I ihex -O binary filename.hex filename.bin&lt;/p>&lt;/blockquote>
+&lt;p>물론 이클립스의 프로젝트 설정에서 Cross ARM GNU Create Flash Image설정에서 Raw binary 또는_ _Intel Hex를 설정이 가능함.&lt;/p>
+&lt;h3 id="flash-downloaderdemonstrator">flash downloader demonstrator&lt;/h3>
+&lt;p>STM32 칩들은 내부에 시리얼 부트로더가 있어서 쉽게 flash를 업데이트 가능하다. ST에서도 flash downloader demonstrator라는 프로그램을 제공하는데 윈도우즈만 제공한다. Mac에서 사용할 수 있는 것은 &lt;a href="https://github.com/jsnyder/stm32loader" target="_blank">stm32loader scrypt&lt;/a>와 &lt;a href="https://github.com/jsnyder/stm32ld" target="_blank">stm32ld program&lt;/a>이다.&lt;/p></description></item><item><title>IoT 디바이스 개발을 위한 ARM의 플랫폼적 접근</title><link>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</link><pubDate>Fri, 18 Apr 2014 10:09:20 +0000</pubDate><guid>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</guid><description>
+&lt;p>ARM의 IoT 플랫폼 디렉터인 Simon Ford의 발표 @Embedded World.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/04/mbed_Simon.png">&lt;img loading="lazy" class="alignnone wp-image-3008" alt="mbed_Simon" src="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png" width="819" height="609" srcset="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png 1024w, https://openmicrolab.com/images/2014/04/mbed_Simon-300x223.png 300w, https://openmicrolab.com/images/2014/04/mbed_Simon.png 1054w" sizes="(max-width: 819px) 100vw, 819px" />&lt;/a>&lt;/p>
+&lt;p>관련 링크: &lt;a href="http://player.vimeo.com/video/88152800" target="_blank">link&lt;/a>&lt;/p>
+&lt;p>&lt;span style="line-height: 1.5em;">지난번 ARM Techcon의 발표와 거의 같다.&lt;/span>&lt;/p></description></item><item><title>mbed – SeeedArch 프로그래밍하기</title><link>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 06 Mar 2014 06:42:53 +0000</pubDate><guid>https://openmicrolab.com/mbed-seeedarch-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="seeedarch">SeeedArch&lt;/h3>
+&lt;p>&lt;a href="http://mbed.org/" target="_blank">mbed&lt;/a>의 플랫폼 중의 하나인 Seeedstudio에서 만든 보드, &lt;a href="http://mbed.org/platforms/Seeeduino-Arch/" target="_blank">SeeedArch&lt;/a>를 테스트중이다. 이 보드의 스펙은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>mbed enabled
+&lt;ul>
+&lt;li>online development tools&lt;/li>
+&lt;li>easy to use C/C++ SDK&lt;/li>
+&lt;li>lots of published libraries, projects&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Standard Arduino Appearance, two Grove connectors
+&lt;ul>
+&lt;li>available with 3.3V compatible shields&lt;/li>
+&lt;li>a large number of grove modules&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Drag-n-drop programming&lt;/li>
+&lt;li>NXP LPC11U24 MCU
+&lt;ul>
+&lt;li>Low power ARM Cortex-M0 Core&lt;/li>
+&lt;li>48MHz, 32KB Flash, 8KB RAM, 4KB EEPROM&lt;/li>
+&lt;li>USB Device, 2xSPI, UART, I2C&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>이 보드의 가장 큰 특징은 보드의 형태가 아두이노 보드와 같아서 아두이노 쉴드를 연결할 수 있다.&lt;/p></description></item><item><title>ARM Cortex M0 – 기술적 개요</title><link>https://openmicrolab.com/arm-cortex-m0-%EA%B8%B0%EC%88%A0%EC%A0%81-%EA%B0%9C%EC%9A%94/</link><pubDate>Thu, 06 Feb 2014 10:40:05 +0000</pubDate><guid>https://openmicrolab.com/arm-cortex-m0-%EA%B8%B0%EC%88%A0%EC%A0%81-%EA%B0%9C%EC%9A%94/</guid><description>
+&lt;h3 id="일반적인-정보">일반적인 정보&lt;/h3>
+&lt;ul>
+&lt;li>폰노이만 아키텍처(단일버스 인터페이스)를 가지는 32비트 RISC 프로세서&lt;/li>
+&lt;li>ARMv6 아키텍쳐 : M0, M1(FPGA에 최적화)이 ARMv6 아키텍쳐이며, M3는 ARMv7 아키텍처임. 상위호환이 가능해 M0코드가 M3로 쉽게 이식이 가능.&lt;/li>
+&lt;li>56개의 명령어: Thumb 명령어 지원, Thumb-2 명령어의 일부 지원&lt;/li>
+&lt;/ul>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram.png">&lt;img loading="lazy" class="size-full wp-image-2759 aligncenter" alt="Cortex-M0 block diagram" src="https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram.png" width="340" height="307" srcset="https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram.png 340w, https://openmicrolab.com/images/2014/01/Cortex-M0-block-diagram-300x270.png 300w" sizes="(max-width: 340px) 100vw, 340px" />&lt;/a>
+&lt;/p>
+&lt;h3 id="arm-cortex-m0의-특징">ARM Cortex-M0의 특징&lt;/h3>
+&lt;ul>
+&lt;li>0.9DMIPS/MHz&lt;/li>
+&lt;li>프로세스 코어는 3단계 파이프라인&lt;/li>
+&lt;li>NVIC: 프로그램 가능한  4개의 서로 다른 우선 순위 레벨을 가질 수 있으며, 32개까지의 interrrupt request를 받을 수 있다.&lt;/li>
+&lt;li>WIC (Wakeup Interrupt Controller)는 옵션&lt;/li>
+&lt;li>OS지원을 위한 System Tick지원&lt;/li>
+&lt;/ul>
+&lt;h3 id="arm-cortex-m0의-장점">ARM Cortex-M0의 장점&lt;/h3>
+&lt;ul>
+&lt;li>에너지 효율성 – 슬립모드와 연계되어 있다. 즉 평소에는 슬립모드에 있다가 인터럽트가 발생을 하면 빨리 처리하고 다시 슬립모드로 들어감.&lt;/li>
+&lt;li>8, 16비트의 제약을 극복 – 32비트 linear address 사용(더 큰 메모리의 사용 가능), 더 큰 스텍사용(참고로 8051은 256바이트), 향상된 명령어 셋으로 더 작은 크기의 코드 가능( 참고로 8051은 항상 ACC를 사용해야 함)&lt;/li>
+&lt;/ul>
+&lt;h3 id="저전력을-가능하게-하는-요소들">저전력을 가능하게 하는 요소들&lt;/h3>
+&lt;ul>
+&lt;li>적은 게이트수 : 최소 설정으로는 12K, 일반적으로 17~25K&lt;/li>
+&lt;li>높은 효율성 : 0.9 DMIPS/MHz (80486DX가 0.81 DMIPS/MHz 였다는…)&lt;/li>
+&lt;li>슬립모드 : WIC(Wakeup Interrupt Controller), 2 개의 슬립모드: WFI(Wait for Interrupt ), WFE(Wait for Event)&lt;/li>
+&lt;li>로직셀 향상 : Ultra Low Leakage 로직 셀 라이브러리 도입&lt;/li>
+&lt;/ul>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/01/average-current.png">&lt;img loading="lazy" class=" wp-image-2762 aligncenter" alt="average current" src="https://openmicrolab.com/images/2014/01/average-current.png" width="671" height="241" srcset="https://openmicrolab.com/images/2014/01/average-current.png 959w, https://openmicrolab.com/images/2014/01/average-current-300x107.png 300w" sizes="(max-width: 671px) 100vw, 671px" />&lt;/a>
+&lt;/p></description></item><item><title>ARM Cortex M0 – 아키텍처</title><link>https://openmicrolab.com/arm-cortex-m0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</link><pubDate>Thu, 06 Feb 2014 09:40:43 +0000</pubDate><guid>https://openmicrolab.com/arm-cortex-m0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98/</guid><description>
+&lt;h3 id="programmer8217s-model">Programmer’s Model&lt;/h3>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode.png">&lt;img loading="lazy" class="wp-image-2828 aligncenter" alt="CortexM0 Processor mode" src="https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode-1024x476.png" width="614" height="286" srcset="https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode-1024x476.png 1024w, https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode-300x139.png 300w, https://openmicrolab.com/images/2014/02/CortexM0-Processor-mode.png 1227w" sizes="(max-width: 614px) 100vw, 614px" />&lt;/a>
+&lt;/p>
+&lt;blockquote>
+&lt;p>ARMv6-M 아키텍처에서는 쓰레드 모드와 핸들러 모드가 거의 같다. 유일한 차이는 쓰레드 모드에서는 CONTROL이라는 특별 레지스터의 설정으로 shadow된 스텍포인터를 사용한다는 것이다.&lt;/p>&lt;/blockquote>
+&lt;h3 id="레지스터">레지스터&lt;/h3>
+&lt;p style="font-size: 14px;">
+&lt;img loading="lazy" style="font-size: 13px;" alt="201402061550.jpg" src="https://openmicrolab.com/images/2014/02/201402061550.jpg" width="561" height="368" />
+&lt;/p>
+&lt;blockquote>
+&lt;p>로드 스토어 아키텍쳐: 메모리에 있는 데이터를 처리하기 위해 이 데이터는 메모리로 부터 레지스터 뱅크의 레지스터에 옮겨져서 내부 프로세서에 의해 처리되고, 이것이 다시 메모리에 쓰여진다.&lt;br>
+Cortex-M0는 13개의 32비트 범용 레지스터와 몇개의 특별(special)레지스터를 가진다.&lt;/p></description></item><item><title>ARM Cortex M0 – 소개</title><link>https://openmicrolab.com/arm-cortex-m0-%EC%86%8C%EA%B0%9C/</link><pubDate>Wed, 29 Jan 2014 06:12:46 +0000</pubDate><guid>https://openmicrolab.com/arm-cortex-m0-%EC%86%8C%EA%B0%9C/</guid><description>
+&lt;blockquote>
+&lt;p>ARM사는 Acorn Computer Group, Apple 컴퓨터, VLSI Technology의 합작투자회사로 1990년에 Advanced RISC Machine Ltd라는 이름으로 설립&lt;/p>&lt;/blockquote>
+&lt;h3 id="arm-cortex-m0의-특징">ARM Cortex-M0의 특징&lt;/h3>
+&lt;ul>
+&lt;li>적은 게이트수: 12,000&lt;/li>
+&lt;li>저전력 기능 지원 및 높은 에너지 효율성 – 0.9 DMIPS/MHz&lt;/li>
+&lt;li>사용하기 쉬운 인터럽트 우선순위 제어를 가진 내장형 인터럽트 콘트롤러&lt;/li>
+&lt;li>Low interrupt latency, 타이밍이 확정적(deterministic)&lt;/li>
+&lt;li>Thumb 지원- 높은 코드 밀도&lt;/li>
+&lt;/ul>
+&lt;h3 id="arm-프로세서와-아키텍처">ARM 프로세서와 아키텍처&lt;/h3>
+&lt;ul>
+&lt;li>2006년에 Cortex-M3 (ARMv7-M 아키텍쳐) 출시&lt;/li>
+&lt;li>Cortex-M0는 ARMv6-M 아키텍쳐기반&lt;/li>
+&lt;li>ARMv6-M 아키텍쳐는 ARMv7-M의 메모리 맵,  프로그래머 모델과 익셉션 모델, Thumb2 시스템과 ARMv6의 Thumb 명령어 셋 그리고 CoreSight Debug 아키켁쳐를 결합한 형태이며, 여기에 저전력에 특화된 설계로 나온 것이 M0이며, FPRGA 특화된 특성을 넣은 것이 M1이다.&lt;/li>
+&lt;/ul>
+&lt;div id="attachment_2751" style="width: 727px" class="wp-caption aligncenter">
+&lt;a href="https://openmicrolab.com/images/2013/12/arm-processor-architecture.jpg">&lt;img aria-describedby="caption-attachment-2751" loading="lazy" class="wp-image-2751 " title="ARM 프로세서 아키텍처의 진화" alt="arm processor architecture" src="https://openmicrolab.com/images/2013/12/arm-processor-architecture-1024x483.jpg" width="717" height="338" srcset="https://openmicrolab.com/images/2013/12/arm-processor-architecture-1024x483.jpg 1024w, https://openmicrolab.com/images/2013/12/arm-processor-architecture-300x141.jpg 300w" sizes="(max-width: 717px) 100vw, 717px" />&lt;/a>
+&lt;p id="caption-attachment-2751" class="wp-caption-text">
+ARM 프로세서 아키텍처의 진화
+&lt;/p></description></item><item><title>ARM Techcon 2013, ARM Technology Symposia 2013</title><link>https://openmicrolab.com/arm-techcon-2013-arm-technology-symposia-2013/</link><pubDate>Thu, 21 Nov 2013 00:44:45 +0000</pubDate><guid>https://openmicrolab.com/arm-techcon-2013-arm-technology-symposia-2013/</guid><description>
+&lt;p>지난 10월 29일부터 3일간 미국 캘리포니아 산타클라라 컨벤션 센터에서 열린 “&lt;a href="http://www.armtechcon.com">ARM Techcon 2013&lt;/a>” 행사에 참석해서 관련 글을 블로터넷에 기고를 했다. 보낸 원고에서 몇가지 영어 표현들이 한글로 바뀌고 제목들이 추가로 달렸는데, 에디터의 손을 거치니 좀 나아지는 것 같다. 한국에서는 IoT(Internet of Things)가 사물인터넷으로 번역되는 것이 좀 이상하지만…&lt;/p>
+&lt;p>&lt;span style="text-decoration: underline;">&lt;strong>기고문: &lt;a title="‘사물인터넷’ 눈독 들이는 ARM" href="http://www.bloter.net/archives/169566" target="_blank"> “사물인터넷” 눈독 들이는 ARM&lt;/a>&lt;/strong>&lt;/span>&lt;/p>
+&lt;p>최근  ARM CEO인 Simon Segars의 키노트가 유투브에 올라와 있다.&lt;/p>
+&lt;p>당시 3일 일정의 모든 세션을 들을 수 있는 티켓을 구매(약 1500불)해서 들었는데, ARM에서는 한국에서도  비슷한 행사를 개최했다.&lt;/p></description></item><item><title>6LowPAN Network Processor – CC1180</title><link>https://openmicrolab.com/6lowpan-network-processor-cc1180/</link><pubDate>Wed, 20 Nov 2013 10:37:39 +0000</pubDate><guid>https://openmicrolab.com/6lowpan-network-processor-cc1180/</guid><description>
+&lt;p>CC118은 6LowPAN chip으로 검색을 하면 나오는 TI의 칩이다. 데이터시트를 보니 최근 ARM에 인수된 Sendinode의 솔루션이 칩에 들어가 있다. MCU와의 인터페이스는 UART이다.&lt;/p>
+&lt;p>데이터시트 다운로드는 아래 링크에서… [wpdm_file id=5]&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/11/CC1180.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2696" alt="CC1180" src="https://openmicrolab.com/images/2013/11/CC1180.png" width="650" height="468" srcset="https://openmicrolab.com/images/2013/11/CC1180.png 650w, https://openmicrolab.com/images/2013/11/CC1180-300x216.png 300w" sizes="(max-width: 650px) 100vw, 650px" />&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>CortexM0 보드와 CooCox</title><link>https://openmicrolab.com/cortexm0-%EB%B3%B4%EB%93%9C%EC%99%80-coocox/</link><pubDate>Tue, 17 Sep 2013 07:30:08 +0000</pubDate><guid>https://openmicrolab.com/cortexm0-%EB%B3%B4%EB%93%9C%EC%99%80-coocox/</guid><description>
+&lt;h3 id="nxp-lpc1114-보드">NXP LPC1114 보드&lt;/h3>
+&lt;p>이전 블로그를 보니 2011년도 초에 NXP와 Nuvoton의 Cortex M0에 대해 쓴 &lt;a href="http://openmicrolab.com/nuvoton%EC%9D%98-cortex-m0-%EC%B9%A9/" target="_blank">블로그 포스팅&lt;/a>이 있었는데 최근 당시에 CooCox로 부터 받은 보드와 최근에 Nuvoton에서 받은 보드를 테스트를 해봤다. 아래 그림에서 위에 있는 것은 NXP칩을 사용한 &lt;a href="http://sg.element14.com/embest/colinkex-lpc11c14-evb/board-eval-lpc1114-w-colinkex/dp/2136555" target="_blank">LPC1114보드&lt;/a>이고, 아래 그림은 Nuvoton의 &lt;a href="http://www.nuvoton.com/hq/enu/ProductAndSales/ProductLines/MicrocontrollerApplicationIC/ARMMicrocontroller/ARMCortexTMM0/Documents/NuTiny-SDK-M051%20user%20manual%20EN%20V1.0.pdf" target="_blank">M0516NBL&lt;/a> 을 사용한 보드이다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/09/CortexM0-%EB%B3%B4%EB%93%9C.jpg">&lt;img loading="lazy" class="alignnone wp-image-2683" alt="CortexM0 보드" src="https://openmicrolab.com/images/2013/09/CortexM0-보드-1024x625.jpg" width="717" height="438" srcset="https://openmicrolab.com/images/2013/09/CortexM0-보드-1024x625.jpg 1024w, https://openmicrolab.com/images/2013/09/CortexM0-보드-300x183.jpg 300w, https://openmicrolab.com/images/2013/09/CortexM0-보드.jpg 1825w" sizes="(max-width: 717px) 100vw, 717px" />&lt;/a>&lt;/p>
+&lt;p>최근 이런 개발 보드들의 특징은 디버거를 포함을 하고 있는데, 보드의 좌측 부분이 디버거 기능을 하며,  &lt;a href="http://openmicrolab.com/cmsis-dap-%EB%9E%80/" target="_blank">CMSIS-DAP&lt;/a> 기능을 한다.&lt;/p></description></item><item><title>CMSIS-DAP 란?</title><link>https://openmicrolab.com/cmsis-dap/</link><pubDate>Wed, 11 Sep 2013 11:05:03 +0000</pubDate><guid>https://openmicrolab.com/cmsis-dap/</guid><description>
+&lt;h3 id="cmsis">CMSIS&lt;/h3>
+&lt;p>Cortex Microcontroller Software Interface Standard의 약자. 즉 다양한 칩 벤더가 Cortex 시리즈의 IP를 라이센스해가면서 **&lt;span style="text-decoration: underline;">하드웨어 독립적인 표준화된 소프트웨어 인터페이스&lt;/span>**가 필요하게 됨.  이것은 다음을 포함한다. 스펙은 ARM에 사용자 등록을 하면 받을 수 있다. 회원 가입을 하고 이 링크에 접속을 한다.  &lt;a href="https://silver.arm.com/browse/CMSIS" target="_blank" rel="noopener">&lt;a href="https://silver.arm.com/browse/CMSIS">https://silver.arm.com/browse/CMSIS&lt;/a>&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>CMSIS-CORE: provides an interface to Cortex-M0, Cortex-M3, Cortex-M4, SC000, and SC300 processors and peripheral registers&lt;/li>
+&lt;li>CMSIS-DSP: DSP library with over 60 functions in fixed-point (fractional q7, q15, q31) and single precision floating-point (32-bit) implementation&lt;/li>
+&lt;li>CMSIS-RTOS API: standardized programming interface for real-time operating systems for thread control, resource, and time management&lt;/li>
+&lt;li>CMSIS-SVD: System View Description XML files that contain the programmer’s view of a complete microcontroller system including peripherals&lt;/li>
+&lt;li>CMSIS-DAP&lt;/li>
+&lt;/ul>
+&lt;p>CMSIS-DAP의 DAP는 Coresight Debug Access Port의 약자이다. 구체적인 스펙은 역시 ARM에 사용자 등록을 하면 받을 수 있다. &lt;a href="https://silver.arm.com/browse/CMSISDAP" target="_blank" rel="noopener">&lt;a href="https://silver.arm.com/browse/CMSISDAP">https://silver.arm.com/browse/CMSISDAP&lt;/a>&lt;/a> 아래 그림은 3가지 mbed모듈에 어떻게 CMSIS-DAP가 연결이 되어 있는지를 보여준다.&lt;/p></description></item><item><title>mbed 분석</title><link>https://openmicrolab.com/mbed-%EB%B6%84%EC%84%9D/</link><pubDate>Wed, 11 Sep 2013 11:04:48 +0000</pubDate><guid>https://openmicrolab.com/mbed-%EB%B6%84%EC%84%9D/</guid><description>
+&lt;h3 id="mbed">mbed&lt;/h3>
+&lt;p>mbed는 웹 기반의 컴파일러를 사용하는 보드로 2005년 ARM 사의 2엔지니어인 &lt;a href="http://mbed.org/users/simon/" target="_blank">Simon&lt;/a>(ARM R&amp;amp;D)과 &lt;a href="http://mbed.org/users/chris/" target="_blank">Chris&lt;/a>(ARM Support)가 “Rapid Prototyping for Microcontrollers”라는 비젼으로 시작을 했다. 이제는 오프라인 툴들로의 변환도 지원을 하고 활발한 커뮤니티를 가지고 있는데, 2007년 정도에 지금의 모습을 갖추었다고 한다&lt;a href="http://mbed.org/handbook/Founders-interview" target="_blank">&lt;a href="https://openmicrolab.com/images/2013/09/mbed_pinout.png">1&lt;/a>&lt;/a>. 현재 NXP의 ARM CortexM3 칩인 LPC1768을 사용한 모듈과 M0기반인 LPC11U24을 사용한 버젼 그리고 올 2013년에 Freescale의 MKL25Z128VLK4을 사용한  &lt;a href="http://mbed.org/blog/entry/mbed-enabled-Freescale-FRDM-KL25Z-board/" target="_blank">Freedom FRDM-KL25Z&lt;/a> 보드등 다양한 플랫폼(&lt;a href="http://mbed.org/platforms/" target="_blank">&lt;a href="http://mbed.org/platforms/">http://mbed.org/platforms/&lt;/a>&lt;/a>) 들이 있다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/09/mbed_pinout.png">&lt;img loading="lazy" class="size-full wp-image-2664 alignnone" alt="mbed_pinout" src="https://openmicrolab.com/images/2013/09/mbed_pinout.png" width="610" height="383" srcset="https://openmicrolab.com/images/2013/09/mbed_pinout.png 610w, https://openmicrolab.com/images/2013/09/mbed_pinout-300x188.png 300w" sizes="(max-width: 610px) 100vw, 610px" />&lt;/a>&lt;/p></description></item><item><title>LPC810 ARM CortexM0+ Project -1</title><link>https://openmicrolab.com/lpc810-arm-cortexm0-project-1/</link><pubDate>Mon, 09 Sep 2013 07:22:03 +0000</pubDate><guid>https://openmicrolab.com/lpc810-arm-cortexm0-project-1/</guid><description>
+&lt;h3 id="project-description">Project Description&lt;/h3>
+&lt;p>이 프로젝트의 목적은 가장 작은 MCU에 Ethernet connectivity를 구현하는 것이다. 아마 아래 그림과 같은 형태가 될것이다.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/09/lpc810_ethernet.jpg">&lt;img loading="lazy" class=" wp-image-2651 alignnone" alt="lpc810_ethernet" src="https://openmicrolab.com/images/2013/09/lpc810_ethernet.jpg" width="717" height="484" srcset="https://openmicrolab.com/images/2013/09/lpc810_ethernet.jpg 1024w, https://openmicrolab.com/images/2013/09/lpc810_ethernet-300x202.jpg 300w" sizes="(max-width: 717px) 100vw, 717px" />&lt;/a>&lt;/p>
+&lt;h3 id="cortexmo">CortexMo+&lt;/h3>
+&lt;p>NXP에서 출시한 LPC800시리즈는 ARM사의 CortexM0+ 시리즈의 칩이다. ARM의 소개 페이지에 있는 것 처럼 CortexM0와 마찬가지로 8, 16비트 시장을 타겟으로 하고 있다. CortexM0와 비교해서는 파워소모를 더 줄였고 성능은 더 높인 버젼이라고 이해하면 될 듯 하다. &lt;a href="http://deltas.blog.com/2013/03/13/arm-cortex-m0-vs-msp430-or-are-m0-based-devices-really-16-bit-mcu-replacements-2/" target="_blank">TI의 MSP430과 비교를 한 사이트&lt;/a>도 있는데, GPIO만 적을뿐 가격, 파워 소모, 성능등 모든 면에서 우월하다.&lt;/p></description></item></channel></rss>

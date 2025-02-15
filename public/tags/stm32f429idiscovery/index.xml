@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STM32F429IDiscovery on OpenMicroLab</title><link>https://openmicrolab.com/tags/stm32f429idiscovery/</link><description>Recent content in STM32F429IDiscovery on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 19 Nov 2015 05:53:48 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/stm32f429idiscovery/index.xml" rel="self" type="application/rss+xml"/><item><title>SD 메모리 SPI로 제어하기 – 2</title><link>https://openmicrolab.com/sd-%EB%A9%94%EB%AA%A8%EB%A6%AC-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0-2/</link><pubDate>Thu, 19 Nov 2015 05:53:48 +0000</pubDate><guid>https://openmicrolab.com/sd-%EB%A9%94%EB%AA%A8%EB%A6%AC-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0-2/</guid><description>
+&lt;p>지난번 포스팅 “&lt;a href="http://openmicrolab.com/sd-%EB%A9%94%EB%AA%A8%EB%A6%AC-spi%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0/" target="_blank">SD 메모리 SPI로 제어하기&lt;/a>“의 내용만으로는 부족하여 추가적으로 정리한다.&lt;/p>
+&lt;p>SD 메모리 카드는 기본적으로 전원이 들어오면 SDIO로 동작을 한다. 따라서 대부분의 칩벤더에서는 SDIO인터페이스를 사용하는 예제를 제공하는데, SDIO가 없는 작은 MCU에서는 SPI를 사용해야 한다. 따라서 다음 그림과 같은 초기화 루틴이 필요하다.&lt;/p>
+&lt;h3 id="spi모드에서-sd-메모리-초기화-루틴">SPI모드에서 SD 메모리 초기화 루틴&lt;/h3>
+&lt;p>&lt;a href="http://elm-chan.org/docs/mmc/gx1/sdinit.png">&lt;img loading="lazy" class="aligncenter" src="http://elm-chan.org/docs/mmc/gx1/sdinit.png" alt="" width="850" height="920" />&lt;/a>&lt;/p>
+&lt;h3 id="sd-메모리-커맨드">SD 메모리 커맨드&lt;/h3>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-3468" src="https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC.png" alt="How_to_Use_MMC_SDC" width="1368" height="787" srcset="https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC.png 1368w, https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC-300x173.png 300w, https://openmicrolab.com/images/2015/11/How_to_Use_MMC_SDC-1024x589.png 1024w" sizes="(max-width: 1368px) 100vw, 1368px" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>1번: CS, MISO를 High로 하고 74개 이상의 SPI dummy clock을 전송한다.&lt;/li>
+&lt;li>2번: CRC가 반드시 일치해야 한다.&lt;/li>
+&lt;/ul>
+&lt;p>위 표에서 CMD0은 0, CMD8은 8을 전송하는 형태이고, ACMD41은 CMD55를 전송후 CMD41를 전송하는 것이며, argument로 30번째 비트가 세트된 32비트를 전송한다.&lt;/p></description></item></channel></rss>

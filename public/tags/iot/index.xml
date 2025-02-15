@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IOT on OpenMicroLab</title><link>https://openmicrolab.com/tags/iot/</link><description>Recent content in IOT on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 04 Apr 2019 01:42:56 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/iot/index.xml" rel="self" type="application/rss+xml"/><item><title>arm White paper – The route to a trillion devices</title><link>https://openmicrolab.com/arm-white-paper-the-route-to-a-trillion-devices/</link><pubDate>Thu, 04 Apr 2019 01:42:56 +0000</pubDate><guid>https://openmicrolab.com/arm-white-paper-the-route-to-a-trillion-devices/</guid><description>
+&lt;p>소프트뱅크가 arm을 인수후  2017년에 발간된 arm의 백서 – &lt;a href="http://openmicrolab.godohosting.com/Files/Arm-The-route-to-trillion-devices_2018.pdf">The route to a trillion devices&lt;/a>&lt;/p>
+&lt;p>2035년에는 1조개의 IoT 디바이스가 사용될 것이라는 전망&lt;/p>
+&lt;blockquote>
+&lt;p>By 2035, the technology companies that sell IoT hardware and services could be serving a market worth a trillion dollars per annum. That is an exciting figure, but an even greater value will flow to the companies that utilize the information collected by those systems, and to the consumers who will benefit from widespread efficiency gains across the economy.&lt;/p></description></item><item><title>Thinger.io 서비스 사용하기</title><link>https://openmicrolab.com/thinger-io-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 13 Mar 2019 08:48:49 +0000</pubDate><guid>https://openmicrolab.com/thinger-io-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>IoT 서비스 중 하나인 &lt;a href="http://Thinger.io">Thinger.io&lt;/a>를 사용해 봤다.&lt;/p>
+&lt;p>아두이노 라이브러리를 제공을 해서 쉽게 ESP32에서 사용이 가능하다.&lt;/p>
+&lt;ul>
+&lt;li>먼저 아두이노 라이브러리 매니저에서 thinger로 검색을 해서 라이브러리를 설치를 하고 ESP32 예제를 연다.&lt;/li>
+&lt;li>물론 먼저 이 서비스에 가입을 하고, USERNAME, DEVICE_ID, DEVICE_CREDENTIAL을 define 문에 정의한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>#define USERNAME “*&lt;strong>*&lt;/strong>***”&lt;/p>
+&lt;p>#define DEVICE_ID “*&lt;strong>*&lt;/strong>***”&lt;/p>
+&lt;p>#define DEVICE_CREDENTIAL “*&lt;strong>*&lt;/strong>***”&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>접속하고자 하는 SSID와 SSID_PASSWORD를 입력한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>#define SSID “*&lt;strong>*&lt;/strong>***”  //your wifi SSID&lt;/p>
+&lt;p>#define SSID_PASSWORD “*&lt;strong>*&lt;/strong>***” // your wifi password&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>아래 코드처럼 seup() 함수에 입출력을 정의하면, 서비스에서 이 값을 읽어서 대쉬보드에서 읽어서 데이터를 시각화 해준다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>// digital pin control example (i.e. turning on/off a light, a relay, configuring a parameter, etc)&lt;/p></description></item><item><title>M5Stack with AskSensors</title><link>https://openmicrolab.com/m5stack-with-asksensors/</link><pubDate>Tue, 27 Nov 2018 02:33:04 +0000</pubDate><guid>https://openmicrolab.com/m5stack-with-asksensors/</guid><description>
+&lt;p>&lt;a href="http://www.m5stack.com" target="_blank" rel="noopener noreferrer">M5Stack&lt;/a>은 ESP32기반의 디바이스이며, &lt;a style="outline-width: 0px !important; user-select: auto !important;" href="https://asksensors.com" target="_blank" rel="noopener noreferrer">AskSensors&lt;/a>는 IoT 디바이스로 부터 데이터를 받아서 그래프 형태로 보여주는 IoT 플랫폼이다.&lt;/p>
+&lt;h3 id="m5stack">M5Stack&lt;/h3>
+&lt;p>ESP32 기반의 개발툴로 가로 세로  5cm라서 M5Stack이라고 이름이 붙여졌다고 한다.&lt;/p>
+&lt;h3 id="asksensors">AskSensors&lt;/h3>
+&lt;blockquote>
+&lt;p>AskSensors is an IoT platform designed to be the easiest application on the market, allowing users to connect, visualize and analyze their sensors data over the cloud. In this tutorial, we’ll be learning the basics you need to get started with askSensors, starting from creating account to visualizing data in graphs.&lt;/p></description></item><item><title>IFTTT의 Webhook 사용하기</title><link>https://openmicrolab.com/ifttt%EC%9D%98-webhook-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 25 Oct 2018 10:12:42 +0000</pubDate><guid>https://openmicrolab.com/ifttt%EC%9D%98-webhook-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>IFTTT에서 Webhook 서비스를 만들고 이 서비스의 endpoint 를 찾을 수가 없었는데, 이것은 &lt;a href="https://ifttt.com/services/maker_webhooks/settings" target="_blank" rel="noopener noreferrer">&lt;a href="https://ifttt.com/services/maker_webhooks/settings">https://ifttt.com/services/maker_webhooks/settings&lt;/a>&lt;/a> 에서 찾을 수 있다.&lt;/p>
+&lt;p>이 페이지에서 나온 URL을 브라우저에 입력을 하면 키값과 POST GET을 할 수 있는 URL 정보를 얻을 수 있다. 여기서 {event}의 값은 생성한 서비스의 event 이름이다.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://maker.ifttt.com/trigger/%7Bevent%7D%7D/with/key/%7Bkey">https://maker.ifttt.com/trigger/{event}}/with/key/{key&lt;/a> 값}&lt;/p>&lt;/blockquote>
+&lt;img loading="lazy" class="alignnone wp-image-4461" src="https://res.cloudinary.com/openmicrolab/image/upload/v1540461977/ifttt_kgy2ad.png" width="759" height="426" />
+&lt;p>IF + Webhook + Notification 으로 만들면 IFTTT앱에서 알림을 받을 수 있다.&lt;/p>
+&lt;p>&lt;strong>참고&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://help.ifttt.com/hc/en-us/articles/115010230347-The-Webhooks-Service" target="_blank" rel="noopener noreferrer">&lt;a href="https://help.ifttt.com/hc/en-us/articles/115010230347-The-Webhooks-Service">https://help.ifttt.com/hc/en-us/articles/115010230347-The-Webhooks-Service&lt;/a>&lt;/a>&lt;/p>
+&lt;blockquote class="wp-embedded-content" data-secret="Rf5yuLTtD7">
+&lt;p>
+&lt;a href="https://www.learnrobotics.org/blog/connect-arduino-to-ifttt-for-iot-projects/">Connect Arduino to IFTTT for IoT Projects&lt;/a>
+&lt;/p>
+&lt;/blockquote></description></item><item><title>WioLink 사용하기</title><link>https://openmicrolab.com/wiolink-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 25 Oct 2018 09:53:01 +0000</pubDate><guid>https://openmicrolab.com/wiolink-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;h3 id="wiolink">WioLink&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4458" src="https://res.cloudinary.com/openmicrolab/image/upload/v1540461119/wio_ks_icxaos.jpg" width="616" height="347" />
+&lt;p>2016년에 &lt;a href="https://www.kickstarter.com/projects/seeed/wio-link-3-steps-5-minutes-build-your-iot-applicat" target="_blank" rel="noopener noreferrer">킥스타터&lt;/a>를 통해서 구매한 WioLink. 당시에 동작을 확인하고 사용을 하지 않고 있다가, 최근에 다시 사용을 하려고 보니 잘 동작을 하지 않는다. WiFi 설정은 되고, 서버에도 접속이 되는데 앱에서 디바이스를 구성을 하고 View API 버튼을 누르면 앱이 멈춰버린다.&lt;/p>
+&lt;h3 id="펌웨어-업데이트">펌웨어 업데이트&lt;/h3>
+&lt;p>그래서 일단 펌웨어를 다시 업데이트를 해본다.&lt;br>
+&lt;strong>펌웨어 다운로드&lt;/strong>&lt;br>
+Firmware: user1.bin user2.bin&lt;br>
+Bootloader binary and other binaries: Esp8266sdk1.4.1.zip&lt;br>
+Esp8266sdk1.4.1.zip을 압축을 풀고, boot***.bin 파일은 bootloader.bin으로 이름을 바꾼다.&lt;/p>
+&lt;p>&lt;strong>esptool 설치&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>$ pip install esptool&lt;/p></description></item><item><title>Azure IoThub에서 수신된 데이터 확인하기</title><link>https://openmicrolab.com/azure-iothub%EC%97%90%EC%84%9C-%EC%88%98%EC%8B%A0%EB%90%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 24 Oct 2018 09:41:51 +0000</pubDate><guid>https://openmicrolab.com/azure-iothub%EC%97%90%EC%84%9C-%EC%88%98%EC%8B%A0%EB%90%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>Azure IoThub에 디바이스를 연결하고 MQTT 프로토콜을 이용해서 데이터를 보내면 이 내용을 Monitoring &amp;gt; Metric 에서 설정하는 대로 그래프로 표시된다. 하지만 메시지 포멧과 데이터의 값을 보려면 콘솔을 열고 다음과 같은 명령을 입력해야 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>az iot hub monitor-events –hub-name {IotHub Name} –output table&lt;/p>&lt;/blockquote>
+&lt;p>여기서 IotHub Name는 생성한 IoTHub의 이름이다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4447" src="https://res.cloudinary.com/openmicrolab/image/upload/v1540374019/azure_Iothub_pwlwda.png" width="839" height="479" />
+&lt;p>위 내용은 작년(2018)에 테스트를 하던 건데 오늘(2019.5.2) 다시 테스트를 하려고 보니 안된다. 구글링 해보니 CLI 명령어가 바뀜. 이 &lt;a href="https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events">링크&lt;/a> 를 확인.&lt;/p></description></item><item><title>Resin.io 사용법</title><link>https://openmicrolab.com/resin-io-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Tue, 21 Aug 2018 01:43:59 +0000</pubDate><guid>https://openmicrolab.com/resin-io-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>&lt;a href="https://resin.io/" target="_blank" rel="noopener noreferrer">Resin.io&lt;/a>의 홈페이지에는 다음과 같이 자신들의 서비스를 설명을 한다.&lt;/p>
+&lt;blockquote>
+&lt;p class="header__subtitle">
+Resin.io brings the benefits of Linux containers to the IoT. Develop iteratively, deploy safely, and manage at scale.
+&lt;/p>&lt;/blockquote>
+&lt;p class="header__subtitle">
+&lt;span style="color: #0000ff;">&lt;strong>Linux containers to the IoT&amp;#8230; 리눅스 기반의 IoT 디바이스를 위한 도커같은 서비스 일 것 같다.&lt;/strong>&lt;/span>
+&lt;/p>
+&lt;h2 class="header__subtitle" id="resinio-사용법">Resin.io 사용법&lt;/h2>
+&lt;h3 id="account-setup">Account setup&lt;/h3>
+&lt;p>resin.io 에 계정을 생성후 SSH 키 설정하여 resin에 저장을 하는데,  깃헙계정으로 로그인 할 경우 깃헙계정에 저장된 SSH 키 중 하나를 선택한다.&lt;/p>
+&lt;h3 id="ssh-키-확인">SSH 키 확인&lt;/h3>
+&lt;blockquote>
+&lt;p>ls -al ~/.ssh&lt;/p></description></item><item><title>Visual Programming Tool</title><link>https://openmicrolab.com/visual-programming-tool/</link><pubDate>Tue, 14 Aug 2018 02:31:26 +0000</pubDate><guid>https://openmicrolab.com/visual-programming-tool/</guid><description>
+&lt;ul>
+&lt;li>**&lt;a href="https://www.wia.io/" target="_blank" rel="nofollow noopener noreferrer">Wia&lt;/a> **&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://nodered.org/" target="_blank" rel="nofollow noopener noreferrer">Node-RED&lt;/a>&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://xod.io/" target="_blank" rel="nofollow noopener noreferrer">XOD&lt;/a>&lt;/strong>&lt;/li>
+&lt;li>&lt;a href="https://www.wyliodrin.com/" target="_blank" rel="nofollow noopener noreferrer">Wyliodrin&lt;/a> – for Raspberry Pi&lt;/li>
+&lt;li>Modkit&lt;/li>
+&lt;li>&lt;a href="http://blog.ardublock.com/" target="_blank" rel="nofollow noopener noreferrer">Ardublock&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.zenodys.com/" target="_blank" rel="nofollow noopener noreferrer">Zenodys&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.grasp.io/" target="_blank" rel="noopener noreferrer">GraspIO&lt;/a> – India company, for Raspberry Pi&lt;/li>
+&lt;/ul></description></item><item><title>Iotivity에서 gerrit 설정</title><link>https://openmicrolab.com/iotivity%EC%97%90%EC%84%9C-gerrit-%EC%84%A4%EC%A0%95/</link><pubDate>Mon, 13 Aug 2018 08:38:37 +0000</pubDate><guid>https://openmicrolab.com/iotivity%EC%97%90%EC%84%9C-gerrit-%EC%84%A4%EC%A0%95/</guid><description>
+&lt;p>Iotivity에서 gerrit설정 및 git을 이용해 코드를 가져오는 방법&lt;/p>
+&lt;h3 id="step_1create_ssh_keys">Step 1: &lt;a href="http://linuxfoundation.org" target="_blank" rel="noopener noreferrer">linuxfoundation.org&lt;/a> 에서 회원가입&lt;span class="st0">&lt;br /> &lt;/span>&lt;/h3>
+&lt;h3 id="step_1create_ssh_keys">Step 2: Create SSH keys&lt;/h3>
+&lt;div class="level5">
+&lt;pre class="code bash">&lt;span class="co4">$ &lt;/span>&lt;span class="kw2">ssh-keygen&lt;/span> &lt;span class="re5">-t&lt;/span> rsa &lt;span class="re5">-C&lt;/span> &lt;span class="st0">"Your name &amp;lt;your_email_address&amp;gt;"&lt;/span>&lt;/pre>
+&lt;p>
+~/.ssh의 위치에 id_rsa와 id_rsa.pub가 생성이 된다. 참고로 맥에서 숨김 파일을 보려면 SHIFT + CMD + .
+&lt;/p>
+&lt;/div>
+&lt;h3 id="step_2setting_up_ssh">Step 3: Setting up SSH&lt;/h3>
+&lt;div class="level5">
+&lt;p>
+~/.ssh/config 파일을 다음과 같이 생성한다.
+&lt;/p>
+&lt;pre class="code">Host gerrit.iotivity.org
+Hostname "gerrit.iotivity.org"
+IdentityFile ~/.ssh/id_rsa
+User &amp;lt;Linux Foundation ID&amp;gt;
+Port 29418&lt;/pre>
+&lt;/div>
+&lt;h3 id="step_3upload_ssh_public_key_to_gerrit_and_register_personal_info">Step 3: Upload SSH public key to Gerrit and Register personal info&lt;/h3>
+&lt;div class="level5">
+&lt;p>
+&lt;a class="urlextern" title="https://gerrit.iotivity.org/" href="https://gerrit.iotivity.org/" rel="nofollow">IoTivity Gerrit&lt;/a>에 로그인을 한후 Settings 메뉴에서 id_rsa.pub 파일의 내용 copy &amp; paste 한다.
+&lt;/p></description></item><item><title>ESP32 개발 환경 설정 – Mac OS</title><link>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</link><pubDate>Fri, 06 Jul 2018 06:02:04 +0000</pubDate><guid>https://openmicrolab.com/esp32-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-mac-os/</guid><description>
+&lt;p>Mac OS에서 ESP32 개발 환경 설정은 다음의 &lt;a href="http://esp-idf.readthedocs.io/en/latest/get-started/index.html#introduction" target="_blank" rel="noopener noreferrer">링크&lt;/a>를 참고한다.&lt;/p>
+&lt;img loading="lazy" class="" src="http://esp-idf.readthedocs.io/en/latest/_images/what-you-need.png" width="468" height="305" />
+&lt;h3 id="tool-chain-설정">Tool chain 설정&lt;/h3>
+&lt;p>pip와 pyserial을 설치- 이 과정중에 dependency가 있는 라이브러리 설치는 sudo easy_install xxx  형태로 설치한다.&lt;/p>
+&lt;pre>&lt;span class="n">sudo&lt;/span> &lt;span class="n">easy_install&lt;/span> &lt;span class="n">pip
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell1">&lt;span class="n">brew&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">cmake&lt;/span> &lt;span class="n">ninja&lt;/span> &lt;span class="n">dfu&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">util&lt;/span>&lt;/pre>
+&lt;p>&lt;span class="n">다음은 툴체인을 다운로드하고, 설치를 하는 과정임&lt;/span>&lt;/p>
+&lt;pre>&lt;span class="n">mkdir&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">cd&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">esp&lt;/span>
+&lt;span class="n">git clone --recursive https://github.com/espressif/esp-idf.git
+&lt;/span>&lt;/pre>
+&lt;pre id="codecell3">&lt;span class="nb">cd&lt;/span> ~/esp/esp-idf
+./install.sh&lt;/pre>
+&lt;p>환경설정&lt;/p>
+&lt;blockquote>
+&lt;p>. $HOME/esp/esp-idf/export.sh&lt;/p>&lt;/blockquote>
+&lt;p>다음의 내용을  .bash_profile에 추가한 다음에 esp 개발시 터미널에서 get_idf를 실행하면 된다.&lt;/p>
+&lt;blockquote>
+&lt;p>alias get_idf=’. $HOME/esp/esp-idf/export.sh’&lt;/p>&lt;/blockquote>
+&lt;p>추후에 리모트 깃의 내용을 업데이트 하려면 다음과 같이 한다.&lt;/p></description></item><item><title>오픈소스 IoT 프레임워크</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-iot-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/</link><pubDate>Mon, 22 Jan 2018 04:57:00 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-iot-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/</guid><description>
+&lt;p>오픈소스 IoT 프레임워크&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.eclipse.org/kura/" target="_blank" rel="noopener noreferrer">Eclipse Kura&lt;/a>
+&lt;ul>
+&lt;li>Kura requires developers to create their own source code without a visual designer, so you’ll get more customization but also a significantly higher learning curve.&lt;/li>
+&lt;li>Kura does have a web UI for configuration of the protocols and devices connected to your network, and this also includes options for data and cloud services, and other I/O integration.&lt;/li>
+&lt;li>Uses a multi-service gateway with an online/offline mode and can manage applications and network connectivity.&lt;/li>
+&lt;li>Runs on a wide range of edge, container, cloud, or premise platforms.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://nodered.org/" target="_blank" rel="noopener noreferrer">Node-RED&lt;/a>
+&lt;ul>
+&lt;li>Easy, beginner-friendly installation.&lt;/li>
+&lt;li>Uses color-coded boxes and wiring connections to visualize your web of networked devices.&lt;/li>
+&lt;li>Leverages IBM Bluemix cloud with native integration.&lt;/li>
+&lt;li>Runs on a wide range of edge, container, cloud, or premise platforms.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="http://www.flogo.io/" target="_blank" rel="noopener noreferrer">Flogo&lt;/a>
+&lt;ul>
+&lt;li>Easy installation and integration workflow.&lt;/li>
+&lt;li>Color-coded visual designer equally suited to specialists and non-specialists.&lt;/li>
+&lt;li>Flows are shareable as JSON files or strings.&lt;/li>
+&lt;li>Also runs on a wide range of edge, container, cloud, or premise platforms.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>참고: &lt;a href="https://dzone.com/articles/3-best-iot-frameworks-for-beginners" target="_blank" rel="noopener noreferrer">&lt;a href="https://dzone.com/articles/3-best-iot-frameworks-for-beginners">https://dzone.com/articles/3-best-iot-frameworks-for-beginners&lt;/a>&lt;/a>&lt;/p></description></item><item><title>IoT 킬러 앱?</title><link>https://openmicrolab.com/iot-%ED%82%AC%EB%9F%AC-%EC%95%B1/</link><pubDate>Sat, 02 Dec 2017 03:13:57 +0000</pubDate><guid>https://openmicrolab.com/iot-%ED%82%AC%EB%9F%AC-%EC%95%B1/</guid><description>
+&lt;p>IoT 분야는 한가지 킬러앱이  존재하지 않는다. 즉 특정한 고객의 특정한 분야의 특정한 문제를 해결해야 하며, 버티컬 마켓이다. 따라서&lt;/p>
+&lt;blockquote>
+&lt;p>사용자의 니즈를 확실히 이해해서 가치를 제공해야 하며&lt;/p>
+&lt;p>IoT를 이용하여 **“실시간 데이터를 수집, 처리해서 better, faster, cheaper 한 방법”**으로 문제를 해결해야 한다.&lt;/p>&lt;/blockquote>
+&lt;p>참고: &lt;a href="https://www.iotcentral.io/blog/why-there-s-no-killer-app-for-iot" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.iotcentral.io/blog/why-there-s-no-killer-app-for-iot">https://www.iotcentral.io/blog/why-there-s-no-killer-app-for-iot&lt;/a>&lt;/a>&lt;/p></description></item><item><title>삼성 Artik Edge-to-cloud Security</title><link>https://openmicrolab.com/%EC%82%BC%EC%84%B1-artik-edge-cloud-security/</link><pubDate>Tue, 14 Nov 2017 09:22:28 +0000</pubDate><guid>https://openmicrolab.com/%EC%82%BC%EC%84%B1-artik-edge-cloud-security/</guid><description>
+&lt;p>삼성 아틱의 보안은 Edge-to-cloud Security라고 설명을 한다. 즉 칩레벨에서 부터 클라우드까지 보안요소가 있다는 얘기.&lt;/p>
+&lt;h3 id="device-protection-and-trusted-code-execution">Device Protection and Trusted Code Execution&lt;/h3>
+&lt;p>Hardware의 경우 Device protection과 trusted code execution이 가장 중심이 되는 요소임.&lt;/p>
+&lt;img loading="lazy" class="" src="https://www.artik.io/wp-content/uploads/2017/10/device-protection-2-1024x469.png" width="703" height="322" />
+&lt;ul>
+&lt;li>&lt;strong>Secure Boot&lt;/strong>&lt;br>
+타겟 디바이스에서 동작하는 코드의 신뢰성을 보장이 필요&lt;br>
+소프트웨어는 타겟장치에서 코드 실행을 허용하기 위해 소프트웨어 공급자가 서명해야함.&lt;/li>
+&lt;li>&lt;strong>KMS infrastructure for code signing&lt;/strong>&lt;br>
+코드 서명을 쉽게하기위한 Key Management Service (KMS), ARTIK CodeSigner service, FIPS-certified hardware security modules (HSM)를 제공&lt;/li>
+&lt;li>&lt;strong>Secure Element&lt;/strong>&lt;br>
+각 디바이스에 SmartThings cloud에 등록된 private/public key쌍이 저장이 되어서 출시됨.&lt;/li>
+&lt;li>&lt;strong>Secure JTAG access&lt;/strong>&lt;br>
+JTAG을 사용시 패스워드 필요&lt;/li>
+&lt;/ul>
+&lt;h3 id="protected-communications">Protected Communications&lt;/h3>
+&lt;p>디바이스와 클라우드 사이의 통신 보안&lt;/p></description></item><item><title>MQTT 란?</title><link>https://openmicrolab.com/mqtt-%EB%9E%80/</link><pubDate>Sat, 11 Nov 2017 14:59:36 +0000</pubDate><guid>https://openmicrolab.com/mqtt-%EB%9E%80/</guid><description>
+&lt;h3 class="p1" id="mqttspan-classs1란span">MQTT&lt;span class="s1">란&lt;/span>?&lt;/h3>
+&lt;p class="p1">
+MQ Telemetry Transport&lt;span class="s1">의&lt;/span> &lt;span class="s1">약자&lt;/span>
+&lt;/p>
+&lt;blockquote>
+&lt;p class="p1">
+It is a publish/subscribe, extremely simple and lightweight messaging protocol, designed for constrained devices and low-bandwidth, high-latency or unreliable networks.
+&lt;/p>&lt;/blockquote>
+&lt;h3 class="p1" id="span-classs1왜span-mqttspan-classs1를span-span-classs1사용하는가span">&lt;span class="s1">왜&lt;/span> MQTT&lt;span class="s1">를&lt;/span> &lt;span class="s1">사용하는가&lt;/span>?&lt;/h3>
+&lt;p class="p3">
+&lt;span class="s2">IoT(Internet of Thing): Thing&lt;/span>을&lt;span class="s2"> Internet&lt;/span>에 연결을 하려면&lt;span class="s2"> Ethernet, WiFi, Cellular &lt;/span>등이 필요하다&lt;span class="s2">. &lt;/span>이런&lt;span class="s2"> connectivity&lt;/span>가 대부분 무선으로 가고 있는데&lt;span class="s2">, &lt;/span>무선이라 함은 이동성이 보장되야 하므로 밧데리가 필요하고 파워소모는 중요한 요소이다&lt;span class="s2">. &lt;/span>파워를 적게 사용하기 위해서는 빨리 연결을 하고&lt;span class="s2">, &lt;/span>데이터를 보내고 빨리 연결을 끊어야 한다&lt;span class="s2">. &lt;/span>특히 데이터에 오버헤드가 없어야 한다&lt;span class="s2">. &lt;/span>셀룰라에서 데이터는 돈이니&lt;span class="s2">…&lt;/span>
+&lt;/p></description></item><item><title>IoT 관련 단상</title><link>https://openmicrolab.com/iot-%EA%B4%80%EB%A0%A8-%EB%8B%A8%EC%83%81/</link><pubDate>Thu, 26 Oct 2017 09:43:13 +0000</pubDate><guid>https://openmicrolab.com/iot-%EA%B4%80%EB%A0%A8-%EB%8B%A8%EC%83%81/</guid><description>
+&lt;p>&lt;strong>IoT의 핵심요소&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Connectivity: 이건 당연하고, 여기에 security가 필요&lt;/li>
+&lt;li>Interoperation: 이건 가능하면 좋겠지만, IoT응용이 vertical market이라서 대기업이 아니고는 큰 의미가 없을 듯.&lt;/li>
+&lt;li>Intelligence: 이건 조만간 반드시 있어야 서비스에 차별화가 될 듯&lt;/li>
+&lt;/ul></description></item><item><title>Blynk 사용법</title><link>https://openmicrolab.com/blynk-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Thu, 26 Oct 2017 06:55:27 +0000</pubDate><guid>https://openmicrolab.com/blynk-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>&lt;a href="http://www.blynk.cc/" target="_blank" rel="noopener noreferrer">Blynk&lt;/a>는 IoT응용을 쉽게만들어 주는 앱이다.  동작 방식은 아래 그림과 같이 앱이 서버를 거쳐서 디바이스에 접근을 하고, 디바이스역시 서버를 거쳐서 앱과 통신을 한다. 단 디바이스에는 Blynk에서 제공하는 라이브러리를 설치를 해야한다.&lt;/p>
+&lt;img loading="lazy" class="alignnone " src="http://docs.blynk.cc/images/architecture.png" width="515" height="385" />
+&lt;h3 id="디바이스">&lt;strong>디바이스&lt;/strong>&lt;/h3>
+&lt;p>현재 지원하는 디바이스는 아두이노, ESP8266, 라즈베리파이… 등 다양하며(&lt;a href="http://docs.blynk.cc/#supported-hardware-platforms" target="_blank" rel="noopener noreferrer">지원하는 하드웨어&lt;/a>), Bluetooth, WiFi등의 connectivity가 없는 경우에도 PC를 통해서 동작이 가능하다. 아두이노에서는 **스케치 &amp;gt; 라이브러리 포함하기 &amp;gt; 라이브러리 관리…**를 선택해서 Blynk로 검색을 하면 라이브러리 및 예제의 설치가 가능하다. 그리고 펌웨어에서는 앱을 통해 받은 토큰을 코드에 넣어서 서버와 통신을 한다.&lt;/p></description></item><item><title>AI-Powered IoT</title><link>https://openmicrolab.com/ai-powered-iot/</link><pubDate>Wed, 12 Jul 2017 01:48:16 +0000</pubDate><guid>https://openmicrolab.com/ai-powered-iot/</guid><description>
+&lt;p>Reactive repair 또는 Scheduled maintenance 대신 머신러닝을 사용하여 Predictive maintenance가 가능.&lt;/p>
+&lt;img loading="lazy" class="" src="https://insights.hpe.com/content/hpe-nxt/en/articles/2017/06/how-ai-will-work-at-the-industrial-iot-edge/_jcr_content/article-image.transform/1043x496-crop/image.jpeg" width="715" height="340" />
+원문: &lt;a href="https://insights.hpe.com/articles/how-ai-will-work-at-the-industrial-iot-edge-1706.html" target="_blank" rel="noopener noreferrer">https://insights.hpe.com/articles/how-ai-will-work-at-the-industrial-iot-edge-1706.html&lt;/a></description></item><item><title>Waggle, IoT device for 3D Printer</title><link>https://openmicrolab.com/waggle-iot-device-3d-printer/</link><pubDate>Fri, 16 Jun 2017 01:51:49 +0000</pubDate><guid>https://openmicrolab.com/waggle-iot-device-3d-printer/</guid><description>
+&lt;p>회사에서 개발하고 있는 Waggle, IoT device for 3D Printer의 &lt;a href="https://www.kickstarter.com/projects/1483229514/waggle-3d-printing-made-easy" target="_blank" rel="noopener noreferrer">킥스타터&lt;/a> 크라우드 펀딩 종료.&lt;/p>
+&lt;p>&lt;a href="https://www.kicktraq.com/projects/1483229514/waggle-3d-printing-made-easy/" target="_blank" rel="noopener noreferrer">&lt;img title="Waggle : 3D Printing Made Easy -- Kicktraq Mini" src="https://www.kicktraq.com/projects/1483229514/waggle-3d-printing-made-easy/minichart.png" alt="Waggle : 3D Printing Made Easy -- Kicktraq Mini" />&lt;/a>&lt;/p></description></item><item><title>Nabto 사용법</title><link>https://openmicrolab.com/nabto-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Tue, 23 Aug 2016 09:58:32 +0000</pubDate><guid>https://openmicrolab.com/nabto-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>Nabto provides a full communication infrastructure to allow real-time direct, encrypted communication between end-user clients (tablets, smartphones, PC) and resource limited devices (&amp;lt; 1kb RAM and up) – the Nabto communication platform. The platform provides direct real-time connectivity with no firewall or dynamic IP hassle – just as you know from e.g. Skype™.&lt;/p>
+&lt;img loading="lazy" class="wp-image-3732 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1471945788/nabto-details_ekpvbb.png" width="800" height="280" />
+&lt;p>&lt;strong>Nabto 사용법&lt;/strong>&lt;/p>
+&lt;p>Nabto 디바이스 포털 &lt;a href="https://developer.nabto.com/" target="_blank">&lt;a href="https://developer.nabto.com/">https://developer.nabto.com/&lt;/a>&lt;/a>) 에서 ID를 등록하고 Add Device에 디바이스 이름을 입력후 디바이스를 추가한다. 이 디바이스 ID는 &lt;strong>xxxx.demo.nab.to&lt;/strong> 이런 형태가 된다.&lt;/p></description></item><item><title>IoT Developer Survey</title><link>https://openmicrolab.com/iot-developer-survey/</link><pubDate>Fri, 15 Apr 2016 03:32:38 +0000</pubDate><guid>https://openmicrolab.com/iot-developer-survey/</guid><description>
+&lt;p>Top 5 IoT Industries&lt;/p>
+&lt;ul>
+&lt;li>Iot Platform&lt;/li>
+&lt;li>Home Automation&lt;/li>
+&lt;li>Industrial Automation&lt;/li>
+&lt;li>Energy Management&lt;/li>
+&lt;li>Connected Cities&lt;/li>
+&lt;/ul>
+&lt;p>3가지 이슈 – 보안, 상호호환성, 연결방식&lt;br>
+주로 사용되는 메시징 프로토콜은 MQTT, HTTP&lt;br>
+클라우드 서비스는 아마존 클라우드&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="IoT Developer Survey 2016" href="//www.slideshare.net/IanSkerrett/iot-developer-survey-2016" target="_blank">IoT Developer Survey 2016&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="//www.slideshare.net/IanSkerrett" target="_blank">Ian Skerrett&lt;/a>&lt;/strong>
+&lt;/div>
+&lt;p>관련자료 – &lt;a href="https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/" target="_blank">&lt;a href="https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/">https://ianskerrett.wordpress.com/2016/04/14/profile-of-an-iot-developer-results-of-the-iot-developer-survey/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>여기 나온 PT자료도 같이 보면 좋을 듯: &lt;a href="http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/" target="_blank">&lt;a href="http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/">http://hackerboards.com/dig-into-iot-with-41-openiot-summit-presentations/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>Internet of Things Landscape 2016</title><link>https://openmicrolab.com/3625-2/</link><pubDate>Fri, 08 Apr 2016 05:21:59 +0000</pubDate><guid>https://openmicrolab.com/3625-2/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-3626" src="http://res.cloudinary.com/openmicrolab/image/upload/v1460092613/Internet-of-Things-2016_r4wwvp.png" alt="" width="2872" height="1616" /></description></item><item><title>가트너가 꼽은 2017, 2018년도의 10가지 IoT기술</title><link>https://openmicrolab.com/%EA%B0%80%ED%8A%B8%EB%84%88%EA%B0%80-%EA%BC%BD%EC%9D%80-2017-2018%EB%85%84%EB%8F%84%EC%9D%98-10%EA%B0%80%EC%A7%80-iot%EA%B8%B0%EC%88%A0/</link><pubDate>Wed, 09 Mar 2016 02:22:04 +0000</pubDate><guid>https://openmicrolab.com/%EA%B0%80%ED%8A%B8%EB%84%88%EA%B0%80-%EA%BC%BD%EC%9D%80-2017-2018%EB%85%84%EB%8F%84%EC%9D%98-10%EA%B0%80%EC%A7%80-iot%EA%B8%B0%EC%88%A0/</guid><description>
+&lt;p>가트너가 꼽은 2017, 2018년도의 10가지 IoT기술&lt;/p>
+&lt;ul>
+&lt;li>IoT Security&lt;/li>
+&lt;li>IoT Analytics&lt;/li>
+&lt;li>IoT Device (Thing) Management&lt;/li>
+&lt;li>Low-Power, Short-Range IoT Networks&lt;/li>
+&lt;li>Low-Power, Wide-Area Networks&lt;/li>
+&lt;li>IoT Processors&lt;/li>
+&lt;li>IoT Operating Systems&lt;/li>
+&lt;li>Event Stream Processing&lt;/li>
+&lt;li>IoT Platforms&lt;/li>
+&lt;li>IoT Standards and Ecosystems&lt;/li>
+&lt;/ul>
+&lt;p>리스트의 제목만으로 이해가 가는 내용인데, 위 리스트에서 IoT Processor는 윗쪽에 언급된 IoT Security, Low-Power, Connectivity, IoT OS까지 포함된 개념이고, Event Stream Processing은 동영상같은 스트림을 실시간으로 처리하는 것으로 distributed stream computing platforms (DSCPs)이 필요하다는 것.&lt;/p>
+&lt;p>그리고 IoT Platform은 다음과 같이 3가지 카테고리가 있을 수 있다.&lt;/p></description></item><item><title>사물인터넷 제품들을 위한 오프라인 매장의 변화</title><link>https://openmicrolab.com/%EC%82%AC%EB%AC%BC%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%A0%9C%ED%92%88%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8-%EB%A7%A4%EC%9E%A5%EC%9D%98-%EB%B3%80%ED%99%94/</link><pubDate>Wed, 13 Jan 2016 07:30:08 +0000</pubDate><guid>https://openmicrolab.com/%EC%82%AC%EB%AC%BC%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%A0%9C%ED%92%88%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8-%EB%A7%A4%EC%9E%A5%EC%9D%98-%EB%B3%80%ED%99%94/</guid><description>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/01/sillicon-valey-b8ta-psfk.cpm_.jpg">&lt;img loading="lazy" class="aligncenter size-full wp-image-3503" src="https://openmicrolab.com/images/2016/01/sillicon-valey-b8ta-psfk.cpm_.jpg" alt="sillicon-valey-b8ta-psfk.cpm_" width="996" height="665" srcset="https://openmicrolab.com/images/2016/01/sillicon-valey-b8ta-psfk.cpm_.jpg 996w, https://openmicrolab.com/images/2016/01/sillicon-valey-b8ta-psfk.cpm_-300x200.jpg 300w" sizes="(max-width: 996px) 100vw, 996px" />&lt;/a> 캘리포니아 팔로알토에 위치한 &lt;a href="https://b8ta.com/" target="_blank">b8ta&lt;/a>는 최신의 IT기기들을 고객들에게 데모하고 사용해 볼 수 있는 공간을 제공하는 매장이다.  현재 60여개의 제품을 전시되어 있고 아래 리스트의 제품들은 b8ta에만 독점적으로 공급되어 있다.&lt;br>
+&lt;a href="https://www.pryntcases.com/" target="_blank">The Prynt Case&lt;/a>, &lt;a href="http://www.thync.com/" target="_blank">Thync Calm and Energy Wearable&lt;/a>, &lt;a href="https://www.teforia.com/" target="_blank">Teforia Tea Maker&lt;/a>, &lt;a href="http://avegant.com/" target="_blank">Avegant Glyph&lt;/a>,&lt;a href="https://getawair.com/" target="_blank">nurby: Smart Air Quality Monitor&lt;/a>, &lt;a href="http://foobot.io/" target="_blank">Footbot Indoor Air Quality Monitor&lt;/a>, &lt;a href="https://ouraring.com/" target="_blank">Oura Ring&lt;/a>,&lt;a href="https://www.anymote.io/" target="_blank">Anymote Home&lt;/a>, &lt;a href="https://plastc.com/" target="_blank">Plastc Card&lt;/a>, &lt;a href="http://www.senic.com/" target="_blank">Nuimo Controller&lt;/a>, &lt;a href="http://sevenhugs.com/" target="_blank">sevenhugs&lt;/a>, &lt;a href="https://carumacam.com/" target="_blank">Caruma Car Camera&lt;/a>,&lt;a href="http://www.skylock.cc/" target="_blank">Skylock&lt;/a>, &lt;a href="https://hexoplus.com/" target="_blank">Hexo+with 3DGimbal&lt;/a>, &lt;a href="https://www.lily.camera/" target="_blank">Lily Flying Camera&lt;/a>&lt;br>
+b8ta의 비즈니스 모델은 제품 판매 마진 및  임대료를 통해 수익을 얻으며, 하드웨어 제품의 제조자는 자신만의 오프라인 매장을 마련하는 것보다 저렴하게 b8ta의 한공간을 임대함으로 비용적으로 부담이 적고 고객들로부터 빠른 피드백을 얻어서 제품에 반영할 수 있는 장점이 있다.&lt;/p></description></item><item><title>IoT 디바이스 개발을 위한 ARM의 플랫폼적 접근</title><link>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</link><pubDate>Fri, 18 Apr 2014 10:09:20 +0000</pubDate><guid>https://openmicrolab.com/iot-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-arm%EC%9D%98-%ED%94%8C%EB%9E%AB%ED%8F%BC%EC%A0%81-%EC%A0%91%EA%B7%BC/</guid><description>
+&lt;p>ARM의 IoT 플랫폼 디렉터인 Simon Ford의 발표 @Embedded World.&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/04/mbed_Simon.png">&lt;img loading="lazy" class="alignnone wp-image-3008" alt="mbed_Simon" src="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png" width="819" height="609" srcset="https://openmicrolab.com/images/2014/04/mbed_Simon-1024x761.png 1024w, https://openmicrolab.com/images/2014/04/mbed_Simon-300x223.png 300w, https://openmicrolab.com/images/2014/04/mbed_Simon.png 1054w" sizes="(max-width: 819px) 100vw, 819px" />&lt;/a>&lt;/p>
+&lt;p>관련 링크: &lt;a href="http://player.vimeo.com/video/88152800" target="_blank">link&lt;/a>&lt;/p>
+&lt;p>&lt;span style="line-height: 1.5em;">지난번 ARM Techcon의 발표와 거의 같다.&lt;/span>&lt;/p></description></item><item><title>Beyond connectivity, toward value – IoT(IoE), 비즈니스 미래 지형을 바꾸다</title><link>https://openmicrolab.com/beyond-connectivity-toward-value-iotioe-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%AF%B8%EB%9E%98-%EC%A7%80%ED%98%95%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8B%A4/</link><pubDate>Sat, 08 Mar 2014 14:22:54 +0000</pubDate><guid>https://openmicrolab.com/beyond-connectivity-toward-value-iotioe-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%AF%B8%EB%9E%98-%EC%A7%80%ED%98%95%EC%9D%84-%EB%B0%94%EA%BE%B8%EB%8B%A4/</guid><description>
+&lt;p>지난 3월 5일 참석한 컨퍼런스&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/03/iot_semina.jpeg">&lt;img loading="lazy" class="alignnone size-full wp-image-2912" alt="iot_semina" src="https://openmicrolab.com/images/2014/03/iot_semina.jpeg" width="677" height="645" srcset="https://openmicrolab.com/images/2014/03/iot_semina.jpeg 677w, https://openmicrolab.com/images/2014/03/iot_semina-300x285.jpeg 300w" sizes="(max-width: 677px) 100vw, 677px" />&lt;/a>&lt;/p>
+&lt;p> &lt;/p>
+&lt;h3 id="발표의-내용을-요약하면">발표의 내용을 요약하면&lt;/h3>
+&lt;ul>
+&lt;li>IoT(Internet of Things), IoE(Internet of Everything)등으로 각 업체마다 추정치는 다르나 향후 널리 확산될 것으로 예상&lt;/li>
+&lt;li>수량은 PC, 태블릿, 스마트폰의 수치를 합한 것의 2배로 추정, 여기에 Smart TV, Wearable의 수치도 IoT와 비등한 수준&lt;/li>
+&lt;li>가트너에서 발표한 &lt;a href="http://www.gartner.com/newsroom/id/2575515" target="_blank">Hype Cycle 곡선&lt;/a>&lt;/li>
+&lt;li>IoT에서의 보안의 이슈: &lt;a href="http://www.telegraph.co.uk/technology/internet-security/10579677/More-than-750000-spam-emails-sent-from-fridges-and-TVs.html" target="_blank">냉장고가 스팸메일 보낸 뉴스&lt;/a>, &lt;a href="http://arstechnica.com/security/2014/02/password-leak-in-wemo-devices-makes-home-appliances-susceptible-to-hijacks/" target="_blank">밸킨의 Wemo 해킹 뉴스&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">국내 통신사들: KT, LG-Uplus, SK 텔레콤등이 실제적인 서비스( Biz Case)를 발표&lt;/span>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">매직에코: LimiSmart라는 램프에 IoT기능을 넣은 제품으로 인디고고에서 프로젝트 진행중 – S/W 저작 도구&lt;/span>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">daliworks : IoT cloud platform 서비스 제공(SensorJS), IoT 센서 게이트 웨이(비글본, 라즈베리 파이)&lt;/span>&lt;/li>
+&lt;/ul>
+&lt;h3 id="span-stylefont-size-117em글로벌-벤더들의-iot주도권을-위한-경쟁span">&lt;span style="font-size: 1.17em;">글로벌 벤더들의 IoT주도권을 위한 경쟁&lt;/span>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;span style="line-height: 1.5em;">오라클: &lt;/span>&lt;a style="line-height: 1.5em;" href="http://www.oracle.com/technetwork/java/javame/index.html" target="_blank">JavaME Embedded for IoE Platform&lt;/a>&lt;span style="line-height: 1.5em;"> 퀄컴의 Orion Board에서 채택, Gateway solution(&lt;/span>&lt;a style="line-height: 1.5em;" href="https://community.freescale.com/community/the-embedded-beat/blog/2013/09/23/what-is-the-new-freescale-oracle-partnership-around-one-box-platform-all-about-part-1" target="_blank">One Box&lt;/a>&lt;span style="line-height: 1.5em;">)&lt;/span>&lt;/li>
+&lt;li>퀄컴: AllJoyn –  P2P기반, 지금은 오픈 소스화 되어 Linux foundation 에서 유지.&lt;/li>
+&lt;li>&lt;a style="line-height: 1.5em;" href="https://openmicrolab.com/images/2014/03/alljoyn.jpeg">&lt;img loading="lazy" class="alignnone wp-image-2913" alt="alljoyn" src="https://openmicrolab.com/images/2014/03/alljoyn.jpeg" width="578" height="311" srcset="https://openmicrolab.com/images/2014/03/alljoyn.jpeg 964w, https://openmicrolab.com/images/2014/03/alljoyn-300x161.jpeg 300w" sizes="(max-width: 578px) 100vw, 578px" />&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height: 1.5em;">IBM: &lt;/span>&lt;a style="line-height: 1.5em;" href="http://mqtt.org/" target="_blank">MQTT&lt;/a> &lt;span style="line-height: 1.5em;">– IoT  메시징 프로토콜, &lt;/span>&lt;a style="line-height: 1.5em;" href="http://www.eclipse.org/paho/" target="_blank">paho&lt;/a>&lt;/li>
+&lt;li>MS의 IoT에 대한 정의&lt;/li>
+&lt;li>&lt;a style="line-height: 1.5em;" href="https://openmicrolab.com/images/2014/03/ms_iot.jpeg">&lt;img loading="lazy" class="alignnone size-full wp-image-2914" alt="ms_iot" src="https://openmicrolab.com/images/2014/03/ms_iot.jpeg" width="484" height="242" srcset="https://openmicrolab.com/images/2014/03/ms_iot.jpeg 484w, https://openmicrolab.com/images/2014/03/ms_iot-300x150.jpeg 300w" sizes="(max-width: 484px) 100vw, 484px" />&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="my-insight"> My Insight&lt;/h3>
+&lt;ul>
+&lt;li>IoT 단말은 무선&lt;/li>
+&lt;li>IoT 게이트웨이는 상위 서비스와 연계하기 위해 보안 및 OS가 필요하며, 현재는 무겁고 비싸지만 가격은 점차내려갈 것고 모든 무선인터페이스(Zigbee, BT, WiFi)를 포함하는 형태가 될 것이다. 특히 가정내 IoT 게이트 웨이의 경우는 더더욱…&lt;/li>
+&lt;li>서비스에 연계되지 않은 단말은 중국과의 가격경쟁으로 살아남기 힘들다.&lt;/li>
+&lt;/ul>
+&lt;p>위 세미나와 관련된 내용: &lt;a href="http://www.businessinsider.com/the-internet-of-everything-2014-slide-deck-sai-2014-2#-1" target="_blank">BI에서 발표한 자료&lt;/a>&lt;/p></description></item><item><title>10가지 IoT 서비스 API</title><link>https://openmicrolab.com/10%EA%B0%80%EC%A7%80-iot-%EC%84%9C%EB%B9%84%EC%8A%A4-api/</link><pubDate>Thu, 21 Nov 2013 00:59:41 +0000</pubDate><guid>https://openmicrolab.com/10%EA%B0%80%EC%A7%80-iot-%EC%84%9C%EB%B9%84%EC%8A%A4-api/</guid><description>
+&lt;ol>
+&lt;li>&lt;a href="http://www.iobridge.com/" target="_blank">IoBridge&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.evrythng.com/" target="_blank">Evrythng&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://exosite.com/" target="_blank">Exosite&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://xively.com/" target="_blank">Cosm(Xively)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.thingspeak.com/" target="_blank">ThingSpeak&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ifttt.com/dashboard" target="_blank">IFTTT&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.pvsense.com/" target="_blank">pvSense&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nest.com/" target="_blank">Nest learning Thermostat&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://ninjablocks.com/" target="_blank">Ninja Blocks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.fitbit.com/" target="_blank">Fitbit&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;p>6번 부터는 디바이스 의존적이니 1~5번까지가 일반적인 임베디드 응용에서 사용이 가능할 듯…&lt;/p>
+&lt;p>출처: &lt;a href="http://mulesoft.com/infographics/internet-things" target="_blank">&lt;a href="http://mulesoft.com/infographics/internet-things">http://mulesoft.com/infographics/internet-things&lt;/a>&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/11/infographic-api_internet_of_things.jpg">&lt;img loading="lazy" class="alignnone size-full wp-image-2718" alt="infographic-api_internet_of_things" src="https://openmicrolab.com/images/2013/11/infographic-api_internet_of_things.jpg" width="1000" height="3249" srcset="https://openmicrolab.com/images/2013/11/infographic-api_internet_of_things.jpg 1000w, https://openmicrolab.com/images/2013/11/infographic-api_internet_of_things-92x300.jpg 92w, https://openmicrolab.com/images/2013/11/infographic-api_internet_of_things-315x1024.jpg 315w" sizes="(max-width: 1000px) 100vw, 1000px" />&lt;/a>&lt;/p></description></item><item><title>ARM Techcon 2013, ARM Technology Symposia 2013</title><link>https://openmicrolab.com/arm-techcon-2013-arm-technology-symposia-2013/</link><pubDate>Thu, 21 Nov 2013 00:44:45 +0000</pubDate><guid>https://openmicrolab.com/arm-techcon-2013-arm-technology-symposia-2013/</guid><description>
+&lt;p>지난 10월 29일부터 3일간 미국 캘리포니아 산타클라라 컨벤션 센터에서 열린 “&lt;a href="http://www.armtechcon.com">ARM Techcon 2013&lt;/a>” 행사에 참석해서 관련 글을 블로터넷에 기고를 했다. 보낸 원고에서 몇가지 영어 표현들이 한글로 바뀌고 제목들이 추가로 달렸는데, 에디터의 손을 거치니 좀 나아지는 것 같다. 한국에서는 IoT(Internet of Things)가 사물인터넷으로 번역되는 것이 좀 이상하지만…&lt;/p>
+&lt;p>&lt;span style="text-decoration: underline;">&lt;strong>기고문: &lt;a title="‘사물인터넷’ 눈독 들이는 ARM" href="http://www.bloter.net/archives/169566" target="_blank"> “사물인터넷” 눈독 들이는 ARM&lt;/a>&lt;/strong>&lt;/span>&lt;/p>
+&lt;p>최근  ARM CEO인 Simon Segars의 키노트가 유투브에 올라와 있다.&lt;/p>
+&lt;p>당시 3일 일정의 모든 세션을 들을 수 있는 티켓을 구매(약 1500불)해서 들었는데, ARM에서는 한국에서도  비슷한 행사를 개최했다.&lt;/p></description></item><item><title>WizFi210과 IoT서비스 연동</title><link>https://openmicrolab.com/wizfi210%EA%B3%BC-iot%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%B0%EB%8F%99/</link><pubDate>Tue, 19 Feb 2013 00:28:46 +0000</pubDate><guid>https://openmicrolab.com/wizfi210%EA%B3%BC-iot%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%B0%EB%8F%99/</guid><description>
+&lt;p>&lt;a class="tx-link" href="https://cosm.com" target="_blank">Cosm&lt;/a>은 &lt;span style="font-size: 9pt; line-height: 1.5;">&lt;a class="tx-link" href="http://liketheocean.tistory.com/183" target="_blank">IoT 서비스&lt;/a>로 예전에 Pachube라는 이름으로 서비스를 하다가 LogMeIn에 인수가 되면서 Cosm으로 이름이 바뀌었다.먼저 Cosm의 서비스를 사용하기 위해서는 회원 가입을 하고, Device/Feed를 추가해야한다.&lt;/span>&lt;/p>
+&lt;div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;b>&lt;span style="font-size: 10pt;">Cosm 설정&lt;/span>&lt;/b>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 9pt; line-height: 1.5;">&lt;b>1. 회원 가입&lt;/b>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 9pt; line-height: 1.5;">회원&lt;/span>&lt;span style="font-size: 9pt; line-height: 1.5;"> &lt;/span>&lt;span style="font-size: 9pt; line-height: 1.5;">가입을 하면 &lt;/span>&lt;span style="font-size: 9pt; line-height: 1.5;">API키를 발급을 하는데, 이 정보는 기억을 해둬야하고, 나중에 Keys에서 다시 확인을 할 수 있다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;p>
+&lt;a href="https://openmicrolab.com/images/2013/02/cosm_00.png">&lt;img loading="lazy" class="size-full wp-image-2348 aligncenter" alt="cosm_00" src="https://openmicrolab.com/images/2013/02/cosm_00.png" width="253" height="115" />&lt;/a>
+&lt;/p>
+&lt;/div>
+&lt;div>
+&lt;b>2. Device/Feed 추가&lt;/b>
+&lt;/div>
+&lt;div>
+Something Else를 선택한다.
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;a href="https://openmicrolab.com/images/2013/03/cosm_01.png">&lt;img loading="lazy" class="alignnone size-full wp-image-2358" alt="cosm_01" src="https://openmicrolab.com/images/2013/03/cosm_01.png" width="683" height="345" srcset="https://openmicrolab.com/images/2013/03/cosm_01.png 683w, https://openmicrolab.com/images/2013/03/cosm_01-300x151.png 300w" sizes="(max-width: 683px) 100vw, 683px" />&lt;/a>
+&lt;/div>
+&lt;div>
+Step1에서 디폴트로 선택이 되어 있는 &amp;#8220;No, I will push data to Cosm&amp;#8221;를 선택을 한다.
+&lt;/div>
+&lt;div>
+&lt;p style="text-align: center; clear: none; float: none;">
+&lt;a href="https://openmicrolab.com/images/2013/03/cosm_02.png">&lt;img loading="lazy" class=" wp-image-2357 aligncenter" alt="cosm_02" src="https://openmicrolab.com/images/2013/03/cosm_02.png" width="678" height="465" srcset="https://openmicrolab.com/images/2013/03/cosm_02.png 678w, https://openmicrolab.com/images/2013/03/cosm_02-300x205.png 300w" sizes="(max-width: 678px) 100vw, 678px" />&lt;/a>
+&lt;/p></description></item><item><title>Internet of Things를 위한 서비스 플랫폼</title><link>https://openmicrolab.com/internet-of-things%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%94%8C%EB%9E%AB%ED%8F%BC/</link><pubDate>Tue, 13 Mar 2012 06:03:40 +0000</pubDate><guid>https://openmicrolab.com/internet-of-things%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%94%8C%EB%9E%AB%ED%8F%BC/</guid><description>
+&lt;p>이전 포스트에서 &lt;A title="[http://liketheocean.tistory.com/183]로 이동합니다." href="http://liketheocean.tistory.com/183" target=_blank>Internet of Things를 위한 서비스&lt;/A> 에 대해 몇가지를 정리를 했었다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;A title="[http://postscapes.com/internet-of-things-platforms]로 이동합니다." href="http://postscapes.com/internet-of-things-platforms" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.1220EE3C4F5EE30B1F6F2D.PNG" class="aligncenter" width="580" height="410" alt="" filename="iot platform.PNG" filemime="image/jpeg" />&lt;/A>
+&lt;/P>
+&lt;p>어느 것이 유용한지 자세히 알아봐야겠지만….&lt;br>
+이 외의 서비스들에 대해 잘 정리된 사이트 : &lt;a href="http://postscapes.com/internet-of-things-platforms">http://postscapes.com/internet-of-things-platforms&lt;/a>&lt;/p></description></item><item><title>TI의 SimpleLink Wi-Fi CC3000</title><link>https://openmicrolab.com/ti%EC%9D%98-simplelink-wi-fi-cc3000/</link><pubDate>Wed, 25 Jan 2012 05:25:53 +0000</pubDate><guid>https://openmicrolab.com/ti%EC%9D%98-simplelink-wi-fi-cc3000/</guid><description>
+&lt;p>TI가 기존의 &lt;A title="[http://liketheocean.tistory.com/109]로 이동합니다." href="http://liketheocean.tistory.com/109" target=_blank>오픈 소스 무선랜 솔루션&lt;/A>이 외에 새로이 SimpleLink 라는 Wi-Fi 솔루션을 릴리즈 했다. &lt;A title="[http://cdn.eetimes.com/electronics-news/4234866/TI-s-SimpleLink-connects-everyday-objects-with-Wi-Fi-]로 이동합니다." href="http://cdn.eetimes.com/electronics-news/4234866/TI-s-SimpleLink-connects-everyday-objects-with-Wi-Fi-" target=_blank>EETimes 기사&lt;/A>&lt;br>
+이 기사에 따르면 잔디깍기, 그릇 세척기, 알람시스템, 홈시큐리티, 혈압 모니터 등의 가전, 홈네트워크 및 헬스케어 디바이스에 쉽게 Wi-Fi를 추가할 수 있다고 한다. 심지어 우산에 장착해서 기상시스템에 연결해서 비가 올것으로 예상이 되면 LED를 켜는 내용의 소개도 있다.&lt;/p>
+&lt;p>마케팅 매니저인 Kurtz에 의하면&lt;/p>
+&lt;DIV style="BORDER-BOTTOM: #dbe8fb 1px solid; BORDER-LEFT: #dbe8fb 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #dbe8fb; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #dbe8fb 1px solid; BORDER-RIGHT: #dbe8fb 1px solid; PADDING-TOP: 10px" class=txc-textbox>“We realized that it was unreasonable to expect them to start running Linux and change to a high performance applications processor, so knowing the potential of the Internet of Things market, we rolled up our sleeves and rearchitected our existing Wi-Fi solution to make it suitable for any product – regardless of the architecture,” he said, adding that SimpleLink offered customers a “blueprint to connect even the simplest devices to the Internet.”&lt;/DIV>
+&lt;p>기존의 임베디스 Wi-Fi 솔루션을 가지고 있던 업체들과 동일한 얘기이다. 즉 &lt;A title="[http://www.gainspan.com/]로 이동합니다." href="http://www.gainspan.com/" target=_blank>Gainspan&lt;/A>이나 &lt;A title="[http://www.redpinesignals.com/]로 이동합니다." href="http://www.redpinesignals.com/" target=_blank>Redpine Signals&lt;/A>의 솔루션과 바로 경쟁이 될듯하다.&lt;br>
+아래 동영상을 보면 상당히 쉬운 솔루션으로 소개를 하고 있으며, &lt;A title="[http://liketheocean.tistory.com/183]로 이동합니다." href="http://liketheocean.tistory.com/183" target=_blank>IoT(Internet of Things)&lt;/A>의 시대가 바로 얼마남지 않은듯 하다.&lt;/p></description></item><item><title>Internet of Things를 위한 서비스</title><link>https://openmicrolab.com/internet-of-things%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4/</link><pubDate>Mon, 12 Dec 2011 10:12:32 +0000</pubDate><guid>https://openmicrolab.com/internet-of-things%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4/</guid><description>
+&lt;p>기존에 소개한 Pachube말고 IoT를 위한 서비스가 있어서 소개한다.&lt;/p>
+&lt;ul>
+&lt;li>Pachube 관련 이전 포스트(&lt;A title="[http://liketheocean.tistory.com/61]로 이동합니다." href="http://liketheocean.tistory.com/61" target=_blank>센서 데이터를 위한 데이터베이스&lt;/A>, &lt;A title="[http://liketheocean.tistory.com/145]로 이동합니다." href="http://liketheocean.tistory.com/145" target=_blank>Pachube 인수되다&lt;/A>)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>ThingSpeak :&lt;/strong> &lt;a href="https://www.thingspeak.com/">https://www.thingspeak.com/&lt;/a> 아래 iobridge와 관련이 있다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;A title="[https://www.thingspeak.com/]로 이동합니다." href="https://www.thingspeak.com/" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.1644A93C4EE5D2B820234C.PNG" class="aligncenter" width="477" height="151" alt="" filename="thingspeak.PNG" filemime="image/jpeg" />&lt;/A>
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;STRONG>ioBridge&lt;/STRONG> : &lt;A href="http://www.iobridge.com/index.html">http://www.iobridge.com/index.html&lt;/A>&lt;A title="[http://www.iobridge.com/index.html]로 이동합니다." href="http://www.iobridge.com/index.html" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.1844A93C4EE5D2B921EBA0.PNG" class="aligncenter" width="420" height="261" alt="" filename="iobridge.PNG" filemime="image/jpeg" />&lt;/A>&lt;STRONG>Nimbits&lt;/STRONG>:&amp;nbsp;무료서비스 &lt;A href="http://www.nimbits.com/index.html">http://www.nimbits.com/index.html&lt;/A>&lt;br /> &lt;A title="[ http://www.nimbits.com/index.html]로 이동합니다." href="http://www.nimbits.com/index.html" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.1844A93C4EE5D2BB229CAF.PNG" class="aligncenter" width="541" height="110" alt="" filename="nimbit.PNG" filemime="image/jpeg" />&lt;/A>
+&lt;/p></description></item></channel></rss>

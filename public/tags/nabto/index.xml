@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nabto on OpenMicroLab</title><link>https://openmicrolab.com/tags/nabto/</link><description>Recent content in Nabto on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 20 Dec 2018 09:07:17 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/nabto/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP32에 Nabto 사용하기</title><link>https://openmicrolab.com/esp32%EC%97%90-nabto-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Thu, 20 Dec 2018 09:07:17 +0000</pubDate><guid>https://openmicrolab.com/esp32%EC%97%90-nabto-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;a href="http://openmicrolab.com/nabto-%EC%82%AC%EC%9A%A9%EB%B2%95/">이전 포스트&lt;/a>에서 Nabto 사용법을 다뤘는데, 이번 포스팅에서는 ESP32에 Nabto를 포팅하여 테스트를 하려고 한다.&lt;/p>
+&lt;p>이미 Nabto의 &lt;a href="https://github.com/nabto/unabto-esp32">github&lt;/a>에 ESP32에 포팅된 코드가 있고 &lt;a href="https://www.nabto.com/secure-p2p-remote-control-of-esp32-wifi-freertos-based-module-with-appmyproduct/">관련 블로그&lt;/a>가 있다. 이 블로그의 내용을 참고해서 다음과 같이 진행을 한다.&lt;/p>
+&lt;ul>
+&lt;li>먼저 깃헙에서 코드를 클론한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote class="wp-block-quote">
+&lt;p>
+$ git clone &amp;#8211;recursive &lt;a href="https://github.com/nabto/unabto-esp32.git">https://github.com/nabto/unabto-esp32.git&lt;/a>
+&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>unabto-esp32로 이동을 해서 menuconfig를 하여 보드의 시리얼 설정을 한다.&lt;img loading="lazy" width="981" height="1024" class="wp-image-4498" src="https://openmicrolab.com/images/2018/12/Menuconfig_uart-981x1024.png" alt="" data-id="4498" data-link="http://openmicrolab.com/?attachment_id=4498" srcset="https://openmicrolab.com/images/2018/12/Menuconfig_uart-981x1024.png 981w, https://openmicrolab.com/images/2018/12/Menuconfig_uart-287x300.png 287w, https://openmicrolab.com/images/2018/12/Menuconfig_uart-768x802.png 768w, https://openmicrolab.com/images/2018/12/Menuconfig_uart.png 1684w" sizes="(max-width: 981px) 100vw, 981px" />&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>보드가 접속할 AP의 wifi 정보와, Nabto ID, Nabto Key값을 설정한다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>여기서 사용할 Nabto ID 및 Key는 &lt;a href="https://portal.appmyproduct.com/index.html" target="_blank" rel="noreferrer noopener" aria-label="https://portal.appmyproduct.com/index.html (opens in a new tab)">&lt;a href="https://portal.appmyproduct.com/index.html">https://portal.appmyproduct.com/index.html&lt;/a>&lt;/a> 에서 회원가입을 한 이후에 디바이스를 추가하면 다음과 같이 ID, Key를 얻을 수 있다.&lt;img loading="lazy" width="1024" height="152" class="wp-image-4501" src="https://openmicrolab.com/images/2018/12/Nabto_id_key-1-1024x152.png" alt="" data-id="4501" data-link="http://openmicrolab.com/?attachment_id=4501" srcset="https://openmicrolab.com/images/2018/12/Nabto_id_key-1-1024x152.png 1024w, https://openmicrolab.com/images/2018/12/Nabto_id_key-1-300x44.png 300w, https://openmicrolab.com/images/2018/12/Nabto_id_key-1-768x114.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />&lt;/p></description></item><item><title>Nabto 사용법</title><link>https://openmicrolab.com/nabto-%EC%82%AC%EC%9A%A9%EB%B2%95/</link><pubDate>Tue, 23 Aug 2016 09:58:32 +0000</pubDate><guid>https://openmicrolab.com/nabto-%EC%82%AC%EC%9A%A9%EB%B2%95/</guid><description>
+&lt;p>Nabto provides a full communication infrastructure to allow real-time direct, encrypted communication between end-user clients (tablets, smartphones, PC) and resource limited devices (&amp;lt; 1kb RAM and up) – the Nabto communication platform. The platform provides direct real-time connectivity with no firewall or dynamic IP hassle – just as you know from e.g. Skype™.&lt;/p>
+&lt;img loading="lazy" class="wp-image-3732 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1471945788/nabto-details_ekpvbb.png" width="800" height="280" />
+&lt;p>&lt;strong>Nabto 사용법&lt;/strong>&lt;/p>
+&lt;p>Nabto 디바이스 포털 &lt;a href="https://developer.nabto.com/" target="_blank">&lt;a href="https://developer.nabto.com/">https://developer.nabto.com/&lt;/a>&lt;/a>) 에서 ID를 등록하고 Add Device에 디바이스 이름을 입력후 디바이스를 추가한다. 이 디바이스 ID는 &lt;strong>xxxx.demo.nab.to&lt;/strong> 이런 형태가 된다.&lt;/p></description></item></channel></rss>

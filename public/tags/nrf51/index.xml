@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NRF51 on OpenMicroLab</title><link>https://openmicrolab.com/tags/nrf51/</link><description>Recent content in NRF51 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 15 Feb 2017 03:21:29 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/nrf51/index.xml" rel="self" type="application/rss+xml"/><item><title>Jlink를 사용한 nRF51 flashing</title><link>https://openmicrolab.com/jlink%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-nrf51-flashing/</link><pubDate>Wed, 15 Feb 2017 03:21:29 +0000</pubDate><guid>https://openmicrolab.com/jlink%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-nrf51-flashing/</guid><description>
+&lt;p>지난번 &lt;a href="http://openmicrolab.com/mac-os-x%EC%97%90-nrf51-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" target="_blank">nRF51개발 환경 포스팅&lt;/a>에 빠진 부분인 flashing 부분&lt;/p>
+&lt;p>&lt;strong>nrfjprog – Programming Tool&lt;/strong>&lt;/p>
+&lt;p>nrfjprog는 nRF5x-Command-Line-Tools의 번들 프로그램으로 SWD를 이용해 펌웨어 이미지를 로딩한다.&lt;/p>
+&lt;p>&lt;strong>nrfjprog:&lt;/strong>&lt;/p>
+&lt;pre class="prettyprint prettyprinted">&lt;code>&amp;lt;span class="com">/* Optional: erase target if not already blank */&amp;lt;/span>
+&amp;lt;span class="pln">nrfjprog &amp;lt;/span>&amp;lt;span class="pun">--&amp;lt;/span>&amp;lt;span class="pln">family &amp;lt;/span>&amp;lt;span class="pun">&amp;lt;&amp;lt;/span>&amp;lt;span class="pln">nRF51&amp;lt;/span>&amp;lt;span class="pun">/&amp;lt;/span>&amp;lt;span class="lit">52&amp;lt;/span>&amp;lt;span class="pun">&amp;gt;&amp;lt;/span> &amp;lt;span class="pun">-&amp;lt;/span>&amp;lt;span class="pln">e
+&amp;lt;/span>&amp;lt;span class="com">/* Load FW image to target */&amp;lt;/span>
+&amp;lt;span class="pln">nrfjprog &amp;lt;/span>&amp;lt;span class="pun">--&amp;lt;/span>&amp;lt;span class="pln">family &amp;lt;/span>&amp;lt;span class="pun">&amp;lt;&amp;lt;/span>&amp;lt;span class="pln">nRF51&amp;lt;/span>&amp;lt;span class="pun">/&amp;lt;/span>&amp;lt;span class="lit">52&amp;lt;/span>&amp;lt;span class="pun">&amp;gt;&amp;lt;/span> &amp;lt;span class="pun">--&amp;lt;/span>&amp;lt;span class="pln">program _build&amp;lt;/span>&amp;lt;span class="pun">/&amp;lt;&amp;lt;/span>&amp;lt;span class="pln">name&amp;lt;/span>&amp;lt;span class="pun">&amp;gt;.&amp;lt;/span>&amp;lt;span class="pln">hex
+&amp;lt;/span>&amp;lt;span class="com">/* Reset and run */&amp;lt;/span>
+&amp;lt;span class="pln">nrfjprog &amp;lt;/span>&amp;lt;span class="pun">--&amp;lt;/span>&amp;lt;span class="pln">family &amp;lt;/span>&amp;lt;span class="pun">&amp;lt;&amp;lt;/span>&amp;lt;span class="pln">nRF51&amp;lt;/span>&amp;lt;span class="pun">/&amp;lt;/span>&amp;lt;span class="lit">52&amp;lt;/span>&amp;lt;span class="pun">&amp;gt;&amp;lt;/span> &amp;lt;span class="pun">-&amp;lt;/span>&amp;lt;span class="pln">r&amp;lt;/span>&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>JlinkExe:&lt;/strong>&lt;/p>
+&lt;pre class="prettyprint prettyprinted">&lt;code>&amp;lt;span class="com">/* Open Jlink Commander from terminal in _build directory */&amp;lt;/span>
+&amp;lt;span class="typ">JLinkExe&amp;lt;/span> &amp;lt;span class="pun">-&amp;lt;/span>&amp;lt;span class="pln">device &amp;lt;/span>&amp;lt;span class="pun">&amp;lt;&amp;lt;/span>&amp;lt;span class="pln">nRF51&amp;lt;/span>&amp;lt;span class="pun">/&amp;lt;/span>&amp;lt;span class="pln">nRF52&amp;lt;/span>&amp;lt;span class="pun">&amp;gt;&amp;lt;/span>
+&amp;lt;span class="pun">&amp;gt;&amp;lt;/span>&amp;lt;span class="pln"> erase &amp;lt;/span>&amp;lt;span class="com">// Optional: erase target if not already blank&amp;lt;/span>
+&amp;lt;span class="pun">&amp;gt;&amp;lt;/span>&amp;lt;span class="pln"> loadfile &amp;lt;/span>&amp;lt;span class="str">&amp;lt;name&amp;gt;&amp;lt;/span>&amp;lt;span class="pun">.&amp;lt;/span>&amp;lt;span class="pln">hex &amp;lt;/span>&amp;lt;span class="com">// loads FW&amp;lt;/span>
+&amp;lt;span class="pun">&amp;gt;&amp;lt;/span>&amp;lt;span class="pln"> r &amp;lt;/span>&amp;lt;span class="com">// Reset and halt&amp;lt;/span>
+&amp;lt;span class="pun">&amp;gt;&amp;lt;/span>&amp;lt;span class="pln"> g &amp;lt;/span>&amp;lt;span class="com">// Run&amp;lt;/span>
+&amp;lt;span class="pun">&amp;gt;&amp;lt;/span>&amp;lt;span class="pln"> q &amp;lt;/span>&amp;lt;span class="com">// Exit&amp;lt;/span>&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p class="p1">
+&lt;span class="s1">JlinkExe -device nrf51822_xxaa -if swd -speed 4000&lt;/span>
+&lt;/p></description></item></channel></rss>

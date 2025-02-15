@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PCB on OpenMicroLab</title><link>https://openmicrolab.com/categories/pcb/</link><description>Recent content in PCB on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 29 May 2018 04:33:33 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/pcb/index.xml" rel="self" type="application/rss+xml"/><item><title>EagleCAD 이전 버전 다운로드</title><link>https://openmicrolab.com/eaglecad-%EC%9D%B4%EC%A0%84-%EB%B2%84%EC%A0%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</link><pubDate>Tue, 29 May 2018 04:33:33 +0000</pubDate><guid>https://openmicrolab.com/eaglecad-%EC%9D%B4%EC%A0%84-%EB%B2%84%EC%A0%84-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</guid><description>
+&lt;p>한번에 찾기 힘들어서…&lt;/p>
+&lt;p>&lt;a href="http://eagle.autodesk.com/eagle/software-versions" target="_blank" rel="noopener noreferrer">&lt;a href="http://eagle.autodesk.com/eagle/software-versions">http://eagle.autodesk.com/eagle/software-versions&lt;/a>&lt;/a>&lt;/p></description></item><item><title>EagleCAD differential signal 설계</title><link>https://openmicrolab.com/eaglecad-differential-signal-%EC%84%A4%EA%B3%84/</link><pubDate>Sat, 10 Mar 2018 14:50:13 +0000</pubDate><guid>https://openmicrolab.com/eaglecad-differential-signal-%EC%84%A4%EA%B3%84/</guid><description>
+&lt;h4 id="usb와-같이-differntial-signal을-설계시-참고할-수-있는-내용">USB와 같이 differntial signal을 설계시 참고할 수 있는 내용.&lt;/h4>
+&lt;p>The first step is to create and set net classes. In EAGLE go to Edit-&amp;gt;Net classes. There you can create different values for trace width and clearance. Differential pairs should have quite a big clearance to copper pours (2-3 times the track width). Therefore I entered two net classes, one for USB (#1) and one for the top copper pour (#2) as my USB signal is routed on the top layer. As you can see I entered the values from the impedance calculator in net class #1. 10mil for track width. In Clearance Matrix you tell EAGLE how much clearance the different net classes will be used by the Auto Router or differential pair routing. These settings tell EAGLE that USB traces should be separated by 6.25mil and that USB traces should have a clearance of 30 mil to the traces (copper pours) set to net class #2.&lt;/p></description></item><item><title>Eagle CAD 실크 폰트를 한꺼번에 변경하기</title><link>https://openmicrolab.com/eagle-cad-%EC%8B%A4%ED%81%AC-%ED%8F%B0%ED%8A%B8%EB%A5%BC-%ED%95%9C%EA%BA%BC%EB%B2%88%EC%97%90-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 26 Jan 2018 02:50:14 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad-%EC%8B%A4%ED%81%AC-%ED%8F%B0%ED%8A%B8%EB%A5%BC-%ED%95%9C%EA%BA%BC%EB%B2%88%EC%97%90-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>PCB실크를 하나 하나 수정하기는 귀찮은 작업이다. 따라서 다음과 같이 커맨드로 한번에 수정이 가능하다.&lt;/p>
+&lt;ol>
+&lt;li>Smash all parts.&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>display none tOrigin bOrigin;&lt;br>
+group all;&lt;br>
+smash (&amp;gt;0 0);&lt;br>
+display last;&lt;/p>&lt;/blockquote>
+&lt;ol start="2">
+&lt;li>폰트 변경하기 – 사이즈는 1.27mm, 벡터 폰트, ratio 10%&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>display none tNames bNames;&lt;br>
+group all;&lt;br>
+change size 1.27 (&amp;gt;0 0);&lt;br>
+change font vector (&amp;gt;0 0);&lt;br>
+change ratio 10 (&amp;gt;0 0);&lt;br>
+display last;&lt;/p>&lt;/blockquote>
+&lt;p>여기서 “(&amp;gt;0 0)” 는 origin에서 Control-LeftClick 수행한다.&lt;/p></description></item><item><title>양산을 위한 PCB 디자인</title><link>https://openmicrolab.com/%EC%96%91%EC%82%B0%EC%9D%84-%EC%9C%84%ED%95%9C-pcb-%EB%94%94%EC%9E%90%EC%9D%B8/</link><pubDate>Thu, 11 Jan 2018 14:09:51 +0000</pubDate><guid>https://openmicrolab.com/%EC%96%91%EC%82%B0%EC%9D%84-%EC%9C%84%ED%95%9C-pcb-%EB%94%94%EC%9E%90%EC%9D%B8/</guid><description>
+&lt;p>&lt;a href="http://statics3.seeedstudio.com/fusion/ebook/PCB%20DFM%20V1.1.pdf?utm_source=twitter&amp;utm_medium=dfmmobie" target="_blank" rel="noopener noreferrer">PCB Design for Manufacturing&lt;/a>. – Seeedstudio에서 제공한 문서. PCB업체마다 스펙이 조금씩 다르지만 일반적인 룰은 비슷하므로 참고할 만 하다.&lt;/p>
+&lt;p>[wpdm_package id=’4186′]&lt;/p></description></item><item><title>Eagle CAD 4층 기판 설정</title><link>https://openmicrolab.com/eagle-cad-4%EC%B8%B5-%EA%B8%B0%ED%8C%90-%EC%84%A4%EC%A0%95/</link><pubDate>Wed, 20 Dec 2017 05:39:29 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad-4%EC%B8%B5-%EA%B8%B0%ED%8C%90-%EC%84%A4%EC%A0%95/</guid><description>
+&lt;p>Eagle CAD는 기본이 2층이라서 4층이상의 PCB설계시 설정변경이 필요하다. 아래그림과 같이 DRC메뉴의 Layers에서 Setup항목의 설정을 (1*16)에서 [2:(1*(2*3)*16):3]으로 변경을 한다.  그러면 레이어가 추가가 된다.&lt;/p>
+&lt;img loading="lazy" class="wp-image-4177 aligncenter" src="https://res.cloudinary.com/openmicrolab/image/upload/v1513748170/eagle_4Layer_vwdhqm.png" width="663" height="535" />
+&lt;p>&lt;strong>참고&lt;/strong>: &lt;a href="http://brc-electronics.nl/Generalfiles/Report2.pdf" target="_blank" rel="noopener noreferrer">&lt;a href="http://brc-electronics.nl/Generalfiles/Report2.pdf">http://brc-electronics.nl/Generalfiles/Report2.pdf&lt;/a>&lt;/a>&lt;/p></description></item><item><title>키보드 설계 – 고스트 현상</title><link>https://openmicrolab.com/%ED%82%A4%EB%B3%B4%EB%93%9C-%EC%84%A4%EA%B3%84-%EA%B3%A0%EC%8A%A4%ED%8A%B8-%ED%98%84%EC%83%81/</link><pubDate>Mon, 04 Dec 2017 07:04:01 +0000</pubDate><guid>https://openmicrolab.com/%ED%82%A4%EB%B3%B4%EB%93%9C-%EC%84%A4%EA%B3%84-%EA%B3%A0%EC%8A%A4%ED%8A%B8-%ED%98%84%EC%83%81/</guid><description>
+&lt;p>키보드의 각 키는 스위치이고 이것의 입력을 받아서 처리하는 MCU는 I/O에 이 스위치가 연결된다. 하지만 모든 키에 I/O를 할당하기 위해서는 키보드의 갯수 만큼 I/O필요하므로 효율적이지 않다. 따라서 키보드 메트릭스 라는 것을 사용한다. 간단히 설명하면 MCU의 I/O에 여러개의 키를 연결하고 주기적으로 키를 스캔하는 방식이다.&lt;/p>
+&lt;h3 id="키보드-매트릭스">키보드 매트릭스&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-4150" src="https://res.cloudinary.com/openmicrolab/image/upload/v1512369838/FlexMatrixEditor_hklml2.jpg" width="750" height="488" />
+&lt;p>위 그림에서 Row R0&lt;del>R7은 MCU의 입력으로 주기적으로 스캔이되고, Column C0&lt;/del>C19까지는 MCU의 출력으로 5V에 연결이 되어 있다.&lt;/p>
+&lt;h3 id="키보드-고스트-현상">키보드 고스트 현상&lt;/h3>
+&lt;p>키보드 고스트 현상은 여러개의 키가 눌려질때 어떤키가 인식이 안되거나 다른 키가 눌린것으로 인식이 되는 것이다. 아래 &lt;a href="https://www.microsoft.com/appliedsciences/content/projects/KeyboardGhostingDemo.aspx">마이크로소프트 사이트&lt;/a>에서 확인이 가능하다.&lt;/p></description></item><item><title>PCB 레이아웃</title><link>https://openmicrolab.com/pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</link><pubDate>Mon, 04 Dec 2017 01:21:23 +0000</pubDate><guid>https://openmicrolab.com/pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</guid><description>
+&lt;p>&lt;a href="https://www.allaboutcircuits.com/technical-articles/pcb-layout-for-an-arbitrary-waveform-generator/" target="_blank" rel="noopener noreferrer">PCB 레이아웃&lt;/a> 관련기사. 실제 보드와 PCB레이아웃을 확인하면 좋을 듯.&lt;/p>
+&lt;img loading="lazy" class="alignnone " src="https://www.allaboutcircuits.com/uploads/articles/techarticle_awg1_PCB_2.JPG" width="536" height="282" />
+&lt;div style="width: 313px" class="wp-caption alignnone">
+&lt;img loading="lazy" src="https://www.allaboutcircuits.com/uploads/articles/techarticle_awg4_powersupply.jpg" alt="" width="303" height="270" />
+&lt;p class="wp-caption-text">
+레귤레이터
+&lt;/p>
+&lt;/div>
+&lt;div style="width: 513px" class="wp-caption alignnone">
+&lt;img loading="lazy" src="https://www.allaboutcircuits.com/uploads/articles/techarticle_awg4_MCUDAC.jpg" alt="" width="503" height="257" />
+&lt;p class="wp-caption-text">
+패러렐 버스
+&lt;/p>
+&lt;/div></description></item><item><title>인덕티브 센서칩을 사용한 Tamper Detection</title><link>https://openmicrolab.com/%EC%9D%B8%EB%8D%95%ED%8B%B0%EB%B8%8C-%EC%84%BC%EC%84%9C%EC%B9%A9%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-tamper-detection/</link><pubDate>Sat, 02 Dec 2017 03:50:04 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B8%EB%8D%95%ED%8B%B0%EB%B8%8C-%EC%84%BC%EC%84%9C%EC%B9%A9%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-tamper-detection/</guid><description>
+&lt;p>인덕티브 센서 칩인 TI사의 &lt;a href="http://www.ti.com/lit/ds/symlink/ldc0851.pdf" target="_blank" rel="noopener noreferrer">LDC0851&lt;/a> 을 사용한 Tamper detection 응용. 도어가 열리면 인덕턴스 값이 바뀌어 검출이 된다.&lt;/p>
+&lt;img loading="lazy" class="alignnone " src="https://www.allaboutcircuits.com/uploads/articles/TamperDetection_v3_cabinet.jpg" width="588" height="379" />
+&lt;p>참고: &lt;a href="https://www.allaboutcircuits.com/projects/tamper-detection-with-inductive-sensing/" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.allaboutcircuits.com/projects/tamper-detection-with-inductive-sensing/">https://www.allaboutcircuits.com/projects/tamper-detection-with-inductive-sensing/&lt;/a>&lt;/a>&lt;/p></description></item><item><title>PCB 아트웍 단가 – 참고용</title><link>https://openmicrolab.com/pcb-%EC%95%84%ED%8A%B8%EC%9B%8D-%EB%8B%A8%EA%B0%80-%EC%B0%B8%EA%B3%A0%EC%9A%A9/</link><pubDate>Sat, 07 Oct 2017 05:26:59 +0000</pubDate><guid>https://openmicrolab.com/pcb-%EC%95%84%ED%8A%B8%EC%9B%8D-%EB%8B%A8%EA%B0%80-%EC%B0%B8%EA%B3%A0%EC%9A%A9/</guid><description>
+&lt;img loading="lazy" class="alignnone " src="http://www.kpcb.or.kr/data/file/notice/3732213259_SvK01Bsf_2016B3E2-pcbBCB3B0E8B4DCB0A1C7A5C1D8BEC8-2.jpg" width="454" height="636" />
+&lt;p>출처 – &lt;a href="http://www.kpcb.or.kr/bbs/board.php?bo_table=notice&amp;wr_id=1224" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.kpcb.or.kr/bbs/board.php?bo_table=notice&amp;amp;wr_id=1224">http://www.kpcb.or.kr/bbs/board.php?bo_table=notice&amp;amp;wr_id=1224&lt;/a>&lt;/a>&lt;/p>
+&lt;p> &lt;/p></description></item><item><title>LM1117 레귤레이터 PCB 레이아웃</title><link>https://openmicrolab.com/lm1117-%EB%A0%88%EA%B7%A4%EB%A0%88%EC%9D%B4%ED%84%B0-pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</link><pubDate>Mon, 21 Aug 2017 11:48:06 +0000</pubDate><guid>https://openmicrolab.com/lm1117-%EB%A0%88%EA%B7%A4%EB%A0%88%EC%9D%B4%ED%84%B0-pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-4035" src="https://res.cloudinary.com/openmicrolab/image/upload/v1503315948/lm1117_sch_awqhp6.png" width="316" height="221" />
+&lt;img loading="lazy" class="alignnone wp-image-4036" src="https://res.cloudinary.com/openmicrolab/image/upload/c_scale,h_914/v1503315951/lm1117_layout_wfvn4u.png" width="555" height="334" />
+&lt;p>&lt;strong>참고&lt;/strong>: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117.pdf" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.ti.com/lit/ds/symlink/lm1117.pdf">http://www.ti.com/lit/ds/symlink/lm1117.pdf&lt;/a>&lt;/a>&lt;/p></description></item><item><title>PCB 레이아웃 가이드</title><link>https://openmicrolab.com/pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B0%80%EC%9D%B4%EB%93%9C/</link><pubDate>Wed, 19 Jul 2017 02:21:44 +0000</pubDate><guid>https://openmicrolab.com/pcb-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B0%80%EC%9D%B4%EB%93%9C/</guid><description>
+&lt;p>PCB 레이아웃 설계시 PCB house에서 지원하는 규격내에서 설계를 하는 것이 바람직하다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3997" src="https://res.cloudinary.com/openmicrolab/image/upload/v1500430679/PCB_Spec_kxt81w.png" width="1029" height="674" />
+&lt;p>추가적인 내용은  &lt;a href="https://www.hsdgt.com/order/info.asp" target="_blank" rel="noopener noreferrer">한샘디지텍&lt;/a> 참고.&lt;/p></description></item><item><title>Safety Capacitor – X,Y Capacitor</title><link>https://openmicrolab.com/safety-capacitor-xy-capacitor/</link><pubDate>Sat, 15 Jul 2017 03:43:14 +0000</pubDate><guid>https://openmicrolab.com/safety-capacitor-xy-capacitor/</guid><description>
+&lt;p>Safety Capacitor, 보통 X,Y Capacitor로 부르며, 안전을 위해 AC 전원 라인에 사용되고, X, Y 2가지 타입이 있다. 일반적으로  X2, Y2를 많이 사용한다.&lt;/p>
+&lt;p>When a &lt;strong>Class-X capacitor&lt;/strong>, also referred to as an “across the line capacitor”—the capacitor placed between line and neutral—fails because of an overvoltage event, it is likely to fail short. This failure, in turn, would cause an overcurrent protective device, like a fuse or circuit breaker, to open. Therefore, a capacitor failing in this fashion would not cause any electrical shock hazards.&lt;/p></description></item><item><title>PCB Panelization &amp; Bridge design</title><link>https://openmicrolab.com/pcb-panelization-bridge-design/</link><pubDate>Thu, 11 May 2017 07:33:13 +0000</pubDate><guid>https://openmicrolab.com/pcb-panelization-bridge-design/</guid><description>
+&lt;p>PCB Panelization &amp;amp; Bridge design 관련 잘 정리된 자료.&lt;/p>
+&lt;p>기존에 미싱홀이라고 부르던 것이 해외에서는 stamp hole이라고 부른다.&lt;br>
+&lt;a href="http://www.seeedstudio.com/blog/2017/05/10/panelization-and-bridge-design/" target="_blank" rel="noopener noreferrer">&lt;a href="http://www.seeedstudio.com/blog/2017/05/10/panelization-and-bridge-design/">http://www.seeedstudio.com/blog/2017/05/10/panelization-and-bridge-design/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>그리고 아래 링크는 PCB DFM 관련 가이드&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3944" src="http://res.cloudinary.com/openmicrolab/image/upload/v1494559696/seeed-dfm_ew4kox.jpg" width="411" height="577" />
+&lt;p>&lt;a href="https://statics3.seeedstudio.com/fusion/ebook/PCB+DFM+V1.0+.pdf" target="_blank" rel="noopener noreferrer">&lt;a href="https://statics3.seeedstudio.com/fusion/ebook/PCB+DFM+V1.0+.pdf">https://statics3.seeedstudio.com/fusion/ebook/PCB+DFM+V1.0+.pdf&lt;/a>&lt;/a>&lt;/p></description></item><item><title>USB 하드웨어 디자인 가이드</title><link>https://openmicrolab.com/usb-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%80%EC%9D%B4%EB%93%9C/</link><pubDate>Tue, 21 Feb 2017 03:18:18 +0000</pubDate><guid>https://openmicrolab.com/usb-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%80%EC%9D%B4%EB%93%9C/</guid><description>
+&lt;h3 id="usb-하드웨어-디자인-가이드">USB 하드웨어 디자인 가이드&lt;/h3>
+&lt;ul>
+&lt;li>GND, 샤시에 FB&lt;/li>
+&lt;li>15 Ohm Termination resistor&lt;/li>
+&lt;li>ESD 인증에 문제가 있을 경우 protection device – NXP IP4220CE6&lt;/li>
+&lt;li>Common mode choke – Murata plw3216s900sq2t1
+*&lt;img loading="lazy" class="alignnone wp-image-3909" src="http://res.cloudinary.com/openmicrolab/image/upload/v1487646399/usb_design_guide_1_ldrfss.png" width="700" height="176" />&lt;/li>
+&lt;li>2개의 USB 신호쌍은  parallel 하게하며, 간극은 최대 150 mil을 넘지 않도록&lt;/li>
+&lt;li>신호선의 최대 길이는 18인치를 넘지 않도록
+*&lt;img loading="lazy" class="alignnone wp-image-3910" src="http://res.cloudinary.com/openmicrolab/image/upload/v1487646689/usb_design_guide_2_u8or7u.png" width="541" height="339" />&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="wp-image-3911 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1487646845/usb_design_guide3_uwrxtc.png" width="686" height="426" />
+&lt;h4 id="참고자료">참고자료&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1487645772/emitest_yanugw.pdf" target="_blank">EMI Design Guidelines for USB Components&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1487645777/hs_usb_pdg_r1_0_zjnjtx.pdf" target="_blank">High Speed USB Platform Design Guidelines&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1487645780/AN0046_mcwsw4.pdf" target="_blank">USB Hardware Design Guide&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>보드에 장홀(plated slot) 또는 슬롯만들기</title><link>https://openmicrolab.com/%EB%B3%B4%EB%93%9C%EC%97%90-%EC%9E%A5%ED%99%80plated-slot-%EB%98%90%EB%8A%94-%EC%8A%AC%EB%A1%AF%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Wed, 18 Jan 2017 05:53:46 +0000</pubDate><guid>https://openmicrolab.com/%EB%B3%B4%EB%93%9C%EC%97%90-%EC%9E%A5%ED%99%80plated-slot-%EB%98%90%EB%8A%94-%EC%8A%AC%EB%A1%AF%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>
+&lt;p>&lt;strong>Routing 과 Milling의 차이&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>“Routing” describes the cutting of the board profile, outline or contour.  We use a 2 mm cutter for this.  Any feature which can be cut with the 2 mm cutter is part of the profile.&lt;br>
+“Milling” refers to any slots or cut-outs inside the PCB, but also to any slots in the profile of the PCB which can’t be cut with a 2 mm cutter.&lt;/p>&lt;/blockquote>
+&lt;p>즉 라우팅은 2mm 커터로 보드의 외곽을 자르는 것이고, 밀링은 보드 안쪽에 있는 cut-out 또는 슬롯을 더 작은 툴로 작업을 하는 것이다.&lt;/p></description></item><item><title>Eagle CAD에 네거티브 실크 넣기</title><link>https://openmicrolab.com/eagle-cad%EC%97%90-negative-silk-%EB%84%A3%EA%B8%B0/</link><pubDate>Thu, 14 Jul 2016 08:02:23 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EC%97%90-negative-silk-%EB%84%A3%EA%B8%B0/</guid><description>
+&lt;p>아두이노 보드의 모델명 같은 것은 일반 실크가 아닌 네거티브 실크로 되어 있다. Eagle Cad에서 이 작업을 하려면 negasilk.ulp를 사용하면 되는데 방법은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>실크를 TXT로 적은 후 41 tRestrict 레이어에 만들고 넣을 위치를 잡는다.&lt;/li>
+&lt;li>41레이어를 끄고 나머지 레이어만 켜서 블럭으로 잡아서 다른 위치로 이동한다.&lt;/li>
+&lt;li>41레이어를 켜서 Top에서 폴리곤으로 글자를 둘러싸고 Copper pour를 한다. 다른 위치로 이동한 회로에는 Copper pour가 되지 않도록 폴리곤 작업을 하지 않는 것이 좋다.&lt;/li>
+&lt;li>negasilk.ulp를 실행하면 작업 폴더에 스크립트(확장자 scr)가 생긴다.&lt;/li>
+&lt;li>이 스크립트를 열어서 3번째 라인에 LAYER 21;을 입력한다. 즉 21번째 레이어에 네거티브 실크를 생성할 것이다.&lt;/li>
+&lt;li>네거티브 실크가 생성된 위치의 Top에 깔린 Copper 및 글씨를 지운다.&lt;/li>
+&lt;li>이동한 회로들을 다시 원점으로 이동한후 폴리곤 작업을 하고 Copper pour를 한다.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=lVpzqZfN2A4">https://www.youtube.com/watch?v=lVpzqZfN2A4&lt;/a>&lt;/p></description></item><item><title>Eagle CAD에 로고 넣기</title><link>https://openmicrolab.com/eagle-cad%EC%97%90-%EB%A1%9C%EA%B3%A0-%EB%84%A3%EA%B8%B0/</link><pubDate>Tue, 05 Jul 2016 03:43:47 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EC%97%90-%EB%A1%9C%EA%B3%A0-%EB%84%A3%EA%B8%B0/</guid><description>
+&lt;p>예전에 포스팅한 글 “&lt;a href="http://openmicrolab.com/eagle-cad%EB%A1%9C-%EC%9E%91%EC%97%85%ED%95%9C-pcb%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%84%A3%EA%B8%B0/" target="_blank">Eagle CAD로 작업한 PCB에 이미지 파일 넣기&lt;/a>“에 대한 추가적인 정보.  보드에 넣을 이미지의 사이즈를 DPI로 맞추고 실제 이미지의 DPI의 배수로 맞추면 편하다.&lt;/p>
+&lt;p>아래 그림은 72DPI로 작업한 이미지를 실제 사이즈에 맞추기 위한 설정&lt;/p>
+&lt;img loading="lazy" class="wp-image-3699 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1467690110/Eagle_Image_insert_crvrs1.png" width="341" height="577" /></description></item><item><title>Eagel CAD에서 Pick &amp; Place 파일 만들기</title><link>https://openmicrolab.com/eagel-cad%EC%97%90%EC%84%9C-pick-place-%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Tue, 24 May 2016 07:09:53 +0000</pubDate><guid>https://openmicrolab.com/eagel-cad%EC%97%90%EC%84%9C-pick-place-%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>
+&lt;p>Eagle PCB에서 c&lt;strong>entroid-screamingcircuits-smd.ulp&lt;/strong>를 실행시킨다. 그러면 csv파일이 생긴다. 이파일은 inch단위의 파일이 생성된다. 만약 mm 단위의 파일이 필요하면 Mountsmd.ulp를 사용한다.&lt;/p>
+&lt;p>Allegro PCB에서는 &lt;strong>File &amp;gt; Placement…&lt;/strong> 를 실행한다.&lt;/p>
+&lt;p>참고: &lt;a href="https://www.element14.com/community/community/cadsoft_eagle/blog/2015/01/19/eagle-ulps-every-user-should-know" target="_blank">&lt;a href="https://www.element14.com/community/community/cadsoft_eagle/blog/2015/01/19/eagle-ulps-every-user-should-know">https://www.element14.com/community/community/cadsoft_eagle/blog/2015/01/19/eagle-ulps-every-user-should-know&lt;/a>&lt;/a>&lt;/p></description></item><item><title>[자료] Analog Engineer’s Pocket Reference Guide</title><link>https://openmicrolab.com/%EC%9E%90%EB%A3%8C-analog-engineers-pocket-reference-guide/</link><pubDate>Fri, 01 Apr 2016 02:11:55 +0000</pubDate><guid>https://openmicrolab.com/%EC%9E%90%EB%A3%8C-analog-engineers-pocket-reference-guide/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://www.ti.com/lsds/sites/ti/amplifiers-linear/images/AnalogPocketReference_cover.png" alt="" width="192" height="250" />
+&lt;p>&lt;a href="https://www.ti.com/seclit/sl/slyw038b/slyw038b.pdf" target="_blank">Analog Engineer’s Pocket Reference Guide 4th Edition (Rev. B)&lt;/a>&lt;/p>
+&lt;p>전자과에서 배우던 내용인데, 실제적인 것이 많아서 유용함.&lt;/p>
+&lt;p>이 &lt;a href="http://www.ti.com/lsds/ti/amplifiers-linear/precision-amplifier-support-community.page#pocketref" target="_blank">링크&lt;/a>에 비디오도 있다.&lt;/p></description></item><item><title>Mixed-Signal PCB 디자인</title><link>https://openmicrolab.com/mixed-signal-pcb-%EB%94%94%EC%9E%90%EC%9D%B8/</link><pubDate>Mon, 04 Jan 2016 02:22:53 +0000</pubDate><guid>https://openmicrolab.com/mixed-signal-pcb-%EB%94%94%EC%9E%90%EC%9D%B8/</guid><description>
+&lt;p>아날로그와 디지털이 같이 있는 회로를 PCB 디자인 할때 필요한 사항&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf1.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-3477" src="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf1.png" alt="www_e2v_com_content_uploads_2014_02_0999A_pdf" width="445" height="211" srcset="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf1.png 445w, https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf1-300x142.png 300w" sizes="(max-width: 445px) 100vw, 445px" />&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf.png">&lt;img loading="lazy" class="aligncenter size-full wp-image-3476" src="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf.png" alt="www_e2v_com_content_uploads_2014_02_0999A_pdf" width="507" height="229" srcset="https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf.png 507w, https://openmicrolab.com/images/2016/01/www_e2v_com_content_uploads_2014_02_0999A_pdf-300x136.png 300w" sizes="(max-width: 507px) 100vw, 507px" />&lt;/a>&lt;/p>
+&lt;p>• Do not split the ground plane, use one solid plane under both analog and digital sections of the board&lt;br>
+• Use large area ground planes for low impedance current return paths&lt;br>
+• Keep over 75% board area for the ground plane&lt;br>
+• Separate analog and digital power planes&lt;br>
+• Use solid ground planes next to power planes&lt;br>
+• Locate all analogue components and lines over the analogue power plane and all digital components&lt;br>
+and lines over the digital power plane&lt;br>
+• Do not route traces over the split in the power planes, unless if traces that must go over the power&lt;br>
+plane split must be on layers adjacent to the solid ground plane&lt;br>
+• Think about where and how the ground return currents are actually flowing&lt;br>
+• Partition your PCB with separate analog and digital sections&lt;br>
+• Place components properly&lt;/p></description></item></channel></rss>

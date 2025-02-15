@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WOL on OpenMicroLab</title><link>https://openmicrolab.com/tags/wol/</link><description>Recent content in WOL on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 08 Aug 2012 23:10:50 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/wol/index.xml" rel="self" type="application/rss+xml"/><item><title>Wake on LAN</title><link>https://openmicrolab.com/wake-on-lan/</link><pubDate>Wed, 08 Aug 2012 23:10:50 +0000</pubDate><guid>https://openmicrolab.com/wake-on-lan/</guid><description>
+&lt;p>Wake on LAN은 네트워크 패킷(매직 패킷)으로 컴퓨터를 켜거나, 깨우는 기능을 하는 AMD와 HP에서 만든 표준이다.&lt;/p>
+&lt;p>요즘 PC들은 전원을 꺼도 이더넷 잭에 연결된 LED가 깜박이는 것을 볼 수 있는데, 즉 LAN은 패킷을 받을 수 있는 모드에 있다. &lt;/p>
+&lt;/p>
+&lt;p style="text-align: center; ">
+AMD의 White paper
+&lt;/p>&lt;/p>
+&lt;p style="text-align: center; ">
+&lt;a href="https://openmicrolab.com/images/1/cfile26.uf.1225CD3F5022E8BF13F2F0.pdf" class="aligncenter" filename="20213.pdf" filemime="application/pdf" />cfile26.uf.1225CD3F5022E8BF13F2F0.pdf&lt;/a>
+&lt;/p>
+&lt;p style="text-align: center; ">
+&lt;/p>
+&lt;p>&lt;strong>매직 패킷의 구성&lt;/strong>&lt;/p>
+&lt;p>매직 패킷은 2가 있는데, &lt;strong>ether-wake&lt;/strong>와 &lt;strong>UDP&lt;/strong>상에서 구현하는 패킷이 있다. 대부분의 PC 프로그램이 보내는 패킷은 후자이다.&lt;/p>
+&lt;p>아래 내용은 ether-wake패킷의 구성이다. 출처) &lt;a href="http://wiki.wireshark.org/WakeOnLAN" target="_blank" class="tx-link">&lt;a href="http://wiki.wireshark.org/WakeOnLAN">http://wiki.wireshark.org/WakeOnLAN&lt;/a>&lt;/a>&lt;/p>
+&lt;p>이 사이트에서 관련 패킷 샘플도 다운로드 가능하다.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BBC Micro:bit on OpenMicroLab</title><link>https://openmicrolab.com/tags/bbc-microbit/</link><description>Recent content in BBC Micro:bit on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 11 Sep 2016 14:45:36 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/bbc-microbit/index.xml" rel="self" type="application/rss+xml"/><item><title>BBC micro:bit 분석</title><link>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</link><pubDate>Sun, 11 Sep 2016 14:45:36 +0000</pubDate><guid>https://openmicrolab.com/bbc-microbit-%EB%B6%84%EC%84%9D-1/</guid><description>
+&lt;p class="p1">
+&lt;span class="s1">BBC &lt;a href="http://microbit.co.uk/">&lt;span class="s2">micro:bit&lt;/span>&lt;/a>&lt;/span>는 영국에서 컴퓨터 교육용으로 디자인된 마이크로컨트롤러 보드이다&lt;span class="s1">.&lt;/span>
+&lt;/p>
+&lt;p class="p1">
+&lt;img loading="lazy" class="alignnone wp-image-3744" src="http://res.cloudinary.com/openmicrolab/image/upload/v1473602467/MicroBit_board_xcvrdp.jpg" width="472" height="364" />
+&lt;/p>
+&lt;p class="p1">
+&lt;strong>개발에 참여한 파트너사들&lt;/strong>
+&lt;/p>
+&lt;ul class="ul1">
+&lt;li class="li3">
+&lt;span class="s2">Microsoft&lt;/span> – Block Editor, Touch Develop 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://lancaster-university.github.io/microbit-docs/" target="_blank">&lt;span class="s2">Lancaster University&lt;/span> – Device runtime개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Farnell element14&lt;/span> – 디바이스 생산
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822" target="_blank">&lt;span class="s2">Nordic Semiconductor&lt;/span> – MCU 제공&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">NXP Semiconductors&lt;/span> – USB인터테이스 칩 및 센서 칩제공
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">ARM Holdings&lt;/span> – &lt;a href="https://developer.mbed.org/" target="_blank">mbed&lt;/a> 하드웨어, 컴파일러 서비스
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.techwillsaveus.com/" target="_blank">&lt;span class="s2">Technology Will Save Us&lt;/span> – 하드웨어 디바이스 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="http://www.samsung.com/uk/microbit/" target="_blank">&lt;span class="s2">Samsung&lt;/span> – 안드로이드 앱 개발&lt;/a>
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://sciencescope.uk/" target="_blank">ScienceScope&lt;/a> –iOS앱 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;span class="s2">Python Software Foundation&lt;/span> – &lt;a href="https://en.wikipedia.org/wiki/MicroPython">&lt;span class="s2">MicroPython&lt;/span>&lt;/a> 제공, 웹기반 파이썬 에디터 개발
+&lt;/li>
+&lt;li class="li3">
+&lt;a href="https://www.bluetooth.com/" target="_blank">Bluetooth SIG&lt;/a> &amp;#8211; Developed the custom Bluetooth LE profile.
+&lt;/li>
+&lt;/ul>
+&lt;p class="p1">
+&lt;strong>하드웨어&lt;/strong>
+&lt;/p></description></item></channel></rss>

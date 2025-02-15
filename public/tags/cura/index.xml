@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cura on OpenMicroLab</title><link>https://openmicrolab.com/tags/cura/</link><description>Recent content in Cura on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 26 Nov 2018 04:23:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/cura/index.xml" rel="self" type="application/rss+xml"/><item><title>Cura에 새로운 프린터 프로파일 추가하기</title><link>https://openmicrolab.com/cura%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 26 Nov 2018 04:23:09 +0000</pubDate><guid>https://openmicrolab.com/cura%EC%97%90-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%94%84%EB%A6%B0%ED%84%B0-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>기기 정의 파일, 익스트루더 정의 파일을 만들어서 적용을 해야한다.&lt;/p>
+&lt;ol>
+&lt;li>기기 정의 파일&lt;br>
+기기의 특성을 정의한 파일로 &lt;a href="https://github.com/Ultimaker/Cura/blob/master/resources/definitions/ultimaker_original.def.json" target="_blank" rel="noopener noreferrer">템플릿&lt;/a>을 참고한다.&lt;br>
+보다 자세한 내용은 &lt;a href="https://github.com/Ultimaker/Cura/wiki/Definition-Files-Explained" target="_blank" rel="noopener noreferrer">여기&lt;/a> 참고&lt;/li>
+&lt;li>익스트루더 정의 파일&lt;/li>
+&lt;/ol>
+&lt;p>Creatable D3를 Cura에 적용한 &lt;a href="http://res.cloudinary.com/openmicrolab/raw/upload/v1543206099/Creatable_D3_Profile_Test_reayqr.pdf" target="_blank" rel="noopener noreferrer">문서 &lt;/a>&lt;/p></description></item><item><title>Ultimaker Cura의 구조</title><link>https://openmicrolab.com/ultimaker-cura%EC%9D%98-%EA%B5%AC%EC%A1%B0/</link><pubDate>Wed, 18 Apr 2018 02:40:59 +0000</pubDate><guid>https://openmicrolab.com/ultimaker-cura%EC%9D%98-%EA%B5%AC%EC%A1%B0/</guid><description>
+&lt;p> &lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4276" src="https://res.cloudinary.com/openmicrolab/image/upload/v1524019114/Cura_%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9_d4qxno.png" width="688" height="157" />
+&lt;ul>
+&lt;li>Cura의 대부분은 Python으로 작성되어 있고, 인터페이스는 PyQt를 사용&lt;/li>
+&lt;li>CuraEngine은 슬라이싱을 담당하고, C++로 작성&lt;/li>
+&lt;li>&lt;a href="https://github.com/Ultimaker/Cura" target="_blank" rel="noopener noreferrer">Cura&lt;/a>와 &lt;a href="https://github.com/Ultimaker/CuraEngine" target="_blank" rel="noopener noreferrer">CuraEngine&lt;/a>(슬라이싱 담당)의 통신에는 Arcus library를 사용.&lt;/li>
+&lt;li>즉 Cura에서 모델과 슬라이싱 옵션을 CuraEngine에 보내면 G-code를 리턴함&lt;/li>
+&lt;li>&lt;a href="https://github.com/Ultimaker/Uranium" target="_blank" rel="noopener noreferrer">Uranium&lt;/a>: 3D 관련 세팅, 3D-scenes을 위한 Python Framework&lt;/li>
+&lt;/ul></description></item><item><title>Cura Connect</title><link>https://openmicrolab.com/cura-connect/</link><pubDate>Mon, 13 Nov 2017 02:19:55 +0000</pubDate><guid>https://openmicrolab.com/cura-connect/</guid><description>
+&lt;p>Cura Coonect라는 것을 통해서 프린팅 큐를 네트워크를 통해 관리하고 카메라를 통해서 현재 진행상태를 확인&lt;/p></description></item><item><title>3D 프린터 슬라이싱 툴</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%ED%88%B4/</link><pubDate>Fri, 09 Dec 2016 03:00:45 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%ED%88%B4/</guid><description>
+&lt;table id="tablepress-75" class="tablepress tablepress-id-75">
+&lt;tr class="row-1 odd">
+&lt;th class="column-1">
+Software
+&lt;/th>
+&lt;pre>&lt;code>&amp;lt;th class=&amp;quot;column-2&amp;quot;&amp;gt;
+User
+&amp;lt;/th&amp;gt;
+&amp;lt;th class=&amp;quot;column-3&amp;quot;&amp;gt;
+Price
+&amp;lt;/th&amp;gt;
+&amp;lt;th class=&amp;quot;column-4&amp;quot;&amp;gt;
+OS
+&amp;lt;/th&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-2 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#3DPrinterOS">3DPrinterOS&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Freemium
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser, Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-3 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Astroprint">Astroprint&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Freemium
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser, Raspberry Pi, pcDuino
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-4 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Craftware">Craftware&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-5 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Cura">Cura&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-6 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#IceSL">IceSL&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-7 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#KISSlicer">KISSlicer&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free/$35
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux, Raspberry Pie
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-8 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#MakerBot%20Print">MakerBot Print&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-9 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#MatterControl">MatterControl&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-10 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Netfabb%20Basic">Netfabb Basic&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac, Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-11 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#OctoPrint">OctoPrint&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Raspberry Pi, Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-12 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Repetier">Repetier&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Intermediate Users, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-13 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Simplify3D">Simplify3D&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginers, Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+$150
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-14 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Slic3r">Slic3r&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users, Professional Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac Linux
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-15 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#SliceCrafter">SliceCrafter&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Advanced Users
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Browser
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-16 even">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Tinkerine%20Suite">Tinkerine Suite&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;tr class="row-17 odd">
+&lt;td class="column-1">
+&lt;a href="https://all3dp.com/best-3d-slicer-software-3d-printer/#Z-Suite">Z-Suite&lt;/a>
+&lt;/td>
+&lt;pre>&lt;code>&amp;lt;td class=&amp;quot;column-2&amp;quot;&amp;gt;
+Beginners
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-3&amp;quot;&amp;gt;
+Free
+&amp;lt;/td&amp;gt;
+&amp;lt;td class=&amp;quot;column-4&amp;quot;&amp;gt;
+Windows, Mac
+&amp;lt;/td&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/tr>
+&lt;/table></description></item><item><title>Meshlab 빌드</title><link>https://openmicrolab.com/meshlab-%EB%B9%8C%EB%93%9C/</link><pubDate>Wed, 02 Nov 2016 06:46:53 +0000</pubDate><guid>https://openmicrolab.com/meshlab-%EB%B9%8C%EB%93%9C/</guid><description>
+&lt;p>&lt;a href="http://meshlab.sourceforge.net/" target="_blank">Meshlab&lt;/a>은 3D프린팅에 필요한 파일의 메쉬를 수정할 수 있는 툴로 오픈소스이며, 3가지 OS를 지원한다. 그리고 &lt;a href="http://www.meshlabjs.net/" target="_blank">웹에서 구현&lt;/a>한 버전도 있다.&lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-3790" src="http://res.cloudinary.com/openmicrolab/image/upload/v1478068545/eye_cropped_x9neij.png" width="155" height="155" />
+&lt;p>이 소스를 빌드하려면 다음과 같은 3가지 소스가 필요하다.&lt;br>
+*** 필요한 소스들 3가지**&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/" target="_blank">MeshLab 소스 코드&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://vcg.isti.cnr.it/vcglib/" target="_blank">VCG 라이브러리&lt;/a>&lt;br>
+위 2개의 코드를 &lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/" target="_blank">&lt;a href="https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/">https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/&lt;/a>&lt;/a>&lt;br>
+에서 받을 수 있다.&lt;/li>
+&lt;li>&lt;a href="https://www.qt.io/" target="_blank">Qt&lt;/a> : &lt;a href="http://download.qt.io/archive/qt/" target="_blank">Qt의 아카이브&lt;/a>에서 호스트에 따른 버전을 다운로드한다.&lt;/li>
+&lt;/ul>
+&lt;p>*** VS(Visual Studio)로 컴파일하기**&lt;br>
+&lt;strong>1. QT 컴파일&lt;/strong>&lt;br>
+(1) QT소스의 압축을 풀고, VS(Visual Studio) Command prompt를 실행하여 해서 다음과 같이 설정을 한다.&lt;br>
+(2) 만약 VS가 여러 버전이 설치되어 있다면,&lt;/p></description></item><item><title>Slic3r 빌드 하기</title><link>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 24 Oct 2016 08:29:34 +0000</pubDate><guid>https://openmicrolab.com/slic3r-%EB%B9%8C%EB%93%9C-%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>3D 프린팅을 위한 슬라이서 프로그램인 &lt;a href="http://slic3r.org/" target="_blank">Slic3r&lt;/a>는 오픈소스로 &lt;a href="https://github.com/alexrj/Slic3r" target="_blank">github&lt;/a>에 코드가 공개되어 있다. 물론 각 OS에 맞는 실행파일을 다운로드해서 사용이 가능하지만 github에 공개된 코드를 빌드해서 사용이 가능하다. Windows, Mac, Linux 등 3가지 OS에서 빌드가 가능하며, Mac OS X에서 빌드하는 방법은&lt;a href="https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X" target="_blank"> https://github.com/alexrj/Slic3r/wiki/Running-Slic3r-from-git-on-OS-X&lt;/a>에 정리되어 있다.&lt;/p>
+&lt;p>Slic3r는 C++ 과 Perl로 작성이 되어 있다.&lt;/p>
+&lt;blockquote>
+&lt;p>The core geometric algorithms and data structures are written in C++, and Perl is used for high-level flow abstraction, GUI and testing.&lt;/p>&lt;/blockquote>
+&lt;p>그리고 다음과 같은 기능이 있다.&lt;/p></description></item><item><title>Cura 코드 수정 – Silab 디바이스 인식</title><link>https://openmicrolab.com/cura-%EC%BD%94%EB%93%9C-%EC%88%98%EC%A0%95-silab-usb-serial-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EC%9D%B8%EC%8B%9D/</link><pubDate>Mon, 13 Jun 2016 08:15:32 +0000</pubDate><guid>https://openmicrolab.com/cura-%EC%BD%94%EB%93%9C-%EC%88%98%EC%A0%95-silab-usb-serial-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EC%9D%B8%EC%8B%9D/</guid><description>
+&lt;p>기존 코드는 USB ACM디바이스들을 list에 넣어서 인식하도록 했는데, Silab 디바이스도 추가되도록 macineCOM.py 파일의 serialList 함수 수정.&lt;/p></description></item><item><title>Cura 2.1 open beta 버전 빌드</title><link>https://openmicrolab.com/cura-2-1-open-beta-%EB%B2%84%EC%A0%84-%EB%B9%8C%EB%93%9C/</link><pubDate>Thu, 21 Apr 2016 06:03:26 +0000</pubDate><guid>https://openmicrolab.com/cura-2-1-open-beta-%EB%B2%84%EC%A0%84-%EB%B9%8C%EB%93%9C/</guid><description>
+&lt;p>Ultimaker에서 기존 Cura와 다른 GUI를 가진 Cura를 개발해서 &lt;a href="https://ultimaker.com/en/community/20538-cura-21-open-beta-has-been-released" target="_blank">베타버전&lt;/a>을 내놓았다. 이유는&lt;/p>
+&lt;blockquote>
+&lt;p>This is the new, shiny frontend for Cura. daid/Cura is the old legacy Cura that everyone knows and loves/hates.&lt;br>
+We re-worked the whole GUI code at Ultimaker, because the old code started to become a unmaintainable&lt;/p>&lt;/blockquote>
+&lt;p>사실 daid의 Cura의 경우 맥에서의 빌드는 본인도 hell이라고 표현을 하는데, 이번 베타버전의 큐라를 빌드해 보니 스무스하게 빌드가 된다. 단 빌드 시간은 엄청나게 오래 걸린다.&lt;/p></description></item><item><title>MOD-t에서 Cura 사용하기</title><link>https://openmicrolab.com/mod-t%EC%97%90%EC%84%9C-cura-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 01 Apr 2016 03:04:21 +0000</pubDate><guid>https://openmicrolab.com/mod-t%EC%97%90%EC%84%9C-cura-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://blog.newmatter.com/wp-content/uploads/2016/02/Spool_view_front.jpg" alt="" width="429" height="286" />
+&lt;p>&lt;a href="https://www.indiegogo.com/projects/new-matter-mod-t-a-3d-printer-for-everyone/x/4705435#/" target="_blank">Indiegogo&lt;/a>에서 얼리버드로 $239에 구매한 MOD-t&lt;/p>
+&lt;p>MOD-t뿐만 아니라 Cura에 기본적으로 설정이 되어 있지 않은  3D 프린터는 이와 같은 방법으로 기기를 추가하고, 프로파일을 추가할 수 있다.&lt;/p>
+&lt;ul>
+&lt;li>메뉴에서 Machine &amp;gt; Add new machine…을 선택&lt;/li>
+&lt;li>Next버튼을 누르고 맨 밑에 있는 Other를 선택후 다시 Next를 선택&lt;/li>
+&lt;li>기기의 이름, 빌드 사이즈, 노즐 사이즈, 베드의 센터를 기입하고 Finish를 한다.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone" src="http://blog.newmatter.com/wp-content/uploads/2016/02/Set-up-machine.png" alt="" width="309" height="413" />
+&lt;ul>
+&lt;li>File &amp;gt; Open profile…을 클릭후 첨부된 profile을 로드한다.&lt;/li>
+&lt;li>프린팅을 할때는 desktop app에서 “Advanced Mode”를 선택하고, 좀 전에 설정한 큐라에서 슬라이싱한 Gcode를 선택한다.&lt;/li>
+&lt;/ul>
+&lt;img loading="lazy" class="alignnone" src="http://blog.newmatter.com/wp-content/uploads/2016/01/Capture_012816_032938_PM.jpg" alt="" width="482" height="331" /></description></item><item><title>큐라 한글화 14.09 버전</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-14-09-%EB%B2%84%EC%A0%84/</link><pubDate>Mon, 17 Nov 2014 07:16:35 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-14-09-%EB%B2%84%EC%A0%84/</guid><description>
+&lt;p>지난번에 큐라 한글화 작업에 대해서 &lt;a href="http://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/" target="_blank">포스팅&lt;/a>을 했는데, 몇가지 추가할 사항이 있어서 다시 정리를 한다.&lt;/p>
+&lt;p>일단 당시 한글화 한 버젼은 14.08 RC버젼인데, 이 버젼은 공식 릴리즈가 되지 않았고, 14.07 다음에 바로 14.09버젼이 릴리즈 됐다. 그리고 14.08 한글 번역 버젼이 서포트 설정이 동작을 하지 않는다는 것이다.&lt;/p>
+&lt;p>문제의 원인은 다음과 같다.  큐라의 모든 설정 부분은 current_profile.ini 파일에 저장이 되며, 큐라가 시작할때 이 파일을 로드해서 설정이 되고 종료할때 마지막 값이 저장되는데 한글로 설정된 값이 current_profile.ini에 저장이 안된다. 따라서 이부분은 그냥 영문을 그대로 사용을 하도록 po 파일을 수정해서 다시 빌드를 했다. 14.09버젼에는 프랑스어, 독일어가 추가가 되어 있고 설정이 가능해져서 이 부분도 수정을 해서 한국어 설정도 가능하도록 했다.&lt;/p></description></item><item><title>큐라 실행파일 만들기 – Win32</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0-win32/</link><pubDate>Mon, 22 Sep 2014 09:12:37 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0-win32/</guid><description>
+&lt;p>슬라이드쉐어에 정리…&lt;/p>
+&lt;div style="margin-bottom: 5px;">
+&lt;strong> &lt;a title="Cura Packaging in Win32" href="https://www.slideshare.net/JinbuhmKim/cura-packaging-win32" target="_blank">Cura Packaging in Win32&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="http://www.slideshare.net/JinbuhmKim" target="_blank">Jinbuhm Kim&lt;/a>&lt;/strong>
+&lt;/div></description></item><item><title>큐라 한글화 – Cura Korean Translation</title><link>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/</link><pubDate>Fri, 19 Sep 2014 07:58:07 +0000</pubDate><guid>https://openmicrolab.com/%ED%81%90%EB%9D%BC-%ED%95%9C%EA%B8%80%ED%99%94-cura-korean-translation/</guid><description>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/Cura_Hangul_Win.png" alt="" width="767" height="485" />
+&lt;p>네이버 카페에서 누군가 큐라(Cura)를 한글화한 것을 몇 건을 봤는데, po파일을 찾을 수 가 없고 또 어떤 것은 파이썬 소스의 영문을 그대로 건드려서 이건 아니다 싶어서 한글 번역을 했다. 사실 한글 번역은 귀찮은 작업인데 이런 작업을 하면서 더 알아가는 것도 있고 오픈소스에 기여를 하는 한 방편이기도 해서 진행을 했다.&lt;/p>
+&lt;img loading="lazy" class="alignnone" src="http://openmicrolab.cdn2.cafe24.com/LC_MESSAGES.png" alt="" width="709" height="263" />
+&lt;blockquote>
+&lt;p>&lt;del>일단 기존에 사용하는 큐라를 한글로 바꾸려면 Cura설치폴더\Cura\resources\locale 폴더에 위에서 받은 파일중 ko 폴더를 추가하고 큐라가 설치된 폴더아래 Cura 폴더 아래의 &lt;/del>&lt;strong>&lt;del>preferences.ini 파일에서 language 항목에 Korean으로 설정하면 된다.&lt;/del>  14.09버젼 부터는 언어 설정을 하는 옵션이 추가됨&lt;/strong>&lt;/p></description></item><item><title>3D 프린팅용 오픈소스 소프트웨어</title><link>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</link><pubDate>Fri, 19 Sep 2014 03:32:33 +0000</pubDate><guid>https://openmicrolab.com/3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%9A%A9-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4/</guid><description>
+&lt;p>3D 프린팅을 위해서는 4가지 소프트웨어가 필요하다.&lt;/p>
+&lt;ol>
+&lt;li>프린팅할 물체를 모델링 하는 소프트웨어&lt;/li>
+&lt;li>이 3D 모델을 각 레이어 별로 잘라주는 슬라이스 소프트웨어 – STL파일을 G코드로 변환&lt;/li>
+&lt;li>G 코드를 프린터로 전송해 주는 프로그램 – 보통 3D printing host software라고 부른다.&lt;/li>
+&lt;li>3D 프린터에 내장되어 있는 펌웨어&lt;/li>
+&lt;/ol>
+&lt;p>일단 1번은 디자인을 위한 것이고 4번은 기기에서 돌아가는 소프트웨어 이니 논외로 하고 슬라이서 프로그램과 호스트 프로그램을 살펴보자. 일반적으로 이 두 프로그램이 합쳐져 있다. 즉 호스트 프로그램에서 슬라이서 프로그램을 가져다 쓰는 형태이다.&lt;/p></description></item></channel></rss>

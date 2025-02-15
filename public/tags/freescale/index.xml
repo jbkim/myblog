@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Freescale on OpenMicroLab</title><link>https://openmicrolab.com/tags/freescale/</link><description>Recent content in Freescale on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 19 Apr 2016 08:03:31 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/freescale/index.xml" rel="self" type="application/rss+xml"/><item><title>Freescale FRDM-K82F 보드</title><link>https://openmicrolab.com/freescale-frdm-k82f-%EB%B3%B4%EB%93%9C/</link><pubDate>Tue, 19 Apr 2016 08:03:31 +0000</pubDate><guid>https://openmicrolab.com/freescale-frdm-k82f-%EB%B3%B4%EB%93%9C/</guid><description>
+&lt;img loading="lazy" class="alignnone wp-image-3639" src="http://res.cloudinary.com/openmicrolab/image/upload/a_0/v1461052393/Freescale_FRDM-K82F_aaxwqd.jpg" alt="" width="314" height="314" />
+&lt;h3 id="freescale-frdm-k82f-보드의-개발-환경설정">Freescale FRDM-K82F 보드의 개발 환경설정&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://nxp.flexnetoperations.com/control/frse/download?agree=Accept&amp;element=6912747" target="_blank">Kinetis SDK 다운로드 및 설치&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.nxp.com/webapp/swlicensing/sso/downloadSoftware.sp?catid=KINETIS-KDS-IDE" target="_blank">Kinetis Design Studio (KDS) 다운로드 및 설치&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://developer.mbed.org/media/downloads/drivers/mbedWinSerial_16466.exe" target="_blank">윈도우즈의 경우 virtual COM port 드라이버 설치&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="1-이클립스-업데이트-파일-설치">1. 이클립스 업데이트 파일 설치&lt;/h3>
+&lt;p>“Help”-&amp;gt;Check for Updates를 누르고, Processor Expert for Kinetis만 선택하고 업데이트 한다.&lt;/p>
+&lt;p>“Help” -&amp;gt; “Install New Software”를 선택하고 Add 버튼 &amp;gt; Archive 버튼을 눌러서 SDK 설치 폴더 아래 /tools/eclipse_update 폴더에서 KSDK_&lt;version>_Eclipse_Update_zip file. 를 선택한다&lt;/p>
+&lt;h3 id="2-플랫폼-라이브러리-빌드하기">2. 플랫폼 라이브러리 빌드하기&lt;/h3>
+&lt;img loading="lazy" class="alignnone wp-image-3640" src="http://res.cloudinary.com/openmicrolab/image/upload/v1461052909/lib_kykbku.png" alt="" width="272" height="399" />
+&lt;p>“File-&amp;gt;Import”를 선택후 “General”을 눌러서 “Existing Projects into Workspace”를 선택한다.&lt;br>
+루트 디렉토리는 &amp;lt;install_dir&amp;gt;/lib/ksdk_platform_lib/kds/K82F25615 를 선택하고 finish를 클릭한다.&lt;br>
+메뉴에 헤머 아이콘을 눌러 빌드한다.&lt;/p></description></item><item><title>Cortex M4와 Cortex M3의 비교</title><link>https://openmicrolab.com/cortex-m4%EC%99%80-cortex-m3%EC%9D%98-%EB%B9%84%EA%B5%90/</link><pubDate>Tue, 01 Feb 2011 07:28:03 +0000</pubDate><guid>https://openmicrolab.com/cortex-m4%EC%99%80-cortex-m3%EC%9D%98-%EB%B9%84%EA%B5%90/</guid><description>
+&lt;p>Cortex M4는 Cortex M3에 DSP가 추가된 칩입니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.1708463E4D47B3FA01A7CE.jpg" class="aligncenter" width="680" height="764" alt="" filename="Cortex M4_ Cortex M3.jpg" filemime="image/jpeg" />&lt;br>
+위 표는 Cortex M3에는 DSP 가 없으니 당연한 결과네요.&lt;br>
+현재 Cortex M4 칩은 &lt;A title="[http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS]로 이동합니다." href="http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS" target=_blank>FreeScale&lt;/A>에서 Kinetis 시리즈로 판매되고 있습니다.&lt;/p>
+&lt;p>가장 낮은 시리즈인 K10 부터 K60까지 있습니다.&lt;br>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.1802013E4D47B50B15755B.jpg" class="aligncenter" width="653" height="392" alt="" filename="kinetis.jpg" filemime="image/jpeg" />&lt;/p>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;STRONG>&lt;SPAN style="FONT-SIZE: 10pt">&lt;br /> K10 Sub-Family Reference Manual&lt;/SPAN>&lt;br /> &lt;/STRONG>
+&lt;/DIV>
+&lt;DIV>
+&lt;a href="https://openmicrolab.com/images/1/cfile7.uf.18701C444D47B5AC2B01FE.zip" class="aligncenter" filename="K10P104M100SF2RM.zip" filemime="application/zip" />cfile7.uf.18701C444D47B5AC2B01FE.zip&lt;/a>
+&lt;/DIV></description></item></channel></rss>

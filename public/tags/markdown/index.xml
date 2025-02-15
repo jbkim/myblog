@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Markdown on OpenMicroLab</title><link>https://openmicrolab.com/tags/markdown/</link><description>Recent content in Markdown on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 07 May 2013 05:33:05 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown</title><link>https://openmicrolab.com/markdown/</link><pubDate>Tue, 07 May 2013 05:33:05 +0000</pubDate><guid>https://openmicrolab.com/markdown/</guid><description>
+&lt;p>Github의  readme  파일을 작성하다가… 자료를 정리하면 좋을 것 같아서…&lt;/p>
+&lt;p>Markdown이란… &lt;a title="Markdown" href="http://en.wikipedia.org/wiki/Markdown#Editors" target="_blank">&lt;a href="http://en.wikipedia.org/wiki/Markdown#Editors">http://en.wikipedia.org/wiki/Markdown#Editors&lt;/a>&lt;/a>&lt;/p>
+&lt;p>잘 정리된 사이트&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://help.github.com/articles/github-flavored-markdown" target="_blank">GitHub Flavored Markdown (GFM)&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height: 15px;">&lt;a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown Syntax&lt;/a> &lt;/span>&lt;/li>
+&lt;li>&lt;a href="http://lennienoh.com/markdown/" target="_blank">Markdown 문법 배워서 활용하기&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

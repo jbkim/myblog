@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>W5100 on OpenMicroLab</title><link>https://openmicrolab.com/tags/w5100/</link><description>Recent content in W5100 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 01 Mar 2014 09:26:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/w5100/index.xml" rel="self" type="application/rss+xml"/><item><title>Arduino Ethernet 라이브러리 업데이트</title><link>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link><pubDate>Sat, 01 Mar 2014 09:26:21 +0000</pubDate><guid>https://openmicrolab.com/arduino-ethernet-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid><description>
+&lt;p>WZnet 칩 W5100, W5200과 W5500을 지원하는 통합 아두이노 라이브러리인 &lt;a href="https://github.com/Wiznet/WIZ_Ethernet_Library" target="_blank">Arduino Ethernet 라이브러리&lt;/a>를 업데이트 했다. 기존 코드에서 달라진 점은 다음과 같다.&lt;/p>
+&lt;ul>
+&lt;li>Arduino IDE 1.5.x 지원 : Arduino Due를 지원하기 위함.&lt;/li>
+&lt;li>Due용  SPI 드라이버 추가&lt;/li>
+&lt;li>W5200및 W5500의 경우 SPI드라이버 속도를 높였다. 무려 42Mhz까지 지원&lt;/li>
+&lt;li>w5100::read_data함수의 파라미터의 형 변경&lt;/li>
+&lt;li>flush() 함수 추가&lt;/li>
+&lt;/ul>
+&lt;p>Arduino IDE 1.5.xx를 지원하기 위해서는&lt;/p>
+&lt;ul>
+&lt;li>32비트 SAM용 SPI 드라이버가 추가 되야한다.&lt;/li>
+&lt;li>IDE 1.5.x의 폴더 구조가 바뀌어서 헤더파일 include가 변경된다.아래 그림 참고…  예를 들면 #include “w5100.h”가 #include “utility/ w5100.h” 이런 식으로…&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2014/03/Arduino_Folder.png">&lt;img loading="lazy" class="alignnone wp-image-2890" alt="Arduino_Folder" src="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png" width="578" height="717" srcset="https://openmicrolab.com/images/2014/03/Arduino_Folder-826x1024.png 826w, https://openmicrolab.com/images/2014/03/Arduino_Folder-242x300.png 242w, https://openmicrolab.com/images/2014/03/Arduino_Folder.png 831w" sizes="(max-width: 578px) 100vw, 578px" />&lt;/a>&lt;/p></description></item><item><title>Open Hardware Summit 2012</title><link>https://openmicrolab.com/open-hardware-summit-2012/</link><pubDate>Mon, 15 Oct 2012 05:50:14 +0000</pubDate><guid>https://openmicrolab.com/open-hardware-summit-2012/</guid><description>
+&lt;p>지난 9월 27일 &lt;a href="http://summit.oshwa.org/" target="_blank" class="tx-link">Open Hardware Summit&lt;/a>이 올해에도 뉴욕에서 열렸다. 올해로 3년째 인데 매년 추석전에 열리는 듯하다. -_-;;&lt;/p>
+&lt;p>올해는 &lt;a href="http://eyebeam.org/" target="_blank" class="tx-link">EyeBeam&lt;/a>이라는 Art &amp;amp; Technology 센터에서 열렸다. &lt;/p>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.011C7E49507BA0C5119349.jpg" class="aligncenter" width="683" height="512" filename="SAM_6999.jpg" filemime="image/jpeg" style="""" />
+&lt;/p>
+&lt;p>Arduino의 Ethernet Shield의 W5100 메이커인 &lt;a href="http://www.wiznet.co.kr/en/" target="_blank" class="tx-link">Wiznet&lt;/a>는 올해로 3년째 이 서밋에 &lt;a href="http://summit.oshwa.org/sponsor/" target="_blank" class="tx-link">스폰서&lt;/a>로 지원을 하고 있다.&lt;/p>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.12560F4E507BA0EB12608A.jpg" class="aligncenter" width="683" height="455" filename="SAM_6910.jpg" filemime="image/jpeg" style="""" />
+&lt;/p>
+&lt;p>오전 8시 30분 부터 등록을 하고 나눠주는 뱃지를 받았다. 뱃지는 &lt;a href="http://www.evilmadscientist.com" target="_blank" class="tx-link">Evil Mad Scientist Lab&lt;/a>에서 제작을 했는데 레고 블럭으로 만들어졌다. &lt;/p>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.1515E03C507BA1B8058AFE.jpg" class="aligncenter" width="456" height="608" filename="SAM_7004.jpg" filemime="image/jpeg" style="""" />
+&lt;/p></description></item><item><title>Arduino Education</title><link>https://openmicrolab.com/arduino-education/</link><pubDate>Thu, 08 Sep 2011 04:00:56 +0000</pubDate><guid>https://openmicrolab.com/arduino-education/</guid><description>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile26.uf.1127934C4E68393F1E1E93.PNG" class="aligncenter" width="254" height="93" alt="" filename="Arduino_education.PNG" filemime="image/jpeg" />
+아두이노가 Store, Labs에 이어 Education이라는 카테고리를 만들었습니다. &lt;http://scuola.arduino.cc/en>
+교사를 위한 공간이지만 반드시 교사일 필요는 없고, 기존의 커뮤니티 처럼 모두가 참여할 수 있는 구조입니다.
+아직 베타버젼이어서 현재 한 20 명정도가 참여하고 있는데, 활성화가 되면 이들의 커뮤니티 확장이 가속도를 내는 것 같습니다.
+&lt;P style="MARGIN: 0px">
+&lt;br /> 최근 Lesson중 하나인 아두이노 이더넷 관련 내용 한번 보시죠.&lt;br />
+&lt;/P>
+&lt;DIV style="TEXT-ALIGN: center">
+&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; LETTER-SPACING: normal; FONT: 12px/16px 'Lucida grande', Tahoma, Verdana, Arial, Helvetica, 'Bitstream Vera Sans', sans-serif; WHITE-SPACE: normal; ORPHANS: 2; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;br /> &lt;H1 style="LINE-HEIGHT: 1.3em; MARGIN-TOP: 0px; FONT-FAMILY: 'Lucida grande', 'Lucida Sans', Lucida, Verdana, sans-serif; MARGIN-BOTTOM: 0px; COLOR: rgb(0,151,156); FONT-SIZE: 1.5em; FONT-WEIGHT: bold" class=title>&lt;A title="[http://scuola.arduino.cc/en/content/getting-started-arduino-ethernet]로 이동합니다." href="http://scuola.arduino.cc/en/content/getting-started-arduino-ethernet" target=_blank>Getting Started With Arduino Ethernet&lt;/A>&lt;/H1>&lt;/SPAN>
+&lt;/DIV>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.135A27484E683D3B0BC9F8.jpg" class="aligncenter" width="519" height="270" alt="" filename="etherneteserial2usb.jpg" filemime="image/jpeg" />
+&lt;/P>최신 보드인 Arduino Ethernet은 W5100이 메인 보드에 default로 들어가 있고, USB가 빠졌습니다. 대신 작은 USB to Serial 보드로 연결해서 툴과 연결을 합니다.
+&lt;p>최근에 Arduino의 멤버인 Banzi가 Getting Started with Arduino의 2nd 버젼도 거의 완성이 됐다는 트윗도 있습니다.&lt;/p></description></item></channel></rss>

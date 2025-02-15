@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Uranium on OpenMicroLab</title><link>https://openmicrolab.com/tags/uranium/</link><description>Recent content in Uranium on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 18 Apr 2018 02:40:59 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/uranium/index.xml" rel="self" type="application/rss+xml"/><item><title>Ultimaker Cura의 구조</title><link>https://openmicrolab.com/ultimaker-cura%EC%9D%98-%EA%B5%AC%EC%A1%B0/</link><pubDate>Wed, 18 Apr 2018 02:40:59 +0000</pubDate><guid>https://openmicrolab.com/ultimaker-cura%EC%9D%98-%EA%B5%AC%EC%A1%B0/</guid><description>
+&lt;p> &lt;/p>
+&lt;img loading="lazy" class="alignnone wp-image-4276" src="https://res.cloudinary.com/openmicrolab/image/upload/v1524019114/Cura_%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9_d4qxno.png" width="688" height="157" />
+&lt;ul>
+&lt;li>Cura의 대부분은 Python으로 작성되어 있고, 인터페이스는 PyQt를 사용&lt;/li>
+&lt;li>CuraEngine은 슬라이싱을 담당하고, C++로 작성&lt;/li>
+&lt;li>&lt;a href="https://github.com/Ultimaker/Cura" target="_blank" rel="noopener noreferrer">Cura&lt;/a>와 &lt;a href="https://github.com/Ultimaker/CuraEngine" target="_blank" rel="noopener noreferrer">CuraEngine&lt;/a>(슬라이싱 담당)의 통신에는 Arcus library를 사용.&lt;/li>
+&lt;li>즉 Cura에서 모델과 슬라이싱 옵션을 CuraEngine에 보내면 G-code를 리턴함&lt;/li>
+&lt;li>&lt;a href="https://github.com/Ultimaker/Uranium" target="_blank" rel="noopener noreferrer">Uranium&lt;/a>: 3D 관련 세팅, 3D-scenes을 위한 Python Framework&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Homebrew on OpenMicroLab</title><link>https://openmicrolab.com/tags/homebrew/</link><description>Recent content in Homebrew on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 25 Nov 2014 12:52:09 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/homebrew/index.xml" rel="self" type="application/rss+xml"/><item><title>OS X 10.10 요세미티에서 Homebrew 문제</title><link>https://openmicrolab.com/os-x-10-10-%EC%9A%94%EC%84%B8%EB%AF%B8%ED%8B%B0%EC%97%90%EC%84%9C-homebrew-%EB%AC%B8%EC%A0%9C/</link><pubDate>Tue, 25 Nov 2014 12:52:09 +0000</pubDate><guid>https://openmicrolab.com/os-x-10-10-%EC%9A%94%EC%84%B8%EB%AF%B8%ED%8B%B0%EC%97%90%EC%84%9C-homebrew-%EB%AC%B8%EC%A0%9C/</guid><description>
+&lt;p>요세미티로 업데이트가 되면서 brew가 이상해졌다.  대략 아래와 같은 에러메시지가 나온다.&lt;/p>
+&lt;blockquote>
+&lt;p>/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory /usr/local/bin/brew: line 26: /usr/local/Library/brew.rb: Undefined error: 0&lt;/p>&lt;/blockquote>
+&lt;p>일단 Xocde를 업데이트하고 Xcode command line tool도 업데이트 했는데 해결책은 그게 아니고… brew.rb 파일을 수정하면 된다.&lt;/p>
+&lt;p>/usr/local/Library/brew.rb 파일을 열어서 첫째줄의&lt;/p>
+&lt;blockquote>
+&lt;p>#!/System/Library/Frameworks/Ruby.framework/Versions/&lt;span style="color: #ff0000;">1.8&lt;/span>/usr/bin/ruby -W0&lt;/p>
+&lt;p>를 다음과 같이 수정한다.&lt;br>
+#!/System/Library/Frameworks/Ruby.framework/Versions/&lt;span style="color: #ff0000;">Current&lt;/span>/usr/bin/ruby -W0&lt;/p>&lt;/blockquote>
+&lt;p>그 다음에&lt;/p>
+&lt;blockquote>
+&lt;p>brew update&lt;/p>&lt;/blockquote></description></item><item><title>MAC OS에 Homebrew 설치하기</title><link>https://openmicrolab.com/mac-os%EC%97%90-homebrew-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link><pubDate>Fri, 21 Mar 2014 09:51:08 +0000</pubDate><guid>https://openmicrolab.com/mac-os%EC%97%90-homebrew-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>OS X용 패키지 관리자인 Homebrew 설치하기&lt;br>
+영문 사이트:  &lt;a href="http://brew.sh/" target="_blank">&lt;a href="http://brew.sh/">http://brew.sh/&lt;/a>&lt;/a>&lt;br>
+한글 사이트: &lt;a href="http://brew.sh/index_ko.html" target="_blank">&lt;a href="http://brew.sh/index_ko.html">http://brew.sh/index_ko.html&lt;/a>&lt;/a>&lt;/p>
+&lt;p>설치는 간단하다. 터미널에서 다음을 실행한다.&lt;/p>
+&lt;p>&lt;del>&lt;code id="selectable">&amp;lt;strong&amp;gt;ruby -e &amp;ldquo;$(curl -fsSL &lt;a href="https://raw.github.com/Homebrew/homebrew/go/install)%22&amp;amp;lt;/strong%3E">https://raw.github.com/Homebrew/homebrew/go/install)&amp;quot;&amp;amp;lt;/strong&amp;gt;&lt;/a>&lt;/code>&lt;/del>&lt;br>
+위치가 바뀌어서 다음과 같이 입력을 해야 한다.&lt;br>
+&lt;code id="selectable">ruby -e &amp;ldquo;$(curl -fsSL &lt;a href="https://raw.githubusercontent.com/Homebrew/install/master/install)%22">https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;&lt;/a>&lt;/code>&lt;br>
+다만 설치를 위해서는 Xcode용 Command Line Tools가 설치되어 있어야 한다.&lt;/p>
+&lt;h3 id="주요-명령어">주요 명령어&lt;/h3>
+&lt;ul>
+&lt;li>brew install formula // 패키지 설치&lt;/li>
+&lt;li>brew remove formula // 패키지 삭제&lt;/li>
+&lt;li>brew info formula // 패키지 정보&lt;/li>
+&lt;li>brew upgrade [formula] // 설치한 패키지의 최신버전을 설치&lt;/li>
+&lt;li>brew list 또는 brew ls // 설치한 formula 목록&lt;/li>
+&lt;li>brew update // Homebrew 업데이트&lt;/li>
+&lt;li>brew doctor // 시스템에 문제가 있는지 확인&lt;/li>
+&lt;li>brew outdated // 내가 설치한 formula 목록의 이후 버전이 나왔는지 확인&lt;/li>
+&lt;li>brew cleanup // fomula 의 모든 과거버전을 제거함&lt;/li>
+&lt;/ul></description></item></channel></rss>

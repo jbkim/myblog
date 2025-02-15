@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EWARM5.41 on OpenMicroLab</title><link>https://openmicrolab.com/tags/ewarm5.41/</link><description>Recent content in EWARM5.41 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 18 Feb 2011 02:32:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/ewarm5.41/index.xml" rel="self" type="application/rss+xml"/><item><title>IAR 컴파일러에서 J-LINK 사용하기 2 – EWARM5.41</title><link>https://openmicrolab.com/iar-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EC%97%90%EC%84%9C-j-link-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-2-ewarm541/</link><pubDate>Fri, 18 Feb 2011 02:32:21 +0000</pubDate><guid>https://openmicrolab.com/iar-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EC%97%90%EC%84%9C-j-link-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-2-ewarm541/</guid><description>
+&lt;p>이전 포스트 “&lt;A title="[http://liketheocean.tistory.com/62]로 이동합니다." href="http://liketheocean.tistory.com/62" target=_blank>IAR 컴파일러에서 J-LINK 사용하기&lt;/A>” 는 EWARM4.xx 버전에서 동작하는 것이였습니다.&lt;br>
+컴파일러 버젼을 5.41로 바꿨는데, 이전 버젼에서 사용하던 메뉴들이 없어졌네요.&lt;br>
+이전 버젼과 호환성을 유지를 해줘야 하는데… -_-;;&lt;br>
+J-link와 연결은 되는데, “Programming flash memory” 창이 떠서 멈줘있는 현상이 있어서 다시 확인을 하니 몇가지 주의해야 할 설정이 있습니다.&lt;br>
+컴파일러 옵션 설정에서&lt;/p>
+&lt;UL style="LIST-STYLE-TYPE: disc">
+&lt;br />
+&lt;LI style="LINE-HEIGHT: 1.2">
+Output Converter => intel extended
+&lt;/LI>
+&lt;br />
+&lt;LI style="LINE-HEIGHT: 1.2">
+Linker/ Config&amp;nbsp;=> icf 파일 을 제대로 설정
+&lt;/LI>
+&lt;br />
+&lt;LI style="LINE-HEIGHT: 1.2">
+Debugger / Download => board 파일을 제대로 설정&lt;/p></description></item></channel></rss>

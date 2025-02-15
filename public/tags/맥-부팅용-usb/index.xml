@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>맥 부팅용 USB on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EB%A7%A5-%EB%B6%80%ED%8C%85%EC%9A%A9-usb/</link><description>Recent content in 맥 부팅용 USB on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 06 Jul 2016 08:18:53 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EB%A7%A5-%EB%B6%80%ED%8C%85%EC%9A%A9-usb/index.xml" rel="self" type="application/rss+xml"/><item><title>맥 ISO 이미지를 부팅용 USB로 복사하기</title><link>https://openmicrolab.com/%EB%A7%A5-iso-%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%EB%B6%80%ED%8C%85%EC%9A%A9-usb%EB%A1%9C-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/</link><pubDate>Wed, 06 Jul 2016 08:18:53 +0000</pubDate><guid>https://openmicrolab.com/%EB%A7%A5-iso-%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%EB%B6%80%ED%8C%85%EC%9A%A9-usb%EB%A1%9C-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>&lt;strong>ISO파일을 img파일로 변환&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>hdiutil convert -format UDRW -o OSX-Mavericks.img OSX-Mavericks.iso&lt;/p>&lt;/blockquote>
+&lt;p>OS X 는 자동적으로 확장자를 .dmg 로 한다. 즉 OSX-Mavericks.img.dmg&lt;/p>
+&lt;p>diskutil list를 실행하여 USB 메모리 스틱이 어떤 디바이스에 할당됐는지 확인하고 다음과 같이 unmount를 한다.&lt;/p>
+&lt;blockquote>
+&lt;p>diskutil unmountDisk /dev/disk2&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>디스크 이미지를 복사&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>sudo dd if=OSX-Mavericks.img of=/dev/rdisk2 bs=1m&lt;/p>&lt;/blockquote>
+&lt;p>Disk Utility.app’ 를 실행하여 드라이버를 unmount&lt;/p>
+&lt;p>diskutil eject /dev/disk2 를 실행하고 USB 메모리 스틱을 물리적으로 분리&lt;/p>
+&lt;p>&lt;em>*위 글에서 OSX-Mavericks.iso가 맥용 이미지 파일이고, USB 메모리 스틱은 /dev/disk2에 있다고 가정&lt;/em>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EagleCAD on OpenMicroLab</title><link>https://openmicrolab.com/tags/eaglecad/</link><description>Recent content in EagleCAD on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 21 Jun 2015 14:00:21 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/eaglecad/index.xml" rel="self" type="application/rss+xml"/><item><title>PCB 제조 관련</title><link>https://openmicrolab.com/pcb-%EC%A0%9C%EC%A1%B0-%EA%B4%80%EB%A0%A8/</link><pubDate>Sun, 21 Jun 2015 14:00:21 +0000</pubDate><guid>https://openmicrolab.com/pcb-%EC%A0%9C%EC%A1%B0-%EA%B4%80%EB%A0%A8/</guid><description>
+&lt;ul>
+&lt;li>&lt;strong>Plating Finish&lt;/strong> : leaded or lead-free HASL (Hot Air Solder Leveling) vs ENIG (Electroless nickel immersion gold) plating. HASL pad는ENIG보다 평탄하지 않다.&lt;/li>
+&lt;li>&lt;strong>Copper trace&lt;/strong>: 6 mil&lt;/li>
+&lt;li>&lt;strong>Hole size&lt;/strong>: 0.2 – 0.3mm via 사이즈가 일반적&lt;/li>
+&lt;li>&lt;strong>Silk&lt;/strong>: LPI printing (Liquid photo imaging)이 높은 해상도를 가짐&lt;/li>
+&lt;li>&lt;strong>Castellated Holes&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>FreeDFM: &lt;a href="https://www.my4pcb.com/net35/FreeDFMNet/FreeDFMHome.aspx" target="_blank">&lt;a href="https://www.my4pcb.com/net35/FreeDFMNet/FreeDFMHome.aspx">https://www.my4pcb.com/net35/FreeDFMNet/FreeDFMHome.aspx&lt;/a>&lt;/a>&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2015/06/freedfm.png">&lt;img loading="lazy" class="alignnone size-full wp-image-3389" src="https://openmicrolab.com/images/2015/06/freedfm.png" alt="freedfm" width="1000" height="655" srcset="https://openmicrolab.com/images/2015/06/freedfm.png 1000w, https://openmicrolab.com/images/2015/06/freedfm-300x197.png 300w" sizes="(max-width: 1000px) 100vw, 1000px" />&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>중국 PCB업체&lt;/strong>: &lt;a href="http://www.hqpcb.com/online.html" target="_blank">&lt;a href="http://www.hqpcb.com/online.html">http://www.hqpcb.com/online.html&lt;/a> &lt;/a>  / &lt;a href="http://www.kikipcb.com/index.html" target="_blank">&lt;a href="http://www.kikipcb.com/index.html">http://www.kikipcb.com/index.html&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;strong>BOM관련&lt;/strong>:  &lt;a href="https://octopart.com/" target="_blank">&lt;a href="https://octopart.com/">https://octopart.com/&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Eagle CAD에서 라이브러리 관리</title><link>https://openmicrolab.com/eagle-cad%EC%97%90%EC%84%9C-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B4%80%EB%A6%AC/</link><pubDate>Wed, 12 Dec 2012 05:07:40 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EC%97%90%EC%84%9C-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B4%80%EB%A6%AC/</guid><description>
+&lt;ul style="list-style-type: disc;">
+&lt;li>
+&lt;b>Eagle CAD에서 라이브러리에 있는 파트를 삭제하는 방법은 ?&lt;/b>
+&lt;/li>
+&lt;/ul>
+&lt;p>라이브러리 자체를 삭제하는 것은 간단하지만, 라이브러리에 있는 부품을 삭제하고 싶을 때는 다음과 같이 하면 된다.&lt;/p>
+&lt;p>-. Control Panel에서 일단 해당라이브러리를 연다. File &amp;gt; Open &amp;gt; Library&lt;/p>
+&lt;p>-. Library &amp;gt; Remove… 메뉴를 선택을 하고, 삭제하고자 하는 라이브러리 명을 입력한다.&lt;/p>
+&lt;p style="text-align: center; clear: none; float: none;">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.16465C3F50C80E33158773.png" class="aligncenter" width="275" height="161" filename="스크린샷 2012-12-12 오후 1.54.41.png" filemime="image/jpeg" />
+&lt;/p>
+&lt;ul style="list-style-type: disc;">
+&lt;li>
+&lt;b>라이브러리에 있는 부품을&amp;nbsp;복사하는 방법?&lt;/b>
+&lt;/li>
+&lt;/ul>
+&lt;p>이건 간단한데, 자주쓰는 부품을 모아서 나만의 라이브러리를 만들때 유용하다.&lt;/p></description></item><item><title>EagleCAD Tip – Layer</title><link>https://openmicrolab.com/eaglecad-tip-layer/</link><pubDate>Tue, 23 Oct 2012 05:19:39 +0000</pubDate><guid>https://openmicrolab.com/eaglecad-tip-layer/</guid><description>
+&lt;p>EagleCAD에서 기존에 작업을 해놓은 파일을 수정하다가 부품을 이동시키지 못해서 애를 먹었는데, &lt;/p>
+&lt;p>문제는 레이어에서 tOrigins, bOrigins를 활성화 시키지 않아서 생기는 현상이었다. &lt;/p>
+&lt;p>이름에서 알 수 있듯이 t는 Top, b는 bottom이다.&lt;/p>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.020F2C46508628B00A263D.png" class="aligncenter" width="299" height="422" filename="스크린샷 2012-10-23 오후 2.15.31.png" filemime="image/jpeg" />
+&lt;/p></description></item><item><title>EagleCAD Tip- Ripup</title><link>https://openmicrolab.com/eaglecad-tip-ripup/</link><pubDate>Tue, 23 Oct 2012 05:03:13 +0000</pubDate><guid>https://openmicrolab.com/eaglecad-tip-ripup/</guid><description>
+&lt;p>EagleCAD를 쓰다보면 기능은 있는데, 메뉴에 나와 있지 않아서 접근이 힘든 경우가 있다.  대부분이  Edit Commands 기능들이다. 이럴땐  Help를 찾아보거나 열심히 구글링하거나……&lt;/p>
+&lt;p>여기에 정리하는 이유는 나중에 찾기 쉽게하기 위해… ^^*&lt;/p>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile3.uf.11300349508625CF1C214F.PNG" class="aligncenter" width="480" height="180" filename="ripup.PNG" filemime="image/jpeg" />
+&lt;/p>&lt;/p>
+&lt;p>&lt;strong>&lt;span style="font-size: 10pt; ">Ripup&lt;/span>&lt;/strong>&lt;/p>
+&lt;p>&lt;font size="2">&lt;span style="line-height: 19px;">&lt;b>작업한 라우팅을 날려버릴때 사용한다.&lt;/b>&lt;/span>&lt;/font>&lt;/p>
+&lt;p>&lt;font size="2">&lt;span style="line-height: 19px;">&lt;b>만약 라우팅 전부를 없애고 싶으면,  “&lt;span style="background-color: rgb(255, 228, 0); ">Ripup;&lt;/span>” 하면 된다.&lt;/b>&lt;/span>&lt;/font>&lt;/p>
+&lt;p>&lt;font size="2">&lt;span style="line-height: 19px;">&lt;b>&lt;br />&lt;/b>&lt;/span>&lt;/font>&lt;/p>
+&lt;p>&lt;font size="2">&lt;span style="line-height: 19px;">&lt;b>&lt;br />&lt;/b>&lt;/span>&lt;/font>&lt;/p>&lt;/p>
+&lt;p style="margin-left: 0px; margin-right: 0px; ">
+&lt;span style=" font-weight:600;">Function&lt;/span>
+&lt;/p>
+&lt;p style="margin-left: 30px; margin-right: 0px; ">
+Changes routed wires and vias into airwires.&lt;br />Changes the display of polygons to &amp;#8220;outlines&amp;#8221;.
+&lt;/p></description></item><item><title>Eagle CAD로 작업한 PCB에 이미지 파일 넣기</title><link>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EC%9E%91%EC%97%85%ED%95%9C-pcb%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%84%A3%EA%B8%B0/</link><pubDate>Mon, 18 Jun 2012 11:12:14 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad%EB%A1%9C-%EC%9E%91%EC%97%85%ED%95%9C-pcb%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%84%A3%EA%B8%B0/</guid><description>
+&lt;p>Eagle CAD로 PCB작업을 하다보면 회사 로고 같은 이미지를 PCB에 넣을 때가 있다.&lt;/p>
+&lt;p>방법은 다음과 같다.&lt;/p>
+&lt;p>1. 원하는 그림을 그림판에서 불러와서 단색 BMP로 저장을 한다.&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>새로 프로젝트를 만들고, 보드 파일을 연후에 , File &amp;gt; Run &amp;gt; “import-bmp.ulp”을 실행한다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>윈도우가 하나 뜨면 OK버튼을 누르고, BMP 파일을 불러온다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>단색 BMP로 저장을 했기 때문에 다음과 같이 사용할 색깔이 2가지 색으로 나온다.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>   검적색으로 된 부분만 필요하므로 검정색만 선택을 한다.&lt;/p>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.137C073E4FDF03610C6CBD.png" class="aligncenter" width="356" height="166" filename="eagle_bmp_1.png" filemime="image/jpeg" style="""" />
+&lt;/p></description></item><item><title>Eagle CAD 3D 모델 만들기</title><link>https://openmicrolab.com/eagle-cad-3d-%EB%AA%A8%EB%8D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Wed, 25 Apr 2012 04:20:42 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad-3d-%EB%AA%A8%EB%8D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>
+&lt;p>Eagle CAD에는 많은 ULP(User Language Program)이 존재한다. 일종의 C-like 프로그램으로 Eagle CAD의 데이터를 가지고 어떤 작업을 할 수 있게 해준다. 예를 들면 BOM를 뽑아주는 ULP 등…&lt;/p>
+&lt;p>Eagle 홈페이지에 사용자가 자신이 작업한 ULP를 올릴 수 도 있다. &lt;/p>
+&lt;p>&lt;a href="http://www.cadsoftusa.com/downloads/ulps?language=en">http://www.cadsoftusa.com/downloads/ulps?language=en&lt;/a>&lt;/p>
+&lt;p>스위스의 &lt;a href="http://eagleup.wordpress.com/about/" target="_blank" class="tx-link">Jerome Lamy&lt;/a> 라는 엔지니어는  Eagle CAD에서 작업한 PCB를 3D로 모델링해 주는 ULP를 만들었다.&lt;/p>
+&lt;p>이것을 하기위해서는 다음과 같은 s/w가 필요하다.&lt;/p>
+&lt;ul style="list-style-type: disc; ">
+&lt;li>
+Eagle CAD : 당연히 이게 필요하고&amp;#8230;.
+&lt;/li>
+&lt;li>
+Google Sketchup:&amp;nbsp;&lt;a href="http://sketchup.google.com/intl/en/download/">http://sketchup.google.com/intl/en/download/&lt;/a>
+&lt;/li>
+&lt;li>
+ImageMagic:&amp;nbsp;&lt;a href="http://www.imagemagick.org/script/index.php">http://www.imagemagick.org/script/index.php&lt;/a>&amp;nbsp;여기에서 Binary Releases에서 OS에 맞는 것을 설치
+&lt;/li>
+&lt;li>
+Eagleup ULP:&amp;nbsp;&lt;a href="https://sites.google.com/site/eagleupwarehouse/eagleUp4.3.zip?attredirects=0&amp;d=1">https://sites.google.com/site/eagleupwarehouse/eagleUp4.3.zip?attredirects=0&amp;d=1&lt;/a>&amp;nbsp;
+&lt;/li>
+&lt;/ul>
+&lt;div>
+위 s/w를 다운로드하고 인스톨한다.
+&lt;/div>
+&lt;div>
+Eagleup ULP 압축 파일을 풀면 아래 그림의 폴더와 같다.
+&lt;/div>
+&lt;div>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.185C1A344F977564062E55.PNG" class="aligncenter" width="173" height="138" filename="eagleup.PNG" filemime="image/jpeg" style="""" />
+&lt;/p></description></item><item><title>DIP TRACE – PCB 디자인 툴</title><link>https://openmicrolab.com/dip-trace-pcb-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%88%B4/</link><pubDate>Wed, 25 Apr 2012 03:27:37 +0000</pubDate><guid>https://openmicrolab.com/dip-trace-pcb-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%88%B4/</guid><description>
+&lt;p style="text-align: center; clear: none; float: none; ">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile2.uf.1451B9344F97660C11B27D.PNG" class="aligncenter" width="683" height="514" filename="diptrace.PNG" filemime="image/jpeg" style="""" />
+&lt;/p>
+&lt;p>Open hardware 분야에서 &lt;a href="http://liketheocean.tistory.com/199" target="_blank" class="tx-link">Eagle CAD&lt;/a>가 가장 많이 사용이 되는 것 같다. &lt;/p>
+&lt;p>이런 툴들이 상용 버젼도 있지만 Hobbist 나 학생 그리고 비상어업적인 용도를 위해서는 훨씬 싼 가격으로 제품을 공급을 한다.&lt;/p>
+&lt;p>물론 약간의 기능의 제한이 있지만 무료버젼도 제공을 한다. 사실 무료버젼이라도 PCB가 복잡하지 않으면 웬만한 PCB 디자인은 가능하다. 그리고 Windows 버젼 뿐 아니라 당연히 MAC 버젼도 제공을 한다.&lt;/p>
+&lt;p>&lt;a href="http://www.diptrace.com/index.php?en=1" target="_blank" class="tx-link">DIP TRACE&lt;/a> 역시 Open hardware 분야서 사용되는 PCB 디자인 툴이다.&lt;/p></description></item><item><title>Eagle CAD</title><link>https://openmicrolab.com/eagle-cad/</link><pubDate>Thu, 22 Mar 2012 08:33:31 +0000</pubDate><guid>https://openmicrolab.com/eagle-cad/</guid><description>
+&lt;p>Open Hardware를 위해 &lt;a title="[http://www.cadsoftusa.com/]로 이동합니다." href="http://www.cadsoftusa.com/" target="_blank">Eagel CAD&lt;/a>를 많이 사용을 하지만 정작 사용법에 대한 한글 안내는 많지 않다.&lt;br>
+유일한 것이 &lt;a href="http://nohau.com.ne.kr/eagle.htm">http://nohau.com.ne.kr/eagle.htm&lt;/a> 의 링크에 있는 내용이다.&lt;br>
+이 링크는 일본 자료를 번역한 것 같은데, 실제 툴이라는 것이 각각의 기능에 대한 알기보다는 실제로 자기가 사용을 해가면서 왜 기능이 필요한 가를 터득하는 것이 중요하다. 툴의 모든 기능이 다 필요로 하지는 않으니까…&lt;br>
+이 링크가 별로 마음에 안드는 것은 웹사이트의 모든 키를 막아놔서 copy가 안되는데, Evernote같은 툴로 페이지를 스크랩하는 것은 가능하다. ^^*&lt;/p></description></item><item><title>Footprint를 살짝 변경함으로 생산의 에러를 줄이는 방법</title><link>https://openmicrolab.com/footprint%EB%A5%BC-%EC%82%B4%EC%A7%9D-%EB%B3%80%EA%B2%BD%ED%95%A8%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%82%B0%EC%9D%98-%EC%97%90%EB%9F%AC%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95/</link><pubDate>Wed, 23 Nov 2011 11:03:31 +0000</pubDate><guid>https://openmicrolab.com/footprint%EB%A5%BC-%EC%82%B4%EC%A7%9D-%EB%B3%80%EA%B2%BD%ED%95%A8%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%82%B0%EC%9D%98-%EC%97%90%EB%9F%AC%EB%A5%BC-%EC%A4%84%EC%9D%B4%EB%8A%94-%EB%B0%A9%EB%B2%95/</guid><description>
+&lt;p>핀헤더를 PCB보드에 직각으로 제대로 솔더링하기 위해서 PCB footprint를 변경하는 아이디어&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.133175404ECCD22E15A1F6.jpg" class="aligncenter" width="500" height="97" alt="" filename="PCB_Footprint_existing.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="TEXT-ALIGN: center; MARGIN: 0px">
+기존의 라이브러리
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.143175404ECCD22E16DED8.jpg" class="aligncenter" width="500" height="173" alt="" filename="PCB_Footprint_Modified.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;DIV style="TEXT-ALIGN: center">
+화살표 방향으로 센터를 옮긴 라이브러리&lt;/p>
+&lt;p>
+&lt;/DIV>&lt;br />
+&lt;pre>&lt;code>&amp;lt;DIV style=&amp;quot;TEXT-ALIGN: left&amp;quot;&amp;gt;
+양방향으로 조금 벌어진 구멍때문에 핀헤더를 지지하게 되어, PCB 보드에 핀헤더가 직각으로 장착이 된다.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;
+관련 자료: &amp;lt;A href=&amp;quot;http://www.sparkfun.com/tutorials/114&amp;quot;&amp;gt;http://www.sparkfun.com/tutorials/114&amp;lt;/A&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/DIV&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;DIV style=&amp;quot;TEXT-ALIGN: left&amp;quot;&amp;gt;
+&amp;lt;br /&amp;gt; SparkFun의 EagleCAD Footprint 라이브러리 : &amp;lt;A href=&amp;quot;http://www.opencircuits.com/SFE_Footprint_Library_Eagle&amp;quot;&amp;gt;http://www.opencircuits.com/SFE_Footprint_Library_Eagle&amp;lt;/A&amp;gt;
+&amp;lt;/DIV&amp;gt;
+&amp;lt;/p&amp;gt;
+&lt;/code>&lt;/pre></description></item></channel></rss>

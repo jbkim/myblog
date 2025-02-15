@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>태양광 on OpenMicroLab</title><link>https://openmicrolab.com/tags/%ED%83%9C%EC%96%91%EA%B4%91/</link><description>Recent content in 태양광 on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 10 Sep 2019 04:03:00 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%ED%83%9C%EC%96%91%EA%B4%91/index.xml" rel="self" type="application/rss+xml"/><item><title>태양광 충전</title><link>https://openmicrolab.com/%ED%83%9C%EC%96%91%EA%B4%91-%EC%B6%A9%EC%A0%84/</link><pubDate>Tue, 10 Sep 2019 04:03:00 +0000</pubDate><guid>https://openmicrolab.com/%ED%83%9C%EC%96%91%EA%B4%91-%EC%B6%A9%EC%A0%84/</guid><description>
+&lt;h3 id="태양광-패널">태양광 패널&lt;/h3>
+&lt;p>태양광 패널에서 생성된 전력을 충전회로를 통해 밧데리에 충전을 한다. 일반적으로 태양광 패널은 6V, 12V이다. 관련한 솔루션을 찾아보니 한 3가지 정도가 나온다.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://wiki.seeedstudio.com/Solar_Charger_Shield_V2.2/" target="_blank" rel="noopener">SeeedStudio 자료&lt;/a> : CN3065 사용&lt;/li>
+&lt;li>&lt;a href="https://www.cooking-hacks.com/documentation/tutorials/arduino-solar/" target="_blank" rel="noopener">Cooking-Hack 자료&lt;/a>: 듀얼 입력 처리. MAX1551 사용&lt;/li>
+&lt;li>&lt;a href="https://learn.adafruit.com/usb-dc-and-solar-lipoly-charger?view=all" target="_blank" rel="noopener">Adafruit 자료&lt;/a>: MCP73871 사용. 태양광 충전시 Max Power Point Tracker (MPPT) 까지 설명이 되어 있어서 읽어 보면 좋음.&lt;/li>
+&lt;/ul>
+&lt;h3 id="dual-power-입력의-처리">Dual Power 입력의 처리&lt;/h3>
+&lt;div class="page" title="Page 8">
+&lt;div class="layoutArea">
+&lt;div class="column">
+&lt;p>
+&lt;strong>MAX1551&lt;/strong>같은 칩을 사용하거나. 다음과 같이 처리하면 첫번째 파워가 연결이 됐을 경우 2번째 파워를 통한 입력을 막을 수 있다.
+&lt;/p></description></item></channel></rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Twitter on OpenMicroLab</title><link>https://openmicrolab.com/tags/twitter/</link><description>Recent content in Twitter on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 04 Nov 2011 11:18:34 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/twitter/index.xml" rel="self" type="application/rss+xml"/><item><title>STM8S-DISCOVERY 보드와 WIZ820io의 연결</title><link>https://openmicrolab.com/stm8s-discovery-%EB%B3%B4%EB%93%9C%EC%99%80-wiz820io%EC%9D%98-%EC%97%B0%EA%B2%B0/</link><pubDate>Fri, 04 Nov 2011 11:18:34 +0000</pubDate><guid>https://openmicrolab.com/stm8s-discovery-%EB%B3%B4%EB%93%9C%EC%99%80-wiz820io%EC%9D%98-%EC%97%B0%EA%B2%B0/</guid><description>
+&lt;p>ST마이크로의 8비트 MCU EVB인 STM8S-Discovery 보드에 Wiznet의 WIZ820io를 SPI로 연결하여 테스트를 해보았다.&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;img loading="lazy" class="aligncenter" src="https://openmicrolab.com/images/1/cfile2.uf.193F25424EB3C8CB2DBE49.jpg" alt="" width="413" height="298" />
+&lt;/p>
+&lt;p>STM8S-DISCOVERY 관련자료 : &lt;a href="http://www.st.com/internet/evalboard/product/247087.jsp">http://www.st.com/internet/evalboard/product/247087.jsp&lt;/a>&lt;br>
+STM8S-DISCOVERY보드의 메뉴얼;&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;a class="aligncenter" href="https://openmicrolab.com/images/1/cfile7.uf.185721394EB3C4731FDE54.pdf">cfile7.uf.185721394EB3C4731FDE54.pdf&lt;/a>WIZ820io 관련 자료 : &lt;a href="http://www.wiznet.co.kr/wiz820io">http://www.wiznet.co.kr/wiz820io&lt;/a>
+&lt;/p>
+&lt;p>&lt;strong>1. 하드웨어 연결&lt;/strong>&lt;br>
+SPI 신호들은 CN1, CN2에 나와 있는 SPI 신호에 연결하고, nSS, nINT, nRESET, PWDN 신호들은 각각 STM8S의 GPIOs(PA4, PA5, PA3 and PA6)에 연결이 된다.&lt;/p>
+&lt;p style="margin: 0px;">
+&lt;img loading="lazy" class="aligncenter" src="https://openmicrolab.com/images/1/cfile25.uf.170ABB3C4EB3C578357278.png" alt="" width="449" height="357" />
+&lt;/p>
+&lt;p>**2. Firmware&lt;br>
+** 컴파일러는 &lt;a title="[http://www.cosmic-software.com/]로 이동합니다." href="http://www.cosmic-software.com/" target="_blank" rel="noopener noreferrer">Cosmic&lt;/a>사의 &lt;a title="[http://www.cosmic-software.com/stm8.php]로 이동합니다." href="http://www.cosmic-software.com/stm8.php" target="_blank" rel="noopener noreferrer">CXSTM8 compiler&lt;/a>와 ST 홈페이지에서 다운로드 받을 수 있는 STVD를 사용한다. CXSTM8 compiler는 등록을 하면 일정기간 사용이 가능하다.&lt;/p></description></item><item><title>임베디드보드에서 트위터하기 2 – 아두이노를 이용한 트위터</title><link>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0-2-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C/</link><pubDate>Fri, 16 Sep 2011 06:35:43 +0000</pubDate><guid>https://openmicrolab.com/%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-%ED%8A%B8%EC%9C%84%ED%84%B0%ED%95%98%EA%B8%B0-2-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C/</guid><description>
+&lt;p>이전에 올린 &lt;A title="[ http://liketheocean.tistory.com/150]로 이동합니다." href="http://liketheocean.tistory.com/150" target=_blank>&lt;A title="[ http://liketheocean.tistory.com/150]로 이동합니다." href="http://liketheocean.tistory.com/150" target=_blank>임베디드보드에서 트위터&lt;/A>&lt;A title="[ http://liketheocean.tistory.com/150]로 이동합니다." href="http://liketheocean.tistory.com/150" target=_blank>하기&lt;/A>의 2번째 버젼으로 아두이노를 이용해서 트위터하는 방법에 대한 분석자료입니다.&lt;br>
+관련 자료: &lt;a href="http://www.arduino.cc/playground/Code/TwitterLibrary">http://www.arduino.cc/playground/Code/TwitterLibrary&lt;/a>&lt;br>
+역시 proxy 사용해서 구현을 하고있는데 이전의 &lt;A title="[http://www.supertweet.net/]로 이동합니다." href="http://www.supertweet.net/" target=_blank>Supertweet.net&lt;/A> 보다는 간단한 것 같지만, 테스트를 해보니 단점은 같은 내용의 메시지를 연속해서 보내면 에러가 난다. 아마도 스팸성 트윗을 걸러내기 위한 조치 같네요.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;A title="[http://arduino-tweet.appspot.com/]로 이동합니다." href="http://arduino-tweet.appspot.com/" target=_blank>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.172B51414E72EB421A9E6C.PNG" class="aligncenter" width="624" height="139" alt="" filename="twitter_arduino.PNG" filemime="image/jpeg" />&lt;/A>
+&lt;/P>먼저
+&lt;p>&lt;a href="http://arduino-tweet.appspot.com/">http://arduino-tweet.appspot.com/&lt;/a> 에 접속을 해서 사용하는 트위터 아이디의 토큰을 받는다.&lt;br>
+이 토큰은 아래 소스에서 사용이 된다.&lt;/p></description></item></channel></rss>

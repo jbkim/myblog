@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eagle2fritzing on OpenMicroLab</title><link>https://openmicrolab.com/tags/eagle2fritzing/</link><description>Recent content in Eagle2fritzing on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 22 Jan 2018 05:10:29 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/eagle2fritzing/index.xml" rel="self" type="application/rss+xml"/><item><title>EAGLE 파일을 Fritzing 파일로 변환하기</title><link>https://openmicrolab.com/eagle-%ED%8C%8C%EC%9D%BC%EC%9D%84-fritzing-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 22 Jan 2018 05:10:29 +0000</pubDate><guid>https://openmicrolab.com/eagle-%ED%8C%8C%EC%9D%BC%EC%9D%84-fritzing-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>####&lt;img loading="lazy" class="alignnone wp-image-4197" src="https://res.cloudinary.com/openmicrolab/image/upload/v1516597806/eagle2fritzing_y1kj1g.png" width="690" height="278" />&lt;/p>
+&lt;h4 id="1-아래-repo를-깃헙에서-클론한다">1. 아래 repo를 깃헙에서 클론한다.&lt;/h4>
+&lt;li style="font-weight: 400;">
+&lt;span style="font-weight: 400;">Fritzing&lt;/span>
+&lt;/li>
+&lt;blockquote>
+&lt;p>&lt;span style="font-weight: 400;">clone &lt;/span>&lt;a href="https://github.com/fritzing/fritzing-app">&lt;span style="font-weight: 400;">https://github.com/fritzing/fritzing-app&lt;/span>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>Fritzing parts&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;a href="https://github.com/fritzing/fritzing-parts" target="_blank" rel="noopener noreferrer">&lt;a href="https://github.com/fritzing/fritzing-parts">https://github.com/fritzing/fritzing-parts&lt;/a>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;li style="font-weight: 400;">
+&lt;span style="font-weight: 400;">eagle2fritzing &lt;/span>
+&lt;/li>
+&lt;blockquote>
+&lt;p>&lt;span style="font-weight: 400;">clone &lt;/span>&lt;a href="https://github.com/adafruit/eagle2fritzing">&lt;span style="font-weight: 400;">https://github.com/adafruit/eagle2fritzing&lt;/span>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>font download &amp;amp; install&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;a href="http://fritzing.org/fritzings-graphic-standards/download-fonts-and-templates">http://fritzing.org/fritzings-graphic-standards/download-fonts-and-templates&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;h4 id="2eagle2fritzing의-brd2svg-빌드">2. eagle2fritzing의 brd2svg 빌드&lt;/h4>
+&lt;ul>
+&lt;li>빌드시 xcode 9.2 가 필요하며, qt를 설치후 PATH 설정해야 한다.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>brew install qt&lt;br>
+cd eagle2fritzing/brd2svg&lt;br>
+qmake -spec macx-g++ brd2svg.pro&lt;br>
+make&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>make를 하면 brd2svg가 빌드가 되는데,&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;span style="font-weight: 400;">clang: error: linker command failed with exit code 1 (use -v to see invocation)&lt;/span>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gmail on OpenMicroLab</title><link>https://openmicrolab.com/tags/gmail/</link><description>Recent content in Gmail on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 01 Sep 2012 13:41:39 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/gmail/index.xml" rel="self" type="application/rss+xml"/><item><title>Gmail의 메일을 확인해 주는 파이썬 스크립트</title><link>https://openmicrolab.com/gmail%EC%9D%98-%EB%A9%94%EC%9D%BC%EC%9D%84-%ED%99%95%EC%9D%B8%ED%95%B4-%EC%A3%BC%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</link><pubDate>Sat, 01 Sep 2012 13:41:39 +0000</pubDate><guid>https://openmicrolab.com/gmail%EC%9D%98-%EB%A9%94%EC%9D%BC%EC%9D%84-%ED%99%95%EC%9D%B8%ED%95%B4-%EC%A3%BC%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</guid><description>
+&lt;p>Gmail 계정에 새로운 메일이 있는지 확인해 주는 파이썬 스크립트이다.&lt;/p>
+&lt;p>Feedpaeser라이브러리가 필요하다. &lt;a href="http://code.google.com/p/feedparser/" target="_blank" class="tx-link">&lt;a href="http://code.google.com/p/feedparser/">http://code.google.com/p/feedparser/&lt;/a>&lt;/a>&lt;/p>
+&lt;p>파이썬에서 시리얼을 쓰러면 Pyserial도 필요하다. &lt;a href="http://pyserial.sourceforge.net/" target="_blank" class="tx-link">&lt;a href="http://pyserial.sourceforge.net/">http://pyserial.sourceforge.net/&lt;/a>&lt;/a>&lt;/p>
+&lt;pre style="margin: 20px; padding: 10px; border: 1px solid rgb(150, 150, 150); font: inherit; vertical-align: baseline; background-color: rgba(240, 240, 240, 0.898438); overflow: auto; color: rgb(50, 50, 50); ">&lt;code style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; font-family: Monaco, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace; ">import serial, sys, feedparser
+#Settings - Change these to match your account details
+USERNAME="username@gmail.com"
+PASSWORD="yourpassword"
+PROTO="https://"
+SERVER="mail.google.com"
+PATH="/gmail/feed/atom"
+SERIALPORT = "/dev/tty.usbserial-FTDK0P3M" # Change this to your serial port!
+# Set up serial port
+try:
+ser = serial.Serial(SERIALPORT, 9600)
+except serial.SerialException:
+sys.exit()
+newmails = int(feedparser.parse(
+PROTO + USERNAME + ":" + PASSWORD + "@" + SERVER + PATH
+)["feed"]["fullcount"])
+# Output data to serial port
+if newmails &amp;gt; 0: ser.write('M')
+else: ser.write('N')
+# Close serial port
+ser.close()&lt;/code>&lt;/pre>
+&lt;p>이 코드를 일정한 시간 간격 주기적으로 실행을 하려면, Mac OS X에서는 Launchd가 필요.&lt;/p></description></item><item><title>구글메일(Gmail)에 실행파일 첨부하기</title><link>https://openmicrolab.com/%EA%B5%AC%EA%B8%80%EB%A9%94%EC%9D%BCgmil%EC%97%90-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EC%B2%A8%EB%B6%80%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 31 May 2010 06:33:55 +0000</pubDate><guid>https://openmicrolab.com/%EA%B5%AC%EA%B8%80%EB%A9%94%EC%9D%BCgmil%EC%97%90-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EC%B2%A8%EB%B6%80%ED%95%98%EA%B8%B0/</guid><description>
+&lt;p>구글 메일은 용량도 크고 편하기는 한데, 실행파일 첨부시 전송이 안된다. 물론 Zip으로 압축을 해도 마찬가지이다.&lt;br>
+방법은 rar로 압축을 해서 첨부를 하면 됨, 의외로 간단하지 않은가?&lt;/p>
+&lt;p>WinRar의 공식 웹사이트는 &lt;a title="[http://www.rarlab.com/]로 이동합니다." target="_blank" href="http://www.rarlab.com/">&lt;a href="http://www.rarlab.com/">http://www.rarlab.com/&lt;/a>&lt;/a>   이며, 구체적인 사용방법은 &lt;a href="http://program.iamvip.net/37">http://program.iamvip.net/37&lt;/a> 참고…&lt;/p></description></item></channel></rss>

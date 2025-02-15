@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thought on OpenMicroLab</title><link>https://openmicrolab.com/categories/thought/</link><description>Recent content in Thought on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 02 Dec 2017 03:13:57 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/categories/thought/index.xml" rel="self" type="application/rss+xml"/><item><title>IoT 킬러 앱?</title><link>https://openmicrolab.com/iot-%ED%82%AC%EB%9F%AC-%EC%95%B1/</link><pubDate>Sat, 02 Dec 2017 03:13:57 +0000</pubDate><guid>https://openmicrolab.com/iot-%ED%82%AC%EB%9F%AC-%EC%95%B1/</guid><description>
+&lt;p>IoT 분야는 한가지 킬러앱이  존재하지 않는다. 즉 특정한 고객의 특정한 분야의 특정한 문제를 해결해야 하며, 버티컬 마켓이다. 따라서&lt;/p>
+&lt;blockquote>
+&lt;p>사용자의 니즈를 확실히 이해해서 가치를 제공해야 하며&lt;/p>
+&lt;p>IoT를 이용하여 **“실시간 데이터를 수집, 처리해서 better, faster, cheaper 한 방법”**으로 문제를 해결해야 한다.&lt;/p>&lt;/blockquote>
+&lt;p>참고: &lt;a href="https://www.iotcentral.io/blog/why-there-s-no-killer-app-for-iot" target="_blank" rel="noopener noreferrer">&lt;a href="https://www.iotcentral.io/blog/why-there-s-no-killer-app-for-iot">https://www.iotcentral.io/blog/why-there-s-no-killer-app-for-iot&lt;/a>&lt;/a>&lt;/p></description></item><item><title>하드웨어 스타트업에서 제품 개발시 유의 사항</title><link>https://openmicrolab.com/%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85%EC%97%90%EC%84%9C-%EC%A0%9C%ED%92%88-%EA%B0%9C%EB%B0%9C%EC%8B%9C-%EC%9C%A0%EC%9D%98-%EC%82%AC%ED%95%AD/</link><pubDate>Sat, 04 Mar 2017 08:09:03 +0000</pubDate><guid>https://openmicrolab.com/%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85%EC%97%90%EC%84%9C-%EC%A0%9C%ED%92%88-%EA%B0%9C%EB%B0%9C%EC%8B%9C-%EC%9C%A0%EC%9D%98-%EC%82%AC%ED%95%AD/</guid><description>
+&lt;img loading="lazy" class="wp-image-3921 aligncenter" src="http://res.cloudinary.com/openmicrolab/image/upload/v1488613741/TIKO_wicrmf.jpg" width="524" height="393" />
+&lt;p>몇년전 킥스타터에서 펀딩에 성공한 프로젝트인 &lt;a href="https://www.kickstarter.com/projects/tiko3d/tiko-the-unibody-3d-printer/posts/1809879" target="_blank">TIKO 3D프린터가 회사를 닫는다고 공지&lt;/a>를 했다. 제품은 겨우 4천대 정도 미주지역에 배송을 했고, 전세계에 배송할 수만대분을 포기한 상태이다. 기술적인 혁신을 통해 비용을 줄여서 매우 값싼 3D 프린터를 개발한다고 되어 있었는데, 내용을 보니 기술적으로 해결하지 못한 부분도 있고, 프로토타입이 검증이 되기 전에 펀딩금액으로 이미 부품들을 주문해 버리기도 했으니, 어쩌면 당연한 결과이다.&lt;/p>
+&lt;h3 id="하드웨어-스타트업에서-제품-개발시-유의-사항">하드웨어 스타트업에서 제품 개발시 유의 사항&lt;/h3>
+&lt;h4 id="고객군을-세분화하라">고객군을 세분화하라.&lt;/h4>
+&lt;blockquote>
+&lt;p>Look for a sub-group of users in your target market and focus on them&lt;/p></description></item><item><title>오픈 소스 하드웨어를 위해 정부가 할 일?</title><link>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%A5%BC-%EC%9C%84%ED%95%B4-%EC%A0%95%EB%B6%80%EA%B0%80-%ED%95%A0-%EC%9D%BC/</link><pubDate>Wed, 29 Jan 2014 06:09:32 +0000</pubDate><guid>https://openmicrolab.com/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EB%A5%BC-%EC%9C%84%ED%95%B4-%EC%A0%95%EB%B6%80%EA%B0%80-%ED%95%A0-%EC%9D%BC/</guid><description>
+&lt;h3 id="오픈-소스-하드웨어">오픈 소스 하드웨어&lt;/h3>
+&lt;p>업무때문에 2010년도에 아두이노팀을 만나고 오픈소스 하드웨어에 관심을 갖게되어서 뉴욕에서 열린 오픈하드웨어 서밋에도 참석을 하고, 메이커페어도 참석을 했다. 이후에 아두이노 IDE가 다국어 버젼을 지원을 할때, 한국어 번역도 하고(덕분에 지금도 버젼이 바뀌면 메일이 온다…) &lt;a href="http://openmicrolab.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%A0%95%EC%9D%98-oshw-definition-1-0/" target="_blank">OSHW definition 도 번역&lt;/a>을 했다.  최근 아두이노의 영향때문에 크라우드 펀딩 사이트인 &lt;a href="https://www.kickstarter.com/" target="_blank">Kickstarter.com&lt;/a>에도 아두이노로 검색을 하면 161여개의 프로젝트가 뜬다.&lt;/p>
+&lt;p style="text-align: center;">
+&lt;a href="https://openmicrolab.com/images/2014/01/Kickstarter_Arduino.png">&lt;img loading="lazy" class=" wp-image-2786 aligncenter" alt="Kickstarter_Arduino" src="https://openmicrolab.com/images/2014/01/Kickstarter_Arduino.png" width="595" height="583" srcset="https://openmicrolab.com/images/2014/01/Kickstarter_Arduino.png 744w, https://openmicrolab.com/images/2014/01/Kickstarter_Arduino-300x293.png 300w" sizes="(max-width: 595px) 100vw, 595px" />&lt;/a>
+&lt;/p>
+&lt;h3 id="ict-diy">ICT D.I.Y&lt;/h3>
+&lt;p>국내에도 오픈소스 하드웨어에 대한 관심아 졌는데 특히 정부에서도 이 분야에 관심을 가지고 있는듯 하다. &lt;a href="http://www.msip.go.kr/www/brd/m_211/view.do?seq=878&amp;srchFr=&amp;srchTo=&amp;srchWord=%EC%B0%BD%EC%A1%B0%EA%B2%BD%EC%A0%9C&amp;srchTp=1&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=14" target="_blank">미래창조과학부의 보도 자료&lt;/a>에 의하면 2017년까지 ICT R&amp;amp;D예산 총 8.5조를 투자하는데 이중 15대 미래서비스 중 하나로 들어가 있는 것이 ICT D.I.Y서비스 이다. 물론 IoT플랫폼도 오픈 소스 하드웨어와 관련이 있다. 그런데 몇가지 궁금한 점이 있다.&lt;/p></description></item><item><title>[책] 나는 왜 이일을 하는가?</title><link>https://openmicrolab.com/%EC%B1%85-%EB%82%98%EB%8A%94-%EC%99%9C-%EC%9D%B4%EC%9D%BC%EC%9D%84-%ED%95%98%EB%8A%94%EA%B0%80/</link><pubDate>Wed, 29 May 2013 02:19:56 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EB%82%98%EB%8A%94-%EC%99%9C-%EC%9D%B4%EC%9D%BC%EC%9D%84-%ED%95%98%EB%8A%94%EA%B0%80/</guid><description>
+&lt;!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+&lt;div>
+&lt;!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->&lt;/p>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;a href="https://openmicrolab.com/images/2013/05/book2.png">&lt;img loading="lazy" class="alignleft size-full wp-image-2390" alt="start with why" src="https://openmicrolab.com/images/2013/05/book2.png" width="197" height="291" />&lt;/a>
+&lt;/div>
+&lt;div>
+몇 주전 금요일 퇴근때 사서 주말에 다 읽은 책&amp;#8230; &lt;strong>사이먼 사이넥(Simon Sinek)&lt;/strong>이 쓴 &amp;#8220;&lt;strong>Start with Why?&lt;/strong>&amp;#8220;의 번역판이다. 저자는 비즈니스에서 성공하는 기업 및 사람들을 관찰하고 그들의 공통점을 찾아내서 이야기를 풀어간다.
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;ul>
+&lt;li>
+라이트형제 vs 새뮤얼 피어폰 랭리
+&lt;/li>
+&lt;li>
+스티브 잡스 &amp; 스티브 워즈니악
+&lt;/li>
+&lt;li>
+마틴 루터 킹 목사
+&lt;/li>
+&lt;li>
+빌게이츠 vs 스티브 발머
+&lt;/li>
+&lt;li>
+애플, 할리데이비슨, 페라리, 사우스웨스트 항공
+&lt;/li>
+&lt;/ul>
+&lt;h4>
+1. 사람을 움직이는 법 &amp;#8211; 조정(manipulation) or 영감(inspiration)
+&lt;/h4>
+&lt;div>
+-. 조정: 가격인하, 프로모션(1+1,캐쉬백) 두려움, 열망(헬스클럽), 집단압박, 혁신의 트렌드
+&lt;/div>
+&lt;div>
+-. &lt;strong>조정으로는 단기간의 이익은 만들어 낼 수 는 있어도, 충성도(loyalty)를 만들어 낼 수 없다.&lt;/strong>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;h4>
+2. 골든 서클(Golden Circle)
+&lt;/h4>
+&lt;div>
+-. 영감의 기법: 내가 가진 상상력과 꿈을 다른 이들에게 전염시키는 것
+&lt;/div>
+&lt;p>
+-. &lt;strong>왜(Why) > 어떻게 (How) > 무엇을 (What)&lt;/strong> : 변연계 (신뢰, 충성심같은 감정을 담당하지만 언어를 처리하는 능력은 없다. 따라서 감정을 말로 표현하기가 힘든 이유)&lt;br /> -. 돈을 버는 것은 목적이 아니라 결과일 뿐이다.&lt;br /> -. &lt;strong>&amp;#8220;왜&amp;#8221;는 이유, 목적, 신념 같은 것. 회사의 존재 이유는 무엇인가? &lt;/strong>
+&lt;/p></description></item><item><title>[책] Walkie Talkie Europe</title><link>https://openmicrolab.com/%EC%B1%85-walkie-talkie-europe/</link><pubDate>Tue, 28 May 2013 08:01:20 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-walkie-talkie-europe/</guid><description>
+&lt;p>&lt;a href="https://openmicrolab.com/images/2013/05/book_1.png">&lt;img loading="lazy" class="size-full wp-image-2386 alignleft" alt="Walkie Talkie Europe" src="https://openmicrolab.com/images/2013/05/book_1.png" width="198" height="289" />&lt;/a>&lt;br>
+4명의 남자들이 쓴 여행기이다. 일반적인 해외 여행기는 여행지의 정보에 치중하고 어디가 먹고, 자고, 볼거리가 좋은지에 대한 소개인데 이 책은 그렇지 않다. 4명의 각기 다른 남자들이 각자의 삶의 주제를 가지고 여행지를 가서 느끼고 공부한 이야기 이다.&lt;br>
+그래서 인지 여행지의 사진 및 소개 보다는 그들이 보고 느끼고 고민한 내용으로 가득차 있다.&lt;br>
+하지만 4명의 이야기의 공통점은 어떻게 하면 보다 나은 세상, 공동체를 이룰 것인지가 공통점인것 같다.&lt;/p>
+&lt;p>나 또한 이들이 여행한 2010년 보다 한해 뒤인 2011년에 유럽 여행을 갔다 왔다. 이때에도 가능한 많은 사람들을 만나고 이야기를 나누고, 그들이 경험하는 것을 나도 경험하려고 노력했었다.&lt;br>
+많은 사람들을 만나면서 공통적으로 느낀 점은 이들은&lt;br>
+-. 생각이 참 자유롭고,&lt;br>
+-. 자기가 하고 싶은 일을 한다.&lt;br>
+라는 것이다. 대학을 졸업하고 바로 창업을 하는 사람을 여럿 보면서 다 똑같은 길을 가는 한국의 젊은이 들이 안타까웠다.&lt;/p></description></item><item><title>페이스북의 “The Hacker Way”</title><link>https://openmicrolab.com/%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%B6%81%EC%9D%98-the-hacker-way/</link><pubDate>Mon, 04 Jun 2012 05:14:03 +0000</pubDate><guid>https://openmicrolab.com/%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%B6%81%EC%9D%98-the-hacker-way/</guid><description>
+&lt;p>Facebook이 기업공개 전 올 2월 미래 주주들에게 보낸 편지에서 그는 ‘&lt;strong>해커 정신&lt;/strong>’을 강조했다. &lt;/p>
+&lt;p>&lt;strong>창의적인 방법으로 문제를 해결하고 빠른 의사결정에 대해 보상하는 문화를 말한다. &lt;/strong>&lt;/p>
+&lt;p>이를 위해 다섯 가지 경영방침도 내놨다. &lt;/p>
+&lt;p>▶가장 중요한 문제를 해결하는 데 집중하라 &lt;/p>
+&lt;p>▶더 많은 것을 만들고 배울 수 있도록 재빠르게 움직여라 &lt;/p>
+&lt;p>▶아무 위험도 지지 않는 게 가장 위험하다. 때로는 틀리더라도 담대하게 결정하라 &lt;/p>
+&lt;p>▶열린 세상이 더 나은 세상이다 &lt;/p>
+&lt;p>▶사회를 위한 가치를 만들어라.&lt;/p>
+&lt;p>출처: 중앙일보 경제연구소 &lt;a href="http://jeri.joins.com/culture/story_view.asp?tb_name=cover&amp;amp;Idx=324&amp;amp;list_page=1">http://jeri.joins.com/culture/story_view.asp?tb_name=cover&amp;amp;Idx=324&amp;amp;list_page=1&lt;/a>&lt;/p>
+&lt;p>&lt;strong>마크 주커버그가 투자자들에게 보낸 편지 &lt;a href="http://www.looah.com/article/view/738" target="_blank" class="tx-link">‘The Hacker Way’ 의 한글 번역본&lt;/a> &lt;/strong>&lt;/p></description></item><item><title>직장내 술 문화</title><link>https://openmicrolab.com/%EC%A7%81%EC%9E%A5%EB%82%B4-%EC%88%A0-%EB%AC%B8%ED%99%94/</link><pubDate>Mon, 04 Jun 2012 05:04:33 +0000</pubDate><guid>https://openmicrolab.com/%EC%A7%81%EC%9E%A5%EB%82%B4-%EC%88%A0-%EB%AC%B8%ED%99%94/</guid><description>
+&lt;/p>
+&lt;p>지난주 헬스장에서 본 조선일보 기사.&lt;/p>
+&lt;p>**[술에 너그러운 문화, 범죄 키우는 한국]**라는 특집 연재 기사가 있어서 스크랩.&lt;/p>
+&lt;p>술에 취해서 저지른 행동(범죄 포함)에 관대하다는 취지의 글이다. &lt;/p>
+&lt;p>개인적으로 직장에서의 회식자리는 술 마시는 사람들의 횡포가 좀 심하다는 생각이 든다.&lt;/p>
+&lt;p>그 비용으로 고급 식당에서 식사를 하는 게 더 낫다는 생각이 든다. 개인적으론 부담스러운 이국적인 식당에서 직원들 밥 사주면 개인들에게도 새로운 경험이 될 듯…&lt;/p>
+&lt;p>&lt;a href="http://news.chosun.com/site/data/html_dir/2012/06/02/2012060200052.html?news_Head2">http://news.chosun.com/site/data/html_dir/2012/06/02/2012060200052.html?news_Head2&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://news.chosun.com/site/data/html_dir/2012/06/04/2012060400158.html?news_topR">http://news.chosun.com/site/data/html_dir/2012/06/04/2012060400158.html?news_topR&lt;/a>&lt;/p>
+&lt;/p>
+&lt;p>&lt;strong>아래 글은 같이 실린 삼성의 이야기…. 삼성도 변하나?&lt;/strong>&lt;/p>
+&lt;/p>
+&lt;div id="img_pop0" class="left_img_2011" style="margin: 0px 20px 10px 0px; padding: 0px; float: left; display: inline; font-family: 굴림, Gulim, 돋움, Dotum, AppleGothic, sans-serif; font-size: 14px; line-height: 23px; text-align: left; -webkit-text-size-adjust: none; ">
+&lt;div id="player0" style="margin: 0px; padding: 0px; ">
+&lt;dl class="img_pop_div" style="margin: 0px; padding: 0px; list-style: none; width: 160px; ">
+&lt;div style="margin: 0px; padding: 0px; position: relative; ">
+&lt;img loading="lazy" id="artImg0" src="http://image.chosun.com/sitedata/image/201206/02/2012060200080_0.jpg" width="160" height="197" alt="" style="margin: 0px; padding: 0px; border: 1px solid rgb(213, 213, 213); vertical-align: top; " />&lt;/p></description></item><item><title>The Key To Differentiation</title><link>https://openmicrolab.com/the-key-to-differentiation/</link><pubDate>Wed, 28 Mar 2012 04:52:25 +0000</pubDate><guid>https://openmicrolab.com/the-key-to-differentiation/</guid><description>
+&lt;p>좋은 글이 있어서 발췌.&lt;/p>
+&lt;DIV style="BORDER-BOTTOM: #e7fdb5 1px solid; BORDER-LEFT: #e7fdb5 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #e7fdb5; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #e7fdb5 1px solid; BORDER-RIGHT: #e7fdb5 1px solid; PADDING-TOP: 10px" class=txc-textbox>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;U>&lt;STRONG>&lt;SPAN style="FONT-FAMILY: Georgia">The Key To Differentiation &lt;/SPAN>&lt;/STRONG>&lt;/U>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">by David Brock on March 25th, 2012&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">Differentiation is critical to sales.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">It sets us apart, enabling our customers to distinguish between alternatives.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp;&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">In the absence of differentiation, it becomes difficult to win?often the differentiator is the price.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">Differentiation is increasingly difficult.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">Products increasingly look the same.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">Any alternative the customer is considering will probably do the job.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">There may be small differences in features, functions, capabilities?but these are wiped out with the next new release of a product from our competition.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">Company reputation?it’s size, strength, position in the market, and other things may be differentiators.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">But in today’s world of buying, it may not be.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">When customers develop a short list of alternatives to consider, largely any alternative will satisfy them?so company reputation has probably been neutralized by this point.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">Don’t get me wrong, all the things we have thought of as differentiators in the past are important?strong, compelling products, quality, great company reputation, strong awareness and visibility.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">These are the things critical to get into consideration and to earn the right to be shortlisted.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">But if those are table stakes, where do we differentiate ourselves?&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">How do we avoid falling back on pricing as a differentiator?&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What we do is the ultimate differentiation!&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">Let me repeat with emphasis, What We Do is the ultimate differentiation!&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">It’s not what we say or what we claim?it’s what we do.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What we do is critical to differentiation and winning.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">How we engage the customer, how we work with the customer?whether challenging, facilitating their decision making processes, or proving ourselves trustworthy; it’s what we do that sets us apart.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What we do delivers on what we say or claim.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;/SPAN>&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What we do is the active demonstration of what we stand for.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What we do is the manifestation of our customer experience.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What we do puts substance behind all our marketing, all our positioning, all our claims and promises.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What we do creates our reputation?personally and as organization.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What we do has nothing to do with a sales or marketing program.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">It is not a strategic initiative.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">It’s composed of the little things.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">Showing up to a meeting on time?prepared.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">Being genuinely interested in customers and what they are trying to achieve, demonstrating that through thoughtful, perhaps provocative conversations.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">It’s delivering on our commitments?both before the sale and after the sale.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">We are constantly being evaluated and judged?by our customers, our peers, our managers, our community.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">In a world where differentiation is critical, where setting ourselves apart?distinguishing ourselves, our performance, out solutions, our companies?what we do is our differentiation.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What we do differentiates us, both positively and negatively.&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">If what we do doesn’t align with what we’ve said; if what we do is to fail to meet our commitments; if what we do doesn’t match with the expectation we have created; then we will lose.&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT color=#000000 size=2 face="맑은 고딕">&lt;/FONT>&lt;/SPAN>
+&lt;/P>
+&lt;P style="MARGIN: 0cm 0cm 10pt" >
+&lt;SPAN >&lt;FONT size=2>&lt;FONT color=#000000>&lt;FONT face="맑은 고딕">&lt;SPAN style="FONT-FAMILY: Georgia">What are you doing?&lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia; mso-spacerun: yes">&amp;nbsp; &lt;/SPAN>&lt;SPAN style="FONT-FAMILY: Georgia">Is it helping you or hurting you?&lt;/SPAN>&lt;/FONT>&lt;/FONT>&lt;/FONT>&lt;/SPAN>
+&lt;/P>&lt;/DIV></description></item><item><title>[책] 많아지면 달라진다</title><link>https://openmicrolab.com/%EC%B1%85-%EB%A7%8E%EC%95%84%EC%A7%80%EB%A9%B4-%EB%8B%AC%EB%9D%BC%EC%A7%84%EB%8B%A4/</link><pubDate>Mon, 12 Mar 2012 10:24:06 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EB%A7%8E%EC%95%84%EC%A7%80%EB%A9%B4-%EB%8B%AC%EB%9D%BC%EC%A7%84%EB%8B%A4/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile1.uf.195A8D364F5DCDF531578D.PNG" class="alignleft" width="186" height="254" alt="" filename="많아지면 달라진다.PNG" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>&lt;A title="[http://en.wikipedia.org/wiki/Clay\_Shirky]로 이동합니다." href="http://en.wikipedia.org/wiki/Clay\_Shirky" target=_blank>클레이 셔키&lt;/A> 교수의 번역서이다. 원서의 제목은 “Cognitive Surplus”, 우리말로 인지잉여인데, “많아지면 달라진다”라는 제목을 붙였다. 이 말은 물리학자인 Philip Anderson 이 한 말로 “More is different”.. &lt;A title="[http://www.tkm.kit.edu/downloads/TKM1\_2011\_more\_is\_different\_PWA.pdf]로 이동합니다." href="http://www.tkm.kit.edu/downloads/TKM1\_2011\_more\_is\_different\_PWA.pdf" target=_blank>관련 논문&lt;/A>&lt;/p>
+&lt;p>&lt;strong>Cognitive Surplus&lt;/strong>, “인지 잉여”라고 번역이 되는데 이는 사람들의 여가시간의 증대로 우리가 사용 가능한 시간 또는 리소스를 일컫는다. 전세계의 인지잉여를 합하면 약 1조의 시간이며, 이것은 위키피디아를 1만개 만들 수 있는 양이라고 한다.&lt;br>
+**&lt;br>
+구텐베르크 경제학 :** 이전은 막대한 투자비용과 전문가가 필요했지만 구텐베르크 이후의 경제학은 누구나 쉽게 생산자가 될 수 있는 시대. 예) 미디어&lt;/p></description></item><item><title>7인의 IT 북콘서트</title><link>https://openmicrolab.com/7%EC%9D%B8%EC%9D%98-it-%EB%B6%81%EC%BD%98%EC%84%9C%ED%8A%B8/</link><pubDate>Tue, 24 Jan 2012 09:40:36 +0000</pubDate><guid>https://openmicrolab.com/7%EC%9D%B8%EC%9D%98-it-%EB%B6%81%EC%BD%98%EC%84%9C%ED%8A%B8/</guid><description>
+&lt;p>1월 17일 저녁 7시에 광화문 KT 올레스퀘어에서 열렸던 “7인의 IT북콘서트”에 다녀 왔습니다.&lt;br>
+행사의 공지가 온라인에 떠서 신청을 했는데, 제가 신청을 하고 바로 다음날 매진이 됐던 인기있는 행사입니다.&lt;br>
+참가비는 1만원이고 7명의 저자의 책을 하나 선택해서 가질 수 있는데, 책값이 1만원이 넘으니 강연도 듣고 책도 건지니 개인적으로 많이 남는 장사입니다. 전 앞줄에 앉아서 마지막에 남은 책을 선착순으로 하다 더 얻어서 더 좋았습니다. ^^*&lt;/p>
+&lt;p>초반에 아이스브레이킹도 하고, 각 저자들의 발표는 15분씩 PT를 합니다. 방청객의 질문은 A4에 적어서 비행기를 날려서 선택된 질문자는 나머지 책 6권을 받을 수 있는 행운도 있습니다.&lt;br>
+ &lt;br>
+아래 내용은 행사 소개 내용입니다.&lt;br>
+“&lt;A title="[http://liketheocean.tistory.com/170]로 이동합니다." href="http://liketheocean.tistory.com/170" target=_blank>화난 원숭이들은 모두 어디로 갔을까&lt;/A>“는 이미 읽은 책이라서 전 큐레이션 책을 선택했습니다.&lt;/p></description></item><item><title>[책] 겸손 – 앤드류 머레이</title><link>https://openmicrolab.com/%EC%B1%85-%EA%B2%B8%EC%86%90-%EC%95%A4%EB%93%9C%EB%A5%98-%EB%A8%B8%EB%A0%88%EC%9D%B4/</link><pubDate>Tue, 24 Jan 2012 09:14:52 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EA%B2%B8%EC%86%90-%EC%95%A4%EB%93%9C%EB%A5%98-%EB%A8%B8%EB%A0%88%EC%9D%B4/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile26.uf.111289474F1E6FE5279FE0.PNG" class="aligncenter" width="278" height="333" alt="" filename="Humility.PNG" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="TEXT-ALIGN: left; MARGIN-LEFT: 4em">
+&lt;STRONG>예수님의 겸손&lt;br /> -. &lt;/STRONG>자신에 대해 전적으로 포기하는 삶&lt;br /> -. 아버지의 뜻에 전적으로 복종하고 전적으로 의존하는 삶&lt;br /> &lt;STRONG>&lt;br /> 겸손은? 예수님의 겸손을 닮기 위해 어떻게해야 할 까?&lt;br /> -.&amp;nbsp;&lt;/STRONG>겸손은 예의바른 성품정도의 것이 아니라, 죽음과 생명이 직결된, 지옥과 천국이 달린 문제이다. &lt;br /> -. 교만은 사탄으로 부터 온 것, 믿음 없음.&lt;br /> -. 겸손은 우리가 하나님께 드리거나 하나님께서 주시는 어떤 것이 아니라, 우리의 전적무익함을 인정하는 낮아짐이 &lt;br /> 다. 즉 하나님께서 그분의 능력을 나타내시도록 자기를 내려놓는 일&lt;br /> -. 따라서 우리가 깨달아야 할 것은 우리가 교만한 자임과 동시에&amp;nbsp;교만을 없애려는 우리 노력의 무력이다.&amp;nbsp;&lt;STRONG>&lt;br /> &lt;/STRONG>&lt;br /> &amp;nbsp;&lt;STRONG>물이 가장 낮은 곳으로 흘러가듯이 피조물이 자신을 낮추고 비우는 순간 하나님의 영광과 권능이 흘러들어 그 빈자리를 채우고 그들에게 복을 주신다.&lt;/p></description></item><item><title>[책]곡선이 이긴다</title><link>https://openmicrolab.com/%EC%B1%85%EA%B3%A1%EC%84%A0%EC%9D%B4-%EC%9D%B4%EA%B8%B4%EB%8B%A4/</link><pubDate>Sat, 10 Dec 2011 13:28:32 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85%EA%B3%A1%EC%84%A0%EC%9D%B4-%EC%9D%B4%EA%B8%B4%EB%8B%A4/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile7.uf.152DBA364EE5CEB704D0C9.jpg" class="alignleft" width="148" height="217" alt="" filename="l9788901119458.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>속도전, 효율, 성과주의, 인생최적화로 상징되는 키워드 ‘직선’에서 벗어나 ‘곡선’을 통해 새로운 행복 패러다임을 제시한다. 저자는 ‘무조건 느리게’가 아닌 인생을 사는 나만의 속도 회복하기, 나만의 길을 걷기, 실패해도 유연하게 다시 일어서기, 내일 행복할 것이 아니라 ‘지금’ 행복하기가 바로 곡선적 삶의 자세라고 말하며 삶의 가치를 재정비할 것을 제안한다. ‘직선들의 대한민국에서 곡선으로 사는 법’을 시작으로, 삶은 And의 향연이라는 것, 1%가 되기 위해 99%를 낭비하지 말 것, 인생은 주관식이라는 것, 남의 시선에서 벗어나고 속도의 경쟁에서 벗어나 밀도의 경쟁을 하는 것 등의 내용을 총 5개 파트로 나누어 들려주고 있다&lt;/p></description></item><item><title>[책] 시골의사 박경철의 자기혁명</title><link>https://openmicrolab.com/%EC%B1%85-%EC%8B%9C%EA%B3%A8%EC%9D%98%EC%82%AC-%EB%B0%95%EA%B2%BD%EC%B2%A0%EC%9D%98-%EC%9E%90%EA%B8%B0%ED%98%81%EB%AA%85/</link><pubDate>Sat, 10 Dec 2011 13:27:29 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EC%8B%9C%EA%B3%A8%EC%9D%98%EC%82%AC-%EB%B0%95%EA%B2%BD%EC%B2%A0%EC%9D%98-%EC%9E%90%EA%B8%B0%ED%98%81%EB%AA%85/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile10.uf.131B91334EE5CB990335B7.jpg" class="alignleft" width="162" height="213" alt="" filename="l9788901130460.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>자기개발서를 읽는 이유는 뻔한 내용임에도 일상에 메너리즘에 빠져있는 나에게 약간의 자극이 되는 것 같다. &lt;br>
+이 책에 자주 나오는 말중에 하나는 “좋은 습관을 만드려는 노력보다 나쁜 습관을 버려라”&lt;br>
+하지만 문제는 버리고 난 이후가 더 중요하다. 버리고 난 부분에 무엇을 채울 것인가?&lt;br>
+사실 이게 더 중요하다. 버리고 난 후에 좋은 것으로 채우지 못하면 매번 같은 것을 반복하는 자신을 바라보게 된다. -_-;;&lt;/p>
+&lt;p>**책속의 괜찮은 말들…&lt;br>
+** 자기 자신을 알기위해 노력하라 인간은 노력하는 한 방황한다.&lt;br>
+(Es irrt der Mensch, solange er strebt)&lt;/p></description></item><item><title>[책] 오프라인 비즈니스 혁명</title><link>https://openmicrolab.com/%EC%B1%85-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%ED%98%81%EB%AA%85/</link><pubDate>Sat, 10 Dec 2011 13:26:06 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%ED%98%81%EB%AA%85/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;STRONG>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.137E67464EE5C0D01F21A1.jpg" class="alignleft" width="148" height="218" alt="" filename="l9788950929695.jpg" filemime="image/jpeg" />&lt;/STRONG>
+&lt;/P>
+&lt;p>저자 정지훈은 미래 칼럼니스트로 활약중이며 ‘하이컨셉’이라는 닉네임으로 잘 알려진 파워블로거이기도 하다. 그는 다가올 미래에 대해 ‘그동안의 10년이 IT가 만든 디지털 혁명이었다면, 앞으로의 10년은 전통산업과 IT가 만나 비용 절감과 시공간 단축이 실현되는 제2의 산업혁명이 될 것’이라고 말했다. **  &lt;/p>&lt;/p>
+&lt;p>무엇이 제조와 유통의 혁신을 일으키는가&lt;br>
+가내수공업의 시대가 부활한다&lt;br>
+새롭게 탄생하는 유통산업과 광고, 마케팅의 미래&lt;br>
+미래의 웹 환경과 미래기업 경영의 원칙&lt;br>
+&lt;/STRONG>등의 4가지 큰제목을 가지고 다가올 미래에 대해 이야기하고 있다.&lt;/p>
+&lt;p>제조부문에서 기업이 아닌 개인의 등장(프로슈밍, DIY)하여 자신의 창작물을 온라인에서 쉽게 공유하는 시대.온라인에서는 개인의 경험과 실시간성, 판매가 아닌라 관계의 중요성이 부각.&lt;br>
+이를 촉진시키는 것이 3D 프린터 및 3D 모델링툴 및 Open Hardware.&lt;br>
+하지만 결국 중요한 것은 어떻게 제조 단가를 낮추고, 이를 생산하는 기계가격이 얼마나 떨어질 수 있느냐에 달려있다.&lt;br>
+혁신의 원동력은 쉽고(easy), 싼(cheap) !!&lt;/p></description></item><item><title>13 Rules For Realizing Your Creative Vision</title><link>https://openmicrolab.com/13-rules-for-realizing-your-creative-vision/</link><pubDate>Mon, 05 Dec 2011 05:26:05 +0000</pubDate><guid>https://openmicrolab.com/13-rules-for-realizing-your-creative-vision/</guid><description>
+&lt;p>Startup 기업 또는 개인의 프로젝트를 위해 읽어볼 가치가 있다.&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile26.uf.180F41374EDC557B21C38C.jpg" class="aligncenter" width="430" height="623" alt="" filename="Cult-Of-Done.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile29.uf.190F41374EDC557B223040.PNG" class="aligncenter" width="391" height="692" alt="" filename="get thing done.PNG" filemime="image/jpeg" />
+&lt;/P>
+&lt;DIV style="BORDER-BOTTOM: #fefeb8 1px solid; BORDER-LEFT: #fefeb8 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #fefeb8; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #fefeb8 1px solid; BORDER-RIGHT: #fefeb8 1px solid; PADDING-TOP: 10px" class=txc-textbox>**&lt;SPAN style="FONT-FAMILY: Verdana">&lt;SPAN style="FONT-FAMILY: Georgia">&lt;SPAN style="FONT-SIZE: 10pt">The idea of creating prototypes as soon as you can, and failing as fast as possible so you can evolve your way to something great. It isn&amp;#8217;t to say that you have to make these failures public. But the failures have to be made and not just thought about. Get it done.&lt;/SPAN>&lt;/SPAN>&lt;/SPAN>**&lt;/DIV>
+기사원문: &lt;http://www.fastcodesign.com/1665527/infographic-of-the-day-13-rules-for-realizing-your-creative-vision?partner=homepage_newsletter></description></item><item><title>Work Smart</title><link>https://openmicrolab.com/work-smart/</link><pubDate>Thu, 24 Nov 2011 11:46:46 +0000</pubDate><guid>https://openmicrolab.com/work-smart/</guid><description>
+&lt;p>일의 성취는 재능, 관심, 기회.. 이 3가지가 겹치는 부분에서 일어난다. 즉 이 3가지가 만족되는 곳(분야)에서 일을 해야 성과가 있다는 이야기.&lt;/p>
+&lt;P style="TEXT-ALIGN: center; MARGIN: 0px">
+&lt;br /> 즉 그림으로 표현하면..&lt;br /> &lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.1418A6494ECE2E10472941.jpg" class="aligncenter" width="474" height="361" alt="" filename="2011-11-24 20.38.05.jpg" filemime="image/jpeg" />&lt;br /> 관련정보: &lt;A title="[http://www.fastcompany.com/1796688/work-smart-finding-the-overlap-where-great-things-happen]로 이동합니다." href="http://www.fastcompany.com/1796688/work-smart-finding-the-overlap-where-great-things-happen" target=_blank>Work Smart: How To Find Your Sweet Spot&lt;/A>&lt;br />
+&lt;/P></description></item><item><title>[책] 화난 원숭이들은 모두 어디로 갔을까</title><link>https://openmicrolab.com/%EC%B1%85-%ED%99%94%EB%82%9C-%EC%9B%90%EC%88%AD%EC%9D%B4%EB%93%A4%EC%9D%80-%EB%AA%A8%EB%91%90-%EC%96%B4%EB%94%94%EB%A1%9C-%EA%B0%94%EC%9D%84%EA%B9%8C/</link><pubDate>Mon, 07 Nov 2011 11:37:51 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%ED%99%94%EB%82%9C-%EC%9B%90%EC%88%AD%EC%9D%B4%EB%93%A4%EC%9D%80-%EB%AA%A8%EB%91%90-%EC%96%B4%EB%94%94%EB%A1%9C-%EA%B0%94%EC%9D%84%EA%B9%8C/</guid><description>
+&lt;p>&lt;strong>화난 원숭이들은 모두 어디로 갔을까 – 숨어 버린 내 안의 열정과 창의성을 찾아가는 혁신&lt;/strong>&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile8.uf.141AC5424EB7C286027096.jpg" class="aligncenter" width="214" height="298" alt="" filename="화난 원숭이.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>세상이 빨리 변화하고 여기 저기서 열정, 창조성을 부르짓는다. 하지만 열정과 창의성은 의지가 있어야 가능한 일이다.&lt;br>
+이 책은 소통의 본질이 달라진 이 시대에 이러한 열정과 창의성의 언제 발휘되는 지를 밝히고 있다.&lt;/p>
+&lt;p>내 나름의 정리:&lt;br>
+화난원숭이의 실험에서 보듯 조직 내에서 학습된 무기력의 트라우마에서 탈피하여 이모원숭이가 되라. 그래서 인접한 관계의 사람에게 영향을 끼쳐라 !&lt;br>
+창의성은 우리 “사이”에 존재한다. 닿아 있지 않는 사람과 연결하라.&lt;br>
+열정은 호기심, 관심에서 비롯하며, 창의성은 새로운 경험의 연결이기 때문에 비슷한 경험을 공유하는 일상의 직장동료보다는 자신과 다른 경험이나 시각을 가진 사람을 계속 만나는 것이 중요하다.&lt;br>
+아이디어가 떠오르면 이러한 아이디어를 “연결”이라는 사이에 두어라. 그러면 세렌디피티를 일으킬 수 있다. 왜냐면 클레이 셔키 교수가 이야기 하듯 재미있다고 생각을 하고 각자의 이해 관계를 내세울 필요가 없는 상황에서 만났을 경우에는 쉽게 자신들의 인지 잉여(Cognitive surplus)를 꺼내서 도와주기 때문이다.&lt;br>
+참고) 대니얼 핑크의 동기 유발: &lt;a href="http://www.ted.com/talks/lang/kor/dan_pink_on_motivation.html">http://www.ted.com/talks/lang/kor/dan_pink_on_motivation.html&lt;/a>&lt;/p></description></item><item><title>[책] 인생의 절반쯤 왔을 때 깨닫게 되는 것들</title><link>https://openmicrolab.com/%EC%B1%85-%EC%9D%B8%EC%83%9D%EC%9D%98-%EC%A0%88%EB%B0%98%EC%AF%A4-%EC%99%94%EC%9D%84-%EB%95%8C-%EA%B9%A8%EB%8B%AB%EA%B2%8C-%EB%90%98%EB%8A%94-%EA%B2%83%EB%93%A4/</link><pubDate>Fri, 28 Oct 2011 07:21:32 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EC%9D%B8%EC%83%9D%EC%9D%98-%EC%A0%88%EB%B0%98%EC%AF%A4-%EC%99%94%EC%9D%84-%EB%95%8C-%EA%B9%A8%EB%8B%AB%EA%B2%8C-%EB%90%98%EB%8A%94-%EA%B2%83%EB%93%A4/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile27.uf.1519A2504EAA3F5D034C22.jpg" class="alignleft" width="235" height="311" alt="" filename="인생의 절반쯤.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>**Things you realize when you’re half way through in your life&lt;br>
+**&lt;br>
+이 모든 짐이 나를 행복하게 해주는가?&lt;/p>
+&lt;p>행복이란?&lt;/p>
+&lt;DIV style="BORDER-BOTTOM: #eeeeee 1px solid; BORDER-LEFT: #eeeeee 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #eeeeee 1px solid; BORDER-RIGHT: #eeeeee 1px solid; PADDING-TOP: 10px" class=txc-textbox>사람들은 행복이란 것을 마치 붙잡아서 새장 안에 가둬둘 수 있는 물건인 양 언제나 욕망의 잠자리채를 들고 다니며 허공을 휘젖는다. 그러나, 행복이란 줄에 묶인 애완견이 아니라 어깨 위에 앉은 매와 같다. 주인은 매와 함께 할 수는 있지만 매를 소유할 수는 없다. 그것은 언제든지 날아갈 수 있고 또 언제든지 돌아올 수 있다. 행복은 원래 방랑벽이 있어 결코 붙잡아 둘 수 없기 때문이다. 만일 행복을 줄에 묶어 둔다면 그것은 시름시름 앓다가 거짓말처럼 사라져버릴 것이다. 너무 꽉 껴안고 있으면 사랑을 느낄 공간조차 없어지듯이 행복 또한 자유롭게 돌아다닐 공간이 필요하다. 행복을 풀어줘라. 그러면 당신은 더 행복해 질 것이다.
+&lt;p>성공해야 행복한 것이 아니라 행복해야 성공한다는 단순한 사실을 우리는 너무 쉽게 잊고 산다.&lt;/p></description></item><item><title>[책] 언씽킹 Unthinking</title><link>https://openmicrolab.com/%EC%B1%85-%EC%96%B8%EC%94%BD%ED%82%B9-unthinking/</link><pubDate>Tue, 04 Oct 2011 05:06:27 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EC%96%B8%EC%94%BD%ED%82%B9-unthinking/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.13699F494E8A84FE1C0622.PNG" class="alignleft" width="177" height="221" alt="" filename="언씽킹.PNG" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>**행동심리학이 파헤친 인간 내면에 관한 매혹적 통찰&lt;br>
+해리 벡위드 저/이민주 역 | 토네이도 |&lt;br>
+원서 : Unthinking : The Surprising Forces Behind What We Buy&lt;/p>&lt;/p>
+&lt;p>&lt;/STRONG>원서의 제목이 말해주듯이 우리가 물건을 살 때 어떤 기준에 의해서 구매를 하는지 그 이면의 이야기를 하고 있다. 이성적인 인간이 논리적으로 생각해서 합리적인 판단을 한다고 느끼지만 그 실상은 그렇지 않고, 감정적인 부분, 친숙한 것, 고정관념들에 의해 판단을 한다는 것이다.&lt;br>
+**즉 감정이 결정을 해버리면 우리의 뇌는 이론적인 설명을 준비한다.&lt;br>
+**&lt;br>
+실제로 예를 들고 있는 미국의 브랜드들이 생소한 감이 없지않지만 대략 책의 소제목 들을 보면 그 내용을 알 수 있다.&lt;/p></description></item><item><title>[책] 디퍼런트, 넘버원을 넘어 온리원으로</title><link>https://openmicrolab.com/%EC%B1%85-%EB%94%94%ED%8D%BC%EB%9F%B0%ED%8A%B8-%EB%84%98%EB%B2%84%EC%9B%90%EC%9D%84-%EB%84%98%EC%96%B4-%EC%98%A8%EB%A6%AC%EC%9B%90%EC%9C%BC%EB%A1%9C/</link><pubDate>Tue, 13 Sep 2011 02:42:50 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EB%94%94%ED%8D%BC%EB%9F%B0%ED%8A%B8-%EB%84%98%EB%B2%84%EC%9B%90%EC%9D%84-%EB%84%98%EC%96%B4-%EC%98%A8%EB%A6%AC%EC%9B%90%EC%9C%BC%EB%A1%9C/</guid><description>
+&lt;p>&lt;FONT color=#ff8b16>&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.120E0E3F4E6EC27C0ABE2C.jpg" class="aligncenter" width="148" height="220" alt="" filename="디퍼런트.jpg" filemime="image/jpeg" />동일함이 지배하는 세상에서 아이디어 브랜드는 어떻게 세상을 경영하는가?&lt;br>
+&lt;/FONT>&lt;br>
+특정 카테고리에 얼마나 많은 브랜드 및 제품이 출시되어 있는지 확인해보면 그 시장이 얼마나 성숙되어 있는지를 알 수 있다. 하지만 카테고리가 성숙한다고 해서 다양성이 확보되는 것은 아님. 오히려 그 반대이다. 왜냐면 제품간의 차이는 점점 좁아지고 오직 전문가만이 제품의 차이를 구별할 수 있다.&lt;/p>
+&lt;p>&lt;strong>소비자조사&lt;/strong>&lt;br>
+소비자조사를 통해 얻을 수 있는 것은 오직 자신들이 상대적으로 가지고 있지 못한 특성들에 대한 지적뿐이다. 소비자는 개선만 얘기할 뿐이고 이 제품들이 어디까지 발전할 수 있는가에 대해서는 아무도 얘기하지 않는다. 그리고 얼마나 획기적인 제품이 가능한지에 대해서도 말을 해주지 않는다&lt;/p></description></item><item><title>[책] 앱경영시대가 온다</title><link>https://openmicrolab.com/%EC%B1%85-%EC%95%B1%EA%B2%BD%EC%98%81%EC%8B%9C%EB%8C%80%EA%B0%80-%EC%98%A8%EB%8B%A4/</link><pubDate>Fri, 05 Aug 2011 21:35:30 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EC%95%B1%EA%B2%BD%EC%98%81%EC%8B%9C%EB%8C%80%EA%B0%80-%EC%98%A8%EB%8B%A4/</guid><description>
+&lt;p>&lt;SPAN style="COLOR: black; FONT-SIZE: 10pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial">&lt;br />&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile25.uf.1257C6424E3C5F132D3275.jpg" class="aligncenter" width="177" height="240" alt="" filename="앱경영.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;br />
+&lt;P>
+스마트혁명이 일으키고 있는 변화의 키워드는 &lt;STRONG>소통, 개방, 참여, 열린 생태계, 감성, 스토리, 모바일&lt;/STRONG>이다. 이러한 변화의 속도가 빨라지는 변곡점의 시기는 위기의 시기이자 기회의 시기이다. 왜냐면 이 시기의 의사결정은 훗날 엄청난 차이를 만들어 내기 때문이다. 이런 환경에서 살아 남기 위해서는 선견, 선결, 선행해야 한다. 당연히 선견이 제일 처음인데, 선견하기 위해서는 변화를 직접 접하고 이해 하는 것이 중요하다.
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;br /> &lt;STRONG>온라인에서의 명성욕구, 사람들이 공유에 끌리는 이유&lt;/STRONG>는 공유를 통한 직접적인 혜택이나 자기 만족 때문이다.
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;br /> &lt;STRONG>위키피디아&lt;/STRONG>: 망치는 사람보다는 바로잡는 사람이 많고 망치는 속도보다는 바로잡는 속도가 빠르다.
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;br /> &lt;STRONG>프란스 요한슨이 쓴 메디치 효과&lt;/STRONG>: 다양한 생각과 상이한 분야가 만나서 완전히 새로운 것을 창조해내는 현상. 먼저 서로 다른 분야들 간의 막힌 장벽을 무너뜨리는 시도가 필요. 다양한 문화를 접하고 다양한 관점에서 상황을 바라볼 수 있어야 한다.
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;STRONG>&lt;br /> 하버드대의 스탠리 밀그램교수&lt;/STRONG>는 사람들이 6단계만 거치면 세상 모든 사람들과 연결된다는 이른바 &lt;STRONG>6단계 분리(Six degree of separation)이론&lt;/STRONG>을 실험적으로 밝혀낸 바 있다. 그런데 요즘은 이 단계가 5단계로 줄었다는&amp;#8230;
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;br /> 왜 소셜 미디어로 소통해야 하는가?&amp;nbsp; I want to be a normal 에서 I want to be a special 바뀜. 생계형 소비에서 개성소비의 시대..
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;br /> 현대사회에서 필요한 핵심 역량은 지식의 암기가 아니다. 현상에 대한 이해와 정보의 공유를 통해서 창의성을 가지고 문제를 해결하는 능력.
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;br /> 파레토의 법칙.전체 결과의 80%가 전체 원인의 20%에서 일어난다는 주장. 하지만 롱테일 마케팅은 파레토의 법칙을 역이용. 80%의 머리에만 신경 쓸 것이 아니라 20%의 꼬리에도 신경 써야 한다.
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;br /> &lt;STRONG>&lt;U>NIH (Not Invented Here)에서 PFE(Proudly Found Elsewhere)의 문화로의 전이. 하지만 이렇게 되려면 fully controllerable 해야&lt;/U>&lt;/STRONG>
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;br /> &lt;STRONG>&lt;U>개방. 오픈 비지니스&lt;/U>&lt;/STRONG>
+&lt;/P>
+&lt;br />
+&lt;P>
+&lt;STRONG>레고 마인드스톰. 네이버 지식인서비스. 애플. 구글의 공통점은? &lt;br /> 비지니스의 한 영역을 오픈 하면서 성공한 케이스&lt;/STRONG>
+&lt;/P>
+&lt;br />
+&lt;P>
+하지만 무턱대고 오픈 하는 것이 아니라 기업의 부족한 역량을 전략적으로 오픈 하고 개방을 통해 참여자가 많아질수록 자신의 비지니스가 더 활성화 될 수 있는 통로를 발견하고 그를 중심으로 자사 비지니스에 적합한 체계를 만드는 것. 이들에게서도 기본 철학은 고객 중심. 고객가치를 우선시 할 뿐 아니라 적극적으로 부려먹어야 한다. 즉 고객들이 활동을 할 수 있는 플랫폼을 제시해야 한다.&lt;br /> &lt;/SPAN>
+&lt;/P>&lt;/p></description></item><item><title>삶의 분주함에서 벗어나라</title><link>https://openmicrolab.com/%EC%82%B6%EC%9D%98-%EB%B6%84%EC%A3%BC%ED%95%A8%EC%97%90%EC%84%9C-%EB%B2%97%EC%96%B4%EB%82%98%EB%9D%BC/</link><pubDate>Fri, 05 Aug 2011 21:18:05 +0000</pubDate><guid>https://openmicrolab.com/%EC%82%B6%EC%9D%98-%EB%B6%84%EC%A3%BC%ED%95%A8%EC%97%90%EC%84%9C-%EB%B2%97%EC%96%B4%EB%82%98%EB%9D%BC/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.162A5D434E3C5DC7267A0A.jpg" class="aligncenter" width="208" height="192" alt="" filename="분주함.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>서유럽의 잘 사는 나라들… 저녁 6시만 되면 문닫는 가게들과 사무실,&lt;br>
+잘 살아서 여유가 있는 것일까? 여유롭게 살아서 잘사는 것일까?&lt;br>
+삶의 분주함으로 허둥대고, 우왕좌왕, 갈팡 질팡 하다가는 소모되고 사색할 여유가 없다.&lt;br>
+나를 돌아볼 여유가 없다.&lt;br>
+보다 깊은 고민을 통해서 앞으로 나갈 방향을 정확히 정하고, 꾸준히 나아가는 것이 더 빨리, 더 멀리 갈수 있는 길이다.&lt;/p></description></item><item><title>기본에 충실해야…</title><link>https://openmicrolab.com/%EA%B8%B0%EB%B3%B8%EC%97%90-%EC%B6%A9%EC%8B%A4%ED%95%B4%EC%95%BC/</link><pubDate>Thu, 28 Jul 2011 20:50:03 +0000</pubDate><guid>https://openmicrolab.com/%EA%B8%B0%EB%B3%B8%EC%97%90-%EC%B6%A9%EC%8B%A4%ED%95%B4%EC%95%BC/</guid><description>
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile5.uf.1228E73D4E31CB272575F0.jpg" class="aligncenter" width="316" height="241" alt="" filename="back_to_basics.jpg" filemime="image/jpeg" />
+&lt;p>기본(Basic)을 하지않으면 언젠가 그것을 다시해야한다. 물론 이때는 보다 비싼 댓가를 치루어야 한다,.&lt;br>
+처음 운동을 배울때 제대로된 폼을 배우지 않으면 나중에 그것을 고치기 힘든 것 처럼말이다.&lt;br>
+모든 것이 마찬가지 이다. 운동이던 공부던 사업이던 무엇이 기본인지 알고 그것부터 해야 한다.&lt;br>
+Back to Basic이란 말이 이미 들어서 익숙한 말이 아니라, 과연 우리에게 있어서 기본(Basic)이 무엇인지를 잘 새기도록…&lt;/p></description></item><item><title>넛지에 대한 생각</title><link>https://openmicrolab.com/%EB%84%9B%EC%A7%80%EC%97%90-%EB%8C%80%ED%95%9C-%EC%83%9D%EA%B0%81/</link><pubDate>Mon, 11 Jul 2011 20:10:15 +0000</pubDate><guid>https://openmicrolab.com/%EB%84%9B%EC%A7%80%EC%97%90-%EB%8C%80%ED%95%9C-%EC%83%9D%EA%B0%81/</guid><description>
+&lt;DIV>
+&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: left; LINE-HEIGHT: 18px; FONT-FAMILY: 돋움, Dotum, AppleGothic, sans-serif; COLOR: rgb(62,62,62); FONT-SIZE: 12px" class=Apple-style-span>팔꿈치로 쿡쿡 찌르다&amp;#8217;라는 뜻의 &amp;#8216;넛지Nudge&amp;#8217;는 일종의 자유주의적인 개입, 혹은 간섭이다. 즉, 사람들을 바람직한 방향으로 부드럽게 유도하되, 선택의 자유는 여전히 개인에게 열려있는 상태를 말한다. 실수를 반복하는 인간들을 부드럽게 &amp;#8216;넛지&amp;#8217;함으로써 현명한 선택을 이끌어낼 수 있다고 주장한다.&lt;/p></description></item><item><title>어줍잖은 스티브잡스 흉내쟁이들</title><link>https://openmicrolab.com/%EC%96%B4%EC%A4%8D%EC%9E%96%EC%9D%80-%EC%8A%A4%ED%8B%B0%EB%B8%8C%EC%9E%A1%EC%8A%A4-%ED%9D%89%EB%82%B4%EC%9F%81%EC%9D%B4%EB%93%A4/</link><pubDate>Fri, 01 Jul 2011 08:00:43 +0000</pubDate><guid>https://openmicrolab.com/%EC%96%B4%EC%A4%8D%EC%9E%96%EC%9D%80-%EC%8A%A4%ED%8B%B0%EB%B8%8C%EC%9E%A1%EC%8A%A4-%ED%9D%89%EB%82%B4%EC%9F%81%EC%9D%B4%EB%93%A4/</guid><description>
+&lt;p>아마도 대부분의 중소기업 사장들이 가장 크게 염려하고 있는 것은 매출일 것이다.&lt;br>
+매출이 좀 줄면 불안해 하고, 몇 달간 증가세를 보이면 막연한 희망에 부푼다.&lt;br>
+그러나 과연 중요한 본질은 무엇일까?&lt;br>
+이들이 자기 회사의 제품을 잘 이해하고 있을까?&lt;br>
+제품을 개발하는 연구원들과 세부적인 내용까지 토론할 수 있는 기술적인 지식이 있는가?&lt;br>
+과연 연구원들이 어떨 때 신이나서 일을 하는지 이해하고 있는지… -_-;;&lt;/p>
+&lt;p>최근 아이폰의 열풍으로 스티브잡스에 대한 이야기도 많고 책도 많이 나와 있다.&lt;br>
+그리고 다들 그를 존경하고 닮고 싶어하는 것 같다. 하지만 그가 가지고 있는 제품에 대한 열정을 본받는 것이 아니고, 그져 그가 이룬 성공만 보고 어줍잖게 카리스마있게 행동한다던지, 조직을 몰아가고 있지는 않는지…&lt;/p></description></item><item><title>[책] “아이리더십”을 읽고…</title><link>https://openmicrolab.com/%EC%B1%85-%EC%95%84%EC%9D%B4%EB%A6%AC%EB%8D%94%EC%8B%AD%EC%9D%84-%EC%9D%BD%EA%B3%A0/</link><pubDate>Fri, 10 Jun 2011 02:37:36 +0000</pubDate><guid>https://openmicrolab.com/%EC%B1%85-%EC%95%84%EC%9D%B4%EB%A6%AC%EB%8D%94%EC%8B%AD%EC%9D%84-%EC%9D%BD%EA%B3%A0/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile9.uf.123C894B4DF2007E33ECA8.jpg" class="aligncenter" width="140" height="220" alt="" filename="ileadership.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>20여 년간 애플의 수석부사장으로 있었던 애플의 핵심 중 핵심인 인물 제이 엘리엇이 쓴 책&lt;br>
+제이 엘리엇은 실제로 왼손잡이인 잡스가 “나의 왼팔”이라고 불렀을 정도로 믿고 의지하는 멘토이자,&lt;br>
+잡스의 괴팍한 천재성을 기업의 언어로 번역해냄으로써 최고의 성과를 창출해낸 장본인이다.&lt;/p>
+&lt;p>대부분의 내용은 이미 다른 알고있는 내용인데, 개발자로서 마음에 와 닿는 내용은….&lt;br>
+제품에 집중하라.&lt;strong>즉 세계 최고의 소비자가 되어라.&lt;br>
+완벽한 제품에 대한 열정 : 당신이 쓰고 싶은 것을 만들어라,&lt;/strong>&lt;SPAN style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium Gulim; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: none; -webkit-text-stroke-width: 0px" class=Apple-style-span>&lt;SPAN style="TEXT-ALIGN: left; FONT-FAMILY: 돋움, verdana; COLOR: rgb(85,85,85); FONT-SIZE: 12px" class=Apple-style-span>&lt;/SPAN>&lt;/SPAN>&lt;/p></description></item><item><title>인포그래픽 : Sitting is Killing You</title><link>https://openmicrolab.com/%EC%9D%B8%ED%8F%AC%EA%B7%B8%EB%9E%98%ED%94%BD-sitting-is-killing-you/</link><pubDate>Fri, 20 May 2011 02:36:34 +0000</pubDate><guid>https://openmicrolab.com/%EC%9D%B8%ED%8F%AC%EA%B7%B8%EB%9E%98%ED%94%BD-sitting-is-killing-you/</guid><description>
+&lt;p>요즘은 대부분이 사무실에 앉아서 컴퓨터러 일하는 직업이라 어쩔수 없지만, 자주 움직이고 스트레칭을 해야할 듯..&lt;/p>
+&lt;p>&lt;a href="http://www.medicalbillingandcoding.org/sitting-kills">&lt;img src="http://images.medicalbillingandcoding.org.s3.amazonaws.com/sitting-is-killing-you.jpg" alt="Sitting is Killing You" width="500" border="0" />&lt;/a>&lt;br>
+Via: &lt;a href="http://www.medicalbillingandcoding.org">Medical Billing And Coding&lt;/a>&lt;/p></description></item><item><title>끝까지 믿어주고 결과에 책임지게 하라</title><link>https://openmicrolab.com/%EB%81%9D%EA%B9%8C%EC%A7%80-%EB%AF%BF%EC%96%B4%EC%A3%BC%EA%B3%A0-%EA%B2%B0%EA%B3%BC%EC%97%90-%EC%B1%85%EC%9E%84%EC%A7%80%EA%B2%8C-%ED%95%98%EB%9D%BC/</link><pubDate>Thu, 16 Sep 2010 14:33:26 +0000</pubDate><guid>https://openmicrolab.com/%EB%81%9D%EA%B9%8C%EC%A7%80-%EB%AF%BF%EC%96%B4%EC%A3%BC%EA%B3%A0-%EA%B2%B0%EA%B3%BC%EC%97%90-%EC%B1%85%EC%9E%84%EC%A7%80%EA%B2%8C-%ED%95%98%EB%9D%BC/</guid><description>
+&lt;p>&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Batang; ">&lt;span style="font-family: Gulim; ">&lt;span style="font-family: Gulim; ">﻿&lt;/span>&lt;/span>&lt;span style="font-family: Gulim; ">&lt;font class="Apple-style-span" color="#000000">한 조직의 리더는 업무 책임자의 책임을 분산시키면 안된다. &lt;/font>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Batang; ">&lt;span style="font-family: Gulim; ">&lt;font class="Apple-style-span" color="#000000">만약 그런다면 그 결과에 대해 아무도 책임을 지려하지 않을 것이고 결과가 좋지 않을 경우에 그 원인은 책임을 분산시킨 리더에게로 돌아간다.&lt;/font>&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Batang; ">&lt;span style="font-family: Gulim; ">&lt;font class="Apple-style-span" color="#000000">끝까지 믿어주고 결과에 책임지게 하라.&lt;/font>&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Batang; ">&lt;span style="font-family: Gulim; ">&lt;font class="Apple-style-span" color="#000000">그리고 그 결과의 공로도 인정해줘라&lt;/font>&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Batang; ">&lt;span style="font-family: Gulim; ">&lt;font class="Apple-style-span" color="#000000">그래야 동기가 부여되지 않는가?&amp;nbsp;&lt;/font>&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" color="#000000">&lt;font class="Apple-style-span" face="Gulim" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;br /> &lt;/span>&lt;/font>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" face="Gulim" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;a href="http://tvpot.daum.net/clip/ClipViewByVid.do?vid=FXNV_65nL78$" target="_blank" title="[http://tvpot.daum.net/clip/ClipViewByVid.do?vid=FXNV_65nL78$]로 이동합니다.">&lt;font class="Apple-style-span" color="#E31600">비슷한 의미의 동영상 보기&lt;/font>&lt;/a>&lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" color="#000000">&lt;font class="Apple-style-span" face="Gulim" size="4">&lt;span class="Apple-style-span" style="font-size: 15px; line-height: 22px;">&lt;a href="http://tvpot.daum.net/clip/ClipViewByVid.do?vid=FXNV_65nL78$" target="_blank" title="[http://tvpot.daum.net/clip/ClipViewByVid.do?vid=FXNV_65nL78$]로 이동합니다.">&lt;/a>&lt;br /> &lt;/span>&lt;/font>&lt;/font>&lt;/p></description></item><item><title>행복을 파는 회사 자포스 (Zappos)의 핵심가치</title><link>https://openmicrolab.com/%ED%96%89%EB%B3%B5%EC%9D%84-%ED%8C%8C%EB%8A%94-%ED%9A%8C%EC%82%AC-%EC%9E%90%ED%8F%AC%EC%8A%A4-zappos%EC%9D%98-%ED%95%B5%EC%8B%AC%EA%B0%80%EC%B9%98/</link><pubDate>Thu, 09 Sep 2010 02:36:44 +0000</pubDate><guid>https://openmicrolab.com/%ED%96%89%EB%B3%B5%EC%9D%84-%ED%8C%8C%EB%8A%94-%ED%9A%8C%EC%82%AC-%EC%9E%90%ED%8F%AC%EC%8A%A4-zappos%EC%9D%98-%ED%95%B5%EC%8B%AC%EA%B0%80%EC%B9%98/</guid><description>
+&lt;p>&lt;span class="Apple-style-span" style="color: rgb(85, 85, 85); font-family: verdana, arial, helvetica, geneva, sans-serif; font-size: 13px; line-height: 17px; ">&lt;/p>&lt;/p>
+&lt;div>
+&lt;span class="Apple-style-span" style="color: rgb(85, 85, 85); font-family: verdana, arial, helvetica, geneva, sans-serif; font-size: 13px; line-height: 17px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">대부분의 회사의 존재 이유는 이유추구입니다.&amp;nbsp;&lt;/span>&lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="font-family: Gulim; font-size: 15px; ">하지만 회사내 모든 가치판단의 기준이 이윤이 되버리면 직원들은 힘들어하고 스트레스를 받지 않을 수 없습니다.&amp;nbsp;&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="font-family: Gulim; font-size: 15px; ">즉 마케팅이나 영업은 매월 매출 실적에 따라 안절 부절하고, R&amp;D는 정해진 기한에 제품을 만들기 위해 진정으로 고객이 원하는 것이 무엇인지를 간과하기도 합니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="color: rgb(85, 85, 85); font-family: verdana, arial, helvetica, geneva, sans-serif; font-size: 13px; line-height: 17px; ">&lt;br /> &lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="color: rgb(85, 85, 85); font-family: verdana, arial, helvetica, geneva, sans-serif; font-size: 13px; line-height: 17px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">회사가 커짐에 따라 회사의 핵심가치를 정의하는 것은 중요한데,&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="color: rgb(85, 85, 85); font-family: verdana, arial, helvetica, geneva, sans-serif; font-size: 13px; line-height: 17px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">아마존에 합병된 자포스(Zappos)의 홈페이지에는 이 회사의 핵심가치를 10가지로 정의하고 각 항목마다 자세한 설명 페이지가 있습니다.&amp;nbsp;&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="color: rgb(85, 85, 85); font-family: verdana, arial, helvetica, geneva, sans-serif; font-size: 13px; line-height: 17px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;br /> &lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span class="Apple-style-span" style="color: rgb(51, 51, 51); font-family: 굴림; line-height: 18px; font-size: 12px; ">&lt;span style="font-size: 11pt; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile4.uf.135F21264C88439A6B2CDA.jpg" class="aligncenter" width="640" height="659" alt="" filename="cfile4.uf.135F21264C88439A6B2CDA.jpg" filemime="" />&lt;br /> &lt;/span>&lt;/span>
+&lt;/div>
+&lt;div style="text-align: center;">
+&lt;span class="Apple-style-span" style="color: rgb(51, 51, 51); font-family: 굴림; line-height: 18px; font-size: 12px; ">&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;a href="http://about.zappos.com/our-unique-culture/zappos-core-values">http://about.zappos.com/our-unique-culture/zappos-core-values&lt;/a>&lt;/span>&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" face="Gulim" size="4">&lt;span class="Apple-style-span" style="font-size: 15px;">이 회사의&amp;nbsp;&lt;/span>&lt;/font>&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;a href="http://blogs.zappos.com/" target="_blank" title="[http://blogs.zappos.com/]로 이동합니다.">블로그&lt;/a>&lt;/span>&lt;/span>&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">를 보면 자포스와&amp;nbsp;&lt;/span>&lt;/span>&lt;span class="Apple-style-span" style="font-family: Gulim; font-size: 15px; ">CEO인 토니의 생각을 알 수 있습니다.&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;font class="Apple-style-span" face="Gulim" size="4">&lt;span class="Apple-style-span" style="font-size: 15px;">&lt;br /> &lt;/span>&lt;/font>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile30.uf.147104274C8843CE53A040.jpg" class="aligncenter" width="680" height="158" alt="" filename="Zappos2.jpg" filemime="image/jpeg" />블로그 위의 이미지에 있는 트위터 글도 명언이네요&amp;#8230;&lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;br /> &lt;/span>&lt;/span>
+&lt;/div>
+&lt;div>
+&lt;span style="font-size: 11pt; ">&lt;span style="font-family: Gulim; ">&lt;span class="Apple-style-span" style="font-size: 13px; font-family: verdana, arial, helvetica, geneva, sans-serif; ">&lt;/p></description></item></channel></rss>

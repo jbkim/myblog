@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>아마존 AWS IoT on OpenMicroLab</title><link>https://openmicrolab.com/tags/%EC%95%84%EB%A7%88%EC%A1%B4-aws-iot/</link><description>Recent content in 아마존 AWS IoT on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Tue, 13 Oct 2015 03:16:17 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/%EC%95%84%EB%A7%88%EC%A1%B4-aws-iot/index.xml" rel="self" type="application/rss+xml"/><item><title>IoT 솔루션</title><link>https://openmicrolab.com/iot-%EC%86%94%EB%A3%A8%EC%85%98/</link><pubDate>Tue, 13 Oct 2015 03:16:17 +0000</pubDate><guid>https://openmicrolab.com/iot-%EC%86%94%EB%A3%A8%EC%85%98/</guid><description>
+&lt;p>&lt;strong>해외 대기업들의 IoT 솔루션&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://ms-iot.github.io/content/en-US/Downloads.htm" target="_blank">MS 윈도우10 IoT 코어&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developer.ibm.com/recipes/" target="_blank">IBM의 IoT 커뮤니티 IBM Developerwork Recipes&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/iot/" target="_blank">아마존 AWS IoT&lt;/a> : &lt;a href="http://www.seeedstudio.com/wiki/Grove_IoT_Starter_Kits_Powered_by_AWS" target="_blank">지원하는 플랫폼&lt;/a>, &lt;a href="https://www.hackster.io/challenges/AWSIoTMegaContest" target="_blank">진행되고 있는 컨테스트&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>관련기사&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.bloter.net/archives/235679" target="_blank">&lt;a href="http://www.bloter.net/archives/235679">http://www.bloter.net/archives/235679&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.bloter.net/archives/240786" target="_blank">&lt;a href="http://www.bloter.net/archives/240786">http://www.bloter.net/archives/240786&lt;/a>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://techcrunch.com/2015/10/08/amazon-announces-aws-iot-a-platform-for-building-managing-and-analyzing-the-internet-of-things/" target="_blank">&lt;a href="http://techcrunch.com/2015/10/08/amazon-announces-aws-iot-a-platform-for-building-managing-and-analyzing-the-internet-of-things/">http://techcrunch.com/2015/10/08/amazon-announces-aws-iot-a-platform-for-building-managing-and-analyzing-the-internet-of-things/&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

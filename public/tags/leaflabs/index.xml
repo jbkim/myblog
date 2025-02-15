@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Leaflabs on OpenMicroLab</title><link>https://openmicrolab.com/tags/leaflabs/</link><description>Recent content in Leaflabs on OpenMicroLab</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Mon, 12 Dec 2011 10:00:00 +0000</lastBuildDate><atom:link href="https://openmicrolab.com/tags/leaflabs/index.xml" rel="self" type="application/rss+xml"/><item><title>Maple mini 보드에서 Wiz820io 사용하기</title><link>https://openmicrolab.com/maple-mini-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-wiz820io-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link><pubDate>Mon, 12 Dec 2011 10:00:00 +0000</pubDate><guid>https://openmicrolab.com/maple-mini-%EB%B3%B4%EB%93%9C%EC%97%90%EC%84%9C-wiz820io-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid><description>
+&lt;P style="MARGIN: 0px">
+&lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflab&lt;/A>사의 &lt;A title="[http://leaflabs.com/2011/10/wizzin-through-the-ether-net/]로 이동합니다." href="http://leaflabs.com/2011/10/wizzin-through-the-ether-net/" target=_blank>블로그&lt;/A>를 보고 Maple mini보드에 &lt;A title="[http://www.wiznet.co.kr/wiz820io]로 이동합니다." href="http://www.wiznet.co.kr/wiz820io" target=_blank>Wiz820io&lt;/A>를 연결해서 테스트를 진행했다. 브레드보드가 있으니 연결은 금방한다. 예제들이 UART3를 사용하기 때문에 아래 그림처럼 RS232 트랜시버가 달려있는 쪽보드를 사용해서 시리얼을 연결했다. &lt;br /> &lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile5.uf.195BA43E4EE5A0B1143718.jpg" class="aligncenter" width="483" height="338" alt="" filename="maple mini test.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;STRONG>H/W 연결&lt;/STRONG>&lt;br /> Maple mini보드의 Fritzing라이브러리도 만들고&amp;#8230; 회로 연결은 아래 그림과 같다. 사실 연결할 것은 SPI 시그널과 VCC, GND 밖에 없다.&amp;nbsp;&lt;br /> &amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;STRONG>Maple mini Fritzing 라이브러리:&lt;/P>&lt;br />
+&lt;P style="MARGIN: 0px">
+&lt;a href="https://openmicrolab.com/images/1/cfile4.uf.1460D83F4EE5A5580D181E.fzpz" class="aligncenter" filename="maple mini.fzpz" filemime="application/zip" />cfile4.uf.1460D83F4EE5A5580D181E.fzpz&lt;/a>&lt;/STRONG>&lt;br /> &lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile22.uf.135BA43E4EE5A0B316548A.PNG" class="aligncenter" width="463" height="407" alt="" filename="maple_mini_Wiz820io.PNG" filemime="image/jpeg" />&lt;STRONG>라이브러리&lt;/STRONG>&lt;br /> 아래 첨부한 파일을 Leaflab IDE의 \libraries\wizEthernet에 압축을 풀어서 넣는다.&lt;br /> 예제 파일이 telnetServer, webServer 2가지가 있는데, 제공되는 예제가 약간 문제가 있다.&lt;br /> telentServer의 경우 password를 칠때는 문제가 없지만 다른 경우에 매 문자마다 echo back를 해서 이것을 수정을 했고, webServer의 경우 브라우져에서 favicon을 요청시 처리를 위해 &amp;#8220;HTTP/1.1 404 Not Found&amp;#8221; 페이지를 돌려주기 위한 코드를 추가 했다.&amp;nbsp;&lt;br /> &lt;STRONG>&amp;nbsp;&amp;nbsp;&amp;nbsp;wizEthernet 라이브러리:&amp;nbsp;&lt;/P>&lt;br />
+&lt;pre>&lt;code>&amp;lt;P style=&amp;quot;MARGIN: 0px&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;/images/1/cfile29.uf.175DF13F4EE5A4850D2B13.zip&amp;quot; class=&amp;quot;aligncenter&amp;quot; filename=&amp;quot;wizEthernet.zip&amp;quot; filemime=&amp;quot;application/zip&amp;quot; /&amp;gt;cfile29.uf.175DF13F4EE5A4850D2B13.zip&amp;lt;/a&amp;gt;
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P style=&amp;quot;MARGIN: 0px&amp;quot;&amp;gt;
+&amp;lt;/STRONG&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;STRONG&amp;gt;&amp;amp;nbsp; 수정된 예제 파일: &amp;lt;/P&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;P style=&amp;quot;MARGIN: 0px&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;/images/1/cfile3.uf.172F71414EE5A4430F27EA.pde&amp;quot; class=&amp;quot;aligncenter&amp;quot; filename=&amp;quot;telnetserver.pde&amp;quot; filemime=&amp;quot;text/x-c; charset=us-ascii&amp;quot; /&amp;gt;cfile3.uf.172F71414EE5A4430F27EA.pde&amp;lt;/a&amp;gt;
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P style=&amp;quot;MARGIN: 0px&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;/images/1/cfile27.uf.17335D414EE5A4542CA563.pde&amp;quot; class=&amp;quot;aligncenter&amp;quot; filename=&amp;quot;webserver.pde&amp;quot; filemime=&amp;quot;text/x-c; charset=us-ascii&amp;quot; /&amp;gt;cfile27.uf.17335D414EE5A4542CA563.pde&amp;lt;/a&amp;gt;
+&amp;lt;/P&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;P style=&amp;quot;MARGIN: 0px&amp;quot;&amp;gt;
+&amp;lt;br /&amp;gt; &amp;lt;/STRONG&amp;gt;&amp;lt;br /&amp;gt; 혹시 컴파일후 보드에 다운로그가 문제가 있을 경우, 이전 포스트를 참고(&amp;lt;A title=&amp;quot;[http://liketheocean.tistory.com/174]로 이동합니다.&amp;quot; href=&amp;quot;http://liketheocean.tistory.com/174&amp;quot; target=_blank&amp;gt;LeafLabs의 Maple mini, Maple Ret 5 보드 사용기&amp;lt;/A&amp;gt;)
+&amp;lt;/P&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code>&lt;/pre></description></item><item><title>LeafLabs의 Maple mini, Maple Ret 5 보드 사용기</title><link>https://openmicrolab.com/leaflabs%EC%9D%98-maple-mini-maple-ret-5-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</link><pubDate>Fri, 25 Nov 2011 11:31:38 +0000</pubDate><guid>https://openmicrolab.com/leaflabs%EC%9D%98-maple-mini-maple-ret-5-%EB%B3%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0/</guid><description>
+&lt;p>&lt;A title="[http://arduino.cc]로 이동합니다." href="http://arduino.cc/" target=_blank>Arduino&lt;/A>가 AVR을 기반으로 하여 오픈하드웨어 플랫폼을 주도하고 있는데, &lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>은 STM32시리즈를 기반으로 하는 오픈하드웨어 플랫폼을 만들고 있다. &lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>의 보드들의 이름은 Maple이다.&lt;br>
+&lt;A title="[http://leaflabs.com/]로 이동합니다." href="http://leaflabs.com/" target=_blank>Leaflabs&lt;/A>사의 홈페이지에서 주문을 하니 한 일주일만에 배송이 되었다. &lt;A title="[http://arduino.cc]로 이동합니다." href="http://arduino.cc/" target=_blank>Arduino&lt;/A>가 요즘에는 브랜딩 작업을 하고 있고, 포장 및 디자인까지 신경을 쓰는 반면 역시 후발 주자답게 포장이 좀 허접하다. 대신 사탕을 같이 넣어서 주네..ㅋㅋ&lt;/p>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile23.uf.180B40494ECF78311B6A81.jpg" class="aligncenter" width="490" height="322" alt="" filename="Maple with Candy.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;P style="MARGIN: 0px">
+&lt;img loading="lazy" src="https://openmicrolab.com/images/1/cfile6.uf.180B55484ECF78B6227356.jpg" class="aligncenter" width="551" height="331" alt="" filename="Maple.jpg" filemime="image/jpeg" />
+&lt;/P>
+&lt;p>아두이노와 같은 모습의 IDE를 사용하는데, 일단 처음 부터 막힌다. &lt;A title="[http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip]로 이동합니다." href="http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip" target=_blank>IDE 다운로드&lt;/A>&lt;/p></description></item></channel></rss>
